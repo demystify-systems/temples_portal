@@ -173,7 +173,19 @@ export default function AtlasClient() {
   function select(id: string | null, fly = true) {
     setSel(id); setIndex(false);
     if (id) { const s = SITES.find((x) => x.id === id)!; if (fly) flyTo(s); }
+    // shareable deep link: /#site=<id>
+    try { history.replaceState(null, "", id ? `#site=${id}` : window.location.pathname); } catch { /* no-op */ }
   }
+
+  // open a site from the URL hash on load (e.g. /#site=angkor-wat)
+  useEffect(() => {
+    const m = window.location.hash.match(/^#site=([a-z0-9-]+)$/);
+    if (m && SITES.some((s) => s.id === m[1])) {
+      const t = setTimeout(() => select(m[1], true), 600);
+      return () => clearTimeout(t);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // tooltip
   function showTip(s: Site, e: MouseEvent) {

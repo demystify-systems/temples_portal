@@ -62,7 +62,7 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
         {s.website && <a className="primary" href={s.website} target="_blank" rel="noopener noreferrer">Official site ↗</a>}
         <a href={gmapsUrl(s)} target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
         {s.wiki && <a href={s.wiki} target="_blank" rel="noopener noreferrer">Wikipedia ↗</a>}
-        <Link href="/">View on the atlas map</Link>
+        <Link href={`/#site=${s.id}`}>View on the atlas map</Link>
       </div>
       {s.phone && <p className="mono" style={{ fontSize: 13 }}>☏ {s.phone} <span style={{ color: "var(--mut)" }}>(from the official site, verified 2026-08-26)</span></p>}
 
