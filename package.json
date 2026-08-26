@@ -1,0 +1,25 @@
+{
+  "name": "temples-portal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tirtha Atlas — the sacred geography of the Indic world. Interactive time-map + cited encyclopedia of temples and sacred sites.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run validate && next build",
+    "start": "next start",
+    "validate": "node scripts/validate-data.mjs",
+    "drift:wikidata": "node scripts/wikidata-drift.mjs",
+    "freshness": "node scripts/source-freshness.mjs",
+    "db:seed": "node scripts/seed-supabase.mjs"
+  },
+  "dependencies": {
+    "next": "^15.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "typescript": "^5.6.0"
+  }
+}

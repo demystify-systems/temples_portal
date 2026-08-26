@@ -1,0 +1,38 @@
+name: source-freshness
+# Monthly citation link-check. Detect-only: dead/moved sources file an issue
+# for HUMAN re-verification — the pipeline never edits data.
+on:
+  schedule:
+    - cron: "17 3 3 * *"   # 3rd of the month, 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: run
+        run: |
+          set +e
+          node scripts/source-freshness.mjs | tee freshness.log
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: File issue on dead/moved sources
+        if: steps.run.outputs.code == '78'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('reports/source-freshness.json', 'utf8');
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title: `Source freshness: dead or moved citations — ${new Date().toISOString().slice(0,10)}`,
+              labels: ['data-verification'],
+              body: 'The monthly citation sweep found dead or moved source URLs. Re-read each source, update the citation (and the fact if it changed) in data/sites.json in the SAME commit.\n\n```json\n' + report + '\n```'
+            });
