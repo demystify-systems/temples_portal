@@ -83,10 +83,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/250/"
+   },
+   {
+    "l": "Tamil Nadu Tourism — Gangaikonda Cholapuram",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/gangaikonda-cholapuram"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Gangaikonda_Cholapuram"
+  "wiki": "https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Gangaikonda_Cholapuram",
+  "access": "Tamil Nadu Tourism gives the nearest railhead as Kutralam junction, about 30 km from the temple, and the nearest bus stand as Ariyalur, roughly 45 km away. The closest airport is Chennai International, some 290 km distant, so the last leg is by road in every case."
  },
  {
   "id": "airavatesvara-darasuram",
@@ -125,10 +130,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/250/"
+   },
+   {
+    "l": "Tamil Nadu Tourism — Airavatesvara Temple",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/airavatesvara-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Airavatesvara_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Airavatesvara_Temple",
+  "access": "Darasuram has its own railway station roughly 1 km from the temple, and Kumbakonam bus stand is about 5 km away. The nearest airport is Tiruchirappalli International, some 90 km off."
  },
  {
   "id": "meenakshi-madurai",
@@ -250,10 +260,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+   },
+   {
+    "l": "Cuddalore District Administration, Govt of Tamil Nadu",
+    "u": "https://cuddalore.nic.in/tourist-place/chidamabaram/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram"
+  "wiki": "https://en.wikipedia.org/wiki/Thillai_Nataraja_Temple,_Chidambaram",
+  "tier": "compact"
  },
  {
   "id": "shore-temple-mahabalipuram",
@@ -325,10 +340,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+   },
+   {
+    "l": "Tamil Nadu Tourism Department, Govt of Tamil Nadu",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/kailasanathar-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram"
+  "wiki": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Kanchipuram",
+  "access": "Kanchipuram railway station lies about 3 km from the temple and Chennai International airport roughly 62 km away; Kanchipuram bus stand serves the town for road arrivals."
  },
  {
   "id": "ekambareswarar-kanchipuram",
@@ -360,10 +380,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Ekambaranathar_Temple"
+   },
+   {
+    "l": "HR&CE Dept, Govt of Tamil Nadu — Arulmigu Ekambaranathar Temple",
+    "u": "https://hrce.tn.gov.in/hrcehome/index_temple.php?tid=1816"
+   },
+   {
+    "l": "Tamil Nadu Tourism — Sri Ekambareswarar Temple",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/sri-ekambareswarar-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ekambaranathar_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Ekambaranathar_Temple",
+  "access": "The temple sits about 1 km from Kanchipuram railway station, with the town bus stand close by; the nearest airport is Chennai International, roughly 61 km away."
  },
  {
   "id": "ramanathaswamy-rameswaram",
@@ -437,10 +466,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Arunachalesvara_Temple"
+   },
+   {
+    "l": "HR&CE Dept, Govt of Tamil Nadu — Arulmigu Arunachaleswarar Temple",
+    "u": "https://annamalaiyar.hrce.tn.gov.in/hrcehome/index_temple.php?tid=20343"
+   },
+   {
+    "l": "Tamil Nadu Tourism — Arunachaleswarar Temple",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/arunachaleshwar-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Arunachalesvara_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Arunachalesvara_Temple",
+  "access": "Tiruvannamalai railway station is about 2 km from the temple; Chennai International airport is the nearest air link at roughly 180 km. Tamil Nadu Tourism notes regular bus services into the town from Chennai, Bengaluru and other nearby cities over good road connections."
  },
  {
   "id": "palani-murugan",
@@ -469,10 +507,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Palani_Murugan_temple"
+   },
+   {
+    "l": "HR&CE Dept, Govt of Tamil Nadu — Arulmigu Dhandayuthapani Swamy Temple, Palani",
+    "u": "https://palanimurugan.hrce.tn.gov.in/hrcehome/index_temple.php?tid=32203"
+   },
+   {
+    "l": "Tamil Nadu Tourism — Arulmigu Dhandayuthapani Swamy Temple, Palani",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/arulmigu-dhandayuthapani-swamy-temple-palani"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Palani_Murugan_temple"
+  "wiki": "https://en.wikipedia.org/wiki/Palani_Murugan_temple",
+  "access": "Palani bus stand is about 1 km from the temple and Palani railway station about 2 km; the nearest airport is Coimbatore International, roughly 114 km away. The shrine stands on Sivagiri hill: pilgrims either walk the stepped elephant path, which has benches, restrooms and drinking water, or take the winch-and-rope car, which runs 7.00 am to 12.30 pm and 1.30 to 5.00 pm, and from 4.00 am on festival days.",
+  "tier": "compact"
  },
  {
   "id": "tiruchendur-murugan",
@@ -501,10 +549,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
+   },
+   {
+    "l": "HR&CE Dept, Govt of Tamil Nadu — Arulmigu Subramania Swamy Temple, Tiruchendur",
+    "u": "https://tiruchendurmurugan.hrce.tn.gov.in/hrcehome/index_temple.php?tid=38271"
+   },
+   {
+    "l": "Thoothukudi District Administration — Places of Interest",
+    "u": "https://thoothukudi.nic.in/tourism/places-of-interest/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Thiruchendur_Murugan_Temple",
+  "access": "The Thoothukudi district administration places this shore temple about 40 km from Thoothukudi and describes it as well served by buses from across Tamil Nadu, with train services linking it to Tirunelveli and Chennai.",
+  "tier": "compact"
  },
  {
   "id": "kanyakumari-amman",
@@ -537,6 +595,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Devi_Kanyakumari"
+   },
+   {
+    "l": "Kanniyakumari District Administration, Govt of Tamil Nadu",
+    "u": "https://kanniyakumari.nic.in/tspot_kat/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -554,7 +616,8 @@
     "note": "Kanyakumari is not among the eighteen shrines of the Ashtadasha Shakta Pitha Stotram as Wikipedia lists them, though the Devi Kanya Kumari article calls the shrine a Shakta pitha under both the 51 and 52 enumerations in the same text (as of 2026).",
     "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
-  ]
+  ],
+  "tier": "compact"
  },
  {
   "id": "kapaleeshwarar-chennai",
@@ -585,10 +648,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kapaleeshwarar_Temple"
+   },
+   {
+    "l": "Tamil Nadu Tourism Department, Govt of Tamil Nadu",
+    "u": "https://www.tamilnadutourism.tn.gov.in/destinations/the-kapaleeshwarar-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kapaleeshwarar_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kapaleeshwarar_Temple",
+  "tier": "compact"
  },
  {
   "id": "padmanabhaswamy-tvm",
@@ -621,6 +689,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple"
+   },
+   {
+    "l": "Thiruvananthapuram District Administration, Govt of Kerala — History",
+    "u": "https://trivandrum.nic.in/en/history/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -660,7 +732,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Guruvayur_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Guruvayur_Temple",
+  "tier": "compact"
  },
  {
   "id": "sabarimala-ayyappa",
@@ -695,7 +768,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sabarimala_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Sabarimala_Temple",
+  "tier": "compact"
  },
  {
   "id": "vadakkunnathan-thrissur",
@@ -724,10 +798,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Vadakkunnathan_Temple"
+   },
+   {
+    "l": "Thrissur District Administration, Govt of Kerala",
+    "u": "https://thrissur.nic.in/en/main-pilgrim-centers/"
+   },
+   {
+    "l": "Thrissur District Administration — How to Reach",
+    "u": "https://thrissur.nic.in/en/how-to-reach/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Vadakkunnathan_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Vadakkunnathan_Temple",
+  "access": "Thrissur has its own railway station, one of the larger stops in Kerala, with a second station at Poonkunnam to the north. NH47 passes Mannuthy about 6 km from the city and carries both KSRTC and private buses; the nearest airport is Cochin International at Nedumbassery, roughly 50 km away.",
+  "tier": "compact"
  },
  {
   "id": "virupaksha-hampi",
@@ -809,10 +893,15 @@
    {
     "l": "UNESCO WHC — Hampi",
     "u": "https://whc.unesco.org/en/list/241/"
+   },
+   {
+    "l": "Karnataka Tourism — Hampi",
+    "u": "https://karnatakatourism.org/en/destinations/hampi"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Hampi"
+  "wiki": "https://en.wikipedia.org/wiki/Hampi",
+  "access": "Hosapete (Hospet) junction, about 13 km away, is the nearest railhead for Hampi. Jindal Vijayanagar airport lies roughly 40 km off and Kempegowda International at Bengaluru is the nearest international gateway, with Bengaluru about 340 km by road — six to seven hours by car or bus. Taxis, buses and rental bikes run from Hosapete into the site."
  },
  {
   "id": "chennakesava-belur",
@@ -850,10 +939,15 @@
    {
     "l": "UNESCO WHC — Sacred Ensembles of the Hoysalas",
     "u": "https://whc.unesco.org/en/list/1670/"
+   },
+   {
+    "l": "Hassan District Administration — Chennakeshava Temple, Belur",
+    "u": "https://hassan.nic.in/en/tourist-place/chennakeshava-temple-belur/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur"
+  "wiki": "https://en.wikipedia.org/wiki/Chennakeshava_Temple,_Belur",
+  "access": "Belur is about 38 km from Hassan, with regular buses and tourist taxis making the run. Hassan is the rail head, linked to Bengaluru, Mysuru, Hubballi, Shivamogga and Mangaluru; the district has no airport of its own, so the nearest is Bengaluru."
  },
  {
   "id": "hoysaleswara-halebidu",
@@ -891,10 +985,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/1670/"
+   },
+   {
+    "l": "Hassan District Administration — Hoysaleshwara Temple, Halebidu",
+    "u": "https://hassan.nic.in/en/tourist-place/hoysaleshwara-temple-halebeed/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Hoysaleswara_Temple",
+  "access": "Halebidu lies 17 km from Belur and 30 km from Hassan, with regular bus services and taxis from both. Hassan is the nearest railhead, connected to Bengaluru, Mysuru, Hubballi, Shivamogga and Mangaluru; there is no airport in the district, the nearest being Bengaluru."
  },
  {
   "id": "keshava-somanathapura",
@@ -934,7 +1033,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura"
+  "wiki": "https://en.wikipedia.org/wiki/Chennakesava_Temple,_Somanathapura",
+  "tier": "compact"
  },
  {
   "id": "virupaksha-pattadakal",
@@ -972,10 +1072,15 @@
    {
     "l": "UNESCO WHC — Pattadakal",
     "u": "https://whc.unesco.org/en/list/239/"
+   },
+   {
+    "l": "Karnataka Tourism — Pattadakal",
+    "u": "https://karnatakatourism.org/en/destinations/pattadakal"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Pattadakal"
+  "wiki": "https://en.wikipedia.org/wiki/Pattadakal",
+  "access": "Pattadakal is 22 km from Badami by road, with regular buses, taxis and conducted tours from Badami or Bagalkot. Badami, 17 km away, is the nearest railway station, and Hubballi airport is about 140 km off."
  },
  {
   "id": "badami-caves",
@@ -1004,10 +1109,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Badami_cave_temples"
+   },
+   {
+    "l": "Bagalkot District Administration, Govt of Karnataka — Badami Caves",
+    "u": "https://bagalkot.nic.in/en/tourist-place/badami-caves/"
+   },
+   {
+    "l": "Karnataka Tourism — Badami",
+    "u": "https://karnatakatourism.org/en/destinations/badami"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Badami_cave_temples"
+  "wiki": "https://en.wikipedia.org/wiki/Badami_cave_temples",
+  "access": "Badami has its own railway station with direct trains from Bengaluru (an overnight run of about 10–11 hours), Hubballi, Vijayapura and Goa; the nearest airport is Hubballi, roughly 105 km away, and KSRTC runs overnight buses from Bengaluru, some 450 km by NH67. The caves are cut into the cliff above the town and are climbed on foot up uneven rock-cut steps — sixty of them between the first and second cave, with more above — and are open 6 am to 6 pm; sturdy footwear is advised."
  },
  {
   "id": "durga-aihole",
@@ -1036,10 +1150,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole"
+   },
+   {
+    "l": "Bagalkot District Administration, Govt of Karnataka — Aihole",
+    "u": "https://bagalkot.nic.in/en/tourist-place/aihole/"
+   },
+   {
+    "l": "Karnataka Tourism — Aihole",
+    "u": "https://karnatakatourism.org/en/destinations/aihole"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole"
+  "wiki": "https://en.wikipedia.org/wiki/Durga_temple,_Aihole",
+  "access": "Aihole is about 450 km from Bengaluru along NH50 via Bagalkot. The nearest railway station is Bagalkot, 34 km away, and the closest airport is Hubballi at roughly 140 km.",
+  "tier": "compact"
  },
  {
   "id": "shravanabelagola",
@@ -1069,10 +1193,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Gommateshwara_statue"
+   },
+   {
+    "l": "Hassan District Administration, Govt of Karnataka",
+    "u": "https://hassan.nic.in/en/tourist-place/shravanabelgola/"
+   },
+   {
+    "l": "Karnataka Tourism — Shravanabelagola",
+    "u": "https://karnatakatourism.org/en/attractions/shravanabelagola"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Gommateshwara_statue"
+  "wiki": "https://en.wikipedia.org/wiki/Gommateshwara_statue",
+  "access": "Shravanabelagola is about 145 km from Bengaluru, with regular buses and taxis from Hassan and Mysuru, and has its own railway station served by trains from Bengaluru and Mysuru; Mysuru airport is roughly 85 km away. The monolith stands on the hill above the town, reached by climbing more than 600 rock-cut steps."
  },
  {
   "id": "udupi-krishna",
@@ -1099,10 +1232,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha"
+   },
+   {
+    "l": "Udupi District Administration, Govt of Karnataka — Sri Krishna Matt",
+    "u": "https://udupi.nic.in/en/tourist-place/sri-krishna-matt/"
+   },
+   {
+    "l": "Karnataka Tourism — Udupi Shri Krishna Temple",
+    "u": "https://karnatakatourism.org/en/attractions/udupi-shri-krishna-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha"
+  "wiki": "https://en.wikipedia.org/wiki/Udupi_Sri_Krishna_Matha",
+  "access": "Udupi has its own railway station with connections to major cities, and Mangaluru International airport is about 60 km away. Frequent buses and taxis run along NH66 between Mangaluru and Udupi."
  },
  {
   "id": "gokarna-mahabaleshwar",
@@ -1128,13 +1270,23 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mahabaleshwar_Temple,_Gokarna"
+   },
+   {
+    "l": "Uttara Kannada District Administration, Govt of Karnataka — Gokarna",
+    "u": "https://uttarakannada.nic.in/en/tourist-place/gokarna/"
+   },
+   {
+    "l": "Karnataka Tourism — Mahabaleshwar Temple, Gokarna",
+    "u": "https://karnatakatourism.org/en/attractions/mahabaleshwar-temple-gokarna"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Mahabaleshwar_Temple,_Gokarna",
   "circuits": [
    "Paadal Petra Sthalam"
-  ]
+  ],
+  "access": "Gokarna Road railway station, about 9 km from the town, takes trains from Mumbai, Goa, Mangaluru and Bengaluru, with autos and taxis waiting outside; the nearest airports are Dabolim in Goa and Mangaluru International. KSRTC and private buses reach the bus stand near the temple along NH-66. Vehicles are not allowed close to the shrine, so the last stretch is a walk of about ten minutes through the bazaar on Car Street.",
+  "tier": "compact"
  },
  {
   "id": "murudeshwara",
@@ -1163,10 +1315,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Murdeshwar"
+   },
+   {
+    "l": "Uttara Kannada District Administration, Govt of Karnataka — Murdeshwara",
+    "u": "https://uttarakannada.nic.in/en/tourist-place/murdeshwara/"
+   },
+   {
+    "l": "Karnataka Tourism — Murudeshwara",
+    "u": "https://karnatakatourism.org/en/destinations/murudeshwara/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Murdeshwar"
+  "wiki": "https://en.wikipedia.org/wiki/Murdeshwar",
+  "access": "Murudeshwara has its own station on the Konkan Railway line, with direct services from Bengaluru; the nearest airport is Mangaluru International, about 165 km away, with Hubballi a further alternative at roughly 200 km. By road the town sits on the coastal NH66, about 500 km and 10–12 hours from Bengaluru."
  },
  {
   "id": "venkateswara-tirumala",
@@ -1250,7 +1411,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam"
+  "wiki": "https://en.wikipedia.org/wiki/Mallikarjuna_Temple,_Srisailam",
+  "tier": "compact"
  },
  {
   "id": "simhachalam",
@@ -1276,10 +1438,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Simhachalam_Temple"
+   },
+   {
+    "l": "Sri Varaha Lakshmi Narasimha Swamy Devasthanam, Simhachalam (official temple site)",
+    "u": "https://simhachalamdevasthanam.net"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Simhachalam_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Simhachalam_Temple",
+  "access": "The shrine stands on the Simhachalam hills about 16 km from Visakhapatnam. Simhachalam has its own railway station some 3 km from the temple and a bus stop about 1 km away; Visakhapatnam international airport is roughly 28 km off. Autorickshaws, buses and taxis cover the final stretch."
  },
  {
   "id": "kanaka-durga-vijayawada",
@@ -1305,10 +1472,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kanaka_Durga_Temple"
+   },
+   {
+    "l": "NTR District Administration, Govt of Andhra Pradesh",
+    "u": "https://ntr.ap.gov.in/tourist-place/kanaka-durga-temple-vijayawada/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kanaka_Durga_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kanaka_Durga_Temple",
+  "access": "The temple stands on Indrakeeladri hill at the entrance to Vijayawada, so every approach is through the city. The NTR district administration names Vijayawada railway junction as the railhead, Pandit Nehru bus station for road arrivals and Gannavaram airport for flights, and notes the Krishna river bathing ghats about 2 km from the RTC bus stand.",
+  "tier": "compact"
  },
  {
   "id": "srikalahasti",
@@ -1342,7 +1515,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Srikalahasteeswara_temple"
+  "wiki": "https://en.wikipedia.org/wiki/Srikalahasteeswara_temple",
+  "tier": "compact"
  },
  {
   "id": "veerabhadra-lepakshi",
@@ -1372,10 +1546,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Veerabhadra_Temple,_Lepakshi"
+   },
+   {
+    "l": "Sri Sathya Sai District Administration — Tourism",
+    "u": "https://srisathyasai.ap.gov.in/tourism/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Veerabhadra_Temple,_Lepakshi"
+  "wiki": "https://en.wikipedia.org/wiki/Veerabhadra_Temple,_Lepakshi",
+  "access": "The Sri Sathya Sai district administration places Lepakshi about 15 km from Hindupur and 64 km by road from Puttaparthi; it lies roughly 123 km from Bengaluru city and 100 km from the international airport at Devanahalli. The approach is by road, and APTDC runs a Haritha hotel at the village."
  },
  {
   "id": "ramappa-palampet",
@@ -1413,10 +1592,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/1570/"
+   },
+   {
+    "l": "Telangana Tourism — Ramappa",
+    "u": "https://tourism.telangana.gov.in/destinations/ramappa"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ramappa_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Ramappa_Temple",
+  "access": "Telangana Tourism puts the temple about 70 km from Warangal, which is the nearest major railway station; from there it is a bus or hired cab out to Palampet. The nearest airport is Hyderabad, roughly 150 km away, with the rest of the journey by road."
  },
  {
   "id": "bhadrachalam",
@@ -1449,7 +1633,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Bhadrachalam_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Bhadrachalam_Temple",
+  "tier": "compact"
  },
  {
   "id": "kedarnath",
@@ -1492,7 +1677,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kedarnath_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kedarnath_Temple",
+  "tier": "compact"
  },
  {
   "id": "badrinath",
@@ -1567,6 +1753,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Gangotri"
+   },
+   {
+    "l": "Uttarkashi District Administration, Govt of Uttarakhand",
+    "u": "https://uttarkashi.nic.in/tourist-place/gangotri/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -1634,10 +1824,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Hemkund"
+   },
+   {
+    "l": "Chamoli District Administration, Govt of Uttarakhand",
+    "u": "https://chamoli.nic.in/tourist-place/hemkund-sahib/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Hemkund"
+  "wiki": "https://en.wikipedia.org/wiki/Hemkund",
+  "tier": "compact"
  },
  {
   "id": "kashi-vishwanath",
@@ -1760,7 +1955,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Dhamek_Stupa"
+  "wiki": "https://en.wikipedia.org/wiki/Dhamek_Stupa",
+  "tier": "compact"
  },
  {
   "id": "banke-bihari-vrindavan",
@@ -1790,6 +1986,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Bankey_Bihari_Temple"
+   },
+   {
+    "l": "Mathura District Administration, Govt of Uttar Pradesh — Shri Banke Bihari",
+    "u": "https://mathura.nic.in/tourist-place/shri-banke-bihari/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -1876,7 +2076,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Mahabodhi_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Mahabodhi_Temple",
+  "tier": "compact"
  },
  {
   "id": "vishnupad-gaya",
@@ -1905,6 +2106,14 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
+   },
+   {
+    "l": "Bihar Tourism Department, Govt of Bihar — Vishnupad Temple",
+    "u": "https://tourism.bihar.gov.in/en/destinations/gaya/vishnupad-temple"
+   },
+   {
+    "l": "Gaya District Administration — How to Reach",
+    "u": "https://gaya.nic.in/how-to-reach/"
    }
   ],
   "verified": "curated-unverified",
@@ -1919,7 +2128,8 @@
     "note": "No source could be confirmed describing the Vishnupad Temple at Gaya as a Shakta pitha - its Wikipedia article makes no such claim and it is absent from Wikipedia's combined Shakta pithas table, while the Gaya pitha is identified in Wikipedia's 18-list with the separate Mangla Gauri temple (as of 2026).",
     "source": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
    }
-  ]
+  ],
+  "access": "Gaya has its own international airport, with daily Delhi–Gaya–Varanasi flights and further services to Kolkata, Paro and Bangkok. Gaya Junction lies on the Grand Chord section of East Central Railway, served by four Rajdhani trains and the overnight Mahabodhi Express from Delhi (about 12–17 hours); by road NH-83 covers the 120 km from Patna and the Grand Trunk Road passes 30 km south at Dobhi. The temple is inside Gaya town itself."
  },
  {
   "id": "baidyanath-deoghar",
@@ -1949,6 +2159,14 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+   },
+   {
+    "l": "Baba Baidyanath Dham, Deoghar (official temple site)",
+    "u": "https://www.babadham.org/"
+   },
+   {
+    "l": "Deoghar District Administration — How to Reach",
+    "u": "https://deoghar.nic.in/how-to-reach/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -1966,7 +2184,9 @@
     "note": "Wikipedia's Shakta pithas table assigns Sati's heart to Baidyanath Dham, Deoghar at entry 48 and also to Arasuri Ambaji in Gujarat at entry 52, so two sites are named for the same body part (as of 2026).",
     "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
-  ]
+  ],
+  "access": "Jasidih Junction, about 7 km from Deoghar, is the main railhead, with trains from New Delhi, Mumbai, Kolkata, Ranchi, Patna, Varanasi and Bhubaneswar; a branch station, Baidyanath Dham Junction, sits in the town itself, and Deoghar station 5 km out connects Bhagalpur and Dumka. Deoghar (Baba Baidyanath) airport is roughly 12 km from the town, with flights from Kolkata, Ranchi, Patna and Delhi, and JSRTC, WBSTC and private operators run buses in by road.",
+  "tier": "compact"
  },
  {
   "id": "nalanda",
@@ -2003,10 +2223,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/1502/"
+   },
+   {
+    "l": "Nalanda District Administration — How to Reach",
+    "u": "https://nalanda.nic.in/en/how-to-reach/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Nalanda"
+  "wiki": "https://en.wikipedia.org/wiki/Nalanda",
+  "access": "The excavated Mahavihara lies 13 km from Bihar Sharif, 90 km from Patna, 95 km from Gaya and 110 km from Bodh Gaya, all on good roads with regular buses. Rajgir is the closest railway station, though the district administration calls Gaya, 95 km off, the nearest convenient railhead; the nearest airport is Patna at 89 km. Cycle rickshaws, autos and tongas are the only local transport to the ruins."
  },
  {
   "id": "patna-sahib",
@@ -2039,6 +2264,10 @@
    {
     "l": "Wikidata Q30924",
     "u": "https://www.wikidata.org/wiki/Q30924"
+   },
+   {
+    "l": "Patna District Administration — How to Reach",
+    "u": "https://patna.nic.in/how-to-reach/"
    }
   ],
   "verified": "wikidata-2026-08-27",
@@ -2046,7 +2275,8 @@
   "wiki": "https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib",
   "circuits": [
    "Panj Takht"
-  ]
+  ],
+  "access": "The Takht stands in Patna City, one of the stretches of the city that NH-31 runs through. Patna Junction is the principal railway station, on the East Central Railway main line that crosses the whole district, with services from Delhi, Kolkata, Mumbai, Varanasi, Lucknow and Chennai; Jaiprakash Narayan International airport handles flights from Delhi, Mumbai and Kolkata, and intra-city road transport is straightforward from either."
  },
  {
   "id": "golden-temple-amritsar",
@@ -2154,7 +2384,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Vaishno_Devi_Temple",
+  "tier": "compact"
  },
  {
   "id": "amarnath",
@@ -2188,7 +2419,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Amarnath_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Amarnath_Temple",
+  "tier": "compact"
  },
  {
   "id": "martand-sun",
@@ -2217,10 +2449,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+   },
+   {
+    "l": "Ministry of Tourism, Govt of India — Martand Sun Temple",
+    "u": "https://www.incredibleindia.gov.in/en/jammu-and-kashmir/anantnag/martand-sun-temple"
+   },
+   {
+    "l": "Anantnag District Administration — Martand Sun Temple",
+    "u": "https://anantnag.nic.in/tourist-place/martand-sun-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Martand_Sun_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Martand_Sun_Temple",
+  "access": "The ruined temple stands on the plateau above Mattan, which the district administration places a little over five miles from Anantnag town. The nearest airport is Srinagar International, about 50 km away; the same source names Jammu Tawi as the nearest railway station, six to eight hours off by road depending on conditions. Anantnag itself is reached by direct bus or hired taxi from Srinagar or Jammu."
  },
  {
   "id": "shankaracharya-srinagar",
@@ -2249,7 +2490,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Shankaracharya_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Shankaracharya_Temple",
+  "tier": "compact"
  },
  {
   "id": "hemis-monastery",
@@ -2282,7 +2524,8 @@
    }
   ],
   "verified": "wikidata-2026-08-27",
-  "wiki": "https://en.wikipedia.org/wiki/Hemis_Monastery"
+  "wiki": "https://en.wikipedia.org/wiki/Hemis_Monastery",
+  "tier": "compact"
  },
  {
   "id": "jwalamukhi",
@@ -2313,10 +2556,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Jwala_Ji"
+   },
+   {
+    "l": "Kangra District Administration, Govt of Himachal Pradesh — Shri Jawalamukhi Mata Temple",
+    "u": "https://hpkangra.nic.in/tourist-place/shri-jawalamukhi-mata-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Jwala_Ji"
+  "wiki": "https://en.wikipedia.org/wiki/Jwala_Ji",
+  "access": "The temple is about 30 km from Kangra and roughly 56 km from Dharamshala, served by buses, taxis and private vehicles. The nearest broad-gauge railhead is Pathankot, some 123–140 km away; the narrow-gauge halts at Kangra and Jwalamukhi Road are closer but thinly served. Gaggal (Dharamshala) airport, about 46–50 km away, is the nearest, with Chandigarh roughly 200 km and Shimla about 160 km.",
+  "tier": "compact"
  },
  {
   "id": "somnath",
@@ -2396,7 +2645,8 @@
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://www.dwarkadhish.org",
-  "wiki": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple",
+  "tier": "compact"
  },
  {
   "id": "nageshwar",
@@ -2424,6 +2674,14 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Nageshvara_Jyotirlinga"
+   },
+   {
+    "l": "Devbhumi Dwarka District Administration, Govt of Gujarat — Places of Interest",
+    "u": "https://devbhumidwarka.nic.in/places-of-interest/"
+   },
+   {
+    "l": "Devbhumi Dwarka District Administration — Nageshwar Temple",
+    "u": "https://devbhumidwarka.nic.in/tourist-place/nageshwar-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -2435,7 +2693,9 @@
     "note": "Wikipedia's Jyotirlinga article says the Dvadasa Jyotirlinga Stotram places Nagesh in Daruka-vana, most probably the present-day Dwarka region, and adds that Aundha Nagnath in Hingoli district and Jageshwar in Almora district also claim the same slot; the Nageshwar Jyotirlinga article notes the Dwarka reading rests on Darukavana being readable as Dwarakavana, while the deodar-forest argument is used to support Jageshwar (as of 2026).",
     "source": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
    }
-  ]
+  ],
+  "access": "The shrine lies about 16 km from Dwarka, reached by road along the Nageshwar road off National Highway 947. Pilgrims coming by train alight at Dwarka railway station and cover the last 16 km by road. Those flying in land at Jamnagar or Porbandar and continue overland.",
+  "tier": "compact"
  },
  {
   "id": "modhera-sun",
@@ -2469,10 +2729,15 @@
    {
     "l": "ASI",
     "u": "https://asi.nic.in/pages/Monuments"
+   },
+   {
+    "l": "Gujarat Tourism — Sun Temple, Modhera",
+    "u": "https://gujarattourism.com/north-zone/mehsana/sun-temple-modhera.html"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera"
+  "wiki": "https://en.wikipedia.org/wiki/Sun_Temple,_Modhera",
+  "access": "Modhera lies roughly 26 km by road from Mehsana and about 99 km from Ahmedabad, with Gandhinagar some 83 km away. The nearest railhead is Mehsana Junction, about 28 km off and around forty minutes by road. Ahmedabad, some 95 km away and about two hours by road, is the closest airport."
  },
  {
   "id": "ambaji",
@@ -2503,6 +2768,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Ambaji"
+   },
+   {
+    "l": "Banaskantha District Administration, Govt of Gujarat — Ambaji Temple",
+    "u": "https://banaskantha.nic.in/tourist-place/ambaji-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -2514,7 +2783,9 @@
     "note": "The Ambaji article calls it one of the 51 Shakta pithas without citing a source, while Wikipedia's combined Shakta pithas table lists Arasuri Ambaji at entry 52 and assigns Sati's heart both to Ambaji and to Baidyanath Dham at Deoghar (as of 2026).",
     "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
-  ]
+  ],
+  "access": "Abu Road, about 20 km away, is the nearest railway station, with broad-gauge links to Delhi, Jaipur, Jodhpur, Ajmer, Mumbai, Pune, Bengaluru and Chennai. Ambaji lies roughly 45 km from Mount Abu and about 185 km from Ahmedabad, approached either via Himatnagar off National Highway 8 or via Palanpur and Danta on State Highway 56. The nearest airport is Sardar Vallabhbhai Patel International at Ahmedabad, about 179 km off.",
+  "tier": "compact"
  },
  {
   "id": "palitana-shatrunjaya",
@@ -2543,10 +2814,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Palitana_temples"
+   },
+   {
+    "l": "Bhavnagar District Administration, Govt of Gujarat — Palitana Temple",
+    "u": "https://bhavnagar.nic.in/tourist-place/palitana-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Palitana_temples"
+  "wiki": "https://en.wikipedia.org/wiki/Palitana_temples",
+  "tier": "compact"
  },
  {
   "id": "dilwara-mount-abu",
@@ -2573,10 +2849,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Dilwara_Temples"
+   },
+   {
+    "l": "Devasthan Department, Govt of Rajasthan — Delwada Jain Temple, Mount Abu",
+    "u": "https://devasthan.rajasthan.gov.in/images/sirohi/delwadajainmandir.htm"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Dilwara_Temples"
+  "wiki": "https://en.wikipedia.org/wiki/Dilwara_Temples",
+  "tier": "compact"
  },
  {
   "id": "ranakpur",
@@ -2603,10 +2884,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Ranakpur_Jain_temple"
+   },
+   {
+    "l": "Devasthan Department, Govt of Rajasthan — Jain Temple, Ranakpur (Pali)",
+    "u": "https://devasthan.rajasthan.gov.in/images/Pali/jainmandir.htm"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ranakpur_Jain_temple"
+  "wiki": "https://en.wikipedia.org/wiki/Ranakpur_Jain_temple",
+  "tier": "compact"
  },
  {
   "id": "brahma-pushkar",
@@ -2633,10 +2919,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Brahma_Temple,_Pushkar"
+   },
+   {
+    "l": "Devasthan Department, Govt of Rajasthan — Brahmaji Temple, Pushkar",
+    "u": "https://devasthan.rajasthan.gov.in/images/Ajmer/brahmaji.htm"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Brahma_Temple,_Pushkar"
+  "wiki": "https://en.wikipedia.org/wiki/Brahma_Temple,_Pushkar",
+  "tier": "compact"
  },
  {
   "id": "karni-mata-deshnoke",
@@ -2668,7 +2959,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Karni_Mata_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Karni_Mata_Temple",
+  "tier": "compact"
  },
  {
   "id": "kailasa-ellora",
@@ -2705,10 +2997,15 @@
    {
     "l": "UNESCO WHC — Ellora",
     "u": "https://whc.unesco.org/en/list/243/"
+   },
+   {
+    "l": "Chhatrapati Sambhajinagar District Administration — Ellora Leni & Ghrishneshwar, Verul",
+    "u": "https://aurangabad.gov.in/en/tourist-place/ellora-leni-and-ghrishneshwar-jyotirlinga-temple-verul/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora"
+  "wiki": "https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora",
+  "access": "The Kailasa excavation stands inside the Ellora cave complex at Verul, about 31 km from Chhatrapati Sambhajinagar (formerly Aurangabad). The nearest railway station is Chhatrapati Sambhajinagar, roughly 29 km away, and the nearest airport is there too, about 36 km off. State transport buses and private taxis run out to the caves."
  },
  {
   "id": "ajanta-caves",
@@ -2746,10 +3043,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/242/"
+   },
+   {
+    "l": "Chhatrapati Sambhajinagar District Administration — Ajanta caves",
+    "u": "https://aurangabad.gov.in/en/tourist-place/padmapani-painting-ajanta-cave/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ajanta_Caves"
+  "wiki": "https://en.wikipedia.org/wiki/Ajanta_Caves",
+  "access": "Ajanta lies about 103 km by road from Chhatrapati Sambhajinagar (formerly Aurangabad) and is reached by state transport bus or private taxi. The nearest railway station is at Chhatrapati Sambhajinagar, roughly 104 km away, and the nearest airport is there as well, about 108 km distant."
  },
  {
   "id": "elephanta",
@@ -2789,7 +3091,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Elephanta_Caves"
+  "wiki": "https://en.wikipedia.org/wiki/Elephanta_Caves",
+  "tier": "compact"
  },
  {
   "id": "trimbakeshwar",
@@ -2818,11 +3121,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
+   },
+   {
+    "l": "Shri Trimbakeshwar Devsthan Trust — History",
+    "u": "https://trimbakeshwartrust.com/history"
+   },
+   {
+    "l": "Nashik District Administration — Trimbakeshwar Temple",
+    "u": "https://nashik.gov.in/en/tourist-place/trimbakeshwar-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://www.trimbakeshwartrust.com",
-  "wiki": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Trimbakeshwar_Shiva_Temple",
+  "access": "Trimbak village sits about 28 km from Nashik and is well served by Maharashtra state transport buses. The nearest railhead is Nashik Road, roughly 40 km away; the closest airport is Ozar (Nashik) international airport, about 24 km from Nashik city."
  },
  {
   "id": "bhimashankar",
@@ -2851,10 +3163,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+   },
+   {
+    "l": "Pune District Administration, Govt of Maharashtra — Religious Places",
+    "u": "https://pune.gov.in/en/tourism/religious-places/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Bhimashankar_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Bhimashankar_Temple",
+  "tier": "compact"
  },
  {
   "id": "grishneshwar",
@@ -2885,10 +3202,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
+   },
+   {
+    "l": "Chhatrapati Sambhajinagar District Administration, Govt of Maharashtra — Ellora & Ghrishneshwar",
+    "u": "https://aurangabad.gov.in/en/tourist-place/ellora-leni-and-ghrishneshwar-jyotirlinga-temple-verul/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Grishneshwar_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Grishneshwar_Temple",
+  "access": "The temple stands at Verul beside the Ellora caves, about 31 km from Chhatrapati Sambhajinagar (formerly Aurangabad). Chhatrapati Sambhajinagar is both the nearest railway station, roughly 29 km away, and the nearest airport, about 36 km away. State transport buses and private taxis serve the site."
  },
  {
   "id": "shirdi-sai",
@@ -2956,10 +3278,15 @@
    {
     "l": "Official",
     "u": "https://www.siddhivinayak.org"
+   },
+   {
+    "l": "Mumbai City District Administration — Siddhivinayak Temple",
+    "u": "https://mumbaicity.gov.in/en/tourist-place/siddhivinayak-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Siddhivinayak_Temple,_Mumbai"
+  "wiki": "https://en.wikipedia.org/wiki/Siddhivinayak_Temple,_Mumbai",
+  "access": "The temple stands on S. K. Bole Marg in Prabhadevi, about 2.5 km from Dadar railway station; taxis and BEST buses run from Dadar West. Mumbai's domestic terminal at Vile Parle East is roughly 11.4 km away and the international terminal about 12 km."
  },
  {
   "id": "vitthal-pandharpur",
@@ -2985,11 +3312,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Vithoba_Temple"
+   },
+   {
+    "l": "Solapur District Administration, Govt of Maharashtra — Pandharpur",
+    "u": "https://solapur.gov.in/en/tourist-place/pandharpur/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Vithoba_Temple",
-  "patron": "Hoysala & Yadava patronage (1237 inscription)"
+  "patron": "Hoysala & Yadava patronage (1237 inscription)",
+  "access": "Pandharpur lies about 72 km by road from Solapur, the district headquarters. The town has its own railway station on the Kurduwadi–Miraj section of Central Railway. The nearest airports are Pune and Kolhapur."
  },
  {
   "id": "mahakaleshwar-ujjain",
@@ -3061,10 +3393,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Omkareshwar_Temple"
+   },
+   {
+    "l": "Khandwa District Administration, Govt of Madhya Pradesh — Omkareshwar Mandhata",
+    "u": "https://khandwa.nic.in/en/tourist-place/omkareshwar/"
+   },
+   {
+    "l": "Khandwa District Administration — Omkareshwar",
+    "u": "https://khandwa.nic.in/tourist-place/omkareshwar/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Omkareshwar_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Omkareshwar_Temple",
+  "access": "Omkareshwar lies roughly 70 km from Khandwa on the Indore–Edlabad road. Two rail routes serve it indirectly, one ending at Khandwa and the other at Indore, with taxis and buses running from both towns to the temple. Indore is the nearest airport, about 84 km away.",
+  "tier": "compact"
  },
  {
   "id": "khajuraho",
@@ -3102,10 +3444,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/240/"
+   },
+   {
+    "l": "Chhatarpur District Administration — Khajuraho",
+    "u": "https://chhatarpur.nic.in/en/tourist-place/khajuraho/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments"
+  "wiki": "https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments",
+  "access": "Khajuraho has its own airport (code HJR) with services to Delhi, Agra, Varanasi and Mumbai. Khajuraho railway station serves the town, with links towards Delhi, Udaipur and Jhansi, while Chhatarpur station lies about 45 km away. By road the temples are roughly 50 km from the district headquarters at Chhatarpur, on National Highway 86."
  },
  {
   "id": "sanchi",
@@ -3142,10 +3489,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/524/"
+   },
+   {
+    "l": "Madhya Pradesh Tourism (MPSTDC) — Sanchi",
+    "u": "https://www.mptourism.com/destination-sanchi.php"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sanchi"
+  "wiki": "https://en.wikipedia.org/wiki/Sanchi",
+  "access": "Sanchi sits on the Jhansi–Itarsi section of Central Railway, but the most convenient railheads are Vidisha, about 10 km away, and Bhopal, about 49 km. Bhopal, at the same 49 km, is also the nearest airport. Road links run to Bhopal, Vidisha, Raisen, Indore, Sagar and Gwalior."
  },
  {
   "id": "jagannath-puri",
@@ -3222,10 +3574,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/246/"
+   },
+   {
+    "l": "Puri District Administration, Government of Odisha — Konark",
+    "u": "https://puri.odisha.gov.in/en/tourism/tourist-places/konark"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Konark_Sun_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Konark_Sun_Temple",
+  "access": "Konark is about 35 km from Puri, the nearest railway station and a major terminus, and about 60 km from Bhubaneswar. Biju Patnaik International Airport at Bhubaneswar, 60 km away, is the closest airport. Regular buses, taxis and autorickshaws run to Konark from both Puri and Bhubaneswar."
  },
  {
   "id": "lingaraja-bhubaneswar",
@@ -3251,10 +3608,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+   },
+   {
+    "l": "Khordha District Administration, Government of Odisha — Bhubaneswar",
+    "u": "https://khordha.odisha.gov.in/en/tourism/tourist-places/bhubaneswar"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Lingaraja_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Lingaraja_Temple",
+  "access": "The temple stands in the old township of Bhubaneswar. The city is a major railhead on the East Coast Railway with trains from Kolkata, Delhi, Chennai, Hyderabad, Bengaluru and Mumbai, and Biju Patnaik Airport has daily connections to Kolkata and Delhi. The New Bus Stand is at Baramunda on NH16, about 6 km from the town centre.",
+  "tier": "compact"
  },
  {
   "id": "mukteshvara-bhubaneswar",
@@ -3286,7 +3649,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "wiki": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
+  "wiki": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar",
+  "tier": "compact"
  },
  {
   "id": "kalighat-kolkata",
@@ -3321,7 +3685,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kalighat_Kali_Temple",
+  "tier": "compact"
  },
  {
   "id": "dakshineswar",
@@ -3348,11 +3713,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
+   },
+   {
+    "l": "Dakshineswar Kali Temple (official site)",
+    "u": "https://dakshineswarkalitemple.org/"
+   },
+   {
+    "l": "Dakshineswar Kali Temple — official site, Getting Here",
+    "u": "https://www.dakshineswarkalitemple.org/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://www.dakshineswarkalitemple.org",
-  "wiki": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Dakshineswar_Kali_Temple",
+  "access": "The Dakshineswar metro terminus on the Blue Line and Dakshineswar railway station on the Sealdah–Dankuni line both connect straight into the temple by the Skywalk, the easiest approach. Buses and taxis run from all over Kolkata and Howrah, and there is ample parking beside the Skywalk. Ferries across the Hooghly between Chandni Ghat and Belur Math offer a river approach."
  },
  {
   "id": "belur-math",
@@ -3379,11 +3753,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Belur_Math"
+   },
+   {
+    "l": "Howrah District Administration, Govt of West Bengal — Belur Math",
+    "u": "https://howrah.gov.in/tourist-place/belur-math/"
+   },
+   {
+    "l": "Howrah District Administration — Belur Math Temple",
+    "u": "https://howrah.gov.in/tourist-place/belur-math-temple/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://belurmath.org",
-  "wiki": "https://en.wikipedia.org/wiki/Belur_Math"
+  "wiki": "https://en.wikipedia.org/wiki/Belur_Math",
+  "access": "Belur Math is a terminus of the Kolkata suburban railway network on the Eastern Railway main line, with Howrah Junction about 6 km away. Buses from Howrah station run throughout the day and taxis are readily available. The district administration gives Kolkata (CCU) airport as the nearest, about 9 km off."
  },
  {
   "id": "bishnupur-rasmancha",
@@ -3413,10 +3796,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Rasmancha"
+   },
+   {
+    "l": "Bankura District Administration, Govt of West Bengal — Bishnupur",
+    "u": "https://bankura.gov.in/tourist-place/bishnupur/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Rasmancha"
+  "wiki": "https://en.wikipedia.org/wiki/Rasmancha",
+  "access": "Bishnupur is served by regular trains from Kolkata. The town lies in Bankura district, which is well connected by road with Kolkata and with Asansol, Durgapur, Burdwan and Panagarh. The nearest airport is Netaji Subhas Chandra Bose International at Kolkata, about 212 km from Bankura."
  },
  {
   "id": "kamakhya-guwahati",
@@ -3449,11 +3837,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+   },
+   {
+    "l": "Kamrup Metropolitan District, Govt of Assam — Kamakhya Temple",
+    "u": "https://kamrupmetro.assam.gov.in/tourist-place-detail/218"
+   },
+   {
+    "l": "Maa Kamakhya Devalaya — official site, How to Reach",
+    "u": "https://www.maakamakhya.org/reach"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://www.maakamakhya.org",
-  "wiki": "https://en.wikipedia.org/wiki/Kamakhya_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kamakhya_Temple",
+  "access": "Kamakhya station, the second-largest railway station in Guwahati, is the railhead closest to the shrine, while Guwahati station is the city's main hub for long-distance trains. Lokpriya Gopinath Bordoloi International Airport lies roughly 20 km from the city centre. Intercity buses reach Guwahati at three nodal points — Adabari, Paltan Bazar and the ISBT."
  },
  {
   "id": "tripura-sundari-matabari",
@@ -3483,10 +3880,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+   },
+   {
+    "l": "Tripura Tourism, Govt of Tripura — Tripura Sundari Temple",
+    "u": "https://tripuratourism.gov.in/single-tour.php?id=2"
+   },
+   {
+    "l": "Mata Tripura Sundari Temple, Government of Tripura — How to Reach",
+    "u": "https://tripurasundari.tripura.gov.in/how-reach"
    }
   ],
   "verified": "curated-unverified",
-  "wiki": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Tripura_Sundari_Temple",
+  "access": "The temple stands at Matabari, about 60 km by road from Agartala town and roughly 70 km from Agartala airport. The nearest railhead is Matabari station, some 2 km away."
  },
  {
   "id": "tawang-monastery",
@@ -3512,10 +3918,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Tawang_Monastery"
+   },
+   {
+    "l": "Tawang District Administration, Govt of Arunachal Pradesh — History",
+    "u": "https://tawang.nic.in/history/"
+   },
+   {
+    "l": "Tawang District Administration — How to Reach",
+    "u": "https://tawang.nic.in/tourism/how-to-reach/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Tawang_Monastery"
+  "wiki": "https://en.wikipedia.org/wiki/Tawang_Monastery",
+  "access": "Tawang is reached overland on the Guwahati–Bhalukpong–Bomdila–Dirang road, about 480 km and 14 to 16 hours, over hill stretches that turn difficult in snow or heavy rain. The nearest railheads are Rangapara North or Tezpur in Assam, with onward travel by road; airports are Tezpur (Salonibari) about 330 km away, Itanagar (Hollongi) about 440 km and Guwahati about 480 km, and a helicopter runs Guwahati–Tawang in roughly an hour when weather allows. Indian visitors need an Inner Line Permit and foreign nationals a Protected Area Permit."
  },
  {
   "id": "pashupatinath",
@@ -3563,7 +3978,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Pashupatinath_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Pashupatinath_Temple",
+  "tier": "compact"
  },
  {
   "id": "changu-narayan",
@@ -3604,7 +4020,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Changu_Narayan_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Changu_Narayan_Temple",
+  "tier": "compact"
  },
  {
   "id": "muktinath",
@@ -3640,7 +4057,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Muktinath"
+  "wiki": "https://en.wikipedia.org/wiki/Muktinath",
+  "tier": "compact"
  },
  {
   "id": "janaki-mandir",
@@ -3667,10 +4085,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+   },
+   {
+    "l": "Nepal Tourism Board — Janakpur and Vivah Panchami",
+    "u": "https://ntb.gov.np/en/janakpur-and-vivah-panchami"
+   },
+   {
+    "l": "Nepal Tourism Board — Janakpur",
+    "u": "https://ntb.gov.np/janakpur"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Janaki_Mandir"
+  "wiki": "https://en.wikipedia.org/wiki/Janaki_Mandir",
+  "access": "Janakpur lies about 390 km from Kathmandu, roughly a ten-hour drive, and buses for the city leave from the Central Bus Station at Gongabu in Kathmandu. There is also a 40-minute flight from Kathmandu. The temple stands within Janakpur itself."
  },
  {
   "id": "boudhanath",
@@ -3709,7 +4136,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Boudhanath"
+  "wiki": "https://en.wikipedia.org/wiki/Boudhanath",
+  "tier": "compact"
  },
  {
   "id": "swayambhunath",
@@ -3745,10 +4173,16 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/121/"
+   },
+   {
+    "l": "Nepal Tourism Board — Swayambhunath",
+    "u": "https://ntb.gov.np/swayambhunath"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Swayambhunath"
+  "wiki": "https://en.wikipedia.org/wiki/Swayambhunath",
+  "access": "The stupa rests on a hillock about 3 km west of central Kathmandu. Pilgrims climb an exceedingly steep stone stairway to the shrine; alternatively a motor road runs almost to the top, leaving only a short walk.",
+  "patron": "King Manadeva — the Nepal Tourism Board credits the Licchavi ruler with building the stupa, which it dates to about 460 CE."
  },
  {
   "id": "paro-taktsang",
@@ -3775,6 +4209,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Paro_Taktsang"
+   },
+   {
+    "l": "Paro Dzongkhag Administration, Royal Govt of Bhutan — Taktshang (Tiger's Nest) Monastery",
+    "u": "https://paro.gov.bt/tourism/taktshang-tiger-nest-monastery/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -3804,10 +4242,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kyichu_Lhakhang"
+   },
+   {
+    "l": "Paro Dzongkhag Administration, Royal Govt of Bhutan — Kyichu Monastery",
+    "u": "https://paro.gov.bt/tourism/kyichu-monastery/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kyichu_Lhakhang"
+  "wiki": "https://en.wikipedia.org/wiki/Kyichu_Lhakhang",
+  "tier": "compact"
  },
  {
   "id": "temple-of-tooth-kandy",
@@ -3849,7 +4292,8 @@
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://sridaladamaligawa.lk",
-  "wiki": "https://en.wikipedia.org/wiki/Temple_of_the_Tooth"
+  "wiki": "https://en.wikipedia.org/wiki/Temple_of_the_Tooth",
+  "tier": "compact"
  },
  {
   "id": "koneswaram",
@@ -3881,6 +4325,10 @@
    {
     "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
     "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   },
+   {
+    "l": "Central Cultural Fund, Sri Lanka — Trincomalee Fort / Swami Rock",
+    "u": "https://ccf.gov.lk/heritage-sites/trincomalee-fort/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -3889,7 +4337,8 @@
    "Maha Shakti Peetha",
    "Paadal Petra Sthalam",
    "Pancha Ishwaram"
-  ]
+  ],
+  "tier": "compact"
  },
  {
   "id": "nallur-kandaswamy",
@@ -3917,10 +4366,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+   },
+   {
+    "l": "Nallur Kandaswamy Devasthanam — History (official)",
+    "u": "https://nallurkandaswamydevasthanam.org/history/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple"
+  "wiki": "https://en.wikipedia.org/wiki/Nallur_Kandaswamy_temple",
+  "tier": "compact"
  },
  {
   "id": "kataragama",
@@ -3945,10 +4399,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kataragama_temple"
+   },
+   {
+    "l": "Sri Lanka Tourism (SLTDA, official) — Kataragama",
+    "u": "https://srilanka.travel/attraction&attraction_id=169"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kataragama_temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kataragama_temple",
+  "access": "Kataragama is a small town in the south-east of Sri Lanka, 19 km inland from Tissamaharama. The subsidiary shrine of Sella Kataragama lies about four miles further on from the town.",
+  "tier": "compact"
  },
  {
   "id": "ruwanwelisaya",
@@ -3987,7 +4447,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ruwanwelisaya"
+  "wiki": "https://en.wikipedia.org/wiki/Ruwanwelisaya",
+  "tier": "compact"
  },
  {
   "id": "katas-raj",
@@ -4015,7 +4476,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Katas_Raj_Temples"
+  "wiki": "https://en.wikipedia.org/wiki/Katas_Raj_Temples",
+  "tier": "compact"
  },
  {
   "id": "hinglaj-mata",
@@ -4046,7 +4508,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Hinglaj_Mata_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Hinglaj_Mata_Temple",
+  "tier": "compact"
  },
  {
   "id": "sharada-peeth",
@@ -4075,13 +4538,18 @@
    {
     "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
     "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Saraswati (Hindu deity)",
+    "u": "https://www.britannica.com/topic/Saraswati"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Sharada_Peeth",
   "circuits": [
    "Maha Shakti Peetha"
-  ]
+  ],
+  "tier": "compact"
  },
  {
   "id": "dharmarajika-taxila",
@@ -4120,7 +4588,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Dharmarajika_Stupa"
+  "wiki": "https://en.wikipedia.org/wiki/Dharmarajika_Stupa",
+  "tier": "compact"
  },
  {
   "id": "takht-i-bahi",
@@ -4158,7 +4627,8 @@
    }
   ],
   "verified": "wikipedia-corrected-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Takht-i-Bahi"
+  "wiki": "https://en.wikipedia.org/wiki/Takht-i-Bahi",
+  "tier": "compact"
  },
  {
   "id": "bamiyan",
@@ -4196,7 +4666,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Buddhas_of_Bamiyan"
+  "wiki": "https://en.wikipedia.org/wiki/Buddhas_of_Bamiyan",
+  "tier": "compact"
  },
  {
   "id": "dhakeshwari",
@@ -4227,7 +4698,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Dhakeshwari_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Dhakeshwari_Temple",
+  "tier": "compact"
  },
  {
   "id": "kantajew",
@@ -4256,7 +4728,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kantajew_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Kantajew_Temple",
+  "tier": "compact"
  },
  {
   "id": "somapura-paharpur",
@@ -4295,7 +4768,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Somapura_Mahavihara"
+  "wiki": "https://en.wikipedia.org/wiki/Somapura_Mahavihara",
+  "tier": "compact"
  },
  {
   "id": "shwedagon",
@@ -4325,6 +4799,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Shwedagon_Pagoda"
+   },
+   {
+    "l": "UNESCO World Heritage Centre — Tentative List: Shwedagon Pagoda on Singuttara Hill",
+    "u": "https://whc.unesco.org/en/tentativelists/6367/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -4368,7 +4846,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ananda_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Ananda_Temple",
+  "tier": "compact"
  },
  {
   "id": "shwezigon-bagan",
@@ -4407,7 +4886,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Shwezigon_Pagoda"
+  "wiki": "https://en.wikipedia.org/wiki/Shwezigon_Pagoda",
+  "tier": "compact"
  },
  {
   "id": "mahamuni-mandalay",
@@ -4433,10 +4913,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mahamuni_Buddha_Temple"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Mahamuni pagoda, Myanmar",
+    "u": "https://www.britannica.com/place/Mahamuni-pagoda-Myanmar"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Mahamuni_Buddha_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Mahamuni_Buddha_Temple",
+  "tier": "compact"
  },
  {
   "id": "kyaiktiyo",
@@ -4464,7 +4949,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kyaiktiyo_Pagoda"
+  "wiki": "https://en.wikipedia.org/wiki/Kyaiktiyo_Pagoda",
+  "tier": "compact"
  },
  {
   "id": "wat-phra-kaew",
@@ -4492,6 +4978,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Wat_Phra_Kaew"
+   },
+   {
+    "l": "The Grand Palace, Bureau of the Royal Household — History",
+    "u": "https://www.royalgrandpalace.th/en/discover/history"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -4522,10 +5012,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Wat_Arun"
+   },
+   {
+    "l": "UNESCO World Heritage Centre — Tentative List: Phra Prang of Wat Arun Ratchawararam",
+    "u": "https://whc.unesco.org/en/tentativelists/6821/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Wat_Arun"
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Arun",
+  "tier": "compact"
  },
  {
   "id": "wat-pho",
@@ -4551,10 +5046,19 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Wat_Pho"
+   },
+   {
+    "l": "UNESCO Memory of the World — Epigraphic Archives of Wat Pho",
+    "u": "https://www.unesco.org/en/memory-world/epigraphic-archives-wat-pho"
+   },
+   {
+    "l": "Wat Pho official temple site — Trip to Wat Pho",
+    "u": "https://www.watpho.com/en/contact/trip"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Wat_Pho"
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Pho",
+  "access": "Wat Pho stands at 2 Sanam Chai Road in Phra Nakhon, old Bangkok, beside the Grand Palace. The MRT Blue Line serves it directly at Wat Pho station, exit 1, and city bus routes 1, 3, 6, 9, 12, 25, 32, 44, 47, 48, 53 and 82 plus air-conditioned routes A1, A4, A12, A44, A48, 507 and 508 stop nearby. Arriving by river, get off at Tha Chang or Wat Arun pier and take the cross-river ferry to Tha Tien; paid parking is on Chetuphon Road."
  },
  {
   "id": "phanom-rung",
@@ -4580,10 +5084,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+   },
+   {
+    "l": "UNESCO World Heritage Centre — Tentative List: Ensemble of Phanom Rung, Muang Tam and Plai Bat Sanctuaries",
+    "u": "https://whc.unesco.org/en/tentativelists/6401/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park"
+  "wiki": "https://en.wikipedia.org/wiki/Phanom_Rung_Historical_Park",
+  "tier": "compact"
  },
  {
   "id": "phimai",
@@ -4609,10 +5118,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Phimai_Historical_Park"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Nakhon Ratchasima",
+    "u": "https://www.britannica.com/place/Nakhon-Ratchasima"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Phimai_Historical_Park"
+  "wiki": "https://en.wikipedia.org/wiki/Phimai_Historical_Park",
+  "tier": "compact"
  },
  {
   "id": "doi-suthep",
@@ -4641,7 +5155,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep"
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_That_Doi_Suthep",
+  "tier": "compact"
  },
  {
   "id": "angkor-wat",
@@ -4726,7 +5241,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Bayon"
+  "wiki": "https://en.wikipedia.org/wiki/Bayon",
+  "tier": "compact"
  },
  {
   "id": "banteay-srei",
@@ -4765,7 +5281,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Banteay_Srei"
+  "wiki": "https://en.wikipedia.org/wiki/Banteay_Srei",
+  "tier": "compact"
  },
  {
   "id": "ta-prohm",
@@ -4804,7 +5321,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ta_Prohm"
+  "wiki": "https://en.wikipedia.org/wiki/Ta_Prohm",
+  "tier": "compact"
  },
  {
   "id": "preah-vihear",
@@ -4843,7 +5361,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Preah_Vihear_Temple",
+  "tier": "compact"
  },
  {
   "id": "sambor-prei-kuk",
@@ -4882,7 +5401,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk"
+  "wiki": "https://en.wikipedia.org/wiki/Sambor_Prei_Kuk",
+  "tier": "compact"
  },
  {
   "id": "vat-phou",
@@ -4917,10 +5437,16 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/481/"
+   },
+   {
+    "l": "Tourism Laos (Ministry of Information, Culture & Tourism) — Champasak Province",
+    "u": "https://www.tourismlaos.org/southern-provinces/champasak-province/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Vat_Phou"
+  "wiki": "https://en.wikipedia.org/wiki/Vat_Phou",
+  "access": "In Champasak province, southern Laos: the temple stands on the west bank of the Mekong, about 45 km south of Pakse.",
+  "tier": "compact"
  },
  {
   "id": "pha-that-luang",
@@ -4946,10 +5472,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Pha_That_Luang"
+   },
+   {
+    "l": "UNESCO World Heritage Centre — Tentative List: That Luang de Vientiane",
+    "u": "https://whc.unesco.org/en/tentativelists/391/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Pha_That_Luang"
+  "wiki": "https://en.wikipedia.org/wiki/Pha_That_Luang",
+  "tier": "compact"
  },
  {
   "id": "my-son",
@@ -4985,10 +5516,15 @@
    {
     "l": "UNESCO WHC",
     "u": "https://whc.unesco.org/en/list/949/"
+   },
+   {
+    "l": "My Son World Cultural Heritage Management Board (official)",
+    "u": "https://mysonsanctuary.com.vn/"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n"
+  "wiki": "https://en.wikipedia.org/wiki/M%E1%BB%B9_S%C6%A1n",
+  "access": "The sanctuary lies at My Son village, Thu Bon commune, in the hills inland from the central Vietnamese coast. The site's management board gives the road distances as 45 km from Hoi An, 68 km from Da Nang and 145 km from Hue."
  },
  {
   "id": "po-nagar",
@@ -5013,10 +5549,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Po_Nagar"
+   },
+   {
+    "l": "Ministry of Culture, Sports and Tourism, Viet Nam — Thap Ba Ponagar special national relic",
+    "u": "https://bvhttdl.gov.vn/xem-xet-cong-nhan-thap-ba-ponagar-la-di-tich-quoc-gia-dac-biet-20240909085457948.htm"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Po_Nagar"
+  "wiki": "https://en.wikipedia.org/wiki/Po_Nagar",
+  "tier": "compact"
  },
  {
   "id": "batu-caves",
@@ -5043,6 +5584,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Batu_Caves"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Batu Caves",
+    "u": "https://www.britannica.com/place/Batu-Caves"
    }
   ],
   "verified": "wikipedia-2026-08-26",
@@ -5075,7 +5620,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sri_Mahamariamman_Temple,_Kuala_Lumpur"
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Mahamariamman_Temple,_Kuala_Lumpur",
+  "tier": "compact"
  },
  {
   "id": "bujang-valley",
@@ -5100,10 +5646,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Bujang_Valley"
+   },
+   {
+    "l": "Department of Museums Malaysia (JMM) — Lembah Bujang Archaeological Museum",
+    "u": "https://www.jmm.gov.my/en/museum/lembah-bujang-archaeological-museum"
+   },
+   {
+    "l": "Department of Museums Malaysia (JMM) — Lembah Bujang Archaeological Museum",
+    "u": "https://www.jmm.gov.my/en/content/lembah-bujang-archaeological-museum"
    }
   ],
   "verified": "wikipedia-corrected-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Bujang_Valley"
+  "wiki": "https://en.wikipedia.org/wiki/Bujang_Valley",
+  "access": "The valley's remains are entered through the Lembah Bujang Archaeological Museum at Pekan Merbok, Kedah (08400). The museum's own published direction is by bus: from Sungai Petani bus terminal, take the Sungai Petani shuttle to Merbok.",
+  "tier": "compact"
  },
  {
   "id": "kek-lok-si",
@@ -5129,10 +5685,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kek_Lok_Si"
+   },
+   {
+    "l": "Kek Lok Si Temple — About (official temple site)",
+    "u": "https://kekloksitemple.com/?page_id=5"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Kek_Lok_Si"
+  "wiki": "https://en.wikipedia.org/wiki/Kek_Lok_Si",
+  "tier": "compact"
  },
  {
   "id": "sri-mariamman-sg",
@@ -5158,11 +5719,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+   },
+   {
+    "l": "National Heritage Board (Roots) — Sri Mariamman Temple, National Monument",
+    "u": "https://www.roots.gov.sg/places/places-landing/Places/national-monuments/sri-mariamman-temple"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://www.smt.org.sg",
-  "wiki": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore"
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Mariamman_Temple,_Singapore",
+  "tier": "compact"
  },
  {
   "id": "borobudur",
@@ -5202,7 +5768,8 @@
   ],
   "verified": "wikipedia-2026-08-26",
   "website": "https://borobudurpark.com",
-  "wiki": "https://en.wikipedia.org/wiki/Borobudur"
+  "wiki": "https://en.wikipedia.org/wiki/Borobudur",
+  "tier": "compact"
  },
  {
   "id": "prambanan",
@@ -5241,7 +5808,8 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Prambanan"
+  "wiki": "https://en.wikipedia.org/wiki/Prambanan",
+  "tier": "compact"
  },
  {
   "id": "besakih",
@@ -5268,10 +5836,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Besakih_Temple"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Mount Agung",
+    "u": "https://www.britannica.com/place/Mount-Agung"
+   },
+   {
+    "l": "Indonesia.travel (Ministry of Tourism) — Pura Besakih",
+    "u": "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/bali/bali---pura-besakih"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Besakih_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Besakih_Temple",
+  "access": "Besakih village sits at about 900 m on the western slopes of Mount Agung in eastern Bali, roughly 25 km by car from north Denpasar and some 20 km north of Klungkung town. From Kuta the drive takes about two hours — east towards Sanur, along the coastal route to the Kusamba bypass at Tohpati, then north to the signed Besakih turn; from Karangasem an inland road meets the Besakih–Klungkung crossroad at Rendang. Public bemos serve the route with a change at Rendang.",
+  "tier": "compact"
  },
  {
   "id": "tanah-lot",
@@ -5297,10 +5875,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Tanah_Lot"
+   },
+   {
+    "l": "Indonesia.travel (Ministry of Tourism) — Tanah Lot",
+    "u": "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/bali/tanah-lot"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Tanah_Lot"
+  "wiki": "https://en.wikipedia.org/wiki/Tanah_Lot",
+  "access": "The temple stands at Beraban village, Kediri sub-district in Tabanan, roughly 30 km from Ngurah Rai airport at Denpasar. The approach is by the main highway towards Kediri, where a signed junction turns south-west for Tanah Lot; from there visitors cross open ground and climb a rise to reach the temple."
  },
  {
   "id": "uluwatu",
@@ -5326,10 +5909,15 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Uluwatu_Temple"
+   },
+   {
+    "l": "Indonesia.travel (Ministry of Tourism) — Bali temples and how to reach them",
+    "u": "https://www.indonesia.travel/us/en/travel-ideas/heritage/6-must-visit-temples-in-bali-to-experience-bliss"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Uluwatu_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Uluwatu_Temple",
+  "access": "Pura Luhur Uluwatu stands at Pecatu on the southern Bukit peninsula of Bali, about 45 minutes to an hour by car or scooter from Kuta or Seminyak."
  },
  {
   "id": "dieng-arjuna",
@@ -5354,10 +5942,20 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Dieng_temples"
+   },
+   {
+    "l": "Encyclopaedia Britannica — Candi (Indonesian temple)",
+    "u": "https://www.britannica.com/topic/candi"
+   },
+   {
+    "l": "Indonesia.travel (Ministry of Tourism) — Dieng Plateau",
+    "u": "https://www.indonesia.travel/gb/en/destination/java/central-java/dieng-plateau"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Dieng_temples"
+  "wiki": "https://en.wikipedia.org/wiki/Dieng_temples",
+  "access": "The Dieng plateau straddles the Wonosobo and Banjarnegara regencies of Central Java at roughly 2,000 m above sea level. It is a three to four hour drive from Yogyakarta via Magelang and Wonosobo, three to four hours from Semarang via Temanggung and Wonosobo, or about three hours from Purwokerto via Banjarnegara; intercity buses run on all three routes. The temple grounds are generally open 07:00–17:00.",
+  "tier": "compact"
  },
  {
   "id": "azhagiya-manavala-uraiyur",
