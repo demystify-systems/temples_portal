@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "palakkavu-bhagavathi-edava",
+    "name": "Palakkavu Bhagavathi Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Edava (Thiruvananthapuram district)",
+    "lat": 8.765,
+    "lng": 76.6894,
+    "tradition": "Hindu",
+    "deity": "Bhadrakali, worshipped as Palakkavilamma",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A goddess shrine at Edava, a few kilometres north of Varkala in southern Kerala, described as one of the older Devi temples of the region. Its ten-day Karthika Thirunal Mahothsavam, held in the Malayalam month of Kumbham, is the main annual festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Palakkavu_Bhagavathi_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Palakkavu_Bhagavathi_Temple"
+      },
+      {
+        "l": "Wikidata Q10861970",
+        "u": "https://www.wikidata.org/wiki/Q10861970"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "sringapuram-mahadeva-kodungallur",
+    "name": "Sringapuram Mahadeva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Kodungallur (Thrissur district)",
+    "lat": 10.218,
+    "lng": 76.201,
+    "tradition": "Hindu",
+    "deity": "Shiva (Mahadeva)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Shiva temple at Kodungallur in Thrissur district, standing beside the Kodungallur Kovilakam palace. Maha Shivaratri is its principal festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Sringapuram_Mahadeva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Sringapuram_Mahadeva_Temple"
+      },
+      {
+        "l": "Wikidata Q7586430",
+        "u": "https://www.wikidata.org/wiki/Q7586430"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "vishahareswara-paruthiyur",
+    "name": "Vishahareswara Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Avanam Paruthiyur (Thiruvarur district)",
+    "lat": 10.8782,
+    "lng": 79.5132,
+    "tradition": "Hindu",
+    "deity": "Shiva as Vishahareswarar, with Prasanna Parvathy",
+    "built": [
+      870,
+      901
+    ],
+    "builtDisplay": "late 9th c. (Aditya Chola); restored 1905",
+    "dynasty": "Chola",
+    "circuits": [],
+    "significance": "A Shiva temple on the Kudamurutti branch of the Kaveri in Thiruvarur district, counted among the 108 riverside shrines attributed to the Chola king Aditya I. It was extensively restored by Paruthiyur Krishna Sastrigal with a kumbhabhishekam in 1905 and renovated again in 2017.",
+    "story": "The name means remover of poison: Shiva is said to have healed the Sun here after Rahu poisoned him, and worshippers seek the shrine's protection from snake venom and malefic planets.",
+    "wiki": "https://en.wikipedia.org/wiki/Vishahareswara_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Vishahareswara_Temple"
+      },
+      {
+        "l": "Wikidata Q7935914",
+        "u": "https://www.wikidata.org/wiki/Q7935914"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "madavar-vilagam-vaidyanathar",
+    "name": "Madavar Vilagam Vaidyanathar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Madavar Vilagam, Srivilliputhur (Virudhunagar district)",
+    "lat": 9.5014,
+    "lng": 77.6264,
+    "tradition": "Hindu",
+    "deity": "Shiva as Vaidyanathar, the god of healing, with Sivakami",
+    "built": [
+      1500,
+      1600
+    ],
+    "builtDisplay": "16th c. (Nayak)",
+    "dynasty": "Nayak",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Shiva temple a kilometre south of Srivilliputhur, entered through a five-tiered gateway tower within a granite enclosure. Its pillared halls and major shrines were commissioned in the 16th century under Pandya, Vijayanagara and Nayak patronage, and Shiva is venerated here specifically as a healer.",
+    "story": "Local tradition holds that Thirumalai Nayak, afflicted by persistent stomach pain, was cured after a forty-eight-day stay at the temple and built the Natarajar hall in gratitude.",
+    "wiki": "https://en.wikipedia.org/wiki/Madavar_Vilagam_Vaidyanathar_temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Madavar_Vilagam_Vaidyanathar_temple"
+      },
+      {
+        "l": "Wikidata Q12987008",
+        "u": "https://www.wikidata.org/wiki/Q12987008"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "nilakantha-siva-bhubaneswar",
+    "name": "Nilakantha Siva Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.235,
+    "lng": 85.8333,
+    "tradition": "Hindu",
+    "deity": "Shiva, as a lingam set in a circular yoni pitha",
+    "built": [
+      1000,
+      1100
+    ],
+    "builtDisplay": "11th c.",
+    "dynasty": "Undetermined",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "An eleventh-century laterite shrine of rekha deul form with a pidha deul jagamohana, standing in the Kharakhia Baidyanatha precinct of Bhubaneswar's Old Town. It remains a living temple where Sivaratri and Sankranti are observed, and carries niche images of Kartikeya and Parvati with a Gajalakshmi lintel.",
+    "wiki": "https://en.wikipedia.org/wiki/Nilakantha_Siva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nilakantha_Siva_Temple"
+      },
+      {
+        "l": "Wikidata Q7036858",
+        "u": "https://www.wikidata.org/wiki/Q7036858"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thalagireeshwarar-panamalai",
+    "name": "Thalagireeshwarar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Panamalai (Viluppuram district)",
+    "lat": 12.1042,
+    "lng": 79.3786,
+    "tradition": "Hindu",
+    "deity": "Shiva as Talagirisvara, enshrined as a Dharalingam",
+    "built": [
+      600,
+      700
+    ],
+    "builtDisplay": "7th c. (Narasimhavarman II)",
+    "dynasty": "Pallava",
+    "style": "Pallava",
+    "circuits": [],
+    "significance": "A Pallava shrine built by Narasimhavarman II on a hillock above the Panamalai lake, its three-tiered vimana closely echoing the Kailasanatha temple, with squatting-lion pillars typical of the dynasty. Its painted panel of the dancing Shiva is among the earliest known representations of Nataraja.",
+    "wiki": "https://en.wikipedia.org/wiki/Thalagireeshwarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thalagireeshwarar_Temple"
+      },
+      {
+        "l": "Wikidata Q7678796",
+        "u": "https://www.wikidata.org/wiki/Q7678796"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "changankulangara-mahadeva",
+    "name": "Changankulangara Mahadeva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Changankulangara, Karunagappally (Kollam district)",
+    "lat": 9.1088,
+    "lng": 76.5211,
+    "tradition": "Hindu",
+    "deity": "Shiva (Mahadeva)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Shiva temple near Karunagappally in Kollam district, counted among the 108 Shiva shrines. Maha Shivaratri and Thiruvathira are its chief festivals.",
+    "wiki": "https://en.wikipedia.org/wiki/Changankulangara_Mahadeva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Changankulangara_Mahadeva_Temple"
+      },
+      {
+        "l": "Wikidata Q13111867",
+        "u": "https://www.wikidata.org/wiki/Q13111867"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thirumalai-kovil-panpoli",
+    "name": "Thirumalai Kovil",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Panpoli, Sengottai (Tenkasi district)",
+    "lat": 8.9483,
+    "lng": 77.275,
+    "tradition": "Hindu",
+    "deity": "Murugan",
+    "built": [
+      1800,
+      1854
+    ],
+    "builtDisplay": "19th c. (Sivakami Ammaiyar)",
+    "dynasty": "Modern",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A hilltop Murugan shrine near Sengottai in the Western Ghats, reached by 625 steps, and one of the Vaippu Sthalam shrines named in the Nayanar hymns. The present temple was funded in the nineteenth century by Thiruvarutchelvar Sivakami Ammaiyar, who sold all her property to pay for it.",
+    "wiki": "https://en.wikipedia.org/wiki/Thirumalai_Kovil",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thirumalai_Kovil"
+      },
+      {
+        "l": "Wikidata Q7785321",
+        "u": "https://www.wikidata.org/wiki/Q7785321"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "nili-chhatri-delhi",
+    "name": "Nili Chhatri",
+    "country": "India",
+    "state": "Delhi",
+    "place": "Old Delhi",
+    "lat": 28.6653,
+    "lng": 77.2365,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1565,
+      1565
+    ],
+    "builtDisplay": "1565 (surviving structure)",
+    "dynasty": "Mughal",
+    "circuits": [],
+    "significance": "A Shiva shrine beside the Yamuna near Salimgarh Fort in Old Delhi. The surviving octagonal building, faced in green, blue, yellow and orange encaustic tiles over stone and masonry, is documented as the tomb of Naubat Khan, raised in 1565 during Akbar's reign.",
+    "story": "Tradition holds that Yudhishthira, eldest of the Pandava brothers, founded the temple here and performed his ceremonial rites at the spot.",
+    "wiki": "https://en.wikipedia.org/wiki/Nili_Chhatri",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nili_Chhatri"
+      },
+      {
+        "l": "Wikidata Q7037090",
+        "u": "https://www.wikidata.org/wiki/Q7037090"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ashtamangalam-siva-thrissur",
+    "name": "Ashtamangalam Siva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Ashtamangalam, Karyattukara (Thrissur district)",
+    "lat": 10.518,
+    "lng": 76.1866,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Shiva temple at Karyattukara in Thrissur city, built in Kerala style with east-facing sanctums. Maha Shivaratri, celebrated in the Malayalam month of Kumbha, is its main festival.",
+    "story": "It is held to be one of the 108 Shiva temples of Kerala consecrated by the sage Parasurama.",
+    "wiki": "https://en.wikipedia.org/wiki/Ashtamangalam_Siva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ashtamangalam_Siva_Temple"
+      },
+      {
+        "l": "Wikidata Q13110167",
+        "u": "https://www.wikidata.org/wiki/Q13110167"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "velorvattom-mahadeva-cherthala",
+    "name": "Velorvattom Sri Mahadeva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Cherthala (Alappuzha district)",
+    "lat": 9.6946,
+    "lng": 76.3277,
+    "tradition": "Hindu",
+    "deity": "Shiva, worshipped in two forms as Thekkanappan and Vadakkanappan",
+    "built": [
+      600,
+      700
+    ],
+    "builtDisplay": "7th c. (Azhvanchery Thamprakkal)",
+    "dynasty": "Azhvanchery Thamprakkal",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Shiva temple at Cherthala counted among Kerala's 108 Shiva shrines, and one of very few in the state with two nalambalams and two flagstaffs. Many Kerala families regard it as their ancestral moolasthanam.",
+    "story": "The temple's Shiva image is said to have been installed by the sage Parasurama himself.",
+    "wiki": "https://en.wikipedia.org/wiki/Velorvattom_Sri_Mahadeva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Velorvattom_Sri_Mahadeva_Temple"
+      },
+      {
+        "l": "Wikidata Q16133899",
+        "u": "https://www.wikidata.org/wiki/Q16133899"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "neemach-mata-udaipur",
+    "name": "Neemach Mata Temple",
+    "country": "India",
+    "state": "Rajasthan",
+    "place": "Udaipur",
+    "lat": 24.61,
+    "lng": 73.6781,
+    "tradition": "Hindu",
+    "deity": "Neemach Mata Devi",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A goddess shrine set on a hill above Fateh Sagar Lake in Udaipur, its sanctum holding a stone image of Neemach Mata alongside Ganesha and three stone lions. Long reached only by a 900-metre climb, it gained a monocable ropeway in January 2024.",
+    "wiki": "https://en.wikipedia.org/wiki/Neemach_Mata_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Neemach_Mata_Temple"
+      },
+      {
+        "l": "Wikidata Q6986857",
+        "u": "https://www.wikidata.org/wiki/Q6986857"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "otc-hanuman-palayam",
+    "name": "O.T.C. Hanuman Temple, Palayam",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Palayam, Thiruvananthapuram",
+    "lat": 8.5078,
+    "lng": 76.9497,
+    "tradition": "Hindu",
+    "deity": "Hanuman",
+    "built": [
+      1700,
+      1800
+    ],
+    "builtDisplay": "18th c. (Travancore)",
+    "dynasty": "Travancore",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Hanuman temple in central Thiruvananthapuram whose image was carried to the city by Travancore cavalry soldiers after the capital moved from Padmanabhapuram in the wake of Marthanda Varma's reign. It first stood on the grounds of an Officers Training Camp, which gave the temple its initials, and is now run by the Travancore Devaswom Board.",
+    "wiki": "https://en.wikipedia.org/wiki/O.T.C._Hanuman_Temple,_Palayam",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/O.T.C._Hanuman_Temple,_Palayam"
+      },
+      {
+        "l": "Wikidata Q7072079",
+        "u": "https://www.wikidata.org/wiki/Q7072079"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "oorpazhachi-kavu-edakkad",
+    "name": "Oorpazhachi Kavu",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Edakkad (Kannur district)",
+    "lat": 11.8251,
+    "lng": 75.4359,
+    "tradition": "Hindu",
+    "deity": "Bhagavathy, Sree Oorpazhachi Daivathar and Vettakkorumakan (Kiratha sunu)",
+    "built": [
+      1845,
+      1899
+    ],
+    "builtDisplay": "enlarged 1845–1899",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A sacred-grove shrine at Edakkad in Kannur district with three principal deities, rebuilt and enlarged between 1845 and 1899 after its images had been moved for safety during Tipu Sultan's campaigns in the 1790s. Hereditary trustees drawn from nine Nambiar families administer it.",
+    "story": "Temple lore recounts Kali becoming the gentle Gauri through penance, Vishnu appearing in the guise of a hunter to Vettakkorumakan, and Rama coming here to seek relief from the affliction of Shani.",
+    "wiki": "https://en.wikipedia.org/wiki/Oorpazhachi_Kavu",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Oorpazhachi_Kavu"
+      },
+      {
+        "l": "Wikidata Q7095413",
+        "u": "https://www.wikidata.org/wiki/Q7095413"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "iluppaipattu-neelakandeswarar",
+    "name": "Iluppaipattu Neelakandeswarar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Iluppaipattu (Mayiladuthurai district)",
+    "lat": 11.2056,
+    "lng": 79.5931,
+    "tradition": "Hindu",
+    "deity": "Shiva as Thiruneelakandeswarar (Padikarai Nathar), with Amirthavalli",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple on the banks of the Kaveri at Iluppaipattu in Mayiladuthurai district, also known as Tirumannippadikkarai. It is one of the 275 Paadal Petra Sthalams praised in the early medieval Tevaram hymns of the Nayanar saint Sundarar.",
+    "wiki": "https://en.wikipedia.org/wiki/Iluppaipattu_Neelakandeswarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Iluppaipattu_Neelakandeswarar_Temple"
+      },
+      {
+        "l": "Wikidata Q12974925",
+        "u": "https://www.wikidata.org/wiki/Q12974925"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "karaneeswarar-saidapet",
+    "name": "Karaneeswarar Temple, Saidapet",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Saidapet, Chennai",
+    "lat": 13.0247,
+    "lng": 80.2231,
+    "tradition": "Hindu",
+    "deity": "Shiva as Karaneeswarar, with Swarnambika",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "An old Shiva temple next to Saidapet railway station in Chennai, laid out with two prakarams and a seven-tiered gopuram.",
+    "story": "The temple's origin story has Indra install a linga here and pray to Shiva to lift a curse from the divine cow Kamadhenu, receiving in return the title Gopathi, lord of cows.",
+    "wiki": "https://en.wikipedia.org/wiki/Karaneeswarar_Temple,_Saidapet",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Karaneeswarar_Temple,_Saidapet"
+      },
+      {
+        "l": "Wikidata Q12980197",
+        "u": "https://www.wikidata.org/wiki/Q12980197"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "omampuliyur-thuyartheertanathar",
+    "name": "Omampuliyur Thuyartheertanathar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Omampuliyur (Cuddalore district)",
+    "lat": 11.2144,
+    "lng": 79.5583,
+    "tradition": "Hindu",
+    "deity": "Shiva as Pranava Vyakrapureeswarar, with Poongodi Nayaki",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple on the northern bank of the Kaveri at Omampuliyur in Cuddalore district, one of the 275 Paadal Petra Sthalams sung by the Nayanars Tirugnanasambandar and Tirunavukkarasar.",
+    "story": "It is counted among the Nava Puliyur temples said to have been worshipped by the sages Patanjali and Vyaghrapada.",
+    "wiki": "https://en.wikipedia.org/wiki/Omampuliyur_Thuyartheertanathar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Omampuliyur_Thuyartheertanathar_Temple"
+      },
+      {
+        "l": "Wikidata Q12975995",
+        "u": "https://www.wikidata.org/wiki/Q12975995"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kurumanakkudi-kannayiram-udayar",
+    "name": "Kurumanakkudi Kannayiram Udayar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Kurumanakkudi (Mayiladuthurai district)",
+    "lat": 11.1792,
+    "lng": 79.7314,
+    "tradition": "Hindu",
+    "deity": "Shiva as Kannayiram Udayar (Kannayiranathar), with Murugu Valar Kothi Naayaki",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple at Kurumanakkudi in Mayiladuthurai district, one of the 275 Paadal Petra Sthalams celebrated in the Tevaram hymns of Tirugnanasambandar.",
+    "story": "Vishnu in his dwarf form as Vamana is believed to have worshipped Shiva at this spot.",
+    "wiki": "https://en.wikipedia.org/wiki/Kurumanakkudi_Kannayiram_Udayar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kurumanakkudi_Kannayiram_Udayar_Temple"
+      },
+      {
+        "l": "Wikidata Q12984034",
+        "u": "https://www.wikidata.org/wiki/Q12984034"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "panchavatee-hanuman-pappanchavadi",
+    "name": "Panchavatee Hanuman Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Pappanchavadi, Vanur taluk (Viluppuram district)",
+    "lat": 12.0097,
+    "lng": 79.7722,
+    "tradition": "Hindu",
+    "deity": "Panchamukha Anjaneya, the five-faced Hanuman",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Hanuman temple in the village of Pappanchavadi in Vanur taluk, about nine kilometres from Puducherry, where the deity is worshipped in his five-faced Panchamukha form.",
+    "wiki": "https://en.wikipedia.org/wiki/Panchavatee_Hanuman_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Panchavatee_Hanuman_Temple"
+      },
+      {
+        "l": "Wikidata Q12985493",
+        "u": "https://www.wikidata.org/wiki/Q12985493"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "neelamperoor-palli-bhagavathi",
+    "name": "Neelamperoor Palli Bhagavathi Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Neelamperoor (Alappuzha district)",
+    "lat": 9.4965,
+    "lng": 76.5056,
+    "tradition": "Hindu",
+    "deity": "Vanadurga (Bhagavathy)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Bhagavathy temple in Neelamperoor village, Alappuzha district, whose presiding form is Vanadurga. It is best known across Kerala for its Padayani festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Neelamperoor_Palli_Bhagavathi_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Neelamperoor_Palli_Bhagavathi_Temple"
+      },
+      {
+        "l": "Wikidata Q6986781",
+        "u": "https://www.wikidata.org/wiki/Q6986781"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thirukoteeswarar-thirukodikaval",
+    "name": "Thirukoteeswarar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Thirukodikaval (Thanjavur district)",
+    "lat": 11.0495,
+    "lng": 79.5128,
+    "tradition": "Hindu",
+    "deity": "Shiva as Thirukoteeswarar, with Vadivambigai",
+    "built": [
+      979,
+      979
+    ],
+    "builtDisplay": "979 (Sembiyan Mahadevi); inscriptions from c. 750",
+    "origin": 750,
+    "dynasty": "Chola",
+    "style": "Chola",
+    "circuits": [],
+    "significance": "A Shiva temple at Thirukodikaval on the northern bank of the Kaveri in Thanjavur district. Its present structure is credited to Sembiyan Mahadevi, mother of Uttama Chola, in 979, while the earliest inscriptions on the site date from about 750 in the Pallava period; the Nayanars Appar and Sambandar sang its praises.",
+    "wiki": "https://en.wikipedia.org/wiki/Thirukoteeswarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thirukoteeswarar_Temple"
+      },
+      {
+        "l": "Wikidata Q7785299",
+        "u": "https://www.wikidata.org/wiki/Q7785299"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "keshav-rai-keshoraipatan",
+    "name": "Keshav Rai Temple",
+    "country": "India",
+    "state": "Rajasthan",
+    "place": "Keshoraipatan (Bundi district)",
+    "lat": 25.289,
+    "lng": 75.939,
+    "tradition": "Hindu",
+    "deity": "Vishnu as Keshav Rai (Keshavaraiji)",
+    "built": [
+      1250,
+      1641
+    ],
+    "builtDisplay": "begun 1250, completed 1641",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Vishnu temple above the Chambal at Keshoraipatan in Bundi district, begun by Raja Ranti Deo in 1250 and finished four generations later by Rao Raja Chattar Sal in 1641. Its pyramidal shikhara, carved walls and Rajasthani canopies enclose a white stone image of Keshavaraiji seated in lotus posture with discus and conch; worship passed over time from the Ramanuja tradition to Pushtimarg.",
+    "story": "Vishnu is said to have manifested as two images to reward Raja Ranti Deo's devotion, and local belief holds that the Chambal turns back on itself after touching the feet of Keshav Rai.",
+    "wiki": "https://en.wikipedia.org/wiki/Keshav_Rai_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Keshav_Rai_Temple"
+      },
+      {
+        "l": "Wikidata Q15964787",
+        "u": "https://www.wikidata.org/wiki/Q15964787"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ambal-brahmapureeswarar",
+    "name": "Ambal Brahmapureeswarar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Ambal, also called Koilpatthu (Tiruvarur district)",
+    "lat": 10.917,
+    "lng": 79.6808,
+    "tradition": "Hindu",
+    "deity": "Shiva as Brahmapureeswarar, with Parvati as Poonguzhalammai",
+    "built": [
+      600,
+      700
+    ],
+    "builtDisplay": "hymned in the 7th-c. Tevaram; attributed to Kochengat Chola",
+    "dynasty": "Chola",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Shiva temple at Ambal in Tiruvarur district, entered through a three-tiered rajagopuram and held to be the last of the sixty maadakoil temples built by Kochengat Chola. It is one of the 275 Paadal Petra Sthalams revered in the seventh-century Tevaram.",
+    "story": "Brahma, cursed by Shiva to take the form of a swan, is said to have worshipped here to regain his own shape; the temple's Ganesha is called Patikkacupu Pillayar from a measure he is believed to have given the ruling king.",
+    "wiki": "https://en.wikipedia.org/wiki/Ambal_Brahmapureeswarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ambal_Brahmapureeswarar_Temple"
+      },
+      {
+        "l": "Wikidata Q12982059",
+        "u": "https://www.wikidata.org/wiki/Q12982059"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "vekkali-amman-woraiyur",
+    "name": "Vekkali Amman Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Woraiyur, Tiruchirappalli",
+    "lat": 10.839,
+    "lng": 78.67,
+    "tradition": "Hindu",
+    "deity": "Vekkali Amman, a form of the goddess Kali",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A goddess temple in the Woraiyur neighbourhood of Tiruchirappalli, known since early Chola times though no records fix its date, and now run by the Tamil Nadu Hindu Religious and Endowment Board. Its defining feature is that the sanctum has no roof.",
+    "story": "Devotees hold that a roof once raised over the sanctum was burnt away by the goddess's own power, and that unlike Nataraja she never changed her raised leg, keeping the stance that shows her force.",
+    "wiki": "https://en.wikipedia.org/wiki/Vekkali_Amman_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Vekkali_Amman_Temple"
+      },
+      {
+        "l": "Wikidata Q12975243",
+        "u": "https://www.wikidata.org/wiki/Q12975243"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "nimishamba-srirangapatna",
+    "name": "Nimishamba Temple",
+    "country": "India",
+    "state": "Karnataka",
+    "place": "Srirangapatna (Mandya district)",
+    "lat": 12.4188,
+    "lng": 76.7107,
+    "tradition": "Hindu",
+    "deity": "Nimishamba, an incarnation of Parvati",
+    "built": [
+      1610,
+      1638
+    ],
+    "builtDisplay": "early 17th c. (Wodeyar)",
+    "dynasty": "Wodeyar",
+    "circuits": [],
+    "significance": "A goddess shrine on the bank of the Kaveri about two kilometres from Srirangapatna on the road to Sangam, raised some three to four centuries ago under Wodeyar rule and fronted by a seven-tiered rajagopuram.",
+    "story": "Her name joins nimisha, a minute, to amba, mother, from the belief that she grants boons within a minute; she is said to have helped King Muktharaja against demons.",
+    "wiki": "https://en.wikipedia.org/wiki/Nimishamba",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nimishamba"
+      },
+      {
+        "l": "Wikidata Q7037683",
+        "u": "https://www.wikidata.org/wiki/Q7037683"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "bhusandeswar-kumbhirgadi",
+    "name": "Baba Bhusandeswar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Kumbhirgadi, Bhograi (Balasore district)",
+    "lat": 21.6242,
+    "lng": 87.4532,
+    "tradition": "Hindu",
+    "deity": "Shiva, enshrined as a lingam",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple at Kumbhirgadi in the Bhograi block of Balasore district, whose black granite lingam measures twelve feet by fourteen with only half of it above ground and an octagonal middle section, and is claimed to be the largest in Asia. Maha Shivaratri is the main observance.",
+    "story": "Ravana is said to have received the lingam from Shiva with a warning never to set it down, and to have planted it here in desperation while carrying it in the Pushpaka Vimana.",
+    "wiki": "https://en.wikipedia.org/wiki/Baba_Bhusandeswar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Baba_Bhusandeswar_Temple"
+      },
+      {
+        "l": "Wikidata Q15724947",
+        "u": "https://www.wikidata.org/wiki/Q15724947"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thindal-murugan-erode",
+    "name": "Thindal Murugan Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Thindal, Erode",
+    "lat": 11.319,
+    "lng": 77.6752,
+    "tradition": "Hindu",
+    "deity": "Murugan, worshipped as Sri Velayudhaswami",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Murugan temple on the Thindalmalai hillock a few kilometres from Erode, known for the golden temple car in which the images are carried in procession.",
+    "wiki": "https://en.wikipedia.org/wiki/Thindal_Murugan_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thindal_Murugan_Temple"
+      },
+      {
+        "l": "Wikidata Q12983957",
+        "u": "https://www.wikidata.org/wiki/Q12983957"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thiruppudaimarudur",
+    "name": "Thiruppudaimarudur Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Thiruppudaimarudur, near Veeravanallur (Tirunelveli district)",
+    "lat": 8.6967,
+    "lng": 77.5186,
+    "tradition": "Hindu",
+    "deity": "Shiva as Narumbunatha Swami",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple near Veeravanallur in Tirunelveli district, one of only three shrines to have the marudhu tree as its sthala vriksham. In a sacred triad it represents Shiva's foot, with Srisailam as the head and Thiruvidaimarudur as the body, and its Theerthavaari festival falls at Thaipoosam in the month of Thai.",
+    "story": "King Surendra is said to have built the temple after Shiva granted him the Brahmadand, still kept inside, and sent him to the Himalayas in search of an image of Gomathi.",
+    "wiki": "https://en.wikipedia.org/wiki/Thiruppudaimarudur",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thiruppudaimarudur"
+      },
+      {
+        "l": "Wikidata Q7785431",
+        "u": "https://www.wikidata.org/wiki/Q7785431"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "pachala-someswara-panagal",
+    "name": "Pachala Someswara Temple",
+    "country": "India",
+    "state": "Telangana",
+    "place": "Panagal (Nalgonda district)",
+    "lat": 17.0797,
+    "lng": 79.2882,
+    "tradition": "Hindu",
+    "deity": "Shiva, as a lingam of green onyx",
+    "built": [
+      1000,
+      1200
+    ],
+    "builtDisplay": "11th–12th c. (Kunduru Choda / Kakatiya)",
+    "dynasty": "Kakatiya",
+    "circuits": [],
+    "significance": "A Shaiva complex at Panagal in Nalgonda district dating to the eleventh or twelfth century, probably built under the Kunduru Chodas and the Kakatiya ruler Prataparudra I. Four shrines open off a large rectangular mandapam carried on seventy carved pillars illustrating stories of Shiva and Vishnu, and the Panagal Museum, opened on the premises in 1982, holds around 640 antiquities.",
+    "story": "Legend says a large and brilliant emerald once lay beneath the lingam and was carried off during raids on the region.",
+    "wiki": "https://en.wikipedia.org/wiki/Pachala_Someswara_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Pachala_Someswara_Temple"
+      },
+      {
+        "l": "Wikidata Q7121969",
+        "u": "https://www.wikidata.org/wiki/Q7121969"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "adat-shiva-thrissur",
+    "name": "Adat Shiva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Adat (Thrissur district)",
+    "lat": 10.5443,
+    "lng": 76.1398,
+    "tradition": "Hindu",
+    "deity": "Shiva as Sri Parameswara, with a separate Maha Vishnu shrine",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Kerala-style temple in Adat village, Thrissur district, unusual in having two separate complexes, one for Sri Parameswara and one for Maha Vishnu. It is counted among the 108 Shiva temples of Kerala, and celebrates Maha Shivaratri and Ashtamirohini.",
+    "story": "The shrine is believed to have been established by the sage Parasurama.",
+    "wiki": "https://en.wikipedia.org/wiki/Adat_Shiva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Adat_Shiva_Temple"
+      },
+      {
+        "l": "Wikidata Q13109853",
+        "u": "https://www.wikidata.org/wiki/Q13109853"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "suyambulingaswamy-uvari",
+    "name": "Suyambulingaswamy Temple, Uvari",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Uvari (Tirunelveli district)",
+    "lat": 8.2861,
+    "lng": 77.8992,
+    "tradition": "Hindu",
+    "deity": "Shiva as Swayambunathar, a self-manifested lingam, with Brahma Sakthi",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva temple in the coastal village of Uvari on the Tiruchendur–Kanyakumari road in Tirunelveli district, where the sun's rays fall on the swayambhu lingam throughout the Tamil month of Marghazhi.",
+    "story": "Devotees believe illness disappears if one bathes in the sea for forty-one days while praying to the deity, and give thanks with baskets of sea sand or images of nagas.",
+    "wiki": "https://en.wikipedia.org/wiki/Suyambulingaswamy_Temple,_Uvari",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Suyambulingaswamy_Temple,_Uvari"
+      },
+      {
+        "l": "Wikidata Q12975347",
+        "u": "https://www.wikidata.org/wiki/Q12975347"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "nuggikeri-hanuman-dharwad",
+    "name": "Nuggikeri Hanuman Temple",
+    "country": "India",
+    "state": "Karnataka",
+    "place": "Nuggikeri, Dharwad",
+    "lat": 15.4131,
+    "lng": 75.0054,
+    "tradition": "Hindu",
+    "deity": "Hanuman",
+    "built": [
+      1500,
+      1600
+    ],
+    "builtDisplay": "16th c. (consecrated by Vyasatirtha)",
+    "dynasty": "Vijayanagara",
+    "circuits": [],
+    "significance": "A Hanuman temple at Nuggikeri near Dharwad whose image was consecrated by Sri Vyasatirtha, a saint of the court of Krishnadevaraya at Hampi, and which also holds shrines to Rama, Shiva, Saraswathi, Durga, Venugopala Swamy and Jagannath. The second Konkanastha Peshwa handed its management to the Nuggikeri Desai family in the eighteenth century, and three branches of that family still take yearly turns running it and organising the Ratha Mahotsav on Hanuman Jayanti.",
+    "wiki": "https://en.wikipedia.org/wiki/Nuggikeri_Hanuman_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nuggikeri_Hanuman_Temple"
+      },
+      {
+        "l": "Wikidata Q7068760",
+        "u": "https://www.wikidata.org/wiki/Q7068760"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "om-banna-pali",
+    "name": "Om Banna",
+    "country": "India",
+    "state": "Rajasthan",
+    "place": "Chotila (Pali district)",
+    "lat": 25.8913,
+    "lng": 73.1987,
+    "tradition": "Hindu",
+    "deity": "Om Singh Rathore, the folk deity Om Banna or Bullet Baba",
+    "built": [
+      1988,
+      1990
+    ],
+    "builtDisplay": "shrine raised after 1988",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A roadside shrine on the Pali–Jodhpur highway near Chotila village, about 20 km from Pali, honouring Om Singh Rathore, who died in a motorcycle crash in 1988, together with the motorcycle itself. Travellers stop to offer incense, flowers, coconut, liquor, red thread and sweets, and an eternal flame is kept burning at the site.",
+    "story": "After the crash the motorcycle is said to have kept returning to the same ditch however often the police impounded it, and travellers came to believe that Om Banna's spirit watches over those in distress on the road.",
+    "wiki": "https://en.wikipedia.org/wiki/Om_Banna",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Om_Banna"
+      },
+      {
+        "l": "Wikidata Q7089334",
+        "u": "https://www.wikidata.org/wiki/Q7089334"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "udayamperoor-perumthrikovil",
+    "name": "Udayamperoor Perumthrikovil Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Udayamperoor (Ernakulam district)",
+    "lat": 9.9204,
+    "lng": 76.3612,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1100,
+      1200
+    ],
+    "builtDisplay": "12th c.",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A twelfth-century Shiva temple at Udayamperoor in Ernakulam district, set in a courtyard of some four acres with gopurams and a round sanctum, and counted among Kerala's 108 Shiva temples. Three inscriptions of the twelfth and thirteenth centuries are associated with it, one of them still well preserved on the base of the namaskaramandapa.",
+    "story": "Folklore credits the installation of the idol to the sage Parashurama.",
+    "wiki": "https://en.wikipedia.org/wiki/Udayamperoor_Ekadasi_Perumthrikovil_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Udayamperoor_Ekadasi_Perumthrikovil_Temple"
+      },
+      {
+        "l": "Wikidata Q16134112",
+        "u": "https://www.wikidata.org/wiki/Q16134112"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "new-delhi-kali-bari",
+    "name": "New Delhi Kali Bari",
+    "country": "India",
+    "state": "Delhi",
+    "place": "Mandir Marg, New Delhi",
+    "lat": 28.6303,
+    "lng": 77.1972,
+    "tradition": "Hindu",
+    "deity": "Kali",
+    "built": [
+      1930,
+      1939
+    ],
+    "builtDisplay": "1930s",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A Kali temple on Mandir Marg west of Connaught Place, built in the 1930s after years of demand from New Delhi's growing Bengali community, with an acre of land allotted on the new road and Subhas Chandra Bose as the first president of its committee. Its image follows the one at Kalighat in Kolkata, and the temple has become the centre of Bengali cultural life in the capital; its Durga Puja, first held in 1925, is among the oldest in the city.",
+    "wiki": "https://en.wikipedia.org/wiki/New_Delhi_Kali_Bari",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/New_Delhi_Kali_Bari"
+      },
+      {
+        "l": "Wikidata Q7006850",
+        "u": "https://www.wikidata.org/wiki/Q7006850"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thiruvalluvar-mylapore",
+    "name": "Thiruvalluvar Temple, Mylapore",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Mylapore, Chennai",
+    "lat": 13.0398,
+    "lng": 80.2711,
+    "tradition": "Hindu",
+    "deity": "Valluvar, the Tamil poet-saint, with his consort Vasuki",
+    "built": [
+      1500,
+      1550
+    ],
+    "builtDisplay": "early 16th c.; renovated in the 1970s",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A shrine to the poet-saint Valluvar and his consort Vasuki on M. K. Amman Street in Mylapore, Chennai, standing inside the larger Ekambareswarar temple complex. Believed to have been built in the early sixteenth century, it was extensively renovated in the 1970s and has sanctums, a pillared maha mantapam, a shikhara and circumambulatory corridors.",
+    "story": "Valluvar is traditionally said to have been born beneath the iluppai tree in this compound, where his foster parents found him and took him in.",
+    "wiki": "https://en.wikipedia.org/wiki/Thiruvalluvar_Temple,_Mylapore",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thiruvalluvar_Temple,_Mylapore"
+      },
+      {
+        "l": "Wikidata Q7785491",
+        "u": "https://www.wikidata.org/wiki/Q7785491"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "niranam-thrikkapaleeswaram",
+    "name": "Niranam Thrikkapaleeswaram Dakshinamurthy Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Niranam (Pathanamthitta district)",
+    "lat": 9.3479,
+    "lng": 76.5286,
+    "tradition": "Hindu",
+    "deity": "Dakshinamurthy, the teaching form of Shiva",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Shiva temple at Niranam in Pathanamthitta district whose presiding form is Dakshinamurthy, Shiva as the guru of knowledge. It came to prominence in the age of the Niranam poets between about 1350 and 1450, and is unusual in giving the Saptamatrikas a sanctum of their own.",
+    "story": "Local tradition credits the installation of the idol to the sage Parasurama.",
+    "wiki": "https://en.wikipedia.org/wiki/Niranam_Thrikkapaleeswaram_Dakshinamurthy_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Niranam_Thrikkapaleeswaram_Dakshinamurthy_Temple"
+      },
+      {
+        "l": "Wikidata Q13112909",
+        "u": "https://www.wikidata.org/wiki/Q13112909"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thiruthaleeshwarar-aranvoyal",
+    "name": "Thiruthaleeshwarar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Aranvoyal (Tiruvallur district)",
+    "lat": 13.1009,
+    "lng": 79.9548,
+    "tradition": "Hindu",
+    "deity": "Shiva as Thiruthaleeshwarar",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A small Shiva temple about 1.5 kilometres southeast of Aranvoyal in Tiruvallur district, resorted to locally as a shrine that relieves naga dosham.",
+    "wiki": "https://en.wikipedia.org/wiki/Thiruthaleeshwarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thiruthaleeshwarar_Temple"
+      },
+      {
+        "l": "Wikidata Q7785445",
+        "u": "https://www.wikidata.org/wiki/Q7785445"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thiruvaloor-mahadeva-alangad",
+    "name": "Thiruvaloor Mahadeva Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Thiruvaloor, Alangad (Ernakulam district)",
+    "lat": 10.1187,
+    "lng": 76.3088,
+    "tradition": "Hindu",
+    "deity": "Shiva (Mahadeva)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Kerala-style Shiva temple in Thiruvaloor village in Alangad, Ernakulam district, with a shrine to Ganapati and an adjoining subsidiary kavu, Keezhanikavu, holding Vishnu, Bhagavati and the nagas. Shivaratri is its main festival.",
+    "story": "The idol is held to be an agni pratishta, with Shiva's third eye open, and the pond due east of the sanctum is said to have been dug to cool the fire that would otherwise harm people.",
+    "website": "https://thiruvaloormahadevatemple.in/",
+    "wiki": "https://en.wikipedia.org/wiki/Thiruvaloor_Mahadeva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thiruvaloor_Mahadeva_Temple"
+      },
+      {
+        "l": "Wikidata Q7785495",
+        "u": "https://www.wikidata.org/wiki/Q7785495"
+      },
+      {
+        "l": "Official site",
+        "u": "https://thiruvaloormahadevatemple.in/"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "thirupuraikkal-moothanthara",
+    "name": "Thirupuraikkal Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Moothanthara (Palakkad district)",
+    "lat": 10.7768,
+    "lng": 76.6386,
+    "tradition": "Hindu",
+    "deity": "Kannagi (Karnaki), worshipped in full idol form",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Tamil and Kerala",
+    "circuits": [],
+    "significance": "The only temple in Kerala where Kannagi is worshipped in full idol form, at Moothanthara in Palakkad district, with a Visalakshi Sametha Shiva shrine in the same compound served by Tamil Brahmin priests in the Tamil Shaiva rite. Tipu Sultan is recorded to have sacked and destroyed the temple during his rule at Palakkad, its sacred relics being preserved and shared out among other temples; the three-day Valiya Aarattu is the district's largest annual festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Thirupuraikkal_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Thirupuraikkal_Temple"
+      },
+      {
+        "l": "Wikidata Q7785440",
+        "u": "https://www.wikidata.org/wiki/Q7785440"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  }
+]
