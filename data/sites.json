@@ -3263,8 +3263,8 @@
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
-  "lat": 20.2428,
-  "lng": 85.8393,
+  "lat": 20.2427,
+  "lng": 85.8404,
   "tradition": "Hindu",
   "deity": "Shiva",
   "built": [
@@ -3285,7 +3285,7 @@
     "u": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
    }
   ],
-  "verified": "wikipedia-2026-08-26",
+  "verified": "wikipedia-2026-08-27",
   "wiki": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar"
  },
  {
@@ -8300,8 +8300,8 @@
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Naimisharanya (Misrikh-Neemsar), Sitapur",
-  "lat": 27.3425,
-  "lng": 80.4913,
+  "lat": 27.3486,
+  "lng": 80.4864,
   "tradition": "Hindu",
   "deity": "Devaraja Perumal (Naimishnath Vishnu), with Pundarikavalli Thayar",
   "built": [
@@ -8321,6 +8321,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Shri_Naimishnath_Temple"
+   },
+   {
+    "l": "Wikipedia article coordinates (Q6959679)",
+    "u": "https://en.wikipedia.org/wiki/Shri_Naimishnath_Vishnu_Temple"
    }
   ],
   "verified": "wikipedia-2026-08-27",
@@ -10660,8 +10664,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pullamangai (Pasupathikoil)",
-  "lat": 10.8914,
-  "lng": 79.1804,
+  "lat": 10.8907,
+  "lng": 79.1751,
   "tradition": "Hindu",
   "deity": "Shiva (Alandurainathar / Brahmapureeswarar)",
   "built": [
@@ -11023,8 +11027,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kumbakonam",
-  "lat": 10.9604,
-  "lng": 79.3821,
+  "lat": 10.9587,
+  "lng": 79.3787,
   "tradition": "Hindu",
   "deity": "Shiva (Nageswarar, lord of the serpent king), consort Periyanayagi",
   "built": [
@@ -11044,6 +11048,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Nageswaraswamy_Temple,_Kumbakonam"
+   },
+   {
+    "l": "Wikipedia article coordinates (Q6958787)",
+    "u": "https://en.wikipedia.org/wiki/Nageswaraswamy_Temple"
    }
   ],
   "verified": "wikipedia-2026-08-27",
@@ -11056,8 +11064,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kumbakonam",
-  "lat": 10.9604,
-  "lng": 79.3821,
+  "lat": 10.9566,
+  "lng": 79.3822,
   "tradition": "Hindu",
   "deity": "Shiva (Kasi Viswanathar), consort Visalakshi",
   "built": [
@@ -11909,7 +11917,7 @@
   "state": "Tamil Nadu",
   "place": "Tirumeeyachur",
   "lat": 10.9628,
-  "lng": 79.6472,
+  "lng": 79.6478,
   "tradition": "Hindu",
   "deity": "Shiva (Sakalabhuvaneswarar), consort Mekalambika",
   "built": [
@@ -11927,9 +11935,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Tirumeeyachur_Ilamkovil_Sakalabhuvaneswarar_Temple"
+   },
+   {
+    "l": "Wikidata Q12984233 (P625)",
+    "u": "https://www.wikidata.org/wiki/Q12984233"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -12794,8 +12806,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Araneri, Tiruvarur (Achaleswaram)",
-  "lat": 10.7667,
-  "lng": 79.6352,
+  "lat": 10.7761,
+  "lng": 79.6335,
   "tradition": "Hindu",
   "deity": "Shiva as Araneriyappar (consort Vandarakuzhali)",
   "built": [
@@ -12813,9 +12825,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Araneri_Achaleswarar_Temple"
+   },
+   {
+    "l": "Wikidata Q12974124 (P625)",
+    "u": "https://www.wikidata.org/wiki/Q12974124"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -12826,8 +12842,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvarur",
-  "lat": 10.7667,
-  "lng": 79.6352,
+  "lat": 10.7761,
+  "lng": 79.6335,
   "tradition": "Hindu",
   "deity": "Shiva as Thyagarajaswami / Putridankondar (consorts Neelotpalambika and Kamalambika)",
   "built": [
@@ -12860,8 +12876,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvarur (Arurparavaiumandali)",
-  "lat": 10.7667,
-  "lng": 79.6352,
+  "lat": 10.775,
+  "lng": 79.6367,
   "tradition": "Hindu",
   "deity": "Shiva as Thoovainathar (consort Panchin Mennadiyal)",
   "built": [
@@ -12879,9 +12895,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Thoovanayanar_Thoovainathar_Temple"
+   },
+   {
+    "l": "Wikidata Q16308983 (P625)",
+    "u": "https://www.wikidata.org/wiki/Q16308983"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -19041,8 +19061,8 @@
   "country": "India",
   "state": "Rajasthan",
   "place": "Osian",
-  "lat": 26.7255,
-  "lng": 72.9088,
+  "lat": 26.726,
+  "lng": 72.9124,
   "tradition": "Hindu",
   "deity": "Sachiya Mata, also called Shri Osiya Mataji",
   "built": [
@@ -19059,9 +19079,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Sachiya_Mata_Temple"
+   },
+   {
+    "l": "Wikidata Q7396764 (P625)",
+    "u": "https://www.wikidata.org/wiki/Q7396764"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
