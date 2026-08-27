@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { SITES, GEO, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, type Site } from "@/lib/sites";
+import { SITES, GEO, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, headerStats, type Site } from "@/lib/sites";
+import SiteHeader from "./SiteHeader";
 
 const { W, H, LON0, LON1, LAT0, LAT1 } = GEO;
 const mercY = (t: number) => Math.log(Math.tan(Math.PI / 4 + (t * Math.PI) / 180 / 2));
@@ -11,6 +12,7 @@ const PX = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
 const PY = (lat: number) => ((YT - mercY(lat)) / (YT - YB)) * H;
 const TRADS: Record<string, string> = { Hindu: "circle", Buddhist: "square", Jain: "diamond", Sikh: "triangle" };
 const YEAR_MIN = -650, YEAR_MAX = 2030;
+const STATS = headerStats();
 
 function eraColor(i: number) {
   if (typeof window === "undefined") return "#888";
@@ -47,6 +49,9 @@ export default function AtlasClient() {
   const [playing, setPlaying] = useState(false);
   const [shownCount, setShownCount] = useState(SITES.length);
   const [fOpen, setFOpen] = useState(false);
+
+  // Opening the index always clears the site panel — they share the one side rail.
+  const toggleIndex = useCallback(() => { setIndex((v) => !v); setSel(null); }, []);
 
   const mapRef = useRef<SVGSVGElement>(null);
   const worldRef = useRef<SVGGElement>(null);
@@ -253,6 +258,8 @@ export default function AtlasClient() {
 
   return (
     <>
+      <SiteHeader stats={STATS} indexOpen={index} onIndexToggle={toggleIndex} />
+
       <div className="filters">
         <input type="search" placeholder="Search temples, deities, places…" aria-label="Search" value={filters.q}
           onChange={(e) => setFilters({ ...filters, q: e.target.value })} />
@@ -393,21 +400,7 @@ export default function AtlasClient() {
           <button className="showall" onClick={() => { setPlaying(false); setYear(YEAR_MAX); }}>show all eras</button>
         </div>
       </div>
-
-      <IndexToggle index={index} setIndex={(v) => { setIndex(v); if (v) setSel(null); }} />
     </>
   );
 }
 
-/** Renders the Index toggle into the header slot via portal-free approach: fixed button */
-function IndexToggle({ index, setIndex }: { index: boolean; setIndex: (v: boolean) => void }) {
-  useEffect(() => {
-    const btn = document.getElementById("ixbtn");
-    if (!btn) return;
-    const h = () => setIndex(!index);
-    btn.classList.toggle("on", index);
-    btn.addEventListener("click", h);
-    return () => btn.removeEventListener("click", h);
-  }, [index, setIndex]);
-  return null;
-}
