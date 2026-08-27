@@ -17,7 +17,12 @@
     "audit": "node scripts/audit-records.mjs",
     "links": "node scripts/prune-dead-websites.mjs",
     "test": "node --test 'src/**/*.test.ts' 'program/*.test.mjs'",
-    "vocab": "node scripts/normalize-vocab.mjs"
+    "vocab": "node scripts/normalize-vocab.mjs",
+    "report:coordinates": "node scripts/report-coordinates.mjs --fetch --write",
+    "report:circuits": "node scripts/report-circuits.mjs --write",
+    "report:sources": "node scripts/report-sources.mjs --write",
+    "report:health": "node scripts/report-health.mjs --write",
+    "reports": "npm run report:circuits && npm run report:sources && npm run report:health"
   },
   "dependencies": {
     "next": "^15.4.0",

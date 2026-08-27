@@ -288,12 +288,14 @@
         "reports/coordinates.md"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/coordinates.md — 68 flagged, 31 with better P625, live Wikidata"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -307,12 +309,14 @@
         "reports/circuits.md"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/circuits.md — 1 overfull, 7 incomplete, 2 polluted"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -326,12 +330,14 @@
         "reports/sources.md"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/sources.md — 84% Wikipedia-only, 86 flagship single-sourced"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -347,12 +353,14 @@
       "deps": [
         "T-005"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/health.md — only 26/150 flagship records meet the contract"
+      ],
       "last_error": null,
       "commit": null
     },
