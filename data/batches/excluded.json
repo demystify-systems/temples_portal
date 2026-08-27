@@ -1,0 +1,9 @@
+[
+ {
+  "id": "govindaraja-tirupati",
+  "name": "Govindaraja Temple, Tirupati",
+  "batch": "records_22.json",
+  "decided": "2026-08-27",
+  "reason": "No correct coordinate exists in any citable source. English Wikipedia and Wikidata P625 both give 13.68325, 79.34719 — the Sri Venkateswara temple on Tirumala hill, roughly 20 km uphill from the Tirupati-town temple the article describes. Two sources agreeing does not make a coordinate true, and the atlas contradicts it: venkateswara-tirumala already occupies that point. Re-admit only with a coordinate from a source that puts it in Tirupati town."
+ }
+]

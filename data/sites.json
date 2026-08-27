@@ -35309,5 +35309,226 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
+ },
+ {
+  "id": "bhaktavatsala-thirunindravur",
+  "name": "Bhaktavatsala Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirunindravur",
+  "lat": 13.1125,
+  "lng": 80.0261,
+  "tradition": "Hindu",
+  "deity": "Bhaktavatsala Perumal",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Pallava)",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam of the Chennai region built in the 9th-century Pallava period, its earliest inscriptions dated between 820 and 890 CE, with medieval Chola and Vijayanagara additions. It is glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhaktavatsala_Perumal_Temple,_Thirunindravur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhaktavatsala_Perumal_Temple,_Thirunindravur"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The town's name, 'the place where the Lord stood', recalls the belief that Lakshmi and Vishnu descended and stayed at this spot."
+ },
+ {
+  "id": "vimala-puri",
+  "name": "Vimala Temple",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Jagannath Temple complex, Puri",
+  "lat": 19.8047,
+  "lng": 85.8183,
+  "tradition": "Hindu",
+  "deity": "Vimala (Bimala), the tantric form of Lakshmi",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. CE",
+  "dynasty": "Eastern Ganga (also attributed to Somavamshi Yayati Keshari)",
+  "style": "Kalinga (deula)",
+  "circuits": [
+   "Shakti Peetha"
+  ],
+  "significance": "The goddess shrine inside the Jagannath Temple complex at Puri, dated to the 9th century and built in four-part Kalinga form. It is a Shakta pitha and the ritual heart of Tantric worship within an otherwise Vaishnava sanctuary.",
+  "story": "Parvati complained to Vishnu that she had lost her rightful share of offerings, and he promised she would dwell at Puri as Vimala and receive the remnants of Jagannath's food in the Kali Yuga.",
+  "website": "https://www.jagannath.nic.in/",
+  "wiki": "https://en.wikipedia.org/wiki/Vimala_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vimala_Temple"
+   },
+   {
+    "l": "Official site",
+    "u": "https://www.jagannath.nic.in/"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "naimisharanya-sitapur",
+  "name": "Naimisharanya",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Naimisharanya, Sitapur",
+  "lat": 27.3425,
+  "lng": 80.4913,
+  "tradition": "Hindu",
+  "deity": "Puranic forest tirtha",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A sacred forest tract at Nimsar in Sitapur district, named repeatedly in the Puranas and in both epics. Tradition holds that the Puranas were first recited here to an assembly of sages, and the site remains an active pilgrimage centre.",
+  "story": "The Varaha Purana explains the name by saying that a host of daityas was destroyed here within a single nimisha, an instant.",
+  "wiki": "https://en.wikipedia.org/wiki/Naimisharanya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Naimisharanya"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "dwarkadhish-mathura",
+  "name": "Dwarkadhish Temple",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Mathura",
+  "lat": 27.5052,
+  "lng": 77.6849,
+  "tradition": "Hindu",
+  "deity": "Krishna as Dwarkadhish, with Radha",
+  "built": [
+   1814,
+   1814
+  ],
+  "builtDisplay": "1814",
+  "dynasty": "Gwalior State (Scindia); built by Seth Gokul Das Parikh",
+  "circuits": [
+   "Braj"
+  ],
+  "significance": "A Pushtimarg temple of 1814 in the old city of Mathura, raised by the Gwalior treasurer Seth Gokul Das Parikh with the approval of Daulatrao Scindia. It is among the busiest shrines in the town.",
+  "wiki": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple,_Mathura",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dwarkadhish_Temple,_Mathura"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "mansa-devi-panchkula",
+  "name": "Mata Mansa Devi Mandir",
+  "country": "India",
+  "state": "Haryana",
+  "place": "Panchkula",
+  "lat": 30.7239,
+  "lng": 76.8624,
+  "tradition": "Hindu",
+  "deity": "Mansa Devi (a form of Shakti)",
+  "built": [
+   1811,
+   1815
+  ],
+  "builtDisplay": "1811-1815 (Maharaja Gopal Das Singh)",
+  "dynasty": "Mani Majra",
+  "style": "Painted shrine complex; the 1840 Patiala Shivalaya carries 38 wall-painting panels",
+  "circuits": [],
+  "significance": "A complex of three shrines in the Shivalik foothills of Panchkula district, built by the ruler of Mani Majra in the early 19th century and extended by Patiala in 1840. Millions of pilgrims visit during the spring and autumn Navaratras.",
+  "wiki": "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mata_Mansa_Devi_Mandir"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "osian-mahavira-jain",
+  "name": "Mahavira Jain Temple, Osian",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Osian",
+  "lat": 26.7255,
+  "lng": 72.9088,
+  "tradition": "Jain",
+  "deity": "Mahavira, the twenty-fourth Tirthankara",
+  "built": [
+   783,
+   783
+  ],
+  "builtDisplay": "783 CE (King Vatsaraja)",
+  "dynasty": "Gurjara-Pratihara",
+  "circuits": [],
+  "significance": "Built in 783 CE under the Gurjara-Pratihara king Vatsaraja, this is described as the oldest surviving Jain temple in western India and an important tirtha, especially for the Oswal and Maheshwari communities.",
+  "story": "Jain tradition holds that miracles worked by Acharya Ratnaprabhasuri converted the villagers of Osian, after which the goddess Chamunda became the temple's guardian deity.",
+  "wiki": "https://en.wikipedia.org/wiki/Osian,_Jodhpur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Osian,_Jodhpur"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "parsurameswara-bhubaneswar",
+  "name": "Parsurameswara Temple",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Bhubaneswar",
+  "lat": 20.2432,
+  "lng": 85.8391,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   640,
+   700
+  ],
+  "builtDisplay": "mid-7th c. (c. 650 CE)",
+  "dynasty": "Shailodbhava",
+  "style": "Early Kalinga Nagara, with vimana and jagamohana",
+  "circuits": [],
+  "significance": "The best preserved specimen of an early Odia temple, raised in the mid-7th century by the Shailodbhavas, whose family deity was Shiva. It was the first here to set a jagamohana in front of the sanctum, a plan that every later Kalinga temple followed.",
+  "story": "The temple's name is traced to the penance of Parashurama and the grace Shiva granted him.",
+  "wiki": "https://en.wikipedia.org/wiki/Parsurameswara_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Parsurameswara_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
  }
 ]

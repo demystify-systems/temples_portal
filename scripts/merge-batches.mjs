@@ -23,6 +23,7 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SITES_PATH = path.join(ROOT, "data", "sites.json");
 const BATCH_DIR = path.join(ROOT, "data", "batches");
+const EXCLUDED_PATH = path.join(BATCH_DIR, "excluded.json");
 
 const TRADITIONS = new Set(["Hindu", "Buddhist", "Jain", "Sikh"]);
 const REQUIRED = ["id", "name", "country", "place", "lat", "lng", "tradition", "deity", "built", "builtDisplay", "dynasty", "significance", "sources"];
@@ -46,6 +47,18 @@ if (batchFiles.length === 0) {
 }
 
 const geo = JSON.parse(readFileSync(path.join(ROOT, "data", "geo.json"), "utf8"));
+
+// Records deliberately kept out of the database, with the reason recorded. Without
+// this list a later `--all` silently re-admits a record a human already rejected —
+// the batch files are append-only provenance and never get edited to reflect a call
+// like that.
+let excluded = [];
+try {
+  excluded = JSON.parse(readFileSync(EXCLUDED_PATH, "utf8"));
+} catch {
+  // no exclusions recorded yet
+}
+const excludedById = new Map(excluded.map((e) => [e.id, e]));
 
 const normName = (v) =>
   String(v ?? "")
@@ -127,6 +140,7 @@ const merged = [];
 const dropped = { malformed: [], duplicate: [] };
 const renamed = [];
 const colocated = [];
+const refused = [];
 const perFile = [];
 
 for (const file of batchFiles) {
@@ -147,6 +161,11 @@ for (const file of batchFiles) {
 
   let kept = 0, dupes = 0, bad = 0;
   for (const raw of batch) {
+    const veto = excludedById.get(raw?.id);
+    if (veto) {
+      refused.push({ file: rel, id: raw.id, reason: veto.reason });
+      continue;
+    }
     const problems = defects(raw);
     if (problems.length) {
       dropped.malformed.push({ file: rel, id: raw?.id ?? raw?.name ?? "<unnamed>", problems });
@@ -194,6 +213,10 @@ for (const f of perFile) console.log(`  ${f.file.padEnd(32)} in ${String(f.input
 if (renamed.length) {
   console.log(`\n  id collisions auto-suffixed (${renamed.length}):`);
   for (const r of renamed) console.log(`    ${r.from} → ${r.to}`);
+}
+if (refused.length) {
+  console.log(`\n  refused by data/batches/excluded.json (${refused.length}):`);
+  for (const r of refused) console.log(`    ${r.id} — ${r.reason.split(".")[0]}.`);
 }
 if (colocated.length) {
   console.log(`\n  KEPT but sharing a coordinate with an existing site (${colocated.length}) — verify these by hand:`);

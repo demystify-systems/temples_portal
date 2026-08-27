@@ -8,10 +8,10 @@
 
 | | |
 |---|---|
-| Sites | **1115** (goal 1000+ — reached) |
+| Sites | **1122** (goal 1000+ — reached) |
 | Countries | 15 |
 | Circuits | 28 |
-| Tiers | 150 flagship · 965 compact |
+| Tiers | 150 flagship · 972 compact |
 | Unsourced records | 0 ✓ |
 
 ## Record batches
@@ -26,12 +26,12 @@
 | 06 | 46 | 45 | 45 | merged | 2026-08-27 02:58 |
 | 07 | 46 | 39 | 39 | merged | 2026-08-27 02:58 |
 | 08 | 46 | 37 | 37 | merged | 2026-08-27 02:58 |
-| 09 | 46 | 22 | 21 | built, not merged | 2026-08-27 02:58 |
-| 10 | 46 | 28 | 27 | built, not merged | 2026-08-27 02:58 |
-| 11 | 46 | 40 | 39 | built, not merged | 2026-08-27 02:58 |
-| 12 | 46 | 40 | 39 | built, not merged | 2026-08-27 02:58 |
+| 09 | 46 | 22 | 22 | merged | 2026-08-27 02:58 |
+| 10 | 46 | 28 | 28 | merged | 2026-08-27 02:58 |
+| 11 | 46 | 40 | 40 | merged | 2026-08-27 02:58 |
+| 12 | 46 | 40 | 40 | merged | 2026-08-27 02:58 |
 | 13 | 46 | 46 | 46 | merged | 2026-08-27 02:58 |
-| 14 | 46 | 41 | 40 | built, not merged | 2026-08-27 02:58 |
+| 14 | 46 | 41 | 41 | merged | 2026-08-27 02:58 |
 | 15 | 46 | 37 | 37 | merged | 2026-08-27 03:26 |
 | 16 | 46 | 36 | 36 | merged | 2026-08-27 03:25 |
 | 17 | 46 | 38 | 38 | merged | 2026-08-27 03:26 |
@@ -42,7 +42,7 @@
 | 22 | 65 | 63 | 62 | built, not merged | 2026-08-27 03:52 |
 | 23 | 65 | 52 | 52 | merged | 2026-08-27 03:50 |
 | 24 | 65 | 60 | 60 | merged | 2026-08-27 03:50 |
-| **all** | **1128** | **977** | **970** | | |
+| **all** | **1128** | **977** | **975** | | |
 
 Targets not built are the ones correctly **skipped**: no Wikipedia article, no
 coordinates from any source, or already in the database. Skipping is the required
