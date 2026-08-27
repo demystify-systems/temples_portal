@@ -1,0 +1,196 @@
+{
+ "_about": "Source contradictions found while sourcing the corpus. Each entry is a place where a citable source disagrees with what the record says. NOTHING here has been applied: CLAUDE.md rule 5 is detect, don't auto-edit, and picking a winner between two citable sources is a human act.",
+ "_howToClose": "Resolve with a third source, then edit the record and delete the entry in the same commit. If the source is right and we are wrong, fix the record. If we are right, keep the record and note why here.",
+ "_opened": "2026-08-27",
+ "entries": [
+  {
+   "id": "tiruchendur-murugan",
+   "field": "built",
+   "ours": "'medieval; shore complex expanded over centuries', built range 800–1650 CE, dynasty Pandya",
+   "theirs": "The temple's own HR&CE page says the temple 'is believed to be 2000-3000 years old' and names no dynasty or patron",
+   "source": "https://tiruchendurmurugan.hrce.tn.gov.in/hrcehome/index_temple.php?tid=38271",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "veerabhadra-lepakshi",
+   "field": "built",
+   "ours": "c. 1530s (built range 1530–1545); patrons Virupanna & Viranna, governors under Achyutadevaraya (r. 1529–42)",
+   "theirs": "Sri Sathya Sai district administration (Govt of AP) states the stone temple 'was built in 1583 AD, in the Vijayanagar style of architecture by brothers Virupanna and Veeranna' — same builders, but ~50 years later, which is incompatible with an Achyutadevaraya-era patronage. Not cited. The same page does corroborate our monolithic Nandi (10 m long, 6 m high), the hanging pillar and the Nagalinga.",
+   "source": "https://srisathyasai.ap.gov.in/tourism/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "shankaracharya-srinagar",
+   "field": "dynasty",
+   "ours": "'ancient site; structure dating disputed (early core, renewed 17th–18th c.)', built range 850–1750, dynasty 'Utpala era'",
+   "theirs": "Govt of J&K states the temple was 'originally built by King Gopaditya, founder of the Gopkar dynasty' in 371 BC, and renovated by Raja Lalitaditya (8th c., Karkota), Zain-ul-Abidin and Maharaja Gulab Singh (Dogra, 18th c.) — a different origin story and a different dynastic chain from our Utpala-era attribution. Not cited. It does agree with 'renewed' in the later centuries.",
+   "source": "https://kashmirmarathon.jk.gov.in/location/ShankaracharyaTemple",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "dwarkadhish",
+   "field": "built",
+   "ours": "present structure 15th–16th c. (built 1450–1600); site ancient",
+   "theirs": "Govt of Gujarat district page: 'According to the opinion of the Department of Archaeology, This temple is 1200 years old' (i.e. c. 9th century), alongside the traditional claim that Vajranabh built it 'more than 2500 years ago'. The same page gives the shikhara as 43 m and the material as soft limestone.",
+   "source": "https://devbhumidwarka.nic.in/tourist-place/dwarkadhish-temple/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "karni-mata-deshnoke",
+   "field": "built",
+   "ours": "present marble temple early 20th c.; patron Maharaja Ganga Singh",
+   "theirs": "Devasthan Department, Govt of Rajasthan: the temple was built by Rao Jaitasi to commemorate the Bikaner king's victory over the Mughal 'King Kumaran', established 1573 AD, of white and black marble, red stone and lime mortar. No mention of Ganga Singh or a 20th-century rebuild. (The page does corroborate the thousands of free-roaming rats and Karni Mata as goddess of the Bikaner royal house.)",
+   "source": "https://devasthan.rajasthan.gov.in/images/Bikaner/KarniMataji.htm",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "belur-math",
+   "field": "built",
+   "ours": "Math founded 1898 (main temple dedicated 1938)",
+   "theirs": "Howrah district page: 'founded in 1897 by Swami Vivekananda'; it gives no separate date for the Sri Ramakrishna temple",
+   "source": "https://howrah.gov.in/tourist-place/belur-math/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "paro-taktsang",
+   "field": "built",
+   "ours": "1692",
+   "theirs": "Paro Dzongkhag Administration: 'The construction of the temple was completed in 1694, including installation of statues and other related objects'",
+   "source": "https://paro.gov.bt/tourism/taktshang-tiger-nest-monastery/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "dilwara-mount-abu",
+   "field": "built",
+   "ours": "Luna Vasahi 1230 (13th c.), by Vastupala and Tejapala",
+   "theirs": "Devasthan Department, Govt of Rajasthan: 'In 12th century the famous Architect Tejpal built the temple of Shri Nemi Nath' — a century earlier than our date, and it calls Tejpal an architect rather than a patron-minister",
+   "source": "https://devasthan.rajasthan.gov.in/images/sirohi/delwadajainmandir.htm",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "palitana-shatrunjaya",
+   "field": "other",
+   "ours": "reached by ~3,750 steps",
+   "theirs": "'The main temple is reached by stepping up 3500 steps'",
+   "source": "https://bhavnagar.nic.in/tourist-place/palitana-temple/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "wat-arun",
+   "field": "other",
+   "ours": "significance: 'a 70-80 m Khmer-style prang'",
+   "theirs": "'A new Phra Prang with the height of 61.20 metres tall was built over the original 16-metre-tall Phra Prang' — Thailand's own nomination text",
+   "source": "https://whc.unesco.org/en/tentativelists/6821/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "doi-suthep",
+   "field": "built",
+   "ours": "builtDisplay 'founded 1383'; patron 'King Keu Naone'",
+   "theirs": "'originally built by King Kuena of the Mangrai Dynasty in 1419 AD to enshrine the Relic brought from Sukhothai by the learned great monk, Pra Sumana Thera' — note the same page dates Kuena's reign to 1355-1385, so its own 1419 is internally inconsistent. Patron (Kuena = Keu Naone) and the Lanna/Mangrai dynasty DO agree, as does the 1935 Khruba Si Vichai road (launched 9 Nov 1934, finished in 5 months 22 days, opened 30 Apr 1935) — only the founding year conflicts, so no source was added.",
+   "source": "https://whc.unesco.org/en/tentativelists/6003/",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "kantajew",
+   "field": "built",
+   "ours": "builtDisplay '1704-1722'",
+   "theirs": "'Maharaja Prannath of Dinajpur began its construction about 1722' and 'his adopted son Maharaja Ramnath completed it, in Shaka era 1674 (1752 AD)' — i.e. c.1722-1752. Everything else in our record is corroborated by this page: the nava-ratna nine spires lost in the 1897 earthquake, terracotta covering every inch with Mahabharata/Ramayana/Krishna scenes plus European soldiers, a European battleship and river boats, and the patrons Pran Nath and Ram Nath of the Dinajpur Raj.",
+   "source": "https://en.banglapedia.org/index.php/Kantanagar_Temple",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "dhakeshwari",
+   "field": "built",
+   "ours": "builtDisplay '12th-c. foundation (trad.)'; dynasty 'Sena'; patron 'Ballal Sena (trad.)'",
+   "theirs": "Banglapedia rejects the attribution: the Ballalsena of legend 'is not certain that he is identical with the 12th century Sena king'; the sand-and-lime mortar of the fabric only came into use in Bengal after the Muslim conquest; and the three-domed roof, arched entrances and plastered walls 'strongly suggest that it was built in the Mughal style'. It proposes instead Mangat Ray, an Arakanese prince also styled Ballalasena. Note the record's unhedged dynasty: 'Sena' is what is squarely contradicted. The 'dhaka + ishvari' name etymology IS confirmed.",
+   "source": "https://en.banglapedia.org/index.php/Dhakeshwari_Temple",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "mahamuni-mandalay",
+   "field": "built",
+   "ours": "builtDisplay '1785'; significance 'carried over the mountains from Arakan (Mrauk-U) as war booty in 1785'",
+   "theirs": "'the statue was among the spoils of war brought from the Arakan Coast in 1784 by King Bodawpaya' — one year earlier. Britannica is itself inconsistent: its Bodawpaya biography puts the conquest of Arakan and the removal of the statue in 1785. Low severity; flagged because the page is being cited.",
+   "source": "https://www.britannica.com/place/Mahamuni-pagoda-Myanmar",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "batu-caves",
+   "field": "other",
+   "ours": "significance: 'At Thaipusam over a million devotees carry kavadi burdens and milk pots up the stairs'",
+   "theirs": "'Thaipusam ... was first celebrated on the site in 1892 and is now a major event that attracts hundreds of thousands of pilgrims annually.' A difference of scale, not of fact-kind; flagged because the page is being cited.",
+   "source": "https://www.britannica.com/place/Batu-Caves",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "phimai",
+   "field": "patron",
+   "ours": "tradition 'Buddhist'; deity 'Mahayana Buddhist Khmer sanctuary'; patron 'Jayavarman VI (Mahidharapura)'",
+   "theirs": "This Britannica art-history article frames the Khmer shrines built in Siam as 'probably intended as focuses of the Khmer Hindu dynastic cult' and calls Phimai 'the most important full-fledged Khmer temple, where one of the personal cult statues of the Khmer king Jayavarman II' stood — a Hindu dynastic reading and a different king. Older scholarship; noted so the Mahayana/Jayavarman VI attribution is not cited to Britannica. The Nakhon Ratchasima article (added above) is the safe Britannica citation.",
+   "source": "https://www.britannica.com/art/Southeast-Asian-arts/Thailand-and-Laos",
+   "found": "brief-4 second-source pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "kundala-karaneswarar-thirukkurankaval",
+   "field": "lat/lng",
+   "ours": "11.2167, 79.65",
+   "theirs": "Wikidata P625 gives 10.95, 79.31667 (arcminute-rounded) and places the temple in Thanjavur district, 47 km from our point",
+   "source": "https://www.wikidata.org/wiki/Q6444266",
+   "found": "brief-1 coordinate pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "dwaraka-tirumala",
+   "field": "lat/lng",
+   "ours": "16.57, 81.15 (matches the English Wikipedia article for the settlement)",
+   "theirs": "Wikidata P625 on the same settlement item gives 16.9545281, 81.2565686 — 44 km away, at 1e-7 precision",
+   "source": "https://www.wikidata.org/wiki/Q3425856",
+   "found": "brief-1 coordinate pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "pasupatheeswarar-aavoor",
+   "field": "lat/lng",
+   "ours": "uncited",
+   "theirs": "the record's own Wikipedia article displays 10.4833, 78.6833, which contradicts that article's own text ('6 km east of Tirukarugavoor', near Kumbakonam) by about 90 km",
+   "source": "https://en.wikipedia.org/wiki/Pasupatheeswarar_Temple,_Aavoor",
+   "found": "brief-6 co-located pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "naimisharanya-sitapur",
+   "field": "lat/lng",
+   "ours": "27.3425, 80.4913 — uncited",
+   "theirs": "the forest article carries no coordinates at all",
+   "source": "https://en.wikipedia.org/wiki/Naimisharanya",
+   "found": "brief-6 co-located pass",
+   "opened": "2026-08-27"
+  },
+  {
+   "id": "osian-mahavira-jain",
+   "field": "lat/lng",
+   "ours": "uncited",
+   "theirs": "no Wikipedia article exists for the Jain temple; the record cites the village article",
+   "source": "https://en.wikipedia.org/wiki/Osian,_Jodhpur",
+   "found": "brief-6 co-located pass",
+   "opened": "2026-08-27"
+  }
+ ]
+}
