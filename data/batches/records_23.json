@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "udayagiri-khandagiri-bhubaneswar",
+    "name": "Udayagiri and Khandagiri Caves",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.2628,
+    "lng": 85.786,
+    "tradition": "Jain",
+    "deity": "Jain Tirthankaras",
+    "built": [
+      -200,
+      -1
+    ],
+    "builtDisplay": "2nd–1st c. BCE (Kharavela)",
+    "dynasty": "Kharavela",
+    "circuits": [],
+    "significance": "Two facing sandstone ridges honeycombed with 33 part-natural, part-cut cells that housed Jain ascetics from the 2nd–1st century BCE, most of them excavated under King Kharavela. Udayagiri's Hathigumpha carries the long inscription that is the principal record of Kharavela's reign, and the Khandagiri caves were later reworked in the 11th century under the Somavamshis.",
+    "wiki": "https://en.wikipedia.org/wiki/Udayagiri_and_Khandagiri_Caves",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Udayagiri_and_Khandagiri_Caves"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kedareswar-bhubaneswar",
+    "name": "Kedareswar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.2422,
+    "lng": 85.8403,
+    "tradition": "Hindu",
+    "deity": "Shiva (Kedareshwar)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Nagara",
+    "circuits": [],
+    "significance": "One of the eight Astasambhu Shiva shrines of Bhubaneswar, standing about forty metres south of the Mukteswar temple within the Kedara-Gouri complex. Its pancharatha plan pairs a rekha vimana with a pidha jagamohana, and the sanctum floor sits below the present ground level.",
+    "story": "Local telling holds that the lovers Kedar and Gouri fled their village, that Kedar was killed by a tiger and Gouri drowned herself in the pond here, and that the king raised the temple in their memory.",
+    "wiki": "https://en.wikipedia.org/wiki/Kedareswar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kedareswar_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "megheswar-bhubaneswar",
+    "name": "Megheswar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.2433,
+    "lng": 85.8563,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1100,
+      1200
+    ],
+    "builtDisplay": "12th c.",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A twelfth-century Shiva shrine in the Tankapani Road quarter of Bhubaneswar, one of the many medieval deulas that survive outside the city's better-known temple cluster. Reporting in 2011 flagged the structure as threatened by waterlogging.",
+    "wiki": "https://en.wikipedia.org/wiki/Megheswar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Megheswar_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "rameshwar-deula-bhubaneswar",
+    "name": "Rameshwar Deula",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.2535,
+    "lng": 85.8359,
+    "tradition": "Hindu",
+    "deity": "Shiva (Rameshwar, in linga form)",
+    "built": [
+      800,
+      900
+    ],
+    "builtDisplay": "9th c.",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A ninth-century Shiva shrine about two kilometres from the Lingaraj temple, known locally as the Mausi Maa or aunt's temple of Lingaraj. During the Ashokashtami festival Lingaraj is drawn here on the Rukuna Rath chariot and stays four days.",
+    "story": "It is said that on returning from Lanka, Sita asked Rama to worship Shiva at this spot, and Rama set up a linga for the purpose.",
+    "wiki": "https://en.wikipedia.org/wiki/Rameshwar_Deula",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Rameshwar_Deula"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "yameshwar-bhubaneswar",
+    "name": "Yameshwar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Bhubaneswar",
+    "lat": 20.2403,
+    "lng": 85.8314,
+    "tradition": "Hindu",
+    "deity": "Shiva (with Yama)",
+    "built": [
+      1200,
+      1400
+    ],
+    "builtDisplay": "13th–14th c. (Eastern Ganga)",
+    "dynasty": "Eastern Ganga",
+    "style": "Rekha Deula",
+    "circuits": [],
+    "significance": "A sandstone Shiva temple of the Eastern Ganga period at Jameshwar Patna in Bhubaneswar, its rekha vimana paired with a pidha jagamohana and a detached mandapa inside a laterite enclosure. The sanctum holds a linga set in a circular yonipitha; parts of the fabric have weathered badly.",
+    "wiki": "https://en.wikipedia.org/wiki/Yameshwar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Yameshwar_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kichakeshwari-khiching",
+    "name": "Kichakeshwari Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Khiching, Mayurbhanj",
+    "lat": 21.553,
+    "lng": 85.495,
+    "tradition": "Hindu",
+    "deity": "Kichakeshwari Devi (Chamunda-Kali)",
+    "built": [
+      1934,
+      1934
+    ],
+    "origin": 700,
+    "builtDisplay": "7th–8th c.; rebuilt 1934",
+    "dynasty": "Bhanja",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "Tutelary goddess of the Bhanja rulers at Khiching, their old capital, the shrine is built entirely of black chlorite and enshrines a ten-armed Chamunda-Kali. The present rekha vimana is a 1934 reconstruction by Maharaja Pratap Chandra Bhanj Deo; an attached museum founded in 1922 is the second-oldest in Odisha.",
+    "wiki": "https://en.wikipedia.org/wiki/Kichakeshwari_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kichakeshwari_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "varahi-deula-chaurasi",
+    "name": "Varahi Deula, Chaurasi",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Chaurasi, Kendrapara",
+    "lat": 20.0585,
+    "lng": 86.1185,
+    "tradition": "Hindu",
+    "deity": "Varahi (Matsya Varahi)",
+    "built": [
+      900,
+      925
+    ],
+    "builtDisplay": "early 10th c. (Somavamshi)",
+    "dynasty": "Somavamshi",
+    "style": "Khakhara",
+    "circuits": [],
+    "significance": "A rare sandstone khakhara-order temple of the early tenth century whose barrel-vaulted roof sets it apart from the rekha and bhadra deulas around it. Its boar-faced, pot-bellied Varahi seated in lalitasana with a fish and bowl is counted among the finest images of the goddess anywhere in India, and tantric rites including a daily fish offering continue here.",
+    "wiki": "https://en.wikipedia.org/wiki/Varahi_Deula,_Chaurasi",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Varahi_Deula,_Chaurasi"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "simhanath-baramba",
+    "name": "Simhanath Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Baramba, Cuttack",
+    "lat": 20.3709,
+    "lng": 85.3785,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      800,
+      850
+    ],
+    "builtDisplay": "early 9th c.",
+    "dynasty": "Undetermined",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "An early ninth-century Shiva temple at Gopinathpur in Baramba, important as an early example of the pancharatha deula with a rekha sanctuary and terraced jagamohana. Unusually it carries both Shaiva and Vaishnava sculpture and follows a panchayatana layout with subsidiary shrines to Vishnu, Ganesha, Surya and Mahishamardini.",
+    "wiki": "https://en.wikipedia.org/wiki/Simhanath_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Simhanath_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "huma-leaning-temple",
+    "name": "Leaning Temple of Huma",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Huma, Sambalpur",
+    "lat": 21.2806,
+    "lng": 83.9122,
+    "tradition": "Hindu",
+    "deity": "Shiva (Bimaleshwar)",
+    "built": [
+      1660,
+      1788
+    ],
+    "builtDisplay": "1660–1788 (Chauhan of Sambalpur)",
+    "dynasty": "Chauhan (Sambalpur)",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "A Shiva temple on a rock shelf above the Mahanadi some 23 km from Sambalpur, rebuilt by the Chauhan king Baliar Singh and extended under Ajit Singh, with an earlier foundation credited to Anangabhima Deva III. It is one of very few deliberately noted leaning temples in the world, tilting about 13.8 degrees while its finial stays vertical; whether river scour or earthquake caused the tilt is unresolved.",
+    "story": "A milkman is said to have crossed the river daily to pour milk on a bare rock here, which drank it each time, and the temple was raised where the miracle happened.",
+    "wiki": "https://en.wikipedia.org/wiki/Leaning_Temple_of_Huma",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Leaning_Temple_of_Huma"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "harishankar-gandhamardan",
+    "name": "Harishankar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Gandhamardan Hills, Balangir",
+    "lat": 20.8544,
+    "lng": 82.8606,
+    "tradition": "Hindu",
+    "deity": "Hari-Shankar (Vishnu and Shiva together)",
+    "built": [
+      1300,
+      1400
+    ],
+    "builtDisplay": "14th c. (Chauhan)",
+    "dynasty": "Chauhan (Patna)",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "Set on the slopes of the Gandhamardan hills in Balangir, this shrine joins Vishnu and Shiva in a single dedication. The deity is said to have been found in the fourteenth century by a Chauhan king of the Patna kingdom and the temple raised at the order of queen Durlabha Devi; the plateau between it and Nrusinghanath holds Buddhist ruins associated with the ancient Parimalgiri seat of learning.",
+    "wiki": "https://en.wikipedia.org/wiki/Harishankar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Harishankar_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "akhandalamani-aradi",
+    "name": "Akhandalamani Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Aradi, Bhadrak",
+    "lat": 20.8118,
+    "lng": 86.6552,
+    "tradition": "Hindu",
+    "deity": "Shiva (Baba Akhandalamani)",
+    "built": [
+      1830,
+      1840
+    ],
+    "builtDisplay": "1830s masonry temple (Bhanja of Kanika)",
+    "dynasty": "Bhanja (Kanika)",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "A major Shiva shrine on the bank of the Baitarani at Aradi in Bhadrak, roughly 150 feet high. An earlier wooden temple credited to Raja Niladri Samara Singha Mohapatra was replaced between 1830 and 1840 by the present masonry structure raised by Harihara Bhanja of Kanika and his chief queen Satyabhama Patadei, using stone quarried at Lalitgiri.",
+    "story": "A ploughing peasant is said to have struck a black stone that bled milk and was found hooded by a cobra; the king then dreamt of Akhandalamani's arrival and built the first wooden shrine over it.",
+    "wiki": "https://en.wikipedia.org/wiki/Akhandalamani_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Akhandalamani_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "panchalingeswar-nilagiri",
+    "name": "Panchalingeswar Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Nilagiri, Balasore",
+    "lat": 21.4288,
+    "lng": 86.7291,
+    "tradition": "Hindu",
+    "deity": "Shiva (five Shivalingas)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A hilltop shrine near the Nilagiri hills named for the five Shivalingas set inside it, over which a perennial stream runs and continuously bathes them. Worshippers lie flat on the rock beside the stream to reach and touch the lingas in their natural basin.",
+    "story": "One account credits Sita with installing the lingas during the exile; another says the asura king Banasura worshipped these self-manifested lingas here for the beauty of the place.",
+    "wiki": "https://en.wikipedia.org/wiki/Panchalingeswar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Panchalingeswar_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "maa-tarini-ghatgaon",
+    "name": "Maa Tarini Temple, Ghatgaon",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Ghatgaon, Keonjhar",
+    "lat": 21.383,
+    "lng": 85.883,
+    "tradition": "Hindu",
+    "deity": "Maa Tarini (Shakti)",
+    "built": [
+      1475,
+      1475
+    ],
+    "builtDisplay": "c. 1475 (Purushottama Deva's reign)",
+    "dynasty": "Purushottama Deva era",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "One of Odisha's most visited Shakti shrines, its establishment traced to about 1475 CE in the reign of Purushottama Deva of Kalinga and credited to his general Govinda Bhanja. The temple marks the absorption of a tribal goddess cult into mainstream Hindu worship in the Keonjhar uplands.",
+    "story": "The king is said to have carried the goddess from Puri on the condition that he never look back; hearing her ornaments fall silent in the forest at Ghatgaon he turned, and she stayed there for good.",
+    "wiki": "https://en.wikipedia.org/wiki/Maa_Tarini_Temple,_Ghatgaon",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Maa_Tarini_Temple,_Ghatgaon"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "biranchinarayan-buguda",
+    "name": "Biranchinarayan Temple, Buguda",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Buguda, Ganjam",
+    "lat": 19.8088,
+    "lng": 84.7942,
+    "tradition": "Hindu",
+    "deity": "Biranchi Narayan (Surya)",
+    "built": [
+      1790,
+      1790
+    ],
+    "builtDisplay": "renovated 1790 (Bhanja)",
+    "dynasty": "Bhanja",
+    "circuits": [],
+    "significance": "Known as the Wooden Konark, this Ganjam sun temple was renovated in 1790 by Srikara Bhanjadeva and counts as Odisha's second major Surya shrine after Konark. Its wooden principal image, forty-six carved pillars and chariot with seven horses driven by Aruna face west, so that the setting sun falls on the god's feet.",
+    "wiki": "https://en.wikipedia.org/wiki/Biranchinarayan_Temple,_Buguda",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Biranchinarayan_Temple,_Buguda"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "sarala-jhankad",
+    "name": "Sarala Temple",
+    "country": "India",
+    "state": "Odisha",
+    "place": "Jhankad, Jagatsinghpur",
+    "lat": 20.2797,
+    "lng": 86.2937,
+    "tradition": "Hindu",
+    "deity": "Maa Sarala (Adishakti)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "The shrine of Maa Sarala at Jhankad in Jagatsinghpur district, one of the principal Shakti temples of coastal Odisha and the goddess after whom the medieval Odia poet Sarala Das is named.",
+    "wiki": "https://en.wikipedia.org/wiki/Sarala_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Sarala_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "madan-mohan-cooch-behar",
+    "name": "Madan Mohan Temple",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Cooch Behar",
+    "lat": 26.3204,
+    "lng": 89.4454,
+    "tradition": "Hindu",
+    "deity": "Madan Mohan (Krishna)",
+    "built": [
+      1885,
+      1890
+    ],
+    "builtDisplay": "1885–1890 (Koch)",
+    "dynasty": "Koch",
+    "style": "Char-chala with dalan (Bengal)",
+    "circuits": [],
+    "significance": "Built between 1885 and 1889 by Maharaja Nripendra Narayan and opened on 21 March 1890, this is the principal temple of Cooch Behar. Madan Mohan is the kuladevata of the Koch dynasty, worshipped here in two forms, and the temple's Raas Utsav continues a fair over two centuries old.",
+    "wiki": "https://en.wikipedia.org/wiki/Madan_Mohan_temple,_Cooch_Behar",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Madan_Mohan_temple,_Cooch_Behar"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "bahulara-onda",
+    "name": "Bahulara Ancient Temple",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Bahulara, Onda, Bankura",
+    "lat": 23.1661,
+    "lng": 87.2352,
+    "tradition": "Hindu",
+    "deity": "Shiva (Siddheshwara Mahadeva)",
+    "built": [
+      1100,
+      1200
+    ],
+    "builtDisplay": "11th–12th c. brick deul",
+    "dynasty": "Undetermined",
+    "style": "Rekha deul (Nagara)",
+    "circuits": [],
+    "significance": "A 19.2 m brick rekha deul on the Dwarakeswar river, called by Nalini Bhattasali probably the finest medieval brick deul in Bengal, with cut-brick and lime-stucco ornament. Archaeology points to an earlier Jain or Buddhist shrine on the site, later reconsecrated to Shiva; carvings of Parshvanatha and Mahishasuramardini survive on it, and it is an ASI monument of national importance.",
+    "wiki": "https://en.wikipedia.org/wiki/Bahulara_Ancient_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Bahulara_Ancient_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "jatar-deul-kankandighi",
+    "name": "Jatar Deul",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Kankandighi, South 24 Parganas",
+    "lat": 21.9925,
+    "lng": 88.4875,
+    "tradition": "Hindu",
+    "deity": "Shiva (Jatadhari)",
+    "built": [
+      950,
+      1100
+    ],
+    "builtDisplay": "10th–11th c.",
+    "dynasty": "Undetermined",
+    "style": "Rekha deul",
+    "circuits": [],
+    "significance": "A near-hundred-foot brick rekha deul standing alone in the Sundarbans, found by land surveyors in the mid-nineteenth century and now an ASI monument of national importance. A lost inscription said to be dated 975 CE is attributed to Raja Jayantachandra; the sanctum held no image when recorded, and whether it began as Hindu or Buddhist is still debated.",
+    "wiki": "https://en.wikipedia.org/wiki/Jatar_Deul",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Jatar_Deul"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ichhai-ghosher-deul",
+    "name": "Ichhai Ghosher Deul",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Gourangapur, Paschim Bardhaman",
+    "lat": 23.6097,
+    "lng": 87.4523,
+    "tradition": "Hindu",
+    "deity": "Bhagabati (Durga)",
+    "built": [
+      1500,
+      1700
+    ],
+    "builtDisplay": "16th–17th c.",
+    "dynasty": "Undetermined",
+    "style": "Rekha deul",
+    "circuits": [],
+    "significance": "A late-medieval brick sikhara temple about 18 m high near Gourangapur, now an ASI monument of national importance. Its windowless sanctum holds no image and traces of plaster survive on the outer walls; scholars date it to the sixteenth or seventeenth century, well after the chieftain whose name it carries.",
+    "story": "Tradition says the local chieftain Ichai Ghosh raised the temple in honour of the goddess Bhagabati.",
+    "wiki": "https://en.wikipedia.org/wiki/Ichhai_Ghosher_Deul",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ichhai_Ghosher_Deul"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kanak-durga-chilkigarh",
+    "name": "Kanak Durga Temple",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Chilkigarh, Jhargram",
+    "lat": 22.4542,
+    "lng": 86.8816,
+    "tradition": "Hindu",
+    "deity": "Durga (Kanak Durga)",
+    "built": [
+      1500,
+      1600
+    ],
+    "builtDisplay": "c. 16th c. (Chilkigarh Raj)",
+    "dynasty": "Chilkigarh Raj",
+    "circuits": [],
+    "significance": "A goddess shrine on the Dulung river some 14 km from Jhargram, founded roughly five centuries ago by Gopinath Singh, the feudal ruler of Chilkigarh, who is said to have made the image after a dream. The original idol was stolen twice in 2007–08 and replaced with an ashtadhatu figure; the surrounding sacred grove is now a protected herbal forest.",
+    "story": "Villagers hold that human sacrifice was offered here until the goddess herself forbade it, and that on Navami she cooks the offerings with her own hands.",
+    "wiki": "https://en.wikipedia.org/wiki/Kanak_Durga_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kanak_Durga_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "birla-mandir-kolkata",
+    "name": "Birla Mandir, Kolkata",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Kolkata",
+    "lat": 22.5306,
+    "lng": 88.365,
+    "tradition": "Hindu",
+    "deity": "Lakshminarayan (Radha and Krishna)",
+    "built": [
+      1970,
+      1996
+    ],
+    "builtDisplay": "1970–1996",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A cream-sandstone temple on Ballygunge's Ashutosh Chowdhury Avenue built by the Birla family over twenty-six years, designed by Nomi Bose and executed under Sompura temple architects, with a silhouette echoing the Lingaraj temple of Bhubaneswar. Consecrated on 21 February 1996, it stands on 44 kathas and carries carved panels of the Bhagavad Gita, with side shrines to Durga and Shiva.",
+    "wiki": "https://en.wikipedia.org/wiki/Birla_Mandir,_Kolkata",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Birla_Mandir,_Kolkata"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "calcutta-jain-temple",
+    "name": "Calcutta Jain Temple",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Kolkata",
+    "lat": 22.5916,
+    "lng": 88.3778,
+    "tradition": "Jain",
+    "deity": "Shitalanatha (10th Tirthankara)",
+    "built": [
+      1867,
+      1867
+    ],
+    "builtDisplay": "1867",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A Shvetambara complex of four shrines at Badridas Temple Street, built in 1867 by the philanthropist Rai Badridas Bahadoor Mookim and consecrated by Acharya Kalyansuri. The main shrine to Shitalanatha is famous for mirror-inlaid pillars, stained glass, mosaic and glass chandeliers, and a ghee lamp said to have burned since 1867; the complex also holds the footprints of the monks Jinadattasuri and Jinkushalsuri.",
+    "wiki": "https://en.wikipedia.org/wiki/Calcutta_Jain_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Calcutta_Jain_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "vikramashila-antichak",
+    "name": "Vikramashila",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Antichak, Bhagalpur",
+    "lat": 25.2667,
+    "lng": 87.15,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Vajrayana mahavihara)",
+    "built": [
+      780,
+      820
+    ],
+    "builtDisplay": "late 8th–early 9th c. (Pala)",
+    "dynasty": "Pala",
+    "circuits": [
+      "Buddhist circuit"
+    ],
+    "significance": "One of the three great Pala mahaviharas alongside Nalanda and Odantapuri, founded by Dharmapala at Antichak near Kahalgaon and reputedly set up in response to a perceived decline at Nalanda. Its excavated plan is a huge square monastery of 208 cells around a cruciform stupa; it taught over a thousand students and was destroyed around 1193 by Bakhtiyar Khalji, its history preserved largely in Tibetan sources such as Taranatha.",
+    "wiki": "https://en.wikipedia.org/wiki/Vikramashila",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Vikramashila"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "odantapuri-bihar-sharif",
+    "name": "Odantapuri",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Bihar Sharif, Nalanda",
+    "lat": 25.197,
+    "lng": 85.518,
+    "tradition": "Buddhist",
+    "deity": "Buddha (mahavihara)",
+    "built": [
+      750,
+      850
+    ],
+    "builtDisplay": "8th–9th c. (Pala)",
+    "dynasty": "Pala",
+    "circuits": [
+      "Buddhist circuit"
+    ],
+    "significance": "The second-oldest of India's mahaviharas after Nalanda, founded at Bihar Sharif under Gopala I and sustained by later Pala kings and the Pithipatis of Magadha, teaching both Hinayana and Mahayana. It declined in the eleventh century and was sacked around 1193 by Bakhtiyar Khalji.",
+    "story": "Tibetan tradition tells of a yogi and a Buddhist lay devotee performing a corpse rite to conjure the gold that paid for the monastery.",
+    "wiki": "https://en.wikipedia.org/wiki/Odantapuri",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Odantapuri"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "sujata-stupa-bakraur",
+    "name": "Sujata Stupa",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Bakraur, Bodh Gaya, Gaya",
+    "lat": 24.6976,
+    "lng": 85.0045,
+    "tradition": "Buddhist",
+    "deity": "Buddha (commemorating Sujata's offering)",
+    "built": [
+      800,
+      900
+    ],
+    "origin": -200,
+    "builtDisplay": "2nd c. BCE; final phase 9th c. (Pala)",
+    "dynasty": "Pala",
+    "circuits": [
+      "Buddhist circuit"
+    ],
+    "significance": "A brick stupa across the Falgu from Bodh Gaya marking the spot where the milkmaid Sujata is said to have fed the Buddha, first raised in the second century BCE and last enlarged in the ninth century under the Pala king Devapala, whose name was found inscribed here. An Ashokan pillar once stood beside it before being moved to Bodh Gaya in 1956; the ASI excavated the mound in 1973–74 and again in 2001–06.",
+    "story": "Sujata of Bakraur offered milk-rice to the emaciated Gautama at this spot, ending his years of fasting and setting him on the Middle Way to enlightenment.",
+    "wiki": "https://en.wikipedia.org/wiki/Sujata_Stupa",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Sujata_Stupa"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "lauria-nandangarh",
+    "name": "Lauria Nandangarh",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Lauriya, West Champaran",
+    "lat": 26.9985,
+    "lng": 84.4085,
+    "tradition": "Buddhist",
+    "deity": "Buddha (stupa mounds and Ashokan pillar)",
+    "built": [
+      -300,
+      -200
+    ],
+    "builtDisplay": "c. 3rd c. BCE (Maurya)",
+    "dynasty": "Maurya",
+    "circuits": [],
+    "significance": "A Mauryan site in West Champaran with fifteen stupa mounds in three rows and a ten-metre polished sandstone Ashokan pillar crowned by a lion and carrying Brahmi edicts. Excavations by Cunningham, Bloch and Majumdar recovered figurines, pottery and, inside a miniature stupa, a birch-leaf manuscript of Buddhist text.",
+    "story": "Some hold that the 26 m brick mound is the stupa in which the Buddha's ashes were enshrined.",
+    "wiki": "https://en.wikipedia.org/wiki/Lauria_Nandangarh",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Lauria_Nandangarh"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "son-bhandar-rajgir",
+    "name": "Son Bhandar Caves",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Rajgir, Nalanda",
+    "lat": 25.0042,
+    "lng": 85.4167,
+    "tradition": "Jain",
+    "deity": "Jain Tirthankaras",
+    "built": [
+      -319,
+      -180
+    ],
+    "builtDisplay": "Maurya period; dedicatory inscription 4th c. CE",
+    "dynasty": "Maurya",
+    "circuits": [],
+    "significance": "Two man-made Jain caves cut into the Vaibhar hill at Rajgir, the main one rectangular with a trapezoidal doorway and vaulted ceiling in the manner of the Barabar caves but less finely finished. A dedicatory inscription of about the fourth century CE credits the Jain monk Vairadeva with their excavation, while some scholars push the cutting back to the Mauryan period; a chaumukha of the seventh or eighth century shows Ajitanatha, Sambhavanatha, Shantinatha and Rishabhanatha.",
+    "wiki": "https://en.wikipedia.org/wiki/Son_Bhandar_Caves",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Son_Bhandar_Caves"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "mangla-gauri-gaya",
+    "name": "Mangla Gauri Temple",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Gaya",
+    "lat": 24.7751,
+    "lng": 85.0023,
+    "tradition": "Hindu",
+    "deity": "Gauri (Sati)",
+    "built": [
+      1400,
+      1500
+    ],
+    "builtDisplay": "present temple 15th c.",
+    "dynasty": "Undetermined",
+    "style": "Rock-cut",
+    "circuits": [
+      "Shakti Peetha"
+    ],
+    "significance": "A hilltop Shakta shrine on Mangalagauri hill in Gaya, counted among the eighteen maha Shakta pithas and named in the Padma, Vayu and Agni Puranas. The present rock-cut temple dates to the fifteenth century and is credited to Maadho Giri Ji Maharaj; subsidiary shrines to Kali, Ganesha, Hanuman and Shiva stand in the complex, an unusual Shakta focus in a city dominated by Vaishnava pilgrimage.",
+    "wiki": "https://en.wikipedia.org/wiki/Mangla_Gauri_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Mangla_Gauri_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "deo-sun-temple-aurangabad",
+    "name": "Deo Sun Temple",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Deo, Aurangabad",
+    "lat": 24.6588,
+    "lng": 84.437,
+    "tradition": "Hindu",
+    "deity": "Surya",
+    "built": [
+      400,
+      600
+    ],
+    "builtDisplay": "5th–6th c. per ASI; 1437 dedication inscription",
+    "dynasty": "Undetermined",
+    "style": "Nagara with Dravida and Vesara elements",
+    "circuits": [],
+    "significance": "Bihar's best-known sun temple and the focus of enormous Chhath gatherings each year, dated by the ASI to the fifth or sixth century, with a 1437 inscription recording a dedication by King Bhairavendra. It faces west toward the setting sun rather than east, and some scholars argue it began as a Buddhist shrine before being reconsecrated to Surya.",
+    "story": "Local tradition says Vishwakarma, the divine architect, raised the whole temple in a single night.",
+    "wiki": "https://en.wikipedia.org/wiki/Deo_Sun_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Deo_Sun_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "aranya-devi-arrah",
+    "name": "Aranya Devi Temple, Arrah",
+    "country": "India",
+    "state": "Bihar",
+    "place": "Arrah, Bhojpur",
+    "lat": 25.5679,
+    "lng": 84.673,
+    "tradition": "Hindu",
+    "deity": "Aranya Devi (Aranyani, a form of Adishakti)",
+    "built": [
+      2005,
+      2005
+    ],
+    "builtDisplay": "present temple 2005",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "The tutelary goddess of Arrah, whose name the town is said to carry, enshrined at Sheesh Mahal Chowk in Bhojpur district and revered as a siddha pitha alongside the 108 Shakti Pithas. The present temple was established in 2005 and a 108-foot structure was under construction as of 2022.",
+    "story": "It is told that Rama and Lakshmana bathed and worshipped here with Vishvamitra on the way to Janakpur, and that Yudhishthira installed the goddess's image during the Pandavas' exile.",
+    "website": "https://www.maaaranyadevi.com/",
+    "wiki": "https://en.wikipedia.org/wiki/Aranya_Devi_Temple,_Arrah",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Aranya_Devi_Temple,_Arrah"
+      },
+      {
+        "l": "Official site",
+        "u": "https://www.maaaranyadevi.com/"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "jagannath-ranchi",
+    "name": "Jagannath Temple, Ranchi",
+    "country": "India",
+    "state": "Jharkhand",
+    "place": "Ranchi",
+    "lat": 23.3169,
+    "lng": 85.2817,
+    "tradition": "Hindu",
+    "deity": "Jagannath",
+    "built": [
+      1691,
+      1691
+    ],
+    "builtDisplay": "1691; rebuilt 1992",
+    "dynasty": "Barkagarh (Ani Nath Shahdeo)",
+    "style": "Kalinga",
+    "circuits": [],
+    "significance": "A smaller Kalinga-style echo of the Puri temple raised on a hillock about 10 km outside Ranchi and completed on 25 December 1691 by Ani Nath Shahdeo of Barkagarh Jagannathpur. Damaged during Aurangzeb's reign in the same year, it collapsed in August 1990 and was rebuilt by February 1992; its Rath Yatra draws large tribal and non-tribal crowds.",
+    "wiki": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Ranchi",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Ranchi"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "pahari-mandir-ranchi",
+    "name": "Pahari Mandir",
+    "country": "India",
+    "state": "Jharkhand",
+    "place": "Ranchi",
+    "lat": 23.375,
+    "lng": 85.311,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva shrine on a 2,140-foot hill in Ranchi, once called Tiriburu, whose summit the British used as a gallows for freedom fighters. K. C. Das raised the tricolour here at independence, said to be the first temple in the country to fly the national flag, and a stone on the hill records 14–15 August 1947; it fills with pilgrims at Shivaratri and through Sawan.",
+    "wiki": "https://en.wikipedia.org/wiki/Pahari_Mandir",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Pahari_Mandir"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kauleshwari-chatra",
+    "name": "Kauleshwari Temple",
+    "country": "India",
+    "state": "Jharkhand",
+    "place": "Kolhua Hill, Hunterganj, Chatra",
+    "lat": 24.3763,
+    "lng": 84.8643,
+    "tradition": "Hindu",
+    "deity": "Kauleshwari Devi (a form of Sati/Kali)",
+    "built": [
+      900,
+      1000
+    ],
+    "builtDisplay": "10th c.",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A tenth-century goddess shrine on the 1,575-foot Kolhua hill in Chatra district, revered as a Shakta pitha. The hill is unusual for carrying Hindu, Jain and Buddhist associations together, including a footprint attributed to the Jain tirthankara Parshvanatha and a Jain temple built in 1682, destroyed and later rebuilt.",
+    "story": "Devotees hold that the womb of Sati fell on this hill, and that the Pandavas, and later Rama with Sita and Lakshmana, sheltered here during their forest exiles.",
+    "wiki": "https://en.wikipedia.org/wiki/Kauleshwari_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kauleshwari_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "bambleshwari-dongargarh",
+    "name": "Bambleshwari Temple",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Dongargarh, Rajnandgaon",
+    "lat": 21.1794,
+    "lng": 80.7525,
+    "tradition": "Hindu",
+    "deity": "Bambleshwari (Durga)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Nagara",
+    "circuits": [],
+    "significance": "A goddess shrine on a 1,600-foot hill at Dongargarh reached by about a thousand steps or a ropeway, with a second temple, Chhotti Bambleshwari, on level ground half a kilometre away. It is one of Chhattisgarh's largest Navaratri pilgrimages, drawing hundreds of thousands of devotees.",
+    "story": "Tradition tells of the childless king Veersen granted a son, Madansen, by Shiva and Parvati, after which he built the temple; another account has the goddess appearing to stop Vikramaditya from taking his own life.",
+    "wiki": "https://en.wikipedia.org/wiki/Bambleshwari_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Bambleshwari_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "narayanpal-bastar",
+    "name": "Narayanpal Temple",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Narayanpal, Bastar",
+    "lat": 19.1997,
+    "lng": 81.7403,
+    "tradition": "Hindu",
+    "deity": "Vishnu",
+    "built": [
+      1111,
+      1111
+    ],
+    "builtDisplay": "c. 1111 (Chindaka Naga)",
+    "dynasty": "Chindaka Naga",
+    "style": "Nagara",
+    "circuits": [],
+    "significance": "A Vishnu temple of about 1111 CE near the meeting of the Indravati and Narangi rivers, some four kilometres east of Chitrakote falls, built by Mumunda Devi, a queen of the Chindaka Naga line. Devanagari inscriptions at the site record a land grant to a Lokeswar by the queen-mother Gunda Mahadevi, and the Nagara superstructure shows Chalukya influence.",
+    "website": "https://bastar.gov.in/en/tourist-place/narayanpal-temple/",
+    "wiki": "https://en.wikipedia.org/wiki/Narayanpal_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Narayanpal_Temple"
+      },
+      {
+        "l": "Official site",
+        "u": "https://bastar.gov.in/en/tourist-place/narayanpal-temple/"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "siddheshwar-palari",
+    "name": "Siddheshwar Mandir, Palari",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Palari, Balodabazar",
+    "lat": 21.5347,
+    "lng": 82.1777,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      650,
+      675
+    ],
+    "builtDisplay": "mid-7th c.",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A west-facing brick Shiva temple on a stellate plan at Palari, dated to about the middle of the seventh century, roughly fifty years after the Lakshmana temple at Sirpur. Its carved stone doorway carries Brahma, Vishnu, Ganga and Yamuna, and the tower is worked with gavakshas crowned by lions.",
+    "wiki": "https://en.wikipedia.org/wiki/Siddheshwar_Mandir,_Palari",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Siddheshwar_Mandir,_Palari"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "mata-kaushalya-chandkhuri",
+    "name": "Mata Kaushalya Temple",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Chandkhuri, Raipur",
+    "lat": 21.3194,
+    "lng": 81.8131,
+    "tradition": "Hindu",
+    "deity": "Kaushalya (mother of Rama)",
+    "built": [
+      700,
+      800
+    ],
+    "builtDisplay": "believed 8th c.; renovated 1973 and 2021",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "Described as the only temple anywhere dedicated to Kaushalya, who is shown holding the infant Rama, at Chandkhuri about 27 km from Raipur. Damaged and rebuilt repeatedly, it was renovated in 1973 and rededicated in October 2021 as the centrepiece of the Ram Van Gaman Path circuit through the old Dandakaranya country.",
+    "wiki": "https://en.wikipedia.org/wiki/Mata_Kaushalya_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Mata_Kaushalya_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ugratara-guwahati",
+    "name": "Ugratara Devalaya",
+    "country": "India",
+    "state": "Assam",
+    "place": "Uzan Bazaar, Guwahati",
+    "lat": 26.18,
+    "lng": 91.74,
+    "tradition": "Hindu",
+    "deity": "Ugratara",
+    "built": [
+      1725,
+      1725
+    ],
+    "builtDisplay": "1725 (Ahom)",
+    "dynasty": "Ahom",
+    "style": "Nilachal",
+    "circuits": [],
+    "significance": "A Shakta shrine at Uzan Bazaar in Guwahati built in Saka 1647, or 1725 CE, by the Ahom king Siva Singha. It has no image in the sanctum: a small water-filled pit is worshipped as the goddess, who is also identified with the Buddhist Taras Tikshna-Kanta and Eka-Jata; an earlier Kamarupa Pala association has been suggested but is not supported by inscriptions.",
+    "story": "The goddess is said to mark where the navel of Sati fell, and a Kamarupa legend tells of Yama complaining that no soul from the region reached hell, after which Ugra Tara was set to drive its people out until the sage Vasishtha, seized while meditating, cursed her.",
+    "wiki": "https://en.wikipedia.org/wiki/Ugratara_Devalaya",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ugratara_Devalaya"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "doul-govinda-north-guwahati",
+    "name": "Doul Govinda Temple",
+    "country": "India",
+    "state": "Assam",
+    "place": "Rajaduar, North Guwahati, Kamrup",
+    "lat": 26.2068,
+    "lng": 91.7417,
+    "tradition": "Hindu",
+    "deity": "Krishna (Govinda)",
+    "built": [
+      1800,
+      1900
+    ],
+    "builtDisplay": "over 150 years old; renovated 1966",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Krishna temple with an attached namghar on the north bank of the Brahmaputra at Rajaduar, established more than a century and a half ago around an image brought from Sandhyasar near Nalbari by Ganga Ram Barooah, and renovated in 1966. Its five-day Holi observance draws some five thousand pilgrims.",
+    "wiki": "https://en.wikipedia.org/wiki/Doul_Govinda_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Doul_Govinda_Temple"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "devrani-jethani-tala",
+    "name": "Devrani Jethani Temple Complex",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Tala, Bilaspur",
+    "lat": 21.9072,
+    "lng": 82.0259,
+    "tradition": "Hindu",
+    "deity": "Rudra Shiva",
+    "built": [
+      525,
+      550
+    ],
+    "builtDisplay": "c. 525–550 CE",
+    "dynasty": "Sharabhapuriya (attributed)",
+    "circuits": [],
+    "significance": "Two ruined sixth-century temples at Tala on the Maniyari river, among the most important surviving architecture of the Dakshina Kosala region, excavated by the ASI between 1977 and 1988. The smaller Devrani shrine carries an elaborate figured doorway and shows southern influence while the larger Jethani follows northern convention and appears to have been an experiment that collapsed; a five-tonne, 2.7 m Rudra Shiva figure covered in animal and human faces was found buried here on 17 January 1988.",
+    "wiki": "https://en.wikipedia.org/wiki/Devrani_Jethani_Temple_Complex",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Devrani_Jethani_Temple_Complex"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "harihar-dham-bagodar",
+    "name": "Harihar Dham",
+    "country": "India",
+    "state": "Jharkhand",
+    "place": "Bagodar, Giridih",
+    "lat": 24.07,
+    "lng": 85.8211,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A 25-acre river-girt temple site at Bagodar in Giridih district, about a kilometre off the Grand Trunk Road, built around a 65-foot Shivalinga described as the tallest in the world and said to have taken some thirty years to complete. It fills with pilgrims at Shravan Poornima and is a favoured venue for Hindu weddings.",
+    "wiki": "https://en.wikipedia.org/wiki/Harihar_Dham",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Harihar_Dham"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "dah-parvatiya-tezpur",
+    "name": "Dah Parvatiya",
+    "country": "India",
+    "state": "Assam",
+    "place": "Da Parbatia, Tezpur, Sonitpur",
+    "lat": 26.63,
+    "lng": 92.8,
+    "tradition": "Hindu",
+    "deity": "Shiva and Vishnu",
+    "built": [
+      400,
+      600
+    ],
+    "builtDisplay": "5th–6th c. (Gupta period)",
+    "dynasty": "Gupta period",
+    "style": "Gupta",
+    "circuits": [],
+    "significance": "The oldest datable temple remains in Assam, exposed at Tezpur when the 1897 earthquake destroyed a later Ahom-period brick temple built over them and excavated in 1924. The surviving carved stone door frame, with the river goddesses Ganga and Yamuna on its jambs, is regarded as the finest and earliest sculpture in the state and is protected by the ASI.",
+    "wiki": "https://en.wikipedia.org/wiki/Dah_Parvatiya",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Dah_Parvatiya"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "negheriting-dergaon",
+    "name": "Negheriting Shiva Doul",
+    "country": "India",
+    "state": "Assam",
+    "place": "Dergaon, Golaghat",
+    "lat": 26.7347,
+    "lng": 94.0052,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1765,
+      1765
+    ],
+    "origin": 800,
+    "builtDisplay": "1765 brick temple (Ahom); stone original 8th–9th c.",
+    "dynasty": "Ahom",
+    "style": "Panchayatana",
+    "circuits": [],
+    "significance": "A hillock temple near Dergaon whose original stone shrine of the eighth or ninth century was lost to floods and shifting river courses; the linga was recovered from the shallows of the Dihing and the Ahom king Rajeswar Singha raised the present brick temple over it in 1765. It follows a panchayatana plan with corner shrines to Vishnu, Ganesha, Surya and Durga around a three-foot Banalinga, and is a nationally protected monument.",
+    "story": "A sage named Urba is said to have wished to found a second Kashi here and to have gathered many Shiva lingas on the spot.",
+    "wiki": "https://en.wikipedia.org/wiki/Negheriting_Shiva_Doul",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Negheriting_Shiva_Doul"
+      },
+      {
+        "l": "Mapcarta",
+        "u": "https://mapcarta.com/W668560792"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "hatimura-jakhalabandha",
+    "name": "Hatimura Temple",
+    "country": "India",
+    "state": "Assam",
+    "place": "Jakhalabandha, Nagaon",
+    "lat": 26.6108,
+    "lng": 92.9972,
+    "tradition": "Hindu",
+    "deity": "Durga (Mahisamardini)",
+    "built": [
+      1745,
+      1746
+    ],
+    "builtDisplay": "1745–46 (Ahom)",
+    "dynasty": "Ahom",
+    "circuits": [],
+    "significance": "A Shakta shrine at Jakhalabandha in Nagaon district built in Sakabda 1667, that is 1745–46 CE, by the Ahom king Pramatta Singha, and long an important centre of goddess worship in Assam. Historical accounts record that human sacrifice was once offered at its altars.",
+    "wiki": "https://en.wikipedia.org/wiki/Hatimura_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Hatimura_Temple"
+      },
+      {
+        "l": "Mapcarta",
+        "u": "https://mapcarta.com/W1197822661"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "auniati-satra-majuli",
+    "name": "Auniati Satra",
+    "country": "India",
+    "state": "Assam",
+    "place": "Majuli",
+    "lat": 26.9402,
+    "lng": 94.1238,
+    "tradition": "Hindu",
+    "deity": "Krishna as Govinda (Ekasarana)",
+    "built": [
+      1653,
+      1653
+    ],
+    "builtDisplay": "1653 (Ahom royal patronage)",
+    "dynasty": "Ahom",
+    "style": "Assamese",
+    "circuits": [],
+    "significance": "The first satra taken under Ahom royal patronage and one of the four raj satras, founded on Majuli about 1653 with Niranjana Deva Goswami as its first satradhikar under king Sutamla, later Jayadhwaj Singha. Belonging to the Brahma Sanghati of Ekasarana Dharma and housing celibate monks, it did much to formalise the Hinduisation of the Ahom court and holds nearly 150 historical manuscripts and royal artefacts.",
+    "website": "https://auniati.org",
+    "wiki": "https://en.wikipedia.org/wiki/Auniati_Satra",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Auniati_Satra"
+      },
+      {
+        "l": "Official site",
+        "u": "https://auniati.org"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "golden-pagoda-namsai",
+    "name": "Golden Pagoda, Namsai",
+    "country": "India",
+    "state": "Arunachal Pradesh",
+    "place": "Namsai",
+    "lat": 27.7725,
+    "lng": 95.9749,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Theravada)",
+    "built": [
+      2010,
+      2010
+    ],
+    "builtDisplay": "completed 2010",
+    "dynasty": "Modern",
+    "style": "Burmese",
+    "circuits": [],
+    "significance": "A Burmese-style Theravada temple on a twenty-hectare campus in Namsai district, completed in 2010 at the initiative of the local MLA Chowna Mein. The World Tripitaka Foundation is developing it as India's first international Tripitaka centre, and it hosts the Kathina Civara Dana, Sangken and Loi-Krathong observances of the Tai Khamti community.",
+    "wiki": "https://en.wikipedia.org/wiki/Golden_Pagoda,_Namsai",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Golden_Pagoda,_Namsai"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "dubdi-yuksom",
+    "name": "Dubdi Monastery",
+    "country": "India",
+    "state": "Sikkim",
+    "place": "Yuksom, West Sikkim",
+    "lat": 27.067,
+    "lng": 88.467,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Nyingma school)",
+    "built": [
+      1701,
+      1701
+    ],
+    "builtDisplay": "1701 (Namgyal / Chogyal)",
+    "dynasty": "Namgyal (Chogyal)",
+    "style": "Tibetan",
+    "circuits": [],
+    "significance": "The oldest monastery in Sikkim, founded in 1701 above Yuksom, where the three lamas had crowned Phuntsog Namgyal as the first Chogyal in 1642. A two-storeyed square stone building facing south under a tapering tower, its name means the retreat; it once housed thirty monks and remains a stop on the Buddhist pilgrimage circuit.",
+    "wiki": "https://en.wikipedia.org/wiki/Dubdi_Monastery",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Dubdi_Monastery"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "phodong-monastery",
+    "name": "Phodong Monastery",
+    "country": "India",
+    "state": "Sikkim",
+    "place": "Phodong, North Sikkim",
+    "lat": 27.4128,
+    "lng": 88.5839,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Karma Kagyu school)",
+    "built": [
+      1740,
+      1740
+    ],
+    "builtDisplay": "1740 (Namgyal / Chogyal)",
+    "dynasty": "Namgyal (Chogyal)",
+    "style": "Tibetan",
+    "circuits": [],
+    "significance": "One of the three principal Karma Kagyu monasteries of Sikkim founded at the instance of the ninth Karmapa, alongside Rumtek and Ralang, established in 1740 under Chogyal Gyurmed Namgyal and later rebuilt by Sidkeong Tulku Namgyal. It lies 28 km from Gangtok, houses around 260 monks and is known for its old murals.",
+    "wiki": "https://en.wikipedia.org/wiki/Phodong_Monastery",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Phodong_Monastery"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "urgelling-tawang",
+    "name": "Urgelling Monastery",
+    "country": "India",
+    "state": "Arunachal Pradesh",
+    "place": "Tawang",
+    "lat": 27.5883,
+    "lng": 91.8653,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Tibetan Buddhism)",
+    "built": [
+      1489,
+      1489
+    ],
+    "builtDisplay": "1489",
+    "dynasty": "Undetermined",
+    "style": "Tibetan",
+    "circuits": [],
+    "significance": "A small monastery below Tawang founded in 1489 by Urgen Sangpo, remembered above all as the birthplace of the sixth Dalai Lama, Tsangyang Gyatso, born there on 1 March 1683. An inscription at the site records the birth.",
+    "wiki": "https://en.wikipedia.org/wiki/Urgelling_Monastery",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Urgelling_Monastery"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ralang-ravangla",
+    "name": "Ralang Monastery",
+    "country": "India",
+    "state": "Sikkim",
+    "place": "Ravangla, South Sikkim",
+    "lat": 27.3283,
+    "lng": 88.3347,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Kagyu school)",
+    "built": [
+      1768,
+      1768
+    ],
+    "builtDisplay": "1768; new monastery completed 1995",
+    "dynasty": "Undetermined",
+    "style": "Tibetan",
+    "circuits": [],
+    "significance": "A Kagyu monastery six kilometres from Ravangla in South Sikkim, founded in 1768 and rebuilt between 1975 and 1981, with the new Palchen Choeling Monastic Institute completed in 1995 by the twelfth Gyaltsab Rinpoche. It holds an extensive collection of paintings and thangkas, and the older Karma Rabtenling monastery still stands nearby.",
+    "wiki": "https://en.wikipedia.org/wiki/Ralang_Monastery",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ralang_Monastery"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "sanga-choeling-pelling",
+    "name": "Sanga Choeling Monastery",
+    "country": "India",
+    "state": "Sikkim",
+    "place": "Pelling, Gyalshing",
+    "lat": 27.2639,
+    "lng": 88.2214,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Nyingma school)",
+    "built": [
+      1701,
+      1701
+    ],
+    "builtDisplay": "1701",
+    "dynasty": "Undetermined",
+    "style": "Tibetan",
+    "circuits": [],
+    "significance": "One of the oldest monasteries in Sikkim, founded above Pelling in 1701 by Lhatsun Namkha Jikme, its name meaning the island of the Guhyamantra, that is Vajrayana, teachings. Burnt and rebuilt several times, it still holds seventeenth-century clay images and belongs to the pilgrimage circuit that includes Pemayangtse and Tashiding; residence is restricted to male practitioners.",
+    "wiki": "https://en.wikipedia.org/wiki/Sanga_Choeling_Monastery",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Sanga_Choeling_Monastery"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "jagannath-agartala",
+    "name": "Agartala Jagannath Mandir",
+    "country": "India",
+    "state": "Tripura",
+    "place": "Agartala, West Tripura",
+    "lat": 23.8363,
+    "lng": 91.2799,
+    "tradition": "Hindu",
+    "deity": "Jagannath, Balabhadra and Subhadra",
+    "built": [
+      1800,
+      1900
+    ],
+    "builtDisplay": "19th c. (Manikya)",
+    "dynasty": "Manikya",
+    "style": "Tripura",
+    "circuits": [],
+    "significance": "A nineteenth-century temple in the grounds of Ujjayanta Palace at Agartala, built by Maharaja Radha Kishore Manikya on an octagonal base rising through four storeys to bright orange stepped shikharas. Its blend of Hindu, Buddhist and Islamic forms is characteristic of Tripura's court architecture, and its Ratha Yatra is now the state's principal such celebration.",
+    "wiki": "https://en.wikipedia.org/wiki/Agartala_Jagannath_Mandir",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Agartala_Jagannath_Mandir"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  }
+]
