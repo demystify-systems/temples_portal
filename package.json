@@ -14,7 +14,8 @@
     "merge": "node scripts/merge-batches.mjs",
     "status": "node scripts/phase2-status.mjs",
     "status:write": "node scripts/phase2-status.mjs --write",
-    "audit": "node scripts/audit-records.mjs"
+    "audit": "node scripts/audit-records.mjs",
+    "links": "node scripts/prune-dead-websites.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
