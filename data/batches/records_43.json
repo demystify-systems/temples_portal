@@ -1,0 +1,764 @@
+[
+  {
+    "id": "mohajmata-terahi",
+    "name": "Mohajmata Temple, Terahi",
+    "country": "India",
+    "state": "Madhya Pradesh",
+    "place": "Terahi, Shivpuri district",
+    "lat": 25.0457,
+    "lng": 77.9492,
+    "tradition": "Hindu",
+    "deity": "Mohajmata (goddess, identified with Kali)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A small quadrangular shrine of sanctum and porch at Terahi whose walls carry carved goblin figures, fronted by a well-preserved torana gateway about 18 feet away. It is a centrally protected Monument of National Importance and was conserved by the Gwalior State archaeological department in the 1930s.",
+    "wiki": "https://en.wikipedia.org/wiki/Mohajmata_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Mohajmata_Temple"
+      },
+      {
+        "l": "Wikidata Q115857999",
+        "u": "https://www.wikidata.org/wiki/Q115857999"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "neredmet-moodu-gullu",
+    "name": "Neredmet Moodu Gullu",
+    "country": "India",
+    "state": "Telangana",
+    "place": "Old Neredmet, Secunderabad",
+    "lat": 17.4714,
+    "lng": 78.5392,
+    "tradition": "Hindu",
+    "deity": "Nallapochamma, Mahankali and Muthyallamma",
+    "built": [
+      1890,
+      1910
+    ],
+    "builtDisplay": "c. early 20th c.",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A cluster of three village-goddess shrines in Old Neredmet, Secunderabad, reckoned to be about 120 years old. Daily worship is offered here, and thousands of devotees gather for the Ashada Jathara festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Neredmet_Moodu_Gullu",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Neredmet_Moodu_Gullu"
+      },
+      {
+        "l": "Wikidata Q56291127",
+        "u": "https://www.wikidata.org/wiki/Q56291127"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "madwa-mahal-chaura",
+    "name": "Madwa Mahal Temple",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Chaura, Kawardha, Kabirdham district",
+    "lat": 22.1095,
+    "lng": 81.1541,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1349,
+      1349
+    ],
+    "builtDisplay": "1349 (Nagavanshi Gond)",
+    "dynasty": "Phani Nagavanshi Gond",
+    "circuits": [],
+    "significance": "A stone Shiva temple raised in 1349 by the Phani Nagavanshi Gond king Ramchandra Dev, a kilometre from the Bhoramdeo temple, with a 31-foot-square pillared mandapa and a granite tower carrying erotic sculpture. A state-protected monument, it was used for weddings, which gave it the local name Dulha Rao or bridegroom's temple.",
+    "wiki": "https://en.wikipedia.org/wiki/Madwa_Mahal_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Madwa_Mahal_Temple"
+      },
+      {
+        "l": "Wikidata Q117942711",
+        "u": "https://www.wikidata.org/wiki/Q117942711"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ramachandra-rajim",
+    "name": "Ramachandra Temple, Rajim",
+    "country": "India",
+    "state": "Chhattisgarh",
+    "place": "Rajim, Gariaband district",
+    "lat": 20.9631,
+    "lng": 81.879,
+    "tradition": "Hindu",
+    "deity": "Rama (Ramachandra)",
+    "built": [
+      1400,
+      1700
+    ],
+    "builtDisplay": "15th–17th c. (Cunningham's estimate)",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A brick-and-plaster temple on a stone plinth at Rajim, which Alexander Cunningham's 1884 report attributed to a merchant named Govind Lal some 250 to 400 years earlier. Its two rows of five mandapa pillars and the older doorframe are far older than the building, probably 7th-century work carried here from the ruins of Sirpur.",
+    "wiki": "https://en.wikipedia.org/wiki/Ramachandra_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ramachandra_Temple"
+      },
+      {
+        "l": "Wikidata Q118108870",
+        "u": "https://www.wikidata.org/wiki/Q118108870"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "skandhashramam-chennai",
+    "name": "Om Sri Skandhashramam Temple, Chennai",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Rajakilpakkam, Tambaram, Chennai",
+    "lat": 12.9206,
+    "lng": 80.1485,
+    "tradition": "Hindu",
+    "deity": "Murugan (Swaminatha Swami)",
+    "built": [
+      1999,
+      1999
+    ],
+    "builtDisplay": "consecrated 1999",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A modern Murugan temple in suburban Chennai consecrated on 24 June 1999 by Swami Santhananda, who died before it was finished. It is said to be the first temple in India dedicated to the goddess Ugraprathyankira Devi and holds a 9.5-foot Sahasralingam carved with 1,007 lingams.",
+    "wiki": "https://en.wikipedia.org/wiki/Skandhashramam_Temple,_Chennai",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Skandhashramam_Temple,_Chennai"
+      },
+      {
+        "l": "Wikidata Q16961314",
+        "u": "https://www.wikidata.org/wiki/Q16961314"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "vettikulangara-cheppad",
+    "name": "Vettikulangara Devi Temple, Cheppad",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Cheppad, Haripad, Alappuzha district",
+    "lat": 9.238,
+    "lng": 76.463,
+    "tradition": "Hindu",
+    "deity": "Durga (Karthiyayini Devi)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "One of the older Devi temples of Kerala, administered by the Travancore Devaswom Board, with subsidiary shrines to Mahadeva, Ganesha, Ayyappan, Nagaraja and Nagayakshi. Its principal festivals are the Thrikarthika Maholsavam in Vrischikam and the Thiru Utsavam in Kumbham.",
+    "story": "A Brahmin scholar called Thampuran is said to have brought a Devi idol here, which the Naluveettil family later found while digging a pond.",
+    "wiki": "https://en.wikipedia.org/wiki/Vettikulangara_Devi_Temple_Cheppad",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Vettikulangara_Devi_Temple_Cheppad"
+      },
+      {
+        "l": "Wikidata Q17061401",
+        "u": "https://www.wikidata.org/wiki/Q17061401"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "chandragutti-renukamba",
+    "name": "Chandragutti Renukamba Temple",
+    "country": "India",
+    "state": "Karnataka",
+    "place": "Chandragutti, Soraba taluk, Shivamogga district",
+    "lat": 14.4313,
+    "lng": 74.9566,
+    "tradition": "Hindu",
+    "deity": "Renuka Devi (Renukamba)",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "An old cave shrine of the goddess Renuka set in the hills of Shivamogga district, roughly 19 km from both Soraba and Sirsi. It is one of the better-known Renuka centres of the Malnad-Uttara Kannada borderland.",
+    "story": "Renuka is said to have been born from the sacrificial fire of a king of Chandragutti, and it was here that her husband Jamadagni had their son Parashurama behead her, only for Parashurama to use his boon to restore her to life.",
+    "wiki": "https://en.wikipedia.org/wiki/Chandragutti_Renukamba_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Chandragutti_Renukamba_Temple"
+      },
+      {
+        "l": "Wikidata Q115805036",
+        "u": "https://www.wikidata.org/wiki/Q115805036"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "virbhadra-rishikesh",
+    "name": "Virbhadra Temple",
+    "country": "India",
+    "state": "Uttarakhand",
+    "place": "Virbhadra, Rishikesh, Dehradun district",
+    "lat": 30.0675,
+    "lng": 78.2801,
+    "tradition": "Hindu",
+    "deity": "Shiva as Virbhadra",
+    "built": [
+      600,
+      800
+    ],
+    "builtDisplay": "7th–8th c.; earlier shrine 4th–5th c.",
+    "origin": 300,
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "An ancient Shiva site near Rishikesh where excavation revealed continuous occupation from about the 2nd to the 8th century, including a middle-phase shrine with a linga and plain facade and a later structure of the 7th to 8th centuries. Shivratri and the month of Sawan draw all-night jagran, special pujas and a fair.",
+    "story": "Virbhadra is remembered as the fierce form Shiva created out of his rage after Sati immolated herself when insulted by her father at a sacrifice.",
+    "wiki": "https://en.wikipedia.org/wiki/Virbhadra_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Virbhadra_Temple"
+      },
+      {
+        "l": "Wikidata Q55637148",
+        "u": "https://www.wikidata.org/wiki/Q55637148"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "adi-annamalaiyar",
+    "name": "Adi Annamalaiyar Temple, Adi Annamalai",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Adi Annamalai, Tiruvannamalai district",
+    "lat": 9.6647,
+    "lng": 77.3036,
+    "tradition": "Hindu",
+    "deity": "Shiva as Adi Annamalaiyar (Adi Arunachalesvarar), with Adi Abithakujalambal",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shiva shrine on the girivalam path around Arunachala, held to be older than the great Annamalaiyar temple in Tiruvannamalai town. It is counted among the Vaippu Sthalams praised in the hymns of the Nayanar saint Appar.",
+    "story": "Its lingam, like that of the big temple, is held to be swayambhu, self-manifested rather than installed.",
+    "wiki": "https://en.wikipedia.org/wiki/Adi_Annamalaiyar_Temple,_Adi_Annamalai",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Adi_Annamalaiyar_Temple,_Adi_Annamalai"
+      },
+      {
+        "l": "Wikidata Q31441145",
+        "u": "https://www.wikidata.org/wiki/Q31441145"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "vadeshwaram-aroli",
+    "name": "Vadeshwaram Temple",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Aroli, Pappinisseri, Kannur district",
+    "lat": 11.9645,
+    "lng": 75.3597,
+    "tradition": "Hindu",
+    "deity": "Shiva as Vadeshwarathappan (Vadaka Bhairavan)",
+    "built": [
+      500,
+      500
+    ],
+    "builtDisplay": "c. 500 CE (Mushika)",
+    "dynasty": "Mushika",
+    "style": "Ashtadala",
+    "circuits": [],
+    "significance": "A hilltop Shiva temple on Keecheri hill in Kannur district, credited to Vatukavarma of the Mushika dynasty around 500 CE and counted among Kerala's 108 ancient Shiva shrines. Its eight-petalled ashtadala plan is described as without parallel elsewhere in India, and it is nicknamed the Kailasa of North Malabar.",
+    "wiki": "https://en.wikipedia.org/wiki/Vadeshwaram_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Vadeshwaram_Temple"
+      },
+      {
+        "l": "Wikidata Q38251025",
+        "u": "https://www.wikidata.org/wiki/Q38251025"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kuzhanthai-velappar-poombarai",
+    "name": "Kuzhanthai Velappar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Poombarai, Kodaikanal, Dindigul district",
+    "lat": 10.2564,
+    "lng": 77.4072,
+    "tradition": "Hindu",
+    "deity": "Murugan as Kuzhanthai Velappar",
+    "built": [
+      100,
+      500
+    ],
+    "builtDisplay": "2nd–5th c. (Chera)",
+    "dynasty": "Chera",
+    "style": "Early Chera",
+    "circuits": [],
+    "significance": "A hill temple above Poombarai near Kodaikanal, attributed to a Chera king of the 2nd to 5th centuries, with an east-facing sanctum and no tower. Devotees are given the sandalwood paste applied nightly to the idol as medicine, and the annual chariot festival falls on Kettai after Thai Poosam.",
+    "story": "The idol is said to have been made by the siddha Bogar from navapashanam, an amalgam of nine poisons, as a spiritual medicine, and a Chera king is held to have restored the neglected shrine after being told to in a dream.",
+    "wiki": "https://en.wikipedia.org/wiki/Kuzhanthai_Velappar_temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kuzhanthai_Velappar_temple"
+      },
+      {
+        "l": "Wikidata Q48733580",
+        "u": "https://www.wikidata.org/wiki/Q48733580"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "asaladeebesvarar-mohanur",
+    "name": "Asaladeebesvarar Temple, Mohanur",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Mohanur, Namakkal district",
+    "lat": 11.0519,
+    "lng": 78.1371,
+    "tradition": "Hindu",
+    "deity": "Shiva as Asaladeebesvarar, with the goddess Maduraveni",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Shaiva temple near the Kaveri at Mohanur with a single prakaram, the lingam facing west and the goddess east, and shrines to Vinayaka, Subramania, Nataraja, Kali and the 63 Nayanars. It is one of the Vaippu Sthalams named in the hymns of Appar, and Maha Shivaratri is its chief festival.",
+    "story": "Local tradition holds that a small spring rises from beneath the feet of the presiding deity and runs to the Kaveri.",
+    "wiki": "https://en.wikipedia.org/wiki/Asaladeebesvarar_Temple,_Mohanur",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Asaladeebesvarar_Temple,_Mohanur"
+      },
+      {
+        "l": "Wikidata Q31440894",
+        "u": "https://www.wikidata.org/wiki/Q31440894"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kasbeswari-kali-kamalasagar",
+    "name": "Kasbeswari Kali Mata Temple",
+    "country": "India",
+    "state": "Tripura",
+    "place": "Kasba, Kamalasagar, Sepahijala district",
+    "lat": 23.7402,
+    "lng": 91.1598,
+    "tradition": "Hindu",
+    "deity": "Kasbeswari Kali (image of ten-armed Durga as Mahishasuramardini)",
+    "built": [
+      1600,
+      1700
+    ],
+    "builtDisplay": "17th c. structure; founded under Dhanya Manikya",
+    "origin": 1490,
+    "dynasty": "Manikya",
+    "style": "Bengal",
+    "circuits": [],
+    "significance": "A hilltop Kali shrine above Kamalasagar lake near the Bangladesh border, about 27 km from Agartala, founded by the Tripura ruler Dhanya Manikya who also had the lake excavated; the present building is of the 17th century. Its sandstone image is 15th-century work, with a Shivalinga carved at the goddess's feet.",
+    "wiki": "https://en.wikipedia.org/wiki/Kasbeswari_Kali_Mata",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kasbeswari_Kali_Mata"
+      },
+      {
+        "l": "Wikidata Q55615720",
+        "u": "https://www.wikidata.org/wiki/Q55615720"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "dhakeshwari-kumortuli",
+    "name": "Dhakeshwari Mata Temple, Kumortuli",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Kumortuli, North Kolkata",
+    "lat": 22.6,
+    "lng": 88.36,
+    "tradition": "Hindu",
+    "deity": "Durga as Katyayani Mahishasuramardini",
+    "built": [
+      1950,
+      1950
+    ],
+    "builtDisplay": "1950",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "Built in 1950 by the businessman Debendranath Chowdhury, who endowed property for its daily services, this Kumortuli shrine houses the image carried from the Dhakeshwari temple in Dhaka at Partition in 1947 and worshipped in Chowdhury's own house for two or three years first. The ten-armed goddess stands a foot and a half tall on her lion, flanked by Lakshmi, Saraswati, Kartik and Ganesha.",
+    "story": "The name Dhakeshwari means the hidden or covered goddess, from the tale of King Ballal Sen finding Durga concealed in the jungle.",
+    "wiki": "https://en.wikipedia.org/wiki/Dhakeshwari_Mata_Temple,_Kumortuli",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Dhakeshwari_Mata_Temple,_Kumortuli"
+      },
+      {
+        "l": "Wikidata Q54317695",
+        "u": "https://www.wikidata.org/wiki/Q54317695"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "karneshwar-dham-karon",
+    "name": "Karneshwar Dham",
+    "country": "India",
+    "state": "Jharkhand",
+    "place": "Karon, Deoghar district",
+    "lat": 24.1272,
+    "lng": 86.7447,
+    "tradition": "Hindu",
+    "deity": "Shiva as Karneshwar",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Shaiva complex at Karon in Deoghar district made up of twenty-eight temples, the principal one holding the Karneshwar Shivalinga and twenty-seven subsidiary shrines around it. Maha Shivaratri and Durga Puja are its main observances.",
+    "story": "The site is named for Karna, remembered as the ruler of ancient Karon in Angadesh, who is said to have installed the Shivalinga here to worship Shiva.",
+    "wiki": "https://en.wikipedia.org/wiki/Karneshwar_Dham",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Karneshwar_Dham"
+      },
+      {
+        "l": "Wikidata Q38251027",
+        "u": "https://www.wikidata.org/wiki/Q38251027"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "dandeeswarar-velachery",
+    "name": "Dandeeswarar Temple, Velachery",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Velachery, Chennai",
+    "lat": 12.8461,
+    "lng": 80.0647,
+    "tradition": "Hindu",
+    "deity": "Shiva as Dhandeeswarar, with Karunambika",
+    "built": [
+      600,
+      900
+    ],
+    "builtDisplay": "Pallava; repaired under the Cholas",
+    "dynasty": "Pallava",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Shaiva temple in the Velachery suburb of Chennai, built in the Pallava period and repaired under the Cholas, with a five-tier vimana and separate shrines for several deities. It is run by the Tamil Nadu HR and CE Department.",
+    "story": "Temple lore says Yama installed the lingam here after Shiva kicked him, and on praying for pardon was given back his strength along with the staff, the dhandam, that names the shrine.",
+    "wiki": "https://en.wikipedia.org/wiki/Dandeeswarar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Dandeeswarar_Temple"
+      },
+      {
+        "l": "Wikidata Q17051370",
+        "u": "https://www.wikidata.org/wiki/Q17051370"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "pandori-dham-gurdaspur",
+    "name": "Thakurdwara Bhagwan Narainji (Pandori Dham)",
+    "country": "India",
+    "state": "Punjab",
+    "place": "Pandori Mahantan, Gurdaspur district",
+    "lat": 32.0571,
+    "lng": 75.5023,
+    "tradition": "Hindu",
+    "deity": "Rama as Shri Raghunath ji",
+    "built": [
+      1493,
+      1622
+    ],
+    "builtDisplay": "founded c. 1493 (Ramanandi)",
+    "dynasty": "Ramanandi",
+    "style": "Rajputana",
+    "circuits": [],
+    "significance": "A Vaishnava seat of the Ramanandi order founded by the Dogra Brahmin saint Bhagwanji, counted among the fifty-two dvaras of the subcontinent and controlling thirty-nine branch maths from Jammu to Chennai. It drew patronage under Maharaja Ranjit Singh, and its Baisakhi fair on the first three days of Vaisakha brings processions, Navgraha puja, ritual bathing and charitable distribution.",
+    "story": "The second mahant, Narainji, is said to have survived an attempt by Emperor Jahangir to poison him, after which the emperor accepted him.",
+    "wiki": "https://en.wikipedia.org/wiki/Pandori_Dham",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Pandori_Dham"
+      },
+      {
+        "l": "Wikidata Q118641454",
+        "u": "https://www.wikidata.org/wiki/Q118641454"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "sampath-vinayagar-visakhapatnam",
+    "name": "Sri Sampath Vinayagar Temple",
+    "country": "India",
+    "state": "Andhra Pradesh",
+    "place": "Asilmetta, Visakhapatnam",
+    "lat": 17.7247,
+    "lng": 83.3127,
+    "tradition": "Hindu",
+    "deity": "Ganesha (Vinayagar)",
+    "built": [
+      1962,
+      1962
+    ],
+    "builtDisplay": "1962",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A Ganesha temple in a busy quarter of Visakhapatnam built in 1962 by the Arcot Mudaliar brothers T. S. Rajeshwaran and T. S. Selvaganesan and now under the Andhra Pradesh Endowments Department. Residents bring newly bought vehicles here for blessing, and Ganesh Chaturthi is kept with great ceremony.",
+    "story": "The city holds that the temple shielded Visakhapatnam during the 1971 war, sinking the Pakistani submarine PNS Ghazi off its coast.",
+    "wiki": "https://en.wikipedia.org/wiki/Sri_Sampath_Vinayagar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Sri_Sampath_Vinayagar_Temple"
+      },
+      {
+        "l": "Wikidata Q39060128",
+        "u": "https://www.wikidata.org/wiki/Q39060128"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "bodyguard-muniswaran-chennai",
+    "name": "Bodyguard Muniswaran Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Chennai",
+    "lat": 13.077,
+    "lng": 80.2758,
+    "tradition": "Hindu",
+    "deity": "Muneeswarar",
+    "built": [
+      1919,
+      1919
+    ],
+    "builtDisplay": "1919",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A folk-deity shrine of 1919 about 1.5 km from Chennai Central station, set up by labourers who had come from North Arcot district. Thousands visit daily, many of them holding that Muneeswarar guards them against accidents.",
+    "story": "The labourers are said to have placed the idol under a neem tree beside the British military barracks; the commander who objected met with an accident the same day and thereafter allowed the installation.",
+    "wiki": "https://en.wikipedia.org/wiki/Bodyguard_Muniswaran_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Bodyguard_Muniswaran_Temple"
+      },
+      {
+        "l": "Wikidata Q30692841",
+        "u": "https://www.wikidata.org/wiki/Q30692841"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "ghanteshwar-ubidpur",
+    "name": "Ghanteshwar Temple",
+    "country": "India",
+    "state": "West Bengal",
+    "place": "Ubidpur, Khanakul, Hooghly district",
+    "lat": 22.7106,
+    "lng": 87.8542,
+    "tradition": "Hindu",
+    "deity": "Shiva as Ghanteshwar",
+    "built": [
+      1943,
+      1943
+    ],
+    "builtDisplay": "rebuilt 1943",
+    "dynasty": "Modern",
+    "circuits": [],
+    "significance": "A Shiva temple on the bank of the Ratnakar river in Hooghly district, rebuilt in 1943 by the local zamindar Bipin Bihari Sinha after flood damage, with subsidiary shrines to Durga, Kaal Bhairav, Surya, Kali, Shashti, Sitala, Dharmaraj, Radha Krishna, Annapurna and Shani, and a Sufi pir's shrine. Its calendar keeps the Bengal folk festivals of Neel Puja, Gajan, Shivratri, Bhimekadashi and Ratha Yatra.",
+    "story": "Local belief holds that the same Shiva lingam has been worshipped on this spot for more than five hundred years.",
+    "wiki": "https://en.wikipedia.org/wiki/Ghanteshwar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Ghanteshwar_Temple"
+      },
+      {
+        "l": "Wikidata Q38251555",
+        "u": "https://www.wikidata.org/wiki/Q38251555"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kameeswarar-villianur",
+    "name": "Kameeswarar Temple, Villianur",
+    "country": "India",
+    "state": "Puducherry",
+    "place": "Villianur, Puducherry",
+    "lat": 11.9145,
+    "lng": 79.7558,
+    "tradition": "Hindu",
+    "deity": "Shiva as Kameeswarar, with Parvati as Kokilambigai",
+    "built": [
+      1500,
+      1600
+    ],
+    "builtDisplay": "16th c. masonry; 12th-c. origin",
+    "origin": 1100,
+    "dynasty": "Vijayanagara",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A two-acre Shaiva complex at Villianur whose origins lie in the 12th century, with additions by the later Cholas and the Vijayanagara empire and a present masonry structure of the 16th century; Raja Narayana Sambuvarayar, who ruled 1339 to 1363, was a major donor. Concentric granite walls enclose its shrines, and the Aadi-month Brahmotsavam is the chief festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Kameeswarar_temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kameeswarar_temple"
+      },
+      {
+        "l": "Wikidata Q55615622",
+        "u": "https://www.wikidata.org/wiki/Q55615622"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "mankameshwar-agra",
+    "name": "Mankameshwar Temple, Agra",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "place": "Rawatpara, Agra",
+    "lat": 27.1837,
+    "lng": 78.0175,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "Reckoned among the oldest temples in Agra, this Shiva shrine near Agra Fort railway station is reached by descending a flight of steps to a sunken sanctum holding a silver-clad lingam. Smaller shrines behind it are given to Ganga, Saraswati, Hanuman, Krishna and Rama among others.",
+    "story": "Tradition holds that Shiva himself established the lingam here in the Dvapara Yuga, at the time Krishna was born in Mathura.",
+    "wiki": "https://en.wikipedia.org/wiki/Mankameshwar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Mankameshwar_Temple"
+      },
+      {
+        "l": "Wikidata Q17058919",
+        "u": "https://www.wikidata.org/wiki/Q17058919"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "bhand-deva-ramgarh",
+    "name": "Bhand Deva Temple",
+    "country": "India",
+    "state": "Rajasthan",
+    "place": "Ramgarh, Mangrol tehsil, Baran district",
+    "lat": 25.3333,
+    "lng": 76.6242,
+    "tradition": "Hindu",
+    "deity": "Shiva",
+    "built": [
+      900,
+      1000
+    ],
+    "builtDisplay": "10th c. (Nag dynasty); renovated 1162",
+    "dynasty": "Nag dynasty of Malwa",
+    "style": "Nagara (Khajuraho type)",
+    "circuits": [],
+    "significance": "A 10th-century Shaiva temple of the tantric tradition inside the Ramgarh meteor crater in Baran district, built by Raja Malaya Verma of the Nag dynasty of Malwa and renovated in 1162 by Raja Trisna Verma of the Med dynasty. Its sculpture has earned it the name Little Khajuraho, and it is protected by the state archaeology department; over 750 steps climb Ramgarh hill to cave shrines of Kisnai and Annapurna built by Jhala Jalim Singh, where a Kartik Purnima fair is held.",
+    "wiki": "https://en.wikipedia.org/wiki/Bhand_Deva_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Bhand_Deva_Temple"
+      },
+      {
+        "l": "Wikidata Q29634204",
+        "u": "https://www.wikidata.org/wiki/Q29634204"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  }
+]

@@ -1,0 +1,699 @@
+[
+ {
+  "id": "mahasu-devta-hanol",
+  "name": "Mahasu Devta Temple, Hanol",
+  "country": "India",
+  "state": "Uttarakhand",
+  "place": "Hanol, Dehradun district",
+  "lat": 30.9713,
+  "lng": 77.9278,
+  "tradition": "Hindu",
+  "deity": "Shiva, worshipped locally as Mahasu Devta",
+  "built": [
+   800,
+   1000
+  ],
+  "builtDisplay": "9th-10th c. (sanctum)",
+  "dynasty": "Undetermined",
+  "style": "Kath Kuni timber-and-stone with Nagara shikhara",
+  "circuits": [],
+  "significance": "The principal shrine of the Mahasu Devta cult of the Jaunsar-Bawar hills, standing on the Tons river at Hanol. Its sanctum is dated to the 9th-10th century and the temple is listed in the Archaeological Survey of India's inventory of ancient temples.",
+  "story": "Local tradition holds that four brother deities came from Kashmir and that Shiva slew the demon Kirmira here to protect his devotees, the site being built by Vishwakarma at Yudhishthira's request.",
+  "wiki": "https://en.wikipedia.org/wiki/Mahasu_Devta_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mahasu_Devta_Temple"
+   },
+   {
+    "l": "Wikidata Q6733462",
+    "u": "https://www.wikidata.org/wiki/Q6733462"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "subrahmanya-perambur-tn",
+  "name": "Subrahmanya Temple, Perambur",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Perambur, Mayiladuthurai district",
+  "lat": 11.03,
+  "lng": 79.69,
+  "tradition": "Hindu",
+  "deity": "Murugan (Subrahmanya), six-faced",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Murugan shrine in Perambur village about 14 km from Mayiladuthurai, where the six-faced principal image is the object of worship. The temple is noted locally for the snakes that live within its precincts.",
+  "wiki": "https://en.wikipedia.org/wiki/Subrahmanya_Temple,_Perambur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Subrahmanya_Temple,_Perambur"
+   },
+   {
+    "l": "Wikidata Q7631852",
+    "u": "https://www.wikidata.org/wiki/Q7631852"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "koranganatha-srinivasanallur",
+  "name": "Koranganatha Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Srinivasanallur, Tiruchirappalli district",
+  "lat": 10.9733,
+  "lng": 78.3625,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Ranganatha",
+  "built": [
+   850,
+   1280
+  ],
+  "builtDisplay": "Medieval Chola period",
+  "dynasty": "Chola",
+  "style": "Nagara, following Pallava building traditions",
+  "circuits": [],
+  "significance": "A small medieval Chola temple to Vishnu at Srinivasanallur on the Kaveri, counted by the historian Harle among the four earliest surviving temples of the Chola empire. It is protected by the Archaeological Survey of India and carries an inscription recording a tax-free garden endowed for a perpetual lamp.",
+  "wiki": "https://en.wikipedia.org/wiki/Koranganatha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Koranganatha_Temple"
+   },
+   {
+    "l": "Wikidata Q6431407",
+    "u": "https://www.wikidata.org/wiki/Q6431407"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "madangopal-jiu-mellak",
+  "name": "Madangopal Jiu Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Mellak, near Deulti, Howrah district",
+  "lat": 22.4656,
+  "lng": 87.9033,
+  "tradition": "Hindu",
+  "deity": "Radha and Madangopala, a form of Krishna",
+  "built": [
+   1651,
+   1651
+  ],
+  "builtDisplay": "1651",
+  "dynasty": "Undetermined",
+  "style": "Ath-chala (eight-roofed) Bengal temple",
+  "circuits": [],
+  "significance": "A seventeenth-century Krishna temple in the Howrah countryside, described as one of the largest ath-chala temples in West Bengal for its distinctive eight-sloped roof.",
+  "wiki": "https://en.wikipedia.org/wiki/Madangopal_Jiu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Madangopal_Jiu_Temple"
+   },
+   {
+    "l": "Wikidata Q6726461",
+    "u": "https://www.wikidata.org/wiki/Q6726461"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "thrikkovil-padmanabha-vallicode",
+  "name": "Thrikkovil Sree Padmanabha Swami Kshetram",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Vallicode, Pathanamthitta district",
+  "lat": 9.2289,
+  "lng": 76.7686,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Padmanabha Swami",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "A Vishnu temple at Vallicode in Pathanamthitta district administered by the Travancore Devaswom Board, regarded as second of its kind after the Padmanabhaswamy temple at Thiruvananthapuram. Its ten-day annual festival includes the Rupmani Swayamvaram.",
+  "wiki": "https://en.wikipedia.org/wiki/Thrikkovil_Sree_Padmanabha_Swami_Kshetram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thrikkovil_Sree_Padmanabha_Swami_Kshetram"
+   },
+   {
+    "l": "Wikidata Q7798162",
+    "u": "https://www.wikidata.org/wiki/Q7798162"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "huligina-maradi-chamarajanagar",
+  "name": "Huligina Maradi Temple",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Gundlupet taluk, Chamarajanagar district",
+  "lat": 11.822,
+  "lng": 76.818,
+  "tradition": "Hindu",
+  "deity": "Srinivasa (Venkataramana)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A hill shrine to Srinivasa in Gundlupet taluk of Chamarajanagar district, also known as Huligadri, Vyagrachala and Dakshina Seshadri.",
+  "story": "The Varaha Purana is said to call the hill Dakshina Sheshadri, where Srinivasa was worshipped by Rama in the Treta Yuga and by the Pandavas in the Dvapara Yuga, and where he blessed the sage Mandavya after a long penance.",
+  "wiki": "https://en.wikipedia.org/wiki/Huligina_Maradi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Huligina_Maradi"
+   },
+   {
+    "l": "Wikidata Q12060592",
+    "u": "https://www.wikidata.org/wiki/Q12060592"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "thirunadhikkara-cave-temple",
+  "name": "Thirunadhikkara Cave Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirunanthikarai, Kanyakumari district",
+  "lat": 8.399,
+  "lng": 77.2975,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   750,
+   900
+  ],
+  "builtDisplay": "late 8th-9th c.",
+  "dynasty": "Ay or Pandya (attribution disputed)",
+  "style": "Rock-cut cave temple with early Kerala-style murals",
+  "circuits": [],
+  "significance": "A rock-cut Shiva temple in Kanyakumari district whose sanctum and hall were excavated in the late 8th or 9th century, attributed by the Archaeological Survey of India to the Ay king Vikramaditya Varaguna and by other scholars to the Pandyas. Its murals are among the earliest examples of the Kerala painting tradition, and four Vatteluttu inscriptions record donations for lamps, musicians and a festival.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirunadhikkara_Cave_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirunadhikkara_Cave_Temple"
+   },
+   {
+    "l": "Wikidata Q3517629",
+    "u": "https://www.wikidata.org/wiki/Q3517629"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "kuttikattu-bhadrakali-cherthala",
+  "name": "Kuttikattu Sree Bhadra Kali Devi Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Cherthala, Alappuzha district",
+  "lat": 9.6875,
+  "lng": 76.3227,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "One of the several Bhadrakali temples around Cherthala in Alappuzha district, lying about a kilometre west of the Arthungal bypass. Its observances include the Kunguma Khalasam and serpent worship.",
+  "wiki": "https://en.wikipedia.org/wiki/Kuttikattu_Sree_Bhadra_Kali_Devi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kuttikattu_Sree_Bhadra_Kali_Devi_Temple"
+   },
+   {
+    "l": "Wikidata Q6448590",
+    "u": "https://www.wikidata.org/wiki/Q6448590"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "ramapuram-sree-rama-kottayam",
+  "name": "Ramapuram Sree Rama Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Ramapuram, near Pala, Kottayam district",
+  "lat": 9.8016,
+  "lng": 76.6494,
+  "tradition": "Hindu",
+  "deity": "Rama, in a four-armed (Chathurbahu) east-facing form",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; structure held to be about a thousand years old",
+  "dynasty": "Undetermined",
+  "style": "Kerala, with a circular copper-roofed sreekovil",
+  "circuits": [],
+  "significance": "A Vaishnava temple in Ramapuram village counted among the 108 Abhimana Kshetrams and the principal shrine of the Nalambalam circuit of four temples to Rama and his brothers. It is administered by the Ramapuram Devaswom trust of three Nambudiri families.",
+  "story": "Rama is said to have meditated here during his exile, with Lakshmana, Bharata and Shatrughna meditating at the three neighbouring sites that became their own shrines.",
+  "wiki": "https://en.wikipedia.org/wiki/Ramapuram_Sree_Rama_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ramapuram_Sree_Rama_Temple"
+   },
+   {
+    "l": "Wikidata Q28053259",
+    "u": "https://www.wikidata.org/wiki/Q28053259"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "lakshmana-temple-khajuraho",
+  "name": "Lakshmana Temple, Khajuraho",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Khajuraho, Chhatarpur district",
+  "lat": 24.8521,
+  "lng": 79.9217,
+  "tradition": "Hindu",
+  "deity": "Vishnu in his three-headed Vaikuntha form",
+  "built": [
+   930,
+   950
+  ],
+  "builtDisplay": "c. 930-950 (Chandela)",
+  "dynasty": "Chandela",
+  "style": "Nagara, sandhara plan of the panchayatana type",
+  "circuits": [],
+  "significance": "The oldest and most complete of the western group of temples at Khajuraho, built by the Chandela king Yashovarman around 930-950 for a Vaikuntha Vishnu image. Part of the Khajuraho Group of Monuments inscribed by UNESCO in 1986, it carries the ten avatars of Vishnu on its sanctum doorway and a rare niche portrait of the sculptor with his pupils.",
+  "wiki": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Lakshmana_Temple,_Khajuraho"
+   },
+   {
+    "l": "Wikidata Q1801200",
+    "u": "https://www.wikidata.org/wiki/Q1801200"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "manakkattu-bhadra-chirakkadavu",
+  "name": "Manakkattu Bhadra Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Chirakkadavu, near Ponkunnam, Kottayam district",
+  "lat": 9.5471,
+  "lng": 76.7666,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali, worshipped as Manakkattuamma",
+  "built": [
+   1800,
+   1850
+  ],
+  "builtDisplay": "early 19th c.",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "An early nineteenth-century Bhadrakali shrine near Ponkunnam, run by a committee of the Vellala Mahasabha, known for its daily Guruthi pooja and the Panthirukulam guruthi held once every twelve years. It is a well-used stop for Sabarimala pilgrims, who are given free meals there.",
+  "story": "The temple is said to have been founded on the instruction of the head of the Manakkattu Mana, who prescribed a Bhadrakali shrine to appease a yakshi released by a saint whose spirit was spreading disease.",
+  "wiki": "https://en.wikipedia.org/wiki/Manakkattu_Bhadra_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Manakkattu_Bhadra_Temple"
+   },
+   {
+    "l": "Wikidata Q28054547",
+    "u": "https://www.wikidata.org/wiki/Q28054547"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "kulashekharanatha-pathai",
+  "name": "Kulashekharanatha Mahalingam Temple, Pathai",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Pathai, Tirunelveli district",
+  "lat": 8.539,
+  "lng": 77.5457,
+  "tradition": "Hindu",
+  "deity": "Shiva as Kulashekharanatha Mahalingam, with the goddess Sugandha Kuntalambika",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; reconsecrated 31 January 1971",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shiva temple on the Pachaiyar river at Pathai in Tirunelveli district whose naming and iconography reflect Chera, Chola and Pandya influence. Now largely dilapidated, its processional images were moved to the Nellaiappar Temple at Tirunelveli for safekeeping after an attempted theft, and a devotees' forum works for its revival.",
+  "story": "The lingam is said to have been found when a cow fell at the spot, and Rama is held to have worshipped here on his way to Lanka in search of Sita.",
+  "wiki": "https://en.wikipedia.org/wiki/Kulashekharanatha_Mahalingam_Temple,_Pathai",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kulashekharanatha_Mahalingam_Temple,_Pathai"
+   },
+   {
+    "l": "Wikidata Q6442832",
+    "u": "https://www.wikidata.org/wiki/Q6442832"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "attahas-shaktipeeth-katwa",
+  "name": "Attahas Shaktipeeth",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Dakshindihi, Ketugram, Purba Bardhaman district",
+  "lat": 23.6935,
+  "lng": 88.0223,
+  "tradition": "Hindu",
+  "deity": "Sati as the goddess Phullara, with Kalabhairava as Vishvesh",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shakta pitha near Katwa in Purba Bardhaman district, counted among the fifty-one seats of the goddess and drawing large numbers of pilgrims, especially in December.",
+  "story": "The lips of Sati are said to have fallen here as Shiva carried her body across the earth, and the name Attahas, meaning loud laughter, is taken from that episode.",
+  "wiki": "https://en.wikipedia.org/wiki/Attahas,_Katwa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Attahas,_Katwa"
+   },
+   {
+    "l": "Wikidata Q15193724",
+    "u": "https://www.wikidata.org/wiki/Q15193724"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "garjiya-devi-ramnagar",
+  "name": "Garjiya Devi Temple",
+  "country": "India",
+  "state": "Uttarakhand",
+  "place": "Garjiya, near Ramnagar, Nainital district",
+  "lat": 29.494,
+  "lng": 79.1412,
+  "tradition": "Hindu",
+  "deity": "Garjiya Devi, held to be a form of Parvati",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "A Devi shrine on a rock rising about sixty feet out of the Kosi river on the edge of Corbett National Park, north of Ramnagar. It holds a ninth-century black granite Lakshmi-Narayana image and draws thousands of pilgrims at Kartik Purnima.",
+  "wiki": "https://en.wikipedia.org/wiki/Garjiya_Devi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Garjiya_Devi"
+   },
+   {
+    "l": "Wikidata Q2721642",
+    "u": "https://www.wikidata.org/wiki/Q2721642"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "baidyapur-jora-deul",
+  "name": "Baidyapur Jora Deul",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Baidyapur, Kalna, Purba Bardhaman district",
+  "lat": 23.1598,
+  "lng": 88.2472,
+  "tradition": "Hindu",
+  "deity": "Shiva, worshipped as a lingam",
+  "built": [
+   1550,
+   1550
+  ],
+  "builtDisplay": "c. 1550",
+  "dynasty": "Undetermined",
+  "style": "Rekha deul, brick-built Bengal temple",
+  "circuits": [],
+  "significance": "A pair of joined brick rekha deuls at Baidyapur completed around 1550 by Subhananda Pal, with carved brick facades and an inscription over the larger doorway. They are protected as a Monument of National Importance.",
+  "wiki": "https://en.wikipedia.org/wiki/Baidyapur_Jora_Deul",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Baidyapur_Jora_Deul"
+   },
+   {
+    "l": "Wikidata Q56248822",
+    "u": "https://www.wikidata.org/wiki/Q56248822"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "radhakanta-temple-chetla",
+  "name": "Radhakanta Temple, Chetla",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Chetla, Kolkata",
+  "lat": 22.5061,
+  "lng": 88.3398,
+  "tradition": "Hindu",
+  "deity": "Krishna as Radhakanta Jiu, with Radha and Lakshmi-Narayana",
+  "built": [
+   1796,
+   1809
+  ],
+  "builtDisplay": "1796-1809",
+  "dynasty": "Colonial-era zamindar (Bawali Raj)",
+  "style": "Naba-ratna (nine-pinnacled) Bengal temple",
+  "circuits": [],
+  "significance": "A nearly hundred-foot naba-ratna temple at Chetla raised between 1796 and 1809 by Babu Ramnath Mondal of the Bawali Raj family, and said to have been an inspiration for the later Dakshineswar Kali Temple. It survives as one of the last traces of the zamindari and ghat landscape that once lined the Adi Ganga.",
+  "wiki": "https://en.wikipedia.org/wiki/Radhakanta_Temple,_Chetla",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Radhakanta_Temple,_Chetla"
+   },
+   {
+    "l": "Wikidata Q58693169",
+    "u": "https://www.wikidata.org/wiki/Q58693169"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "madhava-temple-niali",
+  "name": "Madhava Temple, Niali",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Madhab village, Niali, Cuttack district",
+  "lat": 20.1403,
+  "lng": 86.0608,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Madhava",
+  "built": [
+   1200,
+   1300
+  ],
+  "builtDisplay": "13th c. (Eastern Ganga)",
+  "dynasty": "Eastern Ganga",
+  "style": "Kalinga, pancharatha plan with rekha deula, pidha jagamohana and flat-roofed natamandapa",
+  "circuits": [],
+  "significance": "A thirteenth-century Vishnu temple at Madhab village near Niali, built by the Eastern Ganga king Ananga Bhima Deva III and holding a rare Madhava image. Its plan parallels the Sakhigopal and Ananta Vasudeva temples, and it preserves an old black sandstone Garuda and carvings drawn from the Krishna Lila and the Mahabharata.",
+  "wiki": "https://en.wikipedia.org/wiki/Madhava_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Madhava_Temple"
+   },
+   {
+    "l": "Wikidata Q13583398",
+    "u": "https://www.wikidata.org/wiki/Q13583398"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "koulutla-chennakesava-kappatralla",
+  "name": "Koulutla Chennakesava Temple",
+  "country": "India",
+  "state": "Andhra Pradesh",
+  "place": "Kappatralla, Devanakonda mandal, Kurnool district",
+  "lat": 15.8564,
+  "lng": 77.3769,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Sri Koulutla Chennakesava Swamy",
+  "built": [
+   1509,
+   1529
+  ],
+  "builtDisplay": "early 16th c. (Vijayanagara)",
+  "origin": 1000,
+  "dynasty": "Vijayanagara",
+  "style": "South Indian",
+  "circuits": [],
+  "significance": "A Vishnu temple in Kappatralla village of Kurnool district whose complex is credited to the Vijayanagara king Krishnadevaraya, its image said to have been reconsecrated in the 11th century. Subsidiary shrines to Mallikarjuna, Bhramaramba, Vijaya Vinayaka, Dakshinamurthy and Vishwanatha stand in the same enclosure.",
+  "story": "The image is said to have been installed at the Koundinya ashrama on the advice of the sage Vasistha to redeem Janamejaya after his serpent sacrifice, and to have been rediscovered centuries later by a cowherd, Golla Koulutla, whose cow poured her milk over the anthill covering it.",
+  "wiki": "https://en.wikipedia.org/wiki/Koulutla_Chennakesava_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Koulutla_Chennakesava_Temple"
+   },
+   {
+    "l": "Wikidata Q6434587",
+    "u": "https://www.wikidata.org/wiki/Q6434587"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "thanthania-kalibari-kolkata",
+  "name": "Thanthania Kalibari",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Bidhan Sarani, Kolkata",
+  "lat": 22.5808,
+  "lng": 88.3656,
+  "tradition": "Hindu",
+  "deity": "Kali, worshipped as Maa Siddheshwari",
+  "built": [
+   1703,
+   1703
+  ],
+  "builtDisplay": "1703; re-established 1806",
+  "dynasty": "Pre-colonial, refounded in the colonial era",
+  "circuits": [],
+  "significance": "A Kali temple on Bidhan Sarani older than the city of Kolkata itself, founded in 1703 by the tantrik Uday Narayan Brahmachari and re-established in 1806 by the businessman Shankar Ghosh, whose descendants remain its custodians. The 1806 rebuilding added the ath-chala Pushpeswar Shiv Mandir.",
+  "story": "The name Thanthania is said to come from the than-than sound of the temple bells that travellers once heard through the surrounding forest.",
+  "wiki": "https://en.wikipedia.org/wiki/Thanthania_Kalibari",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thanthania_Kalibari"
+   },
+   {
+    "l": "Wikidata Q7710629",
+    "u": "https://www.wikidata.org/wiki/Q7710629"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "triyuginarayan-temple",
+  "name": "Triyuginarayan Temple",
+  "country": "India",
+  "state": "Uttarakhand",
+  "place": "Triyuginarayan, Rudraprayag district",
+  "lat": 30.6524,
+  "lng": 78.9824,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Lakshmi Narayana, with Shiva and Parvati",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "8th c., ascribed to Adi Shankaracharya",
+  "dynasty": "Undetermined",
+  "style": "North Indian Himalayan",
+  "circuits": [],
+  "significance": "A Himalayan temple in Rudraprayag district holding a two-foot silver image of Vishnu with Lakshmi, its founding ascribed to Adi Shankaracharya in the 8th century. A perpetual fire burns before the shrine and four kunds in the courtyard are fed by a single stream.",
+  "story": "The site is held to be where Shiva married Parvati in the Satya Yuga with Vishnu as witness, and the fire before the temple is said to be the flame that burned at that wedding.",
+  "wiki": "https://en.wikipedia.org/wiki/Triyuginarayan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Triyuginarayan_Temple"
+   },
+   {
+    "l": "Wikidata Q7844729",
+    "u": "https://www.wikidata.org/wiki/Q7844729"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "kuchadri-venkateshwara-kuchanpally",
+  "name": "Kuchadri Venkateshwara Swamy Temple",
+  "country": "India",
+  "state": "Telangana",
+  "place": "Kuchanpally, Medak district",
+  "lat": 18.0731,
+  "lng": 78.2315,
+  "tradition": "Hindu",
+  "deity": "Venkateswara (Balaji)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An old Venkateswara temple at Kuchanpally in Medak district, declared a protected monument by the government of Andhra Pradesh in 2011.",
+  "wiki": "https://en.wikipedia.org/wiki/Kuchadri_Venkateshwara_Swamy_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kuchadri_Venkateshwara_Swamy_Temple"
+   },
+   {
+    "l": "Wikidata Q6441392",
+    "u": "https://www.wikidata.org/wiki/Q6441392"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ }
+]
