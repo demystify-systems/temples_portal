@@ -152,8 +152,7 @@
   "patron": "Tirumala Nayaka (major expansion)",
   "style": "Dravida",
   "circuits": [
-   "Paadal Petra Sthalam",
-   "Shakti tradition"
+   "Paadal Petra Sthalam"
   ],
   "status": [
    "HR&CE"
@@ -241,6 +240,7 @@
   "dynasty": "Chola",
   "style": "Dravida",
   "circuits": [
+   "Divya Desam",
    "Paadal Petra Sthalam",
    "Pancha Bhoota Sthalam"
   ],
@@ -540,7 +540,21 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Devi_Kanyakumari"
+  "wiki": "https://en.wikipedia.org/wiki/Devi_Kanyakumari",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Devi Kanya Kumari article calls the shrine one of the 52 Shakta pithas where the back or spine of Sati fell and in the same article calls Kanyakumari and nearby Suchindram 'two Shakta pithas out of the 51', so the enumeration it cites is internally inconsistent (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Devi_Kanya_Kumari"
+   },
+   {
+    "circuit": "Maha Shakti Peetha",
+    "status": "disputed",
+    "note": "Kanyakumari is not among the eighteen shrines of the Ashtadasha Shakta Pitha Stotram as Wikipedia lists them, though the Devi Kanya Kumari article calls the shrine a Shakta pitha under both the 51 and 52 enumerations in the same text (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "kapaleeshwarar-chennai",
@@ -1504,7 +1518,8 @@
   "circuits": [
    "Char Dham",
    "Chota Char Dham",
-   "Divya Desam"
+   "Divya Desam",
+   "Sapta Badri"
   ],
   "significance": "The northern seat of the all-India Char Dham established in Adi Shankara's reorganisation of Hindu pilgrimage, between the Nar and Narayana peaks below Neelkanth. The black shaligram image of Badrinarayan was, by tradition, recovered by Shankara from the Alaknanda's Narad Kund; head priests (Rawals) remain Nambudiri brahmins from Kerala, binding India's far corners.",
   "story": "Vishnu sat in penance here unaware of snow; Lakshmi became the badri (jujube) tree sheltering him — hence Badri-Narayan. It is Vishnu's own meditation seat, where gods themselves come as pilgrims.",
@@ -1646,7 +1661,8 @@
   "patron": "Ahilyabai Holkar; gold domes by Ranjit Singh (1835)",
   "style": "Nagara",
   "circuits": [
-   "Jyotirlinga"
+   "Jyotirlinga",
+   "Sapta Puri"
   ],
   "significance": "The Jyotirlinga of Kashi — the luminous crossing-place where death itself grants liberation, Shiva whispering the taraka mantra to the dying. Destroyed and rebuilt across centuries of conquest, the present shrine was raised by Ahilyabai Holkar in 1780; the 2021 Vishwanath Dham corridor opened the temple to the Ganga ghats for the first time in centuries.",
   "story": "Kashi stands on Shiva's trident, untouched by the floods of dissolution; here the original jyoti-column of light pierced the three worlds. To die in Kashi, the saying goes, is to be done with dying.",
@@ -1703,7 +1719,8 @@
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Ram_Mandir",
   "circuits": [
-   "Divya Desam"
+   "Divya Desam",
+   "Sapta Puri"
   ]
  },
  {
@@ -1815,7 +1832,8 @@
   "verified": "wikidata-2026-08-27",
   "wiki": "https://en.wikipedia.org/wiki/Krishna_Janmasthan_Temple_Complex",
   "circuits": [
-   "Divya Desam"
+   "Divya Desam",
+   "Sapta Puri"
   ]
  },
  {
@@ -1893,6 +1911,14 @@
   "wiki": "https://en.wikipedia.org/wiki/Vishnupad_Temple",
   "circuits": [
    "Shakti Peetha"
+  ],
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "unsourced",
+    "note": "No source could be confirmed describing the Vishnupad Temple at Gaya as a Shakta pitha - its Wikipedia article makes no such claim and it is absent from Wikipedia's combined Shakta pithas table, while the Gaya pitha is identified in Wikipedia's 18-list with the separate Mangla Gauri temple (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Vishnupad_Temple"
+   }
   ]
  },
  {
@@ -1926,7 +1952,21 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Baidyanath_Temple"
+  "wiki": "https://en.wikipedia.org/wiki/Baidyanath_Temple",
+  "disputedCircuits": [
+   {
+    "circuit": "Jyotirlinga",
+    "status": "disputed",
+    "note": "Wikipedia's Vaidyanath Jyotirlinga article names four temples that claim this slot - Parli in Maharashtra, Deoghar in Jharkhand, Baijnath in Kangra and Mahabaleshwar at Gokarna - states that the Government of India has notified none of them as the jyotirlinga, and records that Deoghar's priests protested in January 2018 when Parli's priest was invited to a congregation of the twelve jyotirlinga priests (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Vaidyanath_Jyotirlinga"
+   },
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Wikipedia's Shakta pithas table assigns Sati's heart to Baidyanath Dham, Deoghar at entry 48 and also to Arasuri Ambaji in Gujarat at entry 52, so two sites are named for the same body part (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "nalanda",
@@ -2003,7 +2043,10 @@
   ],
   "verified": "wikidata-2026-08-27",
   "website": "https://takhatpatnasahib.com",
-  "wiki": "https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib"
+  "wiki": "https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib",
+  "circuits": [
+   "Panj Takht"
+  ]
  },
  {
   "id": "golden-temple-amritsar",
@@ -2094,9 +2137,7 @@
   "builtDisplay": "ancient cave; modern complex under Shrine Board (1986)",
   "dynasty": "Dogra",
   "style": "Cave shrine",
-  "circuits": [
-   "Shakti tradition"
-  ],
+  "circuits": [],
   "significance": "India's second-most-visited shrine after Tirumala — nearly a crore pilgrims a year climb the 12–13 km path from Katra chanting 'Jai Mata Di' to the cave where the goddess is present as three natural rock pindis. Managed since 1986 by the Shri Mata Vaishno Devi Shrine Board, with battery cars, ropeway to Bhairon temple, and vast yatri infrastructure.",
   "story": "Vaishnavi, born to redeem the world, fled the tantric Bhairon Nath, pausing at Banganga, Charan Paduka and Adhkuwari's womb-cave before taking Chandi form at the Bhawan and beheading him — his head landing where the Bhairon shrine stands; dying, he begged pardon, and her boon decreed the yatra complete only after his darshan.",
   "access": "Katra base town (rail from Jammu); yatra parchi/RFID registration; helicopter to Sanjichhat.",
@@ -2341,7 +2382,8 @@
   "style": "Maru-Gurjara (5-storey, 72 pillars)",
   "circuits": [
    "Char Dham",
-   "Divya Desam"
+   "Divya Desam",
+   "Sapta Puri"
   ],
   "significance": "Western seat of the Char Dham, the 'Jagat Mandir' rising five storeys over the Gomti's meeting with the sea. Adi Shankara established the Sharada Peetha here; the temple flag — changed five times daily — is hoisted by hereditary right and sighted by pilgrims as darshan in itself. Offshore excavations have fed a century of fascination with Krishna's drowned golden city.",
   "story": "When Krishna left his body, the ocean reclaimed Dwarka in seven days, sparing only his own precinct; the present shrine is held to stand over his residence, raised — tradition says — by his great-grandson Vajranabha.",
@@ -2385,7 +2427,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Nageshvara_Jyotirlinga"
+  "wiki": "https://en.wikipedia.org/wiki/Nageshvara_Jyotirlinga",
+  "disputedCircuits": [
+   {
+    "circuit": "Jyotirlinga",
+    "status": "disputed",
+    "note": "Wikipedia's Jyotirlinga article says the Dvadasa Jyotirlinga Stotram places Nagesh in Daruka-vana, most probably the present-day Dwarka region, and adds that Aundha Nagnath in Hingoli district and Jageshwar in Almora district also claim the same slot; the Nageshwar Jyotirlinga article notes the Dwarka reading rests on Darukavana being readable as Dwarakavana, while the deodar-forest argument is used to support Jageshwar (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+   }
+  ]
  },
  {
   "id": "modhera-sun",
@@ -2456,7 +2506,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Ambaji"
+  "wiki": "https://en.wikipedia.org/wiki/Ambaji",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Ambaji article calls it one of the 51 Shakta pithas without citing a source, while Wikipedia's combined Shakta pithas table lists Arasuri Ambaji at entry 52 and assigns Sati's heart both to Ambaji and to Baidyanath Dham at Deoghar (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "palitana-shatrunjaya",
@@ -2956,7 +3014,8 @@
   "style": "Nagara (Bhumija elements)",
   "circuits": [
    "Jyotirlinga",
-   "Maha Shakti Peetha"
+   "Maha Shakti Peetha",
+   "Sapta Puri"
   ],
   "significance": "The Jyotirlinga of Time itself in Ujjain — ancient Avantika, seat of Vikramaditya and of Indian timekeeping on the old prime meridian. The linga is dakshinamukhi (south-facing), unique among the twelve; the pre-dawn bhasma aarti, anointing the lord with sacred ash, is among Hinduism's most sought rituals. The Mahakal Lok corridor (2022) re-monumentalised the precinct; the Simhastha Kumbh returns in 2028.",
   "story": "Mahakal is Ujjain's sovereign — by old custom no king may spend a night in the city, and even today governments avoid official overnight stays; time's lord alone rules here, standing beyond death for those who take his refuge.",
@@ -3818,11 +3877,16 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Koneswaram_Temple"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Koneswaram_Temple",
   "circuits": [
+   "Maha Shakti Peetha",
    "Paadal Petra Sthalam",
    "Pancha Ishwaram"
   ]
@@ -4007,10 +4071,17 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-26",
-  "wiki": "https://en.wikipedia.org/wiki/Sharada_Peeth"
+  "wiki": "https://en.wikipedia.org/wiki/Sharada_Peeth",
+  "circuits": [
+   "Maha Shakti Peetha"
+  ]
  },
  {
   "id": "dharmarajika-taxila",
@@ -4146,9 +4217,7 @@
   "dynasty": "Sena",
   "patron": "Ballal Sena (trad.)",
   "style": "Bengal (renewed)",
-  "circuits": [
-   "Shakti tradition"
-  ],
+  "circuits": [],
   "significance": "The 'hidden goddess of Dhaka' who may have given the capital its name — since 1996 formally the National Temple of Bangladesh, centre of the country's Durga Puja and of Hindu public life. The original 800-year-old Dhakeshwari image was carried to Kolkata's Kumartuli in 1948, where it is still worshipped; the Dhaka shrine, damaged in 1971, was restored as the community's anchor.",
   "story": "Ballal Sena, the story runs, found an image of the goddess concealed (dhaka) in the jungle and enshrined her as Dhaka-Ishwari — the concealed sovereign lady from whom the megacity takes its name.",
   "sources": [
@@ -9753,7 +9822,8 @@
   "dynasty": "Chola",
   "style": "Dravidian",
   "circuits": [
-   "Paadal Petra Sthalam"
+   "Paadal Petra Sthalam",
+   "Pancha Bhoota Sthalam"
   ],
   "significance": "One of the five Pancha Bhoota Sthalams of Shiva, embodying the element water — an underground stream keeps the sanctum lingam perpetually wet — and also a Paadal Petra Sthalam. The vast complex carries 11th–12th-century Chola inscriptions and was greatly expanded, with its seven-tiered rajagopuram, by the Hoysala king Someswara in 1236–37.",
   "story": "Parvati, doing penance on earth, fashioned a lingam of water beneath a jambu tree, where two cursed celestials worshipped it as an elephant and a spider until their devotion freed them.",
@@ -13931,6 +14001,7 @@
   "dynasty": "Pandya",
   "style": "Rock-cut",
   "circuits": [
+   "Arupadai Veedu",
    "Paadal Petra Sthalam"
   ],
   "significance": "One of the Six Abodes of Murugan, carved into the Thiruparankundram hillock by the Pandyas in the 6th century, with the Shiva shrine of Parangirinathar making it a Paadal Petra Sthalam as well. Nayak-era pillared halls front the ancient cave sanctum.",
@@ -16037,7 +16108,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Chandranath Temple article calls the Sitakunda shrine a Shakta pitha where Sati's right arm fell with the Shakti named Bhavani, while Wikipedia's combined Shakta pithas table instead lists 'Chattal Bhavani Temple, Chittagong' at entry 67 with the upper teeth, so the identification for this region differs between sources (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Chandranath_Temple"
+   }
+  ]
  },
  {
   "id": "chintpurni-una",
@@ -16070,7 +16149,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Chintpurni article calls it one of the 51 Shakta pithas without academic citation and names no body part, while Wikipedia's combined table lists Chinnamastika Temple, Chintpurni at entry 61, outside the first 51 (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Chintpurni"
+   }
+  ]
  },
  {
   "id": "danteshwari-dantewada",
@@ -16103,7 +16190,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Danteshwari Temple article describes it as one of the 52 Shakta pithas where a tooth of Sati fell, a 52-count enumeration rather than the commonly cited 51, and no citation is attached to that claim (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Danteshwari_Temple"
+   }
+  ]
  },
  {
   "id": "guhyeshwari-kathmandu",
@@ -16267,7 +16362,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Nalhati article calls Nalhateshwari one of the 51 Shakta pithas, the place where Sati's throat (nala) fell, citing a Bengali Aaj Tak report, while Wikipedia's combined Shakta pithas table lists it at entry 55, outside the first 51 (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Nalhati"
+   }
+  ]
  },
  {
   "id": "nartiang-durga",
@@ -17180,8 +17283,7 @@
   "dynasty": "Undetermined",
   "style": "Massive stone masonry, pyramidal form with a white cupola",
   "circuits": [
-   "Panch Prayag",
-   "Divya Desam"
+   "Panch Prayag"
   ],
   "significance": "The last of the Panch Prayag, where the Alaknanda and the Bhagirathi join and the river continues as the Ganges. Above the confluence stands the Raghunathji temple, a stone shrine of pyramidal form capped by a white cupola.",
   "wiki": "https://en.wikipedia.org/wiki/Devprayag",
@@ -17526,7 +17628,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "unsourced",
+    "note": "The Wikipedia article on Siddhpeeth Shri Shakumbhari Devi, Saharanpur makes no Shakta pitha claim beyond the word 'Siddhpeeth' in the temple's own name, the shrine is absent from Wikipedia's combined Shakta pithas table, and a separate major Shakambhari shrine near Sambhar Lake in Rajasthan carries the same goddess name (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Siddhpeeth_Shri_Shakumbhari_Devi,_Saharanpur"
+   }
+  ]
  },
  {
   "id": "naina-devi-bilaspur",
@@ -17665,7 +17775,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Bhimakali Temple article states the temple is 'revered as one of the 51 sacred Shakta pithas' where Sati's ear fell, citing Om Chanda Handa's Temple Architecture of the Western Himalaya (2001) and a Dainik Jagran piece, yet the shrine does not appear in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Bhimakali_Temple"
+   }
+  ]
  },
  {
   "id": "hidimba-devi-manali",
@@ -19286,7 +19404,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Chandrabadani Devi article, which carries an 'unreferenced' maintenance tag, describes the shrine as a Siddhpeeth where Sati's torso fell rather than as one of the 51, and it does not appear in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Chandrabadani_Devi"
+   }
+  ]
  },
  {
   "id": "purnagiri-champawat",
@@ -19318,7 +19444,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Purnagiri Temple article calls it one of the 108 Siddha Peeths and records two competing traditions for the body part - local belief that Sati's navel fell there against the Kalika Purana placing her arms and neck there - while Wikipedia's combined Shakta pithas table names 'Panchsagar Temple, Champawat' for that district instead (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Purnagiri_Temple"
+   }
+  ]
  },
  {
   "id": "baleshwar-champawat",
@@ -19575,7 +19709,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Bahuchara Mata article describes the Becharaji temple in Mehsana as 'a minor Shakta pitha', citing a Government of Gujarat development plan, without naming an enumeration or a body part, and it does not appear in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Bahuchara_Mata"
+   }
+  ]
  },
  {
   "id": "chotila-chamunda",
@@ -20043,7 +20185,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Jyotirlinga",
+    "status": "disputed",
+    "note": "Wikipedia's Jyotirlinga article says the Dvadasa Jyotirlinga Stotram places Nagesh in Daruka-vana, most probably the present-day Dwarka region, and adds that Aundha Nagnath in Hingoli district and Jageshwar in Almora district also claim the same slot; the Nageshwar Jyotirlinga article notes the Dwarka reading rests on Darukavana being readable as Dwarakavana, while the deodar-forest argument is used to support Jageshwar (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Nageshwar_Jyotirlinga"
+   }
+  ]
  },
  {
   "id": "vaijnath-parli",
@@ -20079,7 +20229,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Jyotirlinga",
+    "status": "disputed",
+    "note": "Wikipedia's Vaidyanath Jyotirlinga article names four temples that claim this slot - Parli in Maharashtra, Deoghar in Jharkhand, Baijnath in Kangra and Mahabaleshwar at Gokarna - states that the Government of India has notified none of them as the jyotirlinga, and records that Deoghar's priests protested in January 2018 when Parli's priest was invited to a congregation of the twelve jyotirlinga priests (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Vaidyanath_Jyotirlinga"
+   }
+  ]
  },
  {
   "id": "tulja-bhavani-tuljapur",
@@ -20112,7 +20270,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Tulja Bhavani Temple article calls it one of the 51 Shakta pithas, while Wikipedia's combined table lists it at entry 64 and the Shakta Pithas in Maharashtra article counts it instead within Maharashtra's regional 'three and a half' set (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_Pithas_in_Maharashtra"
+   }
+  ]
  },
  {
   "id": "mahalakshmi-kolhapur",
@@ -20132,6 +20298,7 @@
   "builtDisplay": "634 CE (Chalukya)",
   "dynasty": "Chalukya",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "A major goddess temple where Mahalakshmi is worshipped locally as Ambabai, reckoned one of the three-and-a-half Shakti seats of the Shakta tradition in Maharashtra.",
@@ -20141,11 +20308,23 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mahalakshmi_Temple,_Kolhapur"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Wikipedia describes Kolhapur as one of the 18 Maha Shakta pithas, as one of 52 Shakta pithas, and as a member of Maharashtra's 'three and a half' peethas, and it does not appear anywhere in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_Pithas_in_Maharashtra"
+   }
+  ]
  },
  {
   "id": "renuka-mahur",
@@ -20165,6 +20344,7 @@
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "A hill shrine to Renuka, mother of Parashurama, counted among the three-and-a-half Shakta pithas of Maharashtra; the surrounding town is also revered as the birthplace of Dattatreya.",
@@ -20174,11 +20354,23 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mahur,_Maharashtra"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Wikipedia describes Mahur as one of the 18 Maha Shakta pithas and as a pitha 'among 108 peethas' and a member of Maharashtra's 'three and a half' peethas, and it does not appear in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_Pithas_in_Maharashtra"
+   }
+  ]
  },
  {
   "id": "saptashrungi-vani",
@@ -21807,7 +21999,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Mahamaya Temple article describes Ratanpur as one of the 52 Shakta pithas, an enumeration outside the commonly cited 51, with no citation attached and no body part named (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Mahamaya_Temple"
+   }
+  ]
  },
  {
   "id": "rajarani-bhubaneswar",
@@ -22040,6 +22240,7 @@
   "builtDisplay": "11th c.",
   "dynasty": "Undetermined",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "The principal temple of Jajpur and a Shakti Peetha, housing a two-armed Durga slaying Mahishasura; it gives the town its names Viraja Kshetra and Viraja Pitha.",
@@ -22049,6 +22250,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Biraja_Temple"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
@@ -22090,7 +22295,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Tara Tarini is named as one of the four Adi Shakta pithas (breast) in Wikipedia's Shakta pithas article, where it appears at entry 54 of the combined table rather than within the first 51 (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Tara_Tarini_Mandir"
+   }
+  ]
  },
  {
   "id": "samaleswari-sambalpur",
@@ -22407,7 +22620,15 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "unsourced",
+    "note": "The Rajrappa article describes the Chhinnamasta temple's tantric character but makes no Shakta pitha or Siddha Pitha claim, and the site does not appear in Wikipedia's combined Shakta pithas table, while the goddess Chhinnamasta is also the presiding deity at Chintpurni in Himachal Pradesh (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Rajrappa"
+   }
+  ]
  },
  {
   "id": "maluti-dumka",
@@ -22471,7 +22692,15 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Tarapith appears at entry 60 of Wikipedia's combined Shakta pithas table (third eye), outside the first 51, and the Tarapith article itself makes no Shakta pitha claim at all (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "tarakeswar-hooghly",
@@ -23544,6 +23773,7 @@
   "builtDisplay": "12th c. (Hoysala); gopura 17th c.",
   "dynasty": "Hoysala",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "The hilltop shrine of the tutelary goddess of the Mysore royal house, its original structure Hoysala work of the 12th century and its tower added under the Vijayanagara rulers. A stairway of a thousand steps was cut in 1659, and in 1664 Dodda Devaraja Wodeyar set a monolithic granite Nandi on the 700th step; the temple is counted among the eighteen Shakta pithas as Krauncha Pitha.",
@@ -23558,11 +23788,23 @@
    {
     "l": "Official site",
     "u": "https://chamundeshwaritemple.in"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Chamundeshwari Temple article calls it one of the 18 Shakta pithas, known as Krouncha Pitha and associated with Sati's hair, citing a Times of India travel page, and it does not appear in Wikipedia's combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Chamundeshwari_Temple"
+   }
+  ]
  },
  {
   "id": "srikanteshwara-nanjangud",
@@ -24444,9 +24686,7 @@
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
   "style": "Kerala",
-  "circuits": [
-   "Shakti tradition"
-  ],
+  "circuits": [],
   "significance": "One of the oldest and most important Bhadrakali temples in Kerala and a principal centre of the state's goddess worship, best known for the Bharani festival. Its date of foundation is not established, though tradition ties it to the Sangam age.",
   "story": "It is told that after Parashurama raised Kerala from the sea the demon Darikan terrorised the land until Bhadrakali sprang from Shiva's three eyes and destroyed him; another tradition identifies the goddess here with Kannaki of the Tamil epic.",
   "website": "https://kodungallursreekurumbabhagavathytemple.org",
@@ -24879,6 +25119,8 @@
   "dynasty": "Pallava",
   "style": "Dravidian",
   "circuits": [
+   "Maha Shakti Peetha",
+   "Sapta Puri",
    "Shakti Peetha"
   ],
   "significance": "The principal goddess temple of Kanchipuram and one of the foremost centres of Shakta worship in the south, where Kamakshi is seated in padmasana rather than standing. Its origins have been variously placed with the Pallavas between the fifth and eighth centuries and with later Chola-period work.",
@@ -24893,10 +25135,22 @@
    {
     "l": "Official site",
     "u": "https://kanchikamakshi.org"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Wikipedia's combined Shakta pithas table assigns the Kanchipuram pitha at entry 49 to the Adi Kamakshi Amman Temple 'behind Kamakshi Amman Temple', while its list of 18 Maha Shakta pithas names the Kamakshi Amman Temple itself, so two distinct temples in the same town are named for the same pitha (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "samayapuram-mariamman-samayapuram",
@@ -25744,6 +25998,7 @@
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
   "circuits": [
+   "Maha Shakti Peetha",
    "Pancharama",
    "Shakti Peetha"
   ],
@@ -25753,6 +26008,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Draksharamam"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
@@ -31562,6 +31821,7 @@
   "dynasty": "Undetermined",
   "style": "Rock-cut",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "A hilltop Shakta shrine on Mangalagauri hill in Gaya, counted among the eighteen maha Shakta pithas and named in the Padma, Vayu and Agni Puranas. The present rock-cut temple dates to the fifteenth century and is credited to Maadho Giri Ji Maharaj; subsidiary shrines to Kali, Ganesha, Hanuman and Shiva stand in the complex, an unusual Shakta focus in a city dominated by Vaishnava pilgrimage.",
@@ -31570,10 +31830,22 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mangla_Gauri_Temple"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "The Mangla Gauri Temple article places the Gaya shrine among the eighteen Maha Shakta pithas, and Wikipedia's 18-list gives it Sati's breast as Sarvamangala, but it does not appear in the combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Mangla_Gauri_Temple"
+   }
+  ]
  },
  {
   "id": "deo-sun-temple-aurangabad",
@@ -34330,9 +34602,7 @@
   ],
   "builtDisplay": "1104 (Hoysala)",
   "dynasty": "Hoysala",
-  "circuits": [
-   "Divya Desam"
-  ],
+  "circuits": [],
   "significance": "Established by Ramanujacharya after he became preceptor at the Hoysala court, with the image installed in 1099 and the temple completed in 1104 on a grant of 5,000 gadyanas from Vishnuvardhana; later Mysore rulers endowed it with jewelled crowns.",
   "story": "Ramanuja is said to have recovered the stolen processional image from the Delhi sultan's court, where the sultan's daughter had grown so attached to it that she merged with the deity and is honoured as Bibi Nachiyar.",
   "wiki": "https://en.wikipedia.org/wiki/Cheluvanarayana_Swamy_Temple",
@@ -35166,6 +35436,7 @@
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "The main Shaiva temple of Pithapuram, which also houses the shrine of Puruhutika Devi, counted among the eighteen maha shakti pithas. Pithapuram itself is named in the Skanda Purana, in Srinatha's fifteenth-century Bhimeswara Puranamu and in Samudragupta's Prayaga pillar inscription of about 350 CE; a monolithic Nandi stands before the sanctum.",
@@ -35174,6 +35445,10 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kukkuteswara_Temple"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
@@ -35390,6 +35665,7 @@
   "dynasty": "Modern",
   "style": "Dravidian",
   "circuits": [
+   "Maha Shakti Peetha",
    "Shakti Peetha"
   ],
   "significance": "One of the eighteen maha shakti pithas, sharing its compound with the Navabrahma temples on the Tungabhadra. The seventh-century original was destroyed in 1390 during Bahmani raids; the shrine was rebuilt in 2005 and the old image reinstalled, and the site was later taken into the government's PRASAD pilgrimage scheme.",
@@ -35399,10 +35675,22 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Jogulamba_Temple,_Alampur"
+   },
+   {
+    "l": "Wikipedia — Shakta pithas (Ashtadasha list)",
+    "u": "https://en.wikipedia.org/wiki/Shakta_pithas"
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "disputedCircuits": [
+   {
+    "circuit": "Shakti Peetha",
+    "status": "disputed",
+    "note": "Wikipedia lists Jogulamba at Alampur among the 18 Astadasha Maha Shakta pithas (teeth) but does not include it in its combined Shakta pithas table (as of 2026).",
+    "source": "https://en.wikipedia.org/wiki/Shakta_pithas"
+   }
+  ]
  },
  {
   "id": "chaya-someswara-panagal",
@@ -36190,9 +36478,7 @@
   ],
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
-  "circuits": [
-   "Divya Desam"
-  ],
+  "circuits": [],
   "significance": "A sacred forest tract at Nimsar in Sitapur district, named repeatedly in the Puranas and in both epics. Tradition holds that the Puranas were first recited here to an assembly of sages, and the site remains an active pilgrimage centre.",
   "story": "The Varaha Purana explains the name by saying that a host of daityas was destroyed here within a single nimisha, an instant.",
   "wiki": "https://en.wikipedia.org/wiki/Naimisharanya",
@@ -36327,5 +36613,138 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
+ },
+ {
+  "id": "andalakkum-aiyan-aadanoor",
+  "name": "Thiru Aadanoor Temple (Andalakkum Aiyan Perumal)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Aadanoor, Thanjavur",
+  "lat": 10.9764,
+  "lng": 79.3133,
+  "tradition": "Hindu",
+  "deity": "Andalakkum Aiyan Perumal (Vishnu), with Ranganayaki Thayar",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Chola",
+  "patron": "Aditya Chola",
+  "style": "Dravidian",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A small Vishnu temple in the Kaveri delta a couple of kilometres from Swamimalai, counted among the 108 Divya Desams and sung by the Alvars in the Nalayira Divya Prabandham. It has a three-tier rajagopuram and a Pranava vimana, and is administered by the Ahobila Mutt in the Vadakalai tradition.",
+  "story": "Legend holds that Vishnu came as an old man to the riverbank and handed out sand that turned to gems for the labourers a wealthy devotee's workmen had cheated, exposing the fraud.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiru_Aadanoor_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiru_Aadanoor_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "irattai-thiruppathy-tholaivillimangalam",
+  "name": "Irattai Thiruppathy (Thirutholaivillimangalam)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirutholaivillimangalam, Thoothukudi",
+  "lat": 8.6111,
+  "lng": 77.9722,
+  "tradition": "Hindu",
+  "deity": "Devapiran and Aravindalochanar (Vishnu)",
+  "built": [
+   1190,
+   1345
+  ],
+  "builtDisplay": "inscriptions 1190–1345 (Pandya; Madurai Nayak expansion)",
+  "dynasty": "Pandya",
+  "style": "Dravidian",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "Two adjoining Vishnu temples on the Thamiraparani that together count as the single Divya Desam of Thirutholaivillimangalam, and belong to the Nava Tirupati group strung along the Tirunelveli–Tiruchendur route. Both shrines are praised in the Nalayira Divya Prabandham, notably by Nammalvar; their inscriptions name rulers between 1190 and 1345.",
+  "story": "A sage named Suprabha is said to have turned up a balance and a bow while ploughing here; the objects became a human couple whom Kubera had cursed, and the place took its name from them.",
+  "wiki": "https://en.wikipedia.org/wiki/Aravindalochanar_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Aravindalochanar_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "yogadhyan-badri-pandukeshwar",
+  "name": "Yogadhyan Badri Temple",
+  "country": "India",
+  "state": "Uttarakhand",
+  "place": "Pandukeshwar (1,829 m), Chamoli",
+  "lat": 30.6339,
+  "lng": 79.5475,
+  "tradition": "Hindu",
+  "deity": "Vishnu (Yogadhyan Badri)",
+  "built": [
+   850,
+   1000
+  ],
+  "builtDisplay": "c. 850–1000",
+  "dynasty": "Undetermined",
+  "style": "Dravidian",
+  "circuits": [
+   "Sapta Badri"
+  ],
+  "significance": "One of the seven Sapta Badri shrines of the Garhwal Himalaya, holding a life-size Shaligram image of Vishnu seated in meditation — the posture that gives the shrine its name. When the Badrinath temple closes for the winter its festival image is carried down to this sanctuary and worshipped here until the summer reopening.",
+  "story": "Pandu, father of the Pandavas, is said to have meditated on Vishnu at this spot to be cleansed of the sin of killing two mating deer.",
+  "wiki": "https://en.wikipedia.org/wiki/Pandukeshwar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pandukeshwar"
+   },
+   {
+    "l": "Wikipedia — Sapta Badri",
+    "u": "https://en.wikipedia.org/wiki/Sapta_Badri"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "dhyan-badri-urgam",
+  "name": "Dhyan Badri Temple",
+  "country": "India",
+  "state": "Uttarakhand",
+  "place": "Urgam valley (2,135 m), Chamoli",
+  "lat": 30.4289,
+  "lng": 79.4269,
+  "tradition": "Hindu",
+  "deity": "Vishnu (Dhyan Badri)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Sapta Badri"
+  ],
+  "significance": "One of the seven Sapta Badri shrines, standing in the Urgam valley close to Kalpeshwar on the banks of the Kalpa Ganga. Its image of Vishnu is a four-armed black-stone figure in a meditative posture, from which the shrine takes its name.",
+  "story": "The shrine is credited to Urvarishi, son of King Puranjaya, who is said to have meditated in the Urgam region and founded it for Vishnu.",
+  "wiki": "https://en.wikipedia.org/wiki/Sapta_Badri",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sapta_Badri"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "—"
  }
 ]
