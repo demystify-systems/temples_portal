@@ -1,0 +1,332 @@
+[
+ {
+  "id": "kanakagiri-jain-tirth-chamarajanagar",
+  "name": "Kanakagiri Jain Tirth",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Kanakagiri, Chamarajanagar district",
+  "lat": 11.9499,
+  "lng": 76.7685,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   400,
+   600
+  ],
+  "builtDisplay": "5th-6th c. (Western Ganga)",
+  "dynasty": "Western Ganga",
+  "circuits": [],
+  "significance": "A Digambara Jain pilgrimage centre near Maleyuru whose rock-cut and structural shrines begin with a Parshvanatha temple raised under the Western Gangas. Inscriptions across Ganga, Hoysala, Vijayanagara and Wadiyar patronage mark it as a long-lived monastic and institutional seat of Karnataka Jainism.",
+  "story": "Local tradition holds that Mahavira himself came here and held a samavasarana assembly, and that a Mysore queen was freed of kalasarpadosha through worship at the site.",
+  "wiki": "https://en.wikipedia.org/wiki/Kanakagiri_Jain_tirth",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kanakagiri_Jain_tirth"
+   },
+   {
+    "l": "Wikidata Q30590615",
+    "u": "https://www.wikidata.org/wiki/Q30590615"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "varahanatha-temple-jajpur",
+  "name": "Varahanatha Temple",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Jajpur",
+  "lat": 20.8584,
+  "lng": 86.3356,
+  "tradition": "Hindu",
+  "deity": "Varaha (Shveta Varaha, boar avatar of Vishnu)",
+  "built": [
+   1400,
+   1600
+  ],
+  "builtDisplay": "15th-16th c. (Suryavamshi Gajapati)",
+  "dynasty": "Suryavamshi Gajapati",
+  "style": "Kalinga",
+  "circuits": [],
+  "significance": "An ASI-protected temple on the island formed by the Vaitarani at Jajpur, enshrining the white Varaha form of Vishnu; the Madala Panji credits its building to Prataparudra Deva and it was later renovated under the Maratha ruler Raghoji I Bhonsle. Its deula and subsidiary shrines are a substantial example of medieval Kalinga temple building.",
+  "story": "Legend says that when the Vedas were stolen during Brahma's ashvamedha sacrifice here, Vishnu rose from the sacrificial fire as the boar Varaha to recover them.",
+  "wiki": "https://en.wikipedia.org/wiki/Varahanatha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Varahanatha_Temple"
+   },
+   {
+    "l": "Wikidata Q7915407",
+    "u": "https://www.wikidata.org/wiki/Q7915407"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jatileswar-temple-maynaguri",
+  "name": "Jatileswar Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Maynaguri, Jalpaiguri district",
+  "lat": 26.5431,
+  "lng": 88.9186,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   320,
+   600
+  ],
+  "builtDisplay": "4th-6th c. (Gupta period)",
+  "dynasty": "Gupta",
+  "circuits": [],
+  "significance": "An early Shiva shrine in the Jalpaiguri plains dated to the Gupta period and attributed to a feudatory of the Gupta kingdom. It is protected as an archaeological site and a West Bengal State Protected Monument, making it one of north Bengal's oldest surviving temple remains.",
+  "wiki": "https://en.wikipedia.org/wiki/Jatileswar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jatileswar_Temple"
+   },
+   {
+    "l": "Wikidata Q66793721",
+    "u": "https://www.wikidata.org/wiki/Q66793721"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "vayalil-thrikkovil-kollam",
+  "name": "Vayalil Thrikkovil Mahavishnu Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Ilamkulam, Kalluvathukkal, Kollam district",
+  "lat": 8.8293,
+  "lng": 76.7612,
+  "tradition": "Hindu",
+  "deity": "Mahavishnu",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "A Vishnu shrine in Kollam district historically owned by the Pisharikkal Mana of Kodungallur and now run by a local temple forum. It remains an active worship centre known for its fortnightly Lakshmi Narayana pooja and the Ashtami Rohini festival.",
+  "wiki": "https://en.wikipedia.org/wiki/Vayalil_Thrikkovil_Mahavishnu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vayalil_Thrikkovil_Mahavishnu_Temple"
+   },
+   {
+    "l": "Wikidata Q7917556",
+    "u": "https://www.wikidata.org/wiki/Q7917556"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "arang-jain-temples-raipur",
+  "name": "Arang Jain Temples",
+  "country": "India",
+  "state": "Chhattisgarh",
+  "place": "Arang, Raipur district",
+  "lat": 21.195,
+  "lng": 81.9694,
+  "tradition": "Jain",
+  "deity": "Neminatha (with Ajitanatha and Shreyanasanatha)",
+  "built": [
+   800,
+   1100
+  ],
+  "builtDisplay": "9th-11th c. (Bhand Dewal late 11th c.)",
+  "dynasty": "Haihaya",
+  "style": "Bhumija",
+  "circuits": [],
+  "significance": "A group of Jain temples at Arang, of which the late 11th-century Bhand Dewal is the principal survivor, built under the Haihaya rulers of the region. The sculpted tirthankara images and brick and stone detailing record Arang's standing as a joint Jain and Hindu religious centre in medieval Chhattisgarh.",
+  "wiki": "https://en.wikipedia.org/wiki/Arang_Jain_temples",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Arang_Jain_temples"
+   },
+   {
+    "l": "Wikidata Q41725692",
+    "u": "https://www.wikidata.org/wiki/Q41725692"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "varadaraja-perumal-poonamallee",
+  "name": "Varadaraja Perumal Temple, Poonamallee",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Poonamallee, Chennai",
+  "lat": 13.0511,
+  "lng": 80.0973,
+  "tradition": "Hindu",
+  "deity": "Varadharaja Perumal (Vishnu) with Pushpavalli Thayar",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "c. 1,000 years old",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Vishnu temple in the Chennai suburb of Poonamallee, reckoned about a thousand years old and linked with the Vaishnava acharya Thirukatchi Nambi. Its Chola-period tank of over an acre long watered the surrounding paddy fields and supplied the town with domestic water.",
+  "wiki": "https://en.wikipedia.org/wiki/Varadaraja_Perumal_Temple,_Poonamallee",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Varadaraja_Perumal_Temple,_Poonamallee"
+   },
+   {
+    "l": "Wikidata Q7915386",
+    "u": "https://www.wikidata.org/wiki/Q7915386"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "raidongia-doul-dibrugarh",
+  "name": "Raidongia Doul",
+  "country": "India",
+  "state": "Assam",
+  "place": "Lejai-Kalakhowa, Dibrugarh district",
+  "lat": 27.2825,
+  "lng": 94.7928,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1742,
+   1759
+  ],
+  "builtDisplay": "founded 1742, finished late 1750s (Ahom)",
+  "dynasty": "Ahom",
+  "style": "Ahom-Nilachal",
+  "circuits": [],
+  "significance": "An Ahom-period doul begun in 1742 under Swargadeo Pramatta Singha and completed in the late 1750s, originally a Devi temple and now dedicated to Shiva; it was granted to the Raidongia king on his marriage to the king's sister Yamini. The Assam archaeology department lists it as a State Protected Monument for its Ahom sculptural work depicting Hindu deities and avatars.",
+  "wiki": "https://en.wikipedia.org/wiki/Raidongia_Doul",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Raidongia_Doul"
+   },
+   {
+    "l": "Wikidata Q84362575",
+    "u": "https://www.wikidata.org/wiki/Q84362575"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "veetrirundha-perumal-veppathur",
+  "name": "Veetrirundha Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Veppathur, Thanjavur district",
+  "lat": 11.0142,
+  "lng": 79.4313,
+  "tradition": "Hindu",
+  "deity": "Vishnu (Veetrirundha Perumal)",
+  "built": [
+   850,
+   900
+  ],
+  "origin": 400,
+  "builtDisplay": "rebuilt in stone c. 850 (Pallava); brick original c. 400",
+  "dynasty": "Pallava",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "One of only two surviving pre-Pallava temple sites in Tamil Nadu, begun as a brick shrine and rebuilt in stone around 850 CE under Nandivarman II. Later renovations by Rajaraja Chola and by Krishnadevaraya in 1520 make it a compact record of successive South Indian building phases.",
+  "story": "The name, meaning the seated lord, is explained by the tradition that Rama sat here in grief and was comforted by Bhumi Devi and Nila Devi fanning him with a palm leaf.",
+  "wiki": "https://en.wikipedia.org/wiki/Veetrirundha_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Veetrirundha_Perumal_Temple"
+   },
+   {
+    "l": "Wikidata Q7918232",
+    "u": "https://www.wikidata.org/wiki/Q7918232"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "gingee-venkataramana-temple",
+  "name": "Gingee Venkataramana Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Gingee, Viluppuram district",
+  "lat": 12.2472,
+  "lng": 79.4033,
+  "tradition": "Hindu",
+  "deity": "Venkataramana (Venkateswara)",
+  "built": [
+   1540,
+   1550
+  ],
+  "builtDisplay": "1540-1550 (Nayak)",
+  "dynasty": "Nayak",
+  "style": "Vijayanagara",
+  "circuits": [],
+  "significance": "The largest temple at the fort town of Gingee, raised around 1540-1550 by Muthyala Nayaka in full Vijayanagara idiom. Its ornamental pillars were dismantled by the French garrison in 1761 and further sculpture was carried off in 1860, so the ruin also documents the colonial dispersal of South Indian temple fabric.",
+  "wiki": "https://en.wikipedia.org/wiki/Gingee_Venkataramana_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gingee_Venkataramana_Temple"
+   },
+   {
+    "l": "Wikidata Q29467430",
+    "u": "https://www.wikidata.org/wiki/Q29467430"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "beeramgunta-poleramma-nellore",
+  "name": "Beeramgunta Poleramma Temple",
+  "country": "India",
+  "state": "Andhra Pradesh",
+  "place": "Beeramgunta, Nellore district",
+  "lat": 14.6281,
+  "lng": 80.0351,
+  "tradition": "Hindu",
+  "deity": "Poleramma",
+  "built": [
+   1800,
+   1900
+  ],
+  "builtDisplay": "19th c. (about 200 years old)",
+  "dynasty": "Colonial era",
+  "circuits": [],
+  "significance": "A village shrine in Nellore district dedicated to Poleramma, a pre-Vedic guardian goddess widely worshipped as a local form of Shakti across Andhra Pradesh. First put up by a British-era village officer roughly two centuries ago, it was later rebuilt with funds raised by the villagers themselves and remains a working centre of folk-deity worship and annual festivals.",
+  "wiki": "https://en.wikipedia.org/wiki/Beeramgunta_Poleramma_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Beeramgunta_Poleramma_Temple"
+   },
+   {
+    "l": "Wikidata Q48731043",
+    "u": "https://www.wikidata.org/wiki/Q48731043"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ }
+]
