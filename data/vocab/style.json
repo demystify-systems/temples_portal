@@ -1,0 +1,58 @@
+{
+  "_about": "Controlled vocabulary for the `style` field. Lexical normalisation only — it asserts no facts about what a style is or where it was built (guardrail G2). Canonical labels are the faceting axis (BACKLOG I4, D7); everything after the canonical head belongs in a `styleNote` for display.",
+  "_measured": "941 records carried 303 distinct style values, 272 of them appearing exactly once — 93% singletons, so `style` is currently free-text prose rather than a facet. 413 records (44%) carry '—', i.e. no style recorded at all.",
+  "_pattern": "Most singletons follow `Canonical (qualifier)` or `CanonicalA–CanonicalB fusion`. scripts/normalize-vocab.mjs strips the qualifier into styleNote rather than inventing a new label for each.",
+  "_biggest_win": "'Dravidian' (111 records) and 'Dravida' (23) are the same style. Collapsing them is the single largest normalisation gain in the field.",
+
+  "unset": ["—", "-", "", "Unknown", "n/a"],
+
+  "canonical": {
+    "Dravida": {
+      "aliases": ["Dravidian", "South Indian"],
+      "note": "The corpus uses 'Dravidian' and 'Dravida' interchangeably; 'Dravida' is the term used in the silpa texts."
+    },
+    "Nagara": { "aliases": ["North Indian", "Shikhara"] },
+    "Vesara": { "aliases": [] },
+    "Kalinga": { "aliases": ["Odishan", "Oriya"] },
+    "Kerala": { "aliases": ["Kerala–Tulu", "Tulu"] },
+    "Maru-Gurjara": { "aliases": ["Solanki style", "Chaulukya style"] },
+    "Hemadpanthi": { "aliases": [] },
+    "Bhumija": { "aliases": [] },
+    "Hoysala": { "aliases": [] },
+    "Chalukya": { "aliases": ["Western Chalukya", "Badami Chalukya", "Eastern Chalukya"] },
+    "Chola": { "aliases": [] },
+    "Pallava": { "aliases": [] },
+    "Pandyan": { "aliases": ["Pandya"] },
+    "Vijayanagara": { "aliases": ["Vijayanagar"] },
+    "Kakatiya": { "aliases": [] },
+    "Rock-cut": { "aliases": ["Cave shrine", "Cave temple", "Monolithic", "Monolithic colossus"] },
+    "Apsidal": { "aliases": ["Gajaprishta", "Apsidal (gajaprishta)"] },
+    "Stupa": { "aliases": ["Dagoba", "Chaitya"] },
+    "Mahavihara": { "aliases": ["Vihara"] },
+    "Sikh": { "aliases": ["Sikh architecture", "Gurdwara architecture"] },
+    "Rajasthani": { "aliases": ["Rajasthani haveli"] },
+    "Indo-Islamic": { "aliases": [] },
+    "Colonial": { "aliases": ["Indo-Saracenic"] },
+    "Modern": { "aliases": ["Contemporary"] },
+
+    "Newar pagoda": { "aliases": ["Nepalese pagoda", "Newar", "Nepali pagoda"] },
+    "Tibetan": { "aliases": ["Tibetan Buddhist", "Ladakhi"] },
+    "Dzong": { "aliases": ["Dzong architecture"] },
+    "North Indian Himalayan": { "aliases": ["Himalayan"] },
+
+    "Khmer": { "aliases": ["Angkorian"] },
+    "Bayon": { "aliases": [] },
+    "Banteay Srei": { "aliases": [] },
+    "Cham": { "aliases": ["Cham brick towers"] },
+    "Thai": { "aliases": [] },
+    "Rattanakosin": { "aliases": ["Chakri"] },
+    "Lan Na": { "aliases": ["Lanna"] },
+    "Sukhothai": { "aliases": [] },
+    "Bagan": { "aliases": ["Pagan"] },
+    "Burmese": { "aliases": ["Mon"] },
+    "Sinhalese": { "aliases": ["Anuradhapura", "Polonnaruwa", "Kandyan"] },
+    "Balinese": { "aliases": ["Pura", "Bali"] },
+    "Javanese": { "aliases": ["Candi", "Central Javanese", "East Javanese"] },
+    "Gandharan": { "aliases": ["Greco-Buddhist"] }
+  }
+}

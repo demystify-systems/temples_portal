@@ -12,7 +12,8 @@
   "milestone_titles": {
     "M0": "Guardrails and tooling",
     "M1": "Supabase activation (L1/L2/L5/O7)",
-    "M2": "Correctness reports (detect, don't auto-edit)"
+    "M2": "Correctness reports (detect, don't auto-edit)",
+    "M3": "Domain cutover (N5)"
   },
   "milestone_prs": {},
   "tasks": [
@@ -26,12 +27,14 @@
         "data/vocab/gate-exceptions.json"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "gate:874 warnings surfaced across 5 rules; default exit 0, --strict exit 1"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -41,15 +44,19 @@
       "type": "code",
       "title": "Test suite for src/lib/sites.ts pure functions via node --test (O1 partial)",
       "files": [
-        "src/lib/sites.test.mjs"
+        "src/lib/site-utils.ts",
+        "src/lib/site-utils.test.ts",
+        "src/lib/sites.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "test:21 passing (11 site-utils + 10 tripwire); tsc clean"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -59,15 +66,18 @@
       "type": "data-derived",
       "title": "Dynasty controlled vocabulary: alias map collapsing 313 values to a canonical set",
       "files": [
-        "data/vocab/dynasty.json"
+        "data/vocab/dynasty.json",
+        "scripts/normalize-vocab.mjs"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:87% of 941 records resolved, 313->127 canonical labels; 119 routed to review"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -80,12 +90,14 @@
         "data/vocab/style.json"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "report:303->36 canonical labels for resolved records; 413 unset + 205 review surfaced"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -101,12 +113,14 @@
       "deps": [
         "T-001"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "file:data/vocab/tiers.json + docs/TIERS.md"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -119,12 +133,14 @@
         ".github/workflows/corpus-backup.yml"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "file:.github/workflows/corpus-backup.yml"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -337,6 +353,30 @@
       "retry_after_iteration": 0,
       "status_iteration": 0,
       "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-030",
+      "milestone": "M3",
+      "type": "code",
+      "title": "canonicalSiteUrl() backstop so a stale env var can never leak a retired host; point canonical at tirthaatlas.org",
+      "files": [
+        "src/lib/site-url.mjs",
+        "scripts/check-site-url.mjs",
+        "src/app/robots.ts",
+        "src/app/sitemap.ts",
+        "src/app/layout.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "guard:26 checks; robots.txt emits tirthaatlas.org with env unset and rejects preview hosts"
+      ],
       "last_error": null,
       "commit": null
     }

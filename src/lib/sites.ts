@@ -1,5 +1,10 @@
 import rawSites from "../../data/sites.json";
 import geo from "../../data/geo.json";
+import { ERAS, eraIndex, eraOf, appearYear, fmtYear, slugify, gmapsUrl } from "./site-utils";
+
+// Pure helpers live in site-utils.ts so they are testable without loading the
+// corpus; re-exported here so every existing import keeps working.
+export { ERAS, eraIndex, eraOf, appearYear, fmtYear, slugify, gmapsUrl };
 
 export type Source = { l: string; u: string };
 export type Site = {
@@ -37,24 +42,9 @@ export type Site = {
 export const SITES = rawSites as unknown as Site[];
 export const GEO = geo as { W: number; H: number; LON0: number; LON1: number; LAT0: number; LAT1: number; svgInner: string };
 
-export const ERAS = [
-  { to: 550, name: "Ancient", note: "Maurya · Satavahana · Gupta · Vakataka" },
-  { to: 1000, name: "Early medieval", note: "Pallava · Chalukya · Rashtrakuta · Pala · Sailendra" },
-  { to: 1350, name: "High medieval", note: "Chola · Chandela · Hoysala · Kakatiya · Khmer · Pagan" },
-  { to: 1650, name: "Late medieval", note: "Vijayanagara · Nayaka · Malla · Ayutthaya" },
-  { to: 1850, name: "Early modern", note: "Maratha · Sikh · Konbaung · Rattanakosin" },
-  { to: 2031, name: "Modern", note: "Colonial to present · revivals & new mandirs" },
-] as const;
-
-export const eraIndex = (y: number) => ERAS.findIndex((e) => y < e.to);
-export const eraOf = (s: Site) => eraIndex(s.built[0]);
-export const appearYear = (s: Site) => (s.origin !== undefined ? s.origin : s.built[0]);
-export const fmtYear = (y: number) => (y < 0 ? `${Math.abs(y)} BCE` : `${y} CE`);
 
 export const getSite = (id: string) => SITES.find((s) => s.id === id);
 
-export const slugify = (v: string) =>
-  v.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 export const allDynasties = () => {
   const m = new Map<string, Site[]>();
@@ -75,7 +65,6 @@ export const allCircuits = () => {
   return [...m.entries()].sort((a, b) => b[1].length - a[1].length);
 };
 
-export const gmapsUrl = (s: Site) => `https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lng}`;
 
 export const SITE_NAME = "Tirtha Atlas";
 export const SITE_DESC =

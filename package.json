@@ -2,12 +2,12 @@
   "name": "temples-portal",
   "version": "0.1.0",
   "private": true,
-  "description": "Tirtha Atlas — the sacred geography of the Indic world. Interactive time-map + cited encyclopedia of temples and sacred sites.",
+  "description": "Tirtha Atlas \u2014 the sacred geography of the Indic world. Interactive time-map + cited encyclopedia of temples and sacred sites.",
   "scripts": {
     "dev": "next dev",
     "build": "npm run validate && next build",
     "start": "next start",
-    "validate": "node scripts/validate-data.mjs",
+    "validate": "node scripts/check-site-url.mjs && node scripts/validate-data.mjs",
     "drift:wikidata": "node scripts/wikidata-drift.mjs",
     "freshness": "node scripts/source-freshness.mjs",
     "db:seed": "node scripts/seed-supabase.mjs",
@@ -15,7 +15,9 @@
     "status": "node scripts/phase2-status.mjs",
     "status:write": "node scripts/phase2-status.mjs --write",
     "audit": "node scripts/audit-records.mjs",
-    "links": "node scripts/prune-dead-websites.mjs"
+    "links": "node scripts/prune-dead-websites.mjs",
+    "test": "node --test 'src/**/*.test.ts' 'program/*.test.mjs'",
+    "vocab": "node scripts/normalize-vocab.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",

@@ -1,0 +1,424 @@
+{
+  "_about": "Controlled vocabulary for the `dynasty` field. Pure lexical normalisation: it maps spelling and qualifier variants onto one canonical label and NOTHING ELSE. No dates, regions or attributions are asserted here — those would be facts, and facts need sources (CLAUDE.md rule 2 / guardrail G2).",
+  "_usage": "scripts/normalize-vocab.mjs reads this to report drift; scripts/merge-batches.mjs should apply it to incoming records so new batches land normalised.",
+  "_measured": "941 records carried 313 distinct dynasty values, 246 of them appearing exactly once. One wave of 253 records added 99 new values, so this must be applied at ingest, not swept afterwards.",
+  "_note_field": "Where an alias carries a real sub-distinction (ruling house, 'legacy', 'attributed'), `note` preserves it rather than discarding it. The canonical label is for faceting; the note is for display.",
+  "canonical": {
+    "Undetermined": {
+      "aliases": [
+        "—",
+        "-",
+        "Unknown",
+        "unknown",
+        "undetermined",
+        "n/a",
+        "N/A"
+      ]
+    },
+    "Modern": {
+      "aliases": [
+        "Modern rebuilding"
+      ],
+      "qualified": {
+        "Modern (diaspora)": "diaspora",
+        "Modern (ISKCON)": "ISKCON",
+        "Modern (Rajasthani style)": "Rajasthani-style revival",
+        "Modern (Chaulukya-style revival)": "Chaulukya-style revival",
+        "Modern (Tikamgarh patronage)": "Tikamgarh patronage"
+      }
+    },
+    "Chola": {
+      "qualified": {
+        "Early Chola": "early",
+        "Medieval Chola": "medieval"
+      }
+    },
+    "Pallava": {},
+    "Pandya": {},
+    "Chera": {},
+    "Vijayanagara": {
+      "aliases": [
+        "Vijayanagar"
+      ],
+      "qualified": {
+        "Vijayanagara (Saluva/Tuluva)": "Saluva/Tuluva"
+      }
+    },
+    "Nayak": {
+      "qualified": {
+        "Thanjavur Nayak": "Thanjavur",
+        "Madurai Nayak": "Madurai",
+        "Vijayanagara Nayak": "Vijayanagara-era",
+        "Nayaka (Bomappa Nayaka)": "Bomappa Nayaka"
+      }
+    },
+    "Hoysala": {},
+    "Kakatiya": {},
+    "Rashtrakuta": {},
+    "Satavahana": {
+      "qualified": {
+        "Satavahana & Vakataka": "with Vakataka"
+      }
+    },
+    "Kadamba": {},
+    "Alupa": {
+      "aliases": [
+        "Alupa era"
+      ]
+    },
+    "Western Ganga": {},
+    "Eastern Ganga": {},
+    "Chalukya (Badami)": {
+      "aliases": [
+        "Chalukya",
+        "Badami Chalukya",
+        "Chalukya (Badami)"
+      ]
+    },
+    "Chalukya (Eastern)": {
+      "aliases": [
+        "Eastern Chalukya",
+        "Chalukya (Eastern)"
+      ]
+    },
+    "Chalukya (Western)": {
+      "aliases": [
+        "Western Chalukya",
+        "Western (Kalyani) Chalukya"
+      ]
+    },
+    "Chaulukya (Solanki)": {
+      "aliases": [
+        "Chaulukya",
+        "Solanki"
+      ],
+      "qualified": {
+        "Chaulukya legacy": "legacy",
+        "Chaulukya–Vaghela": "with Vaghela"
+      }
+    },
+    "Paramara": {
+      "qualified": {
+        "Paramara legacy": "legacy"
+      }
+    },
+    "Chandela": {},
+    "Bundela": {},
+    "Kachchhapaghata": {},
+    "Gurjara-Pratihara": {
+      "aliases": [
+        "Pratihara"
+      ]
+    },
+    "Kalachuri": {
+      "qualified": {
+        "Kalachuri of Tripuri": "Tripuri",
+        "Kalachuri (attributed)": "attributed",
+        "Kalachuri of Ratanpur": "Ratanpur"
+      }
+    },
+    "Shilahara": {},
+    "Yadava": {},
+    "Somavamshi": {},
+    "Bhauma-Kara": {},
+    "Sena": {},
+    "Pala": {},
+    "Gupta": {},
+    "Maurya": {},
+    "Maratha": {
+      "qualified": {
+        "Peshwa (Maratha)": "Peshwa",
+        "Maratha (Peshwa)": "Peshwa",
+        "Maratha (Holkar)": "Holkar",
+        "Holkar": "Holkar",
+        "Maratha (Scindia)": "Scindia"
+      }
+    },
+    "Rajput": {
+      "qualified": {
+        "Mewar (Sisodia)": "Mewar (Sisodia)",
+        "Rathore (Bikaner)": "Rathore (Bikaner)",
+        "Jadeja rulers of Kutch": "Jadeja (Kutch)",
+        "Katoch": "Katoch",
+        "Gidhaur era": "Gidhaur"
+      }
+    },
+    "Sikh": {
+      "qualified": {
+        "Sikh Gurus": "Guru period",
+        "Sikh Empire": "Sikh Empire",
+        "Sikh Misls / Modern": "Misl period / modern"
+      }
+    },
+    "Dogra": {},
+    "Karkota": {
+      "aliases": [
+        "Karkota/Utpala"
+      ]
+    },
+    "Utpala": {
+      "aliases": [
+        "Utpala era"
+      ]
+    },
+    "Hindu Shahi": {},
+    "Katyuri": {
+      "aliases": [
+        "Katyuri era"
+      ]
+    },
+    "Garhwal": {
+      "qualified": {
+        "Garhwal (Tehri)": "Tehri",
+        "Gorkha/Garhwal": "Gorkha/Garhwal"
+      }
+    },
+    "Travancore": {},
+    "Pandalam": {},
+    "Zamorin": {
+      "aliases": [
+        "Zamorin era"
+      ]
+    },
+    "Qutb Shahi": {
+      "aliases": [
+        "Qutb Shahi era"
+      ]
+    },
+    "Ahom": {},
+    "Koch": {},
+    "Manikya (Tripura)": {},
+    "Dinajpur Raj": {},
+    "Colonial-era Bengal": {},
+    "Licchavi": {},
+    "Malla": {},
+    "Mustang": {},
+    "Tibetan Empire": {},
+    "Namgyal": {
+      "qualified": {
+        "Namgyal (Chogyal)": "Chogyal (Sikkim)",
+        "Namgyal (Ladakh)": "Ladakh"
+      }
+    },
+    "Ladakh kingdom": {},
+    "Monpa": {
+      "qualified": {
+        "Monpa (under Gelug patronage)": "under Gelug patronage"
+      }
+    },
+    "Bhutanese theocracy": {},
+    "Anuradhapura": {
+      "aliases": [
+        "Anuradhapura Kingdom"
+      ]
+    },
+    "Ruhuna": {},
+    "Kandyan": {},
+    "Jaffna (Aryacakravarti)": {
+      "aliases": [
+        "Jaffna (Aryacakravarti legacy)"
+      ],
+      "qualified": {
+        "Chola/Jaffna legacy": "Chola/Jaffna legacy"
+      }
+    },
+    "Khmer": {
+      "aliases": [
+        "Khmer Empire",
+        "Khmer (Angkor)"
+      ]
+    },
+    "Chenla": {},
+    "Champa": {},
+    "Pagan": {},
+    "Konbaung": {},
+    "Mon": {
+      "qualified": {
+        "Mon (Hanthawaddy)": "Hanthawaddy"
+      }
+    },
+    "Lan Na": {
+      "aliases": [
+        "Lanna"
+      ]
+    },
+    "Lan Xang": {},
+    "Ayutthaya": {
+      "aliases": [
+        "Ayutthaya Kingdom"
+      ]
+    },
+    "Rattanakosin": {
+      "aliases": [
+        "Chakri (Rattanakosin)",
+        "Chakri"
+      ]
+    },
+    "Sailendra": {},
+    "Majapahit": {},
+    "Singhasari": {},
+    "Indo-Parthian/Kushan": {},
+    "Hephthalite–Western Turk": {
+      "aliases": [
+        "Hephthalite–Western Turk era"
+      ]
+    },
+    "Kushan": {},
+    "Kushano-Sasanian": {},
+    "Alchon Hun": {
+      "aliases": [
+        "Alchon Hun period"
+      ]
+    },
+    "Shunga": {},
+    "Maitraka": {},
+    "Ikshvaku": {},
+    "Vishnukundina": {},
+    "Nolamba": {},
+    "Nala": {},
+    "Nagavanshi": {
+      "aliases": [
+        "Nagavanshi (Phaninagavanshi)"
+      ]
+    },
+    "Chauhan": {},
+    "Bhati Rajput": {},
+    "Chand": {},
+    "Bushahr": {},
+    "Kullu kingdom": {},
+    "Jaintia": {},
+    "Chutia": {},
+    "Kachhwaha": {
+      "aliases": [
+        "Kachwaha of Amer",
+        "Kachhwaha rulers of Amber",
+        "Kachhwaha of Jaipur"
+      ],
+      "qualified": {
+        "Kachhwaha of Jaipur, under Madho Singh I": "under Madho Singh I"
+      }
+    },
+    "Varman (Chamba)": {
+      "aliases": [
+        "Varman dynasty of Chamba (post-Gupta)"
+      ]
+    },
+    "Guge": {
+      "aliases": [
+        "Guge kingdom (Yeshe-O and Rinchen Zangpo)"
+      ]
+    },
+    "Gelug": {
+      "aliases": [
+        "Gelug (Tibetan Buddhist)"
+      ],
+      "qualified": {
+        "Gelug, era of the Fifth Dalai Lama": "Fifth Dalai Lama era"
+      }
+    },
+    "Drukpa Kagyu": {},
+    "Zhabdrung": {
+      "aliases": [
+        "Zhabdrung era"
+      ]
+    },
+    "Wangchuck": {},
+    "Shah (Gorkha)": {
+      "aliases": [
+        "Shah (Gorkha kingdom)"
+      ]
+    },
+    "Rana": {},
+    "Polonnaruwa": {},
+    "Kotte": {},
+    "Sitawaka": {},
+    "Mrauk U": {
+      "aliases": [
+        "Mrauk U Kingdom"
+      ]
+    },
+    "Toungoo": {
+      "aliases": [
+        "Restored Toungoo"
+      ]
+    },
+    "Hariphunchai": {},
+    "Vientiane": {
+      "aliases": [
+        "Kingdom of Vientiane"
+      ]
+    },
+    "Nguyen": {
+      "aliases": [
+        "Nguyen Lords"
+      ]
+    },
+    "Ly": {},
+    "Le": {
+      "aliases": [
+        "Later Le"
+      ]
+    },
+    "Srivijaya": {},
+    "Melayu": {},
+    "Kedah Tua": {
+      "aliases": [
+        "Kedah Tua (Old Kedah)"
+      ]
+    },
+    "Mataram (Medang)": {
+      "aliases": [
+        "Mataram (Sanjaya)",
+        "Sailendra / Medang Mataram",
+        "Kalingga/early Mataram"
+      ]
+    },
+    "Kediri": {
+      "aliases": [
+        "Kediri–Majapahit"
+      ]
+    },
+    "Warmadewa": {
+      "aliases": [
+        "Udayana (Warmadewa)",
+        "Warmadewa era; Majapahit-era additions"
+      ]
+    },
+    "Gelgel/Klungkung": {},
+    "Mengwi": {},
+    "Bali Kingdom": {
+      "aliases": [
+        "Majapahit-era Bali"
+      ]
+    },
+    "Magadha": {
+      "aliases": [
+        "Magadha, Buddha's lifetime"
+      ]
+    },
+    "Deva": {
+      "aliases": [
+        "Deva dynasty",
+        "Deva of Samatata"
+      ]
+    },
+    "Mughal": {
+      "aliases": [
+        "Mughal era",
+        "Mughal era (reign of Akbar)",
+        "Late Mughal era; rebuilding attributed to Hemu in earlier phases"
+      ]
+    },
+    "Western Kshatrapa": {
+      "aliases": [
+        "Western Satrap and Satavahana patronage",
+        "Satavahana / Western Kshatrapa"
+      ]
+    },
+    "Chalukya (Vemulawada)": {
+      "aliases": [
+        "Chalukya of Vemulawada"
+      ]
+    }
+  }
+}
