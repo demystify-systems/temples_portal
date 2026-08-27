@@ -1,0 +1,9 @@
+{
+    "postgis": "3.3.7",
+    "geog_generated": "ALWAYS",
+    "gist_index": "sites_geog_idx",
+    "functions": [
+        "sites_in_bbox",
+        "sites_within_km"
+    ]
+}

@@ -1,5 +1,5 @@
 {
-  "iteration": 0,
+  "iteration": 1,
   "program": "Tirtha Atlas roadmap execution",
   "integration_branch": "develop",
   "constraints": [
@@ -21,7 +21,10 @@
       "milestone": "M0",
       "type": "code",
       "title": "Harden the data gate with warn-mode rules (coord precision, country bbox, circuit cardinality, significance != story, dup coords)",
-      "files": ["scripts/validate-data.mjs", "data/vocab/gate-exceptions.json"],
+      "files": [
+        "scripts/validate-data.mjs",
+        "data/vocab/gate-exceptions.json"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -37,7 +40,9 @@
       "milestone": "M0",
       "type": "code",
       "title": "Test suite for src/lib/sites.ts pure functions via node --test (O1 partial)",
-      "files": ["src/lib/sites.test.mjs"],
+      "files": [
+        "src/lib/sites.test.mjs"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -53,7 +58,9 @@
       "milestone": "M0",
       "type": "data-derived",
       "title": "Dynasty controlled vocabulary: alias map collapsing 313 values to a canonical set",
-      "files": ["data/vocab/dynasty.json"],
+      "files": [
+        "data/vocab/dynasty.json"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -69,7 +76,9 @@
       "milestone": "M0",
       "type": "data-derived",
       "title": "Architectural style controlled vocabulary: 303 values to canonical styles + styleNote",
-      "files": ["data/vocab/style.json"],
+      "files": [
+        "data/vocab/style.json"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -85,8 +94,13 @@
       "milestone": "M0",
       "type": "code",
       "title": "Formalise the stub/compact/flagship tier taxonomy with per-tier field requirements (B12)",
-      "files": ["data/vocab/tiers.json", "docs/TIERS.md"],
-      "deps": ["T-001"],
+      "files": [
+        "data/vocab/tiers.json",
+        "docs/TIERS.md"
+      ],
+      "deps": [
+        "T-001"
+      ],
       "status": "pending",
       "retries": 0,
       "max_retries": 3,
@@ -101,7 +115,9 @@
       "milestone": "M0",
       "type": "code",
       "title": "Corpus backup workflow: dated release artifact of data/sites.json on every develop merge (L6)",
-      "files": [".github/workflows/corpus-backup.yml"],
+      "files": [
+        ".github/workflows/corpus-backup.yml"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -117,14 +133,18 @@
       "milestone": "M1",
       "type": "migration",
       "title": "Fix 0001_init.sql: story NOT NULL breaks seeding (128+ records lack story); align columns with the live schema",
-      "files": ["supabase/migrations/0001_init.sql"],
+      "files": [
+        "supabase/migrations/0001_init.sql"
+      ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "file:supabase/migrations/0001_init.sql (dry-run clean, rolled back)"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -133,14 +153,20 @@
       "milestone": "M1",
       "type": "live-apply",
       "title": "Apply the initial migration to the live Supabase project (L1)",
-      "files": ["program/evidence/T-011-migration.json"],
-      "deps": ["T-010"],
-      "status": "pending",
+      "files": [
+        "program/evidence/T-011-migration.json"
+      ],
+      "deps": [
+        "T-010"
+      ],
+      "status": "done",
       "retries": 0,
       "max_retries": 2,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-011-migration.json"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -149,14 +175,21 @@
       "milestone": "M1",
       "type": "migration",
       "title": "Enable PostGIS, add a geography column and GiST index for nearest/within-radius (L2)",
-      "files": ["supabase/migrations/0002_postgis.sql", "program/evidence/T-012-postgis.json"],
-      "deps": ["T-011"],
-      "status": "pending",
+      "files": [
+        "supabase/migrations/0002_postgis.sql",
+        "program/evidence/T-012-postgis.json"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
       "retries": 0,
       "max_retries": 2,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-012-postgis.json"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -165,14 +198,21 @@
       "milestone": "M1",
       "type": "migration",
       "title": "RLS: public read on sites, service-role write only, contributor writes confined to the queue (L5)",
-      "files": ["supabase/migrations/0003_rls.sql", "program/evidence/T-013-rls.json"],
-      "deps": ["T-011"],
-      "status": "pending",
+      "files": [
+        "supabase/migrations/0003_rls.sql",
+        "program/evidence/T-013-rls.json"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
       "retries": 0,
       "max_retries": 2,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-013-rls.json"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -181,14 +221,22 @@
       "milestone": "M1",
       "type": "live-apply",
       "title": "Seed the live database from data/sites.json (read-only on the corpus) and verify row parity",
-      "files": ["program/evidence/T-014-seed.json"],
-      "deps": ["T-012", "T-013"],
-      "status": "pending",
+      "files": [
+        "scripts/seed-supabase.mjs",
+        "program/evidence/T-014-seed.json"
+      ],
+      "deps": [
+        "T-012",
+        "T-013"
+      ],
+      "status": "done",
       "retries": 0,
       "max_retries": 2,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-014-seed.json (941/941 parity, RLS probed)"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -197,14 +245,20 @@
       "milestone": "M1",
       "type": "code",
       "title": "Generate TypeScript types from the live schema so Site stops being hand-maintained (O7)",
-      "files": ["src/lib/database.types.ts"],
-      "deps": ["T-011"],
-      "status": "pending",
+      "files": [
+        "src/lib/database.types.ts"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
-      "status_iteration": 0,
-      "evidence": [],
+      "status_iteration": 1,
+      "evidence": [
+        "file:src/lib/database.types.ts (343 lines, tsc clean)"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -213,7 +267,10 @@
       "milestone": "M2",
       "type": "report",
       "title": "Coordinate precision review queue: 68 records at <=2dp, each with its Wikidata P625 candidate (C1, detect-only)",
-      "files": ["scripts/report-coordinates.mjs", "reports/coordinates.md"],
+      "files": [
+        "scripts/report-coordinates.mjs",
+        "reports/coordinates.md"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -229,7 +286,10 @@
       "milestone": "M2",
       "type": "report",
       "title": "Circuit correctness report: Jyotirlinga tagged 14 for 12, roster gaps, taxonomy pollution (B2, detect-only)",
-      "files": ["scripts/report-circuits.mjs", "reports/circuits.md"],
+      "files": [
+        "scripts/report-circuits.mjs",
+        "reports/circuits.md"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -245,7 +305,10 @@
       "milestone": "M2",
       "type": "report",
       "title": "Source tiering analysis: rank citations primary/scholarly/encyclopedic/editorial, surface single-Wikipedia records (C4)",
-      "files": ["scripts/report-sources.mjs", "reports/sources.md"],
+      "files": [
+        "scripts/report-sources.mjs",
+        "reports/sources.md"
+      ],
       "deps": [],
       "status": "pending",
       "retries": 0,
@@ -261,8 +324,13 @@
       "milestone": "M2",
       "type": "report",
       "title": "Data-health summary: coverage by state/tradition/era, tier distribution, field completeness (C7)",
-      "files": ["scripts/report-health.mjs", "reports/health.md"],
-      "deps": ["T-005"],
+      "files": [
+        "scripts/report-health.mjs",
+        "reports/health.md"
+      ],
+      "deps": [
+        "T-005"
+      ],
       "status": "pending",
       "retries": 0,
       "max_retries": 3,

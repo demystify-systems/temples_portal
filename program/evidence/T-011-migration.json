@@ -1,0 +1,35 @@
+{
+    "project_ref": "uwxchmzebfirbxdsdrcu",
+    "region": "ap-south-1",
+    "pg_version": "17.6",
+    "tables": [
+        "contributions",
+        "sites"
+    ],
+    "sites_columns": 31,
+    "check_constraints": [
+        "built_range_ordered",
+        "lat_in_range",
+        "lng_in_range",
+        "phone_needs_website",
+        "sites_tier_check",
+        "sites_tradition_check",
+        "sources_nonempty",
+        "story_not_significance"
+    ],
+    "indexes": [
+        "sites_built_idx",
+        "sites_circuits_idx",
+        "sites_country_idx",
+        "sites_dynasty_idx",
+        "sites_pkey",
+        "sites_state_idx",
+        "sites_status_idx",
+        "sites_tier_idx",
+        "sites_tradition_idx"
+    ],
+    "rls_enabled": [
+        "contributions",
+        "sites"
+    ]
+}

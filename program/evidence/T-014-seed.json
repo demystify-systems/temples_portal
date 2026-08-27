@@ -1,0 +1,19 @@
+{
+    "rows": 941,
+    "tiers": {
+        "compact": 791,
+        "flagship": 150
+    },
+    "geog_populated": 941,
+    "story_null": 250,
+    "rls_probe": {
+        "read_sites": 200,
+        "insert_site": 401,
+        "update_site": 401,
+        "delete_site": 401,
+        "read_contributions": 401,
+        "insert_pending": 201,
+        "insert_preapproved": 401
+    },
+    "spatial_probe": "sites_within_km(Thanjavur,50km) -> Brihadisvara 0.0km, nearest-first OK"
+}
