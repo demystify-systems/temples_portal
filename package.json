@@ -10,7 +10,10 @@
     "validate": "node scripts/validate-data.mjs",
     "drift:wikidata": "node scripts/wikidata-drift.mjs",
     "freshness": "node scripts/source-freshness.mjs",
-    "db:seed": "node scripts/seed-supabase.mjs"
+    "db:seed": "node scripts/seed-supabase.mjs",
+    "merge": "node scripts/merge-batches.mjs",
+    "status": "node scripts/phase2-status.mjs",
+    "status:write": "node scripts/phase2-status.mjs --write"
   },
   "dependencies": {
     "next": "^15.4.0",
