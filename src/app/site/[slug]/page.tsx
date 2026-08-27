@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SITES, getSite, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, slugify } from "@/lib/sites";
+import { placeJsonLd, breadcrumbJsonLd, faqJsonLd, serializeJsonLd } from "@/lib/jsonld";
+import { siteTitle, siteDescription, siteKeywords } from "@/lib/seo";
 import { PageShell } from "../../ui";
 
 export function generateStaticParams() {
@@ -12,8 +14,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const s = getSite(slug);
   if (!s) return {};
-  const desc = `${s.deity} · ${s.place}, ${s.country} · ${s.builtDisplay} (${s.dynasty}). ${s.significance.slice(0, 150)}…`;
-  return { title: s.name, description: desc, openGraph: { title: `${s.name} · Tirtha Atlas`, description: desc } };
+  // These helpers draw only on `significance` — never on `story`, which is legend
+  // and must not be restated as a factual summary (CLAUDE.md rule 3). `SeoSite`
+  // does not declare `story` at all, so that is enforced by the type rather than
+  // by convention. They return null on a short record rather than padding it.
+  const title = siteTitle(s) ?? s.name;
+  const description = siteDescription(s) ?? undefined;
+  const keywords = siteKeywords(s);
+
+  return {
+    title: s.name,
+    description,
+    keywords: keywords.length ? [...keywords] : undefined,
+    openGraph: { title, description, type: "article" },
+    twitter: { card: "summary_large_image", title, description },
+  };
 }
 
 export default async function SitePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -25,21 +40,13 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
     (o) => o.id !== s.id && ((o.circuits ?? []).some((c) => (s.circuits ?? []).includes(c)) || o.dynasty === s.dynasty)
   ).slice(0, 6);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": s.tradition === "Hindu" ? "HinduTemple" : s.tradition === "Buddhist" ? "BuddhistTemple" : "PlaceOfWorship",
-    name: s.name,
-    alternateName: s.alt,
-    description: s.significance,
-    geo: { "@type": "GeoCoordinates", latitude: s.lat, longitude: s.lng },
-    address: { "@type": "PostalAddress", addressLocality: s.place, addressRegion: s.state, addressCountry: s.country },
-    url: s.website,
-    sameAs: [s.wiki].filter(Boolean),
-  };
+  // Place/HinduTemple + BreadcrumbList, and an FAQPage only when the record has
+  // something sourced to answer with — see src/lib/jsonld.ts.
+  const jsonLd = serializeJsonLd([placeJsonLd(s), breadcrumbJsonLd(s), faqJsonLd(s)]);
 
   return (
     <PageShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
       <div className="eyebrow" style={{ color: `var(--e${era + 1})` }}>{ERAS[era].name} · {s.tradition} · {s.country}</div>
       <h1>{s.name}</h1>
       {s.native && <p className="native" style={{ fontSize: 17 }}>{s.native}</p>}

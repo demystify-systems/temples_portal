@@ -15,7 +15,9 @@
     "M1": "Supabase activation (L1/L2/L5/O7)",
     "M2": "Correctness reports (detect, don't auto-edit)",
     "M3": "Domain cutover (N5)",
-    "M4": "Product & multi-device experience"
+    "M4": "Product & multi-device experience",
+    "M5": "Search, layers, patrons, support",
+    "M6": "Multilingual AI assistant"
   },
   "milestone_prs": {},
   "tasks": [
@@ -614,6 +616,256 @@
       "files": [
         "src/lib/jsonld.ts",
         "src/lib/jsonld.test.ts"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-060",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Universal search + facet filters across gazetteer, circuit and dynasty pages, synonym and deity-alias aware",
+      "files": [
+        "src/lib/search.ts",
+        "src/lib/search.test.ts",
+        "src/app/SiteFilters.tsx",
+        "src/app/sites/page.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "agent:verified, gates green"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-061",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Patron index and per-patron pages derived from the patron field (H5)",
+      "files": [
+        "src/lib/patrons.ts",
+        "src/lib/patrons.test.ts",
+        "src/app/patrons/page.tsx",
+        "src/app/patron/[slug]/page.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "agent:verified, gates green"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-062",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Pinch-to-zoom, double-tap and trackpad zoom on the atlas map (A4)",
+      "files": [
+        "src/lib/map-gestures.ts",
+        "src/lib/map-gestures.test.ts",
+        "src/app/AtlasClient.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "agent:verified, gates green"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-063",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Canonical host enforcement: 308 alias redirects + per-route rel=canonical + security headers",
+      "files": [
+        "next.config.mjs",
+        "src/app/layout.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "agent:verified, gates green"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-064",
+      "milestone": "M5",
+      "type": "data-derived",
+      "title": "State and district boundary layers, India POV ONLY (Bhuvan / Survey of India). NEW file, never regenerate geo.json (CLAUDE.md rule 1)",
+      "files": [
+        "data/boundaries/README.md",
+        "data/boundaries/states.json",
+        "data/boundaries/districts.json",
+        "src/lib/boundaries.ts",
+        "scripts/verify-boundaries.mjs"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-065",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Support-the-project page, scaffolded behind a flag until a payment provider and decision 3.3 are settled (R2)",
+      "files": [
+        "src/app/support/page.tsx",
+        "src/lib/flags.ts"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-070",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Provider-agnostic AI router with BYOK, so the chat is never welded to one vendor",
+      "files": [
+        "src/lib/ai/router.ts",
+        "src/lib/ai/router.test.ts"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-071",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Grounded retrieval over the cited corpus: the assistant may only answer from records it can cite, and refuses otherwise (Q4)",
+      "files": [
+        "src/lib/ai/retrieve.ts",
+        "src/lib/ai/retrieve.test.ts"
+      ],
+      "deps": [
+        "T-070"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-072",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Chat API route with rate limiting, abuse guards and streaming",
+      "files": [
+        "src/app/api/chat/route.ts"
+      ],
+      "deps": [
+        "T-071"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-073",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Multilingual chat UI: any-language question, answer in the asker's language, citations always shown",
+      "files": [
+        "src/app/Assistant.tsx"
+      ],
+      "deps": [
+        "T-072"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-074",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Contact and practical-info tool exposed to the assistant, honouring G4 (phones only from official cited sources)",
+      "files": [
+        "src/lib/ai/tools.ts",
+        "src/lib/ai/tools.test.ts"
+      ],
+      "deps": [
+        "T-071"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-066",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Slim the client search index: 277kB gzipped corpus ships to every list page; `story` (48kB) is never searched. Target <=182kB (N4, SXO)",
+      "files": [
+        "src/lib/search-index.ts",
+        "src/lib/search-index.test.ts"
       ],
       "deps": [],
       "status": "pending",
