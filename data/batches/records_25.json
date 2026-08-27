@@ -1,0 +1,99 @@
+[
+  {
+    "id": "andalakkum-aiyan-aadanoor",
+    "name": "Thiru Aadanoor Temple (Andalakkum Aiyan Perumal)",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Aadanoor, Thanjavur",
+    "lat": 10.9764,
+    "lng": 79.3133,
+    "tradition": "Hindu",
+    "deity": "Andalakkum Aiyan Perumal (Vishnu), with Ranganayaki Thayar",
+    "built": [1000, 1800],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Chola",
+    "patron": "Aditya Chola",
+    "style": "Dravidian",
+    "circuits": ["Divya Desam"],
+    "significance": "A small Vishnu temple in the Kaveri delta a couple of kilometres from Swamimalai, counted among the 108 Divya Desams and sung by the Alvars in the Nalayira Divya Prabandham. It has a three-tier rajagopuram and a Pranava vimana, and is administered by the Ahobila Mutt in the Vadakalai tradition.",
+    "story": "Legend holds that Vishnu came as an old man to the riverbank and handed out sand that turned to gems for the labourers a wealthy devotee's workmen had cheated, exposing the fraud.",
+    "wiki": "https://en.wikipedia.org/wiki/Thiru_Aadanoor_Temple",
+    "sources": [
+      {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Thiru_Aadanoor_Temple"}
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "irattai-thiruppathy-tholaivillimangalam",
+    "name": "Irattai Thiruppathy (Thirutholaivillimangalam)",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Thirutholaivillimangalam, Thoothukudi",
+    "lat": 8.6111,
+    "lng": 77.9722,
+    "tradition": "Hindu",
+    "deity": "Devapiran and Aravindalochanar (Vishnu)",
+    "built": [1190, 1345],
+    "builtDisplay": "inscriptions 1190–1345 (Pandya; Madurai Nayak expansion)",
+    "dynasty": "Pandya",
+    "style": "Dravidian",
+    "circuits": ["Divya Desam"],
+    "significance": "Two adjoining Vishnu temples on the Thamiraparani that together count as the single Divya Desam of Thirutholaivillimangalam, and belong to the Nava Tirupati group strung along the Tirunelveli–Tiruchendur route. Both shrines are praised in the Nalayira Divya Prabandham, notably by Nammalvar; their inscriptions name rulers between 1190 and 1345.",
+    "story": "A sage named Suprabha is said to have turned up a balance and a bow while ploughing here; the objects became a human couple whom Kubera had cursed, and the place took its name from them.",
+    "wiki": "https://en.wikipedia.org/wiki/Aravindalochanar_temple",
+    "sources": [
+      {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Aravindalochanar_temple"}
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "yogadhyan-badri-pandukeshwar",
+    "name": "Yogadhyan Badri Temple",
+    "country": "India",
+    "state": "Uttarakhand",
+    "place": "Pandukeshwar (1,829 m), Chamoli",
+    "lat": 30.6339,
+    "lng": 79.5475,
+    "tradition": "Hindu",
+    "deity": "Vishnu (Yogadhyan Badri)",
+    "built": [850, 1000],
+    "builtDisplay": "c. 850–1000",
+    "dynasty": "Undetermined",
+    "style": "Dravidian",
+    "circuits": ["Sapta Badri"],
+    "significance": "One of the seven Sapta Badri shrines of the Garhwal Himalaya, holding a life-size Shaligram image of Vishnu seated in meditation — the posture that gives the shrine its name. When the Badrinath temple closes for the winter its festival image is carried down to this sanctuary and worshipped here until the summer reopening.",
+    "story": "Pandu, father of the Pandavas, is said to have meditated on Vishnu at this spot to be cleansed of the sin of killing two mating deer.",
+    "wiki": "https://en.wikipedia.org/wiki/Pandukeshwar",
+    "sources": [
+      {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Pandukeshwar"},
+      {"l": "Wikipedia — Sapta Badri", "u": "https://en.wikipedia.org/wiki/Sapta_Badri"}
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "dhyan-badri-urgam",
+    "name": "Dhyan Badri Temple",
+    "country": "India",
+    "state": "Uttarakhand",
+    "place": "Urgam valley (2,135 m), Chamoli",
+    "lat": 30.4289,
+    "lng": 79.4269,
+    "tradition": "Hindu",
+    "deity": "Vishnu (Dhyan Badri)",
+    "built": [1000, 1800],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": ["Sapta Badri"],
+    "significance": "One of the seven Sapta Badri shrines, standing in the Urgam valley close to Kalpeshwar on the banks of the Kalpa Ganga. Its image of Vishnu is a four-armed black-stone figure in a meditative posture, from which the shrine takes its name.",
+    "story": "The shrine is credited to Urvarishi, son of King Puranjaya, who is said to have meditated in the Urgam region and founded it for Vishnu.",
+    "wiki": "https://en.wikipedia.org/wiki/Sapta_Badri",
+    "sources": [
+      {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Sapta_Badri"}
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  }
+]
