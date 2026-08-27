@@ -52,8 +52,42 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
       {s.native && <p className="native" style={{ fontSize: 17 }}>{s.native}</p>}
       <p className="ink">{s.place}{s.state ? `, ${s.state}` : ""} · <span className="mono" style={{ fontSize: 12 }}>{s.lat.toFixed(4)}°, {s.lng.toFixed(4)}°</span></p>
       <div className="chips">
-        {[s.deity, s.dynasty, s.style, ...(s.circuits ?? [])].map((c) => <span className="chip" key={c}>{c}</span>)}
+        {[s.deity, s.dynasty, s.style].map((c) => <span className="chip" key={c}>{c}</span>)}
+        {(s.circuits ?? []).map((c) => {
+          // A contested claim is shown, not hidden: the chip carries the circuit
+          // AND the fact that the attribution is disputed, with the dispute's own
+          // citation on the record below (guardrail G10).
+          const dispute = (s.disputedCircuits ?? []).find((d) => d.circuit === c);
+          return (
+            <span className={`chip${dispute ? " chip-disputed" : ""}`} key={c}>
+              {c}
+              {dispute && <em title={dispute.note}>disputed</em>}
+            </span>
+          );
+        })}
       </div>
+
+      {(s.disputedCircuits ?? []).length > 0 && (
+        <div className="disputed-note">
+          <h2 style={{ marginTop: 24 }}>Contested attributions</h2>
+          <p>
+            This site is counted in the lists below by some sources and not others. We list the
+            claim and the disagreement rather than silently picking a side.
+          </p>
+          <ul>
+            {(s.disputedCircuits ?? []).map((d) => (
+              <li key={`${d.circuit}-${d.status}`}>
+                <b>{d.circuit}</b>
+                {d.status === "unsourced" && <span className="mono"> · no source located</span>}
+                <span> — {d.note}</span>
+                {d.source && (
+                  <> <a href={d.source} rel="noopener nofollow" target="_blank">source</a></>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="dates" style={{ maxWidth: 560 }}>
         <div><div className="dl">Sacred since</div><div className="dv">{fmtYear(appearYear(s))}</div><div className="ds">{s.originNote ?? "first attestation / structure"}</div></div>
         <div><div className="dl">Standing structure</div><div className="dv">{s.builtDisplay}</div><div className="ds">{s.patron ? `patron: ${s.patron}` : s.dynasty}</div></div>

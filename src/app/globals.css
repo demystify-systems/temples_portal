@@ -309,3 +309,18 @@ table.gz tr:last-child td{border-bottom:none}
   transform: translate(-50%, -50%);
   width: 44px; height: 44px;
 }
+
+/* ---- contested circuit attributions (G10) ---------------------------------
+   A disputed claim is displayed, never hidden: the chip keeps the circuit name
+   and adds the disagreement, with the dispute's own citation listed below. */
+.chip-disputed { border-style: dashed; }
+.chip-disputed em {
+  margin-left: 6px; padding-left: 6px;
+  border-left: 1px solid var(--line2);
+  font-style: normal; font-size: 10.5px; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--mut); cursor: help;
+}
+.disputed-note ul { margin: 8px 0 0; padding-left: 18px; }
+.disputed-note li { color: var(--ink2); line-height: 1.65; margin-bottom: 8px; max-width: 68ch; }
+.disputed-note li b { color: var(--ink); font-weight: 500; }
+.disputed-note a { color: var(--gold); }
