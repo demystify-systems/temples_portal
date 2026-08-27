@@ -32,6 +32,7 @@ const rows = sites.map((s) => ({
   built_display: s.builtDisplay, origin: s.origin ?? null, origin_note: s.originNote ?? null,
   dynasty: s.dynasty, patron: s.patron ?? null, style: s.style, tier: tierOf(s),
   circuits: s.circuits ?? [], status: s.status ?? [],
+  disputed_circuits: s.disputedCircuits ?? [],
   significance: s.significance,
   story: s.story ?? null,          // 250 compact records legitimately carry no katha
   access: s.access ?? null,

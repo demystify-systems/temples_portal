@@ -7,3 +7,7 @@ out/
 next-env.d.ts
 .DS_Store
 reports/
+
+e2e/__screenshots__/
+test-results/
+playwright-report/

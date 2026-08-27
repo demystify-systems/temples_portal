@@ -214,3 +214,113 @@ table.gz td{padding:8px 12px;border-bottom:1px solid var(--line);color:var(--ink
 table.gz td a{color:var(--ink);text-decoration:none}
 table.gz td a:hover{color:var(--gold)}
 table.gz tr:last-child td{border-bottom:none}
+
+/* ============ atlas map gestures ============ */
+/* svg.map already carries touch-action:none (line ~96) — without it the browser
+   claims a two-finger drag and page-zooms instead of letting the map see it.
+   The overlays sit *on top* of the map, so a second finger landing on the
+   legend or the zoom tools would hand that same gesture back to the browser
+   mid-pinch; the wrapper covers them all.
+   overscroll-behavior is deliberately NOT set here: .app is height:100dvh with
+   overflow:hidden and .mapwrap never scrolls, so there is no scroll chain for a
+   gesture to escape into and the property would be a no-op. */
+.mapwrap{touch-action:none}
+
+/* ---- narrow-screen header: brand on its own line, stats beneath ------------
+   At 390px the brand and the stats row competed for one line and "Tirtha Atlas"
+   truncated to "TIRTHA A…". The name is the one thing that must never be
+   clipped, so below 620px the header wraps to two rows: brand (full width),
+   then the coverage stats above the search bar. Stats that were hidden purely
+   for want of horizontal space come back, because the second row has room. */
+@media (max-width: 620px) {
+  .sitehead { flex-wrap: wrap; row-gap: 6px; padding-bottom: 8px; }
+  .headlead { flex: 1 1 100%; min-width: 0; }
+  .brand .t { overflow: visible; text-overflow: clip; font-size: 17px; letter-spacing: .11em; }
+  .hstats {
+    flex: 1 1 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+    gap: 14px;
+    padding-left: 44px;          /* align under the brand, clear of the hamburger */
+    white-space: normal;
+  }
+  .hstats .st-trad { display: inline; }
+}
+@media (max-width: 430px) {
+  .brand .t { font-size: 15.5px; letter-spacing: .09em; }
+  .hstats { padding-left: 0; gap: 12px; }
+  .hstats .st-trad { display: none; }   /* two stats at phone width, as specified */
+}
+
+/* ============ patrons index & patron pages (H5) ============ */
+.patroncard{position:relative;padding-right:54px}
+.patroncard .cn{overflow-wrap:anywhere}
+.pcount{position:absolute;top:11px;right:11px;min-width:24px;padding:2px 7px;border:1px solid var(--gold-soft);border-radius:999px;background:var(--bg);color:var(--gold);font-family:var(--font-mono),monospace;font-size:12px;font-weight:600;line-height:1.5;text-align:center}
+.patronnote{border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:8px;background:var(--panel);padding:11px 14px;margin:16px 0 4px}
+.page .patronnote p{margin:0;font-size:13px;line-height:1.65;max-width:none}
+.patronlist{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+.patronlist li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:8px 2px;border-bottom:1px solid var(--line)}
+.patronlist li a{font-family:var(--font-display),serif;font-size:15.5px;letter-spacing:.02em;text-decoration:none;overflow-wrap:anywhere}
+.patronlist li a:hover{color:var(--gold)}
+.patronlist .pl-m{font-size:11.5px;color:var(--mut)}
+.pdates{flex-wrap:wrap}
+.pdates>div{flex:1 1 150px;min-width:0}
+.pdates .dv{overflow-wrap:anywhere}
+@media (max-width:520px){
+  .pdates>div+div{border-left:none;border-top:1px solid var(--line)}
+  .pdates>div{flex:1 1 100%}
+}
+.patronvariants{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:5px}
+.patronvariants li{border:1px solid var(--line);border-radius:7px;background:var(--panel);padding:6px 10px;font-size:12px;color:var(--ink2);overflow-wrap:anywhere}
+.srclist{margin:10px 0 0;padding:0 0 0 18px}
+.srclist li{color:var(--ink2);font-size:13.5px;line-height:1.65;margin:6px 0;overflow-wrap:anywhere}
+.srclist li a{color:var(--ink)}
+.srclist li a:hover{color:var(--gold)}
+
+/* ============ list-page search & filters (SiteFilters) ============ */
+/* Deliberately reuses the atlas .filters vocabulary above — same input, same
+   selects, same 920px "Filters ▾" accordion — and only re-seats it as a panel
+   inside the .page column. Appended below the originals so nothing there moves. */
+.pagefilters{margin:16px 0 4px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+/* min-width:0 everywhere a select or input lives: a <select> is otherwise as
+   wide as its widest option ("Mahavira / Tirthankaras (45)"), which is what
+   pushes a narrow phone into horizontal scroll. */
+.pagefilters input[type=search]{flex:1 1 210px;min-width:0;max-width:100%}
+.pagefilters select{min-width:0;max-width:100%;text-overflow:ellipsis}
+.pagefilters .reset,.pagefilters .count{flex:none}
+.pagefilters .count{padding-left:4px}
+.noresults{color:var(--ink2);margin:22px 0}
+
+@media (max-width:560px){
+  .pagefilters{margin-top:12px;padding:9px 10px}
+  .pagefilters .count{width:100%;order:6;margin-left:0;padding-left:0}
+}
+
+/* ---- tap targets ----------------------------------------------------------
+   The hamburger measured exactly 34x34 — it met the stated floor with zero
+   headroom, and sits under Apple HIG (44) and Material (48). The VISUAL size is
+   deliberately unchanged; a pseudo-element extends the touch area outward so the
+   header layout does not shift. Same treatment for the drawer's close button. */
+.hamb, .navclose { position: relative; }
+.hamb::after, .navclose::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px; height: 44px;
+}
+
+/* ---- contested circuit attributions (G10) ---------------------------------
+   A disputed claim is displayed, never hidden: the chip keeps the circuit name
+   and adds the disagreement, with the dispute's own citation listed below. */
+.chip-disputed { border-style: dashed; }
+.chip-disputed em {
+  margin-left: 6px; padding-left: 6px;
+  border-left: 1px solid var(--line2);
+  font-style: normal; font-size: 10.5px; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--mut); cursor: help;
+}
+.disputed-note ul { margin: 8px 0 0; padding-left: 18px; }
+.disputed-note li { color: var(--ink2); line-height: 1.65; margin-bottom: 8px; max-width: 68ch; }
+.disputed-note li b { color: var(--ink); font-weight: 500; }
+.disputed-note a { color: var(--gold); }

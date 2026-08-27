@@ -17,6 +17,8 @@
     "audit": "node scripts/audit-records.mjs",
     "links": "node scripts/prune-dead-websites.mjs",
     "test": "node --test 'src/**/*.test.ts' 'program/*.test.mjs'",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
     "vocab": "node scripts/normalize-vocab.mjs",
     "report:coordinates": "node scripts/report-coordinates.mjs --fetch --write",
     "report:circuits": "node scripts/report-circuits.mjs --write",
@@ -30,6 +32,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@types/node": "^22",
     "@types/react": "^19",
     "typescript": "^5.6.0"

@@ -29,7 +29,11 @@ const TIERS = new Set(["stub", "compact", "flagship"]);
 const FIXED_CIRCUITS = {
   Jyotirlinga: 12, "Char Dham": 4, "Chota Char Dham": 4, "Panch Kedar": 5,
   "Panch Prayag": 5, "Pancha Bhoota Sthalam": 5, Ashtavinayak: 8,
-  "Arupadai Veedu": 6, "Sapta Puri": 7, "Sapta Badri": 7, "Divya Desam": 108,
+  "Arupadai Veedu": 6, "Sapta Puri": 7, "Sapta Badri": 7,
+  // 108 is the canonical count, but two of them — Tirupparkatal (the Ocean of
+  // Milk) and Vaikuntham — are explicitly not of the earthly realm and can never
+  // be map records. 106 is the real ceiling for a gazetteer of places.
+  "Divya Desam": 106,
 };
 
 // Rough per-country boxes. The India box deliberately spans the full India
@@ -106,13 +110,47 @@ for (const s of sites) {
 }
 
 // ---- WARN: whole-corpus invariants ----------------------------------------
+// A record may claim membership AND carry a `disputedCircuits` entry naming that
+// same circuit — that is the correct way to hold a contested claim (guardrail
+// G10): list it, flag it, cite the dispute. Such records must not count toward
+// the canonical total, or marking a claimant as disputed would never clear the
+// warning that asked for exactly that.
 const circuitCounts = {};
-for (const s of sites) for (const c of s.circuits ?? []) circuitCounts[c] = (circuitCounts[c] ?? 0) + 1;
+const disputedCounts = {};
+for (const s of sites) {
+  for (const c of s.circuits ?? []) circuitCounts[c] = (circuitCounts[c] ?? 0) + 1;
+  for (const d of s.disputedCircuits ?? []) {
+    if ((s.circuits ?? []).includes(d.circuit)) {
+      disputedCounts[d.circuit] = (disputedCounts[d.circuit] ?? 0) + 1;
+    }
+  }
+}
+// Rival claimants contest a SLOT, and both sides get flagged: Baidyanath Deoghar
+// and Vaijnath Parli dispute one Jyotirlinga between them, so 10 uncontested + 2
+// contested slots is a complete 12, not a shortfall. The healthy band is
+// therefore `undisputed <= expected <= tagged` — only outside it is anything wrong.
 for (const [circuit, expected] of Object.entries(FIXED_CIRCUITS)) {
-  const actual = circuitCounts[circuit];
-  if (actual === undefined) continue;
-  if (actual > expected) warnings.push(`[circuit-overfull] ${circuit}: ${actual} tagged for a canonical ${expected} — mark disputed claimants`);
-  else if (actual < expected) warnings.push(`[circuit-incomplete] ${circuit}: ${actual}/${expected}`);
+  const tagged = circuitCounts[circuit];
+  if (tagged === undefined) continue;
+  const disputed = disputedCounts[circuit] ?? 0;
+  const undisputed = tagged - disputed;
+  const suffix = disputed ? ` (${tagged} tagged, ${disputed} disputed)` : "";
+
+  if (undisputed > expected) {
+    warnings.push(`[circuit-overfull] ${circuit}: ${undisputed} uncontested claims for a canonical ${expected}${suffix} — flag the rival claimants`);
+  } else if (tagged < expected) {
+    warnings.push(`[circuit-incomplete] ${circuit}: ${tagged}/${expected}${suffix}`);
+  }
+}
+
+// A disputed claim is itself a factual assertion and needs its own citation.
+for (const s of sites) {
+  for (const d of s.disputedCircuits ?? []) {
+    if (!d.circuit) errors.push(`${s.id}: disputedCircuits entry with no circuit`);
+    if (!d.note) warn(s.id, "disputed-unexplained", `disputed "${d.circuit}" with no note`);
+    if (d.status === "disputed" && !/^https?:\/\/\S+$/.test(d.source ?? ""))
+      warn(s.id, "disputed-uncited", `disputed "${d.circuit}" without a source URL`);
+  }
 }
 
 // ---------------------------------------------------------------------------

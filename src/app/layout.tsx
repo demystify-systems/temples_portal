@@ -12,7 +12,13 @@ export const metadata: Metadata = {
   title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
   description: SITE_DESC,
   metadataBase: new URL(SITE_URL),
-  openGraph: { title: SITE_NAME, description: SITE_DESC, type: "website" },
+  // "./" resolves per-route against metadataBase, so every page declares its own
+  // canonical. Without it the site served identical 200s on four hosts with no
+  // stated preference, leaving search engines to pick one and split authority
+  // across the rest. next.config.mjs enforces what this declares.
+  alternates: { canonical: "./" },
+  openGraph: { title: SITE_NAME, description: SITE_DESC, type: "website", siteName: SITE_NAME, url: SITE_URL },
+  twitter: { card: "summary_large_image", title: SITE_NAME, description: SITE_DESC },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

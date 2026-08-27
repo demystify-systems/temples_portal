@@ -7,6 +7,12 @@ import { ERAS, eraIndex, eraOf, appearYear, fmtYear, slugify, gmapsUrl } from ".
 export { ERAS, eraIndex, eraOf, appearYear, fmtYear, slugify, gmapsUrl };
 
 export type Source = { l: string; u: string };
+export type DisputedCircuit = {
+  circuit: string;
+  status: "disputed" | "unsourced";
+  note: string;
+  source?: string;
+};
 export type Site = {
   id: string;
   name: string;
@@ -27,6 +33,15 @@ export type Site = {
   patron?: string;
   style: string;
   circuits?: string[];
+  /**
+   * Contested membership claims, held ALONGSIDE `circuits` rather than inside it.
+   * A record both claims the circuit and flags the claim: rival claimants contest
+   * a slot, so both sides carry an entry (Baidyanath Deoghar and Vaijnath Parli
+   * dispute one Jyotirlinga between them). Keeping `circuits` a plain string[]
+   * preserves allCircuits(), slug routing, the facet filter and the Supabase
+   * text[] column. Framing must stay dated, cited and neutral (guardrail G10).
+   */
+  disputedCircuits?: DisputedCircuit[];
   status?: string[];
   significance: string;
   story?: string;

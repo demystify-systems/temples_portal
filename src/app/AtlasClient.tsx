@@ -3,9 +3,16 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { SITES, GEO, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, headerStats, type Site } from "@/lib/sites";
+import {
+  DOUBLE_TAP_ZOOM, TAP_SLOP_PX, clampTranslate, distance, isDoubleTap, midpoint, pinchFactor,
+  scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
+  type Point, type Tap, type View,
+} from "@/lib/map-gestures";
 import SiteHeader from "./SiteHeader";
 
 const { W, H, LON0, LON1, LAT0, LAT1 } = GEO;
+/** The map's own coordinate box. Every gesture is clamped to it. */
+const EXTENT = { width: W, height: H };
 const mercY = (t: number) => Math.log(Math.tan(Math.PI / 4 + (t * Math.PI) / 180 / 2));
 const YT = mercY(LAT1), YB = mercY(LAT0);
 const PX = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
@@ -59,7 +66,7 @@ export default function AtlasClient() {
   const tipRef = useRef<HTMLDivElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const tlRef = useRef<SVGSVGElement>(null);
-  const view = useRef({ x: 0, y: 0, k: 1 });
+  const view = useRef<View>({ x: 0, y: 0, k: 1 });
   const marks = useRef(new Map<string, { g: SVGGElement; mark: SVGElement; halo: SVGCircleElement; kind: string }>());
   const yearRef = useRef(year); yearRef.current = year;
   const filtersRef = useRef(filters); filtersRef.current = filters;
@@ -76,6 +83,19 @@ export default function AtlasClient() {
     const { x, y, k } = view.current;
     worldRef.current?.setAttribute("transform", `translate(${x} ${y}) scale(${k})`);
     renderPoints();
+  };
+
+  /**
+   * The only writer of `view`: everything goes through the bounds clamp. The
+   * model updates synchronously so the next gesture sample reads the truth,
+   * but the paint is coalesced to one per frame — a pinch fires a pointermove
+   * per finger and every paint re-attributes every mark on the map.
+   */
+  const frame = useRef(0);
+  const setView = (next: View) => {
+    view.current = clampTranslate(next, EXTENT);
+    if (frame.current) return;
+    frame.current = requestAnimationFrame(() => { frame.current = 0; applyView(); });
   };
 
   function renderPoints() {
@@ -138,43 +158,136 @@ export default function AtlasClient() {
 
   useEffect(() => { renderPoints(); drawTimeline(); }, [filters, year, sel]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // pan / zoom
+  // ---- gestures: pan, pinch zoom, double tap, wheel ----------------------
+  // One Pointer Events pipeline drives all of them. Every pointer that is down
+  // lives in `pointers`, and its *count* picks the mode — so one finger pans,
+  // two pinch, and neither can fight the other. Anything that removes a pointer
+  // (up, cancel, one finger lifting out of a pinch) re-bases the gesture from
+  // what is left, which is what stops an interrupted gesture leaving the map
+  // stuck or lurching. `touch-action:none` on svg.map keeps the browser from
+  // claiming the gesture and page-zooming instead.
   useEffect(() => {
     const map = mapRef.current!;
-    const svgPoint = (e: { clientX: number; clientY: number }) => {
-      const r = map.getBoundingClientRect();
-      const sx = Math.max(W / r.width, H / r.height);
-      const ox = (r.width - W / sx) / 2, oy = (r.height - H / sx) / 2;
-      return [(e.clientX - r.left - ox) * sx, (e.clientY - r.top - oy) * sx] as const;
-    };
-    const zoomAt = (px: number, py: number, f: number) => {
-      const v = view.current; const k2 = Math.min(24, Math.max(1, v.k * f));
-      const fx = (px - v.x) / v.k, fy = (py - v.y) / v.k;
-      v.x = px - fx * k2; v.y = py - fy * k2; v.k = k2;
-      if (k2 === 1) { v.x = 0; v.y = 0; }
-      applyView();
-    };
+    const stageOf = (client: Point): Point => toStagePoint(client, map.getBoundingClientRect(), EXTENT);
+    const pxToStage = () => viewportScale(EXTENT, map.getBoundingClientRect());
+    const zoomAt = (px: number, py: number, f: number) => setView(scaleAbout(view.current, { x: px, y: py }, f));
     (map as unknown as { _zoomAt: typeof zoomAt })._zoomAt = zoomAt;
-    const onWheel = (e: WheelEvent) => { e.preventDefault(); const [px, py] = svgPoint(e); zoomAt(px, py, e.deltaY < 0 ? 1.25 : 0.8); };
-    map.addEventListener("wheel", onWheel, { passive: false });
-    let drag: { x: number; y: number; vx: number; vy: number; moved: boolean } | null = null;
-    const down = (e: PointerEvent) => { drag = { x: e.clientX, y: e.clientY, vx: view.current.x, vy: view.current.y, moved: false }; map.setPointerCapture(e.pointerId); map.classList.add("drag"); };
-    const move = (e: PointerEvent) => {
-      if (!drag) return;
-      const r = map.getBoundingClientRect(); const sx = Math.max(W / r.width, H / r.height);
-      const dx = (e.clientX - drag.x) * sx, dy = (e.clientY - drag.y) * sx;
-      if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
-      view.current.x = drag.vx + dx; view.current.y = drag.vy + dy; applyView();
+
+    // A trackpad pinch reaches the page as a wheel event with ctrlKey set;
+    // both it and a real wheel anchor on the cursor.
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      const anchor = stageOf({ x: e.clientX, y: e.clientY });
+      zoomAt(anchor.x, anchor.y, wheelZoomFactor(e.deltaY, e.ctrlKey));
     };
-    const up = (e: PointerEvent) => { if (drag && !drag.moved && e.target === map) select(null, false); drag = null; map.classList.remove("drag"); };
-    map.addEventListener("pointerdown", down); map.addEventListener("pointermove", move); map.addEventListener("pointerup", up);
-    return () => { map.removeEventListener("wheel", onWheel); map.removeEventListener("pointerdown", down); map.removeEventListener("pointermove", move); map.removeEventListener("pointerup", up); };
+
+    const pointers = new Map<number, Point>();
+    let pan: { id: number; from: Point; base: View } | null = null;
+    let spread = 0;                     // finger distance at the last pinch sample
+    let pinchMid: Point | null = null;  // client midpoint at the last pinch sample
+    let tap: { id: number; onBackground: boolean } | null = null;
+    let lastTap: Tap | null = null;
+
+    // Re-derive the gesture from whatever is still down. Called after every
+    // add or remove, so mode switches start from the current view and never jump.
+    const resync = () => {
+      const active = [...pointers.values()];
+      if (active.length > 1) {
+        pan = null;
+        spread = distance(active[0], active[1]);
+        pinchMid = midpoint(active[0], active[1]);
+        map.classList.remove("drag");
+        return;
+      }
+      spread = 0; pinchMid = null;
+      const [id] = [...pointers.keys()];
+      pan = active.length === 1 ? { id, from: active[0], base: view.current } : null;
+      map.classList.toggle("drag", pan !== null);
+    };
+
+    const forget = (e: PointerEvent) => {
+      if (!pointers.delete(e.pointerId)) return false;
+      // pointercancel has already released it for us; releasing twice throws.
+      if (map.hasPointerCapture(e.pointerId)) map.releasePointerCapture(e.pointerId);
+      return true;
+    };
+
+    const down = (e: PointerEvent) => {
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      try { map.setPointerCapture(e.pointerId); } catch { /* pointer already gone; the Map still tracks it */ }
+      // A second finger cancels any tap in flight: this is a pinch, not a tap.
+      tap = pointers.size === 1
+        ? { id: e.pointerId, onBackground: !(e.target instanceof Element && e.target.closest(".pt")) }
+        : null;
+      if (pointers.size > 1) { lastTap = null; hideTip(); }
+      resync();
+    };
+
+    const move = (e: PointerEvent) => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      const active = [...pointers.values()];
+      if (active.length > 1) {
+        const [a, b] = active;
+        const mid = midpoint(a, b), gap = distance(a, b), scale = pxToStage();
+        // Follow the midpoint, then scale about it: the map zooms toward the
+        // fingers rather than toward the centre of the viewBox.
+        const followed = pinchMid
+          ? translateBy(view.current, (mid.x - pinchMid.x) * scale, (mid.y - pinchMid.y) * scale)
+          : view.current;
+        setView(scaleAbout(followed, stageOf(mid), pinchFactor(spread, gap)));
+        spread = gap; pinchMid = mid;
+        return;
+      }
+      if (!pan || pan.id !== e.pointerId) return;
+      if (tap && distance(pan.from, { x: e.clientX, y: e.clientY }) > TAP_SLOP_PX) tap = null;
+      const scale = pxToStage();
+      setView(translateBy(pan.base, (e.clientX - pan.from.x) * scale, (e.clientY - pan.from.y) * scale));
+    };
+
+    const up = (e: PointerEvent) => {
+      if (!forget(e)) return;
+      const candidate = tap?.id === e.pointerId ? tap : null;
+      tap = null;
+      resync();
+      if (!candidate) return;   // ended a drag or a pinch, not a tap
+      const now: Tap = { x: e.clientX, y: e.clientY, time: e.timeStamp };
+      if (isDoubleTap(lastTap, now)) {
+        lastTap = null;
+        const anchor = stageOf(now);
+        zoomAt(anchor.x, anchor.y, DOUBLE_TAP_ZOOM);
+        return;
+      }
+      lastTap = now;
+      if (candidate.onBackground) select(null, false);
+    };
+
+    // A call or notification mid-gesture: drop everything and re-derive.
+    const cancel = (e: PointerEvent) => {
+      if (!forget(e)) return;
+      tap = null; lastTap = null;
+      resync();
+    };
+
+    map.addEventListener("wheel", onWheel, { passive: false });
+    map.addEventListener("pointerdown", down);
+    map.addEventListener("pointermove", move);
+    map.addEventListener("pointerup", up);
+    map.addEventListener("pointercancel", cancel);
+    return () => {
+      cancelAnimationFrame(frame.current);
+      map.removeEventListener("wheel", onWheel);
+      map.removeEventListener("pointerdown", down);
+      map.removeEventListener("pointermove", move);
+      map.removeEventListener("pointerup", up);
+      map.removeEventListener("pointercancel", cancel);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const zoomCenter = (f: number) => (mapRef.current as unknown as { _zoomAt: (x: number, y: number, f: number) => void })._zoomAt(W / 2, H / 2, f);
-  const resetView = () => { view.current = { x: 0, y: 0, k: 1 }; applyView(); };
-  const flyTo = (s: Site) => { const k = Math.max(view.current.k, 4.5); view.current = { k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }; applyView(); };
+  const resetView = () => setView({ x: 0, y: 0, k: 1 });
+  const flyTo = (s: Site) => { const k = Math.max(view.current.k, 4.5); setView({ k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }); };
 
   function select(id: string | null, fly = true) {
     setSel(id); setIndex(false);
@@ -229,7 +342,14 @@ export default function AtlasClient() {
       prev = to;
     });
     const cx = x(Math.min(yearRef.current, YEAR_MAX));
-    const ticks = [-500, 1, 500, 1000, 1500, 2000].map((t) => `<text x="${x(t)}" y="9" text-anchor="middle" font-size="8" fill="var(--mut)" style="font-family:var(--font-mono),monospace">${t < 0 ? `${Math.abs(t)}BCE` : t === 1 ? "1CE" : t}</text>`).join("");
+    // Thin the axis by available width. The full set collides on a phone: at
+    // 390px "500BCE" ends at x=193 and "1CE" starts at x=191, a 2px overlap.
+    // 1CE drops first — it sits between 500BCE and 500, which already bracket it.
+    const axisWidth = svg.clientWidth || svg.getBoundingClientRect().width || 0;
+    const tickYears =
+      axisWidth < 420 ? [-500, 500, 1000, 1500, 2000]
+      : [-500, 1, 500, 1000, 1500, 2000];
+    const ticks = tickYears.map((t) => `<text x="${x(t)}" y="9" text-anchor="middle" font-size="8" fill="var(--mut)" style="font-family:var(--font-mono),monospace">${t < 0 ? `${Math.abs(t)}BCE` : t === 1 ? "1CE" : t}</text>`).join("");
     svg.innerHTML = `${ticks}${bars}${bands}${labels}<line x1="${cx}" y1="4" x2="${cx}" y2="52" stroke="var(--gold)" stroke-width="1.2"/>`;
   }
   useEffect(() => {

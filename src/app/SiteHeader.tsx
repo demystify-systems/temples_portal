@@ -12,7 +12,8 @@ const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Atlas map", note: "Interactive time-map of every site" },
   { href: "/sites", label: "Gazetteer", note: "All sites, by country", match: "/site/" },
   { href: "/circuits", label: "Circuits", note: "Pilgrimage networks", match: "/circuit/" },
-  { href: "/dynasties", label: "Dynasties", note: "Patrons and eras", match: "/dynasty/" },
+  { href: "/dynasties", label: "Dynasties", note: "Ruling houses and eras", match: "/dynasty/" },
+  { href: "/patrons", label: "Patrons", note: "Who funded these temples", match: "/patron/" },
   { href: "/about", label: "About & sources", note: "Method, boundaries, licences" },
 ];
 

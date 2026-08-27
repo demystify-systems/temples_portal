@@ -81,8 +81,12 @@ test("no open task depends on something that can never finish", () => {
 });
 
 test("parallel-eligible tasks own disjoint files", () => {
+  // Only tasks that can still be dispatched can collide. A done task will never
+  // run again, so a later task inheriting its files is not a conflict — it is the
+  // normal way a file gets revisited in a second milestone.
   const owner = new Map();
   for (const t of db.tasks) {
+    if (TERMINAL.has(t.status)) continue;
     for (const f of t.files) {
       const prev = owner.get(f);
       assert.ok(!prev, `${f} claimed by both ${prev} and ${t.id} — parallel runs would collide`);
