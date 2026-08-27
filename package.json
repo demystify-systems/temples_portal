@@ -13,7 +13,8 @@
     "db:seed": "node scripts/seed-supabase.mjs",
     "merge": "node scripts/merge-batches.mjs",
     "status": "node scripts/phase2-status.mjs",
-    "status:write": "node scripts/phase2-status.mjs --write"
+    "status:write": "node scripts/phase2-status.mjs --write",
+    "audit": "node scripts/audit-records.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
