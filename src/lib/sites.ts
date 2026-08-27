@@ -69,3 +69,11 @@ export const allCircuits = () => {
 export const SITE_NAME = "Tirtha Atlas";
 export const SITE_DESC =
   "The sacred geography of the Indic world — temples and sacred sites of India, Nepal, Bhutan, Sri Lanka and Southeast Asia, mapped, dated, storied, and cited.";
+
+/** Coverage figures shown in the shared site header. */
+export const headerStats = () => ({
+  sites: SITES.length,
+  countries: new Set(SITES.map((s) => s.country)).size,
+  traditions: new Set(SITES.map((s) => s.tradition)).size,
+  centuries: Math.round((2030 - Math.min(...SITES.map((s) => s.built[0]))) / 100),
+});
