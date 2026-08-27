@@ -1,0 +1,108 @@
+[
+{
+"name": "Pura Lempuyang Luhur",
+"place": "Karangasem",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Pura Taman Ayun",
+"place": "Mengwi, Badung",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Pura Goa Lawah",
+"place": "Klungkung",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Muara Takus",
+"place": "Kampar, Riau",
+"state": "Riau",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Candi Muaro Jambi",
+"place": "Jambi",
+"state": "Jambi",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Arulmigu Balathandayuthapani Temple, Penang",
+"place": "George Town, Penang",
+"state": "Penang",
+"country": "Malaysia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Nattukkottai Chettiar Temple, Penang",
+"place": "George Town, Penang",
+"state": "Penang",
+"country": "Malaysia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sri Kandaswamy Kovil, Brickfields",
+"place": "Kuala Lumpur",
+"state": "Kuala Lumpur",
+"country": "Malaysia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sam Poh Tong Temple",
+"place": "Ipoh",
+"state": "Perak",
+"country": "Malaysia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Sri Srinivasa Perumal Temple, Singapore",
+"place": "Serangoon Road",
+"state": "Singapore",
+"country": "Singapore",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sri Veeramakaliamman Temple",
+"place": "Little India",
+"state": "Singapore",
+"country": "Singapore",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Buddha Tooth Relic Temple",
+"place": "Chinatown",
+"state": "Singapore",
+"country": "Singapore",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Sri Thendayuthapani Temple, Singapore",
+"place": "Tank Road",
+"state": "Singapore",
+"country": "Singapore",
+"tradition": "Hindu",
+"circuits": []
+}
+]

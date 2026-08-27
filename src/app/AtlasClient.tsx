@@ -46,6 +46,7 @@ export default function AtlasClient() {
   const [index, setIndex] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [shownCount, setShownCount] = useState(SITES.length);
+  const [fOpen, setFOpen] = useState(false);
 
   const mapRef = useRef<SVGSVGElement>(null);
   const worldRef = useRef<SVGGElement>(null);
@@ -255,19 +256,24 @@ export default function AtlasClient() {
       <div className="filters">
         <input type="search" placeholder="Search temples, deities, places…" aria-label="Search" value={filters.q}
           onChange={(e) => setFilters({ ...filters, q: e.target.value })} />
-        <select aria-label="Country" value={filters.country} onChange={(e) => setFilters({ ...filters, country: e.target.value })}>
-          <option value="">All countries</option>{lists.countries.map((c) => <option key={c}>{c}</option>)}
-        </select>
-        <select aria-label="Tradition" value={filters.trad} onChange={(e) => setFilters({ ...filters, trad: e.target.value })}>
-          <option value="">All traditions</option>{lists.trads.map((c) => <option key={c}>{c}</option>)}
-        </select>
-        <select aria-label="Dynasty" value={filters.dyn} onChange={(e) => setFilters({ ...filters, dyn: e.target.value })}>
-          <option value="">All dynasties</option>{lists.dyns.map((c) => <option key={c}>{c}</option>)}
-        </select>
-        <select aria-label="Circuit" value={filters.cir} onChange={(e) => setFilters({ ...filters, cir: e.target.value })}>
-          <option value="">All circuits</option>{lists.cirs.map((c) => <option key={c}>{c}</option>)}
-        </select>
-        <button className="reset" onClick={() => setFilters(EMPTY)}>reset</button>
+        <button className={`ftoggle ${fOpen ? "on" : ""}`} onClick={() => setFOpen(!fOpen)} aria-expanded={fOpen} aria-controls="fwrap">
+          Filters{(filters.country || filters.trad || filters.dyn || filters.cir) ? " ·" : ""} {fOpen ? "▴" : "▾"}
+        </button>
+        <div className={`fwrap ${fOpen ? "open" : ""}`} id="fwrap">
+          <select aria-label="Country" value={filters.country} onChange={(e) => setFilters({ ...filters, country: e.target.value })}>
+            <option value="">All countries</option>{lists.countries.map((c) => <option key={c}>{c}</option>)}
+          </select>
+          <select aria-label="Tradition" value={filters.trad} onChange={(e) => setFilters({ ...filters, trad: e.target.value })}>
+            <option value="">All traditions</option>{lists.trads.map((c) => <option key={c}>{c}</option>)}
+          </select>
+          <select aria-label="Dynasty" value={filters.dyn} onChange={(e) => setFilters({ ...filters, dyn: e.target.value })}>
+            <option value="">All dynasties</option>{lists.dyns.map((c) => <option key={c}>{c}</option>)}
+          </select>
+          <select aria-label="Circuit" value={filters.cir} onChange={(e) => setFilters({ ...filters, cir: e.target.value })}>
+            <option value="">All circuits</option>{lists.cirs.map((c) => <option key={c}>{c}</option>)}
+          </select>
+          <button className="reset" onClick={() => setFilters(EMPTY)}>reset</button>
+        </div>
         <span className="count"><b>{shownCount}</b> of {SITES.length} sites shown</span>
       </div>
 
@@ -309,7 +315,7 @@ export default function AtlasClient() {
                 <div><div className="dl">Standing structure</div><div className="dv">{selected.builtDisplay}</div><div className="ds">{selected.patron ? `patron: ${selected.patron}` : selected.dynasty}</div></div>
               </div>
               <div className="sect"><h3>Deity & significance</h3><p><b>{selected.deity}.</b> {selected.significance}</p></div>
-              <div className="sect katha"><h3>Sthala katha · legend</h3><p>{selected.story}</p></div>
+              {selected.story && <div className="sect katha"><h3>Sthala katha · legend</h3><p>{selected.story}</p></div>}
               {selected.access && <div className="sect"><h3>Reaching there</h3><p className="practical">{selected.access}</p></div>}
               <div className="actions">
                 <Link className="primary" href={`/site/${selected.id}`}>Full entry →</Link>
@@ -348,8 +354,8 @@ export default function AtlasClient() {
               <p className="lead">Scrub the timeline to watch temples rise from Mauryan stupas to the newest mandirs — or click any mark for history, legend, pilgrim routes, and full citations. Colour is the era of the standing structure; shape is the tradition.</p>
               <div className="statgrid">
                 <div className="stat"><b>{SITES.length}</b><span>sites</span></div>
-                <div className="stat"><b>15</b><span>countries</span></div>
-                <div className="stat"><b>41</b><span>UNESCO</span></div>
+                <div className="stat"><b>{new Set(SITES.map((s) => s.country)).size}</b><span>countries</span></div>
+                <div className="stat"><b>{SITES.filter((s) => (s.status ?? []).includes("UNESCO") || (s.circuits ?? []).some((c) => c.includes("UNESCO"))).length}</b><span>UNESCO</span></div>
               </div>
               <div className="sect"><h3>Construction era</h3>
                 <div className="leg">

@@ -1,0 +1,536 @@
+[
+{
+"name": "Gandaki Shakti Pitha (Muktinath)",
+"goddess": "Gandaki Chandi",
+"place": "Muktinath (Salagrama), Mustang district",
+"state": "Gandaki Province",
+"country": "Nepal",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Guhyeshwari Temple",
+"goddess": "Mahashira (Guhyeshwari)",
+"place": "Kathmandu",
+"state": "Bagmati Province",
+"country": "Nepal",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Jayanti Shakti Pitha",
+"goddess": "Jayanti",
+"place": "Kalajore Baurbhag village, Jaintiapur area, Sylhet",
+"state": "Sylhet Division",
+"country": "Bangladesh",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Jeshoreshwari Kali Temple",
+"goddess": "Jashoreshwari",
+"place": "Ishwaripur, Shyamnagar, Satkhira",
+"state": "Khulna Division",
+"country": "Bangladesh",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Jwalamukhi Temple (Jwala Ji)",
+"goddess": "Siddhida (Ambika / Jwalamukhi)",
+"place": "Jawalamukhi, Kangra district",
+"state": "Himachal Pradesh",
+"country": "India",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Kalmadhav Shakti Pitha",
+"goddess": "Kali",
+"place": "Banks of the Son river (site uncertain; Amarkantak region)",
+"state": "Madhya Pradesh",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Kamakhya Temple (Kamgiri Pitha)",
+"goddess": "Kamakhya",
+"place": "Nilachal Hill, Guwahati",
+"state": "Assam",
+"country": "India",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Kankalitala",
+"goddess": "Devgarbha",
+"place": "Kankalitala, near Bolpur, Birbhum",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Bhagavathy Amman Temple (Kanyashram Pitha)",
+"goddess": "Sarvani (Devi Kanya Kumari)",
+"place": "Kanyakumari",
+"state": "Tamil Nadu",
+"country": "India",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Karnat Shakti Pitha",
+"goddess": "Jayadurga",
+"place": "Location uncertain (Kangra region per some traditions)",
+"state": "",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Kiriteswari Temple",
+"goddess": "Vimla (Kiriteshwari)",
+"place": "Kiritkona, Murshidabad",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Bhadrakali Temple, Kurukshetra (Savitri Pitha)",
+"goddess": "Savitri (Bhadrakali)",
+"place": "Kurukshetra",
+"state": "Haryana",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Manibandh Shakti Pitha",
+"goddess": "Gayatri",
+"place": "Gayatri hills near Pushkar, Ajmer",
+"state": "Rajasthan",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Mithila Shakti Pitha",
+"goddess": "Uma (Mahadevi)",
+"place": "Mithila region, near Janakpur (exact site uncertain)",
+"state": "",
+"country": "India/Nepal (border, site uncertain)",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Nainativu Nagapooshani Amman Temple",
+"goddess": "Indrakshi (Nagapooshani / Bhuvaneswari)",
+"place": "Nainativu island, Jaffna",
+"state": "Northern Province",
+"country": "Sri Lanka",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Nalateswari Temple (Nalhati)",
+"goddess": "Kalika (Nalateshwari)",
+"place": "Nalhati, Birbhum",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Nartiang Durga Temple (Jayanti Pitha)",
+"goddess": "Jayanti",
+"place": "Nartiang, West Jaintia Hills",
+"state": "Meghalaya",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Panchsagar Shakti Pitha",
+"goddess": "Varahi",
+"place": "Location uncertain (possibly near Varanasi)",
+"state": "",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Patan Devi (Patneshwari)",
+"goddess": "Sarvanandkari (Patneshwari)",
+"place": "Patna",
+"state": "Bihar",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Prabhas Shakti Pitha",
+"goddess": "Chandrabhaga",
+"place": "Prabhas Patan near Somnath, Veraval",
+"state": "Gujarat",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Lalita Devi Temple (Prayag Shakti Pitha)",
+"goddess": "Lalita (Madhaveshwari)",
+"place": "Prayagraj (Allahabad)",
+"state": "Uttar Pradesh",
+"country": "India",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Ratnavali Shakti Pitha",
+"goddess": "Kumari",
+"place": "Khanakul-Krishnanagar, Hooghly",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Nandikeshwari Temple, Sainthia",
+"goddess": "Nandini (Nandikeshwari)",
+"place": "Sainthia, Birbhum",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Sarvashail / Godavaritir Shakti Pitha",
+"goddess": "Rakini (Vishweshwari)",
+"place": "Kotilingeswar temple area on the Godavari, near Rajahmundry",
+"state": "Andhra Pradesh",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Shondesh Shakti Pitha",
+"goddess": "Narmada",
+"place": "Amarkantak, source of the Narmada",
+"state": "Madhya Pradesh",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Sri Shail Shakti Pitha",
+"goddess": "Mahalakshmi",
+"place": "Jainpur village, near Sylhet town",
+"state": "Sylhet Division",
+"country": "Bangladesh",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Shuchi Shakti Pitha (Suchindram)",
+"goddess": "Narayani",
+"place": "Suchindram, Kanyakumari district",
+"state": "Tamil Nadu",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Sugandha Shaktipeeth",
+"goddess": "Sunanda",
+"place": "Shikarpur, Gournadi, Barisal",
+"state": "Barisal Division",
+"country": "Bangladesh",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Tripura Sundari Temple, Udaipur (Matabari)",
+"goddess": "Tripura Sundari (Tripureshwari)",
+"place": "Udaipur, Gomati district",
+"state": "Tripura",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Trisrota Shakti Pitha (Bhramari)",
+"goddess": "Bhramari",
+"place": "Salbari village, Jalpaiguri",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Ujani Shakti Pitha (Mangal Chandika)",
+"goddess": "Mangal Chandika",
+"place": "Ujani near Mangalkot, Purba Bardhaman",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Baidyanath Temple (Jai Durga Pitha)",
+"goddess": "Jai Durga",
+"place": "Deoghar",
+"state": "Jharkhand",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Vishalakshi Temple",
+"goddess": "Vishalakshi",
+"place": "Mir Ghat, Varanasi",
+"state": "Uttar Pradesh",
+"country": "India",
+"maha": true,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha",
+"Maha Shakti Peetha"
+]
+},
+{
+"name": "Bargabhima Temple (Vibhash Pitha)",
+"goddess": "Kapalini (Bhimarupa / Bargabhima)",
+"place": "Tamluk, Purba Medinipur",
+"state": "West Bengal",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Birat Shakti Pitha",
+"goddess": "Ambika",
+"place": "Viratnagar region near Bharatpur",
+"state": "Rajasthan",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Katyayani Peeth, Vrindavan",
+"goddess": "Uma (Katyayani)",
+"place": "Vrindavan, Mathura district",
+"state": "Uttar Pradesh",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Devi Talab Mandir (Tripurmalini Pitha)",
+"goddess": "Tripurmalini",
+"place": "Jalandhar",
+"state": "Punjab",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Vimala Temple (Utkala Pitha)",
+"goddess": "Vimala (Bimala)",
+"place": "Jagannath Temple complex, Puri",
+"state": "Odisha",
+"country": "India",
+"maha": false,
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Tungnath Temple",
+"place": "Tungnath",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Panch Kedar"
+]
+},
+{
+"name": "Rudranath Temple",
+"place": "Rudranath",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Panch Kedar"
+]
+},
+{
+"name": "Madhyamaheshwar Temple",
+"place": "Madhyamaheshwar",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Panch Kedar"
+]
+},
+{
+"name": "Kalpeshwar Temple",
+"place": "Urgam valley",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Panch Kedar"
+]
+},
+{
+"name": "Jageshwar Temples",
+"place": "Jageshwar, Almora",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Baijnath Temple, Uttarakhand",
+"place": "Baijnath, Bageshwar",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Katarmal Sun Temple",
+"place": "Katarmal, Almora",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Patal Bhuvaneshwar",
+"place": "Gangolihat, Pithoragarh",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+}
+]

@@ -1,0 +1,409 @@
+[
+{
+"name": "Kurjey Lhakhang",
+"place": "Bumthang",
+"state": "Bumthang",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Gangtey Monastery",
+"place": "Phobjikha",
+"state": "Wangdue Phodrang",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Buddha Dordenma",
+"place": "Thimphu",
+"state": "Thimphu",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Sri Maha Bodhi, Anuradhapura",
+"place": "Anuradhapura",
+"state": "North Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Dambulla Cave Temple",
+"place": "Dambulla",
+"state": "Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Mihintale",
+"place": "Mihintale",
+"state": "North Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Kelaniya Raja Maha Vihara",
+"place": "Kelaniya",
+"state": "Western",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Gal Vihara",
+"place": "Polonnaruwa",
+"state": "North Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Jetavanaramaya",
+"place": "Anuradhapura",
+"state": "North Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Abhayagiri Vihara",
+"place": "Anuradhapura",
+"state": "North Central",
+"country": "Sri Lanka",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Munneswaram Temple",
+"place": "Chilaw",
+"state": "North Western",
+"country": "Sri Lanka",
+"tradition": "Hindu",
+"circuits": [
+"Pancha Ishwaram"
+]
+},
+{
+"name": "Thiruketheeswaram Temple",
+"place": "Mannar",
+"state": "Northern",
+"country": "Sri Lanka",
+"tradition": "Hindu",
+"circuits": [
+"Pancha Ishwaram",
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Naguleswaram Temple",
+"place": "Keerimalai, Jaffna",
+"state": "Northern",
+"country": "Sri Lanka",
+"tradition": "Hindu",
+"circuits": [
+"Pancha Ishwaram"
+]
+},
+{
+"name": "Seetha Amman Temple",
+"place": "Seetha Eliya, Nuwara Eliya",
+"state": "Central",
+"country": "Sri Lanka",
+"tradition": "Hindu",
+"circuits": [
+"Ramayana Trail"
+]
+},
+{
+"name": "Shri Varun Dev Mandir",
+"place": "Manora, Karachi",
+"state": "Sindh",
+"country": "Pakistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Panchmukhi Hanuman Mandir, Karachi",
+"place": "Karachi",
+"state": "Sindh",
+"country": "Pakistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gorakhnath Temple, Peshawar",
+"place": "Peshawar",
+"state": "Khyber Pakhtunkhwa",
+"country": "Pakistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mankiala Stupa",
+"place": "Rawalpindi district",
+"state": "Punjab",
+"country": "Pakistan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Jandial Temple",
+"place": "Taxila",
+"state": "Punjab",
+"country": "Pakistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sadhu Bela",
+"place": "Sukkur",
+"state": "Sindh",
+"country": "Pakistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mes Aynak",
+"place": "Logar",
+"state": "Logar",
+"country": "Afghanistan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Takht-e Rostam (stupa-monastery)",
+"place": "Samangan",
+"state": "Samangan",
+"country": "Afghanistan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Asamai Temple",
+"place": "Kabul",
+"state": "Kabul",
+"country": "Afghanistan",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chandranath Temple",
+"place": "Sitakunda",
+"state": "Chattogram",
+"country": "Bangladesh",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Adinath Temple, Maheshkhali",
+"place": "Maheshkhali",
+"state": "Chattogram",
+"country": "Bangladesh",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Puthia Temple Complex",
+"place": "Puthia, Rajshahi",
+"state": "Rajshahi",
+"country": "Bangladesh",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ramna Kali Mandir",
+"place": "Dhaka",
+"state": "Dhaka",
+"country": "Bangladesh",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shalban Vihara",
+"place": "Mainamati, Comilla",
+"state": "Chattogram",
+"country": "Bangladesh",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Mahasthangarh (Vasu Bihar)",
+"place": "Bogra",
+"state": "Rajshahi",
+"country": "Bangladesh",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Sulamani Temple",
+"place": "Bagan",
+"state": "Mandalay Region",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Dhammayangyi Temple",
+"place": "Bagan",
+"state": "Mandalay Region",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Thatbyinnyu Temple",
+"place": "Bagan",
+"state": "Mandalay Region",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Htilominlo Temple",
+"place": "Bagan",
+"state": "Mandalay Region",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Sule Pagoda",
+"place": "Yangon",
+"state": "Yangon",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Botataung Pagoda",
+"place": "Yangon",
+"state": "Yangon",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Kuthodaw Pagoda",
+"place": "Mandalay",
+"state": "Mandalay",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Shwenandaw Monastery",
+"place": "Mandalay",
+"state": "Mandalay",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Shite-thaung Temple",
+"place": "Mrauk U",
+"state": "Rakhine",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Kaunghmudaw Pagoda",
+"place": "Sagaing",
+"state": "Sagaing",
+"country": "Myanmar",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Wat Mahathat, Sukhothai",
+"place": "Sukhothai",
+"state": "Sukhothai",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Si Chum",
+"place": "Sukhothai",
+"state": "Sukhothai",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Phra Si Sanphet",
+"place": "Ayutthaya",
+"state": "Ayutthaya",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Mahathat, Ayutthaya",
+"place": "Ayutthaya",
+"state": "Ayutthaya",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Chaiwatthanaram",
+"place": "Ayutthaya",
+"state": "Ayutthaya",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Traimit",
+"place": "Bangkok",
+"state": "Bangkok",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Wat Saket (Golden Mount)",
+"place": "Bangkok",
+"state": "Bangkok",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+}
+]

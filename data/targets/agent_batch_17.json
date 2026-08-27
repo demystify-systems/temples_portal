@@ -1,0 +1,411 @@
+[
+{
+"name": "Suryanar Kovil",
+"place": "Suryanar Kovil, Thanjavur dist",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha"
+]
+},
+{
+"name": "Thingalur Kailasanathar Temple (Chandra)",
+"place": "Thingalur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha"
+]
+},
+{
+"name": "Vaitheeswaran Koil (Mars)",
+"place": "Vaitheeswaran Koil",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha",
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Thiruvenkadu Swetharanyeswarar Temple (Mercury)",
+"place": "Thiruvenkadu",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha",
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Alangudi Apatsahayesvarar Temple (Guru)",
+"place": "Alangudi",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha"
+]
+},
+{
+"name": "Kanjanur Agneeswarar Temple (Venus)",
+"place": "Kanjanur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha"
+]
+},
+{
+"name": "Thirunallar Darbaranyeswarar Temple (Saturn)",
+"place": "Thirunallar",
+"state": "Puducherry",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha",
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Thirunageswaram Naganathar Temple (Rahu)",
+"place": "Thirunageswaram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha",
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Keezhperumpallam Naganathar Temple (Ketu)",
+"place": "Keezhperumpallam",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Navagraha"
+]
+},
+{
+"name": "Sripuram Golden Temple",
+"place": "Vellore",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Parthasarathy Temple, Chennai",
+"place": "Triplicane, Chennai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Vadapalani Murugan Temple",
+"place": "Chennai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ashtalakshmi Kovil",
+"place": "Besant Nagar, Chennai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Melmaruvathur Adhiparasakthi Temple",
+"place": "Melmaruvathur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sittanavasal Cave",
+"place": "Sittanavasal, Pudukkottai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Kazhugumalai Jain Beds & Vettuvan Koil",
+"place": "Kazhugumalai, Thoothukudi",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Srirangapatna Ranganathaswamy Temple",
+"place": "Srirangapatna",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharanga Kshetram"
+]
+},
+{
+"name": "Annavaram Satyanarayana Temple",
+"place": "Annavaram, Kakinada",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Dwaraka Tirumala Temple",
+"place": "Dwaraka Tirumala, Eluru",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kanipakam Vinayaka Temple",
+"place": "Kanipakam, Chittoor",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Srikurmam Temple",
+"place": "Srikurmam, Srikakulam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Arasavalli Sun Temple",
+"place": "Arasavalli, Srikakulam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mukhalingam Temple",
+"place": "Mukhalingam, Srikakulam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ahobilam Narasimha Temple",
+"place": "Ahobilam, Nandyal",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Yaganti Uma Maheswara Temple",
+"place": "Yaganti, Nandyal",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahanandi Temple",
+"place": "Mahanandi, Nandyal",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kotappakonda",
+"place": "Kotappakonda, Palnadu",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Amaravati Amareswara Temple",
+"place": "Amaravathi, Palnadu",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharama"
+]
+},
+{
+"name": "Draksharama Bhimeswara Temple",
+"place": "Draksharamam, Konaseema",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharama",
+"Shakti Peetha"
+]
+},
+{
+"name": "Kumararama Bhimeswara Temple",
+"place": "Samalkota",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharama"
+]
+},
+{
+"name": "Ksheerarama Temple",
+"place": "Palakollu",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharama"
+]
+},
+{
+"name": "Somarama Temple",
+"place": "Bhimavaram",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Pancharama"
+]
+},
+{
+"name": "Amaravati Stupa",
+"place": "Amaravathi, Palnadu",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Nagarjunakonda",
+"place": "Nagarjuna Sagar",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Undavalli Caves",
+"place": "Undavalli, Guntur",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Vemulawada Raja Rajeshwara Temple",
+"place": "Vemulawada, Rajanna Sircilla",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Yadadri Lakshmi Narasimha Temple",
+"place": "Yadagirigutta",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Thousand Pillar Temple",
+"place": "Hanamkonda",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhadrakali Temple, Warangal",
+"place": "Warangal",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gnana Saraswati Temple, Basar",
+"place": "Basar, Nirmal",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kaleshwaram Mukteswara Temple",
+"place": "Kaleshwaram, Jayashankar",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Birla Mandir, Hyderabad",
+"place": "Hyderabad",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Statue of Equality (Ramanuja)",
+"place": "Muchintal, Hyderabad",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chilkur Balaji Temple",
+"place": "Chilkur, Hyderabad",
+"state": "Telangana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mantralayam Raghavendra Swamy Math",
+"place": "Mantralayam, Kurnool",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kalady Adi Shankara Janmabhoomi",
+"place": "Kalady",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shankara Peethas"
+]
+}
+]

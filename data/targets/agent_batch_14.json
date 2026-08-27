@@ -1,0 +1,388 @@
+[
+{
+"name": "Amarkantak (Narmada Udgam Temple)",
+"place": "Amarkantak",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ahilyeshwar Temple / Maheshwar ghats",
+"place": "Maheshwar",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sonagiri Jain Temples",
+"place": "Sonagiri, Datia",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Kundalpur Jain Temples",
+"place": "Kundalpur, Damoh",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Bawangaja",
+"place": "Barwani",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Gyaraspur temples (Maladevi)",
+"place": "Gyaraspur, Vidisha",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Pashupatinath Temple, Mandsaur",
+"place": "Mandsaur",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhoramdeo Temple",
+"place": "Kawardha",
+"state": "Chhattisgarh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rajiv Lochan Temple",
+"place": "Rajim",
+"state": "Chhattisgarh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lakshman Temple, Sirpur",
+"place": "Sirpur, Mahasamund",
+"state": "Chhattisgarh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahamaya Temple, Ratanpur",
+"place": "Ratanpur, Bilaspur",
+"state": "Chhattisgarh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Parasurameswara Temple",
+"place": "Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rajarani Temple",
+"place": "Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Vaital Deula",
+"place": "Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Brahmeswara Temple",
+"place": "Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ananta Vasudeva Temple",
+"place": "Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chausathi Yogini Temple, Hirapur",
+"place": "Hirapur, Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Chausath Yogini"
+]
+},
+{
+"name": "Dhauli Shanti Stupa",
+"place": "Dhauli, Bhubaneswar",
+"state": "Odisha",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Ratnagiri Monastery",
+"place": "Ratnagiri, Jajpur",
+"state": "Odisha",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Udayagiri, Odisha (Buddhist complex)",
+"place": "Jajpur",
+"state": "Odisha",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Lalitgiri",
+"place": "Cuttack district",
+"state": "Odisha",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Biraja Temple",
+"place": "Jajpur",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Taratarini Temple",
+"place": "Purushottampur, Ganjam",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Samaleswari Temple",
+"place": "Sambalpur",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Cuttack Chandi Temple",
+"place": "Cuttack",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sakshigopal Temple",
+"place": "Sakhigopal, Puri",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gundicha Temple",
+"place": "Puri",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kapilash Temple",
+"place": "Dhenkanal",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Nrusinghanath Temple",
+"place": "Paikmal, Bargarh",
+"state": "Odisha",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mundeshwari Temple",
+"place": "Kaimur",
+"state": "Bihar",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahavir Mandir, Patna",
+"place": "Patna",
+"state": "Bihar",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Pawapuri Jal Mandir",
+"place": "Pawapuri, Nalanda",
+"state": "Bihar",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Griddhakuta (Vulture Peak)",
+"place": "Rajgir",
+"state": "Bihar",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Vishwa Shanti Stupa, Rajgir",
+"place": "Rajgir",
+"state": "Bihar",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Vaishali (Ananda Stupa & pillar)",
+"place": "Vaishali",
+"state": "Bihar",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Kesaria Stupa",
+"place": "Kesariya, East Champaran",
+"state": "Bihar",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Shikharji",
+"place": "Parasnath Hill, Giridih",
+"state": "Jharkhand",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Rajrappa Temple (Chhinnamasta)",
+"place": "Rajrappa, Ramgarh",
+"state": "Jharkhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Maluti temples",
+"place": "Maluti, Dumka",
+"state": "Jharkhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Tarapith",
+"place": "Tarapith, Birbhum",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Tarakeswar Temple",
+"place": "Tarakeswar, Hooghly",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "ISKCON Mayapur (Temple of the Vedic Planetarium)",
+"place": "Mayapur, Nadia",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Hangseshwari Temple",
+"place": "Bansberia, Hooghly",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "108 Shiva Temples, Kalna",
+"place": "Kalna, Purba Bardhaman",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jalpesh Temple",
+"place": "Jalpaiguri",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ghoom Monastery",
+"place": "Ghum, Darjeeling",
+"state": "West Bengal",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+}
+]

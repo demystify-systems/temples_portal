@@ -1,0 +1,394 @@
+[
+{
+"name": "Wat Benchamabophit",
+"place": "Bangkok",
+"state": "Bangkok",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Erawan Shrine",
+"place": "Bangkok",
+"state": "Bangkok",
+"country": "Thailand",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sri Maha Mariamman Temple, Bangkok",
+"place": "Silom, Bangkok",
+"state": "Bangkok",
+"country": "Thailand",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Wat Rong Khun (White Temple)",
+"place": "Chiang Rai",
+"state": "Chiang Rai",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Wat Phra That Lampang Luang",
+"place": "Lampang",
+"state": "Lampang",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Wat Phra That Hariphunchai",
+"place": "Lamphun",
+"state": "Lamphun",
+"country": "Thailand",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Prasat Muang Tam",
+"place": "Buriram",
+"state": "Buriram",
+"country": "Thailand",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sdok Kok Thom",
+"place": "Sa Kaeo",
+"state": "Sa Kaeo",
+"country": "Thailand",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Wat Xieng Thong",
+"place": "Luang Prabang",
+"state": "Luang Prabang",
+"country": "Laos",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Wat Si Saket",
+"place": "Vientiane",
+"state": "Vientiane",
+"country": "Laos",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Preah Khan",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Neak Pean",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Pre Rup",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "East Mebon",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Phnom Bakheng",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Ta Som",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Banteay Kdei",
+"place": "Angkor",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Bakong",
+"place": "Roluos, Siem Reap",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Preah Ko",
+"place": "Roluos, Siem Reap",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Beng Mealea",
+"place": "Siem Reap province",
+"state": "Siem Reap",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Banteay Chhmar",
+"place": "Banteay Meanchey",
+"state": "Banteay Meanchey",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Prasat Thom, Koh Ker",
+"place": "Koh Ker",
+"state": "Preah Vihear",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Phnom Chisor",
+"place": "Takeo",
+"state": "Takeo",
+"country": "Cambodia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Wat Phnom",
+"place": "Phnom Penh",
+"state": "Phnom Penh",
+"country": "Cambodia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Po Klong Garai",
+"place": "Phan Rang",
+"state": "Ninh Thuan",
+"country": "Vietnam",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Banh It Towers",
+"place": "Quy Nhon",
+"state": "Binh Dinh",
+"country": "Vietnam",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Thien Mu Pagoda",
+"place": "Hue",
+"state": "Thua Thien Hue",
+"country": "Vietnam",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "One Pillar Pagoda",
+"place": "Hanoi",
+"state": "Hanoi",
+"country": "Vietnam",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Perfume Pagoda",
+"place": "My Duc, Hanoi",
+"state": "Hanoi",
+"country": "Vietnam",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Bai Dinh Temple",
+"place": "Ninh Binh",
+"state": "Ninh Binh",
+"country": "Vietnam",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Mariamman Temple, Ho Chi Minh City",
+"place": "Ho Chi Minh City",
+"state": "Ho Chi Minh City",
+"country": "Vietnam",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Candi Sewu",
+"place": "Prambanan, Klaten",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Candi Plaosan",
+"place": "Prambanan area",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Candi Kalasan",
+"place": "Sleman, Yogyakarta",
+"state": "Yogyakarta",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Candi Mendut",
+"place": "Magelang",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Candi Pawon",
+"place": "Magelang",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Candi Sukuh",
+"place": "Karanganyar",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Candi Cetho",
+"place": "Karanganyar",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gedong Songo",
+"place": "Semarang",
+"state": "Central Java",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Candi Penataran",
+"place": "Blitar",
+"state": "East Java",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Candi Singhasari",
+"place": "Singosari, Malang",
+"state": "East Java",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Candi Jago",
+"place": "Malang",
+"state": "East Java",
+"country": "Indonesia",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Tirta Empul",
+"place": "Tampaksiring, Gianyar",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Goa Gajah",
+"place": "Ubud, Gianyar",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gunung Kawi",
+"place": "Tampaksiring, Gianyar",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Pura Ulun Danu Bratan",
+"place": "Bedugul, Tabanan",
+"state": "Bali",
+"country": "Indonesia",
+"tradition": "Hindu",
+"circuits": []
+}
+]

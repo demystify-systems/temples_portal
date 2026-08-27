@@ -1,0 +1,394 @@
+[
+{
+"name": "Ishvara Temple, Arasikere",
+"place": "Arasikere, Hassan",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Amruteshwara Temple, Amruthapura",
+"place": "Amruthapura, Chikkamagaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Veera Narayana Temple, Belavadi",
+"place": "Belavadi, Chikkamagaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Doddabasappa Temple",
+"place": "Dambal, Gadag",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Trikuteshwara Temple",
+"place": "Gadag",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahadeva Temple, Itagi",
+"place": "Itagi, Koppal",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kalleshvara Temple, Bagali",
+"place": "Bagali, Davanagere",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Saundatti Yellamma Temple",
+"place": "Saundatti, Belagavi",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Moodabidri Jain Temples (Thousand Pillar Basadi)",
+"place": "Moodabidri",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Karkala Gomateshwara",
+"place": "Karkala",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Namdroling Monastery",
+"place": "Bylakuppe",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Attukal Bhagavathy Temple",
+"place": "Thiruvananthapuram",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chottanikkara Temple",
+"place": "Chottanikkara, Ernakulam",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Vaikom Mahadeva Temple",
+"place": "Vaikom",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ettumanoor Mahadeva Temple",
+"place": "Ettumanoor",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kadampuzha Devi Temple",
+"place": "Kadampuzha, Malappuram",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kodungallur Bhagavathy Temple",
+"place": "Kodungallur",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti tradition"
+]
+},
+{
+"name": "Mannarasala Sree Nagaraja Temple",
+"place": "Haripad",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ambalappuzha Sree Krishna Temple",
+"place": "Ambalappuzha",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Aranmula Parthasarathy Temple",
+"place": "Aranmula",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Chettikulangara Devi Temple",
+"place": "Mavelikkara",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Parassinikadavu Muthappan Temple",
+"place": "Parassinikadavu, Kannur",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rajarajeshwara Temple, Taliparamba",
+"place": "Taliparamba",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Thirunelli Temple",
+"place": "Wayanad",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lokanarkavu Temple",
+"place": "Vatakara",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Thirunavaya Navamukunda Temple",
+"place": "Tirunavaya",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sree Poornathrayeesa Temple",
+"place": "Tripunithura",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ernakulam Shiva Temple",
+"place": "Ernakulam",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kaviyoor Mahadeva Temple",
+"place": "Kaviyoor",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Oachira Parabrahma Temple",
+"place": "Oachira",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Janardanaswamy Temple, Varkala",
+"place": "Varkala",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Malayalappuzha Devi Temple",
+"place": "Malayalappuzha, Pathanamthitta",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Thiruvalla Sreevallabha Temple",
+"place": "Thiruvalla",
+"state": "Kerala",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Kanchi Kamakshi Amman Temple",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Varadharaja Perumal Temple, Kanchipuram",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Samayapuram Mariamman Temple",
+"place": "Samayapuram, Tiruchirappalli",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Swamimalai Murugan Temple",
+"place": "Swamimalai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Arupadai Veedu"
+]
+},
+{
+"name": "Thiruthani Murugan Temple",
+"place": "Tiruttani",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Arupadai Veedu"
+]
+},
+{
+"name": "Pazhamudircholai Murugan Temple",
+"place": "Pazhamudircholai, Madurai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Arupadai Veedu"
+]
+},
+{
+"name": "Thiruparankundram Murugan Temple",
+"place": "Thiruparankundram, Madurai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Arupadai Veedu"
+]
+},
+{
+"name": "Thanumalayan Temple",
+"place": "Suchindram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Nagaraja Temple, Nagercoil",
+"place": "Nagercoil",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Srivilliputhur Andal Temple",
+"place": "Srivilliputhur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Sarangapani Temple",
+"place": "Kumbakonam",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Mahamaham Tank",
+"place": "Kumbakonam",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Uppiliappan Temple",
+"place": "Thirunageswaram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+}
+]

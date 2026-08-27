@@ -1,0 +1,508 @@
+[
+{
+"name": "Thiruppadagam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Pandavadootha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Nilathingal Thundam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Chandrasooda Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruooragam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Trivikrama Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvekka",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Yathottakari Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkaragam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Karunagara Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkarvaanam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Neelamega Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkalvanur",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Adi Varaha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruppavalavannam",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Pavalavarna Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiru Parameswara Vinnagaram",
+"place": "Kanchipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vaikundanatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruputkuzhi",
+"place": "Thiruputkuzhi",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vijayaraghava Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirunindravur",
+"place": "Thirunindravur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Bhaktavatsala Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvallur",
+"place": "Thiruvallur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vaidya Veeraraghava Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvallikeni",
+"place": "Chennai (Triplicane)",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Venkatakrishna Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruneermalai",
+"place": "Thiruneermalai, near Tambaram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Neervanna Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvidanthai",
+"place": "Thiruvidanthai",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Nityakalyana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkadanmallai",
+"place": "Mahabalipuram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Sthalasayana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkadigai",
+"place": "Sholinghur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Yoga Narasimha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirunavai",
+"place": "Tirunavaya",
+"state": "Kerala",
+"country": "India",
+"deity": "Navamukunda Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvithuvakodu",
+"place": "Thiruvithuvakoodu",
+"state": "Kerala",
+"country": "India",
+"deity": "Abhayapradhaya Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thrikkakara Vamanamoorthy Kshethram (Thirukatkarai)",
+"place": "Thrikkakara",
+"state": "Kerala",
+"country": "India",
+"deity": "Katkaraswami Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirumoozhikkalam",
+"place": "Thirumoozhikulam",
+"state": "Kerala",
+"country": "India",
+"deity": "Sookthinatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Sree Vallabha Temple (Thiruvallavazh)",
+"place": "Thiruvalla",
+"state": "Kerala",
+"country": "India",
+"deity": "Vallabhaswami Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thrikodithanam Mahavishnu Temple (Thirukkodithanam)",
+"place": "Thrikkodithanam, Changanassery",
+"state": "Kerala",
+"country": "India",
+"deity": "Amruthanarayana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thrichittatt Mahavishnu Temple (Thiruchengundrur)",
+"place": "Chengannur",
+"state": "Kerala",
+"country": "India",
+"deity": "Devathideva Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruppuliyur",
+"place": "Thripuliyur",
+"state": "Kerala",
+"country": "India",
+"deity": "Maayapiran Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Aranmula Parthasarathy Temple (Thiruvaranvilai)",
+"place": "Aranmula",
+"state": "Kerala",
+"country": "India",
+"deity": "Kuralappan Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvanvandoor",
+"place": "Thiruvanvandoor",
+"state": "Kerala",
+"country": "India",
+"deity": "Paambanaiyappan Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvananthapuram (Padmanabhaswamy Temple)",
+"place": "Thiruvananthapuram",
+"state": "Kerala",
+"country": "India",
+"deity": "Ananthapadmanabhaswami Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvattaru",
+"place": "Thiruvattar",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Adhikesava Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvanparisaram",
+"place": "Thiruppathisaram",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Thiruvazhmarbhan Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkurungudi",
+"place": "Thirukkurungudi",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vamanakshetrapoornaya Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirucheeravaramangai",
+"place": "Nanguneri",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Thothadhrinatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvaigundam",
+"place": "Srivaikuntam",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vaikuntanatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvaragunamangai",
+"place": "Natham",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vijayasana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruppuliangudi",
+"place": "Thirupulingudi",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Kaaichina Vendhan Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirutholaivillimangalam",
+"place": "Tholavillimangalam",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Aravindalochana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkulandai",
+"place": "Perungulam",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Srinivasa Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkolur",
+"place": "Thirukolur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vaithamanithi Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirupperai",
+"place": "Thenthiruperai",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Magara Nedungkuzhai Kathar Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkurugur",
+"place": "Alwarthirunagari",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Aadhinatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Srivillipputhur",
+"place": "Srivilliputhur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Vatapatrasayee Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruthangal",
+"place": "Thiruthankal",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Narayana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkoodal",
+"place": "Madurai",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Koodal Azhagar Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirumaliruncholai",
+"place": "Alagar Koyil",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Kallazhagar Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirumogur",
+"place": "Thirumohur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Kalamega Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkoshtiyur",
+"place": "Thirukoshtiyur",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Uraga Mellanayaan Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+}
+]

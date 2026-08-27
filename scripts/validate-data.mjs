@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 const sites = JSON.parse(readFileSync(new URL("../data/sites.json", import.meta.url)));
 const geo = JSON.parse(readFileSync(new URL("../data/geo.json", import.meta.url)));
 
-const REQUIRED = ["id", "name", "country", "place", "lat", "lng", "tradition", "deity", "built", "builtDisplay", "dynasty", "style", "significance", "story", "sources"];
+const REQUIRED = ["id", "name", "country", "place", "lat", "lng", "tradition", "deity", "built", "builtDisplay", "dynasty", "style", "significance", "sources"]; // story is optional for compact-tier records
 const TRADITIONS = new Set(["Hindu", "Buddhist", "Jain", "Sikh"]);
 const errors = [];
 const ids = new Set();

@@ -54,8 +54,7 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
 
       <h2>History & significance</h2>
       <p className="ink">{s.significance}</p>
-      <h2>Sthala katha — the legend</h2>
-      <p><i>{s.story}</i></p>
+      {s.story && (<><h2>Sthala katha — the legend</h2><p><i>{s.story}</i></p></>)}
       {s.access && (<><h2>Reaching there</h2><p>{s.access}</p></>)}
 
       <div className="actions" style={{ marginTop: 20 }}>

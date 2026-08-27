@@ -1,0 +1,376 @@
+[
+{
+"name": "Bhimakali Temple",
+"place": "Sarahan",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Hidimba Devi Temple",
+"place": "Manali",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bijli Mahadev",
+"place": "Kullu",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Manimahesh Lake",
+"place": "Bharmour, Chamba",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lakshana Devi Temple",
+"place": "Bharmour",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jakhoo Temple",
+"place": "Shimla",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Baba Balak Nath Temple",
+"place": "Deotsidh, Hamirpur",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Renuka Lake Temple",
+"place": "Renuka, Sirmaur",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Trilokinath Temple",
+"place": "Trilokinath, Lahaul",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mrikula Devi Temple",
+"place": "Udaipur, Lahaul",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Tabo Monastery",
+"place": "Tabo, Spiti",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Key Monastery",
+"place": "Kaza, Spiti",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Tsuglagkhang Complex",
+"place": "McLeod Ganj, Dharamshala",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Kheer Bhawani Temple",
+"place": "Tulmulla, Ganderbal",
+"state": "Jammu & Kashmir",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Awantiswami Temple",
+"place": "Awantipora",
+"state": "Jammu & Kashmir",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Raghunath Temple",
+"place": "Jammu",
+"state": "Jammu & Kashmir",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ranbireshwar Temple",
+"place": "Jammu",
+"state": "Jammu & Kashmir",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Alchi Monastery",
+"place": "Alchi, Leh",
+"state": "Ladakh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Thiksey Monastery",
+"place": "Thiksey, Leh",
+"state": "Ladakh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Lamayuru Monastery",
+"place": "Lamayuru",
+"state": "Ladakh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Diskit Monastery",
+"place": "Nubra Valley",
+"state": "Ladakh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Spituk Monastery",
+"place": "Leh",
+"state": "Ladakh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Durgiana Temple",
+"place": "Amritsar",
+"state": "Punjab",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Devi Talab Mandir",
+"place": "Jalandhar",
+"state": "Punjab",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Ram Tirath Temple",
+"place": "Amritsar",
+"state": "Punjab",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mata Mansa Devi Mandir",
+"place": "Panchkula",
+"state": "Haryana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sthaneshwar Mahadev Temple",
+"place": "Thanesar, Kurukshetra",
+"state": "Haryana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jyotisar",
+"place": "Kurukshetra",
+"state": "Haryana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhadrakali Temple, Kurukshetra",
+"place": "Kurukshetra",
+"state": "Haryana",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Kalka Ji Mandir",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jhandewalan Temple",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Laxminarayan Temple (Birla Mandir), Delhi",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chhatarpur Temple",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Yogmaya Temple",
+"place": "Mehrauli, New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Hanuman Temple, Connaught Place",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "ISKCON Temple Delhi",
+"place": "East of Kailash, New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Eklingji Temple",
+"place": "Eklingji, Udaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shrinathji Temple",
+"place": "Nathdwara",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Khatushyamji Temple",
+"place": "Khatu, Sikar",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Salasar Balaji",
+"place": "Salasar, Churu",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mehandipur Balaji Temple",
+"place": "Mehandipur, Dausa",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ramdevra Temple",
+"place": "Ramdevra, Jaisalmer",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Galtaji",
+"place": "Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Govind Dev Ji Temple",
+"place": "Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Moti Dungri Ganesh Temple",
+"place": "Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Birla Mandir, Jaipur",
+"place": "Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+}
+]

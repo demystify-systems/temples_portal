@@ -1,0 +1,402 @@
+[
+{
+"name": "Vaijnath Temple, Parli",
+"place": "Parli, Beed",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Jyotirlinga"
+]
+},
+{
+"name": "Tulja Bhavani Temple",
+"place": "Tuljapur, Dharashiv",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Mahalakshmi Temple, Kolhapur",
+"place": "Kolhapur",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Renuka Temple, Mahur",
+"place": "Mahur, Nanded",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Saptashrungi",
+"place": "Vani, Nashik",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Shani Shingnapur",
+"place": "Shingnapur, Ahilyanagar",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jejuri Khandoba Temple",
+"place": "Jejuri, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhuleshwar Temple",
+"place": "Yavat, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Dagadusheth Halwai Ganapati Temple",
+"place": "Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chintamani Temple, Theur",
+"place": "Theur, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Moreshwar Temple, Morgaon",
+"place": "Morgaon, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Siddhivinayak Temple, Siddhatek",
+"place": "Siddhatek, Ahilyanagar",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Ballaleshwar Temple, Pali",
+"place": "Pali, Raigad",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Varadavinayak Temple, Mahad",
+"place": "Mahad (Khalapur), Raigad",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Girijatmaj Temple, Lenyadri",
+"place": "Lenyadri, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Vighnahar Temple, Ozar",
+"place": "Ozar, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Mahaganapati Temple, Ranjangaon",
+"place": "Ranjangaon, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Ashtavinayak"
+]
+},
+{
+"name": "Mumbadevi Temple",
+"place": "Mumbai",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahalakshmi Temple, Mumbai",
+"place": "Mumbai",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Walkeshwar Temple",
+"place": "Mumbai",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kanheri Caves",
+"place": "Sanjay Gandhi NP, Mumbai",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Karla Caves",
+"place": "Lonavala",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Bhaja Caves",
+"place": "Lonavala",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Global Vipassana Pagoda",
+"place": "Gorai, Mumbai",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Deekshabhoomi",
+"place": "Nagpur",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Ganpatipule Temple",
+"place": "Ganpatipule, Ratnagiri",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ambarnath Shiva Temple",
+"place": "Ambarnath, Thane",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kopeshwar Temple",
+"place": "Khidrapur, Kolhapur",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gajanan Maharaj Temple, Shegaon",
+"place": "Shegaon, Buldhana",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Akkalkot Swami Samarth Temple",
+"place": "Akkalkot, Solapur",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mangeshi Temple",
+"place": "Mangeshi, Ponda",
+"state": "Goa",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shanta Durga Temple",
+"place": "Kavlem, Ponda",
+"state": "Goa",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahalasa Narayani Temple, Mardol",
+"place": "Mardol, Ponda",
+"state": "Goa",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Tambdi Surla Mahadev Temple",
+"place": "Tambdi Surla",
+"state": "Goa",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Saptakoteshwar Temple",
+"place": "Narve, Bicholim",
+"state": "Goa",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhojeshwar Temple",
+"place": "Bhojpur, Raisen",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Maihar Devi Temple (Sharda Mata)",
+"place": "Maihar",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Pitambara Peeth",
+"place": "Datia",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Salkanpur Temple (Bijasan Devi)",
+"place": "Salkanpur, Sehore",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ram Raja Temple",
+"place": "Orchha",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chaturbhuj Temple, Orchha",
+"place": "Orchha",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chausath Yogini Temple, Mitaoli",
+"place": "Mitaoli, Morena",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Chausath Yogini"
+]
+},
+{
+"name": "Bateshwar Hindu temples, Madhya Pradesh",
+"place": "Bateshwar, Morena",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kakanmath Temple",
+"place": "Sihoniya, Morena",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Udayagiri Caves",
+"place": "Vidisha",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chausath Yogini Temple, Jabalpur",
+"place": "Bhedaghat, Jabalpur",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Chausath Yogini"
+]
+}
+]

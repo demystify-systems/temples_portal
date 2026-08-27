@@ -43,6 +43,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .filters{display:flex;gap:8px;align-items:center;padding:8px 18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .filters input[type=search]{background:var(--panel);border:1px solid var(--line2);border-radius:8px;color:var(--ink);padding:6px 11px;font:inherit;font-size:13px;width:220px}
 .filters select{background:var(--panel);border:1px solid var(--line2);border-radius:8px;color:var(--ink);padding:6px 8px;font:inherit;font-size:13px;max-width:170px}
+.fwrap{display:contents}
+.ftoggle{display:none;border:1px solid var(--line2);border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--ink2)}
+.ftoggle.on,.ftoggle:hover{color:var(--gold);border-color:var(--gold)}
 .count{font-family:var(--font-mono),monospace;font-size:11.5px;color:var(--ink2);margin-left:auto}
 .count b{color:var(--gold);font-weight:500}
 .reset{color:var(--mut);font-size:12px;text-decoration:underline;text-underline-offset:3px}
@@ -137,6 +140,13 @@ h2.site{font:400 24px/1.2 var(--font-display),serif;margin:5px 0 2px;text-wrap:b
 
 @media (max-width:920px){
   .tag{display:none}
+  .filters{padding:8px 12px}
+  .filters input[type=search]{flex:1;min-width:0;width:auto}
+  .ftoggle{display:inline-flex;flex:none}
+  .fwrap{display:none}
+  .fwrap.open{display:flex;flex-wrap:wrap;gap:8px;width:100%;order:5}
+  .fwrap.open select{flex:1 1 44%;max-width:none}
+  .count{width:100%;order:6;margin-left:0}
   .side{position:absolute;right:0;top:0;bottom:0;width:min(92vw,378px);z-index:8;box-shadow:var(--shadow);transform:translateX(100%);transition:transform .25s}
   .side.open{transform:none}
   .yearbox{font-size:16px;width:92px}

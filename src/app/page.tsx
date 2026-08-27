@@ -12,7 +12,7 @@ export default function Home() {
         </Link>
         <div className="tag">The sacred geography of the Indic world — every site mapped, dated, storied, and cited. From Gandhara to Angkor, Kailasa to Borobudur.</div>
         <div className="hstats">
-          <span><b>{SITES.length}</b> sites</span><span><b>15</b> countries</span><span><b>4</b> traditions</span><span><b>26</b> centuries</span>
+          <span><b>{SITES.length}</b> sites</span><span><b>{new Set(SITES.map((s) => s.country)).size}</b> countries</span><span><b>4</b> traditions</span><span><b>{Math.round((2030 - Math.min(...SITES.map((s) => s.built[0]))) / 100)}</b> centuries</span>
         </div>
         <button className="hbtn" id="ixbtn" type="button">Index</button>
         <Link className="hbtn" href="/sites">Gazetteer</Link>

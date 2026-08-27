@@ -1,0 +1,388 @@
+[
+{
+"name": "Umananda Temple",
+"place": "Peacock Island, Guwahati",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Navagraha Temple, Guwahati",
+"place": "Guwahati",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Basistha Temple",
+"place": "Guwahati",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Hayagriva Madhava Temple",
+"place": "Hajo",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sivadol",
+"place": "Sivasagar",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahabhairab Temple",
+"place": "Tezpur",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Madan Kamdev",
+"place": "Baihata Chariali, Kamrup",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Surya Pahar",
+"place": "Goalpara",
+"state": "Assam",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Nartiang Durga Temple",
+"place": "Nartiang, West Jaintia Hills",
+"state": "Meghalaya",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Unakoti",
+"place": "Unakoti district",
+"state": "Tripura",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chaturdasha Temple",
+"place": "Old Agartala",
+"state": "Tripura",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rumtek Monastery",
+"place": "Rumtek, Gangtok",
+"state": "Sikkim",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Pemayangtse Monastery",
+"place": "Pelling",
+"state": "Sikkim",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Tashiding Monastery",
+"place": "Tashiding",
+"state": "Sikkim",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Enchey Monastery",
+"place": "Gangtok",
+"state": "Sikkim",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Parashuram Kund",
+"place": "Lohit district",
+"state": "Arunachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Malinithan",
+"place": "Likabali",
+"state": "Arunachal Pradesh",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shri Govindajee Temple",
+"place": "Imphal",
+"state": "Manipur",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sringeri Sharada Peetham",
+"place": "Sringeri",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shankara Peethas"
+]
+},
+{
+"name": "Horanadu Annapoorneshwari Temple",
+"place": "Horanadu",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kollur Mookambika Temple",
+"place": "Kollur",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Dharmasthala Temple",
+"place": "Dharmasthala",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kukke Subramanya Temple",
+"place": "Subramanya",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kateel Durgaparameshwari Temple",
+"place": "Kateel",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mangaladevi Temple",
+"place": "Mangaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chamundeshwari Temple",
+"place": "Chamundi Hills, Mysuru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Nanjundeshwara Temple, Nanjangud",
+"place": "Nanjangud",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Male Mahadeshwara Temple",
+"place": "MM Hills, Chamarajanagar",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Biligiri Ranganatha Swamy Temple",
+"place": "BR Hills",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Yediyur Siddhalingeshwara Temple",
+"place": "Yediyur, Tumakuru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ghati Subramanya",
+"place": "Doddaballapura",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Banashankari Amma Temple",
+"place": "Badami",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mahakuta group of temples",
+"place": "Mahakuta, Badami",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lad Khan Temple",
+"place": "Aihole",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sangameshwara Temple, Pattadakal",
+"place": "Pattadakal",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Mallikarjuna Temple, Pattadakal",
+"place": "Pattadakal",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Papanatha Temple",
+"place": "Pattadakal",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Hazara Rama Temple",
+"place": "Hampi",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Achyutaraya Temple",
+"place": "Hampi",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Pattabhirama Temple, Hampi",
+"place": "Hampi",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Bhoga Nandeeshwara Temple",
+"place": "Nandi, Chikkaballapura",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kotilingeshwara",
+"place": "Kammasandra, Kolar",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "ISKCON Temple Bangalore",
+"place": "Bengaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bull Temple, Bangalore",
+"place": "Basavanagudi, Bengaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gavi Gangadhareshwara Temple",
+"place": "Bengaluru",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lakshmi Narasimha Temple, Nuggehalli",
+"place": "Nuggehalli, Hassan",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+}
+]

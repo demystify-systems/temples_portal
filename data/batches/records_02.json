@@ -1,0 +1,1406 @@
+[
+ {
+  "id": "pandava-thoothar-kanchipuram",
+  "name": "Pandava Thoothar Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8425,
+  "lng": 79.6969,
+  "tradition": "Hindu",
+  "deity": "Pandava Thoothar Perumal (Krishna)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "8th c. (Pallava)",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "One of the 108 Divya Desams and counted among the three oldest Vishnu temples of Kanchipuram, built by the Pallavas with Chola and Vijayanagara additions. It is celebrated for its unusually large seated image of Krishna as the Pandavas' envoy, and is hymned in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Pandava_Thoothar_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pandava_Thoothar_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Krishna, serving as the Pandavas' peace envoy, is said to have revealed his colossal cosmic form here when Duryodhana tried to trap him in a pit."
+ },
+ {
+  "id": "nilathingal-thundam-kanchipuram",
+  "name": "Nilathingal Thundam Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8475,
+  "lng": 79.7,
+  "tradition": "Hindu",
+  "deity": "Nilathingal Thunda Perumal (Vishnu)",
+  "built": [
+   600,
+   1500
+  ],
+  "builtDisplay": "Pallava origin (c. 600); rebuilt Chola-Vijayanagara",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam that stands inside the precinct of the Ekambareswarar Shiva temple, one of the very few Vishnu shrines of the 108 housed within a Shaiva complex. First raised under the Pallavas, it was rebuilt by the Cholas with later Vijayanagara-era additions.",
+  "wiki": "https://en.wikipedia.org/wiki/Nilathingal_Thundam_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Nilathingal_Thundam_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "story": "Vishnu is said to have cooled Parvati's fiery penance here with rays reflected from the crescent moon on Shiva's head, earning the name Nilathingal Thundam."
+ },
+ {
+  "id": "ulagalantha-kanchipuram",
+  "name": "Ulagalantha Perumal Temple (Thiruooragam)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8392,
+  "lng": 79.705,
+  "tradition": "Hindu",
+  "deity": "Ulagalantha Perumal (Trivikrama)",
+  "built": [
+   750,
+   850
+  ],
+  "builtDisplay": "Pallava, by 846 CE",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam housing a colossal image of Vishnu as Trivikrama striding the worlds, its earliest inscription dated 846 CE under Pallava Nandivarman III with later Chola development. Uniquely, the complex shelters four separate Divya Desams within one precinct.",
+  "wiki": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Here Vamana the dwarf is said to have grown into cosmic Trivikrama, measuring the three worlds in two strides and humbling the generous king Mahabali with the third."
+ },
+ {
+  "id": "yathothkari-kanchipuram",
+  "name": "Yathothkari Perumal Temple (Thiruvekka)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8242,
+  "lng": 79.7122,
+  "tradition": "Hindu",
+  "deity": "Yathothkari Perumal (Vishnu)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "8th c. (Pallava)",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "One of the three oldest Vishnu temples in Kanchipuram, believed to be a late 8th-century Pallava foundation with Chola and Vijayanagara additions. The Divya Desam is closely tied to the poet-saint Thirumalisai Alvar and is glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Yathothkari_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Yathothkari_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The deity is said to have rolled up his serpent bed to follow the banished Thirumalisai Alvar out of the city, then returned 'as requested' - the meaning of Yathothkari."
+ },
+ {
+  "id": "thirukkaragam-kanchipuram",
+  "name": "Thirukkaragam (Karunakara Perumal shrine)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8392,
+  "lng": 79.705,
+  "tradition": "Hindu",
+  "deity": "Karunakara Perumal",
+  "built": [
+   750,
+   850
+  ],
+  "builtDisplay": "within the Pallava-era Ulagalantha Perumal complex",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam in its own right, maintained as the Karunakara Perumal shrine on the third precinct of Kanchipuram's Ulagalantha Perumal temple complex, one of four Divya Desams sheltered there. The consort is worshipped as Padmamani Nachiyar.",
+  "wiki": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The sage Garga is said to have won divine knowledge through penance here, giving the place its old name Garagaham, later Karakam."
+ },
+ {
+  "id": "thirukkarvaanam-kanchipuram",
+  "name": "Thirukkarvaanam (Kalvar Perumal shrine)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8392,
+  "lng": 79.705,
+  "tradition": "Hindu",
+  "deity": "Kalvar Perumal (Neelamega)",
+  "built": [
+   750,
+   850
+  ],
+  "builtDisplay": "within the Pallava-era Ulagalantha Perumal complex",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam preserved as the Kalvar shrine with consort Kamalvalli Thayar on the second precinct of the Ulagalantha Perumal temple complex, one of the four Divya Desams that share the compound. It is glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ulagalantha_Perumal_Temple,_Kanchipuram"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian"
+ },
+ {
+  "id": "thirukkalvanur-kanchipuram",
+  "name": "Thirukkalvanur (Adi Varaha Perumal shrine)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8408,
+  "lng": 79.7032,
+  "tradition": "Hindu",
+  "deity": "Adi Varaha Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested among the Divya Desams; construction unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam that survives as the Adi Varaha Perumal shrine within the premises of the Kamakshi Amman temple, beside the goddess's sanctum. Its Lakshmi image is unusual in facing the deity in a worshipping posture, and the shrine bears the Vamana vimana.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirukkalvanur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirukkalvanur"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "pavalavannam-kanchipuram",
+  "name": "Pavalavannam Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8436,
+  "lng": 79.7075,
+  "tradition": "Hindu",
+  "deity": "Pavalavannar Perumal",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Chola)",
+  "dynasty": "Chola",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam attributed to the Cholas, carrying inscriptions of Rajadhiraja Chola and Kulothunga Chola I, with later Vijayanagara contributions. It forms a pair with the Pachaivannar temple standing axially across the road.",
+  "wiki": "https://en.wikipedia.org/wiki/Pavalavannam_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pavalavannam_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Vishnu is said to have assumed the hue called pavalam here in the Treta Yuga, and so came to be worshipped as Pavalavannar."
+ },
+ {
+  "id": "vaikunta-perumal-kanchipuram",
+  "name": "Vaikunta Perumal Temple (Thiru Parameswara Vinnagaram)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kanchipuram",
+  "lat": 12.8372,
+  "lng": 79.7094,
+  "tradition": "Hindu",
+  "deity": "Vaikuntanatha Perumal",
+  "built": [
+   690,
+   780
+  ],
+  "builtDisplay": "8th c. (Pallava, Nandivarman II)",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "An 8th-century royal foundation of Pallava Nandivarman II and a Divya Desam, whose stepped vimana with tiered sanctums provided a prototype for the far larger temples of later Tamil Nadu. Its sculpted cloister panels narrate Pallava history, and its study has even helped date portions of the Bhagavata Purana.",
+  "wiki": "https://en.wikipedia.org/wiki/Tiru_parameswara_vinnagaram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tiru_parameswara_vinnagaram"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Early Dravidian",
+  "story": "A child of sage Bharadvaja's line, granted by Vishnu to a childless Pallava king, is said to have grown to build this temple as king Parameswara."
+ },
+ {
+  "id": "vijayaraghava-thiruputkuzhi",
+  "name": "Vijayaraghava Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruputkuzhi",
+  "lat": 12.8728,
+  "lng": 79.6186,
+  "tradition": "Hindu",
+  "deity": "Vijayaraghava Perumal (Rama)",
+  "built": [
+   1200,
+   1300
+  ],
+  "builtDisplay": "13th c. (Pandya)",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam near Kanchipuram believed to have been built by 13th-century Pandya kings, with later Chola and Thanjavur Nayak contributions. Rama is worshipped here as the victorious Vijayaraghava, and the temple is glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Vijayaraghava_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vijayaraghava_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Rama is said to have performed the funeral rites of the eagle-king Jatayu, who fell defending Sita, at the pit (kuzhi) that names this place."
+ },
+ {
+  "id": "bhaktavatsala-thirunindravur",
+  "name": "Bhaktavatsala Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirunindravur",
+  "lat": 13.1125,
+  "lng": 80.0261,
+  "tradition": "Hindu",
+  "deity": "Bhaktavatsala Perumal",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Pallava)",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam of the Chennai region built in the 9th-century Pallava period, its earliest inscriptions dated between 820 and 890 CE, with medieval Chola and Vijayanagara additions. It is glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhaktavatsala_Perumal_Temple,_Thirunindravur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhaktavatsala_Perumal_Temple,_Thirunindravur"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The town's name, 'the place where the Lord stood', recalls the belief that Lakshmi and Vishnu descended and stayed at this spot."
+ },
+ {
+  "id": "veeraraghava-thiruvallur",
+  "name": "Veeraraghava Swamy Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruvallur",
+  "lat": 13.1434,
+  "lng": 79.9068,
+  "tradition": "Hindu",
+  "deity": "Vaidya Veeraraghava Perumal",
+  "built": [
+   1300,
+   1400
+  ],
+  "builtDisplay": "14th c. structures (Vijayanagara); Pallava origin",
+  "dynasty": "Vijayanagara",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam whose origins are placed in the late 8th-century Pallava period, though most scholars attribute the major surviving structures to 14th-century Vijayanagara kings. The deity is venerated as a divine healer, and the temple tank is the largest among the Divya Desams.",
+  "wiki": "https://en.wikipedia.org/wiki/Veeraraghava_Swamy_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Veeraraghava_Swamy_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The sage Salihotra is said to have offered his only meal to Vishnu, who had come disguised as a guest and remained here to bless him, marrying Lakshmi at this spot.",
+  "origin": 750
+ },
+ {
+  "id": "parthasarathy-triplicane",
+  "name": "Parthasarathy Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Chennai (Triplicane)",
+  "lat": 13.054,
+  "lng": 80.2765,
+  "tradition": "Hindu",
+  "deity": "Venkatakrishna (Parthasarathy) Perumal",
+  "built": [
+   500,
+   600
+  ],
+  "builtDisplay": "6th c. (Pallava); expanded 15th c.",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "One of the oldest structures in Chennai, this Divya Desam was raised by the Pallavas under Narasimhavarman and expanded by Chola and 15th-century Vijayanagara rulers. It uniquely houses five forms of Vishnu, with Krishna presiding as Parthasarathy, Arjuna's charioteer.",
+  "wiki": "https://en.wikipedia.org/wiki/Parthasarathy_Temple,_Chennai",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Parthasarathy_Temple,_Chennai"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The face of the main image bears mark-like scars, believed to be Bhishma's arrows taken by Krishna while driving Arjuna's chariot in the Mahabharata war."
+ },
+ {
+  "id": "neervanna-thiruneermalai",
+  "name": "Thiruneermalai Temple Complex (Neervanna Perumal)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruneermalai",
+  "lat": 12.9639,
+  "lng": 80.115,
+  "tradition": "Hindu",
+  "deity": "Neervanna Perumal",
+  "built": [
+   900,
+   1300
+  ],
+  "builtDisplay": "Chola-Pandya era (inscriptions)",
+  "dynasty": "Chola",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A twin-site Divya Desam spread across a hill and its base near Chennai, carrying Chola- and Pandya-period inscriptions. Vishnu appears here in four postures - standing as Neervannan, reclining as Ranganatha, sitting as Narasimha and walking as Trivikrama.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiruneermalai_(temple_complex)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiruneermalai_(temple_complex)"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "story": "The sage Valmiki is said to have worshipped Ranganatha on the hilltop after composing the Ramayana and to have met Rama himself at its base."
+ },
+ {
+  "id": "nithyakalyana-thiruvidanthai",
+  "name": "Nithyakalyana Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruvidanthai",
+  "lat": 12.7633,
+  "lng": 80.2425,
+  "tradition": "Hindu",
+  "deity": "Nithyakalyana Perumal (Varaha)",
+  "built": [
+   600,
+   700
+  ],
+  "builtDisplay": "7th c. (Pallava); Chola additions 11th c.",
+  "dynasty": "Pallava",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A coastal Divya Desam on the Mahabalipuram road whose original structure was raised by the 7th-century Pallavas with 11th-century Chola additions. Its sanctum holds a rare seven-foot granite Varaha bearing Bhudevi on his lap, and the shrine is favoured by those seeking marriage.",
+  "wiki": "https://en.wikipedia.org/wiki/Nithyakalyana_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Nithyakalyana_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Varaha is said to have wedded the 360 daughters of the sage Kalava one on each day of the year, becoming the 'ever-marrying' Nithyakalyana Perumal."
+ },
+ {
+  "id": "sthalasayana-mahabalipuram",
+  "name": "Sthalasayana Perumal Temple (Thirukadalmallai)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Mahabalipuram",
+  "lat": 12.6175,
+  "lng": 80.1933,
+  "tradition": "Hindu",
+  "deity": "Sthalasayana Perumal",
+  "built": [
+   1300,
+   1400
+  ],
+  "builtDisplay": "rebuilt 14th c. (Vijayanagara); Pallava origin",
+  "dynasty": "Vijayanagara",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The Divya Desam of the UNESCO World Heritage port town of Mahabalipuram, where Vishnu reclines directly on the bare ground rather than on his serpent. Founded under the Pallavas, it was moved to its present site in the 14th century by the Vijayanagara king Parankusa.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirukadalmallai",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirukadalmallai"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Pallava (Dravidian)",
+  "story": "Vishnu is said to have chosen to recline on the bare earth here so that the sage Pundarika's interrupted flower-worship would not go in vain."
+ },
+ {
+  "id": "yoga-narasimha-sholinghur",
+  "name": "Yoga Narasimha Temple (Thirukkadigai)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Sholinghur",
+  "lat": 13.0885,
+  "lng": 79.4184,
+  "tradition": "Hindu",
+  "deity": "Yoga Narasimha Perumal",
+  "built": [
+   1100,
+   1300
+  ],
+  "builtDisplay": "by 12th-13th c. (Chola inscriptions)",
+  "dynasty": "Chola",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A hilltop Divya Desam where Narasimha sits in yogic repose above Sholinghur, recorded in donations of Kulothunga Chola III among others. Tradition holds that worship lasting a single kadigai - twenty-four minutes - here yields the Lord's grace, giving the shrine its name.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirukkadigai",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirukkadigai"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The sage Vishvamitra is said to have won his title of Brahmarishi at this hill."
+ },
+ {
+  "id": "navamukunda-thirunavaya",
+  "name": "Thirunavaya Navamukunda Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Tirunavaya",
+  "lat": 10.8637,
+  "lng": 75.9818,
+  "tradition": "Hindu",
+  "deity": "Navamukunda Perumal",
+  "built": [
+   600,
+   800
+  ],
+  "builtDisplay": "ancient; Mamankam venue from at least the 8th c.",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam on the Bharathappuzha river and the storied venue of the Mamankam, the great fair held once every twelve years from at least the 8th century CE. It remains one of Kerala's principal riverside shrines for ancestral rites.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirunavaya_Navamukunda_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirunavaya_Navamukunda_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Nine yogis are said to have installed images here; eight sank into the earth, and the ninth, arrested at its knees, became Navamukunda."
+ },
+ {
+  "id": "vamanamoorthy-thrikkakara",
+  "name": "Thrikkakara Vamanamoorthy Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Thrikkakara",
+  "lat": 10.0349,
+  "lng": 76.3294,
+  "tradition": "Hindu",
+  "deity": "Vamanamoorthy (Vamana)",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "ancient; Onam inscription of 861 CE",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A rare major temple dedicated to Vamana and a Kerala Divya Desam, regarded as the home of the Onam festival - its inscriptions carry the earliest known mention of Onam, dated 861 CE.",
+  "wiki": "https://en.wikipedia.org/wiki/Thrikkakara_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thrikkakara_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "story": "Here Vamana is said to have humbled King Mahabali with three cosmic strides, granting the devoted king an annual return to his people - the homecoming celebrated as Onam."
+ },
+ {
+  "id": "lakshmana-thirumoozhikkulam",
+  "name": "Thirumoozhikkulam Lakshmana Perumal Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Moozhikkulam",
+  "lat": 10.1879,
+  "lng": 76.3284,
+  "tradition": "Hindu",
+  "deity": "Lakshmana Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "One of the thirteen Kerala Divya Desams and unusual in being dedicated to Lakshmana, with a circular granite-and-laterite sreekovil in classic Kerala style. It is also a station of the Nalambalam pilgrimage of the four Ramayana brothers.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirumoozhikkulam_Lakshmana_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirumoozhikkulam_Lakshmana_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Vishnu is said to have imparted the 'Thiru Mozhi', sacred words of guidance, to the sage Harita here, giving the place its name."
+ },
+ {
+  "id": "sreevallabha-thiruvalla",
+  "name": "Sreevallabha Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Thiruvalla",
+  "lat": 9.3737,
+  "lng": 76.5627,
+  "tradition": "Hindu",
+  "deity": "Sreevallabha Perumal",
+  "built": [
+   -100,
+   0
+  ],
+  "builtDisplay": "traditionally 57 BCE; later rebuilt",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "Among the largest and oldest temple complexes of Kerala and a Divya Desam, traditionally dated to 57 BCE and later brought under Travancore in the 1750s. It is famed for staging Kathakali nightly as a temple offering.",
+  "wiki": "https://en.wikipedia.org/wiki/Srivallabha_Temple,_Thiruvalla",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Srivallabha_Temple,_Thiruvalla"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Vishnu is said to have come as a young celibate student to answer an aged devotee's prayers and slain the demon Thukalasura, before revealing his universal form."
+ },
+ {
+  "id": "mahavishnu-thrikodithanam",
+  "name": "Thrikodithanam Mahavishnu Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Thrikkodithanam, Changanassery",
+  "lat": 9.4391,
+  "lng": 76.5657,
+  "tradition": "Hindu",
+  "deity": "Amruthanarayana (Athpudha Narayanan)",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Kerala Divya Desam hymned by Nammalvar and counted among the five ancient shrines of the Pamba belt linked to the Pandava brothers, this one attributed to Sahadeva.",
+  "wiki": "https://en.wikipedia.org/wiki/Thrikodithanam_Mahavishnu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thrikodithanam_Mahavishnu_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "After crowning Parikshit, the five Pandavas are said to have each raised a shrine on their last pilgrimage; Sahadeva installed the image worshipped here."
+ },
+ {
+  "id": "thrichittatt-chengannur",
+  "name": "Thrichittatt Mahavishnu Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Chengannur",
+  "lat": 9.3266,
+  "lng": 76.6043,
+  "tradition": "Hindu",
+  "deity": "Imayavarappan (Devathideva Perumal)",
+  "built": [
+   800,
+   1100
+  ],
+  "builtDisplay": "Second Chera period (800-1102)",
+  "dynasty": "Chera",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "Chief among the five Chengannur-area temples attributed to the Pandava brothers and a Divya Desam sung by Nammalvar around 800 CE, with stone inscriptions of the Second Chera empire.",
+  "wiki": "https://en.wikipedia.org/wiki/Thrichittatt_Maha_Vishnu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thrichittatt_Maha_Vishnu_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Yudhishthira is said to have built this temple in penance for the half-truth he spoke to fell Drona in the Kurukshetra war."
+ },
+ {
+  "id": "mayapiran-puliyur",
+  "name": "Thripuliyoor Mahavishnu Temple (Thiruppuliyur)",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Puliyoor, Chengannur",
+  "lat": 9.3012,
+  "lng": 76.587,
+  "tradition": "Hindu",
+  "deity": "Mayapiran Perumal",
+  "built": [
+   800,
+   1100
+  ],
+  "builtDisplay": "Second Chera period (800-1102)",
+  "dynasty": "Chera",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam of the Kuttanad tract glorified in the Nalayira Divya Prabandham, with inscriptions of the Second Chera empire; among the five Pandava temples of the region it is attributed to Bhima.",
+  "wiki": "https://en.wikipedia.org/wiki/Puliyur_Mahavishnu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Puliyur_Mahavishnu_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Bhima is said to have raised this shrine to Krishna during the Pandavas' final pilgrimage along the Pamba."
+ },
+ {
+  "id": "parthasarathy-aranmula",
+  "name": "Aranmula Parthasarathy Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Aranmula",
+  "lat": 9.3281,
+  "lng": 76.6879,
+  "tradition": "Hindu",
+  "deity": "Parthasarathy (Krishna)",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A riverside Divya Desam on the Pamba, home of the spectacular Aranmula snake-boat race rowed during Onam and of the village craft of the Aranmula kannadi metal mirror. Among the Pandava shrines of the region it is linked to Arjuna.",
+  "wiki": "https://en.wikipedia.org/wiki/Aranmula_Parthasarathy_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Aranmula_Parthasarathy_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Arjuna is said to have built the shrine in atonement for slaying the unarmed Karna, bringing the image on a raft of six bamboos - the 'aran-mula'."
+ },
+ {
+  "id": "mahavishnu-thiruvanvandoor",
+  "name": "Thiruvanvandoor Mahavishnu Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Thiruvanvandoor",
+  "lat": 9.3432,
+  "lng": 76.5803,
+  "tradition": "Hindu",
+  "deity": "Paambanaiyappan (Vishnu)",
+  "built": [
+   800,
+   1100
+  ],
+  "builtDisplay": "Second Chera period (800-1102)",
+  "dynasty": "Chera",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam glorified by Nammalvar with inscriptions of the Second Chera empire, counted among the five Pamba-belt temples of the Pandavas and attributed to Nakula.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiruvanvandoor_Mahavishnu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiruvanvandoor_Mahavishnu_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "Nakula is said to have installed the image here on the Pandavas' last pilgrimage after Parikshit's coronation."
+ },
+ {
+  "id": "thiruvazhmarban-thiruppathisaram",
+  "name": "Thiruvazhmarban Temple (Thiruvanparisaram)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruppathisaram",
+  "lat": 8.2074,
+  "lng": 77.4475,
+  "tradition": "Hindu",
+  "deity": "Thiruvazhmarban Perumal",
+  "built": [
+   800,
+   1150
+  ],
+  "builtDisplay": "by 1139 (trad. Kulasekara Alvar)",
+  "dynasty": "Chera",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam near Nagercoil where Lakshmi is believed to dwell on the Lord's chest - the meaning of Thiruvazhmarban - traditionally founded by king Kulasekara, the Alvar, with its oldest inscription dated 1139 CE and a Nayak-era temple tank.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiruvazhmarban_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiruvazhmarban_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "King Kulasekara is said to have found his lost horse grazing by the temple tank and, revived by its waters, raised the temple in gratitude."
+ },
+ {
+  "id": "vaishnava-nambi-thirukkurungudi",
+  "name": "Vaishnava Nambi Temple (Thirukkurungudi)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirukkurungudi",
+  "lat": 8.4363,
+  "lng": 77.5657,
+  "tradition": "Hindu",
+  "deity": "Vaishnava Nambi (Azhagiya Nambi)",
+  "built": [
+   900,
+   1100
+  ],
+  "builtDisplay": "by 10th c. (Chola inscriptions)",
+  "dynasty": "Chola",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The 'Dakshina Vaikuntam' Divya Desam at the foot of the Western Ghats, recorded in medieval Chola inscriptions from the 10th century onward. It is the home of the Kaisika Natakam temple-theatre tradition and of Arayar Sevai recital worship.",
+  "wiki": "https://en.wikipedia.org/wiki/Vaishnava_Nambi_and_Thirukurungudivalli_Nachiar_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vaishnava_Nambi_and_Thirukurungudivalli_Nachiar_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The Kaisika legend tells of the singer Nambaduvan, whose devotional song freed a demon of its curse while Nambi himself appeared to honour the humble devotee."
+ },
+ {
+  "id": "vanamamalai-nanguneri",
+  "name": "Vanamamalai Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Nanguneri",
+  "lat": 8.48,
+  "lng": 77.67,
+  "tradition": "Hindu",
+  "deity": "Vanamamalai (Thothadrinatha) Perumal",
+  "built": [
+   1100,
+   1250
+  ],
+  "builtDisplay": "by 1236 (Pandya)",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam believed to be a Pandya foundation with its earliest inscription of 1236 CE and later Vijayanagara and Madurai Nayak additions; it is revered as one of the eight svayambu (self-manifested) fields of Vishnu.",
+  "wiki": "https://en.wikipedia.org/wiki/Vanamamalai_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vanamamalai_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Adishesha and Garuda are both said to have done penance here, winning the honours of serving as Vishnu's couch and as the guardian of Vaikuntha."
+ },
+ {
+  "id": "srivaikuntanathan-srivaikuntam",
+  "name": "Srivaikuntanathan Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Srivaikuntam",
+  "lat": 8.6312,
+  "lng": 77.9095,
+  "tradition": "Hindu",
+  "deity": "Vaikuntanatha Perumal",
+  "built": [
+   1100,
+   1220
+  ],
+  "builtDisplay": "by 12th c. (Pandya grants)",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "First of the nine Nava Tirupati temples strung along the Tamiraparani and a Divya Desam revered by Nammalvar, ranked next only to Alwarthirunagari among the nine; royal grants are recorded from Jatavarman Kulasekaran I (1190-1216) onward.",
+  "wiki": "https://en.wikipedia.org/wiki/Srivaikuntanathan_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Srivaikuntanathan_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Vishnu is said to have slain the asura Somuka, who stole the four Vedas from Brahma, and then taken residence here as Vaikuntanatha."
+ },
+ {
+  "id": "mayakoothar-perungulam",
+  "name": "Srinivasa (Mayakoothar) Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Perungulam",
+  "lat": 8.6411,
+  "lng": 77.9976,
+  "tradition": "Hindu",
+  "deity": "Mayakoothar (Srinivasa) Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The Nava Tirupati Divya Desam of Thirukkulandai, honoured as the Shani sthalam - the Saturn station - of the nine planetary temples of the Tamiraparani belt.",
+  "wiki": "https://en.wikipedia.org/wiki/Srinivasa_Perumal_Temple,_Tirukulandhai",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Srinivasa_Perumal_Temple,_Tirukulandhai"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Vishnu is said to have crushed an abducting asura and danced upon his head as Koothar to restore the devotee Kumudhavalli to her husband."
+ },
+ {
+  "id": "vaithamanidhi-thirukkolur",
+  "name": "Vaithamanidhi Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirukolur",
+  "lat": 8.5967,
+  "lng": 77.9578,
+  "tradition": "Hindu",
+  "deity": "Vaithamanidhi Perumal",
+  "built": [
+   1650,
+   1710
+  ],
+  "builtDisplay": "refurbished 1689-1704 (Rani Mangammal); ancient origin",
+  "dynasty": "Madurai Nayak",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The eighth of the Nava Tirupati Divya Desams, where the reclining lord is imagined as keeper of a buried treasure, and the birthplace of Madhurakavi Alvar, devoted disciple of Nammalvar. The present structure owes its refurbishment to Rani Mangammal of Madurai.",
+  "wiki": "https://en.wikipedia.org/wiki/Vaithamanidhi_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vaithamanidhi_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Kubera, cursed by Shiva, is said to have regained his lost wealth after penance before Vaithamanidhi here."
+ },
+ {
+  "id": "makara-nedunkuzhaikathar-thenthiruperai",
+  "name": "Makara Nedunkuzhaikathar Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thenthiruperai",
+  "lat": 8.6041,
+  "lng": 77.9884,
+  "tradition": "Hindu",
+  "deity": "Makara Nedunkuzhai Kathar Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Nava Tirupati Divya Desam on the Tamiraparani where the presiding lord takes his name from the makara - fish-shaped - earrings he wears, flanked by Sridevi and Bhudevi.",
+  "wiki": "https://en.wikipedia.org/wiki/Makara_Nedunkuzhaikathar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Makara_Nedunkuzhaikathar_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Bhudevi, cursed by the sage Durvasa, is said to have been restored when fish-shaped earrings found on the riverbank were offered to Vishnu here."
+ },
+ {
+  "id": "adinatha-alwarthirunagari",
+  "name": "Alwarthirunagari Perumal Temple (Adinathar)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Alwarthirunagari",
+  "lat": 8.6071,
+  "lng": 77.9383,
+  "tradition": "Hindu",
+  "deity": "Adinatha Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The foremost of the nine Nava Tirupati temples on the Tamiraparani and a Divya Desam, celebrated as the birthplace of Nammalvar, the greatest of the twelve Alvar saints, whose tamarind tree still stands in the temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Alwarthirunagari_Permual_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Alwarthirunagari_Permual_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The infant Nammalvar is said to have sat silent in meditation in a hollow of the temple tamarind for sixteen years, until the poet Madhurakavi's riddle drew out his voice."
+ },
+ {
+  "id": "andal-srivilliputhur",
+  "name": "Srivilliputhur Andal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Srivilliputhur",
+  "lat": 9.5083,
+  "lng": 77.6304,
+  "tradition": "Hindu",
+  "deity": "Vatapatrasayi Perumal; Andal",
+  "built": [
+   700,
+   1500
+  ],
+  "builtDisplay": "8th c. core; Andal shrine and gopuram 14th-15th c.",
+  "dynasty": "Vijayanagara",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A twin-shrined Divya Desam holding Vatapatrasayi, attested from the 8th century, alongside Andal, whose 14th-century shrine and towering 192-foot rajagopuram were raised under Vijayanagara kings. It is revered as the birthplace of the Alvars Periyalvar and his foster-daughter Andal.",
+  "wiki": "https://en.wikipedia.org/wiki/Srivilliputhur_Andal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Srivilliputhur_Andal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Andal is said to have been found as a baby beneath a tulasi plant and to have secretly worn the temple garlands before they were offered - a practice the deity himself endorsed in a dream.",
+  "origin": 700
+ },
+ {
+  "id": "ninra-narayana-thiruthangal",
+  "name": "Ninra Narayana Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruthankal",
+  "lat": 9.4776,
+  "lng": 77.8062,
+  "tradition": "Hindu",
+  "deity": "Ninra Narayana Perumal",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "8th c. (Pandya, Devendra Vallabha)",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A hillock Divya Desam adjoining Sivakasi built by the Pandya king Devendra Vallabha, with inscriptions from the 8th century; the standing Narayana is flanked by his three consorts and sung in the Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Ninra_Narayana_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ninra_Narayana_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Sridevi is said to have performed penance here until Vishnu appeared and stayed - 'thangal' - beside her, naming the town."
+ },
+ {
+  "id": "kallalagar-alagar-koyil",
+  "name": "Kallalagar Temple (Thirumaliruncholai)",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Alagar Koyil",
+  "lat": 10.0748,
+  "lng": 78.2131,
+  "tradition": "Hindu",
+  "deity": "Kallalagar (Kallazhagar) Perumal",
+  "built": [
+   100,
+   300
+  ],
+  "builtDisplay": "attested from Sangam literature (3rd c. CE)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The forest-hill Divya Desam of Thirumaliruncholai north-east of Madurai, mentioned in Sangam literature from the 3rd century CE. Each Chithirai festival the deity rides toward Madurai and enters the Vaigai river amid one of Tamil Nadu's largest festive gatherings.",
+  "wiki": "https://en.wikipedia.org/wiki/Kallalagar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kallalagar_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Kallalagar is said to journey to Thenur to free the sage Suthapas of Durvasa's frog-curse - the ride his Chithirai procession re-enacts every year."
+ },
+ {
+  "id": "kalamega-thirumohur",
+  "name": "Thirumohoor Kalamegaperumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirumohur",
+  "lat": 9.951,
+  "lng": 78.2071,
+  "tradition": "Hindu",
+  "deity": "Kalamega Perumal",
+  "built": [
+   1250,
+   1600
+  ],
+  "builtDisplay": "13th c. (Pandya); rebuilt Nayak era",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam near Madurai identified in an inscription of 1259 CE under the later Pandyas, its present structure raised by the Madurai Nayaks; among the 108 shrines it is unique for the Lord's rare Prathanasayana appearance.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirumohoor_Kalamegaperumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirumohoor_Kalamegaperumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "During the churning of the ocean of milk, Vishnu is said to have become the enchantress Mohini here to deny the asuras the nectar - hence Thiru-mohur."
+ },
+ {
+  "id": "sowmyanarayana-thirukoshtiyur",
+  "name": "Sowmyanarayana Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirukoshtiyur",
+  "lat": 10.0608,
+  "lng": 78.56,
+  "tradition": "Hindu",
+  "deity": "Sowmyanarayana Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Divya Desam remembered as the place where Ramanuja, defying his teacher's restriction, proclaimed the secret liberating mantra from the temple to everyone regardless of caste.",
+  "wiki": "https://en.wikipedia.org/wiki/Sowmya_Narayana_Perumal_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sowmya_Narayana_Perumal_temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Before Narasimha slew Hiranyakashipu, the gods are said to have gathered in council here, where Vishnu showed himself standing, seated and reclining."
+ },
+ {
+  "id": "anchumoorthi-thirumittakode",
+  "name": "Thirumittakode Anchumoorthi Temple (Thiruvithuvakkodu)",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Thirumittacode",
+  "lat": 10.7831,
+  "lng": 76.1843,
+  "tradition": "Hindu",
+  "deity": "Uyyavantha Perumal (Abhaya Pradhan)",
+  "built": [
+   900,
+   1100
+  ],
+  "builtDisplay": "by 11th c. (Rajendra Chola record)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The Divya Desam of Thiruvithuvakkodu on the Bharathappuzha, also counted among the 108 Shivalayams, where riverside last rites are performed as at Varanasi; the temple preserves a record of the Chola emperor Rajendra I.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirumittakode_Anchumoorthi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirumittakode_Anchumoorthi_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala",
+  "story": "The elephant-king Gajendra and Lakshmi are both said to have worshipped Vishnu here with lotuses from the temple's lotus garden."
+ },
+ {
+  "id": "adikesava-thiruvattar",
+  "name": "Adikesava Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruvattar",
+  "lat": 8.3689,
+  "lng": 77.2417,
+  "tradition": "Hindu",
+  "deity": "Adikesava Perumal",
+  "built": [
+   600,
+   1600
+  ],
+  "builtDisplay": "Alvar-era shrine; Vijayanagara additions 16th c.",
+  "dynasty": "Vijayanagara",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A grand reclining-Vishnu Divya Desam encircled by three rivers, hymned from the 7th-8th centuries and once the state temple of Travancore; Vijayanagara kings added its sculpted Virabhadra columns in the early 1500s.",
+  "wiki": "https://en.wikipedia.org/wiki/Adikesava_Perumal_Temple,_Thiruvattar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Adikesava_Perumal_Temple,_Thiruvattar"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Kerala-Dravidian fusion",
+  "story": "Adikesava is said to have vanquished the demon Kesi, whose widow's flood-prayer bent the rivers into the loop that rings the shrine."
+ },
+ {
+  "id": "vijayasana-natham",
+  "name": "Thiruvaragunamangai Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Natham",
+  "lat": 8.6371,
+  "lng": 77.9241,
+  "tradition": "Hindu",
+  "deity": "Vijayasana Perumal",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "One of the nine Nava Tirupati Divya Desams on the Tamiraparani, ranked next to Alwarthirunagari in importance among the nine.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiruvaragunamangai_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiruvaragunamangai_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "The sage Vedavit, guided by Vishnu in the guise of a brahmin, is said to have won the Lord's abiding presence here as Vijayasanan."
+ },
+ {
+  "id": "bhumipalar-thirupulingudi",
+  "name": "Thirupuliyangudi Perumal Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirupulingudi",
+  "lat": 8.6398,
+  "lng": 77.9328,
+  "tradition": "Hindu",
+  "deity": "Bhumipalar (Kaisina Vendan)",
+  "built": [
+   600,
+   900
+  ],
+  "builtDisplay": "attested in Alvar hymns (7th-9th c.)",
+  "dynasty": "Undetermined",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "A Nava Tirupati Divya Desam where the reclining lord is hailed as Bhumipalar, the guardian of the earth goddess, glorified in the Nalayira Divya Prabandham.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirupuliyangudi_Perumal_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirupuliyangudi_Perumal_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "When the slighted Bhudevi withdrew into the netherworld and the earth decayed, Vishnu is said to have descended here to win her back."
+ },
+ {
+  "id": "koodal-azhagar-madurai",
+  "name": "Koodal Azhagar Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Madurai",
+  "lat": 9.93,
+  "lng": 78.12,
+  "tradition": "Hindu",
+  "deity": "Koodal Azhagar Perumal",
+  "built": [
+   800,
+   1600
+  ],
+  "builtDisplay": "Pandya origin; expanded 16th c. (Vijayanagara-Nayak)",
+  "dynasty": "Pandya",
+  "circuits": [
+   "Divya Desam"
+  ],
+  "significance": "The city-centre Divya Desam of Madurai, believed to be a Pandya foundation later expanded by 16th-century Vijayanagara and Nayak rulers, distinguished by its rare three-tiered Ashtanga vimana.",
+  "wiki": "https://en.wikipedia.org/wiki/Koodal_Azhagar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Koodal_Azhagar_Temple"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact",
+  "style": "Dravidian",
+  "story": "Koodal Azhagar is said to have slain the demon Somuka and recovered the four Vedas stolen from Brahma."
+ }
+]

@@ -1,0 +1,380 @@
+[
+{
+"name": "Shila Devi Temple",
+"place": "Amber Fort, Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jeen Mata Temple",
+"place": "Jeenmata, Sikar",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rani Sati Temple",
+"place": "Jhunjhunu",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sachiya Mata Temple",
+"place": "Osian",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Osian Jain Temple (Mahavira)",
+"place": "Osian",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Kaila Devi Temple",
+"place": "Karauli",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sanwaliya Seth Temple",
+"place": "Mandaphia, Chittorgarh",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Charbhuja Temple",
+"place": "Garhbor, Rajsamand",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Parshuram Mahadev Temple",
+"place": "Pali/Rajsamand border",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Ambika Mata Temple, Jagat",
+"place": "Jagat, Udaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Sas-Bahu Temples, Nagda",
+"place": "Nagda, Udaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Harshat Mata Temple",
+"place": "Abhaneri, Dausa",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Neelkanth Mahadev Temple, Alwar",
+"place": "Rajgarh, Alwar",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Tanot Mata Temple",
+"place": "Tanot, Jaisalmer",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kolayat Temple",
+"place": "Kolayat, Bikaner",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhandasar Jain Temple",
+"place": "Bikaner",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Tripura Sundari Temple, Banswara",
+"place": "Banswara",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Kiradu Temples",
+"place": "Barmer",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Chandrabadni Temple",
+"place": "Tehri",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Purnagiri Temple",
+"place": "Tanakpur, Champawat",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Baleshwar Temple",
+"place": "Champawat",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kasar Devi Temple",
+"place": "Almora",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mukteshwar Temple, Uttarakhand",
+"place": "Mukteshwar, Nainital",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Kartik Swami Temple",
+"place": "Rudraprayag district",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Paonta Sahib",
+"place": "Paonta Sahib",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurudwara Manikaran Sahib",
+"place": "Manikaran, Kullu",
+"state": "Himachal Pradesh",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Dakor Ranchhodrai Temple",
+"place": "Dakor",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shamlaji Temple",
+"place": "Shamlaji, Aravalli",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bahucharaji Temple",
+"place": "Becharaji, Mehsana",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Shakti Peetha"
+]
+},
+{
+"name": "Chotila Temple (Chamunda Mata)",
+"place": "Chotila, Surendranagar",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Jalaram Temple, Virpur",
+"place": "Virpur, Rajkot",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Akshardham, Gandhinagar",
+"place": "Gandhinagar",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Nishkalank Mahadev",
+"place": "Koliyak, Bhavnagar",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Stambheshwar Mahadev",
+"place": "Kavi Kamboi, Bharuch",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Koteshwar Temple, Kutch",
+"place": "Koteshwar, Kutch",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Narayan Sarovar",
+"place": "Kutch",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Mata no Madh (Ashapura Mata)",
+"place": "Kutch",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Rukmini Devi Temple, Dwarka",
+"place": "Dwarka",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Bhalka Tirtha",
+"place": "Veraval",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Hutheesing Jain Temple",
+"place": "Ahmedabad",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Taranga Jain Temple",
+"place": "Taranga, Mehsana",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Girnar Jain Temples",
+"place": "Girnar, Junagadh",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Kayavarohan Temple (Lakulish)",
+"place": "Kayavarohan, Vadodara",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Gop Temple",
+"place": "Gop, Jamnagar",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Shankheshwar Jain Temple",
+"place": "Shankheshwar, Patan",
+"state": "Gujarat",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Aundha Nagnath Temple",
+"place": "Aundha, Hingoli",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Jyotirlinga"
+]
+}
+]

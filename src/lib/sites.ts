@@ -24,7 +24,8 @@ export type Site = {
   circuits?: string[];
   status?: string[];
   significance: string;
-  story: string;
+  story?: string;
+  tier?: string;
   access?: string;
   website?: string;
   phone?: string;

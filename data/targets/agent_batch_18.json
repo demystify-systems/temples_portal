@@ -1,0 +1,393 @@
+[
+{
+"name": "Takht Sri Keshgarh Sahib",
+"place": "Anandpur Sahib",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": [
+"Panj Takht"
+]
+},
+{
+"name": "Takht Sri Damdama Sahib",
+"place": "Talwandi Sabo, Bathinda",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": [
+"Panj Takht"
+]
+},
+{
+"name": "Hazur Sahib Nanded",
+"place": "Nanded",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Sikh",
+"circuits": [
+"Panj Takht"
+]
+},
+{
+"name": "Gurdwara Bangla Sahib",
+"place": "New Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurdwara Sis Ganj Sahib",
+"place": "Chandni Chowk, Delhi",
+"state": "Delhi",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Fatehgarh Sahib",
+"place": "Fatehgarh Sahib",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Tarn Taran Sahib",
+"place": "Tarn Taran",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Goindwal Sahib",
+"place": "Goindwal",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurdwara Ber Sahib, Sultanpur Lodhi",
+"place": "Sultanpur Lodhi",
+"state": "Punjab",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurudwara Nanak Jhira Sahib",
+"place": "Bidar",
+"state": "Karnataka",
+"country": "India",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurdwara Darbar Sahib Kartarpur",
+"place": "Kartarpur, Narowal",
+"state": "Punjab",
+"country": "Pakistan",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurdwara Janam Asthan Nankana Sahib",
+"place": "Nankana Sahib",
+"state": "Punjab",
+"country": "Pakistan",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Gurdwara Panja Sahib",
+"place": "Hasan Abdal",
+"state": "Punjab",
+"country": "Pakistan",
+"tradition": "Sikh",
+"circuits": []
+},
+{
+"name": "Kushinagar (Mahaparinirvana Temple)",
+"place": "Kushinagar",
+"state": "Uttar Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Shravasti (Jetavana)",
+"place": "Shravasti",
+"state": "Uttar Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Sankissa",
+"place": "Sankisa, Farrukhabad",
+"state": "Uttar Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Kaushambi",
+"place": "Kosam, Kaushambi",
+"state": "Uttar Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit"
+]
+},
+{
+"name": "Bharhut Stupa",
+"place": "Bharhut, Satna",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Bavikonda",
+"place": "Visakhapatnam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Thotlakonda",
+"place": "Visakhapatnam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Salihundam",
+"place": "Srikakulam",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Guntupalli Caves",
+"place": "Eluru district",
+"state": "Andhra Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Pandavleni Caves",
+"place": "Nashik",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Aurangabad Caves",
+"place": "Chhatrapati Sambhajinagar",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Pitalkhora Caves",
+"place": "Kannad, Chhatrapati Sambhajinagar",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Bedse Caves",
+"place": "Maval, Pune",
+"state": "Maharashtra",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Bagh Caves",
+"place": "Bagh, Dhar",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Mindrolling Monastery",
+"place": "Clement Town, Dehradun",
+"state": "Uttarakhand",
+"country": "India",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Mahavirji Temple",
+"place": "Chandangaon, Karauli",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Padampura Jain Temple",
+"place": "Padampura, Jaipur",
+"state": "Rajasthan",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Kulpakji",
+"place": "Kolanupaka, Yadadri",
+"state": "Telangana",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Muktagiri",
+"place": "Betul border",
+"state": "Madhya Pradesh",
+"country": "India",
+"tradition": "Jain",
+"circuits": []
+},
+{
+"name": "Manakamana Temple",
+"place": "Gorkha",
+"state": "Gandaki",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Budhanilkantha Temple",
+"place": "Kathmandu",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Dakshinkali Temple",
+"place": "Kathmandu valley",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Doleshwar Mahadev Temple",
+"place": "Bhaktapur",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Halesi Mahadev",
+"place": "Khotang",
+"state": "Koshi",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Baraha Chhetra",
+"place": "Sunsari",
+"state": "Koshi",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": []
+},
+{
+"name": "Lumbini (Maya Devi Temple)",
+"place": "Lumbini",
+"state": "Lumbini Province",
+"country": "Nepal",
+"tradition": "Buddhist",
+"circuits": [
+"Buddhist circuit",
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Nyatapola Temple",
+"place": "Bhaktapur",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Krishna Mandir, Patan",
+"place": "Lalitpur",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Taleju Temple, Kathmandu",
+"place": "Kathmandu Durbar Square",
+"state": "Bagmati",
+"country": "Nepal",
+"tradition": "Hindu",
+"circuits": [
+"UNESCO World Heritage"
+]
+},
+{
+"name": "Punakha Dzong",
+"place": "Punakha",
+"state": "Punakha",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Tashichho Dzong",
+"place": "Thimphu",
+"state": "Thimphu",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Chimi Lhakhang",
+"place": "Punakha",
+"state": "Punakha",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+},
+{
+"name": "Jambay Lhakhang",
+"place": "Bumthang",
+"state": "Bumthang",
+"country": "Bhutan",
+"tradition": "Buddhist",
+"circuits": []
+}
+]

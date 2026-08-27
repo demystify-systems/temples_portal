@@ -1,0 +1,475 @@
+[
+{
+"name": "Thiruppullani",
+"place": "Thirupullani",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Kalyana Jagannatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirumeyyam",
+"place": "Thirumayam",
+"state": "Tamil Nadu",
+"country": "India",
+"deity": "Sathyagirinatha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvayodhi (Ayodhya)",
+"place": "Ayodhya",
+"state": "Uttar Pradesh",
+"country": "India",
+"deity": "Ramachandra Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Naimisaranyam",
+"place": "Misrikh-Neemsar",
+"state": "Uttar Pradesh",
+"country": "India",
+"deity": "Devaraja Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirupruthi (Jyothirmath)",
+"place": "Jyotirmath",
+"state": "Uttarakhand",
+"country": "India",
+"deity": "Paramapurusha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirukkandamenum Kadinagar",
+"place": "Devaprayag",
+"state": "Uttarakhand",
+"country": "India",
+"deity": "Purushottama Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvadari (Badrinath)",
+"place": "Badrinath",
+"state": "Uttarakhand",
+"country": "India",
+"deity": "Badrinarayana Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiru Saligram (Muktinath)",
+"place": "Muktinath, Mustang District",
+"state": "Mustang District",
+"country": "Nepal",
+"deity": "Srimurti Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvadamadurai (Krishna Janmabhoomi)",
+"place": "Mathura",
+"state": "Uttar Pradesh",
+"country": "India",
+"deity": "Govardhanagiridhari Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvaipadi (Gokula)",
+"place": "Gokul",
+"state": "Uttar Pradesh",
+"country": "India",
+"deity": "Navamohanakrishna Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thirudwarakai (Dwarakadheesh)",
+"place": "Dwarka",
+"state": "Gujarat",
+"country": "India",
+"deity": "Dwarakadheesha Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Singavel Kundram (Ahobilam)",
+"place": "Ahobilam",
+"state": "Andhra Pradesh",
+"country": "India",
+"deity": "Prahlada Varada Narasimha Swamy",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thiruvenkadam",
+"place": "Tirupati",
+"state": "Andhra Pradesh",
+"country": "India",
+"deity": "Srinivasa Perumal",
+"tradition": "Hindu",
+"circuits": [
+"Divya Desam"
+]
+},
+{
+"name": "Thillai Natarajar Temple",
+"place": "Chidambaram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Pasupatheswarar Temple",
+"place": "Tiruvetkalam (Annamalai Nagar), Chidambaram",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Uchinathar Temple",
+"place": "Sivapuri (Tirunelvayil)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Palvannanathar Temple",
+"place": "Thirukazhipalai",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Shivalokathyagar Temple",
+"place": "Achalpuram (Tirunallur Perumanam)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Tirumeni Azhagar Temple",
+"place": "Mahendrapalli",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Mullaivananathar Temple",
+"place": "Thirumullaivasal (Ten Tirumullaivayil)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sundareswarar Temple",
+"place": "Annappanpettai (Kalikkamur)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Chayavaneswarar Temple",
+"place": "Sayavanam, Poompuhar (Tiruchaykkadu)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Pallavaneswarar Temple",
+"place": "Poompuhar (Pallavaneeswaram)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Swetharanyeswarar Temple",
+"place": "Thiruvenkadu",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Aranyeswarar Temple",
+"place": "Keezhai Tirukkattuppalli",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Velladainatha Swami Temple",
+"place": "Thirukkurukavur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sattainathar Temple",
+"place": "Sirkazhi",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sapthapureeswarar Temple",
+"place": "Thirukolakka",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Vaitheeswaran Temple",
+"place": "Vaitheeswaran Koil (Pullirukkuvelur)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sivalokanathar Temple",
+"place": "Thiruppunkur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Kannayiram Udayar Temple",
+"place": "Kurumanakkudi (Thirukkannar Koil)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Somanathaswami Temple",
+"place": "Thiruneedur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Kalyanasundareswarar Temple",
+"place": "Thiruvelvikudi",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Iyravatheswarar Temple",
+"place": "Melathirumanancheri (Ethirkolpadi)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Udhvaganathar Temple",
+"place": "Thirumanancheri",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Veerateeswarar Temple",
+"place": "Korukkai (Kurukkai)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Kutram Poruttha Nathar Temple",
+"place": "Karuppariyalur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Kadaimudinathar Temple",
+"place": "Keezhaiyur (Tirukkadaimudi)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Amirthakadeswarar Temple",
+"place": "Melakadambur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Thuyartheertha Nathar Temple",
+"place": "Omampuliyur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Pathanchalinathar Temple",
+"place": "Kanattampuliyur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sakshinatheswarar Temple",
+"place": "Thiruppurambiyam",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Vijayanatheswarar Temple",
+"place": "Thiruvijayamangai (Vijayamangai)",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Sivayoginathar Temple",
+"place": "Thiruvisanallur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Kodeeswarar Temple",
+"place": "Kottaiyur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+},
+{
+"name": "Ezhutharinathar Temple",
+"place": "Innambur",
+"state": "Tamil Nadu",
+"country": "India",
+"tradition": "Hindu",
+"circuits": [
+"Paadal Petra Sthalam"
+]
+}
+]
