@@ -7,11 +7,14 @@
 // Policy (CLAUDE.md): no source → no field → no publish. A record that fails any
 // structural check is DROPPED with a logged reason — never repaired by guesswork.
 //
-// Dedupe, as specified in PHASE2.md:
-//   • coordinates rounded to 3 dp (~111 m) identical to an existing site  → same site
-//   • normalised name identical AND within DUP_KM of an existing site     → same site
-// A name that repeats far away is a genuinely different temple: it is kept and its
-// id auto-suffixed.
+// Dedupe, per PHASE2.md, with two guards it does not mention:
+//   • coordinates identical to 3 dp (~111 m) AND a related name  → same site, dropped
+//   • normalised name identical AND within DUP_KM                → same site, dropped
+// The guards matter in both directions. A name that repeats far away is a different
+// temple, so it is kept and its id auto-suffixed. A coordinate that repeats under an
+// unrelated name is usually a distinct shrine sharing a courtyard, so it is also kept
+// — and reported for a human to confirm, because silently deleting a real temple is
+// the worse failure.
 
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -53,6 +56,27 @@ const normName = (v) =>
     .trim();
 
 const coordKey = (lat, lng) => `${lat.toFixed(3)},${lng.toFixed(3)}`;
+
+// Words that carry no identity: two temples sharing only these are not the same temple.
+const NOISE = new Set(["temple", "temples", "kovil", "koil", "koyil", "mandir", "mandira", "shrine", "swamy", "swami", "sthalam", "sri", "shri", "the", "of", "and", "at"]);
+const tokens = (v) => new Set(normName(v).split(" ").filter((w) => w && !NOISE.has(w)));
+
+/**
+ * Do two names plausibly denote the same temple?
+ *
+ * This guards the coordinate rule. Indian temple towns are full of distinct,
+ * separately notable shrines sharing one courtyard — the Adi Varaha Divya Desam
+ * sits inside the Kamakshi Amman Shakti Peetha, on the same coordinate to 4 dp.
+ * Identical coordinates alone must not be allowed to delete one of them.
+ */
+function nameRelated(a, b) {
+  const [x, y] = [normName(a), normName(b)];
+  if (x === y || x.includes(y) || y.includes(x)) return true;
+  const [ta, tb] = [tokens(a), tokens(b)];
+  if (ta.size === 0 || tb.size === 0) return false;
+  const shared = [...ta].filter((t) => tb.has(t)).length;
+  return shared / Math.min(ta.size, tb.size) >= 0.5;
+}
 
 const distanceKm = (a, b) => {
   const rad = (d) => (d * Math.PI) / 180;
@@ -102,6 +126,7 @@ const uniqueId = (base) => {
 const merged = [];
 const dropped = { malformed: [], duplicate: [] };
 const renamed = [];
+const colocated = [];
 const perFile = [];
 
 for (const file of batchFiles) {
@@ -131,11 +156,14 @@ for (const file of batchFiles) {
     const rec = withDefaults(raw);
 
     const coordHit = byCoord.get(coordKey(rec.lat, rec.lng));
-    if (coordHit) {
-      dropped.duplicate.push({ file: rel, id: rec.id, of: coordHit.id, why: "identical coordinates (3 dp)" });
+    if (coordHit && nameRelated(coordHit.name, rec.name)) {
+      dropped.duplicate.push({ file: rel, id: rec.id, of: coordHit.id, why: "identical coordinates (3 dp) and a matching name" });
       dupes++;
       continue;
     }
+    // Same coordinate, unrelated name: a shrine sharing a courtyard, or a bad
+    // coordinate. Keep it — losing a record is the worse error — and say so.
+    if (coordHit) colocated.push({ file: rel, id: rec.id, with: coordHit.id, names: `"${rec.name}" / "${coordHit.name}"` });
     const nameHits = byName.get(normName(rec.name)) ?? [];
     const near = nameHits.find((s) => distanceKm(s, rec) <= DUP_KM);
     if (near) {
@@ -166,6 +194,10 @@ for (const f of perFile) console.log(`  ${f.file.padEnd(32)} in ${String(f.input
 if (renamed.length) {
   console.log(`\n  id collisions auto-suffixed (${renamed.length}):`);
   for (const r of renamed) console.log(`    ${r.from} → ${r.to}`);
+}
+if (colocated.length) {
+  console.log(`\n  KEPT but sharing a coordinate with an existing site (${colocated.length}) — verify these by hand:`);
+  for (const c of colocated) console.log(`    ${c.id} + ${c.with} — ${c.names}`);
 }
 if (dropped.duplicate.length) {
   console.log(`\n  dropped as duplicates (${dropped.duplicate.length}):`);
