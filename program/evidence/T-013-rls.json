@@ -1,0 +1,40 @@
+{
+    "policies": [
+        {
+            "table": "contributions",
+            "policy": "contributions_public_insert",
+            "cmd": "INSERT",
+            "roles": [
+                "anon",
+                "authenticated"
+            ]
+        },
+        {
+            "table": "contributions",
+            "policy": "contributions_read_own",
+            "cmd": "SELECT",
+            "roles": [
+                "authenticated"
+            ]
+        },
+        {
+            "table": "sites",
+            "policy": "sites_public_read",
+            "cmd": "SELECT",
+            "roles": [
+                "anon",
+                "authenticated"
+            ]
+        }
+    ],
+    "rls_enabled": [
+        "contributions",
+        "sites"
+    ],
+    "anon_grants_sites": [
+        "SELECT"
+    ],
+    "anon_grants_contributions": [
+        "INSERT"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "_about": "Dated, shrinking exceptions to the hardened gate rules. Every entry needs an owner and a target. The gate goes green today and can only get stricter.",
+    "_policy": "Adding an entry here is a decision to defer, not to ignore. Removing entries is the work.",
+    "warn_only_until": "the batch session completes wave 4 (batches 22-24); then flip WARN rules to ERROR",
+    "exceptions": {}
+}

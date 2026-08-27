@@ -1,0 +1,629 @@
+{
+  "iteration": 1,
+  "program": "Tirtha Atlas roadmap execution",
+  "integration_branch": "develop",
+  "constraints": [
+    "NEVER write data/sites.json \u2014 a second session owns it (batches 22-24 in flight).",
+    "NEVER auto-edit published facts (CLAUDE.md rule 5, guardrail G9). Reports and review queues only.",
+    "NEVER fill a field from model memory (CLAUDE.md rule 2, guardrail G2). Omit instead.",
+    "NEVER merge or push to main \u2014 it auto-deploys production. PRs into develop only.",
+    "New gate rules land warn-only until the other session's merges are complete.",
+    "Data session owns data/**; product session owns src/**, scripts/, schema. Hand data work over via docs/SCRAPING_BRIEFS.md."
+  ],
+  "milestone_titles": {
+    "M0": "Guardrails and tooling",
+    "M1": "Supabase activation (L1/L2/L5/O7)",
+    "M2": "Correctness reports (detect, don't auto-edit)",
+    "M3": "Domain cutover (N5)",
+    "M4": "Product & multi-device experience"
+  },
+  "milestone_prs": {},
+  "tasks": [
+    {
+      "id": "T-001",
+      "milestone": "M0",
+      "type": "code",
+      "title": "Harden the data gate with warn-mode rules (coord precision, country bbox, circuit cardinality, significance != story, dup coords)",
+      "files": [
+        "scripts/validate-data.mjs",
+        "data/vocab/gate-exceptions.json"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "gate:874 warnings surfaced across 5 rules; default exit 0, --strict exit 1"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-002",
+      "milestone": "M0",
+      "type": "code",
+      "title": "Test suite for src/lib/sites.ts pure functions via node --test (O1 partial)",
+      "files": [
+        "src/lib/site-utils.ts",
+        "src/lib/site-utils.test.ts",
+        "src/lib/sites.ts"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "test:21 passing (11 site-utils + 10 tripwire); tsc clean"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-003",
+      "milestone": "M0",
+      "type": "data-derived",
+      "title": "Dynasty controlled vocabulary: alias map collapsing 313 values to a canonical set",
+      "files": [
+        "data/vocab/dynasty.json",
+        "scripts/normalize-vocab.mjs"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:87% of 941 records resolved, 313->127 canonical labels; 119 routed to review"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-004",
+      "milestone": "M0",
+      "type": "data-derived",
+      "title": "Architectural style controlled vocabulary: 303 values to canonical styles + styleNote",
+      "files": [
+        "data/vocab/style.json"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:303->36 canonical labels for resolved records; 413 unset + 205 review surfaced"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-005",
+      "milestone": "M0",
+      "type": "code",
+      "title": "Formalise the stub/compact/flagship tier taxonomy with per-tier field requirements (B12)",
+      "files": [
+        "data/vocab/tiers.json",
+        "docs/TIERS.md"
+      ],
+      "deps": [
+        "T-001"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "file:data/vocab/tiers.json + docs/TIERS.md"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-006",
+      "milestone": "M0",
+      "type": "code",
+      "title": "Corpus backup workflow: dated release artifact of data/sites.json on every develop merge (L6)",
+      "files": [
+        ".github/workflows/corpus-backup.yml"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "file:.github/workflows/corpus-backup.yml"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-010",
+      "milestone": "M1",
+      "type": "migration",
+      "title": "Fix 0001_init.sql: story NOT NULL breaks seeding (128+ records lack story); align columns with the live schema",
+      "files": [
+        "supabase/migrations/0001_init.sql"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "file:supabase/migrations/0001_init.sql (dry-run clean, rolled back)"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-011",
+      "milestone": "M1",
+      "type": "live-apply",
+      "title": "Apply the initial migration to the live Supabase project (L1)",
+      "files": [
+        "program/evidence/T-011-migration.json"
+      ],
+      "deps": [
+        "T-010"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 2,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-011-migration.json"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-012",
+      "milestone": "M1",
+      "type": "migration",
+      "title": "Enable PostGIS, add a geography column and GiST index for nearest/within-radius (L2)",
+      "files": [
+        "supabase/migrations/0002_postgis.sql",
+        "program/evidence/T-012-postgis.json"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 2,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-012-postgis.json"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-013",
+      "milestone": "M1",
+      "type": "migration",
+      "title": "RLS: public read on sites, service-role write only, contributor writes confined to the queue (L5)",
+      "files": [
+        "supabase/migrations/0003_rls.sql",
+        "program/evidence/T-013-rls.json"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 2,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-013-rls.json"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-014",
+      "milestone": "M1",
+      "type": "live-apply",
+      "title": "Seed the live database from data/sites.json (read-only on the corpus) and verify row parity",
+      "files": [
+        "scripts/seed-supabase.mjs",
+        "program/evidence/T-014-seed.json"
+      ],
+      "deps": [
+        "T-012",
+        "T-013"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 2,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "live:program/evidence/T-014-seed.json (941/941 parity, RLS probed)"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-015",
+      "milestone": "M1",
+      "type": "code",
+      "title": "Generate TypeScript types from the live schema so Site stops being hand-maintained (O7)",
+      "files": [
+        "src/lib/database.types.ts"
+      ],
+      "deps": [
+        "T-011"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "file:src/lib/database.types.ts (343 lines, tsc clean)"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-020",
+      "milestone": "M2",
+      "type": "report",
+      "title": "Coordinate precision review queue: 68 records at <=2dp, each with its Wikidata P625 candidate (C1, detect-only)",
+      "files": [
+        "scripts/report-coordinates.mjs",
+        "reports/coordinates.md"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/coordinates.md \u2014 68 flagged, 31 with better P625, live Wikidata"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-021",
+      "milestone": "M2",
+      "type": "report",
+      "title": "Circuit correctness report: Jyotirlinga tagged 14 for 12, roster gaps, taxonomy pollution (B2, detect-only)",
+      "files": [
+        "scripts/report-circuits.mjs",
+        "reports/circuits.md"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/circuits.md \u2014 1 overfull, 7 incomplete, 2 polluted"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-022",
+      "milestone": "M2",
+      "type": "report",
+      "title": "Source tiering analysis: rank citations primary/scholarly/encyclopedic/editorial, surface single-Wikipedia records (C4)",
+      "files": [
+        "scripts/report-sources.mjs",
+        "reports/sources.md"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/sources.md \u2014 84% Wikipedia-only, 86 flagship single-sourced"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-023",
+      "milestone": "M2",
+      "type": "report",
+      "title": "Data-health summary: coverage by state/tradition/era, tier distribution, field completeness (C7)",
+      "files": [
+        "scripts/report-health.mjs",
+        "reports/health.md"
+      ],
+      "deps": [
+        "T-005"
+      ],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "report:reports/health.md \u2014 only 26/150 flagship records meet the contract"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-030",
+      "milestone": "M3",
+      "type": "code",
+      "title": "canonicalSiteUrl() backstop so a stale env var can never leak a retired host; point canonical at tirthaatlas.org",
+      "files": [
+        "src/lib/site-url.mjs",
+        "scripts/check-site-url.mjs",
+        "src/app/robots.ts",
+        "src/app/sitemap.ts",
+        "src/app/layout.tsx"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "guard:26 checks; robots.txt emits tirthaatlas.org with env unset and rejects preview hosts"
+      ],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-040",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Responsive audit harness: Playwright across 390/768/1440 x light/dark, screenshots as evidence (O2)",
+      "files": [
+        "playwright.config.ts",
+        "e2e/responsive.spec.ts"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-041",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Mobile bottom-sheet detail panel replacing the side drawer; 44px minimum tap targets (A4)",
+      "files": [
+        "src/app/BottomSheet.tsx",
+        "src/app/mobile.css"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-042",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Marker clustering by proximity at low zoom, preserving era colour and tradition shape (A5)",
+      "files": [
+        "src/lib/cluster.ts",
+        "src/lib/cluster.test.ts"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-043",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Keyboard navigation of map marks: tab in filtered order, Enter opens, Esc closes (A10, blocks O3)",
+      "files": [
+        "src/app/map-keyboard.ts"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-044",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Empty and loading states: no-match reset, hydration skeleton (A8)",
+      "files": [
+        "src/app/EmptyState.tsx"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-045",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Detail panel polish: sticky header, prev/next through filtered results, share deep link (A7)",
+      "files": [
+        "src/app/DetailPanel.tsx"
+      ],
+      "deps": [
+        "T-041"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-046",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Circuit mode: select a circuit, members light up numbered by ordinal, others dim (G1+G2)",
+      "files": [
+        "src/app/CircuitMode.tsx",
+        "src/lib/circuits.ts"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-047",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Stub and compact page UX so a thin record never looks broken; completeness badge (B10+B12)",
+      "files": [
+        "src/app/site/[slug]/completeness.tsx"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-048",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Print stylesheet: a temple page prints as a one-page offline pilgrim reference (A11)",
+      "files": [
+        "src/app/print.css"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-049",
+      "milestone": "M4",
+      "type": "code",
+      "title": "First-visit coach mark on the timeline scrubber, dismissible, remembered (A9)",
+      "files": [
+        "src/app/CoachMark.tsx"
+      ],
+      "deps": [
+        "T-040"
+      ],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-050",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Per-site OG images with name, era colour and location (N2)",
+      "files": [
+        "src/app/site/[slug]/opengraph-image.tsx"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    },
+    {
+      "id": "T-051",
+      "milestone": "M4",
+      "type": "code",
+      "title": "Structured data: BreadcrumbList, FAQPage, ImageObject alongside the existing Place/HinduTemple (N1)",
+      "files": [
+        "src/lib/jsonld.ts",
+        "src/lib/jsonld.test.ts"
+      ],
+      "deps": [],
+      "status": "pending",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [],
+      "last_error": null,
+      "commit": null
+    }
+  ]
+}

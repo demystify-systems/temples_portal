@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITES, allCircuits, allDynasties, slugify } from "@/lib/sites";
-
-const base = process.env.NEXT_PUBLIC_SITE_URL || "https://temples-portal.vercel.app";
+import { SITE_URL as base } from "@/lib/site-url.mjs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

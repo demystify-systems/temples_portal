@@ -1,0 +1,33 @@
+{
+  "_about": "Formal definition of the record tiers (BACKLOG B12). Until now `tier` was a label with no enforced meaning: 150 records carry no tier (implying flagship) but only 41 of them have `access` and 100 have `patron`, while 410 compact records DO carry `story`. The tier said nothing about the record.",
+  "_policy": "A tier is a promise about which fields are present, nothing more. It is never a quality judgement, and a record is never promoted by inventing a field (CLAUDE.md rule 2). Promotion happens when a sourced fact is added.",
+  "_enforcement": "scripts/validate-data.mjs checks `tier` is one of these keys (ERROR). Per-tier field requirements are reported by scripts/report-health.mjs and become gate warnings once the backlog is cleared.",
+
+  "tiers": {
+    "stub": {
+      "rank": 1,
+      "label": "Gazetteer stub",
+      "summary": "Enough to place it on the map and prove it exists.",
+      "requires": ["id", "name", "country", "place", "lat", "lng", "tradition", "sources"],
+      "ui": "Must never look broken. Show what exists plus a 'help complete this' call to action (BACKLOG B10)."
+    },
+    "compact": {
+      "rank": 2,
+      "label": "Compact record",
+      "summary": "The essentials: what it is, when, to whom, and why it matters.",
+      "requires": ["id", "name", "country", "place", "lat", "lng", "tradition", "sources", "deity", "built", "builtDisplay", "dynasty", "style", "significance"],
+      "ui": "Full page, no completion prompt for optional fields."
+    },
+    "flagship": {
+      "rank": 3,
+      "label": "Flagship record",
+      "summary": "A reference-grade entry: documented history AND legend AND how to get there AND who paid for it.",
+      "requires": ["id", "name", "country", "place", "lat", "lng", "tradition", "sources", "deity", "built", "builtDisplay", "dynasty", "style", "significance", "story", "access", "patron"],
+      "also_expects": {
+        "non_wikipedia_source": "At least one source that is not Wikipedia. 84% of the corpus is currently Wikipedia-only; a flagship record should not be.",
+        "coord_precision_dp": 3
+      },
+      "ui": "Full page with access panel, patron line, and the katha shown under its own heading, never blended with significance (CLAUDE.md rule 3)."
+    }
+  }
+}

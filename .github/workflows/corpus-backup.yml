@@ -1,0 +1,67 @@
+# The corpus is the asset. data/sites.json lives in one repo on one account, and
+# nothing else in the project can regenerate the curated records if it is lost.
+# This publishes an independent, dated copy on every change to the integration
+# branch, plus a weekly snapshot so a silent corruption is recoverable to a known
+# good day rather than to whenever someone last noticed. (BACKLOG L6)
+name: corpus-backup
+
+on:
+  push:
+    branches: [develop]
+    paths: ["data/sites.json"]
+  schedule:
+    - cron: "17 3 * * 0"   # Sundays, 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify the corpus before archiving it
+        run: |
+          node -e "
+            const s = require('./data/sites.json');
+            if (!Array.isArray(s) || s.length === 0) throw new Error('corpus is empty or not an array');
+            const unsourced = s.filter(r => !Array.isArray(r.sources) || !r.sources.length);
+            if (unsourced.length) throw new Error(unsourced.length + ' unsourced records — refusing to archive');
+            console.log('corpus ok:', s.length, 'records');
+          "
+
+      - name: Build the archive
+        id: pack
+        run: |
+          STAMP=$(date -u +%Y-%m-%d)
+          COUNT=$(node -p "require('./data/sites.json').length")
+          mkdir -p dist
+          cp data/sites.json "dist/sites-${STAMP}.json"
+          gzip -9 -k "dist/sites-${STAMP}.json"
+          (cd dist && sha256sum "sites-${STAMP}.json" "sites-${STAMP}.json.gz" > "sites-${STAMP}.sha256")
+          echo "stamp=$STAMP" >> "$GITHUB_OUTPUT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      # Artifact retention is the near-term recovery path.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corpus-${{ steps.pack.outputs.stamp }}
+          path: dist/
+          retention-days: 90
+
+      # A release is the long-term one: it outlives artifact retention and is
+      # downloadable without a GitHub token.
+      - name: Publish a dated release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="corpus-${{ steps.pack.outputs.stamp }}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/* --clobber
+          else
+            gh release create "$TAG" dist/* \
+              --title "Corpus snapshot ${{ steps.pack.outputs.stamp }}" \
+              --notes "${{ steps.pack.outputs.count }} records. Independent recovery copy of data/sites.json (CC BY-SA 4.0 for prose; see README)."
+          fi
