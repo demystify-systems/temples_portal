@@ -50,6 +50,7 @@
  {
   "id": "gangaikonda-cholapuram",
   "name": "Brihadisvara Temple, Gangaikonda Cholapuram",
+  "native": "கங்கைகொண்ட சோழீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Gangaikonda Cholapuram",
@@ -90,6 +91,7 @@
  {
   "id": "airavatesvara-darasuram",
   "name": "Airavatesvara Temple",
+  "native": "ஐராவதேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Darasuram, Kumbakonam",
@@ -256,6 +258,7 @@
  {
   "id": "shore-temple-mahabalipuram",
   "name": "Shore Temple",
+  "native": "மாமல்லபுரம் கடற்கரைக் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Mahabalipuram (Mamallapuram)",
@@ -297,6 +300,7 @@
  {
   "id": "kailasanathar-kanchipuram",
   "name": "Kailasanathar Temple",
+  "native": "காஞ்சிபுரம் கைலாசநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -407,6 +411,7 @@
  {
   "id": "arunachaleswarar-tiruvannamalai",
   "name": "Arunachaleswarar Temple",
+  "native": "அண்ணாமலையார் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvannamalai",
@@ -540,6 +545,7 @@
  {
   "id": "kapaleeshwarar-chennai",
   "name": "Kapaleeshwarar Temple",
+  "native": "மயிலாப்பூர் கபாலீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Mylapore, Chennai",
@@ -680,6 +686,7 @@
  {
   "id": "vadakkunnathan-thrissur",
   "name": "Vadakkunnathan Temple",
+  "native": "തൃശ്ശൂർ വടക്കുംനാഥക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thrissur",
@@ -711,6 +718,7 @@
  {
   "id": "virupaksha-hampi",
   "name": "Virupaksha Temple, Hampi",
+  "native": "ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Hampi",
@@ -754,6 +762,7 @@
  {
   "id": "vittala-hampi",
   "name": "Vittala Temple, Hampi",
+  "native": "ಹಂಪೆ",
   "country": "India",
   "state": "Karnataka",
   "place": "Hampi",
@@ -794,6 +803,7 @@
  {
   "id": "chennakesava-belur",
   "name": "Chennakesava Temple, Belur",
+  "native": "ಚೆನ್ನಕೇಶವ ದೇವಾಲಯ, ಬೇಲೂರು",
   "country": "India",
   "state": "Karnataka",
   "place": "Belur",
@@ -834,6 +844,7 @@
  {
   "id": "hoysaleswara-halebidu",
   "name": "Hoysaleswara Temple, Halebidu",
+  "native": "ಹೊಯ್ಸಳೇಶ್ವರ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Halebidu",
@@ -914,6 +925,7 @@
  {
   "id": "virupaksha-pattadakal",
   "name": "Virupaksha Temple, Pattadakal",
+  "native": "ಪಟ್ಟದಕಲ್ಲು",
   "country": "India",
   "state": "Karnataka",
   "place": "Pattadakal",
@@ -986,6 +998,7 @@
  {
   "id": "durga-aihole",
   "name": "Durga Temple, Aihole",
+  "native": "ದುರ್ಗಾ ದೇವಾಲಯ, ಐಹೊಳೆ",
   "country": "India",
   "state": "Karnataka",
   "place": "Aihole",
@@ -1017,6 +1030,7 @@
  {
   "id": "shravanabelagola",
   "name": "Gommateshwara (Bahubali), Shravanabelagola",
+  "native": "ಗೊಮ್ಮಟೇಶ್ವರ ಪ್ರತಿಮೆ",
   "country": "India",
   "state": "Karnataka",
   "place": "Shravanabelagola",
@@ -1049,6 +1063,7 @@
  {
   "id": "udupi-krishna",
   "name": "Sri Krishna Matha, Udupi",
+  "native": "ಕೃಷ್ಣ ಮಠ",
   "country": "India",
   "state": "Karnataka",
   "place": "Udupi",
@@ -1078,6 +1093,7 @@
  {
   "id": "gokarna-mahabaleshwar",
   "name": "Mahabaleshwar Temple, Gokarna",
+  "native": "ಮಹಾಬಲೇಶ್ವರ ದೇವಾಲಯ ಗೋಕರ್ಣ",
   "country": "India",
   "state": "Karnataka",
   "place": "Gokarna",
@@ -1109,6 +1125,7 @@
  {
   "id": "murudeshwara",
   "name": "Murudeshwara Temple",
+  "native": "ಮುರುಡೇಶ್ವರ",
   "country": "India",
   "state": "Karnataka",
   "place": "Murudeshwara",
@@ -1182,6 +1199,7 @@
  {
   "id": "mallikarjuna-srisailam",
   "name": "Mallikarjuna Swamy Temple, Srisailam",
+  "native": "శ్రీ భ్రమరాంబ మల్లికార్జున స్వామి ఆలయం, శ్రీశైలం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Srisailam",
@@ -1252,6 +1270,7 @@
  {
   "id": "kanaka-durga-vijayawada",
   "name": "Kanaka Durga Temple",
+  "native": "కనకదుర్గ ఆలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Indrakeeladri, Vijayawada",
@@ -1280,6 +1299,7 @@
  {
   "id": "srikalahasti",
   "name": "Srikalahasteeswara Temple",
+  "native": "శ్రీకాళహస్తీశ్వర దేవస్థానము",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Srikalahasti",
@@ -1313,6 +1333,7 @@
  {
   "id": "veerabhadra-lepakshi",
   "name": "Veerabhadra Temple, Lepakshi",
+  "native": "లేపాక్షి వీరభద్రస్వామి ఆలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Lepakshi",
@@ -1345,6 +1366,7 @@
  {
   "id": "ramappa-palampet",
   "name": "Ramappa (Rudreshwara) Temple",
+  "native": "రామప్ప దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Palampet, Mulugu",
@@ -1504,6 +1526,7 @@
  {
   "id": "gangotri",
   "name": "Gangotri Temple",
+  "native": "गंगोत्री",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Gangotri (3,100 m)",
@@ -1537,6 +1560,7 @@
  {
   "id": "yamunotri",
   "name": "Yamunotri Temple",
+  "native": "यमुनोत्री",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Yamunotri (3,293 m)",
@@ -1685,6 +1709,7 @@
  {
   "id": "dhamek-sarnath",
   "name": "Dhamek Stupa, Sarnath",
+  "native": "धामेक स्तूप",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Sarnath, Varanasi",
@@ -1756,6 +1781,7 @@
  {
   "id": "krishna-janmabhoomi-mathura",
   "name": "Shri Krishna Janmabhoomi",
+  "native": "कृष्ण जन्म भूमि",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Mathura",
@@ -1795,6 +1821,7 @@
  {
   "id": "mahabodhi-bodhgaya",
   "name": "Mahabodhi Temple",
+  "native": "महाबोधि मंदिर",
   "country": "India",
   "state": "Bihar",
   "place": "Bodh Gaya",
@@ -1836,6 +1863,7 @@
  {
   "id": "vishnupad-gaya",
   "name": "Vishnupad Temple",
+  "native": "विष्णुपद मंदिर",
   "country": "India",
   "state": "Bihar",
   "place": "Gaya",
@@ -1870,6 +1898,7 @@
  {
   "id": "baidyanath-deoghar",
   "name": "Baidyanath Temple (Baba Baidyanath Dham)",
+  "native": "वैद्यनाथ मन्दिर",
   "country": "India",
   "state": "Jharkhand",
   "place": "Deoghar",
@@ -1942,6 +1971,7 @@
  {
   "id": "patna-sahib",
   "name": "Takht Sri Harmandir Sahib, Patna",
+  "native": "तखत श्री हरिमंदिर जी पटना साहिब",
   "country": "India",
   "state": "Bihar",
   "place": "Patna City",
@@ -2360,6 +2390,7 @@
  {
   "id": "modhera-sun",
   "name": "Sun Temple, Modhera",
+  "native": "સૂર્યમંદિર, મોઢેરા",
   "country": "India",
   "state": "Gujarat",
   "place": "Modhera",
@@ -2396,6 +2427,7 @@
  {
   "id": "ambaji",
   "name": "Ambaji Mata Temple",
+  "native": "અંબાજી",
   "country": "India",
   "state": "Gujarat",
   "place": "Ambaji, Banaskantha",
@@ -2429,6 +2461,7 @@
  {
   "id": "palitana-shatrunjaya",
   "name": "Palitana Temples, Shatrunjaya Hill",
+  "native": "પાલીતાણાના જૈન મંદિરો",
   "country": "India",
   "state": "Gujarat",
   "place": "Palitana",
@@ -2460,6 +2493,7 @@
  {
   "id": "dilwara-mount-abu",
   "name": "Dilwara Temples",
+  "native": "दिलवाड़ा जैन मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Mount Abu",
@@ -2489,6 +2523,7 @@
  {
   "id": "ranakpur",
   "name": "Ranakpur Jain Temple",
+  "native": "रणकपुर जैन मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Ranakpur, Pali",
@@ -2548,6 +2583,7 @@
  {
   "id": "karni-mata-deshnoke",
   "name": "Karni Mata Temple",
+  "native": "करणी माता मन्दिर ,बीकानेर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Deshnoke, Bikaner",
@@ -2619,6 +2655,7 @@
  {
   "id": "ajanta-caves",
   "name": "Ajanta Caves",
+  "native": "अजिंठा",
   "country": "India",
   "state": "Maharashtra",
   "place": "Ajanta, Chhatrapati Sambhajinagar",
@@ -2659,6 +2696,7 @@
  {
   "id": "elephanta",
   "name": "Elephanta Caves",
+  "native": "घारापुरीची लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Gharapuri Island, Mumbai Harbour",
@@ -2731,6 +2769,7 @@
  {
   "id": "bhimashankar",
   "name": "Bhimashankar Temple",
+  "native": "भिमाशंकर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Bhimashankar, Pune district",
@@ -2796,6 +2835,7 @@
  {
   "id": "shirdi-sai",
   "name": "Shri Saibaba Samadhi Mandir, Shirdi",
+  "native": "शिर्डी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Shirdi",
@@ -2831,6 +2871,7 @@
  {
   "id": "siddhivinayak-mumbai",
   "name": "Shree Siddhivinayak Temple",
+  "native": "सिद्धिविनायक मंदिर, मुंबई",
   "country": "India",
   "state": "Maharashtra",
   "place": "Prabhadevi, Mumbai",
@@ -2865,6 +2906,7 @@
  {
   "id": "vitthal-pandharpur",
   "name": "Vitthal Rukmini Temple, Pandharpur",
+  "native": "विठ्ठल मंदिर, पंढरपूर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Pandharpur",
@@ -2936,6 +2978,7 @@
  {
   "id": "omkareshwar",
   "name": "Omkareshwar Temple",
+  "native": "ओंकारेश्वर मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Mandhata Island, Narmada",
@@ -2967,6 +3010,7 @@
  {
   "id": "khajuraho",
   "name": "Khajuraho Group of Temples",
+  "native": "खजुराहो स्मारकों का समूह",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Khajuraho",
@@ -3086,6 +3130,7 @@
  {
   "id": "konark-sun",
   "name": "Konark Sun Temple",
+  "native": "କୋଣାର୍କ ସୂର୍ଯ୍ୟ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Konark",
@@ -3126,6 +3171,7 @@
  {
   "id": "lingaraja-bhubaneswar",
   "name": "Lingaraja Temple",
+  "native": "ଲିଙ୍ଗରାଜ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -3154,6 +3200,7 @@
  {
   "id": "mukteshvara-bhubaneswar",
   "name": "Mukteshvara Temple",
+  "native": "ମୁକ୍ତେଶ୍ଵର ଦେଉଳ",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -3251,6 +3298,7 @@
  {
   "id": "belur-math",
   "name": "Belur Math (Ramakrishna Temple)",
+  "native": "বেলুড় মঠ",
   "country": "India",
   "state": "West Bengal",
   "place": "Belur, Howrah",
@@ -3281,6 +3329,7 @@
  {
   "id": "bishnupur-rasmancha",
   "name": "Bishnupur Temple Town (Rasmancha & terracotta temples)",
+  "native": "রাসমঞ্চ",
   "country": "India",
   "state": "West Bengal",
   "place": "Bishnupur, Bankura",
@@ -3350,6 +3399,7 @@
  {
   "id": "tripura-sundari-matabari",
   "name": "Tripura Sundari Temple (Matabari)",
+  "native": "ত্রিপুরেশ্বরী মন্দির",
   "country": "India",
   "state": "Tripura",
   "place": "Udaipur, Tripura",
@@ -3459,6 +3509,7 @@
  {
   "id": "changu-narayan",
   "name": "Changu Narayan Temple",
+  "native": "चाँगुनारायण मन्दिर",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Bhaktapur",
@@ -3499,6 +3550,7 @@
  {
   "id": "muktinath",
   "name": "Muktinath Temple",
+  "native": "मुक्तिनाथ",
   "country": "Nepal",
   "state": "Gandaki (Mustang)",
   "place": "Muktinath (3,800 m)",
@@ -3534,6 +3586,7 @@
  {
   "id": "janaki-mandir",
   "name": "Janaki Mandir",
+  "native": "जानकी मन्दिर",
   "country": "Nepal",
   "state": "Madhesh",
   "place": "Janakpur",
@@ -3602,6 +3655,7 @@
  {
   "id": "swayambhunath",
   "name": "Swayambhunath Stupa",
+  "native": "स्वयम्भूनाथ",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Kathmandu",
@@ -5239,6 +5293,7 @@
  {
   "id": "azhagiya-manavala-uraiyur",
   "name": "Azhagiya Manavala Perumal Temple",
+  "native": "திருஉறையூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Uraiyur, Tiruchirappalli",
@@ -5271,6 +5326,7 @@
  {
   "id": "uthamar-kovil-trichy",
   "name": "Uthamar Kovil",
+  "native": "உத்தமர் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Uthamarkoil, Tiruchirappalli",
@@ -5303,6 +5359,7 @@
  {
   "id": "pundarikakshan-thiruvellarai",
   "name": "Pundarikakshan Perumal Temple",
+  "native": "திருவெள்ளறை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvellarai",
@@ -5335,6 +5392,7 @@
  {
   "id": "sundararaja-anbil",
   "name": "Sundararaja Perumal Temple, Anbil",
+  "native": "திருவடிவழகியநம்பி பெருமாள் திருக்கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Anbil",
@@ -5367,6 +5425,7 @@
  {
   "id": "appakkudathaan-koviladi",
   "name": "Appakkudathaan Perumal Temple",
+  "native": "கோவிலடி அப்பால ரெங்கநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Koviladi",
@@ -5399,6 +5458,7 @@
  {
   "id": "hara-saabha-vimochana-kandiyur",
   "name": "Hara Saabha Vimocchana Perumal Temple",
+  "native": "திருக்கண்டியூர் ஹர சாப விமோசன பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukandiyur",
@@ -5463,6 +5523,7 @@
  {
   "id": "gajendra-varadha-kabisthalam",
   "name": "Gajendra Varadha Perumal Temple",
+  "native": "கஜேந்திர வரதப் பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kabisthalam",
@@ -5495,6 +5556,7 @@
  {
   "id": "valvil-ramar-pullabhoothangudi",
   "name": "Thirupullabhoothangudi Temple (Valvil Ramar)",
+  "native": "புள்ளபூதங்குடி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pullabhoothangudi",
@@ -5527,6 +5589,7 @@
  {
   "id": "sarangapani-kumbakonam",
   "name": "Sarangapani Temple",
+  "native": "கும்பகோணம் சாரங்கபாணி சுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kumbakonam",
@@ -5564,6 +5627,7 @@
  {
   "id": "oppiliappan-tirunageswaram",
   "name": "Oppiliappan Temple",
+  "native": "உப்பிலியப்பன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvinnagar, Tirunageswaram",
@@ -5596,6 +5660,7 @@
  {
   "id": "nachiyar-kovil-thirunaraiyur",
   "name": "Nachiyar Kovil (Thirunarayur Nambi Temple)",
+  "native": "திருநறையூர் நம்பி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nachiyar Kovil, Thirunaraiyur",
@@ -5661,6 +5726,7 @@
  {
   "id": "bhaktavatsala-thirukannamangai",
   "name": "Bhaktavatsala Perumal Temple",
+  "native": "பக்தவத்சலப்பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukannamangai",
@@ -5693,6 +5759,7 @@
  {
   "id": "neelamegha-thirukannapuram",
   "name": "Neelamegha Perumal Temple",
+  "native": "நீலமேகப்பெருமாள் கோவில், திருக்கண்ணபுரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukannapuram",
@@ -5725,6 +5792,7 @@
  {
   "id": "loganatha-thirukannangudi",
   "name": "Loganatha Perumal Temple",
+  "native": "லோகநாதப் பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukannankudi",
@@ -5757,6 +5825,7 @@
  {
   "id": "soundararaja-nagapattinam",
   "name": "Soundararajaperumal Temple, Nagapattinam",
+  "native": "திருநாகை சவுந்தரராஜப்பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nagapattinam",
@@ -5789,6 +5858,7 @@
  {
   "id": "thanjai-mamani-thanjavur",
   "name": "Thanjai Mamani Koil",
+  "native": "திருத்தஞ்சை மாமணிக் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thanjavur",
@@ -5885,6 +5955,7 @@
  {
   "id": "devaadi-raja-therazhundur",
   "name": "Devaadi Raja Perumal Temple",
+  "native": "திருவழுந்தூர் தேவாதிராஜன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Therazhundur",
@@ -5918,6 +5989,7 @@
  {
   "id": "sthalasayana-thirusirupuliyur",
   "name": "Sthalasayana Perumal Temple, Tirusirupuliyur",
+  "native": "திருச்சிறுபுலியூர் தலசயனப்பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirusirupuliyur",
@@ -5950,6 +6022,7 @@
  {
   "id": "nanmadiya-thalachangadu",
   "name": "Nanmadiya Perumal Temple",
+  "native": "தலைச்சங்காடு",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thalachangadu",
@@ -6014,6 +6087,7 @@
  {
   "id": "thirukkavalampadi-thirunangur",
   "name": "Thirukkavalampadi",
+  "native": "திருக்காவளம்பாடி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6046,6 +6120,7 @@
  {
   "id": "kazheesirama-vinnagaram-sirkazhi",
   "name": "Kazheesirama Vinnagaram",
+  "native": "திருக்காழிச்சீராம விண்ணகரம் தாடாளன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sirkazhi",
@@ -6078,6 +6153,7 @@
  {
   "id": "thiruarimeya-vinnagaram-thirunangur",
   "name": "Thiruarimeya Vinnagaram",
+  "native": "திருஅரிமேய விண்ணகரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6110,6 +6186,7 @@
  {
   "id": "thiruvanpurushothamam-thirunangur",
   "name": "Thiruvanpurushothamam",
+  "native": "திருவண்புருடோத்தமம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6142,6 +6219,7 @@
  {
   "id": "perarulaalan-thirunangur",
   "name": "Perarulaalan Perumal Temple (Thirusemponsei Koil)",
+  "native": "திருச்செம்பொன் செய்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6174,6 +6252,7 @@
  {
   "id": "thirumanimadam-thirunangur",
   "name": "Thirumanimadam",
+  "native": "திருமணிமாடக் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6238,6 +6317,7 @@
  {
   "id": "thiruvali-thirunagari",
   "name": "Thiruvali-Thirunagari Temples",
+  "native": "திருவாழி-திருநகரி கோயில்கள்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvali",
@@ -6270,6 +6350,7 @@
  {
   "id": "thiruthevanartthogai-thirunangur",
   "name": "Thiruthevanartthogai",
+  "native": "திருத்தேவனார்த் தொகை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6302,6 +6383,7 @@
  {
   "id": "thiruthetriyambalam-thirunangur",
   "name": "Thiruthetriyambalam",
+  "native": "திருத்தெற்றியம்பலம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6334,6 +6416,7 @@
  {
   "id": "thirumanikkoodam-thirunangur",
   "name": "Thirumanikkoodam",
+  "native": "திருமணிக்கூடம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunangur",
@@ -6366,6 +6449,7 @@
  {
   "id": "annan-koil-thiruvellakulam",
   "name": "Annan Perumal Koil (Thiruvellakulam)",
+  "native": "திருவெள்ளக்குளம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Annan Koil, Thirunangur",
@@ -6397,6 +6481,7 @@
  {
   "id": "thiruparthanpalli-thirunangur",
   "name": "Thiruppaarththanpalli",
+  "native": "திருப்பார்த்தன் பள்ளி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Parthanpalli, Thirunangur",
@@ -6461,6 +6546,7 @@
  {
   "id": "ulagalantha-tirukoyilur",
   "name": "Ulagalantha Perumal Temple, Tirukoyilur",
+  "native": "திருக்கோயிலூர் உலகளந்த பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukoyilur",
@@ -6498,6 +6584,7 @@
  {
   "id": "varadharaja-kanchipuram",
   "name": "Varadharaja Perumal Temple, Kanchipuram",
+  "native": "காஞ்சி வரதராஜப் பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6530,6 +6617,7 @@
  {
   "id": "ashtabujakaram-kanchipuram",
   "name": "Ashtabujakaram",
+  "native": "அட்டபுயக்கரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6594,6 +6682,7 @@
  {
   "id": "tiruvelukkai-kanchipuram",
   "name": "Tiruvelukkai (Azhagiya Singar Temple)",
+  "native": "திருவேளுக்கை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6626,6 +6715,7 @@
  {
   "id": "thiruneeragam-kanchipuram",
   "name": "Thiruneeragam (Jagadeesha Perumal Shrine)",
+  "native": "காஞ்சி உலகளந்த பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6657,6 +6747,7 @@
  {
   "id": "pandava-thoothar-kanchipuram",
   "name": "Pandava Thoothar Perumal Temple",
+  "native": "திருப்பாடகம் பாண்டவதூதப் பெருமாள் திருக்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6689,6 +6780,7 @@
  {
   "id": "nilathingal-thundam-kanchipuram",
   "name": "Nilathingal Thundam Perumal Temple",
+  "native": "திரு நிலாத்திங்கள் துண்டம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6721,6 +6813,7 @@
  {
   "id": "ulagalantha-kanchipuram",
   "name": "Ulagalantha Perumal Temple (Thiruooragam)",
+  "native": "காஞ்சி உலகளந்த பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6753,6 +6846,7 @@
  {
   "id": "yathothkari-kanchipuram",
   "name": "Yathothkari Perumal Temple (Thiruvekka)",
+  "native": "திருவெக்கா",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6785,6 +6879,7 @@
  {
   "id": "thirukkaragam-kanchipuram",
   "name": "Thirukkaragam (Karunakara Perumal shrine)",
+  "native": "காஞ்சி உலகளந்த பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6817,6 +6912,7 @@
  {
   "id": "thirukkarvaanam-kanchipuram",
   "name": "Thirukkarvaanam (Kalvar Perumal shrine)",
+  "native": "காஞ்சி உலகளந்த பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6848,6 +6944,7 @@
  {
   "id": "thirukkalvanur-kanchipuram",
   "name": "Thirukkalvanur (Adi Varaha Perumal shrine)",
+  "native": "திருக்கள்வனூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -6943,6 +7040,7 @@
  {
   "id": "vijayaraghava-thiruputkuzhi",
   "name": "Vijayaraghava Perumal Temple",
+  "native": "விசயராகவப் பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruputkuzhi",
@@ -6975,6 +7073,7 @@
  {
   "id": "veeraraghava-thiruvallur",
   "name": "Veeraraghava Swamy Temple",
+  "native": "திருவள்ளூர் வீரராகவப்பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvallur",
@@ -7008,6 +7107,7 @@
  {
   "id": "parthasarathy-triplicane",
   "name": "Parthasarathy Temple",
+  "native": "திருவல்லிக்கேணி பார்த்தசாரதி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Chennai (Triplicane)",
@@ -7040,6 +7140,7 @@
  {
   "id": "neervanna-thiruneermalai",
   "name": "Thiruneermalai Temple Complex (Neervanna Perumal)",
+  "native": "திருநீர்மலை நீர்வண்ணப்பெருமாள் திருக்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruneermalai",
@@ -7072,6 +7173,7 @@
  {
   "id": "nithyakalyana-thiruvidanthai",
   "name": "Nithyakalyana Perumal Temple",
+  "native": "திருவிடந்தை நித்ய கல்யாணப்பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvidanthai",
@@ -7104,6 +7206,7 @@
  {
   "id": "sthalasayana-mahabalipuram",
   "name": "Sthalasayana Perumal Temple (Thirukadalmallai)",
+  "native": "மாமல்லபுரம் தலசயனப் பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Mahabalipuram",
@@ -7136,6 +7239,7 @@
  {
   "id": "yoga-narasimha-sholinghur",
   "name": "Yoga Narasimha Temple (Thirukkadigai)",
+  "native": "சோளிங்கர் யோகநரசிம்ம பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sholinghur",
@@ -7168,6 +7272,7 @@
  {
   "id": "navamukunda-thirunavaya",
   "name": "Thirunavaya Navamukunda Temple",
+  "native": "തിരുനാവായ നാവാമുകുന്ദക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Tirunavaya",
@@ -7200,6 +7305,7 @@
  {
   "id": "vamanamoorthy-thrikkakara",
   "name": "Thrikkakara Vamanamoorthy Temple",
+  "native": "തൃക്കാക്കര ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thrikkakara",
@@ -7232,6 +7338,7 @@
  {
   "id": "lakshmana-thirumoozhikkulam",
   "name": "Thirumoozhikkulam Lakshmana Perumal Temple",
+  "native": "തിരുമൂഴിക്കുളം ലക്ഷ്മണ പെരുമാൾ ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Moozhikkulam",
@@ -7296,6 +7403,7 @@
  {
   "id": "mahavishnu-thrikodithanam",
   "name": "Thrikodithanam Mahavishnu Temple",
+  "native": "തൃക്കൊടിത്താനം മഹാവിഷ്ണു ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thrikkodithanam, Changanassery",
@@ -7328,6 +7436,7 @@
  {
   "id": "thrichittatt-chengannur",
   "name": "Thrichittatt Mahavishnu Temple",
+  "native": "തൃച്ചിറ്റാറ്റ് മഹാവിഷ്ണുക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Chengannur",
@@ -7360,6 +7469,7 @@
  {
   "id": "mayapiran-puliyur",
   "name": "Thripuliyoor Mahavishnu Temple (Thiruppuliyur)",
+  "native": "തൃപ്പുലിയൂർ മഹാവിഷ്ണു ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Puliyoor, Chengannur",
@@ -7392,6 +7502,7 @@
  {
   "id": "parthasarathy-aranmula",
   "name": "Aranmula Parthasarathy Temple",
+  "native": "ആറന്മുള ശ്രീ പാർത്ഥസാരഥിക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Aranmula",
@@ -7424,6 +7535,7 @@
  {
   "id": "mahavishnu-thiruvanvandoor",
   "name": "Thiruvanvandoor Mahavishnu Temple",
+  "native": "തിരുവൻവന്ദൂർ മഹാവിഷ്ണു ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thiruvanvandoor",
@@ -7456,6 +7568,7 @@
  {
   "id": "thiruvazhmarban-thiruppathisaram",
   "name": "Thiruvazhmarban Temple (Thiruvanparisaram)",
+  "native": "திருவழி மார்பன் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppathisaram",
@@ -7488,6 +7601,7 @@
  {
   "id": "vaishnava-nambi-thirukkurungudi",
   "name": "Vaishnava Nambi Temple (Thirukkurungudi)",
+  "native": "வைஷ்ணவ நம்பி மற்றும் திருக்குறுங்குடிவல்லி நாச்சியார் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukkurungudi",
@@ -7520,6 +7634,7 @@
  {
   "id": "vanamamalai-nanguneri",
   "name": "Vanamamalai Perumal Temple",
+  "native": "வானமாமலை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nanguneri",
@@ -7552,6 +7667,7 @@
  {
   "id": "srivaikuntanathan-srivaikuntam",
   "name": "Srivaikuntanathan Perumal Temple",
+  "native": "வைகுண்டநாதர் கோவில், ஸ்ரீவைகுண்டம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Srivaikuntam",
@@ -7584,6 +7700,7 @@
  {
   "id": "mayakoothar-perungulam",
   "name": "Srinivasa (Mayakoothar) Perumal Temple",
+  "native": "திருக்குளந்தை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Perungulam",
@@ -7616,6 +7733,7 @@
  {
   "id": "vaithamanidhi-thirukkolur",
   "name": "Vaithamanidhi Perumal Temple",
+  "native": "திருக்கோளூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukolur",
@@ -7648,6 +7766,7 @@
  {
   "id": "makara-nedunkuzhaikathar-thenthiruperai",
   "name": "Makara Nedunkuzhaikathar Temple",
+  "native": "திருப்பேரை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thenthiruperai",
@@ -7712,6 +7831,7 @@
  {
   "id": "andal-srivilliputhur",
   "name": "Srivilliputhur Andal Temple",
+  "native": "திருவில்லிபுத்தூர் ஆண்டாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Srivilliputhur",
@@ -7745,6 +7865,7 @@
  {
   "id": "ninra-narayana-thiruthangal",
   "name": "Ninra Narayana Perumal Temple",
+  "native": "திருத்தங்கல் நின்ற நாராயணப் பெருமாள் திருக்கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruthankal",
@@ -7777,6 +7898,7 @@
  {
   "id": "kallalagar-alagar-koyil",
   "name": "Kallalagar Temple (Thirumaliruncholai)",
+  "native": "கள்ளழகர் திருக்கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Alagar Koyil",
@@ -7809,6 +7931,7 @@
  {
   "id": "kalamega-thirumohur",
   "name": "Thirumohoor Kalamegaperumal Temple",
+  "native": "திருமோகூர் காளமேகப் பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumohur",
@@ -7841,6 +7964,7 @@
  {
   "id": "sowmyanarayana-thirukoshtiyur",
   "name": "Sowmyanarayana Perumal Temple",
+  "native": "திருக்கோஷ்டியூர் சௌமியநாராயணப் பெருமாள் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukoshtiyur",
@@ -7873,6 +7997,7 @@
  {
   "id": "anchumoorthi-thirumittakode",
   "name": "Thirumittakode Anchumoorthi Temple (Thiruvithuvakkodu)",
+  "native": "തിരുമിറ്റകോട് അഞ്ചുമൂർത്തി ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thirumittacode",
@@ -7905,6 +8030,7 @@
  {
   "id": "adikesava-thiruvattar",
   "name": "Adikesava Perumal Temple",
+  "native": "திருவட்டாறு ஆதிகேசவப் பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvattar",
@@ -7937,6 +8063,7 @@
  {
   "id": "vijayasana-natham",
   "name": "Thiruvaragunamangai Perumal Temple",
+  "native": "திருவரகுணமங்கை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Natham",
@@ -7969,6 +8096,7 @@
  {
   "id": "bhumipalar-thirupulingudi",
   "name": "Thirupuliyangudi Perumal Temple",
+  "native": "திருப்புளிங்குடி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupulingudi",
@@ -8001,6 +8129,7 @@
  {
   "id": "koodal-azhagar-madurai",
   "name": "Koodal Azhagar Temple",
+  "native": "கூடல் அழகர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Madurai",
@@ -8033,6 +8162,7 @@
  {
   "id": "adi-jagannatha-thirupullani",
   "name": "Adi Jagannatha Perumal Temple",
+  "native": "திருப்புல்லாணி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupullani, Ramanathapuram",
@@ -8065,6 +8195,7 @@
  {
   "id": "sathyamurthi-thirumayam",
   "name": "Sathyamurthi Perumal Temple",
+  "native": "திருமயம் சத்திய மூர்த்தி பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumayam, Pudukkottai",
@@ -8129,6 +8260,7 @@
  {
   "id": "narsingh-joshimath",
   "name": "Narsingh Temple, Joshimath",
+  "native": "जोशीमठ",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Joshimath (Jyotirmath), Chamoli",
@@ -8161,6 +8293,7 @@
  {
   "id": "raghunath-devprayag",
   "name": "Raghunath Temple, Devprayag",
+  "native": "रघुनाथ मंदिर",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Devprayag, Tehri Garhwal",
@@ -8225,6 +8358,7 @@
  {
   "id": "nava-narasimha-ahobilam",
   "name": "Ahobilam Narasimha Temples",
+  "native": "అహోబిలం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Ahobilam, Nandyal",
@@ -8256,6 +8390,7 @@
  {
   "id": "pasupatheswarar-tiruvetkalam",
   "name": "Tiruvetkalam Pasupatheswarar Temple",
+  "native": "திருவேட்களம் பாசுபதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Annamalai Nagar (Tiruvetkalam), Chidambaram",
@@ -8288,6 +8423,7 @@
  {
   "id": "uchinathar-sivapuri",
   "name": "Sivapuri Uchinathar Temple",
+  "native": "திருநெல்வாயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sivapuri (Tirunelvayil), Cuddalore",
@@ -8320,6 +8456,7 @@
  {
   "id": "palvannanathar-thirukazhippalai",
   "name": "Tirukkazhippalai Palvannanathar Temple",
+  "native": "திருக்கழிப்பாலை பால்வண்ணநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sivapuri (Thirukazhipalai), Cuddalore",
@@ -8352,6 +8489,7 @@
  {
   "id": "shivalokathyagar-achalpuram",
   "name": "Achalpuram Shivalokathyagar Temple",
+  "native": "திருநல்லூர்ப் பெருமணம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Achalpuram (Tirunallur Perumanam), Mayiladuthurai",
@@ -8384,6 +8522,7 @@
  {
   "id": "tirumeni-azhagar-mahendrapalli",
   "name": "Mahendrapalli Tirumeni Azhagar Temple",
+  "native": "திருமகேந்திரப்பள்ளி திருமேனியழகர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Mahendrapalli, Mayiladuthurai",
@@ -8416,6 +8555,7 @@
  {
   "id": "mullaivananathar-thirumullaivasal",
   "name": "Mullaivananathar Temple",
+  "native": "திருமுல்லைவாசல் முல்லைவன நாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumullaivasal, Mayiladuthurai",
@@ -8448,6 +8588,7 @@
  {
   "id": "sayavaneswarar-sayavanam",
   "name": "Sayavaneswarar Temple",
+  "native": "திருச்சாய்க்காடு",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sayavanam (Thiruchaykkadu), Poompuhar",
@@ -8479,6 +8620,7 @@
  {
   "id": "pallavaneswarar-poompuhar",
   "name": "Pallavaneswarar Temple",
+  "native": "திருப்பல்லவனீச்சுரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Poompuhar (Pallavaneeswaram), Mayiladuthurai",
@@ -8511,6 +8653,7 @@
  {
   "id": "swetharanyeswarar-thiruvenkadu",
   "name": "Swetharanyeswarar Temple",
+  "native": "திருவெண்காடு சுவேதாரண்யேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvenkadu, Mayiladuthurai",
@@ -8543,6 +8686,7 @@
  {
   "id": "velladainatha-thirukkurukavur",
   "name": "Velladainatha Swami Temple",
+  "native": "திருக்குருகாவூர் வெள்ளடைநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukkurukavur, Mayiladuthurai",
@@ -8575,6 +8719,7 @@
  {
   "id": "sattainathar-sirkazhi",
   "name": "Sattainathar Temple, Sirkazhi",
+  "native": "சீர்காழி சட்டைநாதசுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sirkazhi, Mayiladuthurai",
@@ -8607,6 +8752,7 @@
  {
   "id": "vaitheeswaran-koil",
   "name": "Vaitheeswaran Koil",
+  "native": "சீர்காழி வைத்தீசுவரன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Vaitheeswaran Koil (Pullirukkuvelur), Mayiladuthurai",
@@ -8639,6 +8785,7 @@
  {
   "id": "sivalokanathar-thiruppunkur",
   "name": "Sivalokanathar Temple, Tirupunkur",
+  "native": "திருப்புன்கூர் சிவலோகநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppunkur, Mayiladuthurai",
@@ -8671,6 +8818,7 @@
  {
   "id": "somanathaswami-thiruneedur",
   "name": "Thiruneedur Somanathaswami Temple",
+  "native": "திருநீடூர் அருட்சோமநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Needur, Mayiladuthurai",
@@ -8703,6 +8851,7 @@
  {
   "id": "kalyanasundareswarar-thiruvelvikudi",
   "name": "Kalyanasundareswarar Temple, Thiruvelvikudi",
+  "native": "திருவேள்விக்குடிக் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvelvikudi, Mayiladuthurai",
@@ -8735,6 +8884,7 @@
  {
   "id": "udhvaganathar-thirumanancheri",
   "name": "Tirumanancheri Udhvaganathar Temple",
+  "native": "திருமணஞ்சேரி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumanancheri, Mayiladuthurai",
@@ -8771,6 +8921,7 @@
  {
   "id": "veerateeswarar-korukkai",
   "name": "Korukkai Veeratteswarar Temple",
+  "native": "திருக்குறுக்கை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Korukkai, Mayiladuthurai",
@@ -8803,6 +8954,7 @@
  {
   "id": "kutram-poruttha-karuppariyalur",
   "name": "Karuppariyalur Kutram Poruttha Naathar Temple",
+  "native": "திருக்கருப்பறியலூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Karuppariyalur (Thalaignayiru), Mayiladuthurai",
@@ -8834,6 +8986,7 @@
  {
   "id": "kadaimudinathar-keezhaiyur",
   "name": "Keezhaiyur Kadaimudinathar Temple",
+  "native": "திருக்கடைமுடி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keezhaiyur (Thirukkadaimudi), Mayiladuthurai",
@@ -8866,6 +9019,7 @@
  {
   "id": "amirthakadeswarar-melakadambur",
   "name": "Mela Kadambur Amirthakadeswarar Temple",
+  "native": "மேலக்கடம்பூர் அமிர்தகடேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Melakadambur, Cuddalore",
@@ -8898,6 +9052,7 @@
  {
   "id": "pathanchalinathar-kanattampuliyur",
   "name": "Kanattampuliyur Pathanchalinathar Temple",
+  "native": "கானாட்டம்புலியூர் பதஞ்சலிநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanattampuliyur, Cuddalore",
@@ -8930,6 +9085,7 @@
  {
   "id": "sakshinatheswarar-thiruppurambiyam",
   "name": "Sakshinatheswarar Temple, Thiruppurambiyam",
+  "native": "திருப்பிறம்பியம் சாட்சிநாதேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppurambiyam, Thanjavur",
@@ -8962,6 +9118,7 @@
  {
   "id": "vijayanatheswarar-vijayamangai",
   "name": "Vijayamangai Vijayanatheswarar Temple",
+  "native": "திருவிசயமங்கை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvijayamangai, Thanjavur",
@@ -9026,6 +9183,7 @@
  {
   "id": "kodeeswarar-kottaiyur",
   "name": "Kodeeswarar Temple, Kottaiyur",
+  "native": "கொட்டையூர் கோடீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kottaiyur, Kumbakonam",
@@ -9058,6 +9216,7 @@
  {
   "id": "ezhutharinathar-innambur",
   "name": "Innambur Ezhutharinathar Temple",
+  "native": "இன்னம்பூர் எழுத்தறிநாதேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Innambur, Kumbakonam",
@@ -9090,6 +9249,7 @@
  {
   "id": "prananadeswarar-thirumangalakudi",
   "name": "Prananadeswarar Temple",
+  "native": "திருமங்கலக்குடி பிராணநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumangalakudi",
@@ -9122,6 +9282,7 @@
  {
   "id": "agniswarar-kanjanur",
   "name": "Agniswarar Temple",
+  "native": "கஞ்சனூர் அக்கினீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanjanur",
@@ -9186,6 +9347,7 @@
  {
   "id": "karkadeswarar-thirundudevankudi",
   "name": "Karkadeswarar Temple",
+  "native": "திருந்துதேவன்குடி கற்கடகேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirundudevankudi",
@@ -9218,6 +9380,7 @@
  {
   "id": "satyagireeswarar-senganur",
   "name": "Satyagireeswarar Temple",
+  "native": "சேங்கனூர் சத்தியகிரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Senganur",
@@ -9249,6 +9412,7 @@
  {
   "id": "apathsahayar-thirupazhanam",
   "name": "Apathsahayar Temple",
+  "native": "திருப்பழனம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupazhanam",
@@ -9313,6 +9477,7 @@
  {
   "id": "neyyadiappar-tillaisthanam",
   "name": "Neyyadiappar Temple",
+  "native": "திருநெய்த்தானம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tillaisthanam",
@@ -9345,6 +9510,7 @@
  {
   "id": "vyakrapureeswarar-tirupperumpuliyur",
   "name": "Vyakrapureeswarar Temple",
+  "native": "பெரும்புலியூர் வியாக்ரபுரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirupperumpuliyur",
@@ -9376,6 +9542,7 @@
  {
   "id": "vaidyanathaswami-thirumazhapadi",
   "name": "Vaidyanathaswami Temple",
+  "native": "திருமழபாடி வைத்தியநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumazhapadi",
@@ -9407,6 +9574,7 @@
  {
   "id": "alanduraiyar-keezhappazhuvur",
   "name": "Alanduraiyar Temple",
+  "native": "கீழ்ப்பழுவூர் ஆலந்துறையார் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keezhappazhuvur (Kilpaluvur)",
@@ -9439,6 +9607,7 @@
  {
   "id": "semmeninathar-tirukkaanoor",
   "name": "Semmeninathar Temple",
+  "native": "திருக்கானூர் செம்மேனிநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukkaanoor",
@@ -9470,6 +9639,7 @@
  {
   "id": "sathyavaheesvarar-anbil",
   "name": "Sathyavaheesvarar Temple",
+  "native": "அன்பில் சத்தியவாகீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Anbil",
@@ -9502,6 +9672,7 @@
  {
   "id": "neelivaneswarar-thiruppainjeeli",
   "name": "Neelivaneswarar Temple",
+  "native": "திருப்பைஞ்ஞீலி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppainjeeli",
@@ -9534,6 +9705,7 @@
  {
   "id": "mattrurai-varadeswarar-thiruvasi",
   "name": "Mattrurai Varadeswarar Temple",
+  "native": "திருவாசி மாற்றுரைவரதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvasi (Tiruppachilasramam)",
@@ -9565,6 +9737,7 @@
  {
   "id": "jambukeswarar-thiruvanaikaval",
   "name": "Jambukeswarar Temple, Thiruvanaikaval",
+  "native": "திருவானைக்காவல் ஜம்புகேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvanaikaval, Tiruchirappalli",
@@ -9597,6 +9770,7 @@
  {
   "id": "maragadachaleswarar-thiruengoimalai",
   "name": "Maragadachaleswarar Temple",
+  "native": "திருஈங்கோய்மலை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruengoimalai",
@@ -9629,6 +9803,7 @@
  {
   "id": "abathsahayeswarar-anniyur",
   "name": "Abathsahayeswarar Temple",
+  "native": "திருஅன்னியூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Anniyur (Ponnur)",
@@ -9660,6 +9835,7 @@
  {
   "id": "amravaneswarar-manturai",
   "name": "Amravaneswarar Temple",
+  "native": "திருமாந்துறை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Manturai",
@@ -9692,6 +9868,7 @@
  {
   "id": "parasunathar-muzhaiyur",
   "name": "Parasunathar Temple",
+  "native": "முழையூர் பரசுநாதசுவாமி திருக்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Muzhaiyur",
@@ -9723,6 +9900,7 @@
  {
   "id": "manickavannar-tiruvalaputhur",
   "name": "Manickavannar Temple",
+  "native": "திருவாளப்புத்தூர் மாணிக்கவண்ணர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvalaputhur",
@@ -9754,6 +9932,7 @@
  {
   "id": "kundala-karaneswarar-thirukkurankaval",
   "name": "Kundala Karaneswarar Temple",
+  "native": "திருக்குரக்குக்கா",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukkurankaval",
@@ -9786,6 +9965,7 @@
  {
   "id": "pasupatiswarar-pandanallur",
   "name": "Pasupatiswarar Temple",
+  "native": "பந்தணைநல்லூர் பசுபதீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pandanallur",
@@ -9850,6 +10030,7 @@
  {
   "id": "vilwaneswarar-thiruvaikavur",
   "name": "Vilwaneswarar Temple",
+  "native": "திருவைகாவூர் வில்வவனேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvaikavur",
@@ -9882,6 +10063,7 @@
  {
   "id": "saptharisheeswarar-lalgudi",
   "name": "Saptharisheeswarar Temple",
+  "native": "லால்குடி சப்தரிஷீஸ்வரர் திருக்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Lalgudi (Thiruthavathurai)",
@@ -9914,6 +10096,7 @@
  {
   "id": "arunajadeswarar-thiruppanandal",
   "name": "Arunajadeswarar (Thaalapureeswarar) Temple",
+  "native": "திருப்பனந்தாள் அருணஜடேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppanandal",
@@ -9945,6 +10128,7 @@
  {
   "id": "ratnagiriswarar-vaatpokki",
   "name": "Ratnagiriswarar Temple",
+  "native": "அய்யர் மலை இரத்தினகிரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Vaatpokki (Ayermalai)",
@@ -9976,6 +10160,7 @@
  {
   "id": "kadambavaneswarar-kulithalai",
   "name": "Kadambavaneswarar Temple",
+  "native": "குளித்தலை கடம்பவனேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kulithalai",
@@ -10040,6 +10225,7 @@
  {
   "id": "ujjeevanathar-uyyakondan-thirumalai",
   "name": "Ujjeevanathar Temple (Uyyakondan Thirumalai)",
+  "native": "கற்குடி உய்யக்கொண்டான்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Uyyakondan Thirumalai, Tiruchirappalli",
@@ -10072,6 +10258,7 @@
  {
   "id": "panchavarnaswamy-woraiyur",
   "name": "Panchavarnaswamy Temple",
+  "native": "உறையூர் பஞ்சவர்ணேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Woraiyur, Tiruchirappalli",
@@ -10104,6 +10291,7 @@
  {
   "id": "thayumanaswami-rockfort",
   "name": "Thayumanaswami Temple, Rockfort",
+  "native": "திருச்சிராப்பள்ளி தாயுமானவர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Rockfort, Tiruchirappalli",
@@ -10136,6 +10324,7 @@
  {
   "id": "erumbeeswarar-thiruverumbur",
   "name": "Erumbeeswarar Temple",
+  "native": "எறும்பியூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruverumbur",
@@ -10168,6 +10357,7 @@
  {
   "id": "nedungalanathar-tirunedungulam",
   "name": "Nedungalanathar Temple",
+  "native": "திருநெடுங்களம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirunedungulam",
@@ -10199,6 +10389,7 @@
  {
   "id": "athmanatheswarar-tiruvalampozhil",
   "name": "Athmanatheswarar Temple",
+  "native": "திருவாலம்பொழில் ஆத்மநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvalampozhil",
@@ -10230,6 +10421,7 @@
  {
   "id": "pushpavananathar-tiruppoonturutti",
   "name": "Pushpavananathar Temple",
+  "native": "திருப்பூந்துருத்தி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppoonturutti",
@@ -10262,6 +10454,7 @@
  {
   "id": "kandeeswarar-thirukkandiyur",
   "name": "Brahma Sira Kandeeswarar Temple",
+  "native": "திருக்கண்டியூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukkandiyur",
@@ -10294,6 +10487,7 @@
  {
   "id": "odhanavaneswarar-tiruchotruthurai",
   "name": "Odhanavaneswarar Temple",
+  "native": "திருச்சோற்றுத்துறை சோற்றுத்துறை நாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruchotruthurai",
@@ -10326,6 +10520,7 @@
  {
   "id": "vedapuriswarar-thiruvedikudi",
   "name": "Vedapuriswarar Temple",
+  "native": "திருவேதிகுடி வேதபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvedikudi",
@@ -10358,6 +10553,7 @@
  {
   "id": "vasishteswarar-thittai",
   "name": "Vasishteswarar Temple",
+  "native": "தென்குடித்திட்டை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thittai (Thenkudithittai)",
@@ -10390,6 +10586,7 @@
  {
   "id": "alandurainathar-pullamangai",
   "name": "Alandurainathar Temple",
+  "native": "பசுபதி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pullamangai (Pasupathikoil)",
@@ -10421,6 +10618,7 @@
  {
   "id": "chakravageswarar-chakkarappalli",
   "name": "Chakravageswarar Temple",
+  "native": "ஐயம்பேட்டை சக்கரவாகேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Chakkarappalli",
@@ -10453,6 +10651,7 @@
  {
   "id": "mullaivananathar-thirukarukavur",
   "name": "Mullaivananathar Temple (Garbharakshambigai)",
+  "native": "திருமுல்லைவாசல் முல்லைவன நாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukarukavur",
@@ -10485,6 +10684,7 @@
  {
   "id": "palaivananathar-tiruppalaithurai",
   "name": "Palaivananathar Temple",
+  "native": "திருப்பாலைத்துறை பாலைவனநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppalaithurai (Papanasam)",
@@ -10517,6 +10717,7 @@
  {
   "id": "kalyanasundaresar-nallur",
   "name": "Kalyanasundaresar Temple",
+  "native": "திருநல்லூர் பஞ்சவர்ணேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nallur (Tirunallur)",
@@ -10549,6 +10750,7 @@
  {
   "id": "pasupatheeswarar-aavoor",
   "name": "Pasupatheeswarar Temple",
+  "native": "ஆவூர் பசுபதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Aavoor (Pasupathikoil)",
@@ -10582,6 +10784,7 @@
  {
   "id": "sakthivanesvara-sakthimutram",
   "name": "Sakthivanesvara Temple",
+  "native": "திருச்சத்தி முற்றம் சிவக்கொழுந்தீசர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sakthimutram (Thirusakthimutram)",
@@ -10614,6 +10817,7 @@
  {
   "id": "thenupuriswarar-patteeswaram",
   "name": "Thenupuriswarar Temple",
+  "native": "பட்டீச்சரம் பட்டீஸ்வரர் கோயில்.",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Patteeswaram",
@@ -10647,6 +10851,7 @@
  {
   "id": "vadathali-pazhayarai",
   "name": "Pazhayarai Vadathali Temple",
+  "native": "பழையாறை சோமேசர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pazhayarai",
@@ -10679,6 +10884,7 @@
  {
   "id": "kabartheeswarar-thiruvalanchuzhi",
   "name": "Kabartheeswarar Temple",
+  "native": "சுவேத விநாயகர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvalanchuzhi",
@@ -10711,6 +10917,7 @@
  {
   "id": "adi-kumbeswarar-kumbakonam",
   "name": "Adi Kumbeswarar Temple",
+  "native": "கும்பகோணம் கும்பேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kumbakonam",
@@ -10775,6 +10982,7 @@
  {
   "id": "kasi-viswanathar-kumbakonam",
   "name": "Kasi Viswanathar Temple (Kudanthai Karonam)",
+  "native": "கும்பகோணம் காசி விஸ்வநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kumbakonam",
@@ -10807,6 +11015,7 @@
  {
   "id": "naganathar-thirunageswaram",
   "name": "Naganathar Temple",
+  "native": "திருநாகேஸ்வரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunageswaram",
@@ -10839,6 +11048,7 @@
  {
   "id": "mahalingeswarar-thiruvidaimarudur",
   "name": "Mahalingeswarar Temple",
+  "native": "திருவிடைமருதூர் மகாலிங்கேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvidaimarudur",
@@ -10871,6 +11081,7 @@
  {
   "id": "abathsahayeswarar-aduthurai",
   "name": "Abathsahayeswarar Temple (Then Kurangaduthurai)",
+  "native": "தென்குரங்காடுதுறை ஆபத்சகாயேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Aduthurai",
@@ -10934,6 +11145,7 @@
  {
   "id": "kokileswarar-tirukozhambiam",
   "name": "Kokileswarar Temple",
+  "native": "திருக்கோழம்பியம் கோகிலேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukozhambiam (Thirukkozhambam)",
@@ -10966,6 +11178,7 @@
  {
   "id": "masilamaniswara-thiruvaduthurai",
   "name": "Masilamaniswara Temple",
+  "native": "திருவாவடுதுறை கோமுக்தீசுவரர் ஆலயம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvaduthurai",
@@ -11061,6 +11274,7 @@
  {
   "id": "mayuranathaswami-mayiladuthurai",
   "name": "Mayuranathaswami Temple",
+  "native": "மயிலாடுதுறை மாயூரநாதசுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Mayiladuthurai",
@@ -11094,6 +11308,7 @@
  {
   "id": "uchiravaneswarar-tiruvilanagar",
   "name": "Uchiravaneswarar Temple",
+  "native": "திருவிளநகர் உசிரவனேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvilanagar (Vilanagar)",
@@ -11125,6 +11340,7 @@
  {
   "id": "veerateswarar-keelaparasalur",
   "name": "Veerateswarar Temple",
+  "native": "கீழப்பரசலூர் வீரட்டேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keelaparasalur (Tiruppariyalur)",
@@ -11161,6 +11377,7 @@
  {
   "id": "swarnapureeswarar-semponarkoil",
   "name": "Swarnapureeswarar Temple",
+  "native": "செம்பொனார்கோவில் சுவர்ணபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Semponarkoil (Tiruchemponpalli)",
@@ -11192,6 +11409,7 @@
  {
   "id": "natrunaiyappar-ponsei",
   "name": "Natrunaiyappar Temple",
+  "native": "பொன்செய் நற்றுணையப்பர் ஆலயம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Ponsei (Tirunanipalli)",
@@ -11224,6 +11442,7 @@
  {
   "id": "valampurinathar-melaperumpallam",
   "name": "Valampurinathar Temple",
+  "native": "மேலப்பெரும்பள்ளம் வலம்புரநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Melaperumpallam (Tiruvalampuram)",
@@ -11255,6 +11474,7 @@
  {
   "id": "sankaranyeswarar-thalaichangadu",
   "name": "Sankaranyeswarar Temple",
+  "native": "தலைச்சங்காடு சங்காரண்யேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thalaichangadu (Tiruttalaichankadu)",
@@ -11287,6 +11507,7 @@
  {
   "id": "thanthondreeswarar-aakkur",
   "name": "Thanthondreeswarar Temple",
+  "native": "ஆக்கூர் தான்தோன்றீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Aakkur",
@@ -11351,6 +11572,7 @@
  {
   "id": "brahmapureeswarar-tirumayanam",
   "name": "Brahmapureeswarar Temple",
+  "native": "திருக்கடவூர் பிரமபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirumayanam (Tirukkadavur Mayanam)",
@@ -11414,6 +11636,7 @@
  {
   "id": "parvatheeswarar-tiruttelicheri",
   "name": "Parvatheeswarar Temple",
+  "native": "திருத்தெளிச்சேரி",
   "country": "India",
   "state": "Puducherry",
   "place": "Tiruttelicheri (Koilpathu), Karaikal",
@@ -11513,6 +11736,7 @@
  {
   "id": "iravatheeswarar-thirukottaram",
   "name": "Iravatheeswarar Temple",
+  "native": "கோட்டாறு ஐராவதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukottaram (Tirukkottaru)",
@@ -11545,6 +11769,7 @@
  {
   "id": "mahakalanathar-thirumakalam",
   "name": "Mahakalanathar Temple",
+  "native": "திருமாகாளம் மாகாளேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumakalam (Ambar Maakaalam)",
@@ -11576,6 +11801,7 @@
  {
   "id": "meganathar-tirumeeyachur",
   "name": "Meganathar Temple",
+  "native": "திருமீயச்சூர் மேகநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirumeeyachur",
@@ -11608,6 +11834,7 @@
  {
   "id": "sakalabhuvaneswarar-tirumeeyachur",
   "name": "Sakalabhuvaneswarar Temple (Ilamkovil)",
+  "native": "திருமீயச்சூர் இளங்கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirumeeyachur",
@@ -11639,6 +11866,7 @@
  {
   "id": "muktheeswarar-sithalapathy",
   "name": "Muktheeswarar Temple",
+  "native": "செதலபதி முத்தீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sithalapathy (Thilataipati)",
@@ -11670,6 +11898,7 @@
  {
   "id": "paampuranathar-thirupampuram",
   "name": "Paampuranathar Temple",
+  "native": "திருப்பாம்புபுரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupampuram",
@@ -11701,6 +11930,7 @@
  {
   "id": "sukshmapureeswarar-cherugudi",
   "name": "Sukshmapureeswarar Temple",
+  "native": "சிறுகுடி சூட்சுமபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Cherugudi (Sirukudi)",
@@ -11732,6 +11962,7 @@
  {
   "id": "veezhinathar-thiruveezhimizhalai",
   "name": "Veezhinathar Temple",
+  "native": "திருவீழிமிழலை வீழிநாதேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruveezhimizhalai",
@@ -11764,6 +11995,7 @@
  {
   "id": "agnipureeswarar-anniyur",
   "name": "Agnipureeswarar Temple",
+  "native": "அன்னியூர் அக்கினீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Anniyur (Tiruvanniyur)",
@@ -11795,6 +12027,7 @@
  {
   "id": "sarguneswarar-karuveli",
   "name": "Sarguneswarar Temple",
+  "native": "கருவேலி சற்குணநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Karuveli (Karuvili Kottittai)",
@@ -11826,6 +12059,7 @@
  {
   "id": "sivanandeswarar-tirupandurai",
   "name": "Sivanandeswarar Temple",
+  "native": "திருப்பந்துறை சிவானந்தேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirupandurai (Penu Perunturai)",
@@ -11857,6 +12091,7 @@
  {
   "id": "siddhanatheswarar-tirunarayur",
   "name": "Siddhanatheswarar Temple",
+  "native": "திருநறையூர் சித்தநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirunarayur (Nachiyar Koil)",
@@ -11888,6 +12123,7 @@
  {
   "id": "padikasu-nathar-azhagaputhur",
   "name": "Padikasu Nathar Temple",
+  "native": "அழகாபுத்தூர் படிக்காசுநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Azhagaputhur (Arisirkaraiputtur)",
@@ -11920,6 +12156,7 @@
  {
   "id": "sivagurunathaswamy-sivapuram",
   "name": "Sivagurunathaswamy Temple",
+  "native": "சிவபுரம் சிவகுருநாதசுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sivapuram, near Aduthurai",
@@ -11984,6 +12221,7 @@
  {
   "id": "vanchinadha-srivanchiyam",
   "name": "Vanchinadha Swamy Temple",
+  "native": "திருவாஞ்சியம் வாஞ்சிநாதசுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Srivanchiyam (Tiruvanchiyam)",
@@ -12016,6 +12254,7 @@
  {
   "id": "madhuvaneswarar-nannilam",
   "name": "Madhuvaneswarar Temple",
+  "native": "நன்னிலம் மதுவனேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nannilam",
@@ -12048,6 +12287,7 @@
  {
   "id": "soundareswarar-thiruppanaiyur",
   "name": "Soundareswararswamy Temple",
+  "native": "பனையூர் சௌந்தரேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruppanaiyur",
@@ -12112,6 +12352,7 @@
  {
   "id": "vardhamaneswarar-thirupugalur",
   "name": "Vardhamaneswarar Temple (Tiruppugalur Vardhamaneeswaram)",
+  "native": "திருப்புகலூர் வர்த்தமானீச்சரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupugalur (Vardhamaneeswaram)",
@@ -12143,6 +12384,7 @@
  {
   "id": "ramanathaswami-tiruvarur",
   "name": "Ramanathaswami Temple (Ramanadeeswaram)",
+  "native": "திருக்கண்ணபுரம் இராமனதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukannapuram (Ramanadeeswaram), Tiruvarur district",
@@ -12175,6 +12417,7 @@
  {
   "id": "tirupayatrunathar-tirupayathangudi",
   "name": "Tirupayatrunathar Temple",
+  "native": "திருப்பயத்தங்குடி முக்தபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirupayathangudi (Tiruppayatrankudi)",
@@ -12210,6 +12453,7 @@
  {
   "id": "uthirapasupatheeswarar-tiruchenkattankudi",
   "name": "Uthirapasupatheeswarar Temple",
+  "native": "திருச்செங்காட்டங்குடி உத்தராபதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruchenkattankudi",
@@ -12245,6 +12489,7 @@
  {
   "id": "rathnagiriswarar-thirumarugal",
   "name": "Rathnagiriswarar Temple",
+  "native": "திருமருகல் இரத்தினகிரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumarugal",
@@ -12277,6 +12522,7 @@
  {
   "id": "ayavandeeswarar-seeyathamangai",
   "name": "Ayavandeeswarar Temple",
+  "native": "திருச்சாத்தமங்கை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Seeyathamangai (Tiruchaattamangai)",
@@ -12308,6 +12554,7 @@
  {
   "id": "kayarohanaswami-nagapattinam",
   "name": "Kayarohanaswami Temple",
+  "native": "நாகபட்டினம் காயாரோகணேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nagapattinam (Nagaikkaronam)",
@@ -12340,6 +12587,7 @@
  {
   "id": "navaneetheswarar-sikkal",
   "name": "Sikkal Navaneetheswarar Temple",
+  "native": "சிக்கல் நவநீதேசுவரர் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sikkal",
@@ -12371,6 +12619,7 @@
  {
   "id": "kediliappar-keezhvelur",
   "name": "Keezhvelur Kediliappar Temple",
+  "native": "கீவளூர் கேடிலியப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keezhvelur (Keevalur)",
@@ -12402,6 +12651,7 @@
  {
   "id": "deva-pureeswarar-thevur",
   "name": "Deva Pureeswarar Temple",
+  "native": "தேவூர் தேவபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thevur (Tiruttevur)",
@@ -12434,6 +12684,7 @@
  {
   "id": "tirunethranathar-tirupalli-mukkudal",
   "name": "Tirunethranathar Temple",
+  "native": "திருப்பள்ளிமுக்கூடல் முக்கோணநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirupalli Mukkudal (Palliyin Mukkoodal)",
@@ -12469,6 +12720,7 @@
  {
   "id": "achaleswarar-araneri-tiruvarur",
   "name": "Araneri Achaleswarar Temple",
+  "native": "ஆரூர் அசலேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Araneri, Tiruvarur (Achaleswaram)",
@@ -12500,6 +12752,7 @@
  {
   "id": "thyagaraja-tiruvarur",
   "name": "Thyagaraja Temple, Tiruvarur",
+  "native": "திருவாரூர் தியாகராஜர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvarur",
@@ -12533,6 +12786,7 @@
  {
   "id": "thoovainathar-tiruvarur",
   "name": "Thoovanayanar Thoovainathar Temple (Paravai Un Mandali)",
+  "native": "தூவாநாயனார் கோயில் தூவாய் நாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvarur (Arurparavaiumandali)",
@@ -12564,6 +12818,7 @@
  {
   "id": "pathanjali-manoharar-vilamal",
   "name": "Vilamal Pathanchali Manoharar Temple",
+  "native": "விளமல் பதஞ்சலி மனோகரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Vilamal (Vilamar)",
@@ -12595,6 +12850,7 @@
  {
   "id": "karavera-nathar-karaveeram",
   "name": "Karavera Nathar Temple",
+  "native": "கரையபுரம் கரவீரேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Karaveram (Karaveeram)",
@@ -12626,6 +12882,7 @@
  {
   "id": "abhimuktheeswarar-tirupperuvelur",
   "name": "Tirupperuvelur Abhimuktheeswarar Temple",
+  "native": "மணக்கால் ஐயன்பேட்டை அபிமுகேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Manakkal Ayyampet (Tirupperuvelur)",
@@ -12657,6 +12914,7 @@
  {
   "id": "nardana-pureeswarar-talaiyalankadu",
   "name": "Nardana Pureeswarar Temple",
+  "native": "திருத்தலையாலங்காடு நர்த்தனபுரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thalayalangadu (Talaiyalankadu)",
@@ -12689,6 +12947,7 @@
  {
   "id": "koneswarar-kudavasal",
   "name": "Koneswarar Temple, Kudavasal",
+  "native": "குடவாசல் கோணேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kudavasal (Tirukkudavayil)",
@@ -12721,6 +12980,7 @@
  {
   "id": "gnanaparameswarar-tirucherai",
   "name": "Tirucherai Gnanaparameswarar Temple",
+  "native": "திருச்சேறை செந்நெறியப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirucherai",
@@ -12753,6 +13013,7 @@
  {
   "id": "apatsahayesvarar-alangudi",
   "name": "Apatsahayesvarar Temple, Alangudi",
+  "native": "ஆலங்குடி ஆபத்சகாயேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Alangudi (Tiruvirumpoolai)",
@@ -12785,6 +13046,7 @@
  {
   "id": "padaleswarar-aridwaramangalam",
   "name": "Aridwaramangalam Padaleswarar Temple",
+  "native": "அரித்துவாரமங்கலம் பாதாளேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Aridwaramangalam (Aradaipperumpazhi)",
@@ -12817,6 +13079,7 @@
  {
   "id": "satchinathar-avalivanallur",
   "name": "Avalivanallur Satchinathar Temple",
+  "native": "அவளிவணல்லூர் சாட்சிநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Avalivanallur",
@@ -12848,6 +13111,7 @@
  {
   "id": "parithiappar-paridiniyamam",
   "name": "Paridiniyamam Parithiappar Temple",
+  "native": "பரிதியப்பர்கோவில் பரிதியப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Parithiappar Koil (Paridiniyamam), Keezhvengainaadu",
@@ -12884,6 +13148,7 @@
  {
   "id": "karumbeswarar-venni",
   "name": "Venni Karumbeswarar Temple",
+  "native": "வெண்ணி கரும்பேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Koilvenni (Venni)",
@@ -12916,6 +13181,7 @@
  {
   "id": "chathuranga-vallabhanathar-tiruppoovanur",
   "name": "Chathuranga Vallabhanathar Temple",
+  "native": "பூவனூர் சதுரங்க வல்லபநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppoovanur",
@@ -12948,6 +13214,7 @@
  {
   "id": "parijatha-vaneswarar-tirukkalar",
   "name": "Parijatha Vaneswarar Temple",
+  "native": "திருக்களர் பாரிஜாதவனேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukkalar",
@@ -12980,6 +13247,7 @@
  {
   "id": "ponvaithanathar-tiruchitremam",
   "name": "Ponvaithanathar Temple",
+  "native": "சித்தாய்மூர் சுவர்ணஸ்தாபனேசுரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Aalathampadi (Tiruchitremam)",
@@ -13011,6 +13279,7 @@
  {
   "id": "mandirapureeswarar-tiruvusattanam",
   "name": "Tiruvusaattaanam Mandirapureeswarar Temple",
+  "native": "கோவிலூர் மந்திரபுரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kovilur (Tiru Usaattaanam)",
@@ -13042,6 +13311,7 @@
  {
   "id": "sarguna-nathar-tiruidumbavanam",
   "name": "Sarguna Nathar Temple",
+  "native": "இடும்பாவனம் சற்குணேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Idumbavanam (Tiruidumbavanam)",
@@ -13074,6 +13344,7 @@
  {
   "id": "karpaganathar-karpaganatharkulam",
   "name": "Karpaganatharkulam Karpaganathar Temple",
+  "native": "கற்பகநாதர்குளம் கற்பகநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Karpaganatharkulam (Kadikkulam)",
@@ -13105,6 +13376,7 @@
  {
   "id": "kozhundeeswarar-kottur",
   "name": "Kottur Kozhundeeswarar Temple",
+  "native": "கோட்டூர் கொழுந்தீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kottur (Indirapuram)",
@@ -13140,6 +13412,7 @@
  {
   "id": "vandurai-nathar-vanduturai",
   "name": "Vandurai Nathar Temple",
+  "native": "திருவண்டுதுறை வண்டுறைநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Vanduturai (Tiruvanduthurai)",
@@ -13176,6 +13449,7 @@
  {
   "id": "vilvaranyeswarar-tirukkollampudur",
   "name": "Tirukkollampudur Vilvaranyeswarar Temple",
+  "native": "திருக்கொள்ளம்புதூர் வில்வாரண்யேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukkollampudur",
@@ -13211,6 +13485,7 @@
  {
   "id": "jagadeeswarar-pereyil",
   "name": "Pereyil Jagadeeswarar Temple",
+  "native": "ஓகைப்பேரையூர் ஜகதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukkollampudur (Pereyil)",
@@ -13246,6 +13521,7 @@
  {
   "id": "agneeswarar-tirukkollikkadu",
   "name": "Tirukkollikkadu Agneeswarar Temple",
+  "native": "திருக்கொள்ளிக்காடு அக்னீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirukkollikkadu",
@@ -13277,6 +13553,7 @@
  {
   "id": "vellimalainathar-thiruthangur",
   "name": "Thiruthangur Vellimalainathar Temple",
+  "native": "திருத்தங்கூர் வெள்ளிமலைநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruthangur (Tenkoor)",
@@ -13312,6 +13589,7 @@
  {
   "id": "nellivananathar-tirunellikka",
   "name": "Tirunellikka Nellivananathar Temple",
+  "native": "திருநெல்லிக்கா நெல்லிவனேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirunellikka (Tirunellikaval)",
@@ -13343,6 +13621,7 @@
  {
   "id": "kannayariamudayar-thirukkarayil",
   "name": "Kannayariamudayar Temple, Thirukkarayil",
+  "native": "காறைவாசல் கண்ணாயிரமுடையார் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukkarayil",
@@ -13375,6 +13654,7 @@
  {
   "id": "nadutariappar-kanrappur",
   "name": "Nadutariappar Temple, Kanrappur",
+  "native": "கண்ணாப்பூர் நடுதறியப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanrappur",
@@ -13407,6 +13687,7 @@
  {
   "id": "manathunainathar-valivalam",
   "name": "Manathunainathar Temple, Valivalam",
+  "native": "வலிவலம் மனத்துணைநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Valivalam",
@@ -13438,6 +13719,7 @@
  {
   "id": "kaichineswarar-kaichinam",
   "name": "Kaichineswarar Temple, Kaichinam",
+  "native": "கச்சனம் கைச்சின்னேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kaichinam (Katchanam)",
@@ -13469,6 +13751,7 @@
  {
   "id": "vaimoornathar-tiruvaimur",
   "name": "Vaimoornathar Temple, Tiruvaimur",
+  "native": "திருவாய்மூர் வாய்மூர்நாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvaimur",
@@ -13501,6 +13784,7 @@
  {
   "id": "vedaranyeswarar-vedaranyam",
   "name": "Vedaranyeswarar Temple",
+  "native": "வேதாரண்யம் திருமறைக்காடர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Vedaranyam (Tirumaraikkadu)",
@@ -13533,6 +13817,7 @@
  {
   "id": "agastheeswarar-agasthiyampalli",
   "name": "Agastheeswarar Temple, Agasthiyampalli",
+  "native": "அகத்தியான்பள்ளி அகத்தியர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Agasthiyampalli",
@@ -13565,6 +13850,7 @@
  {
   "id": "kodi-kuzhagar-kodikkarai",
   "name": "Kodi Kuzhagar Temple",
+  "native": "கோடியக்கரை அமுதகடேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kodikkarai (Point Calimere)",
@@ -13596,6 +13882,7 @@
  {
   "id": "aappudaiyar-madurai",
   "name": "Aappudaiyar Temple, Thiru Aappanoor",
+  "native": "மதுரை திருவாப்புடையார் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sellur, Madurai (Thiru Aappanoor)",
@@ -13628,6 +13915,7 @@
  {
   "id": "parangirinathar-thiruparankundram",
   "name": "Subramaniya Swamy Temple, Thiruparankundram",
+  "native": "திருப்பரங்குன்றம் சுப்பிரமணிய சுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruparankundram, Madurai",
@@ -13660,6 +13948,7 @@
  {
   "id": "edaganathar-tiruvedagam",
   "name": "Edaganathar Temple",
+  "native": "திருவேகடம் ஏகடநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvedagam",
@@ -13692,6 +13981,7 @@
  {
   "id": "kodunkundreeswarar-piranmalai",
   "name": "Kodunkundreeswarar Temple, Piranmalai",
+  "native": "பிரான்மலை உமாமகேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Piranmalai (Tirukkodunkunram)",
@@ -13724,6 +14014,7 @@
  {
   "id": "tiruttalinathar-tiruppattur",
   "name": "Tiruttalinathar Temple, Tiruppattur",
+  "native": "திருப்புத்தூர் திருத்தளிநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppattur (Sivaganga district)",
@@ -13788,6 +14079,7 @@
  {
   "id": "adhi-ratneswarar-tiruvadanai",
   "name": "Adhi Ratneswarar Temple",
+  "native": "திருவாடானை ஆதிரத்தினேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvadanai",
@@ -13820,6 +14112,7 @@
  {
   "id": "kaleeswarar-kalaiyarkoil",
   "name": "Sornakaleeswarar (Kaleeswarar) Temple, Kalaiyarkoil",
+  "native": "காளையார்கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kalaiyarkoil (Thirukkaanapper)",
@@ -13852,6 +14145,7 @@
  {
   "id": "pushpavaneswarar-tiruppuvanam",
   "name": "Pushpavaneswarar Temple, Tiruppuvanam",
+  "native": "திருப்பூவணம் பூவணநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppuvanam (Sivaganga district)",
@@ -13884,6 +14178,7 @@
  {
   "id": "thirumeninathar-thiruchuli",
   "name": "Thirumeninathar Temple, Thiruchuli",
+  "native": "திருச்சுழி திருமேனிநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruchuli",
@@ -13916,6 +14211,7 @@
  {
   "id": "kutralanathar-courtallam",
   "name": "Kutralanathar Temple, Courtallam",
+  "native": "குற்றாலநாதர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Courtallam (Thirukutralam)",
@@ -13948,6 +14244,7 @@
  {
   "id": "nellaiappar-tirunelveli",
   "name": "Nellaiappar Temple",
+  "native": "திருநெல்வேலி நெல்லையப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tirunelveli",
@@ -13980,6 +14277,7 @@
  {
   "id": "avinashiappar-avinashi",
   "name": "Avinashiappar Temple (Tiruppukkozhiyur)",
+  "native": "அவிநாசி அவிநாசியப்பர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Avinashi",
@@ -14012,6 +14310,7 @@
  {
   "id": "thirumuruganatheeswarar-thirumuruganpoondi",
   "name": "Thirumuruganatheeswarar Temple",
+  "native": "திருமுருகன்பூண்டி முருகநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumuruganpoondi",
@@ -14044,6 +14343,7 @@
  {
   "id": "sangameswarar-bhavani",
   "name": "Sangameswarar Temple, Bhavani",
+  "native": "பவானி சங்கமேஸ்வரர் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Bhavani (Thirunana)",
@@ -14108,6 +14408,7 @@
  {
   "id": "vikirtheeswarar-venjamakoodal",
   "name": "Vikirtheeswarar Temple, Venjamakoodal",
+  "native": "வெஞ்சமாங்கூடலூர் கல்யாண விகிர்தீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Venjamangudalur (Venjamakoodal)",
@@ -14140,6 +14441,7 @@
  {
   "id": "magudeswarar-kodumudi",
   "name": "Magudeswarar Temple, Kodumudi",
+  "native": "கொடுமுடி மகுடேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kodumudi (Pandikkodumudi)",
@@ -14172,6 +14474,7 @@
  {
   "id": "pasupateeswarar-karur",
   "name": "Pasupateeswarar Temple, Karur",
+  "native": "கருவூர் பசுபதீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Karur (Karuvoor Aanilai)",
@@ -14204,6 +14507,7 @@
  {
   "id": "theerthapurisvarar-tiruvattatthurai",
   "name": "Theerthapurisvarar Temple, Tiruvattatthurai",
+  "native": "திருவட்டத்துறை தீர்த்தபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvattatthurai (Tirunelvayil Aratturai)",
@@ -14235,6 +14539,7 @@
  {
   "id": "sudarkozhundeeswarar-pennadam",
   "name": "Sudarkozhundeeswarar Temple, Pennadam",
+  "native": "பெண்ணாகடம் பிரளயகாலேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Pennadam (Pennaagadam)",
@@ -14266,6 +14571,7 @@
  {
   "id": "narthana-vallabeswarar-koodalaiyatrur",
   "name": "Narthana Vallabeswarar Temple",
+  "native": "திருக்கூடலையாற்றூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukoodalaiyathoor (Koodalaiyatrur)",
@@ -14298,6 +14604,7 @@
  {
   "id": "thirukumaresar-erukkattampuliyur",
   "name": "Thirukumaresar (Neelakandeswarar) Temple",
+  "native": "இராஜேந்திர பட்டினம் சுவேதாரண்யேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Rajendrapatnam (Erukkattampuliyur)",
@@ -14330,6 +14637,7 @@
  {
   "id": "veeratteswarar-thiruvadigai",
   "name": "Veerateeswarar Temple, Thiruvathigai",
+  "native": "திருவதிகை வீரட்டானம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvathigai, Panruti",
@@ -14362,6 +14670,7 @@
  {
   "id": "bhaktajaneswarar-thirunavalur",
   "name": "Bhaktajaneswarar Temple, Thirunavalur",
+  "native": "திருநாவலூர் பக்தஜனேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunavalur",
@@ -14426,6 +14735,7 @@
  {
   "id": "atulya-nadheswarar-arakandanallur",
   "name": "Atulya Nadheswarar Temple",
+  "native": "அறையணி நல்லூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Arakandanallur",
@@ -14458,6 +14768,7 @@
  {
   "id": "marundeeswarar-t-edayar",
   "name": "Marudeeswarar Temple, T. Edaiyar",
+  "native": "இடையாறு மருந்தீசர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "T. Edaiyar (Thiru Idaiyaru)",
@@ -14490,6 +14801,7 @@
  {
   "id": "kripapureeswarar-thiruvennainallur",
   "name": "Kripapureeswarar Temple, Thiruvennainallur",
+  "native": "அருட்துறைநாதர் வேணுபுரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvennainallur",
@@ -14522,6 +14834,7 @@
  {
   "id": "sishtagurunatheswarar-tirutturaiyur",
   "name": "Sishtagurunatheswarar Temple, Tirutturaiyur",
+  "native": "திருத்துறையூர் சிஸ்டகுருநாதர்சுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruthuraiyur (Cuddalore district)",
@@ -14553,6 +14866,7 @@
  {
   "id": "vadukeeswarar-thiruvandarkoil",
   "name": "Vadukeeswarar Temple, Thiruvandarkoil",
+  "native": "வடுகூர்",
   "country": "India",
   "state": "Puducherry",
   "place": "Thiruvandarkoil (Thiru Vadukur)",
@@ -14618,6 +14932,7 @@
  {
   "id": "pataleeswarar-thirupathiripuliyur",
   "name": "Pataleeswarar Temple",
+  "native": "திருப்பாதிரிப்புலியூர் பாடலேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirupathiripuliyur, Cuddalore",
@@ -14650,6 +14965,7 @@
  {
   "id": "netroddharakaswami-panankattur",
   "name": "Netroddharakaswami Temple",
+  "native": "புறவார் பனங்காட்டூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Puravar Panankattur",
@@ -14745,6 +15061,7 @@
  {
   "id": "ona-kantheeswarar-kanchipuram",
   "name": "Ona Kantheeswarar Temple",
+  "native": "ஓணகாந்தன்தளி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram (Onakanthan Thali)",
@@ -14873,6 +15190,7 @@
  {
   "id": "talapurisvarar-tiruppanangadu",
   "name": "Talapurisvarar Temple",
+  "native": "திருப்பனங்காடு தாளபுரீஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppanangadu (Panankattur)",
@@ -14904,6 +15222,7 @@
  {
   "id": "vilwanatheswarar-tiruvallam",
   "name": "Vilwanatheswarar Temple",
+  "native": "வில்வநாதேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvallam",
@@ -14937,6 +15256,7 @@
  {
   "id": "manikandeeswarar-thirumalpur",
   "name": "Manikandeeswarar Temple, Thirumarperu",
+  "native": "திருமாற்பேறு",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirumalpur",
@@ -14969,6 +15289,7 @@
  {
   "id": "jalantheeswarar-takkolam",
   "name": "Jalanatheeswarar Temple",
+  "native": "திருவூறல்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Takkolam (Tiruvooral)",
@@ -15002,6 +15323,7 @@
  {
   "id": "deivanayaka-easwarar-ilambayankottur",
   "name": "Deivanayaka Easwarar Temple",
+  "native": "இலம்மையங்கோட்டூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Ilambayankottur",
@@ -15034,6 +15356,7 @@
  {
   "id": "tripuranthaka-koovam",
   "name": "Tripuranthaka Swamy Temple",
+  "native": "திரிபுராந்தக சுவாமி கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Koovam (Tiruvirkolam)",
@@ -15065,6 +15388,7 @@
  {
   "id": "vadaranyeswarar-thiruvalangadu",
   "name": "Vadaranyeswarar Temple",
+  "native": "திருவாலங்காடு வடாரண்யேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thiruvalangadu",
@@ -15097,6 +15421,7 @@
  {
   "id": "vaseeswarar-tiruppasur",
   "name": "Vaseeswarar Temple",
+  "native": "திருப்பாசூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruppasur",
@@ -15130,6 +15455,7 @@
  {
   "id": "oondreswarar-poondi",
   "name": "Oondreswarar Temple",
+  "native": "திருவெண்பாக்கம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Poondi (Tiruvenpakkam)",
@@ -15162,6 +15488,7 @@
  {
   "id": "adipureeswarar-tiruvottiyur",
   "name": "Adipureeswarar (Thyagaraja) Temple",
+  "native": "திருவொற்றியூர் ஆதிபுரீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvottiyur, Chennai",
@@ -15195,6 +15522,7 @@
  {
   "id": "tiruvallesvarar-padi",
   "name": "Tiruvallesvarar Temple",
+  "native": "திருவலிதாயம் திருவல்லீசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvalithayam (Padi), Chennai",
@@ -15227,6 +15555,7 @@
  {
   "id": "kachabeswarar-thirukachur",
   "name": "Kachabeswarar Temple",
+  "native": "திருக்கச்சூர் கச்சபேஸ்வரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirukachur (Tirukkachoor)",
@@ -15260,6 +15589,7 @@
  {
   "id": "gnanapureeswarar-tiruvadisoolam",
   "name": "Gnanapureeswarar Temple",
+  "native": "திருஇடைச்சுரம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Tiruvadisoolam (Tiruvidaichuram)",
@@ -15388,6 +15718,7 @@
  {
   "id": "arasaleeswarar-arasili",
   "name": "Arasaleeswarar Temple",
+  "native": "திருஅரசிலி",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Arasili (Ozhindiyapattu)",
@@ -15420,6 +15751,7 @@
  {
   "id": "mahakaleswarar-irumbai",
   "name": "Irumbai Mahaleswarar Temple",
+  "native": "இரும்பை மாகாளேசுவரர் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Irumbai (Irumbai Maakalam)",
@@ -15451,6 +15783,7 @@
  {
   "id": "thiruvanchikulam-kodungallur",
   "name": "Thiruvanchikulam Mahadeva Temple",
+  "native": "തിരുവഞ്ചിക്കുളം ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thiruvanchikulam, Kodungallur",
@@ -15548,6 +15881,7 @@
  {
   "id": "attahas-fullara-labhpur",
   "name": "Fullara (Attahas) Shakti Pitha",
+  "native": "ফুল্লরা",
   "country": "India",
   "state": "West Bengal",
   "place": "Fullara (Attahas), Labhpur, Birbhum",
@@ -15611,6 +15945,7 @@
  {
   "id": "bakreshwar-birbhum",
   "name": "Bakreshwar Shakti Pitha",
+  "native": "বক্রেশ্বর",
   "country": "India",
   "state": "West Bengal",
   "place": "Bakreshwar, Birbhum",
@@ -15707,6 +16042,7 @@
  {
   "id": "chintpurni-una",
   "name": "Chintpurni Temple",
+  "native": "चिंतपूर्णी",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Chintpurni, Una district",
@@ -15739,6 +16075,7 @@
  {
   "id": "danteshwari-dantewada",
   "name": "Danteshwari Temple",
+  "native": "दन्तेश्वरी मन्दिर",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Dantewada",
@@ -15771,6 +16108,7 @@
  {
   "id": "guhyeshwari-kathmandu",
   "name": "Guhyeshwari Temple",
+  "native": "गुह्येश्वरी",
   "country": "Nepal",
   "state": "Bagmati Province",
   "place": "Kathmandu",
@@ -15835,6 +16173,7 @@
  {
   "id": "kiriteswari-murshidabad",
   "name": "Kiriteswari Temple",
+  "native": "কিরীটেশ্বরী মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Kiritkona, Murshidabad",
@@ -15900,6 +16239,7 @@
  {
   "id": "nalateswari-nalhati",
   "name": "Nalateswari Temple",
+  "native": "নলহাটি",
   "country": "India",
   "state": "West Bengal",
   "place": "Nalhati, Birbhum",
@@ -15997,6 +16337,7 @@
  {
   "id": "devi-talab-jalandhar",
   "name": "Devi Talab Mandir",
+  "native": "ਦੇਵੀ ਤਾਲਾਬ ਮੰਦਰ",
   "country": "India",
   "state": "Punjab",
   "place": "Jalandhar",
@@ -16033,6 +16374,7 @@
  {
   "id": "thanumalayan-suchindram",
   "name": "Thanumalayan (Sthanumalayan) Temple, Suchindram",
+  "native": "சுசீந்திரம் தாணுமாலயன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Suchindram, Kanyakumari district",
@@ -16097,6 +16439,7 @@
  {
   "id": "bargabhima-tamluk",
   "name": "Bargabhima Temple",
+  "native": "বর্গভীমা মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Tamluk, Purba Medinipur",
@@ -16161,6 +16504,7 @@
  {
   "id": "narmada-amarkantak",
   "name": "Narmada Temple, Amarkantak (Shondesh Shakti Pitha)",
+  "native": "अमरकंटक",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Amarkantak, source of the Narmada",
@@ -16193,6 +16537,7 @@
  {
   "id": "tungnath",
   "name": "Tungnath Temple",
+  "native": "चोपता तुङ्गनाथ",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Tungnath",
@@ -16225,6 +16570,7 @@
  {
   "id": "rudranath",
   "name": "Rudranath Temple",
+  "native": "रुद्रनाथ मन्दिर",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Rudranath",
@@ -16257,6 +16603,7 @@
  {
   "id": "madhyamaheshwar",
   "name": "Madhyamaheshwar Temple",
+  "native": "मध्यमहेश्वर",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Madhyamaheshwar",
@@ -16289,6 +16636,7 @@
  {
   "id": "kalpeshwar-urgam",
   "name": "Kalpeshwar Temple",
+  "native": "कल्पेश्वर केदार",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Urgam valley",
@@ -16321,6 +16669,7 @@
  {
   "id": "jageshwar-almora",
   "name": "Jageshwar Temples",
+  "native": "जागेश्वर धाम",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Jageshwar, Almora",
@@ -16350,6 +16699,7 @@
  {
   "id": "baijnath-bageshwar",
   "name": "Baijnath Temple, Uttarakhand",
+  "native": "बैजनाथ, उत्तराखण्ड",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Baijnath, Bageshwar",
@@ -16446,6 +16796,7 @@
  {
   "id": "golu-devta-chitai",
   "name": "Chitai Golu Devta Temple",
+  "native": "गोलू देवता",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Chitai, Almora",
@@ -16476,6 +16827,7 @@
  {
   "id": "kainchi-dham-nainital",
   "name": "Kainchi Dham",
+  "native": "कैंची धाम",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Kainchi, Nainital",
@@ -16510,6 +16862,7 @@
  {
   "id": "surkanda-devi-tehri",
   "name": "Surkanda Devi Temple",
+  "native": "सुरकंडा देवी",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Kaddukhal, Tehri",
@@ -16540,6 +16893,7 @@
  {
   "id": "adi-badri-chamoli",
   "name": "Adi Badri",
+  "native": "पान्च बद्रि",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Chamoli",
@@ -16571,6 +16925,7 @@
  {
   "id": "har-ki-pauri-haridwar",
   "name": "Har Ki Pauri",
+  "native": "हर की पौड़ी",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Haridwar",
@@ -16603,6 +16958,7 @@
  {
   "id": "mansa-devi-haridwar",
   "name": "Mansa Devi Temple",
+  "native": "मनसा देवी मंदिर, हरिद्वार",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Haridwar",
@@ -16633,6 +16989,7 @@
  {
   "id": "chandi-devi-haridwar",
   "name": "Chandi Devi Temple",
+  "native": "चंडी देवी मंदिर, हरिद्वार",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Haridwar",
@@ -16664,6 +17021,7 @@
  {
   "id": "vishnuprayag-chamoli",
   "name": "Vishnuprayag",
+  "native": "विष्णु प्रयाग",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Vishnuprayag",
@@ -16696,6 +17054,7 @@
  {
   "id": "nandaprayag-chamoli",
   "name": "Nandaprayag",
+  "native": "नंदप्रयाग",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Nandaprayag",
@@ -16731,6 +17090,7 @@
  {
   "id": "karnaprayag-chamoli",
   "name": "Karnaprayag",
+  "native": "कर्णप्रयाग",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Karnaprayag",
@@ -16767,6 +17127,7 @@
  {
   "id": "rudraprayag-uttarakhand",
   "name": "Rudraprayag",
+  "native": "रुद्रप्रयाग",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Rudraprayag",
@@ -16803,6 +17164,7 @@
  {
   "id": "devprayag-tehri",
   "name": "Devprayag",
+  "native": "देवप्रयाग",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Devprayag",
@@ -16835,6 +17197,7 @@
  {
   "id": "sankat-mochan-varanasi",
   "name": "Sankat Mochan Hanuman Temple",
+  "native": "संकट मोचन हनुमान मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Varanasi",
@@ -16870,6 +17233,7 @@
  {
   "id": "durga-kund-varanasi",
   "name": "Durga Mandir (Durga Kund Temple)",
+  "native": "दुर्गा मन्दिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Varanasi",
@@ -16900,6 +17264,7 @@
  {
   "id": "tulsi-manas-mandir-varanasi",
   "name": "Tulsi Manas Mandir",
+  "native": "तुलसी मानस मन्दिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Varanasi",
@@ -16929,6 +17294,7 @@
  {
   "id": "radha-rani-barsana",
   "name": "Shri Radha Rani Temple (Ladli Ji)",
+  "native": "श्री राधा रानी मंदिर (बरसाना)",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Barsana",
@@ -16961,6 +17327,7 @@
  {
   "id": "prem-mandir-vrindavan",
   "name": "Prem Mandir",
+  "native": "प्रेम मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Vrindavan",
@@ -16992,6 +17359,7 @@
  {
   "id": "radha-vallabh-vrindavan",
   "name": "Radha Vallabh Temple",
+  "native": "राधा वल्लभ मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Vrindavan",
@@ -17029,6 +17397,7 @@
  {
   "id": "krishna-balaram-vrindavan",
   "name": "Krishna Balaram Mandir (ISKCON Vrindavan)",
+  "native": "अंग्रेजों का मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Vrindavan",
@@ -17129,6 +17498,7 @@
  {
   "id": "shakumbhari-devi-saharanpur",
   "name": "Shakumbhari Devi Temple",
+  "native": "सिद्धपीठ श्री शाकुंभरी देवी मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Saharanpur",
@@ -17161,6 +17531,7 @@
  {
   "id": "naina-devi-bilaspur",
   "name": "Naina Devi Temple",
+  "native": "नैना देवी मंदिर, हिमाचल प्रदेश",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Naina Devi, Bilaspur",
@@ -17198,6 +17569,7 @@
  {
   "id": "brajeshwari-kangra",
   "name": "Bajreshwari Mata Temple (Brajeshwari Devi)",
+  "native": "श्री बज्रेश्वरी देवी मंदिर, काँगड़ा",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Kangra",
@@ -17234,6 +17606,7 @@
  {
   "id": "baijnath-kangra",
   "name": "Baijnath Temple",
+  "native": "बैजनाथ मंदिर",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Baijnath, Kangra",
@@ -17264,6 +17637,7 @@
  {
   "id": "bhimakali-sarahan",
   "name": "Bhimakali Temple",
+  "native": "श्री भीमा काली मंदिर",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Sarahan",
@@ -17296,6 +17670,7 @@
  {
   "id": "hidimba-devi-manali",
   "name": "Hidimba Devi Temple",
+  "native": "हिडिम्बा देवी मंदिर",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Manali",
@@ -17326,6 +17701,7 @@
  {
   "id": "manimahesh-lake",
   "name": "Manimahesh Lake",
+  "native": "मणि महेश यात्रा",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Bharmour, Chamba",
@@ -17414,6 +17790,7 @@
  {
   "id": "baba-balak-nath-deotsidh",
   "name": "Baba Balak Nath Temple (Deotsidh)",
+  "native": "बाबा बालकनाथ",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Deotsidh, Hamirpur",
@@ -17444,6 +17821,7 @@
  {
   "id": "renuka-lake-sirmaur",
   "name": "Renuka Lake Temple",
+  "native": "रेणुका झील",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Renuka, Sirmaur",
@@ -17474,6 +17852,7 @@
  {
   "id": "trilokinath-lahaul",
   "name": "Trilokinath Temple",
+  "native": "त्रिलोकीनाथ मंदिर, लहौल और स्पीति",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Trilokinath, Lahaul",
@@ -17542,6 +17921,7 @@
  {
   "id": "key-monastery-spiti",
   "name": "Key Monastery (Kye Gompa)",
+  "native": "की गोम्पा",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Kaza, Spiti",
@@ -17811,6 +18191,7 @@
  {
   "id": "durgiana-amritsar",
   "name": "Durgiana Temple",
+  "native": "ਦੁਰਗਿਆਣਾ ਮੰਦਰ",
   "country": "India",
   "state": "Punjab",
   "place": "Amritsar",
@@ -17871,6 +18252,7 @@
  {
   "id": "sthaneshwar-thanesar",
   "name": "Sthaneshwar Mahadev Temple",
+  "native": "स्थानेश्वर महादेव मन्दिर",
   "country": "India",
   "state": "Haryana",
   "place": "Thanesar, Kurukshetra",
@@ -17902,6 +18284,7 @@
  {
   "id": "jyotisar-kurukshetra",
   "name": "Jyotisar",
+  "native": "ज्योतिसर",
   "country": "India",
   "state": "Haryana",
   "place": "Kurukshetra",
@@ -17966,6 +18349,7 @@
  {
   "id": "jhandewalan-delhi",
   "name": "Jhandewalan Temple",
+  "native": "झंडेवालान्  मंदिर",
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
@@ -18001,6 +18385,7 @@
  {
   "id": "laxminarayan-delhi",
   "name": "Laxminarayan Temple (Birla Mandir)",
+  "native": "लक्ष्मी नारायण मंदिर",
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
@@ -18030,6 +18415,7 @@
  {
   "id": "chhatarpur-delhi",
   "name": "Chhatarpur Temple (Shri Aadya Katyayani Shakti Peetham)",
+  "native": "आद्या कात्यायिनी मंदिर, दिल्ली",
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
@@ -18090,6 +18476,7 @@
  {
   "id": "hanuman-connaught-place",
   "name": "Hanuman Temple, Connaught Place",
+  "native": "हनुमान मंदिर, कनॉट प्लेस",
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
@@ -18121,6 +18508,7 @@
  {
   "id": "eklingji-udaipur",
   "name": "Eklingji Temple",
+  "native": "एकलिंगजी",
   "country": "India",
   "state": "Rajasthan",
   "place": "Eklingji, Udaipur",
@@ -18152,6 +18540,7 @@
  {
   "id": "shrinathji-nathdwara",
   "name": "Shrinathji Temple",
+  "native": "श्रीनाथ जी मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Nathdwara",
@@ -18247,6 +18636,7 @@
  {
   "id": "mehandipur-balaji",
   "name": "Mehandipur Balaji Temple",
+  "native": "मेंहदीपुर बालाजी",
   "country": "India",
   "state": "Rajasthan",
   "place": "Mehandipur, Dausa",
@@ -18282,6 +18672,7 @@
  {
   "id": "ramdevra-jaisalmer",
   "name": "Ramdevra Temple",
+  "native": "रामदेवरा",
   "country": "India",
   "state": "Rajasthan",
   "place": "Ramdevra, Jaisalmer",
@@ -18312,6 +18703,7 @@
  {
   "id": "galtaji-jaipur",
   "name": "Galtaji",
+  "native": "गलताजी",
   "country": "India",
   "state": "Rajasthan",
   "place": "Jaipur",
@@ -18342,6 +18734,7 @@
  {
   "id": "govind-dev-ji-jaipur",
   "name": "Govind Dev Ji Temple",
+  "native": "गोविंद देवजी का मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Jaipur",
@@ -18372,6 +18765,7 @@
  {
   "id": "moti-dungri-jaipur",
   "name": "Moti Dungri Ganesh Temple",
+  "native": "मोतीडूंगरी गणेश मंदिर जयपुर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Jaipur",
@@ -18402,6 +18796,7 @@
  {
   "id": "birla-mandir-jaipur",
   "name": "Birla Mandir, Jaipur",
+  "native": "बिड़ला मन्दिर, जयपुर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Jaipur",
@@ -18432,6 +18827,7 @@
  {
   "id": "shila-devi-amer",
   "name": "Shila Devi Temple",
+  "native": "शिला माता मन्दिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Amber Fort, Jaipur",
@@ -18492,6 +18888,7 @@
  {
   "id": "rani-sati-jhunjhunu",
   "name": "Rani Sati Temple",
+  "native": "रानी सती मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Jhunjhunu",
@@ -18522,6 +18919,7 @@
  {
   "id": "sachiya-mata-osian",
   "name": "Sachiya Mata Temple",
+  "native": "सच्चियाय माता मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Osian",
@@ -18587,6 +18985,7 @@
  {
   "id": "sanwaliyaji-mandphiya",
   "name": "Sanwaliyaji Temple",
+  "native": "सांवरिया जी मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Mandaphia, Chittorgarh",
@@ -18622,6 +19021,7 @@
  {
   "id": "charbhuja-garhbor",
   "name": "Charbhuja Temple, Garhbor",
+  "native": "चारभुजा मन्दिर ,राजसमंद",
   "country": "India",
   "state": "Rajasthan",
   "place": "Garhbor, Rajsamand",
@@ -18768,6 +19168,7 @@
  {
   "id": "kolayat-bikaner",
   "name": "Kapil Muni Temple, Kolayat",
+  "native": "श्रीकोलायत जी",
   "country": "India",
   "state": "Rajasthan",
   "place": "Kolayat, Bikaner",
@@ -18828,6 +19229,7 @@
  {
   "id": "kiradu-barmer",
   "name": "Kiradu Temples",
+  "native": "किराड़ू का मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Barmer",
@@ -18921,6 +19323,7 @@
  {
   "id": "baleshwar-champawat",
   "name": "Baleshwar Temple",
+  "native": "बालेश्वर मन्दिर",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Champawat",
@@ -18951,6 +19354,7 @@
  {
   "id": "kasar-devi-almora",
   "name": "Kasar Devi Temple",
+  "native": "कसार देवी",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Almora",
@@ -18981,6 +19385,7 @@
  {
   "id": "mukteshwar-nainital",
   "name": "Mukteshwar Dham Temple",
+  "native": "मुक्तेश्वर",
   "country": "India",
   "state": "Uttarakhand",
   "place": "Mukteshwar, Nainital",
@@ -19010,6 +19415,7 @@
  {
   "id": "paonta-sahib",
   "name": "Gurdwara Paonta Sahib",
+  "native": "पाओन्ता साहिब",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Paonta Sahib",
@@ -19040,6 +19446,7 @@
  {
   "id": "manikaran-sahib-kullu",
   "name": "Gurudwara Manikaran Sahib",
+  "native": "मणिकर्ण",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Manikaran, Kullu",
@@ -19070,6 +19477,7 @@
  {
   "id": "dakor-ranchhodrai",
   "name": "Ranchhodrai Temple, Dakor",
+  "native": "ડાકોર",
   "country": "India",
   "state": "Gujarat",
   "place": "Dakor",
@@ -19105,6 +19513,7 @@
  {
   "id": "shamlaji-aravalli",
   "name": "Shamlaji Temple",
+  "native": "શામળાજી",
   "country": "India",
   "state": "Gujarat",
   "place": "Shamlaji, Aravalli",
@@ -19171,6 +19580,7 @@
  {
   "id": "chotila-chamunda",
   "name": "Chamunda Mata Temple, Chotila",
+  "native": "ચોટીલા",
   "country": "India",
   "state": "Gujarat",
   "place": "Chotila, Surendranagar",
@@ -19200,6 +19610,7 @@
  {
   "id": "jalaram-virpur",
   "name": "Jalaram Temple, Virpur",
+  "native": "જલારામ બાપા",
   "country": "India",
   "state": "Gujarat",
   "place": "Virpur, Rajkot",
@@ -19294,6 +19705,7 @@
  {
   "id": "koteshwar-kutch",
   "name": "Koteshwar Temple",
+  "native": "કોટેશ્વર (તા. લખપત)",
   "country": "India",
   "state": "Gujarat",
   "place": "Koteshwar, Kutch",
@@ -19324,6 +19736,7 @@
  {
   "id": "narayan-sarovar-kutch",
   "name": "Narayan Sarovar",
+  "native": "નારાયણ સરોવર",
   "country": "India",
   "state": "Gujarat",
   "place": "Kutch",
@@ -19354,6 +19767,7 @@
  {
   "id": "mata-no-madh-kutch",
   "name": "Mata no Madh (Ashapura Mata Temple)",
+  "native": "માતાનો મઢ",
   "country": "India",
   "state": "Gujarat",
   "place": "Kutch",
@@ -19385,6 +19799,7 @@
  {
   "id": "rukmini-devi-dwarka",
   "name": "Rukmini Devi Temple",
+  "native": "રુકમણી દેવી મંદિર",
   "country": "India",
   "state": "Gujarat",
   "place": "Dwarka",
@@ -19415,6 +19830,7 @@
  {
   "id": "hutheesing-ahmedabad",
   "name": "Hutheesing Jain Temple",
+  "native": "હઠીસિંહનાં દેરા",
   "country": "India",
   "state": "Gujarat",
   "place": "Ahmedabad",
@@ -19444,6 +19860,7 @@
  {
   "id": "taranga-jain",
   "name": "Taranga Jain Temple",
+  "native": "તારંગા",
   "country": "India",
   "state": "Gujarat",
   "place": "Taranga, Mehsana",
@@ -19474,6 +19891,7 @@
  {
   "id": "girnar-jain",
   "name": "Girnar Jain Temples",
+  "native": "ગિરનાર જૈન મંદિરો",
   "country": "India",
   "state": "Gujarat",
   "place": "Girnar, Junagadh",
@@ -19505,6 +19923,7 @@
  {
   "id": "kayavarohan-vadodara",
   "name": "Kayavarohan Temple (Lakulish)",
+  "native": "કાયાવરોહણ",
   "country": "India",
   "state": "Gujarat",
   "place": "Kayavarohan, Vadodara",
@@ -19536,6 +19955,7 @@
  {
   "id": "gop-temple-jamnagar",
   "name": "Gop Temple",
+  "native": "ગોપનું મંદિર",
   "country": "India",
   "state": "Gujarat",
   "place": "Gop, Jamnagar",
@@ -19565,6 +19985,7 @@
  {
   "id": "shankheshwar-jain",
   "name": "Shankheshwar Parshwanath Jain Temple",
+  "native": "શંખેશ્વર (તા. શંખેશ્વર)",
   "country": "India",
   "state": "Gujarat",
   "place": "Shankheshwar, Patan",
@@ -19595,6 +20016,7 @@
  {
   "id": "aundha-nagnath",
   "name": "Aundha Nagnath Temple",
+  "native": "औंढा नागनाथ",
   "country": "India",
   "state": "Maharashtra",
   "place": "Aundha, Hingoli",
@@ -19662,6 +20084,7 @@
  {
   "id": "tulja-bhavani-tuljapur",
   "name": "Tulja Bhavani Temple",
+  "native": "तुळजा भवानी मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Tuljapur, Dharashiv",
@@ -19694,6 +20117,7 @@
  {
   "id": "mahalakshmi-kolhapur",
   "name": "Mahalakshmi Temple, Kolhapur",
+  "native": "महालक्ष्मी मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Kolhapur",
@@ -19726,6 +20150,7 @@
  {
   "id": "renuka-mahur",
   "name": "Renuka Devi Temple, Mahur",
+  "native": "माहूर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Mahur, Nanded",
@@ -19758,6 +20183,7 @@
  {
   "id": "saptashrungi-vani",
   "name": "Saptashrungi Temple",
+  "native": "सप्तशृंगी देवी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Vani, Nashik",
@@ -19790,6 +20216,7 @@
  {
   "id": "shani-shingnapur",
   "name": "Shani Shingnapur Temple",
+  "native": "शनी शिंगणापूर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Shingnapur, Ahilyanagar",
@@ -19820,6 +20247,7 @@
  {
   "id": "khandoba-jejuri",
   "name": "Khandoba Temple, Jejuri",
+  "native": "खंडोबा मंदिर (जेजुरी)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Jejuri, Pune",
@@ -19851,6 +20279,7 @@
  {
   "id": "bhuleshwar-yavat",
   "name": "Bhuleshwar Temple",
+  "native": "भुलेश्वर मंदिर, माळशिरस",
   "country": "India",
   "state": "Maharashtra",
   "place": "Yavat, Pune",
@@ -19882,6 +20311,7 @@
  {
   "id": "dagadusheth-pune",
   "name": "Dagadusheth Halwai Ganapati Temple",
+  "native": "श्रीमंत दगडूशेठ हलवाई गणपती",
   "country": "India",
   "state": "Maharashtra",
   "place": "Pune",
@@ -19912,6 +20342,7 @@
  {
   "id": "chintamani-theur",
   "name": "Chintamani Temple, Theur",
+  "native": "चिंतामणी (थेउर)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Theur, Pune",
@@ -19976,6 +20407,7 @@
  {
   "id": "siddhivinayak-siddhatek",
   "name": "Siddhivinayak Temple, Siddhatek",
+  "native": "सिद्धिविनायक (सिद्धटेक)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Siddhatek, Ahilyanagar",
@@ -20008,6 +20440,7 @@
  {
   "id": "ballaleshwar-pali",
   "name": "Ballaleshwar Temple, Pali",
+  "native": "बल्लाळेश्वर (पाली)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Pali, Raigad",
@@ -20040,6 +20473,7 @@
  {
   "id": "varadvinayak-mahad",
   "name": "Varadvinayak Temple, Mahad",
+  "native": "वरदविनायक (महड)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Mahad (Khalapur), Raigad",
@@ -20072,6 +20506,7 @@
  {
   "id": "girijatmaj-lenyadri",
   "name": "Girijatmaj Temple, Lenyadri",
+  "native": "गिरिजात्मज (लेण्याद्री)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Lenyadri, Pune",
@@ -20104,6 +20539,7 @@
  {
   "id": "vighnahar-ozar",
   "name": "Vigneshwara (Vighnahar) Temple, Ozar",
+  "native": "विघ्नहर (ओझर)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Ozar, Pune",
@@ -20136,6 +20572,7 @@
  {
   "id": "mahaganapati-ranjangaon",
   "name": "Mahaganapati Temple, Ranjangaon",
+  "native": "महागणपती (रांजणगाव)",
   "country": "India",
   "state": "Maharashtra",
   "place": "Ranjangaon, Pune",
@@ -20169,6 +20606,7 @@
  {
   "id": "mumbadevi-mumbai",
   "name": "Mumba Devi Temple",
+  "native": "मुंबादेवी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Mumbai",
@@ -20199,6 +20637,7 @@
  {
   "id": "mahalakshmi-mumbai",
   "name": "Mahalakshmi Temple, Mumbai",
+  "native": "महालक्ष्मी मंदिर, मुंबई",
   "country": "India",
   "state": "Maharashtra",
   "place": "Mumbai",
@@ -20228,6 +20667,7 @@
  {
   "id": "walkeshwar-mumbai",
   "name": "Walkeshwar Temple",
+  "native": "वाळकेश्वर मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Mumbai",
@@ -20259,6 +20699,7 @@
  {
   "id": "kanheri-caves-mumbai",
   "name": "Kanheri Caves",
+  "native": "कान्हेरी लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Sanjay Gandhi NP, Mumbai",
@@ -20288,6 +20729,7 @@
  {
   "id": "karla-caves-lonavala",
   "name": "Karla Caves",
+  "native": "कार्ले लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Lonavala",
@@ -20317,6 +20759,7 @@
  {
   "id": "bhaja-caves-lonavala",
   "name": "Bhaja Caves",
+  "native": "भाजे लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Lonavala",
@@ -20346,6 +20789,7 @@
  {
   "id": "global-vipassana-pagoda",
   "name": "Global Vipassana Pagoda",
+  "native": "विश्व विपस्सना पॅगोडा",
   "country": "India",
   "state": "Maharashtra",
   "place": "Gorai, Mumbai",
@@ -20375,6 +20819,7 @@
  {
   "id": "deekshabhoomi-nagpur",
   "name": "Deekshabhoomi",
+  "native": "दीक्षाभूमी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Nagpur",
@@ -20404,6 +20849,7 @@
  {
   "id": "ganpatipule",
   "name": "Ganpatipule Temple",
+  "native": "गणपतीपुळे",
   "country": "India",
   "state": "Maharashtra",
   "place": "Ganpatipule, Ratnagiri",
@@ -20463,6 +20909,7 @@
  {
   "id": "kopeshwar-khidrapur",
   "name": "Kopeshwar Temple",
+  "native": "कोपेश्वर मंदिर, खिद्रापूर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Khidrapur, Kolhapur",
@@ -20493,6 +20940,7 @@
  {
   "id": "gajanan-maharaj-shegaon",
   "name": "Shri Gajanan Maharaj Sansthan, Shegaon",
+  "native": "गजानन महाराज",
   "country": "India",
   "state": "Maharashtra",
   "place": "Shegaon, Buldhana",
@@ -20523,6 +20971,7 @@
  {
   "id": "akkalkot-swami-samarth",
   "name": "Shree Swami Samarth Math, Akkalkot",
+  "native": "स्वामी समर्थ",
   "country": "India",
   "state": "Maharashtra",
   "place": "Akkalkot, Solapur",
@@ -20715,6 +21164,7 @@
  {
   "id": "bhojeshwar-bhojpur",
   "name": "Bhojeshwar Temple",
+  "native": "भोजेश्वर मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Bhojpur, Raisen",
@@ -20745,6 +21195,7 @@
  {
   "id": "maihar-sharda",
   "name": "Sharda Devi Temple, Maihar",
+  "native": "मैहर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Maihar",
@@ -20777,6 +21228,7 @@
  {
   "id": "pitambara-peeth-datia",
   "name": "Pitambara Peeth",
+  "native": "पीताम्बरा पीठ",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Datia",
@@ -20807,6 +21259,7 @@
  {
   "id": "bijasan-salkanpur",
   "name": "Bijasan Mata Temple, Salkanpur",
+  "native": "बीजासन माता मन्दिर, सलकनपुर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Salkanpur, Sehore",
@@ -20836,6 +21289,7 @@
  {
   "id": "ram-raja-orchha",
   "name": "Ram Raja Temple",
+  "native": "रामराजा मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Orchha",
@@ -20866,6 +21320,7 @@
  {
   "id": "chaturbhuj-orchha",
   "name": "Chaturbhuj Temple, Orchha",
+  "native": "चतुर्भुज मंदिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Orchha",
@@ -20928,6 +21383,7 @@
  {
   "id": "bateshwar-morena",
   "name": "Bateshwar Hindu Temples",
+  "native": "बटेश्वर हिन्दू मंदिर, मध्य प्रदेश",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Bateshwar, Morena",
@@ -20957,6 +21413,7 @@
  {
   "id": "kakanmath-sihoniya",
   "name": "Kakanmath Temple",
+  "native": "ककनमठ",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Sihoniya, Morena",
@@ -20987,6 +21444,7 @@
  {
   "id": "udayagiri-caves-vidisha",
   "name": "Udayagiri Caves",
+  "native": "उदयगिरि और खंडगिरि",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Vidisha",
@@ -21048,6 +21506,7 @@
  {
   "id": "narmada-udgam-amarkantak",
   "name": "Narmada Udgam Temple, Amarkantak",
+  "native": "अमरकंटक",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Amarkantak",
@@ -21078,6 +21537,7 @@
  {
   "id": "ahilyeshwar-maheshwar",
   "name": "Ahilyeshwar Temple and Maheshwar Ghats",
+  "native": "महेश्वर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Maheshwar",
@@ -21137,6 +21597,7 @@
  {
   "id": "bawangaja-barwani",
   "name": "Bawangaja",
+  "native": "बावनगजा",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Barwani",
@@ -21196,6 +21657,7 @@
  {
   "id": "pashupatinath-mandsaur",
   "name": "Pashupatinath Temple, Mandsaur",
+  "native": "पशुपतिनाथ मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Mandsaur",
@@ -21225,6 +21687,7 @@
  {
   "id": "bhoramdeo-kawardha",
   "name": "Bhoramdeo Temple",
+  "native": "भोरमदेव",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Kawardha",
@@ -21285,6 +21748,7 @@
  {
   "id": "lakshmana-sirpur",
   "name": "Lakshmana Temple, Sirpur",
+  "native": "सिरपुर स्थापत्य समूह",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Sirpur, Mahasamund",
@@ -21314,6 +21778,7 @@
  {
   "id": "mahamaya-ratanpur",
   "name": "Mahamaya Temple, Ratanpur",
+  "native": "महामाया मंदिर,रतनपुर,बिलासपुर",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Ratanpur, Bilaspur",
@@ -21347,6 +21812,7 @@
  {
   "id": "rajarani-bhubaneswar",
   "name": "Rajarani Temple",
+  "native": "ରାଜାରାଣୀ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -21377,6 +21843,7 @@
  {
   "id": "brahmeswara-bhubaneswar",
   "name": "Brahmeswara Temple",
+  "native": "ବ୍ରହ୍ମେଶ୍ୱର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -21406,6 +21873,7 @@
  {
   "id": "ananta-vasudeva-bhubaneswar",
   "name": "Ananta Vasudeva Temple",
+  "native": "ଅନନ୍ତ ବାସୁଦେବ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -21435,6 +21903,7 @@
  {
   "id": "dhauli-shanti-stupa",
   "name": "Dhauli Shanti Stupa",
+  "native": "ଧଉଳି",
   "country": "India",
   "state": "Odisha",
   "place": "Dhauli, Bhubaneswar",
@@ -21465,6 +21934,7 @@
  {
   "id": "ratnagiri-jajpur",
   "name": "Ratnagiri Mahavihara",
+  "native": "ରତ୍ନଗିରି",
   "country": "India",
   "state": "Odisha",
   "place": "Ratnagiri, Jajpur",
@@ -21495,6 +21965,7 @@
  {
   "id": "udayagiri-jajpur",
   "name": "Udayagiri Buddhist Complex",
+  "native": "ଉଦୟଗିରି, ଓଡିଶା",
   "country": "India",
   "state": "Odisha",
   "place": "Jajpur",
@@ -21554,6 +22025,7 @@
  {
   "id": "biraja-jajpur",
   "name": "Biraja Temple",
+  "native": "ବିରଜା ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Jajpur",
@@ -21623,6 +22095,7 @@
  {
   "id": "samaleswari-sambalpur",
   "name": "Samaleswari Temple",
+  "native": "ସମଲେଶ୍ଵରୀ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Sambalpur",
@@ -21717,6 +22190,7 @@
  {
   "id": "mundeshwari-kaimur",
   "name": "Mundeshwari Temple",
+  "native": "मुंडेश्वरी मंदिर",
   "country": "India",
   "state": "Bihar",
   "place": "Kaimur",
@@ -21747,6 +22221,7 @@
  {
   "id": "pawapuri-jal-mandir",
   "name": "Jal Mandir, Pawapuri",
+  "native": "पावापुरी",
   "country": "India",
   "state": "Bihar",
   "place": "Pawapuri, Nalanda",
@@ -21777,6 +22252,7 @@
  {
   "id": "vishwa-shanti-stupa-rajgir",
   "name": "Vishwa Shanti Stupa, Rajgir",
+  "native": "विश्व शांति स्तूप",
   "country": "India",
   "state": "Bihar",
   "place": "Rajgir",
@@ -21806,6 +22282,7 @@
  {
   "id": "vaishali-relic-stupa",
   "name": "Relic Stupa and Ashokan Pillar, Vaishali",
+  "native": "वैशाली",
   "country": "India",
   "state": "Bihar",
   "place": "Vaishali",
@@ -21871,6 +22348,7 @@
  {
   "id": "shikharji-parasnath",
   "name": "Shikharji",
+  "native": "शिखरजी",
   "country": "India",
   "state": "Jharkhand",
   "place": "Parasnath Hill, Giridih",
@@ -21901,6 +22379,7 @@
  {
   "id": "rajrappa-chhinnamasta",
   "name": "Chhinnamasta Temple, Rajrappa",
+  "native": "रजरप्पा",
   "country": "India",
   "state": "Jharkhand",
   "place": "Rajrappa, Ramgarh",
@@ -21933,6 +22412,7 @@
  {
   "id": "maluti-dumka",
   "name": "Maluti Temples",
+  "native": "मलूटी के मन्दिर",
   "country": "India",
   "state": "Jharkhand",
   "place": "Maluti, Dumka",
@@ -21963,6 +22443,7 @@
  {
   "id": "tarapith-birbhum",
   "name": "Tarapith Temple",
+  "native": "তারাপীঠ",
   "country": "India",
   "state": "West Bengal",
   "place": "Tarapith, Birbhum",
@@ -22025,6 +22506,7 @@
  {
   "id": "tovp-mayapur",
   "name": "Temple of the Vedic Planetarium, Mayapur",
+  "native": "বৈদিক তারামণ্ডল মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Mayapur, Nadia",
@@ -22060,6 +22542,7 @@
  {
   "id": "hangseshwari-bansberia",
   "name": "Hangseshwari Temple",
+  "native": "হংসেশ্বরী কালীমন্দির, বাঁশবেড়িয়া",
   "country": "India",
   "state": "West Bengal",
   "place": "Bansberia, Hooghly",
@@ -22090,6 +22573,7 @@
  {
   "id": "108-shiva-kalna",
   "name": "108 Shiva Temples, Kalna",
+  "native": "কালনা",
   "country": "India",
   "state": "West Bengal",
   "place": "Kalna, Purba Bardhaman",
@@ -22119,6 +22603,7 @@
  {
   "id": "jalpesh-jalpaiguri",
   "name": "Jalpesh Temple",
+  "native": "জল্পেশ মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Jalpaiguri",
@@ -22149,6 +22634,7 @@
  {
   "id": "ghum-monastery-darjeeling",
   "name": "Yiga Choeling (Ghum) Monastery",
+  "native": "ঘুম মঠ",
   "country": "India",
   "state": "West Bengal",
   "place": "Ghum, Darjeeling",
@@ -22183,6 +22669,7 @@
  {
   "id": "chausathi-yogini-hirapur",
   "name": "Chausathi Yogini Temple, Hirapur",
+  "native": "ଚଉଷଠି ଯୋଗିନୀ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Hirapur, Bhubaneswar",
@@ -22215,6 +22702,7 @@
  {
   "id": "sonagiri-datia",
   "name": "Sonagiri Jain Temples",
+  "native": "सोनागिरि",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Sonagiri, Datia",
@@ -22250,6 +22738,7 @@
  {
   "id": "griddhakuta-rajgir",
   "name": "Griddhakuta (Vulture Peak)",
+  "native": "गृद्धकूट पर्वत",
   "country": "India",
   "state": "Bihar",
   "place": "Rajgir",
@@ -22286,6 +22775,7 @@
  {
   "id": "umananda-guwahati",
   "name": "Umananda Temple",
+  "native": "উমানন্দ দেৱালয়",
   "country": "India",
   "state": "Assam",
   "place": "Peacock Island, Guwahati",
@@ -22316,6 +22806,7 @@
  {
   "id": "navagraha-guwahati",
   "name": "Navagraha Mandir",
+  "native": "নৱগ্ৰহ মন্দিৰ, গুৱাহাটী",
   "country": "India",
   "state": "Assam",
   "place": "Guwahati",
@@ -22345,6 +22836,7 @@
  {
   "id": "basistha-guwahati",
   "name": "Basistha Temple",
+  "native": "বশিষ্ঠাশ্ৰম দেৱালয়",
   "country": "India",
   "state": "Assam",
   "place": "Guwahati",
@@ -22376,6 +22868,7 @@
  {
   "id": "hayagriva-madhava-hajo",
   "name": "Hayagriva Madhava Temple",
+  "native": "হয়গ্ৰীৱ মাধৱ মন্দিৰ",
   "country": "India",
   "state": "Assam",
   "place": "Hajo",
@@ -22434,6 +22927,7 @@
  {
   "id": "mahabhairav-tezpur",
   "name": "Mahabhairav Temple",
+  "native": "মহাভৈৰৱ মন্দিৰ",
   "country": "India",
   "state": "Assam",
   "place": "Tezpur",
@@ -22464,6 +22958,7 @@
  {
   "id": "madan-kamdev-baihata",
   "name": "Madan Kamdev",
+  "native": "মদন কামদেৱ দেৱালয়",
   "country": "India",
   "state": "Assam",
   "place": "Baihata Chariali, Kamrup",
@@ -22524,6 +23019,7 @@
  {
   "id": "unakoti-tripura",
   "name": "Unakoti",
+  "native": "ঊনকোটি",
   "country": "India",
   "state": "Tripura",
   "place": "Unakoti district",
@@ -22554,6 +23050,7 @@
  {
   "id": "chaturdasha-agartala",
   "name": "Chaturdasha Temple",
+  "native": "চতুর্দশ দেবতার মন্দির",
   "country": "India",
   "state": "Tripura",
   "place": "Old Agartala",
@@ -22799,6 +23296,7 @@
  {
   "id": "sringeri-sharada-peetham",
   "name": "Sringeri Sharada Peetham",
+  "native": "ಶೃಂಗೇರಿ ಶಾರದಾಪೀಠ",
   "country": "India",
   "state": "Karnataka",
   "place": "Sringeri",
@@ -22837,6 +23335,7 @@
  {
   "id": "annapoorneshwari-horanadu",
   "name": "Annapoorneshwari Temple",
+  "native": "ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ದೇವಾಲಯ, ಹೊರನಾಡು",
   "country": "India",
   "state": "Karnataka",
   "place": "Horanadu",
@@ -22867,6 +23366,7 @@
  {
   "id": "kollur-mookambika",
   "name": "Kollur Mookambika Temple",
+  "native": "ಕೊಲ್ಲೂರು ಮೂಕಾಂಬಿಕಾ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Kollur",
@@ -22932,6 +23432,7 @@
  {
   "id": "kukke-subramanya",
   "name": "Kukke Subramanya Temple",
+  "native": "ಕುಕ್ಕೆ ಸುಬ್ರಹ್ಮಣ್ಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Subramanya",
@@ -22962,6 +23463,7 @@
  {
   "id": "kateel-durgaparameshwari",
   "name": "Kateel Durgaparameshwari Temple",
+  "native": "ಕಟೀಲು",
   "country": "India",
   "state": "Karnataka",
   "place": "Kateel",
@@ -22991,6 +23493,7 @@
  {
   "id": "mangaladevi-mangaluru",
   "name": "Mangaladevi Temple",
+  "native": "ಮಂಗಳಾದೇವಿ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Mangaluru",
@@ -23026,6 +23529,7 @@
  {
   "id": "chamundeshwari-mysuru",
   "name": "Chamundeshwari Temple",
+  "native": "ಚಾಮುಂಡೇಶ್ವರಿ ದೇವಾಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Chamundi Hills, Mysuru",
@@ -23063,6 +23567,7 @@
  {
   "id": "srikanteshwara-nanjangud",
   "name": "Srikanteshwara Temple, Nanjangud",
+  "native": "ನಂಜುಂಡೇಶ್ವರ ದೇವಸ್ಥಾನ, ನಂಜನಗೂಡು",
   "country": "India",
   "state": "Karnataka",
   "place": "Nanjangud",
@@ -23093,6 +23598,7 @@
  {
   "id": "biligiri-ranganatha-br-hills",
   "name": "Biligiri Ranganatha Swamy Temple",
+  "native": "ಬಿಳಿಗಿರಿ ರಂಗನಾಥನ ಬೆಟ್ಟ",
   "country": "India",
   "state": "Karnataka",
   "place": "BR Hills",
@@ -23122,6 +23628,7 @@
  {
   "id": "ghati-subramanya-doddaballapura",
   "name": "Ghati Subramanya",
+  "native": "ಘಾಟಿ ಸುಬ್ರಮಣ್ಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Doddaballapura",
@@ -23152,6 +23659,7 @@
  {
   "id": "banashankari-badami",
   "name": "Banashankari Amma Temple",
+  "native": "ಬನಶಂಕರಿ ಅಮ್ಮ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Badami",
@@ -23183,6 +23691,7 @@
  {
   "id": "mahakuta-badami",
   "name": "Mahakuta group of temples",
+  "native": "ಮಹಾಕೂಟ",
   "country": "India",
   "state": "Karnataka",
   "place": "Mahakuta, Badami",
@@ -23270,6 +23779,7 @@
  {
   "id": "kotilingeshwara-kolar",
   "name": "Kotilingeshwara",
+  "native": "ಕೋಟಿಲಿ೦ಗೇಶ್ವರ",
   "country": "India",
   "state": "Karnataka",
   "place": "Kammasandra, Kolar",
@@ -23334,6 +23844,7 @@
  {
   "id": "bull-temple-bengaluru",
   "name": "Bull Temple (Dodda Basavana Gudi)",
+  "native": "ದೊಡ್ಡ ಗಣೇಶನ ಗುಡಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Basavanagudi, Bengaluru",
@@ -23363,6 +23874,7 @@
  {
   "id": "gavi-gangadhareshwara-bengaluru",
   "name": "Gavi Gangadhareshwara Temple",
+  "native": "ಗವಿ ಗಂಗಾಧರೇಶ್ವರ ದೇವಾಲಯ, ಬೆಂಗಳೂರು",
   "country": "India",
   "state": "Karnataka",
   "place": "Bengaluru",
@@ -23393,6 +23905,7 @@
  {
   "id": "lakshmi-narasimha-nuggehalli",
   "name": "Lakshmi Narasimha Temple, Nuggehalli",
+  "native": "ಲಕ್ಷ್ಮಿ ನರಸಿಂಹ ದೇವಾಸ್ಥಾನ, ನುಗ್ಗೇಹಳ್ಳಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Nuggehalli, Hassan",
@@ -23455,6 +23968,7 @@
  {
   "id": "amrutesvara-amruthapura",
   "name": "Amrutesvara Temple, Amruthapura",
+  "native": "ಅಮೃತಪುರ",
   "country": "India",
   "state": "Karnataka",
   "place": "Amruthapura, Chikkamagaluru",
@@ -23485,6 +23999,7 @@
  {
   "id": "veeranarayana-belavadi",
   "name": "Veera Narayana Temple, Belavadi",
+  "native": "ವೀರ ನಾರಾಯಣ ದೇವಸ್ಥಾನ ಬೆಳವಾಡಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Belavadi, Chikkamagaluru",
@@ -23515,6 +24030,7 @@
  {
   "id": "doddabasappa-dambal",
   "name": "Doddabasappa Temple",
+  "native": "ದೊಡ್ಡಬಸಪ್ಪ ದೇವಾಲಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Dambal, Gadag",
@@ -23544,6 +24060,7 @@
  {
   "id": "trikuteshwara-gadag",
   "name": "Trikuteshwara Temple, Gadag",
+  "native": "ತ್ರಿಕೂಟೇಶ್ವರ ದೇವಸ್ಥಾನ, ಗದಗ",
   "country": "India",
   "state": "Karnataka",
   "place": "Gadag",
@@ -23573,6 +24090,7 @@
  {
   "id": "mahadeva-itagi",
   "name": "Mahadeva Temple, Itagi",
+  "native": "ಮಹಾದೇವ ದೇವಸ್ಥಾನ, ಇಟಗಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Itagi, Koppal",
@@ -23606,6 +24124,7 @@
  {
   "id": "kalleshvara-bagali",
   "name": "Kalleshvara Temple, Bagali",
+  "native": "ಕಲ್ಲೇಶ್ವರ ದೇವಸ್ಥಾನ, ಬಾಗಳಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Bagali, Davanagere",
@@ -23635,6 +24154,7 @@
  {
   "id": "yellamma-saundatti",
   "name": "Yellamma Temple, Saundatti",
+  "native": "ಯಲ್ಲಮ್ಮ ದೇವಿ ದೇವಸ್ಥಾನ ಸವದತ್ತಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Saundatti, Belagavi",
@@ -23666,6 +24186,7 @@
  {
   "id": "saavira-kambada-basadi-moodabidri",
   "name": "Saavira Kambada Basadi (Thousand Pillar Temple), Moodabidri",
+  "native": "ಸಾವಿರ ಕಂಬ ಬಸದಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Moodabidri",
@@ -23700,6 +24221,7 @@
  {
   "id": "namdroling-bylakuppe",
   "name": "Namdroling Monastery",
+  "native": "ನಾಮ್‌ಡ್ರೊಲಿಂಗ್ ಮಠ",
   "country": "India",
   "state": "Karnataka",
   "place": "Bylakuppe",
@@ -23729,6 +24251,7 @@
  {
   "id": "attukal-bhagavathy-thiruvananthapuram",
   "name": "Attukal Bhagavathy Temple",
+  "native": "ആറ്റുകാൽ ഭഗവതി ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thiruvananthapuram",
@@ -23764,6 +24287,7 @@
  {
   "id": "chottanikkara-ernakulam",
   "name": "Chottanikkara Temple",
+  "native": "ചോറ്റാനിക്കര ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Chottanikkara, Ernakulam",
@@ -23834,6 +24358,7 @@
  {
   "id": "ettumanoor-mahadeva-ettumanoor",
   "name": "Ettumanoor Mahadevar Temple",
+  "native": "ഏറ്റുമാനൂർ മഹാദേവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Ettumanoor",
@@ -23869,6 +24394,7 @@
  {
   "id": "kadampuzha-devi-kadampuzha",
   "name": "Kadampuzha Devi Temple",
+  "native": "കാടാമ്പുഴ ഭഗവതിക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kadampuzha, Malappuram",
@@ -23941,6 +24467,7 @@
  {
   "id": "mannarasala-nagaraja-haripad",
   "name": "Mannarasala Sree Nagaraja Temple",
+  "native": "മണ്ണാറശ്ശാല ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Haripad",
@@ -23976,6 +24503,7 @@
  {
   "id": "ambalappuzha-krishna-ambalappuzha",
   "name": "Ambalappuzha Sree Krishna Swamy Temple",
+  "native": "അമ്പലപ്പുഴ ശ്രീകൃഷ്ണ ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Ambalappuzha",
@@ -24006,6 +24534,7 @@
  {
   "id": "chettikulangara-devi-mavelikkara",
   "name": "Chettikulangara Devi Temple",
+  "native": "ചെട്ടികുളങ്ങര ശ്രീ ഭഗവതി ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Mavelikkara",
@@ -24072,6 +24601,7 @@
  {
   "id": "rajarajeshwara-taliparamba",
   "name": "Rajarajeshwara Temple, Taliparamba",
+  "native": "തളിപ്പറമ്പ് രാജരാജേശ്വരക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Taliparamba",
@@ -24102,6 +24632,7 @@
  {
   "id": "thirunelli-wayanad",
   "name": "Thirunelli Temple",
+  "native": "ശ്രീ തിരുനെല്ലി മഹാവിഷ്ണുക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Wayanad",
@@ -24132,6 +24663,7 @@
  {
   "id": "lokanarkavu-vatakara",
   "name": "Lokanarkavu Temple",
+  "native": "ലോകനാർകാവ് ഭഗവതി ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Vatakara",
@@ -24162,6 +24694,7 @@
  {
   "id": "poornathrayeesa-tripunithura",
   "name": "Sree Poornathrayeesa Temple",
+  "native": "പൂർണ്ണത്രയീശ ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Tripunithura",
@@ -24197,6 +24730,7 @@
  {
   "id": "ernakulam-shiva-ernakulam",
   "name": "Ernakulam Shiva Temple",
+  "native": "എറണാകുളം ശിവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Ernakulam",
@@ -24232,6 +24766,7 @@
  {
   "id": "kaviyoor-mahadeva-kaviyoor",
   "name": "Kaviyoor Mahadevar Temple",
+  "native": "കവിയൂർ മഹാദേവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kaviyoor",
@@ -24262,6 +24797,7 @@
  {
   "id": "oachira-parabrahma-oachira",
   "name": "Oachira Temple (Parabrahma Temple)",
+  "native": "ഓച്ചിറ പരബ്രഹ്മക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Oachira",
@@ -24291,6 +24827,7 @@
  {
   "id": "janardanaswamy-varkala",
   "name": "Janardanaswamy Temple, Varkala",
+  "native": "വർക്കല ജനാർദ്ദനസ്വാമി ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Varkala",
@@ -24326,6 +24863,7 @@
  {
   "id": "kamakshi-amman-kanchipuram",
   "name": "Kamakshi Amman Temple",
+  "native": "காஞ்சிபுரம் காமாட்சியம்மன் கோயில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kanchipuram",
@@ -24499,6 +25037,7 @@
  {
   "id": "nagaraja-nagercoil",
   "name": "Nagaraja Temple, Nagercoil",
+  "native": "நாகராஜா கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Nagercoil",
@@ -24559,6 +25098,7 @@
  {
   "id": "suryanar-kovil",
   "name": "Suryanar Kovil",
+  "native": "சூரியனார் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Suryanar Kovil, Thanjavur dist",
@@ -24591,6 +25131,7 @@
  {
   "id": "kailasanathar-thingalur",
   "name": "Kailasanathar Temple, Thingalur",
+  "native": "திங்களூர்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thingalur",
@@ -24623,6 +25164,7 @@
  {
   "id": "nagannathaswamy-keelaperumpallam",
   "name": "Nagannathaswamy Temple, Keelaperumpallam",
+  "native": "கீழப்பெரும்பள்ளம் நாகநாதர் கோயில் (கேது)",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keezhperumpallam",
@@ -24743,6 +25285,7 @@
  {
   "id": "adhiparasakthi-melmaruvathur",
   "name": "Adhiparasakthi Siddhar Peetam, Melmaruvathur",
+  "native": "ஆதிபராசக்தி சித்தர் பீடம்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Melmaruvathur",
@@ -24773,6 +25316,7 @@
  {
   "id": "sittanavasal-cave",
   "name": "Sittanavasal Cave",
+  "native": "சித்தன்னவாசல் குகை",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Sittanavasal, Pudukkottai",
@@ -24803,6 +25347,7 @@
  {
   "id": "kalugumalai-jain-beds",
   "name": "Kalugumalai Jain Beds",
+  "native": "கழுகுமலை சமணர் படுகைகள்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Kazhugumalai, Thoothukudi",
@@ -24832,6 +25377,7 @@
  {
   "id": "ranganathaswamy-srirangapatna",
   "name": "Ranganathaswamy Temple, Srirangapatna",
+  "native": "ರಂಗನಾಥಸ್ವಾಮಿ ದೇವಸ್ಥಾನ, ಶ್ರೀರಂಗಪಟ್ಟಣ",
   "country": "India",
   "state": "Karnataka",
   "place": "Srirangapatna",
@@ -24863,6 +25409,7 @@
  {
   "id": "satyanarayana-annavaram",
   "name": "Satyanarayana Swamy Temple, Annavaram",
+  "native": "అన్నవరం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Annavaram, Kakinada",
@@ -24898,6 +25445,7 @@
  {
   "id": "dwaraka-tirumala",
   "name": "Dwaraka Tirumala Temple",
+  "native": "ద్వారకా తిరుమల",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Dwaraka Tirumala, Eluru",
@@ -24995,6 +25543,7 @@
  {
   "id": "arasavalli-sun-temple",
   "name": "Arasavalli Sun Temple",
+  "native": "శ్రీ సూర్యనారాయణస్వామి దేవస్థానం, అరసవల్లి",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Arasavalli, Srikakulam",
@@ -25026,6 +25575,7 @@
  {
   "id": "madhukeswara-mukhalingam",
   "name": "Madhukeswara Temple, Mukhalingam",
+  "native": "ముఖలింగం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Mukhalingam, Srikakulam",
@@ -25085,6 +25635,7 @@
  {
   "id": "mahanandi",
   "name": "Mahanandiswara Swamy Temple, Mahanandi",
+  "native": "మహానంది",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Mahanandi, Nandyal",
@@ -25115,6 +25666,7 @@
  {
   "id": "kotappakonda-trikoteswara",
   "name": "Trikoteswara Swamy Temple, Kotappakonda",
+  "native": "కోటప్ప కొండ",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Kotappakonda, Palnadu",
@@ -25177,6 +25729,7 @@
  {
   "id": "bhimeswara-draksharamam",
   "name": "Bhimeswara Swamy Temple, Draksharamam",
+  "native": "ద్రాక్షారామం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Draksharamam, Konaseema",
@@ -25209,6 +25762,7 @@
  {
   "id": "kumararama-samalkota",
   "name": "Kumararama Bhimeswara Temple",
+  "native": "కుమారభీమారామము",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Samalkota",
@@ -25240,6 +25794,7 @@
  {
   "id": "ksheerarama-palakollu",
   "name": "Ksheerarama Temple",
+  "native": "క్షీరారామం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Palakollu",
@@ -25271,6 +25826,7 @@
  {
   "id": "somarama-bhimavaram",
   "name": "Somarama Temple",
+  "native": "భీమారామము",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Bhimavaram",
@@ -25303,6 +25859,7 @@
  {
   "id": "amaravati-stupa",
   "name": "Amaravati Stupa",
+  "native": "అమరావతి మహాస్తూపం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Amaravathi, Palnadu",
@@ -25332,6 +25889,7 @@
  {
   "id": "nagarjunakonda",
   "name": "Nagarjunakonda",
+  "native": "నాగార్జునకొండ మ్యూజియం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Nagarjuna Sagar",
@@ -25361,6 +25919,7 @@
  {
   "id": "undavalli-caves",
   "name": "Undavalli Caves",
+  "native": "ఉండవల్లి గుహలు",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Undavalli, Guntur",
@@ -25390,6 +25949,7 @@
  {
   "id": "rajarajeswara-vemulawada",
   "name": "Raja Rajeswara Temple, Vemulawada",
+  "native": "వేములవాడ",
   "country": "India",
   "state": "Telangana",
   "place": "Vemulawada, Rajanna Sircilla",
@@ -25454,6 +26014,7 @@
  {
   "id": "thousand-pillar-hanamkonda",
   "name": "Thousand Pillar Temple",
+  "native": "వేయి స్తంభాల గుడి",
   "country": "India",
   "state": "Telangana",
   "place": "Hanamkonda",
@@ -25483,6 +26044,7 @@
  {
   "id": "bhadrakali-warangal",
   "name": "Bhadrakali Temple, Warangal",
+  "native": "భద్రకాళీ దేవాలయం (వరంగల్)",
   "country": "India",
   "state": "Telangana",
   "place": "Warangal",
@@ -25512,6 +26074,7 @@
  {
   "id": "gnana-saraswati-basar",
   "name": "Gnana Saraswati Temple, Basar",
+  "native": "శ్రీ జ్ఞాన సరస్వతి దేవస్థానము, బాసర",
   "country": "India",
   "state": "Telangana",
   "place": "Basar, Nirmal",
@@ -25542,6 +26105,7 @@
  {
   "id": "kaleshwara-mukteswara-kaleshwaram",
   "name": "Kaleshwara Mukteswara Swamy Temple",
+  "native": "కాళేశ్వర ముక్తేశ్వర దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Kaleshwaram, Jayashankar",
@@ -25571,6 +26135,7 @@
  {
   "id": "birla-mandir-hyderabad",
   "name": "Birla Mandir, Hyderabad",
+  "native": "బిర్లా మందిరం, హైదరాబాదు",
   "country": "India",
   "state": "Telangana",
   "place": "Hyderabad",
@@ -25600,6 +26165,7 @@
  {
   "id": "statue-of-equality-muchintal",
   "name": "Statue of Equality (Ramanuja)",
+  "native": "సమతామూర్తి",
   "country": "India",
   "state": "Telangana",
   "place": "Muchintal, Hyderabad",
@@ -25696,6 +26262,7 @@
  {
   "id": "kalady-shankara-janmabhoomi",
   "name": "Adi Shankara Janmabhoomi Kshetram, Kalady",
+  "native": "കാലടി",
   "country": "India",
   "state": "Kerala",
   "place": "Kalady",
@@ -25727,6 +26294,7 @@
  {
   "id": "keshgarh-sahib-anandpur",
   "name": "Takht Sri Keshgarh Sahib",
+  "native": "ਤਖ਼ਤ ਸ੍ਰੀ ਕੇਸਗੜ੍ਹ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Anandpur Sahib",
@@ -25759,6 +26327,7 @@
  {
   "id": "damdama-sahib-talwandi-sabo",
   "name": "Takht Sri Damdama Sahib",
+  "native": "ਤਖ਼ਤ ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Talwandi Sabo, Bathinda",
@@ -25790,6 +26359,7 @@
  {
   "id": "hazur-sahib-nanded",
   "name": "Takht Sachkhand Sri Hazur Sahib",
+  "native": "हुजूर साहिब नांदेड",
   "country": "India",
   "state": "Maharashtra",
   "place": "Nanded",
@@ -25888,6 +26458,7 @@
  {
   "id": "fatehgarh-sahib",
   "name": "Gurdwara Fatehgarh Sahib",
+  "native": "ਫ਼ਤਹਿਗੜ੍ਹ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Fatehgarh Sahib",
@@ -25918,6 +26489,7 @@
  {
   "id": "darbar-sahib-tarn-taran",
   "name": "Gurdwara Sri Darbar Sahib, Tarn Taran",
+  "native": "ਤਰਨ ਤਾਰਨ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Tarn Taran",
@@ -25947,6 +26519,7 @@
  {
   "id": "goindwal-sahib",
   "name": "Gurdwara Baoli Sahib, Goindwal",
+  "native": "ਗੋਇੰਦਵਾਲ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Goindwal",
@@ -26135,6 +26708,7 @@
  {
   "id": "parinirvana-temple-kushinagar",
   "name": "Mahaparinirvana Temple, Kushinagar",
+  "native": "परिनिर्वाण स्तूप",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Kushinagar",
@@ -26200,6 +26774,7 @@
  {
   "id": "sankissa-farrukhabad",
   "name": "Sankissa",
+  "native": "संकिशा",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Sankisa, Farrukhabad",
@@ -26263,6 +26838,7 @@
  {
   "id": "bharhut-stupa-satna",
   "name": "Bharhut Stupa",
+  "native": "भरहुत",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Bharhut, Satna",
@@ -26293,6 +26869,7 @@
  {
   "id": "bavikonda-visakhapatnam",
   "name": "Bavikonda",
+  "native": "బావికొండ",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Visakhapatnam",
@@ -26322,6 +26899,7 @@
  {
   "id": "thotlakonda-visakhapatnam",
   "name": "Thotlakonda",
+  "native": "తొట్లకొండ",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Visakhapatnam",
@@ -26351,6 +26929,7 @@
  {
   "id": "salihundam-srikakulam",
   "name": "Salihundam",
+  "native": "శాలిహుండం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Srikakulam",
@@ -26442,6 +27021,7 @@
  {
   "id": "aurangabad-caves",
   "name": "Aurangabad Caves",
+  "native": "संभाजीनगर लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Chhatrapati Sambhajinagar",
@@ -26471,6 +27051,7 @@
  {
   "id": "pitalkhora-caves",
   "name": "Pitalkhora Caves",
+  "native": "पितळखोरे लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Kannad, Chhatrapati Sambhajinagar",
@@ -26500,6 +27081,7 @@
  {
   "id": "bedse-caves-pune",
   "name": "Bedse Caves",
+  "native": "बेडसे लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Maval, Pune",
@@ -26529,6 +27111,7 @@
  {
   "id": "bagh-caves-dhar",
   "name": "Bagh Caves",
+  "native": "बाग की गुफाएँ",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Bagh, Dhar",
@@ -26631,6 +27214,7 @@
  {
   "id": "padampura-jaipur",
   "name": "Padampura Jain Temple",
+  "native": "पदमपुरा",
   "country": "India",
   "state": "Rajasthan",
   "place": "Padampura, Jaipur",
@@ -26661,6 +27245,7 @@
  {
   "id": "kulpakji-kolanupaka",
   "name": "Kulpakji",
+  "native": "కొలనుపాక జైన మందిరం",
   "country": "India",
   "state": "Telangana",
   "place": "Kolanupaka, Yadadri",
@@ -26722,6 +27307,7 @@
  {
   "id": "manakamana-gorkha",
   "name": "Manakamana Temple",
+  "native": "मनकामना मन्दिर",
   "country": "Nepal",
   "state": "Gandaki",
   "place": "Gorkha",
@@ -26752,6 +27338,7 @@
  {
   "id": "dakshinkali-kathmandu",
   "name": "Dakshinkali Temple",
+  "native": "दक्षिणकाली भगवती",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Kathmandu valley",
@@ -26782,6 +27369,7 @@
  {
   "id": "doleshwar-mahadev-bhaktapur",
   "name": "Doleshwor Mahadeva Temple",
+  "native": "देालेश्वर माहादेव नेपाल",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Bhaktapur",
@@ -26811,6 +27399,7 @@
  {
   "id": "halesi-mahadev-khotang",
   "name": "Halesi Mahadev",
+  "native": "हलेसी महादेव",
   "country": "Nepal",
   "state": "Koshi",
   "place": "Khotang",
@@ -26872,6 +27461,7 @@
  {
   "id": "maya-devi-temple-lumbini",
   "name": "Maya Devi Temple, Lumbini",
+  "native": "मायादेवी मन्दिर",
   "country": "Nepal",
   "state": "Lumbini Province",
   "place": "Lumbini",
@@ -26906,6 +27496,7 @@
  {
   "id": "nyatapola-bhaktapur",
   "name": "Nyatapola Temple",
+  "native": "न्यातपोल मन्दिर",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Bhaktapur",
@@ -26938,6 +27529,7 @@
  {
   "id": "krishna-mandir-patan",
   "name": "Krishna Mandir, Patan",
+  "native": "पाटनको कृष्ण मन्दिर",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Lalitpur",
@@ -26969,6 +27561,7 @@
  {
   "id": "taleju-temple-kathmandu",
   "name": "Taleju Temple, Kathmandu",
+  "native": "तलेजु मन्दिर",
   "country": "Nepal",
   "state": "Bagmati",
   "place": "Kathmandu Durbar Square",
@@ -30153,6 +30746,7 @@
  {
   "id": "kedareswar-bhubaneswar",
   "name": "Kedareswar Temple",
+  "native": "କେଦାରେଶ୍ଵର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -30212,6 +30806,7 @@
  {
   "id": "rameshwar-deula-bhubaneswar",
   "name": "Rameshwar Deula",
+  "native": "ରାମେଶ୍ଵର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -30242,6 +30837,7 @@
  {
   "id": "yameshwar-bhubaneswar",
   "name": "Yameshwar Temple",
+  "native": "ଯମେଶ୍ୱର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
@@ -30271,6 +30867,7 @@
  {
   "id": "kichakeshwari-khiching",
   "name": "Kichakeshwari Temple",
+  "native": "କୀଚକେଶ୍ଵରୀ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Khiching, Mayurbhanj",
@@ -30301,6 +30898,7 @@
  {
   "id": "varahi-deula-chaurasi",
   "name": "Varahi Deula, Chaurasi",
+  "native": "ବାରାହୀ ଦେଉଳ",
   "country": "India",
   "state": "Odisha",
   "place": "Chaurasi, Kendrapara",
@@ -30359,6 +30957,7 @@
  {
   "id": "huma-leaning-temple",
   "name": "Leaning Temple of Huma",
+  "native": "ବିମଳେଶ୍ଵର ଦେଉଳ",
   "country": "India",
   "state": "Odisha",
   "place": "Huma, Sambalpur",
@@ -30389,6 +30988,7 @@
  {
   "id": "harishankar-gandhamardan",
   "name": "Harishankar Temple",
+  "native": "ହରିଶଙ୍କର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Gandhamardan Hills, Balangir",
@@ -30418,6 +31018,7 @@
  {
   "id": "akhandalamani-aradi",
   "name": "Akhandalamani Temple",
+  "native": "ଆଖଣ୍ଡଳମଣି ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Aradi, Bhadrak",
@@ -30448,6 +31049,7 @@
  {
   "id": "panchalingeswar-nilagiri",
   "name": "Panchalingeswar Temple",
+  "native": "ପଞ୍ଚଲିଙ୍ଗେଶ୍ଵର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Nilagiri, Balasore",
@@ -30478,6 +31080,7 @@
  {
   "id": "maa-tarini-ghatgaon",
   "name": "Maa Tarini Temple, Ghatgaon",
+  "native": "ତାରିଣୀ ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Ghatgaon, Keonjhar",
@@ -30508,6 +31111,7 @@
  {
   "id": "biranchinarayan-buguda",
   "name": "Biranchinarayan Temple, Buguda",
+  "native": "ବିରଞ୍ଚି ନାରାୟଣ ମନ୍ଦିର, ବୁଗୁଡ଼ା",
   "country": "India",
   "state": "Odisha",
   "place": "Buguda, Ganjam",
@@ -30537,6 +31141,7 @@
  {
   "id": "sarala-jhankad",
   "name": "Sarala Temple",
+  "native": "ସାରଳା ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Jhankad, Jagatsinghpur",
@@ -30595,6 +31200,7 @@
  {
   "id": "bahulara-onda",
   "name": "Bahulara Ancient Temple",
+  "native": "সিদ্ধেশ্বর মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Bahulara, Onda, Bankura",
@@ -30624,6 +31230,7 @@
  {
   "id": "jatar-deul-kankandighi",
   "name": "Jatar Deul",
+  "native": "জটার দেউল",
   "country": "India",
   "state": "West Bengal",
   "place": "Kankandighi, South 24 Parganas",
@@ -30653,6 +31260,7 @@
  {
   "id": "ichhai-ghosher-deul",
   "name": "Ichhai Ghosher Deul",
+  "native": "ইছাই ঘোষের দেউল",
   "country": "India",
   "state": "West Bengal",
   "place": "Gourangapur, Paschim Bardhaman",
@@ -30683,6 +31291,7 @@
  {
   "id": "kanak-durga-chilkigarh",
   "name": "Kanak Durga Temple",
+  "native": "কনক দুর্গা মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Chilkigarh, Jhargram",
@@ -30713,6 +31322,7 @@
  {
   "id": "birla-mandir-kolkata",
   "name": "Birla Mandir, Kolkata",
+  "native": "বিড়লা মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Kolkata",
@@ -30742,6 +31352,7 @@
  {
   "id": "calcutta-jain-temple",
   "name": "Calcutta Jain Temple",
+  "native": "পরশনাথ মন্দির",
   "country": "India",
   "state": "West Bengal",
   "place": "Kolkata",
@@ -30771,6 +31382,7 @@
  {
   "id": "vikramashila-antichak",
   "name": "Vikramashila",
+  "native": "विक्रमशिला विश्वविद्यालय",
   "country": "India",
   "state": "Bihar",
   "place": "Antichak, Bhagalpur",
@@ -30806,6 +31418,7 @@
  {
   "id": "odantapuri-bihar-sharif",
   "name": "Odantapuri",
+  "native": "ओदंतपुर",
   "country": "India",
   "state": "Bihar",
   "place": "Bihar Sharif, Nalanda",
@@ -30838,6 +31451,7 @@
  {
   "id": "sujata-stupa-bakraur",
   "name": "Sujata Stupa",
+  "native": "सुजाता स्तूप",
   "country": "India",
   "state": "Bihar",
   "place": "Bakraur, Bodh Gaya, Gaya",
@@ -30871,6 +31485,7 @@
  {
   "id": "lauria-nandangarh",
   "name": "Lauria Nandangarh",
+  "native": "लउरिया नन्दनगढ़",
   "country": "India",
   "state": "Bihar",
   "place": "Lauriya, West Champaran",
@@ -30901,6 +31516,7 @@
  {
   "id": "son-bhandar-rajgir",
   "name": "Son Bhandar Caves",
+  "native": "सोन भंडार गुफा",
   "country": "India",
   "state": "Bihar",
   "place": "Rajgir, Nalanda",
@@ -30930,6 +31546,7 @@
  {
   "id": "mangla-gauri-gaya",
   "name": "Mangla Gauri Temple",
+  "native": "मंगला गौरी मंदिर",
   "country": "India",
   "state": "Bihar",
   "place": "Gaya",
@@ -30991,6 +31608,7 @@
  {
   "id": "aranya-devi-arrah",
   "name": "Aranya Devi Temple, Arrah",
+  "native": "आरण्य देवी मंदिर, आरा",
   "country": "India",
   "state": "Bihar",
   "place": "Arrah, Bhojpur",
@@ -31021,6 +31639,7 @@
  {
   "id": "jagannath-ranchi",
   "name": "Jagannath Temple, Ranchi",
+  "native": "जगन्नाथपुर मंदिर",
   "country": "India",
   "state": "Jharkhand",
   "place": "Ranchi",
@@ -31109,6 +31728,7 @@
  {
   "id": "bambleshwari-dongargarh",
   "name": "Bambleshwari Temple",
+  "native": "बम्बलेश्वरी देवी मंदिर",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Dongargarh, Rajnandgaon",
@@ -31139,6 +31759,7 @@
  {
   "id": "narayanpal-bastar",
   "name": "Narayanpal Temple",
+  "native": "नारायणपाल मंदिर",
   "country": "India",
   "state": "Chhattisgarh",
   "place": "Narayanpal, Bastar",
@@ -31231,6 +31852,7 @@
  {
   "id": "ugratara-guwahati",
   "name": "Ugratara Devalaya",
+  "native": "উগ্ৰতাৰা দেৱালয়",
   "country": "India",
   "state": "Assam",
   "place": "Uzan Bazaar, Guwahati",
@@ -31261,6 +31883,7 @@
  {
   "id": "doul-govinda-north-guwahati",
   "name": "Doul Govinda Temple",
+  "native": "দৌল গোবিন্দ মন্দিৰ",
   "country": "India",
   "state": "Assam",
   "place": "Rajaduar, North Guwahati, Kamrup",
@@ -31348,6 +31971,7 @@
  {
   "id": "dah-parvatiya-tezpur",
   "name": "Dah Parvatiya",
+  "native": "দ-পৰ্বতীয়া",
   "country": "India",
   "state": "Assam",
   "place": "Da Parbatia, Tezpur, Sonitpur",
@@ -31381,6 +32005,7 @@
  {
   "id": "negheriting-dergaon",
   "name": "Negheriting Shiva Doul",
+  "native": "নেঘেৰিটিং শিৱদৌল",
   "country": "India",
   "state": "Assam",
   "place": "Dergaon, Golaghat",
@@ -31416,6 +32041,7 @@
  {
   "id": "hatimura-jakhalabandha",
   "name": "Hatimura Temple",
+  "native": "হাতীমূৰা মন্দিৰ",
   "country": "India",
   "state": "Assam",
   "place": "Jakhalabandha, Nagaon",
@@ -31449,6 +32075,7 @@
  {
   "id": "auniati-satra-majuli",
   "name": "Auniati Satra",
+  "native": "আউনীআটী সত্ৰ",
   "country": "India",
   "state": "Assam",
   "place": "Majuli",
@@ -31657,6 +32284,7 @@
  {
   "id": "jagannath-agartala",
   "name": "Agartala Jagannath Mandir",
+  "native": "আগরতলা জগন্নাথ মন্দির",
   "country": "India",
   "state": "Tripura",
   "place": "Agartala, West Tripura",
@@ -31715,6 +32343,7 @@
  {
   "id": "nagvasuki-prayagraj",
   "name": "Nagvasuki Temple",
+  "native": "नागवासुकी मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Prayagraj",
@@ -31776,6 +32405,7 @@
  {
   "id": "chandrika-devi-lucknow",
   "name": "Chandrika Devi Temple, Lucknow",
+  "native": "चंद्रिका देवी मंदिर, लखनऊ",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Kathwara, Lucknow",
@@ -31806,6 +32436,7 @@
  {
   "id": "tarkulha-devi-gorakhpur",
   "name": "Tarkulha Devi Temple",
+  "native": "तरकुलहा देवी मंदिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Tarkulha, Gorakhpur",
@@ -31835,6 +32466,7 @@
  {
   "id": "bijethua-mahavir-sultanpur",
   "name": "Bijethua Mahavir",
+  "native": "विजेथुवा महावीरन",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Bijethua, Sultanpur",
@@ -31923,6 +32555,7 @@
  {
   "id": "teli-ka-mandir-gwalior",
   "name": "Teli ka Mandir",
+  "native": "तेली का मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Gwalior Fort, Gwalior",
@@ -32011,6 +32644,7 @@
  {
   "id": "tigawa-katni",
   "name": "Kankali Devi Temple, Tigawa",
+  "native": "तिगवा",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Tigawa, Katni",
@@ -32040,6 +32674,7 @@
  {
   "id": "bagalamukhi-nalkheda",
   "name": "Bagalamukhi Temple, Nalkheda",
+  "native": "बगलामुखी मंदिर, नलखेड़ा",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Nalkheda, Agar Malwa",
@@ -32074,6 +32709,7 @@
  {
   "id": "kanch-mandir-indore",
   "name": "Kanch Mandir",
+  "native": "कंच‍ मन्दिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Indore",
@@ -32103,6 +32739,7 @@
  {
   "id": "hanumantal-jabalpur",
   "name": "Hanumantal Bada Jain Mandir",
+  "native": "हनुमंतल बड़ा जैन मंदिर",
   "country": "India",
   "state": "Madhya Pradesh",
   "place": "Jabalpur",
@@ -32132,6 +32769,7 @@
  {
   "id": "baroli-chittorgarh",
   "name": "Baroli Temples",
+  "native": "बाड़ौली मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Baroli, Chittorgarh",
@@ -32161,6 +32799,7 @@
  {
   "id": "dadhimati-nagaur",
   "name": "Dadhimati Mata Temple",
+  "native": "दधिमती माता मन्दिर ,नागौर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Goth-Manglod, Nagaur",
@@ -32191,6 +32830,7 @@
  {
   "id": "kalika-mata-chittorgarh",
   "name": "Kalika Mata Temple, Chittorgarh",
+  "native": "कालिका माता मन्दिर ,चित्तौड़गढ़ दुर्ग",
   "country": "India",
   "state": "Rajasthan",
   "place": "Chittorgarh Fort, Chittorgarh",
@@ -32221,6 +32861,7 @@
  {
   "id": "sundha-mata-jalore",
   "name": "Sundha Mata Temple",
+  "native": "सुंधा माता मंदिर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Sundha Hill, Jalore",
@@ -32251,6 +32892,7 @@
  {
   "id": "gogamedi-hanumangarh",
   "name": "Gogaji Temple, Gogamedi",
+  "native": "गोगामेड़ी",
   "country": "India",
   "state": "Rajasthan",
   "place": "Gogamedi, Hanumangarh",
@@ -32285,6 +32927,7 @@
  {
   "id": "jagat-shiromani-amer",
   "name": "Jagat Shiromani Temple",
+  "native": "जगत शिरोमणी मन्दिर ,आमेर",
   "country": "India",
   "state": "Rajasthan",
   "place": "Amer, Jaipur",
@@ -32350,6 +32993,7 @@
  {
   "id": "rishabhdeo-udaipur",
   "name": "Rishabhdeo Temple (Kesariyaji)",
+  "native": "ऋषभदेव",
   "country": "India",
   "state": "Rajasthan",
   "place": "Rishabhdeo, Udaipur",
@@ -32380,6 +33024,7 @@
  {
   "id": "kalika-mata-pavagadh",
   "name": "Kalika Mata Temple, Pavagadh",
+  "native": "કાળકા માતા મંદિર, પાવાગઢ",
   "country": "India",
   "state": "Gujarat",
   "place": "Pavagadh, Panchmahal",
@@ -32412,6 +33057,7 @@
  {
   "id": "navlakha-ghumli",
   "name": "Navlakha Temple, Ghumli",
+  "native": "નવલખા મંદિર, ઘુમલી",
   "country": "India",
   "state": "Gujarat",
   "place": "Ghumli, Devbhumi Dwarka",
@@ -32441,6 +33087,7 @@
  {
   "id": "salangpur-hanuman-botad",
   "name": "Kashtabhanjan Dev Hanuman Temple, Salangpur",
+  "native": "હનુમાન મંદિર, સાળંગપુર",
   "country": "India",
   "state": "Gujarat",
   "place": "Salangpur, Botad",
@@ -32535,6 +33182,7 @@
  {
   "id": "ranakdevi-wadhwan",
   "name": "Ranakdevi's Temple",
+  "native": "રાણકદેવીનું મંદિર",
   "country": "India",
   "state": "Gujarat",
   "place": "Wadhwan, Surendranagar",
@@ -32565,6 +33213,7 @@
  {
   "id": "kumbharia-banaskantha",
   "name": "Kumbharia Jain Temples",
+  "native": "કુંભારિયા જૈન મંદિરો",
   "country": "India",
   "state": "Gujarat",
   "place": "Kumbhariya, Banaskantha",
@@ -32594,6 +33243,7 @@
  {
   "id": "lakhpat-gurdwara-kutch",
   "name": "Lakhpat Gurdwara Sahib",
+  "native": "લખપત ગુરુદ્વારા",
   "country": "India",
   "state": "Gujarat",
   "place": "Lakhpat, Kutch",
@@ -32623,6 +33273,7 @@
  {
   "id": "kalaram-nashik",
   "name": "Kalaram Temple",
+  "native": "काळा राम मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Panchavati, Nashik",
@@ -32658,6 +33309,7 @@
  {
   "id": "jyotiba-kolhapur",
   "name": "Jyotiba Temple",
+  "native": "ज्योतिबा मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Wadi Ratnagiri, Kolhapur",
@@ -32688,6 +33340,7 @@
  {
   "id": "vajreshwari-palghar",
   "name": "Vajreshwari Temple",
+  "native": "वज्रेश्वरी मंदिर",
   "country": "India",
   "state": "Maharashtra",
   "place": "Vajreshwari, Palghar",
@@ -32778,6 +33431,7 @@
  {
   "id": "kuda-caves-raigad",
   "name": "Kuda Caves",
+  "native": "कुडा लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Kuda, Raigad",
@@ -32807,6 +33461,7 @@
  {
   "id": "akal-takht-amritsar",
   "name": "Akal Takht",
+  "native": "ਅਕਾਲ ਤਖ਼ਤ",
   "country": "India",
   "state": "Punjab",
   "place": "Amritsar",
@@ -32839,6 +33494,7 @@
  {
   "id": "baba-bakala-amritsar",
   "name": "Gurdwara Baba Bakala Sahib",
+  "native": "ਗੁਰਦਵਾਰਾ ਬਾਬਾ ਬਕਾਲਾ ਸਾਹਿਬ",
   "country": "India",
   "state": "Punjab",
   "place": "Baba Bakala, Amritsar",
@@ -32869,6 +33525,7 @@
  {
   "id": "rakab-ganj-delhi",
   "name": "Gurdwara Rakab Ganj Sahib",
+  "native": "गुरुद्वारा रकाब गंज साहिब",
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
@@ -32904,6 +33561,7 @@
  {
   "id": "lal-mandir-delhi",
   "name": "Sri Digambar Jain Lal Mandir",
+  "native": "जैन मन्दिर, चाँदनी चौक",
   "country": "India",
   "state": "Delhi",
   "place": "Chandni Chowk, Delhi",
@@ -32935,6 +33593,7 @@
  {
   "id": "masrur-kangra",
   "name": "Masrur Temples",
+  "native": "मसरूर मंदिर",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Masrur, Kangra",
@@ -32965,6 +33624,7 @@
  {
   "id": "amruteshwar-ratanwadi",
   "name": "Amruteshwar Temple, Ratanwadi",
+  "native": "अमृतेश्वर मंदिर, रतनवाडी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Ratanwadi, Ahilyanagar",
@@ -33024,6 +33684,7 @@
  {
   "id": "chaurasi-bharmour",
   "name": "Chaurasi Temple, Bharmour",
+  "native": "चौरासी मंदिर",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Bharmour, Chamba",
@@ -33261,6 +33922,7 @@
  {
   "id": "dhankar-spiti",
   "name": "Dhankar Gompa",
+  "native": "धनकर गोम्पा",
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Dhankar, Spiti",
@@ -33438,6 +34100,7 @@
  {
   "id": "barabar-caves-jehanabad",
   "name": "Barabar Caves",
+  "native": "बराबर गुफाएँ",
   "country": "India",
   "state": "Bihar",
   "place": "Barabar Hills, Jehanabad",
@@ -33467,6 +34130,7 @@
  {
   "id": "panhalakaji-ratnagiri",
   "name": "Panhalakaji Caves",
+  "native": "पन्हाळेकाजी लेणी",
   "country": "India",
   "state": "Maharashtra",
   "place": "Panhalekaji, Ratnagiri",
@@ -33496,6 +34160,7 @@
  {
   "id": "lakshmi-devi-doddagaddavalli",
   "name": "Lakshmi Devi Temple",
+  "native": "ದೊಡ್ಡಗದ್ದವಳ್ಳಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Doddagaddavalli",
@@ -33554,6 +34219,7 @@
  {
   "id": "lakshminarasimha-javagal",
   "name": "Lakshminarasimha Temple",
+  "native": "ಲಕ್ಷ್ಮೀನರಸಿಂಹ ದೇವಾಲಯ, ಜಾವಗಲ್",
   "country": "India",
   "state": "Karnataka",
   "place": "Javagal",
@@ -33583,6 +34249,7 @@
  {
   "id": "lakshminarayana-hosaholalu",
   "name": "Lakshminarayana Temple",
+  "native": "ಹೊಸಹೊಳಲು",
   "country": "India",
   "state": "Karnataka",
   "place": "Hosaholalu",
@@ -33649,6 +34316,7 @@
  {
   "id": "cheluvanarayana-melkote",
   "name": "Cheluvanarayana Swamy Temple",
+  "native": "ಚೆಲುವನಾರಾಯಣ ಸ್ವಾಮಿ ದೇವಾಲಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Melkote",
@@ -33681,6 +34349,7 @@
  {
   "id": "panchakuta-basadi-kambadahalli",
   "name": "Panchakuta Basadi",
+  "native": "ಕಂಬದಹಳ್ಳಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Kambadahalli",
@@ -33710,6 +34379,7 @@
  {
   "id": "chennakeshava-aralaguppe",
   "name": "Chennakeshava Temple",
+  "native": "ಅರಳುಗುಪ್ಪೆ",
   "country": "India",
   "state": "Karnataka",
   "place": "Aralaguppe",
@@ -33769,6 +34439,7 @@
  {
   "id": "teru-malleshvara-hiriyur",
   "name": "Teru Malleshvara Temple",
+  "native": "ತೇರು ಮಲ್ಲೇಶ್ವರ ದೇವಲಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Hiriyur",
@@ -33798,6 +34469,7 @@
  {
   "id": "someshwara-kolar",
   "name": "Someshwara Temple",
+  "native": "ಸೋಮೇಶ್ವರ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Kolar",
@@ -33831,6 +34503,7 @@
  {
   "id": "kasivisvesvara-lakkundi",
   "name": "Kasivisvesvara Temple",
+  "native": "ಕಾಶಿವಿಶ್ವೇಶ್ವರ ದೇವಾಲಯ, ಲಕ್ಕುಂಡಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Lakkundi",
@@ -33947,6 +34620,7 @@
  {
   "id": "kedareshvara-balligavi",
   "name": "Kedareshvara Temple",
+  "native": "ಕೇದಾರೇಶ್ವರ ದೇವಾಲಯ ಬಳ್ಳಿಗಾವಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Balligavi",
@@ -33981,6 +34655,7 @@
  {
   "id": "kaitabheshvara-kubatur",
   "name": "Kaitabheshvara Temple",
+  "native": "ಕೈಟಭೇಶ್ವರ ದೇವಸ್ಥಾನ, ಕುಬಟೂರು",
   "country": "India",
   "state": "Karnataka",
   "place": "Kubatur",
@@ -34041,6 +34716,7 @@
  {
   "id": "kanakachalapathi-kanakagiri",
   "name": "Kanakachalapathi Temple",
+  "native": "ಕನಕಾಚಲಪತಿ ದೇವಾಲಯ",
   "country": "India",
   "state": "Karnataka",
   "place": "Kanakagiri",
@@ -34070,6 +34746,7 @@
  {
   "id": "kamala-narayana-degaon",
   "name": "Kamala Narayana Temple",
+  "native": "ಕಮಲ ನಾರಾಯಣ ದೇವಸ್ಥಾನ",
   "country": "India",
   "state": "Karnataka",
   "place": "Degaon",
@@ -34099,6 +34776,7 @@
  {
   "id": "kamal-basadi-belagavi",
   "name": "Kamal Basadi",
+  "native": "ಕಮಲ ಬಸದಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Belagavi",
@@ -34157,6 +34835,7 @@
  {
   "id": "chaturmukha-basadi-gerusoppa",
   "name": "Chaturmukha Basadi",
+  "native": "ಚತುರ್ಮುಖ ಬಸದಿ, ಗೇರುಸೊಪ್ಪೆ",
   "country": "India",
   "state": "Karnataka",
   "place": "Gerusoppa",
@@ -34186,6 +34865,7 @@
  {
   "id": "kanaganahalli-sannati",
   "name": "Kanaganahalli Mahastupa",
+  "native": "ಕಣಗನಹಳ್ಳಿ",
   "country": "India",
   "state": "Karnataka",
   "place": "Sannati",
@@ -34215,6 +34895,7 @@
  {
   "id": "kodandarama-vontimitta",
   "name": "Kodandarama Temple",
+  "native": "ఒంటిమిట్ట కోదండ రామాలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Vontimitta",
@@ -34245,6 +34926,7 @@
  {
   "id": "madhavaraya-gandikota",
   "name": "Madhavaraya Temple",
+  "native": "మాధవరాయ దేవాలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Gandikota",
@@ -34274,6 +34956,7 @@
  {
   "id": "pushpagiri-temple-complex",
   "name": "Pushpagiri Temple Complex",
+  "native": "పుష్పగిరి ఆలయ సముదాయము",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Pushpagiri",
@@ -34338,6 +35021,7 @@
  {
   "id": "bugga-ramalingeswara-tadipatri",
   "name": "Bugga Ramalingeswara Swamy Temple",
+  "native": "బుగ్గరామలింగేశ్వర స్వామి ఆలయం (తాడిపత్రి)",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Tadipatri",
@@ -34367,6 +35051,7 @@
  {
   "id": "vedanarayana-nagalapuram",
   "name": "Vedanarayana Temple",
+  "native": "వేదనారాయణస్వామి ఆలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Nagalapuram",
@@ -34396,6 +35081,7 @@
  {
   "id": "kalyana-venkateswara-narayanavanam",
   "name": "Kalyana Venkateswara Temple",
+  "native": "శ్రీ కల్యాణ వెంకటేశ్వర స్వామి దేవాలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Narayanavanam",
@@ -34430,6 +35116,7 @@
  {
   "id": "pallikondeswara-surutupalle",
   "name": "Pallikondeswara Temple",
+  "native": "శ్రీ పల్లికొండేశ్వర స్వామి ఆలయం (సురుటుపల్లి)",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Surutupalle",
@@ -34464,6 +35151,7 @@
  {
   "id": "kukkuteswara-pithapuram",
   "name": "Kukkuteswara Temple",
+  "native": "కుక్కుటేశ్వర ఆలయం, పిఠాపురం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Pithapuram",
@@ -34495,6 +35183,7 @@
  {
   "id": "bhavanarayana-sarpavaram",
   "name": "Bhavanarayana Temple",
+  "native": "భావరాయణ ఆలయం, సర్పవరం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Sarpavaram",
@@ -34592,6 +35281,7 @@
  {
   "id": "veerabhadra-pattiseema",
   "name": "Veerabhadra Temple",
+  "native": "వీరభద్రస్వామి దేవాలయం, పట్టిసీమ",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Pattiseema",
@@ -34622,6 +35312,7 @@
  {
   "id": "lakshmi-narasimha-mangalagiri",
   "name": "Lakshmi Narasimha Temple",
+  "native": "మంగళగిరి లక్ష్మీనరసింహ దేవాలయం",
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Mangalagiri",
@@ -34652,6 +35343,7 @@
  {
   "id": "alampur-navabrahma",
   "name": "Alampur Navabrahma Temples",
+  "native": "అలంపూర్ నవబ్రహ్మ దేవాలయాలు",
   "country": "India",
   "state": "Telangana",
   "place": "Alampur",
@@ -34681,6 +35373,7 @@
  {
   "id": "jogulamba-alampur",
   "name": "Jogulamba Temple",
+  "native": "జోగులాంబ దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Alampur",
@@ -34714,6 +35407,7 @@
  {
   "id": "chaya-someswara-panagal",
   "name": "Chaya Someswara Temple",
+  "native": "ఛాయా సోమేశ్వరాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Panagal",
@@ -34743,6 +35437,7 @@
  {
   "id": "komrelly-mallanna-komuravelli",
   "name": "Komrelly Mallanna Temple",
+  "native": "కొమురవెల్లి మల్లన్న స్వామి దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Komuravelli",
@@ -34777,6 +35472,7 @@
  {
   "id": "ujjaini-mahakali-secunderabad",
   "name": "Sri Ujjaini Mahakali Temple",
+  "native": "ఉజ్జయిని మహంకాళి దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Secunderabad",
@@ -34806,6 +35502,7 @@
  {
   "id": "kondagattu-anjaneya",
   "name": "Kondagattu Anjaneya Swamy Temple",
+  "native": "కొండగట్టు ఆంజనేయస్వామి దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Kondagattu",
@@ -34835,6 +35532,7 @@
  {
   "id": "kota-gullu-ghanpur",
   "name": "Kota Gullu",
+  "native": "కోట గుళ్ళు",
   "country": "India",
   "state": "Telangana",
   "place": "Ghanpur",
@@ -34864,6 +35562,7 @@
  {
   "id": "neelakantheswara-nizamabad",
   "name": "Neelakantheswara Temple",
+  "native": "నీలకంఠేశ్వర దేవాలయం",
   "country": "India",
   "state": "Telangana",
   "place": "Nizamabad",
@@ -34923,6 +35622,7 @@
  {
   "id": "koodalmanikyam-irinjalakuda",
   "name": "Koodalmanikyam Temple",
+  "native": "കൂടൽമാണിക്യം ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Irinjalakuda",
@@ -34953,6 +35653,7 @@
  {
   "id": "thriprayar-sri-rama",
   "name": "Thriprayar Temple",
+  "native": "തൃപ്രയാർ ശ്രീരാമക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Triprayar",
@@ -34983,6 +35684,7 @@
  {
   "id": "peruvanam-mahadeva-cherpu",
   "name": "Peruvanam Mahadeva Temple",
+  "native": "പെരുവനം മഹാദേവ ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Cherpu",
@@ -35015,6 +35717,7 @@
  {
   "id": "chengannur-mahadeva",
   "name": "Chengannur Mahadeva Temple",
+  "native": "ചെങ്ങന്നൂർ മഹാദേവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Chengannur",
@@ -35047,6 +35750,7 @@
  {
   "id": "haripad-subrahmanya",
   "name": "Haripad Sree Subrahmanya Swamy Temple",
+  "native": "ഹരിപ്പാട് സുബ്രഹ്മണ്യസ്വാമീക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Haripad",
@@ -35077,6 +35781,7 @@
  {
   "id": "thirunakkara-mahadevar-kottayam",
   "name": "Thirunakkara Sree Mahadevar Temple",
+  "native": "തിരുനാക്കര ശ്രീ മഹാദേവ ക്ഷേത്രം, കോട്ടയം",
   "country": "India",
   "state": "Kerala",
   "place": "Kottayam",
@@ -35109,6 +35814,7 @@
  {
   "id": "thirumandhamkunnu-angadipuram",
   "name": "Thirumandhamkunnu Temple",
+  "native": "തിരുമാന്ധാംകുന്ന് ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Angadipuram",
@@ -35173,6 +35879,7 @@
  {
   "id": "kottiyoor-temple",
   "name": "Kottiyoor Temple",
+  "native": "കൊട്ടിയൂർ ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kottiyoor",
@@ -35205,6 +35912,7 @@
  {
   "id": "thiruvangad-ramaswami-thalassery",
   "name": "Thiruvangad Sree Ramaswami Temple",
+  "native": "തിരുവങ്ങാട് ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Thalassery",
@@ -35234,6 +35942,7 @@
  {
   "id": "ananthapura-lake-temple",
   "name": "Ananthapura Lake Temple",
+  "native": "അനന്തപുര തടാകക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kumbla",
@@ -35264,6 +35973,7 @@
  {
   "id": "madhur-temple",
   "name": "Madhur Temple",
+  "native": "അനന്തേശ്വര വിനായക ക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Madhur",
@@ -35294,6 +36004,7 @@
  {
   "id": "tali-shiva-kozhikode",
   "name": "Tali Shiva Temple",
+  "native": "തളി ശിവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kozhikode",
@@ -35331,6 +36042,7 @@
  {
   "id": "viswanatha-swamy-kalpathy",
   "name": "Viswanatha Swamy Temple",
+  "native": "കൽപ്പാത്തി വിശ്വനാഥസ്വാമിക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Kalpathy",
@@ -35361,6 +36073,7 @@
  {
   "id": "aluva-mahadeva",
   "name": "Aluva Mahadeva Temple",
+  "native": "ആലുവ ശിവക്ഷേത്രം",
   "country": "India",
   "state": "Kerala",
   "place": "Aluva",
@@ -35393,6 +36106,7 @@
  {
   "id": "bhaktavatsala-thirunindravur",
   "name": "Bhaktavatsala Perumal Temple",
+  "native": "திருநின்றவூர் பக்தவத்சல பெருமாள் கோவில்",
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Thirunindravur",
@@ -35425,6 +36139,7 @@
  {
   "id": "vimala-puri",
   "name": "Vimala Temple",
+  "native": "ବିମଳା ଶକ୍ତିପୀଠ",
   "country": "India",
   "state": "Odisha",
   "place": "Jagannath Temple complex, Puri",
@@ -35494,6 +36209,7 @@
  {
   "id": "dwarkadhish-mathura",
   "name": "Dwarkadhish Temple",
+  "native": "द्वारिकाधीश जी का मन्दिर",
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Mathura",
@@ -35584,6 +36300,7 @@
  {
   "id": "parsurameswara-bhubaneswar",
   "name": "Parsurameswara Temple",
+  "native": "ପର୍ଶୁରାମେଶ୍ଵର ମନ୍ଦିର",
   "country": "India",
   "state": "Odisha",
   "place": "Bhubaneswar",
