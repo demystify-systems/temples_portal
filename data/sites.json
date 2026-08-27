@@ -1540,8 +1540,8 @@
   "country": "India",
   "state": "Uttarakhand",
   "place": "Yamunotri (3,293 m)",
-  "lat": 31.014,
-  "lng": 78.46,
+  "lat": 31.016667,
+  "lng": 78.4125,
   "tradition": "Hindu",
   "deity": "Goddess Yamuna",
   "built": [
@@ -1562,9 +1562,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Yamunotri"
+   },
+   {
+    "l": "Wikidata Q976328",
+    "u": "https://www.wikidata.org/wiki/Q976328"
    }
   ],
-  "verified": "wikipedia-2026-08-26",
+  "verified": "wikidata-2026-08-27",
   "wiki": "https://en.wikipedia.org/wiki/Yamunotri"
  },
  {
@@ -1755,8 +1759,8 @@
   "country": "India",
   "state": "Uttar Pradesh",
   "place": "Mathura",
-  "lat": 27.5049,
-  "lng": 77.67,
+  "lat": 27.504748,
+  "lng": 77.669754,
   "tradition": "Hindu",
   "deity": "Krishna (birthplace shrine)",
   "built": [
@@ -1776,9 +1780,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Krishna_Janmasthan_Temple_Complex"
+   },
+   {
+    "l": "Wikidata Q6394892",
+    "u": "https://www.wikidata.org/wiki/Q6394892"
    }
   ],
-  "verified": "wikipedia-2026-08-26",
+  "verified": "wikidata-2026-08-27",
   "wiki": "https://en.wikipedia.org/wiki/Krishna_Janmasthan_Temple_Complex",
   "circuits": [
    "Divya Desam"
@@ -1937,8 +1945,8 @@
   "country": "India",
   "state": "Bihar",
   "place": "Patna City",
-  "lat": 25.596,
-  "lng": 85.23,
+  "lat": 25.596062,
+  "lng": 85.230063,
   "tradition": "Sikh",
   "deity": "Guru Gobind Singh (birthplace)",
   "built": [
@@ -1957,9 +1965,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib"
+   },
+   {
+    "l": "Wikidata Q30924",
+    "u": "https://www.wikidata.org/wiki/Q30924"
    }
   ],
-  "verified": "wikipedia-2026-08-26",
+  "verified": "wikidata-2026-08-27",
   "website": "https://takhatpatnasahib.com",
   "wiki": "https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib"
  },
@@ -2174,8 +2186,8 @@
   "country": "India",
   "state": "Ladakh",
   "place": "Hemis",
-  "lat": 33.911,
-  "lng": 77.7,
+  "lat": 33.912475,
+  "lng": 77.702833,
   "tradition": "Buddhist",
   "deity": "Drukpa Kagyu gompa (Padmasambhava festival)",
   "built": [
@@ -2192,9 +2204,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Hemis_Monastery"
+   },
+   {
+    "l": "Wikidata Q4497698",
+    "u": "https://www.wikidata.org/wiki/Q4497698"
    }
   ],
-  "verified": "wikipedia-2026-08-26",
+  "verified": "wikidata-2026-08-27",
   "wiki": "https://en.wikipedia.org/wiki/Hemis_Monastery"
  },
  {
@@ -11112,8 +11128,8 @@
   "country": "India",
   "state": "Tamil Nadu",
   "place": "Keelaparasalur (Tiruppariyalur)",
-  "lat": 11.09,
-  "lng": 79.7229,
+  "lat": 11.090815,
+  "lng": 79.725804,
   "tradition": "Hindu",
   "deity": "Shiva (Veerateswarar), consort Ilam Kombanayaki",
   "built": [
@@ -11132,9 +11148,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Veerateeswarar_Temple,_Thirupariyalur"
+   },
+   {
+    "l": "Wikidata Q96413683",
+    "u": "https://www.wikidata.org/wiki/Q96413683"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -16679,8 +16699,8 @@
   "country": "India",
   "state": "Uttarakhand",
   "place": "Nandaprayag",
-  "lat": 30.33,
-  "lng": 79.33,
+  "lat": 30.331917,
+  "lng": 79.318028,
   "tradition": "Hindu",
   "deity": "Sacred confluence of the Alaknanda and Nandakini",
   "built": [
@@ -16698,9 +16718,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Nandaprayag"
+   },
+   {
+    "l": "Wikidata Q2450927",
+    "u": "https://www.wikidata.org/wiki/Q2450927"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -16710,8 +16734,8 @@
   "country": "India",
   "state": "Uttarakhand",
   "place": "Karnaprayag",
-  "lat": 30.27,
-  "lng": 79.25,
+  "lat": 30.264639,
+  "lng": 79.216111,
   "tradition": "Hindu",
   "deity": "Uma (Parvati)",
   "built": [
@@ -16730,9 +16754,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Karnaprayag"
+   },
+   {
+    "l": "Wikidata Q2314414",
+    "u": "https://www.wikidata.org/wiki/Q2314414"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -16742,8 +16770,8 @@
   "country": "India",
   "state": "Uttarakhand",
   "place": "Rudraprayag",
-  "lat": 30.28,
-  "lng": 78.98,
+  "lat": 30.286111,
+  "lng": 78.981667,
   "tradition": "Hindu",
   "deity": "Shiva (Rudranath)",
   "built": [
@@ -16762,9 +16790,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Rudraprayag"
+   },
+   {
+    "l": "Wikidata Q2087566",
+    "u": "https://www.wikidata.org/wiki/Q2087566"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -17169,8 +17201,8 @@
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Kangra",
-  "lat": 32.1019,
-  "lng": 76.27,
+  "lat": 32.10183,
+  "lng": 76.26987,
   "tradition": "Hindu",
   "deity": "Durga as Vajreshwari, goddess of the thunderbolt",
   "built": [
@@ -17189,9 +17221,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Bajreshwari_Mata_Temple,_Kangra"
+   },
+   {
+    "l": "Wikidata Q7908955",
+    "u": "https://www.wikidata.org/wiki/Q7908955"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -17471,8 +17507,8 @@
   "country": "India",
   "state": "Himachal Pradesh",
   "place": "Tabo, Spiti",
-  "lat": 32.08,
-  "lng": 78.38,
+  "lat": 32.093819,
+  "lng": 78.382278,
   "tradition": "Buddhist",
   "deity": "Vairocana Buddha",
   "built": [
@@ -17494,9 +17530,13 @@
    {
     "l": "Official site",
     "u": "https://tabomonastery.org"
+   },
+   {
+    "l": "Wikidata Q1112486",
+    "u": "https://www.wikidata.org/wiki/Q1112486"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -17895,8 +17935,8 @@
   "country": "India",
   "state": "Delhi",
   "place": "New Delhi",
-  "lat": 28.55,
-  "lng": 77.2614,
+  "lat": 28.549794,
+  "lng": 77.260708,
   "tradition": "Hindu",
   "deity": "Kali (Kalka Devi)",
   "built": [
@@ -17913,9 +17953,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Kalkaji_Mandir"
+   },
+   {
+    "l": "Wikidata Q6353337",
+    "u": "https://www.wikidata.org/wiki/Q6353337"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -23381,8 +23425,8 @@
   "country": "India",
   "state": "Karnataka",
   "place": "Arasikere, Hassan",
-  "lat": 13.3183,
-  "lng": 76.26,
+  "lat": 13.318111,
+  "lng": 76.260389,
   "tradition": "Hindu",
   "deity": "Shiva (linga known as Kattamesvara)",
   "built": [
@@ -23399,9 +23443,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Ishvara_Temple,_Arasikere"
+   },
+   {
+    "l": "Wikidata Q6080700",
+    "u": "https://www.wikidata.org/wiki/Q6080700"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -23528,8 +23576,8 @@
   "country": "India",
   "state": "Karnataka",
   "place": "Itagi, Koppal",
-  "lat": 15.49,
-  "lng": 75.995,
+  "lat": 15.445361,
+  "lng": 75.967917,
   "tradition": "Hindu",
   "deity": "Shiva (linga)",
   "built": [
@@ -23546,9 +23594,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Mahadeva_Temple,_Itagi"
+   },
+   {
+    "l": "Wikidata Q6732769",
+    "u": "https://www.wikidata.org/wiki/Q6732769"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -24242,8 +24294,8 @@
   "country": "India",
   "state": "Kerala",
   "place": "Varkala",
-  "lat": 8.7319,
-  "lng": 76.71,
+  "lat": 8.731826,
+  "lng": 76.709869,
   "tradition": "Hindu",
   "deity": "Vishnu as Janardanaswamy, locally Varkaleswara",
   "built": [
@@ -24262,9 +24314,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Janardanaswamy_Temple"
+   },
+   {
+    "l": "Wikidata Q12060846",
+    "u": "https://www.wikidata.org/wiki/Q12060846"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -26298,8 +26354,8 @@
   "country": "India",
   "state": "Andhra Pradesh",
   "place": "Srikakulam",
-  "lat": 18.3333,
-  "lng": 84.05,
+  "lat": 18.335316,
+  "lng": 84.036826,
   "tradition": "Buddhist",
   "deity": "Gautama Buddha (stupas; images of Tara and Marichi)",
   "built": [
@@ -26315,9 +26371,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Salihundam"
+   },
+   {
+    "l": "Wikidata Q7404521",
+    "u": "https://www.wikidata.org/wiki/Q7404521"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -28690,8 +28750,8 @@
   "country": "Cambodia",
   "state": "Siem Reap",
   "place": "Angkor",
-  "lat": 13.4467,
-  "lng": 103.92,
+  "lat": 13.44654,
+  "lng": 103.91997,
   "tradition": "Hindu",
   "deity": "Shiva",
   "built": [
@@ -28709,9 +28769,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/East_Mebon"
+   },
+   {
+    "l": "Wikidata Q307181",
+    "u": "https://www.wikidata.org/wiki/Q307181"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -30710,8 +30774,8 @@
   "country": "India",
   "state": "Bihar",
   "place": "Antichak, Bhagalpur",
-  "lat": 25.2667,
-  "lng": 87.15,
+  "lat": 25.3244,
+  "lng": 87.2867,
   "tradition": "Buddhist",
   "deity": "Buddha (Vajrayana mahavihara)",
   "built": [
@@ -30729,9 +30793,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Vikramashila"
+   },
+   {
+    "l": "Wikidata Q1634624",
+    "u": "https://www.wikidata.org/wiki/Q1634624"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
@@ -31283,8 +31351,8 @@
   "country": "India",
   "state": "Assam",
   "place": "Da Parbatia, Tezpur, Sonitpur",
-  "lat": 26.63,
-  "lng": 92.8,
+  "lat": 26.631301,
+  "lng": 92.757549,
   "tradition": "Hindu",
   "deity": "Shiva and Vishnu",
   "built": [
@@ -31301,9 +31369,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Dah_Parvatiya"
+   },
+   {
+    "l": "Wikidata Q5207282",
+    "u": "https://www.wikidata.org/wiki/Q5207282"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -33543,8 +33615,8 @@
   "country": "India",
   "state": "Karnataka",
   "place": "Basaralu",
-  "lat": 12.71,
-  "lng": 76.82,
+  "lat": 12.710224,
+  "lng": 76.816956,
   "tradition": "Hindu",
   "deity": "Shiva",
   "built": [
@@ -33565,9 +33637,13 @@
    {
     "l": "Wikipedia (Basaralu, coordinates)",
     "u": "https://en.wikipedia.org/wiki/Basaralu"
+   },
+   {
+    "l": "Wikidata Q6744203",
+    "u": "https://www.wikidata.org/wiki/Q6744203"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact"
  },
  {
@@ -34670,8 +34746,8 @@
   "country": "India",
   "state": "Telangana",
   "place": "Komuravelli",
-  "lat": 17.93,
-  "lng": 78.8963,
+  "lat": 17.9202,
+  "lng": 78.9732,
   "tradition": "Hindu",
   "deity": "Mallanna (Mallikarjuna Swamy, a form of Shiva)",
   "built": [
@@ -34688,9 +34764,13 @@
    {
     "l": "Wikipedia",
     "u": "https://en.wikipedia.org/wiki/Komrelly_Mallanna_Temple"
+   },
+   {
+    "l": "Wikidata Q6428625",
+    "u": "https://www.wikidata.org/wiki/Q6428625"
    }
   ],
-  "verified": "wikipedia-2026-08-27",
+  "verified": "wikidata-2026-08-27",
   "tier": "compact",
   "style": "—"
  },
