@@ -402,14 +402,16 @@
         "e2e/responsive.spec.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "e2e:66/66 across 390/768/1440 x light/dark, negative-control verified"
+      ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-041",
@@ -599,14 +601,16 @@
         "src/app/site/[slug]/opengraph-image.tsx"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "build:1122 OG cards rendered"
+      ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-051",
@@ -618,14 +622,16 @@
         "src/lib/jsonld.test.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:24 jsonld tests; faqJsonLd returns null rather than inventing"
+      ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-060",
@@ -645,10 +651,10 @@
       "retry_after_iteration": 0,
       "status_iteration": 1,
       "evidence": [
-        "agent:verified, gates green"
+        "test:34 search tests; 390px verified in real Chromium"
       ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-061",
@@ -668,10 +674,10 @@
       "retry_after_iteration": 0,
       "status_iteration": 1,
       "evidence": [
-        "agent:verified, gates green"
+        "build:112 patrons, 113 pages, linked from nav"
       ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-062",
@@ -690,10 +696,10 @@
       "retry_after_iteration": 0,
       "status_iteration": 1,
       "evidence": [
-        "agent:verified, gates green"
+        "test:22 gesture tests; pinch/double-tap/trackpad"
       ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-063",
@@ -711,10 +717,10 @@
       "retry_after_iteration": 0,
       "status_iteration": 1,
       "evidence": [
-        "agent:verified, gates green"
+        "live:308 alias redirects + per-route canonical"
       ],
       "last_error": null,
-      "commit": null
+      "commit": "29e1b73"
     },
     {
       "id": "T-064",
@@ -876,6 +882,50 @@
       "evidence": [],
       "last_error": null,
       "commit": null
+    },
+    {
+      "id": "T-067",
+      "milestone": "M5",
+      "type": "code",
+      "title": "SEO/AEO helpers, /llms.txt and /llms-full.txt, robots AI-crawler policy, data-derived sitemap lastmod (N1)",
+      "files": [
+        "src/lib/seo.ts",
+        "src/lib/seo.test.ts",
+        "src/app/llms.txt/route.ts",
+        "src/app/llms-full.txt/route.ts"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "test:24 seo tests; siteDescription cannot read story (type-enforced)"
+      ],
+      "last_error": null,
+      "commit": "29e1b73"
+    },
+    {
+      "id": "T-068",
+      "milestone": "M6",
+      "type": "code",
+      "title": "Sarvam adapter: chat + TTS + STT + translate, with the reasoning-truncation retry encoded",
+      "files": [
+        "src/lib/ai/sarvam.ts",
+        "src/lib/ai/sarvam.test.ts"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "test:9 adapter tests; voice round-trip verified live"
+      ],
+      "last_error": null,
+      "commit": "29e1b73"
     }
   ]
 }
