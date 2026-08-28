@@ -28,19 +28,29 @@ const sites = JSON.parse(readFileSync(SITES, "utf8"));
 const norm = (v) => String(v ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
 const esc = (v) => v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-// Aliases match on a word boundary; suffixes match the tail of a word, because
-// "Sundareswarar" and "Kapaleeshwarar" encode Shiva in the ending itself.
-const matchers = Object.entries(vocab.canonical).map(([name, def]) => ({
-  name,
-  group: def.group,
-  alias: new RegExp(`\\b(${(def.aliases ?? []).map((a) => esc(norm(a))).filter(Boolean).join("|")})`, "i"),
-  suffix: (def.suffixes ?? []).length
-    ? new RegExp(`(${def.suffixes.map((s) => esc(norm(s))).join("|")})\\b`, "i")
-    : null,
-}));
+// Matching is TOKEN-AWARE, and that is the whole trick.
+//
+// A suffix rule must never fire on a word that is already a known deity name.
+// "-eshvara" marks a Shiva temple, but "Venkateshvara" is Vishnu — running the
+// suffix over the raw string tagged Tirumala as Shaiva. So: aliases claim their
+// words first, and only the words nothing claimed are offered to the suffixes.
+const canon = Object.entries(vocab.canonical);
 
-// The tradition constrains which tags are even possible: a Buddhist vihara whose
-// name ends in -natha is not a Shiva temple.
+const single = new Map();   // one-word alias -> deity name
+const phrases = [];         // multi-word alias -> {re, name}
+const suffixes = [];        // {re, name}
+const groupOf = Object.fromEntries(canon.map(([n, d]) => [n, d.group]));
+
+for (const [name, def] of canon) {
+  for (const a of def.aliases ?? []) {
+    const t = norm(a);
+    if (!t) continue;
+    if (t.includes(" ")) phrases.push({ re: new RegExp(`\\b${esc(t)}\\b`), name });
+    else if (!single.has(t)) single.set(t, name);
+  }
+  for (const sfx of def.suffixes ?? []) suffixes.push({ re: new RegExp(`${esc(norm(sfx))}$`), name });
+}
+
 const ALLOWED = {
   Hindu: new Set(["Shaiva", "Vaishnava", "Shakta", "Smarta"]),
   Jain: new Set(["Jain"]),
@@ -48,29 +58,45 @@ const ALLOWED = {
   Sikh: new Set(["Sikh"]),
 };
 
-/** Priority order when a record resolves to several groups. */
 const groupRank = ["Jain", "Buddhist", "Sikh", "Shakta", "Vaishnava", "Shaiva", "Smarta"];
 
+/** Returns the deities named in one string, honouring the tradition allow-list. */
+function scan(text, allowed) {
+  const found = new Set();
+  if (!text) return found;
+
+  // 1. multi-word aliases, on the whole string
+  for (const p of phrases) if (allowed.has(groupOf[p.name]) && p.re.test(text)) found.add(p.name);
+
+  // 2. single-word aliases, per token — and remember which tokens were claimed
+  const tokens = text.split(" ").filter(Boolean);
+  const claimed = new Array(tokens.length).fill(false);
+  tokens.forEach((tok, i) => {
+    const hit = single.get(tok);
+    if (hit && allowed.has(groupOf[hit])) { found.add(hit); claimed[i] = true; }
+    else if (hit) claimed[i] = true;   // claimed by an out-of-tradition deity: still not free for a suffix
+  });
+
+  // 3. suffixes, only on tokens no alias claimed
+  tokens.forEach((tok, i) => {
+    if (claimed[i]) return;
+    for (const sf of suffixes) {
+      if (!allowed.has(groupOf[sf.name])) continue;
+      if (sf.re.test(tok)) { found.add(sf.name); break; }
+    }
+  });
+  return found;
+}
+
 function tagsFor(site) {
-  const primary = norm(site.deity);                         // the dedication, and the strongest signal
-  const secondary = norm(`${site.name ?? ""} ${site.alt ?? ""}`); // the name often encodes it too
   const allowed = ALLOWED[site.tradition] ?? new Set();
-
-  const hits = new Map();                                   // name -> weight (2 = from deity, 1 = from name)
-  for (const m of matchers) {
-    if (!allowed.has(m.group)) continue;
-    if (m.alias.source !== "\\b()" && m.alias.test(primary)) hits.set(m.name, 2);
-    else if (m.suffix?.test(primary)) hits.set(m.name, 2);
-    else if (m.alias.source !== "\\b()" && m.alias.test(secondary)) hits.set(m.name, Math.max(hits.get(m.name) ?? 0, 1));
-    else if (m.suffix?.test(secondary)) hits.set(m.name, Math.max(hits.get(m.name) ?? 0, 1));
-  }
-  if (!hits.size) return null;
-
-  // Keep deity-derived tags; fall back to name-derived only when the deity gave nothing.
-  const strong = [...hits].filter(([, w]) => w === 2).map(([n]) => n);
-  const deities = (strong.length ? strong : [...hits.keys()]).sort();
-
-  const groups = deities.map((d) => vocab.canonical[d].group);
+  const fromDeity = scan(norm(site.deity), allowed);
+  const deities = fromDeity.size
+    ? [...fromDeity]
+    : [...scan(norm(`${site.name ?? ""} ${site.alt ?? ""}`), allowed)];
+  if (!deities.length) return null;
+  deities.sort();
+  const groups = deities.map((d) => groupOf[d]);
   const deityGroup = groupRank.find((g) => groups.includes(g)) ?? groups[0];
   return { deities, deityGroup };
 }

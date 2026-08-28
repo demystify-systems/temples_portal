@@ -521,10 +521,9 @@
   "phone": "04573221223",
   "phoneVerified": "official-site-2026-08-27",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "arunachaleswarar-tiruvannamalai",
@@ -1639,7 +1638,6 @@
    "India"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -1693,8 +1691,7 @@
   ],
   "deities": [
    "Devi",
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
   "deityGroup": "Shakta"
  },
@@ -4535,11 +4532,7 @@
    "Howrah",
    "Howrah Sadar subdivision",
    "Howrah district"
-  ],
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  ]
  },
  {
   "id": "bishnupur-rasmancha",
@@ -4986,11 +4979,7 @@
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Boudhanath",
-  "tier": "compact",
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  "tier": "compact"
  },
  {
   "id": "swayambhunath",
@@ -5311,10 +5300,9 @@
   "access": "Kataragama is a small town in the south-east of Sri Lanka, 19 km inland from Tissamaharama. The subsidiary shrine of Sella Kataragama lies about four miles further on from the town.",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Murugan"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "ruwanwelisaya",
@@ -5840,11 +5828,7 @@
    "Bagan",
    "Mandalay Region",
    "Myanmar"
-  ],
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  ]
  },
  {
   "id": "shwezigon-bagan",
@@ -6677,8 +6661,7 @@
    "Vietnam"
   ],
   "deities": [
-   "Devi",
-   "Naga"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -6755,7 +6738,6 @@
   "wiki": "https://en.wikipedia.org/wiki/Sri_Mahamariamman_Temple,_Kuala_Lumpur",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -6883,7 +6865,6 @@
   "phone": "62234064",
   "phoneVerified": "official-site-2026-08-27",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -6932,11 +6913,7 @@
    "Magelang",
    "Central Java",
    "Indonesia"
-  ],
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  ]
  },
  {
   "id": "prambanan",
@@ -7368,7 +7345,6 @@
    "India"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -8149,7 +8125,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -8557,7 +8532,6 @@
    "India"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -11177,10 +11151,9 @@
    "India"
   ],
   "deities": [
-   "Parvati",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "tirumeni-azhagar-mahendrapalli",
@@ -11380,7 +11353,6 @@
    "India"
   ],
   "deities": [
-   "Brahma",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -11459,7 +11431,6 @@
    "India"
   ],
   "deities": [
-   "Brahma",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -13716,7 +13687,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Brahma",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -14257,7 +14227,6 @@
   ],
   "deities": [
    "Devi",
-   "Naga",
    "Shiva"
   ],
   "deityGroup": "Shakta"
@@ -14733,10 +14702,9 @@
    "India"
   ],
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "valampurinathar-melaperumpallam",
@@ -14930,11 +14898,9 @@
    "India"
   ],
   "deities": [
-   "Brahma",
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sundareshwarar-tiruvettakkudi",
@@ -15206,10 +15172,9 @@
    "India"
   ],
   "deities": [
-   "Shiva",
-   "Tripura Sundari"
+   "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sakalabhuvaneswarar-tirumeeyachur",
@@ -15930,10 +15895,9 @@
    "India"
   ],
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "tirupayatrunathar-tirupayathangudi",
@@ -16029,10 +15993,9 @@
   "story": "Ganesha is said to have killed the demon Gajamukhasura and then worshipped his father Shiva at this spot.",
   "alt": "Uthrapathiswaraswamy Temple",
   "deities": [
-   "Parvati",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "rathnagiriswarar-thirumarugal",
@@ -16111,10 +16074,9 @@
    "India"
   ],
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "kayarohanaswami-nagapattinam",
@@ -17529,7 +17491,6 @@
    "India"
   ],
   "deities": [
-   "Devi",
    "Parvati",
    "Shiva"
   ],
@@ -20115,10 +20076,9 @@
    "India"
   ],
   "deities": [
-   "Devi",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "thiruvanchikulam-kodungallur",
@@ -20700,7 +20660,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Naga",
    "Parvati",
    "Shiva"
   ],
@@ -23798,11 +23757,7 @@
    "Pokhran tehsil",
    "Jaisalmer district",
    "Jodhpur division"
-  ],
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  ]
  },
  {
   "id": "galtaji-jaipur",
@@ -24066,8 +24021,7 @@
    "Rajasthan"
   ],
   "deities": [
-   "Devi",
-   "Vishnu"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -25159,10 +25113,9 @@
    "Gujarat"
   ],
   "deities": [
-   "Lakshmi",
    "Vishnu"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "mata-no-madh-kutch",
@@ -25321,7 +25274,6 @@
    "Gujarat"
   ],
   "deities": [
-   "Ajitanatha",
    "Mahavira"
   ],
   "deityGroup": "Jain"
@@ -25485,8 +25437,7 @@
    "Gujarat"
   ],
   "deities": [
-   "Mahavira",
-   "Parshvanatha"
+   "Mahavira"
   ],
   "deityGroup": "Jain"
  },
@@ -25690,7 +25641,6 @@
    "Pune division"
   ],
   "deities": [
-   "Devi",
    "Lakshmi"
   ],
   "deityGroup": "Shakta"
@@ -25871,10 +25821,9 @@
   ],
   "deities": [
    "Shiva",
-   "Surya",
-   "Vishnu"
+   "Surya"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "bhuleshwar-yavat",
@@ -28687,10 +28636,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
-   "Tara"
+   "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "tovp-mayapur",
@@ -29075,10 +29023,9 @@
    "Lower Assam division"
   ],
   "deities": [
-   "Parvati",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "navagraha-guwahati",
@@ -29110,10 +29057,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Navagraha",
-   "Shiva"
+   "Navagraha"
   ],
-  "deityGroup": "Shaiva"
+  "deityGroup": "Smarta"
  },
  {
   "id": "basistha-guwahati",
@@ -29856,10 +29802,9 @@
    "Karnataka"
   ],
   "deities": [
-   "Devi",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "kukke-subramanya",
@@ -30390,11 +30335,7 @@
   "tier": "compact",
   "style": "—",
   "phone": "08023471956",
-  "phoneVerified": "official-site-2026-08-27",
-  "deities": [
-   "Krishna"
-  ],
-  "deityGroup": "Vaishnava"
+  "phoneVerified": "official-site-2026-08-27"
  },
  {
   "id": "bull-temple-bengaluru",
@@ -30466,10 +30407,9 @@
    "Bangalore division"
   ],
   "deities": [
-   "Ganga",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "lakshmi-narasimha-nuggehalli",
@@ -31677,7 +31617,6 @@
    "India"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -32097,7 +32036,6 @@
    "India"
   ],
   "deities": [
-   "Naga",
    "Navagraha",
    "Shiva"
   ],
@@ -32132,8 +32070,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Lakshmi",
-   "Vishnu"
+   "Lakshmi"
   ],
   "deityGroup": "Shakta"
  },
@@ -32436,7 +32373,6 @@
    "Andhra Pradesh"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -32875,7 +32811,6 @@
   ],
   "deities": [
    "Parvati",
-   "Rama",
    "Shiva"
   ],
   "deityGroup": "Shakta"
@@ -33310,7 +33245,6 @@
    "Telangana"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -33348,11 +33282,7 @@
    "Muchintal",
    "Telangana",
    "India"
-  ],
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  ]
  },
  {
   "id": "chilkur-balaji",
@@ -33383,7 +33313,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -36837,7 +36766,6 @@
    "Bangkok"
   ],
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -37884,7 +37812,6 @@
    "Vietnam"
   ],
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -37960,8 +37887,7 @@
    "Indonesia"
   ],
   "deities": [
-   "Avalokiteshvara",
-   "Gautama Buddha"
+   "Avalokiteshvara"
   ],
   "deityGroup": "Buddhist"
  },
@@ -38805,7 +38731,6 @@
    "Central Region"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -39097,10 +39022,9 @@
    "Central division"
   ],
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "yameshwar-bhubaneswar",
@@ -39754,10 +39678,9 @@
    "Presidency division"
   ],
   "deities": [
-   "Krishna",
-   "Lakshmi"
+   "Krishna"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "calcutta-jain-temple",
@@ -43686,10 +43609,9 @@
    "Karnataka"
   ],
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "someshwara-kolar",
@@ -43878,10 +43800,9 @@
    "Karnataka"
   ],
   "deities": [
-   "Shiva",
-   "Tara"
+   "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "kedareshvara-balligavi",
@@ -44384,7 +44305,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -44424,10 +44344,9 @@
    "Andhra Pradesh"
   ],
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "vedanarayana-nagalapuram",
@@ -44503,7 +44422,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -44970,10 +44888,9 @@
    "India"
   ],
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "ujjaini-mahakali-secunderabad",
@@ -45165,7 +45082,6 @@
    "India"
   ],
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -46320,11 +46236,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact",
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  "tier": "compact"
  },
  {
   "id": "kidal-temple-malang",
@@ -46396,7 +46308,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -47005,10 +46916,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "ghanteswara-bhubaneswar",
@@ -48321,10 +48231,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Hanuman",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "beleswar-puri",
@@ -48544,11 +48453,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Bhairava"
-  ],
-  "deityGroup": "Shaiva"
+  "style": "—"
  },
  {
   "id": "bhattarika-baramba",
@@ -48929,10 +48834,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Lakshmi",
    "Vishnu"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "ganga-jadadisvarar-govindaputtur",
@@ -50156,8 +50060,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Kali",
-   "Tripura Sundari"
+   "Kali"
   ],
   "deityGroup": "Shakta"
  },
@@ -50686,7 +50589,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Bhairava",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -51058,7 +50960,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Brahma",
    "Devi",
    "Kali"
   ],
@@ -52199,11 +52100,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Shiva"
-  ],
-  "deityGroup": "Shaiva"
+  "style": "—"
  },
  {
   "id": "budha-deula-bhubaneswar",
@@ -52613,7 +52510,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Brahma",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -52919,7 +52815,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Navagraha",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -55184,7 +55079,6 @@
   "tier": "compact",
   "deities": [
    "Devi",
-   "Kali",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -55784,7 +55678,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -56242,7 +56135,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -56469,10 +56361,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Parvati",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "champakesvara-siva-bhubaneswar",
@@ -56776,7 +56667,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -58055,10 +57945,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Kali",
    "Vishnu"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "sreenarayanapuram-manakala",
@@ -62737,10 +62626,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "kaalikaamba-kamatheshwara-bengaluru",
@@ -63118,12 +63006,9 @@
   "tier": "compact",
   "deities": [
    "Bhairava",
-   "Naga",
-   "Rama",
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "someshwara-swamy-agara-bengaluru",
@@ -63501,7 +63386,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Naga",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -63541,7 +63425,6 @@
   "tier": "compact",
   "deities": [
    "Rama",
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -63959,7 +63842,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -65133,7 +65015,6 @@
   "style": "—",
   "deities": [
    "Devi",
-   "Kali",
    "Parvati",
    "Shiva"
   ],
@@ -65625,7 +65506,6 @@
   "tier": "compact",
   "deities": [
    "Krishna",
-   "Rama",
    "Shiva"
   ],
   "deityGroup": "Vaishnava"
@@ -65669,10 +65549,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "kandiyoor-mahadeva-mavelikara",
@@ -65936,11 +65815,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Bhairava"
-  ],
-  "deityGroup": "Shaiva"
+  "style": "—"
  },
  {
   "id": "patnadevi-chalisgaon",
@@ -66772,12 +66647,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Nandi",
-   "Shiva"
-  ],
-  "deityGroup": "Shaiva"
+  "style": "—"
  },
  {
   "id": "pariyur-kondathu-kaliamman",
@@ -66813,8 +66683,7 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Kali"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -67156,10 +67025,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "mazhuvannur-maha-siva-tharuvana",
@@ -67379,8 +67247,7 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Rama"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -68023,7 +67890,6 @@
   "deities": [
    "Devi",
    "Lakshmi",
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Shakta"
@@ -68662,7 +68528,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Naga",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -68701,7 +68566,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Naga",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -68893,10 +68757,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "talupulamma-lova",
@@ -69572,10 +69435,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Durga",
    "Ganesha"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "serugudi-sukshmapureeswarar",
@@ -71788,10 +71650,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "maruthakshi-mavelikara",
@@ -72021,10 +71882,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "bhayankavu-purathur",
@@ -73106,7 +72966,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Bhairava",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -74054,7 +73913,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Krishna",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -74819,10 +74677,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sri-aurobindo-ashram-puducherry",
@@ -75193,7 +75050,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -76313,11 +76169,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Devi"
-  ],
-  "deityGroup": "Shakta"
+  "style": "—"
  },
  {
   "id": "garjiya-devi-ramnagar",
@@ -76466,10 +76318,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Parvati",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "billeswar-devalaya-belsor",
@@ -77750,8 +77601,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
-   "Ganga"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -78539,8 +78389,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
-   "Rama"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -78767,7 +78616,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -79629,10 +79477,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
-   "Vishnu"
+   "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "erumely-dharmasastha",
@@ -79969,8 +79816,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
-   "Vishnu"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -82303,7 +82149,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Balarama",
    "Hanuman",
    "Rama",
    "Vishnu"
@@ -82420,7 +82265,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -82572,8 +82416,7 @@
   "tier": "compact",
   "deities": [
    "Parvati",
-   "Shiva",
-   "Tripura Sundari"
+   "Shiva"
   ],
   "deityGroup": "Shakta"
  },
@@ -83931,11 +83774,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  "style": "—"
  },
  {
   "id": "lakhmi-varaha-aul",
@@ -84528,10 +84367,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "jagannath-nayagarh",
@@ -84995,7 +84833,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -85221,7 +85058,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -85488,11 +85324,7 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Ganga"
-  ],
-  "deityGroup": "Shakta"
+  "style": "—"
  },
  {
   "id": "hari-baladev-jew-baripada",
@@ -86091,7 +85923,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -86525,7 +86356,6 @@
   "style": "—",
   "deities": [
    "Lakshmi",
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Shakta"
@@ -86790,8 +86620,7 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Krishna",
-   "Shiva"
+   "Krishna"
   ],
   "deityGroup": "Vaishnava"
  },
@@ -87273,10 +87102,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Krishna",
-   "Lakshmi"
+   "Krishna"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "madhangeeswarar-kanchipuram",
@@ -87981,10 +87809,9 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "pundareekapuram-kottayam",
@@ -88091,7 +87918,6 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Krishna",
    "Lakshmi",
    "Vishnu"
   ],
@@ -88319,8 +88145,7 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Durga",
-   "Vishnu"
+   "Durga"
   ],
   "deityGroup": "Shakta"
  },
@@ -89526,9 +89351,9 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Brahma"
+   "Devi"
   ],
-  "deityGroup": "Smarta"
+  "deityGroup": "Shakta"
  },
  {
   "id": "ved-mata-gaytri-kushinagar",
@@ -90169,7 +89994,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -90396,8 +90220,7 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Krishna",
-   "Rama"
+   "Krishna"
   ],
   "deityGroup": "Vaishnava"
  },
@@ -91227,7 +91050,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -91926,11 +91748,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact",
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  "tier": "compact"
  },
  {
   "id": "pura-maospahit-denpasar",
@@ -92037,8 +91855,7 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Kali"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -92533,8 +92350,7 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Kali"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -92572,7 +92388,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -92649,8 +92464,7 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Kali"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -92762,7 +92576,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -93316,7 +93129,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -94477,11 +94289,7 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Rama"
-  ],
-  "deityGroup": "Vaishnava"
+  "style": "—"
  },
  {
   "id": "chandragup-lasbela",
@@ -94700,8 +94508,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Durga",
-   "Shiva"
+   "Durga"
   ],
   "deityGroup": "Shakta"
  },
@@ -95170,8 +94977,7 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
-   "Vishnu"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -95281,11 +95087,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact",
-  "deities": [
-   "Bhairava"
-  ],
-  "deityGroup": "Shaiva"
+  "tier": "compact"
  },
  {
   "id": "rana-ujeshwori-tansen",
@@ -96587,7 +96389,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -96931,7 +96732,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -97245,10 +97045,9 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Ganga",
    "Shiva"
   ],
-  "deityGroup": "Shakta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sitaleshwar-jhalrapatan",
@@ -97819,7 +97618,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -98085,7 +97883,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -98391,11 +98188,7 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Devi"
-  ],
-  "deityGroup": "Shakta"
+  "style": "—"
  },
  {
   "id": "nandinadesvarar-poikainallur",
@@ -98430,7 +98223,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Nandi",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -98507,7 +98299,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Naga",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -99857,11 +99648,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact",
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  "tier": "compact"
  },
  {
   "id": "surawana-kediri",
@@ -100274,8 +100061,7 @@
   "style": "—",
   "deities": [
    "Parvati",
-   "Shiva",
-   "Tripura Sundari"
+   "Shiva"
   ],
   "deityGroup": "Shakta"
  },
@@ -100503,11 +100289,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact",
-  "deities": [
-   "Vishnu"
-  ],
-  "deityGroup": "Vaishnava"
+  "tier": "compact"
  },
  {
   "id": "seetha-ramaswamy-punkunnam",
@@ -100999,10 +100781,9 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sri-krishnapuram-thalappalam",
@@ -101533,7 +101314,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Shiva",
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
@@ -101724,7 +101504,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -101946,7 +101725,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Brahma",
    "Parvati",
    "Shiva"
   ],
@@ -102060,10 +101838,9 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Rama",
    "Shiva"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "sankara-narayanasamy-sankarankovil",
@@ -102783,8 +102560,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Devi",
-   "Kali"
+   "Devi"
   ],
   "deityGroup": "Shakta"
  },
@@ -103088,11 +102864,7 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact",
-  "deities": [
-   "Vishnu"
-  ],
-  "deityGroup": "Vaishnava"
+  "tier": "compact"
  },
  {
   "id": "pokkunny-siva-vadavannur",
@@ -103509,9 +103281,9 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Vishnu"
+   "Devi"
   ],
-  "deityGroup": "Vaishnava"
+  "deityGroup": "Shakta"
  },
  {
   "id": "kankaleshwar-beed",
@@ -108450,7 +108222,6 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Bhairava",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -110005,7 +109776,6 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi",
    "Mariamman"
   ],
   "deityGroup": "Shakta"
@@ -111427,11 +111197,7 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  "style": "—"
  },
  {
   "id": "shwesandaw-bagan",
@@ -112373,7 +112139,6 @@
   "tier": "compact",
   "deities": [
    "Avalokiteshvara",
-   "Devi",
    "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"
@@ -114618,11 +114383,7 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—",
-  "deities": [
-   "Gautama Buddha"
-  ],
-  "deityGroup": "Buddhist"
+  "style": "—"
  },
  {
   "id": "thatta-thattaha-maha-bawdi-naypyidaw",
@@ -116191,5 +115952,382 @@
    "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"
+ },
+ {
+  "id": "gadaladeniya-vihara",
+  "name": "Gadaladeniya Vihara",
+  "country": "Sri Lanka",
+  "state": "Central Province",
+  "place": "Pilimathalawa, Kandy District",
+  "lat": 7.2573,
+  "lng": 80.5561,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (seated image in dhyana mudra with four standing Buddhas; adjoining Vishnu devale)",
+  "built": [
+   1344,
+   1344
+  ],
+  "builtDisplay": "1344 (Gampola kingdom)",
+  "dynasty": "Gampola (Bhuvanekabahu IV)",
+  "style": "Dravidian with Polonnaruwa-era Sinhalese and Indo-Chinese elements",
+  "circuits": [],
+  "significance": "A stone temple of 1344 near Pilimathalawa, raised under Bhuvanekabahu IV of Gampola by the monk Seelavamsa Dharmakirti to a design by the South Indian architect Ganesvarachari. Its shrine holds a 2.43 m seated Buddha flanked by four standing figures, with a separate Vijayothpaya shrine of five stupas in cruciform arrangement.",
+  "story": "The subsidiary Vijayothpaya shrine takes its name from the mythical palace of the god Indra.",
+  "wiki": "https://en.wikipedia.org/wiki/Gadaladeniya_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gadaladeniya_Vihara"
+   },
+   {
+    "l": "Wikidata Q25637940",
+    "u": "https://www.wikidata.org/wiki/Q25637940"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "buddama-raja-maha-vihara",
+  "name": "Buddama Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Uva Province",
+  "place": "Monaragala District",
+  "lat": 7.0412,
+  "lng": 81.489,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (reclining image with several seated Buddhas)",
+  "built": [
+   -300,
+   -200
+  ],
+  "builtDisplay": "3rd c. BCE; images of the Kandyan period",
+  "dynasty": "Anuradhapura; Kandyan renovation",
+  "style": "Cave temple with Kandyan murals and sculpture",
+  "circuits": [],
+  "significance": "A cave temple in the Monaragala District said to have been built in the third century BCE and renovated by successive rulers from Udaya I and Parakramabahu I to the Kandyan kings. Its principal reclining Buddha is credited to Rajadhi Rajasinha and its walls carry Jataka scenes in the Kandyan manner.",
+  "story": "Before Buddhism reached the island the site is said to have served as a training place for local craftsmen.",
+  "wiki": "https://en.wikipedia.org/wiki/Buddama_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Buddama_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q28457340",
+    "u": "https://www.wikidata.org/wiki/Q28457340"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "trilokyanatha-thiruparthikundram",
+  "name": "Trilokyanatha Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thiruparthikundram, Kanchipuram district",
+  "lat": 12.8303,
+  "lng": 79.6808,
+  "tradition": "Jain",
+  "deity": "Mahavira (with shrines to Lokanatha and Neminatha)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "8th c. (Pallava)",
+  "dynasty": "Pallava",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A Digambara Jain temple at Thiruparthikundram near Kanchipuram, built in the reign of the Pallava king Narasimhavarman II and enlarged under the medieval Cholas and the Vijayanagara rulers. Its three parallel sanctums, entered through a three-tiered gopuram, centre on an image of Mahavira.",
+  "story": "Local tradition credits its building to a Pallava follower of the sages Vamana and Mallisena, while another account attributes it to King Simhavishnu.",
+  "wiki": "https://en.wikipedia.org/wiki/Trilokyanatha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Trilokyanatha_Temple"
+   },
+   {
+    "l": "Wikidata Q26833741",
+    "u": "https://www.wikidata.org/wiki/Q26833741"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Neminatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "mohankheda-dhar",
+  "name": "Mohankheda",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Mohankheda, Dhar district",
+  "lat": 22.6736,
+  "lng": 74.9218,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha",
+  "built": [
+   1884,
+   1884
+  ],
+  "builtDisplay": "established 1884",
+  "dynasty": "Modern (Acharya Rajendrasuri)",
+  "circuits": [],
+  "significance": "A Shvetambara Jain tirtha in the Dhar district of Madhya Pradesh, founded in 1884 by Acharya Rajendrasuri and dedicated to the first Tirthankara Rishabhanatha. It grew into a major pilgrimage centre around the acharya's memorial.",
+  "story": "Acharya Rajendrasuri is said to have looked on the quiet land here and foretold that it would rise in holiness and become a great tirtha.",
+  "wiki": "https://en.wikipedia.org/wiki/Mohankheda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mohankheda"
+   },
+   {
+    "l": "Wikidata Q6893644",
+    "u": "https://www.wikidata.org/wiki/Q6893644"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Rishabhanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "mandaragiri-madhugiri",
+  "name": "Mandaragiri",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Madhugiri, Tumkur district",
+  "lat": 13.3031,
+  "lng": 77.186,
+  "tradition": "Jain",
+  "deity": "Chandraprabha (with Parshvanatha and Suparshvanatha)",
+  "built": [
+   1100,
+   1200
+  ],
+  "builtDisplay": "12th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Digambara Jain hill temple complex near Madhugiri in the Tumkur district, dated to the twelfth century and dedicated to the Tirthankaras Chandraprabha, Parshvanatha and Suparshvanatha. A hilltop stupa there holds a stone slab carved with a footprint.",
+  "wiki": "https://en.wikipedia.org/wiki/Mandaragiri",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mandaragiri"
+   },
+   {
+    "l": "Wikidata Q115862139",
+    "u": "https://www.wikidata.org/wiki/Q115862139"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Chandraprabha",
+   "Parshvanatha",
+   "Suparshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "ambapuram-cave-temple",
+  "name": "Ambapuram cave temple",
+  "country": "India",
+  "state": "Andhra Pradesh",
+  "place": "Ambapuram, near Vijayawada",
+  "lat": 16.5679,
+  "lng": 80.6244,
+  "tradition": "Jain",
+  "deity": "Parshvanatha and Mahavira (with an image of the goddess Ambika)",
+  "built": [
+   624,
+   641
+  ],
+  "builtDisplay": "early 7th c. (Eastern Chalukya)",
+  "dynasty": "Eastern Chalukya (Kubja Vishnuvardhana)",
+  "style": "Rock-cut",
+  "circuits": [],
+  "significance": "A rock-cut Jain cave temple near Vijayawada, cut in the early seventh century during the reign of Kubja Vishnuvardhana, founder of the Eastern Chalukya line. It is dedicated to Parshvanatha and Mahavira and carries a relief of the yakshi Ambika, from whom the village takes its name.",
+  "wiki": "https://en.wikipedia.org/wiki/Ambapuram_cave_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ambapuram_cave_temple"
+   },
+   {
+    "l": "Wikidata Q107552499",
+    "u": "https://www.wikidata.org/wiki/Q107552499"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Parshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "ahinsa-sthal-mehrauli",
+  "name": "Ahinsa Sthal",
+  "country": "India",
+  "state": "Delhi",
+  "place": "Mehrauli",
+  "lat": 28.5203,
+  "lng": 77.19,
+  "tradition": "Jain",
+  "deity": "Mahavira",
+  "built": [
+   1980,
+   1980
+  ],
+  "builtDisplay": "established 1980",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A modern Jain temple at Mehrauli in south Delhi, established in 1980 and dedicated to Mahavira, the twenty-fourth Tirthankara. Its large seated image of Mahavira on a low hillock makes it a well-known Jain landmark in the capital.",
+  "wiki": "https://en.wikipedia.org/wiki/Ahinsa_Sthal",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ahinsa_Sthal"
+   },
+   {
+    "l": "Wikidata Q25543168",
+    "u": "https://www.wikidata.org/wiki/Q25543168"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Mahavira"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "arahanthgiri-jain-math-tirumalai",
+  "name": "Arahanthgiri Jain Math",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Tirumalai, Tiruvannamalai district",
+  "lat": 12.22,
+  "lng": 79.07,
+  "tradition": "Jain",
+  "deity": "Neminatha",
+  "built": [
+   1100,
+   1200
+  ],
+  "builtDisplay": "12th-c. main image; math re-established 1998",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Jain hill complex at Tirumalai in the Tiruvannamalai district whose principal 16-metre image of Neminatha is assigned to the twelfth century, with the ancient site now under the Archaeological Survey of India. A modern math was established beside it in August 1998.",
+  "story": "The last Shrutakevali Bhadrabahu is said to have stayed on this hill with eight thousand ascetics to practise meditation and swadhyaya.",
+  "wiki": "https://en.wikipedia.org/wiki/Arahanthgiri_Jain_Math",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Arahanthgiri_Jain_Math"
+   },
+   {
+    "l": "Wikidata Q4783748",
+    "u": "https://www.wikidata.org/wiki/Q4783748"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Neminatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "shobhnath-temple-shravasti",
+  "name": "Shobhnath temple",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Shravasti",
+  "lat": 27.5149,
+  "lng": 82.0429,
+  "tradition": "Jain",
+  "deity": "Sambhavanatha",
+  "built": [
+   900,
+   1100
+  ],
+  "builtDisplay": "images of the 10th–11th c.; medieval dome",
+  "dynasty": "Undetermined",
+  "style": "Medieval, with an Irani-style dome",
+  "circuits": [],
+  "significance": "A Jain temple within the ruins of Shravasti, dedicated to the third Tirthankara Sambhavanatha, whose recovered images have been dated to the tenth and eleventh centuries. An Irani-style dome was added in the medieval period, and Jain rulers are recorded in the area in the ninth and tenth centuries.",
+  "story": "Sambhavanatha is held to have taken diksha in the nearby Sahetuk forest and to have spent fourteen years there before attaining moksha.",
+  "wiki": "https://en.wikipedia.org/wiki/Shobhnath_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shobhnath_temple"
+   },
+   {
+    "l": "Wikidata Q107557098",
+    "u": "https://www.wikidata.org/wiki/Q107557098"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "muchhal-mahavir-ghanerao",
+  "name": "Muchhal Mahavir Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Ghanerao, Pali district",
+  "lat": 25.1963,
+  "lng": 73.5592,
+  "tradition": "Jain",
+  "deity": "Mahavira",
+  "built": [
+   900,
+   1000
+  ],
+  "builtDisplay": "10th c.",
+  "dynasty": "Undetermined",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "A Shvetambara Jain temple near Ghanerao in the Pali district of Rajasthan, built in the tenth century in the Nagara style. It takes its name, the moustached Mahavira, from the moustache shown on its principal image.",
+  "story": "Rana Raj Singh I is said to have found a white hair on the idol's moustache; after the priest fasted three days the image revealed its moustache, which oozed milk when a hair was drawn, and the Rana became a devotee.",
+  "wiki": "https://en.wikipedia.org/wiki/Muchhal_Mahavir_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Muchhal_Mahavir_Temple"
+   },
+   {
+    "l": "Wikidata Q6931034",
+    "u": "https://www.wikidata.org/wiki/Q6931034"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira"
+  ],
+  "deityGroup": "Jain"
  }
 ]
