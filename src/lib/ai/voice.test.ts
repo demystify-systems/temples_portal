@@ -21,6 +21,8 @@ import {
   pickRecordingMime,
   speechLanguage,
   sttModelFor,
+  uploadMimeType,
+  SARVAM_AUDIO_TYPES,
   withinLimit,
 } from "./voice.ts";
 
@@ -357,4 +359,48 @@ test("the recording clock reads as a clock, so the state is not colour alone", (
   assert.equal(elapsedLabel(60_000), "1:00");
   assert.equal(elapsedLabel(-5), "0:00", "a clock skew must not print a negative time");
   assert.equal(elapsedLabel(Number.NaN), "0:00");
+});
+
+// ---------------------------------------------------------------------------
+// upload content type — the bug that made voice input never work
+// ---------------------------------------------------------------------------
+
+test("MediaRecorder's own mimeType is normalised to something Sarvam accepts", () => {
+  // Every Chromium browser reports exactly this, on every recording. The route
+  // forwarded it verbatim and Sarvam rejected all of them: it matches the FULL
+  // string, and `audio/webm;codecs=opus` is not `audio/webm`.
+  assert.equal(uploadMimeType("audio/webm;codecs=opus"), "audio/webm");
+  assert.equal(uploadMimeType("audio/webm; codecs=opus"), "audio/webm");
+  assert.equal(uploadMimeType("audio/ogg;codecs=opus"), "audio/ogg");
+  assert.equal(uploadMimeType("AUDIO/WEBM;CODECS=OPUS"), "audio/webm");
+});
+
+test("a plain accepted type passes through untouched", () => {
+  for (const type of ["audio/webm", "audio/wav", "audio/mp4", "audio/ogg", "audio/mpeg"]) {
+    assert.equal(uploadMimeType(type), type);
+  }
+});
+
+test("anything unrecognised falls back to a type Sarvam accepts", () => {
+  // application/octet-stream is on Sarvam's list explicitly, and it infers the
+  // format from the filename — which is what fileNameFor is for. Sending an
+  // unknown type verbatim is the failure this replaces.
+  for (const type of ["audio/x-weird", "", null, undefined, "video/mp4", "text/plain"]) {
+    const out = uploadMimeType(type);
+    assert.ok(
+      SARVAM_AUDIO_TYPES.includes(out),
+      `${JSON.stringify(type)} produced ${out}, which Sarvam would reject`,
+    );
+  }
+  assert.equal(uploadMimeType("audio/x-weird"), "application/octet-stream");
+});
+
+test("every type the browser can record maps onto one Sarvam accepts", () => {
+  // ACCEPTED_AUDIO_TYPES is what we let through the guard; if any of them
+  // normalised to something Sarvam refuses, the guard would pass a clip the
+  // upload then fails on — a 503 for audio we said was fine.
+  for (const type of ACCEPTED_AUDIO_TYPES) {
+    assert.ok(SARVAM_AUDIO_TYPES.includes(uploadMimeType(type)), `${type} has no accepted upload type`);
+    assert.ok(SARVAM_AUDIO_TYPES.includes(uploadMimeType(`${type};codecs=opus`)), `${type};codecs=opus has no accepted upload type`);
+  }
 });

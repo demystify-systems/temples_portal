@@ -164,9 +164,18 @@ const main = async () => {
    */
   const translations = { ...existing };
   for (const target of TARGETS) {
-    // Resume: keep whatever a previous run already produced for this language,
-    // so an interruption costs the remaining strings and not all of them.
-    const bundle = { ...(existing[target] ?? {}) };
+    /**
+     * Resume, but only for keys that still exist.
+     *
+     * Carrying the previous bundle over wholesale also carried RETIRED keys.
+     * When `assistant.open` became `assistant.title` — a rename done precisely
+     * so a stale translation could not survive a copy change — the old key came
+     * straight back in, and tsc rejected the generated file for naming a key
+     * that is no longer part of UiKey. Caught by the type system, which is the
+     * argument for the generated file being typed against the source at all.
+     */
+    const previous = existing[target] ?? {};
+    const bundle = Object.fromEntries(keys.filter((k) => previous[k]).map((k) => [k, previous[k]]));
     for (const key of keys) {
       if (bundle[key]) continue;
       bundle[key] = await translate(apiKey, strings[key], target);

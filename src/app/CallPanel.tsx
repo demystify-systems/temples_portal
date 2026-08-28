@@ -29,10 +29,10 @@ export default function CallPanel({ onClose }: { readonly onClose: () => void })
   const busy = call.phase === "transcribing" || call.phase === "thinking";
 
   return (
-    <section className="call" aria-label="Speak to the Atlas">
+    <section className="call" aria-label="Talk to Tirtha Atlas">
       <header className="callhead">
         <div>
-          <h2>Speak to the Atlas</h2>
+          <h2>Talk to Tirtha Atlas</h2>
           <p className="callsub mono">ANSWERS ONLY FROM CITED RECORDS</p>
         </div>
         <button className="callx" onClick={onClose} aria-label="Close">×</button>

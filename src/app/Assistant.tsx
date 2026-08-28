@@ -30,6 +30,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import VoiceButton, { SpeakButton, type VoiceTranscript } from "./VoiceButton";
 import dynamic from "next/dynamic";
+import { useUiLanguage } from "./useUiLanguage";
+import { useDraggableLauncher } from "./useDraggableLauncher";
 
 /**
  * The call surface, loaded only when someone actually asks to speak.
@@ -88,6 +90,8 @@ export default function Assistant() {
    * them as rival products would imply otherwise.
    */
   const [mode, setMode] = useState<"type" | "call">("type");
+  const { t, lang } = useUiLanguage();
+  const launcher = useDraggableLauncher();
 
   const launcherRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -211,14 +215,26 @@ export default function Assistant() {
   return (
     <>
       <button
-        ref={launcherRef}
+        // Two owners, one node: `launcherRef` returns focus here when the panel
+        // closes, and the drag hook measures the button to clamp it on screen.
+        ref={(node) => {
+          launcherRef.current = node;
+          launcher.ref.current = node;
+        }}
         type="button"
-        className="asstlaunch"
+        className={`asstlaunch${launcher.dragging ? " dragging" : ""}`}
         aria-expanded={open}
         aria-controls="asst-panel"
-        onClick={() => setOpen((was) => !was)}
+        style={launcher.style}
+        {...launcher.handlers}
+        // A drag must not also open the panel. The hook reports which gesture
+        // just finished; without this, moving the button out of the way opens
+        // the very panel you were moving it away from.
+        onClick={() => { if (launcher.wasTap()) setOpen((was) => !was); }}
+        onDoubleClick={launcher.reset}
+        title="Drag to move · double-click to put it back"
       >
-        <span aria-hidden="true">◈</span> Ask the Atlas
+        <span aria-hidden="true">◈</span> {t("assistant.title")}
       </button>
 
       {open && (
@@ -235,8 +251,8 @@ export default function Assistant() {
       >
         <header className="assthead">
           <div>
-            <h2 id="asst-title">Ask the Atlas</h2>
-            <p className="asstsub">Answers only from cited records</p>
+            <h2 id="asst-title" lang={lang}>{t("assistant.title")}</h2>
+            <p className="asstsub" lang={lang}>{t("assistant.scope")}</p>
           </div>
           <button type="button" className="asstclose" onClick={close} aria-label="Close the assistant">
             ×
@@ -246,11 +262,11 @@ export default function Assistant() {
         <div className="asstmodes" role="tablist" aria-label="How to ask">
           <button type="button" role="tab" aria-selected={mode === "type"}
             className={`asstmode${mode === "type" ? " on" : ""}`} onClick={() => setMode("type")}>
-            Type
+            <span lang={lang}>{t("assistant.type")}</span>
           </button>
           <button type="button" role="tab" aria-selected={mode === "call"}
             className={`asstmode${mode === "call" ? " on" : ""}`} onClick={() => setMode("call")}>
-            Speak
+            <span lang={lang}>{t("assistant.speak")}</span>
           </button>
         </div>
 
