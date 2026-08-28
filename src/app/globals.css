@@ -1012,3 +1012,47 @@ table.gz tr:last-child td{border-bottom:none}
   .ictags{gap:2px 8px}
   .idxn{margin-left:7px}
 }
+
+/* ============ the call surface (Speak to the Atlas) ============ */
+.call{display:flex;flex-direction:column;gap:var(--sp-3,12px);padding:16px 18px 18px}
+.callhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.callhead h2{font:400 21px var(--font-display),serif;color:var(--gold)}
+.callsub{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:2px}
+.callx{width:30px;height:30px;border-radius:8px;font-size:22px;line-height:1;color:var(--mut);flex:none}
+.callx:hover{color:var(--gold)}
+
+.callstage{display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 0 6px}
+.orb{position:relative;width:112px;height:112px;display:flex;align-items:center;justify-content:center;flex:none}
+.orbring{position:absolute;inset:0;border-radius:50%;border:1px solid var(--line2);background:var(--panel2);
+  transition:transform .09s linear,border-color .2s,background .2s}
+.orb.on .orbring{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,var(--panel2))}
+.orb.hear .orbring{border-width:2px}
+.orbcore{position:relative;font:400 16px var(--font-display),serif;letter-spacing:.06em;color:var(--ink)}
+.orb.on .orbcore{color:var(--gold)}
+.callphase{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);text-align:center;min-height:1.4em}
+.callphase.busy{color:var(--mut)}
+.callnote,.callerr{font-size:13px;color:var(--ink2);line-height:1.5}
+.callerr{color:var(--e3)}
+
+.calllog{list-style:none;display:flex;flex-direction:column;gap:10px;margin:0;padding:12px 0 0;border-top:1px solid var(--line);max-height:40vh;overflow-y:auto}
+.callturn p{font-size:13.5px;line-height:1.55}
+.callturn.user{align-self:flex-end;max-width:88%;background:var(--panel2);border:1px solid var(--line2);border-radius:12px 12px 3px 12px;padding:7px 11px}
+.callturn.assistant{max-width:95%}
+.callcites{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;padding:0}
+.callcites li a{font-size:11px;color:var(--ink2);border:1px solid var(--line2);border-radius:20px;padding:2px 9px;text-decoration:none;display:inline-block}
+.callcites li a:hover{color:var(--gold);border-color:var(--gold)}
+.callnocite{font-size:11.5px;color:var(--mut);margin-top:5px}
+
+/* The orb is the one animated thing here, and it exists to show that the
+   microphone is live. Under reduced-motion it stops scaling and reports the
+   same fact with a static ring — the information is in the phase line too. */
+@media (prefers-reduced-motion: reduce){
+  .orbring{transition:border-color .2s,background .2s;transform:none !important}
+}
+
+/* Type / Speak. One panel, two ways in — never two rival launchers, because
+   both answer the same question from the same cited records. */
+.asstmodes{display:flex;gap:4px;padding:8px 16px 0}
+.asstmode{flex:1;padding:6px 10px;border:1px solid var(--line2);border-radius:8px;font-size:12.5px;color:var(--ink2);background:var(--panel)}
+.asstmode:hover{color:var(--gold);border-color:var(--gold)}
+.asstmode.on{color:var(--gold);border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--panel))}
