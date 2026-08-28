@@ -1,0 +1,745 @@
+{
+  "_about": "Canonical deity tags for filtering and search. The free-text `deity` field stays exactly as sourced — it carries the epithet, the consort and the local name, which is the interesting part. This vocabulary sits beside it and answers the question a filter actually asks: which god or goddess is this temple for?",
+  "_policy": "A tag is only ever DERIVED from text already in the record. Nothing here adds a fact: if `deity` does not name a figure, the record gets no tag rather than a guessed one. Aliases are matched case-insensitively on word boundaries against `deity`, `name` and `alt`.",
+  "_generated_by": "scripts/build-deity-tags.mjs writes `deities` and `deityGroup` onto data/sites.json. Re-run it after any wave; never hand-edit those two fields.",
+  "_note_on_suffixes": "Tamil and Sanskrit temple names encode the deity in the name itself — -eswarar/-esvara/-ishwar/-natha marks a Shiva temple, -perumal/-swamy a Vishnu one, -amman/-ambal a goddess. Those suffix rules recover the deity for hundreds of records whose `deity` string is only a local epithet.",
+  "groups": {
+    "Shaiva": "Shiva and his forms, family and attendants",
+    "Vaishnava": "Vishnu and his avatars",
+    "Shakta": "the Goddess in her forms",
+    "Smarta": "pan-Hindu figures outside the three main streams",
+    "Jain": "the Tirthankaras and Bahubali",
+    "Buddhist": "Buddhas, bodhisattvas and relic shrines",
+    "Sikh": "the Gurus and the Guru Granth Sahib"
+  },
+  "canonical": {
+    "Shiva": {
+      "group": "Shaiva",
+      "aliases": [
+        "shiva",
+        "siva",
+        "mahadeva",
+        "mahadev",
+        "shiv",
+        "lingam",
+        "linga",
+        "jyotirlinga",
+        "nataraja",
+        "natarajar",
+        "mahakala",
+        "mahakaleshwar",
+        "somnath",
+        "somanatha",
+        "vishwanath",
+        "visweswara",
+        "viswanathar",
+        "kedarnath",
+        "amarnath",
+        "pashupatinath",
+        "pasupatheeswarar",
+        "rudra",
+        "sadashiva",
+        "chandrashekhara",
+        "dakshinamurthy",
+        "tripurantaka",
+        "kalantaka"
+      ],
+      "suffixes": [
+        "eswarar",
+        "eeswarar",
+        "esvara",
+        "eshvara",
+        "ishvara",
+        "iswara",
+        "ishwar",
+        "eshwar",
+        "eswara",
+        "swaramudaiyar",
+        "nathar",
+        "natheswarar",
+        "lingeshwara",
+        "lingeswarar",
+        "deul",
+        "doul"
+      ]
+    },
+    "Parvati": {
+      "group": "Shakta",
+      "aliases": [
+        "parvati",
+        "uma",
+        "gauri",
+        "meenakshi",
+        "kamakshi",
+        "akhilandeswari",
+        "visalakshi",
+        "annapurna",
+        "annapoorna",
+        "tripurasundari",
+        "sivakami",
+        "abirami",
+        "brihannayaki",
+        "periyanayaki",
+        "bahula",
+        "gauri"
+      ]
+    },
+    "Ganesha": {
+      "group": "Shaiva",
+      "aliases": [
+        "ganesha",
+        "ganesh",
+        "ganapati",
+        "ganapathy",
+        "vinayaka",
+        "vinayagar",
+        "pillaiyar",
+        "vigneshwara",
+        "vighneshwara",
+        "siddhivinayak",
+        "mahaganapati",
+        "heramba"
+      ]
+    },
+    "Murugan": {
+      "group": "Shaiva",
+      "aliases": [
+        "murugan",
+        "muruga",
+        "subramanya",
+        "subrahmanya",
+        "subramaniya",
+        "kartikeya",
+        "karttikeya",
+        "skanda",
+        "shanmukha",
+        "arumugam",
+        "velayudha",
+        "dandayuthapani",
+        "balamurugan",
+        "swaminatha",
+        "senthil",
+        "palani andavar"
+      ]
+    },
+    "Nandi": {
+      "group": "Shaiva",
+      "aliases": [
+        "nandi",
+        "nandikeswara",
+        "basava"
+      ]
+    },
+    "Bhairava": {
+      "group": "Shaiva",
+      "aliases": [
+        "bhairava",
+        "bhairav",
+        "kaal bhairav",
+        "kala bhairava",
+        "batuk bhairav"
+      ]
+    },
+    "Ayyappa": {
+      "group": "Shaiva",
+      "aliases": [
+        "ayyappa",
+        "ayyappan",
+        "sastha",
+        "sasta",
+        "dharma sastha",
+        "shasta",
+        "manikandan"
+      ]
+    },
+    "Virabhadra": {
+      "group": "Shaiva",
+      "aliases": [
+        "virabhadra",
+        "veerabhadra",
+        "veerabhadreswara"
+      ]
+    },
+    "Vishnu": {
+      "group": "Vaishnava",
+      "aliases": [
+        "vishnu",
+        "narayana",
+        "narayan",
+        "perumal",
+        "venkateswara",
+        "venkateshwara",
+        "balaji",
+        "srinivasa",
+        "ranganatha",
+        "ranganathar",
+        "varadaraja",
+        "varadharaja",
+        "govindaraja",
+        "padmanabha",
+        "padmanabhaswamy",
+        "vithoba",
+        "vitthala",
+        "panduranga",
+        "badrinath",
+        "jagannath",
+        "jagannatha",
+        "trivikrama",
+        "vamana",
+        "hayagriva",
+        "dwarkadhish",
+        "dvarakadhisha",
+        "sarangapani",
+        "oppiliappan",
+        "azhagiya",
+        "thirumal",
+        "mal",
+        "mahavishnu",
+        "maha vishnu",
+        "varkaleswara",
+        "venkateshvara",
+        "venkatesa",
+        "venkatesha",
+        "venkataramana",
+        "srinivasar"
+      ],
+      "suffixes": [
+        "perumal",
+        "narayanaswamy",
+        "venkateswara"
+      ]
+    },
+    "Krishna": {
+      "group": "Vaishnava",
+      "aliases": [
+        "krishna",
+        "krsna",
+        "gopala",
+        "gopalakrishna",
+        "govinda",
+        "madan mohan",
+        "madanmohan",
+        "srinathji",
+        "guruvayurappan",
+        "balakrishna",
+        "navaneetha krishna",
+        "rajagopala",
+        "banke bihari",
+        "radha krishna",
+        "radha-krishna",
+        "khatu shyam",
+        "barbarika",
+        "shyam baba"
+      ]
+    },
+    "Rama": {
+      "group": "Vaishnava",
+      "aliases": [
+        "rama",
+        "ram ",
+        "raghunath",
+        "raghunatha",
+        "ramar",
+        "kodandarama",
+        "kothandarama",
+        "ramachandra",
+        "sita rama",
+        "sitarama",
+        "ramalalla",
+        "ram lalla"
+      ]
+    },
+    "Narasimha": {
+      "group": "Vaishnava",
+      "aliases": [
+        "narasimha",
+        "narasimhar",
+        "narasingh",
+        "nrisimha",
+        "lakshmi narasimha",
+        "yoga narasimha",
+        "ugra narasimha"
+      ]
+    },
+    "Hanuman": {
+      "group": "Vaishnava",
+      "aliases": [
+        "hanuman",
+        "hanumaan",
+        "anjaneya",
+        "aanjaneya",
+        "maruti",
+        "maruthi",
+        "bajrang",
+        "sankat mochan",
+        "panchmukhi hanuman"
+      ]
+    },
+    "Varaha": {
+      "group": "Vaishnava",
+      "aliases": [
+        "varaha",
+        "adi varaha",
+        "bhuvaraha"
+      ]
+    },
+    "Balarama": {
+      "group": "Vaishnava",
+      "aliases": [
+        "balarama",
+        "balabhadra",
+        "baladeva"
+      ]
+    },
+    "Devi": {
+      "group": "Shakta",
+      "aliases": [
+        "devi",
+        "bhagavathy",
+        "bhagavati",
+        "bhagwati",
+        "amman",
+        "ammal",
+        "ambal",
+        "amba",
+        "ambika",
+        "mata",
+        "mataji",
+        "maa ",
+        "adi shakti",
+        "adishakti",
+        "shakti",
+        "jagadamba",
+        "yogamaya",
+        "mahamaya",
+        "vaishno devi",
+        "bhagavathi",
+        "adi parashakti",
+        "parashakti",
+        "kamakhya",
+        "bhawani",
+        "bhavani",
+        "ambe",
+        "jagadambika",
+        "banashankari",
+        "shakambhari",
+        "chaturdasha devata",
+        "bhagvati",
+        "vaishnavi"
+      ],
+      "suffixes": [
+        "amman",
+        "ambal",
+        "bhagavathy",
+        "bhagavati",
+        "devi",
+        "mata",
+        "kavu"
+      ]
+    },
+    "Durga": {
+      "group": "Shakta",
+      "aliases": [
+        "durga",
+        "durgaparameshwari",
+        "vindhyavasini",
+        "chandi",
+        "chandika",
+        "mahishasuramardini",
+        "katyayani",
+        "sherawali",
+        "bhuvaneshwari"
+      ]
+    },
+    "Kali": {
+      "group": "Shakta",
+      "aliases": [
+        "kali",
+        "bhadrakali",
+        "mahakali",
+        "dakshinakali",
+        "chamunda",
+        "chamundeshwari",
+        "chinnamasta",
+        "kalika",
+        "karumari",
+        "smashan kali",
+        "chhinnamasta",
+        "chinnamastika",
+        "guhyakali",
+        "guhyeshwari",
+        "guhyeshwori"
+      ]
+    },
+    "Lakshmi": {
+      "group": "Shakta",
+      "aliases": [
+        "lakshmi",
+        "laxmi",
+        "mahalakshmi",
+        "ashtalakshmi",
+        "thayar",
+        "sridevi",
+        "kanaka durga"
+      ]
+    },
+    "Saraswati": {
+      "group": "Shakta",
+      "aliases": [
+        "saraswati",
+        "sarasvati",
+        "sharada",
+        "sharda",
+        "vagdevi"
+      ]
+    },
+    "Mariamman": {
+      "group": "Shakta",
+      "aliases": [
+        "mariamman",
+        "mariyamman",
+        "maariamman",
+        "muthumariamman",
+        "renuka",
+        "yellamma"
+      ]
+    },
+    "Tripura Sundari": {
+      "group": "Shakta",
+      "aliases": [
+        "tripura sundari",
+        "tripurasundari",
+        "rajarajeshwari",
+        "lalita",
+        "lalitha",
+        "bala tripurasundari"
+      ]
+    },
+    "Surya": {
+      "group": "Smarta",
+      "aliases": [
+        "surya",
+        "sun god",
+        "sun temple",
+        "aditya",
+        "martand",
+        "konark sun"
+      ]
+    },
+    "Brahma": {
+      "group": "Smarta",
+      "aliases": [
+        "brahma",
+        "chaturmukha brahma"
+      ]
+    },
+    "Navagraha": {
+      "group": "Smarta",
+      "aliases": [
+        "navagraha",
+        "saniswaran",
+        "shani",
+        "sanieswarar",
+        "budhan",
+        "guru bhagavan",
+        "kethu",
+        "rahu",
+        "angaraka"
+      ]
+    },
+    "Dattatreya": {
+      "group": "Smarta",
+      "aliases": [
+        "dattatreya",
+        "datta",
+        "swami samarth",
+        "gajanan maharaj",
+        "sant gajanan",
+        "swami samartha",
+        "baba balak nath",
+        "balaknath",
+        "kapila",
+        "kapil muni"
+      ]
+    },
+    "Naga": {
+      "group": "Smarta",
+      "aliases": [
+        "naga",
+        "nagaraja",
+        "nagaraj",
+        "nagadevata",
+        "manasa",
+        "sarpa"
+      ]
+    },
+    "Mahavira": {
+      "group": "Jain",
+      "aliases": [
+        "mahavira",
+        "mahavir",
+        "vardhamana",
+        "tirthankara",
+        "tirthankaras",
+        "jain tirthankaras"
+      ]
+    },
+    "Rishabhanatha": {
+      "group": "Jain",
+      "aliases": [
+        "rishabhanatha",
+        "rishabhdev",
+        "rishabha",
+        "adinatha",
+        "adinath",
+        "adishwar",
+        "kesariyaji"
+      ]
+    },
+    "Parshvanatha": {
+      "group": "Jain",
+      "aliases": [
+        "parshvanatha",
+        "parshvanath",
+        "parasnath",
+        "parshwanath",
+        "parasanatha"
+      ]
+    },
+    "Neminatha": {
+      "group": "Jain",
+      "aliases": [
+        "neminatha",
+        "neminath",
+        "nemi"
+      ]
+    },
+    "Shantinatha": {
+      "group": "Jain",
+      "aliases": [
+        "shantinatha",
+        "shantinath",
+        "santhinatha"
+      ]
+    },
+    "Bahubali": {
+      "group": "Jain",
+      "aliases": [
+        "bahubali",
+        "gommateshwara",
+        "gomateshwara"
+      ]
+    },
+    "Chandraprabha": {
+      "group": "Jain",
+      "aliases": [
+        "chandraprabha",
+        "chandraprabhu"
+      ]
+    },
+    "Padmavati": {
+      "group": "Jain",
+      "aliases": [
+        "padmavati devi",
+        "padmavathi (jain)",
+        "jain yakshi"
+      ]
+    },
+    "Gautama Buddha": {
+      "group": "Buddhist",
+      "aliases": [
+        "gautama buddha",
+        "shakyamuni",
+        "sakyamuni",
+        "the buddha",
+        "buddha",
+        "buddha relic",
+        "tooth relic",
+        "reclining buddha",
+        "seated buddha",
+        "maravijaya"
+      ]
+    },
+    "Avalokiteshvara": {
+      "group": "Buddhist",
+      "aliases": [
+        "avalokiteshvara",
+        "avalokitesvara",
+        "chenrezig",
+        "kuan yim",
+        "guanyin",
+        "lokesvara"
+      ]
+    },
+    "Maitreya": {
+      "group": "Buddhist",
+      "aliases": [
+        "maitreya",
+        "jampa",
+        "future buddha"
+      ]
+    },
+    "Tara": {
+      "group": "Shakta",
+      "aliases": [
+        "tara",
+        "green tara",
+        "white tara",
+        "dolma",
+        "ugratara",
+        "tarapith"
+      ]
+    },
+    "Padmasambhava": {
+      "group": "Buddhist",
+      "aliases": [
+        "padmasambhava",
+        "guru rinpoche",
+        "guru padmasambhava"
+      ]
+    },
+    "Guru Granth Sahib": {
+      "group": "Sikh",
+      "aliases": [
+        "guru granth sahib",
+        "adi granth",
+        "sri guru granth"
+      ]
+    },
+    "Guru Nanak": {
+      "group": "Sikh",
+      "aliases": [
+        "guru nanak",
+        "nanak dev"
+      ]
+    },
+    "Guru Gobind Singh": {
+      "group": "Sikh",
+      "aliases": [
+        "guru gobind singh",
+        "gobind singh"
+      ]
+    },
+    "Guru Arjan": {
+      "group": "Sikh",
+      "aliases": [
+        "guru arjan",
+        "arjan dev"
+      ]
+    },
+    "Guru Tegh Bahadur": {
+      "group": "Sikh",
+      "aliases": [
+        "guru tegh bahadur",
+        "tegh bahadur"
+      ]
+    },
+    "Ganga": {
+      "group": "Shakta",
+      "aliases": [
+        "ganga",
+        "goddess ganga",
+        "ganga devi",
+        "bhagirathi",
+        "alaknanda",
+        "bhagirathi"
+      ]
+    },
+    "Yamuna": {
+      "group": "Shakta",
+      "aliases": [
+        "yamuna",
+        "goddess yamuna",
+        "yami"
+      ]
+    },
+    "Swaminarayan": {
+      "group": "Vaishnava",
+      "aliases": [
+        "swaminarayan",
+        "sahajanand swami",
+        "akshardham"
+      ]
+    },
+    "Sai Baba": {
+      "group": "Smarta",
+      "aliases": [
+        "sai baba",
+        "shirdi sai",
+        "sainath",
+        "neem karoli",
+        "neeb karori"
+      ]
+    },
+    "Ajitanatha": {
+      "group": "Jain",
+      "aliases": [
+        "ajitanatha",
+        "ajitnath"
+      ]
+    },
+    "Sumatinatha": {
+      "group": "Jain",
+      "aliases": [
+        "sumatinatha",
+        "sumatinath"
+      ]
+    },
+    "Munisuvrata": {
+      "group": "Jain",
+      "aliases": [
+        "munisuvrata",
+        "munisuvratanatha"
+      ]
+    },
+    "Vimalanatha": {
+      "group": "Jain",
+      "aliases": [
+        "vimalanatha",
+        "vimalnath"
+      ]
+    },
+    "Mallinatha": {
+      "group": "Jain",
+      "aliases": [
+        "mallinatha",
+        "mallinath"
+      ]
+    },
+    "Suparshvanatha": {
+      "group": "Jain",
+      "aliases": [
+        "suparshvanatha",
+        "suparshvanath"
+      ]
+    },
+    "Bagalamukhi": {
+      "group": "Shakta",
+      "aliases": [
+        "bagalamukhi",
+        "baglamukhi",
+        "pitambara"
+      ]
+    },
+    "Narmada": {
+      "group": "Shakta",
+      "aliases": [
+        "narmada"
+      ]
+    },
+    "Varuna": {
+      "group": "Smarta",
+      "aliases": [
+        "varuna",
+        "dewa baruna",
+        "baruna"
+      ]
+    },
+    "Prajnaparamita": {
+      "group": "Buddhist",
+      "aliases": [
+        "prajnaparamita"
+      ]
+    }
+  }
+}

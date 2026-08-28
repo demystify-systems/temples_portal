@@ -1,0 +1,601 @@
+[
+ {
+  "id": "kanishka-stupa-peshawar",
+  "name": "Kanishka Stupa",
+  "country": "Pakistan",
+  "state": "Khyber Pakhtunkhwa",
+  "place": "Peshawar",
+  "lat": 33.9992,
+  "lng": 71.5918,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   151,
+   151
+  ],
+  "builtDisplay": "c. 151 CE (Kanishka); rebuilt 4th c.",
+  "dynasty": "Kushan",
+  "style": "Cruciform stupa with tiered wooden superstructure",
+  "circuits": [],
+  "significance": "The ruined mound at Shaji-ki-Dheri outside Peshawar's old walled city is the base of the colossal relic stupa raised by the Kushan emperor Kanishka; excavation there recovered a rock-crystal reliquary holding fragments of bone identified as relics of the Buddha. Chinese pilgrims described it as one of the tallest buildings of the ancient world, and the site was re-identified in 2011 though it remains unpreserved.",
+  "story": "Buddhist texts record a prophecy that Kanishka would build a great stupa bearing his name on the spot where a small boy had piled up a stupa of mud, and that celestial beings helped to raise it.",
+  "wiki": "https://en.wikipedia.org/wiki/Kanishka_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kanishka_Stupa"
+   },
+   {
+    "l": "Wikidata Q842918",
+    "u": "https://www.wikidata.org/wiki/Q842918"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phra-pathommachedi-nakhon-pathom",
+  "name": "Phra Pathommachedi",
+  "country": "Thailand",
+  "state": "Nakhon Pathom Province",
+  "place": "Nakhon Pathom",
+  "lat": 13.8197,
+  "lng": 100.0603,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   1853,
+   1870
+  ],
+  "builtDisplay": "1853-1870 (King Mongkut); Dvaravati origin",
+  "origin": -193,
+  "dynasty": "Chakri",
+  "style": "Sri Lankan-style bell-shaped stupa",
+  "circuits": [],
+  "significance": "Thailand's tallest stupa, rising over 120 metres at Nakhon Pathom, encases a far older Dvaravati-period monument and enshrines relics of the Buddha. King Mongkut ordered the present bell-shaped casing built from 1853, completed under his successor in 1870; the ashes of King Vajiravudh and members of his family are also interred here.",
+  "story": "Local legend tells of Phraya Gong and Phraya Phan, a prince who unknowingly killed his own father and afterwards raised the great stupa in expiation.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_Pathommachedi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_Pathommachedi"
+   },
+   {
+    "l": "Wikidata Q1150964",
+    "u": "https://www.wikidata.org/wiki/Q1150964"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "memorial-chorten-thimphu",
+  "name": "National Memorial Chorten",
+  "country": "Bhutan",
+  "state": "Thimphu District",
+  "place": "Thimphu",
+  "lat": 27.4664,
+  "lng": 89.6378,
+  "tradition": "Buddhist",
+  "deity": "Nyingma tantric deities; memorial to Jigme Dorji Wangchuck",
+  "built": [
+   1974,
+   1974
+  ],
+  "builtDisplay": "1974",
+  "dynasty": "Modern (Wangchuck)",
+  "style": "Tibetan-style Jangchup chorten",
+  "circuits": [],
+  "significance": "A 108-foot whitewashed chorten in central Thimphu raised in 1974 by Queen Ashi Phuntsho Choden Wangchuck in memory of her son, the third king Jigme Dorji Wangchuck. Unusually for a chorten it holds no bodily remains, only the king's photograph, while its three interior levels are filled with paintings and sculptures of wrathful Nyingma deities; it is one of Thimphu's busiest daily places of worship.",
+  "wiki": "https://en.wikipedia.org/wiki/Memorial_Chorten,_Thimphu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Memorial_Chorten,_Thimphu"
+   },
+   {
+    "l": "Wikidata Q864865",
+    "u": "https://www.wikidata.org/wiki/Q864865"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sandamuni-pagoda-mandalay",
+  "name": "Sandamuni Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Mandalay",
+  "lat": 22.0035,
+  "lng": 96.1098,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (iron image); memorial to Prince Kanaung Mintha",
+  "built": [
+   1874,
+   1874
+  ],
+  "builtDisplay": "1874 (King Mindon Min)",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "Built in 1874 southwest of Mandalay Hill on the site of King Mindon's provisional palace, this Theravada pagoda commemorates his brother Prince Kanaung Mintha and three other princes killed in the Myingun rebellion of 1866, whose graves lie within. Its shrine houses a huge iron Buddha image cast by King Bodawpaya in 1802 and brought here from Amarapura.",
+  "wiki": "https://en.wikipedia.org/wiki/Sandamuni_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sandamuni_Pagoda"
+   },
+   {
+    "l": "Wikidata Q19702014",
+    "u": "https://www.wikidata.org/wiki/Q19702014"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "mohra-muradu-taxila",
+  "name": "Mohra Muradu",
+  "country": "Pakistan",
+  "state": "Punjab",
+  "place": "Taxila",
+  "lat": 33.7608,
+  "lng": 72.8606,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   100,
+   200
+  ],
+  "builtDisplay": "2nd c. CE; renovated 5th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Buddhist monastery and stupa complex in a quiet valley near Taxila, set far enough from the city of Sirsukh for monks to meditate yet close enough for the daily alms round. Excavated by John Marshall in 1914-15, it preserves a main stupa on a high plinth and a two-storey monastery of 27 cells around a courtyard pool, and forms part of the Taxila World Heritage Site inscribed in 1980.",
+  "wiki": "https://en.wikipedia.org/wiki/Mohra_Muradu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mohra_Muradu"
+   },
+   {
+    "l": "Wikidata Q938223",
+    "u": "https://www.wikidata.org/wiki/Q938223"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thul-mir-rukan-daulatpur",
+  "name": "Thul Mir Rukan",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Daulatpur, Shaheed Benazirabad District",
+  "lat": 26.4545,
+  "lng": 68.1066,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   600,
+   1100
+  ],
+  "builtDisplay": "6th-11th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A ruined baked-brick stupa about 60 feet high standing in the Sindh plain near Kazi Ahmed and Daulatpur, the surviving core of a Buddhist religious centre. Finds from the site connect it to the veneration of Gautama Buddha, though its portable artefacts have long since been removed.",
+  "wiki": "https://en.wikipedia.org/wiki/Thul_Mir_Rukan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thul_Mir_Rukan"
+   },
+   {
+    "l": "Wikidata Q51670280",
+    "u": "https://www.wikidata.org/wiki/Q51670280"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phra-that-kham-kaen",
+  "name": "Phra That Kham Kaen",
+  "country": "Thailand",
+  "state": "Khon Kaen Province",
+  "place": "Ban Kham, Nam Phong",
+  "lat": 16.5635,
+  "lng": 102.9519,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic)",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "17th c. (estimated)",
+  "dynasty": "Lan Xang",
+  "style": "Lao-style chedi",
+  "circuits": [],
+  "significance": "A 19-metre gilded chedi at Ban Kham northeast of Khon Kaen that enshrines a relic of the Buddha and gives the province its name. No record of its founding survives, but scholars place it in the 17th century, when the region belonged to the Lao kingdom of Lan Xang or its successors, and date it alongside Phra That Si Song Rak in Loei.",
+  "story": "Monks carrying relics of the Buddha are said to have camped by a dead tamarind stump here, and on their return journey found it sprouting fresh growth; reading this as a sign, they built the shrine on the spot with the help of local villagers.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Kham_Kaen",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Kham_Kaen"
+   },
+   {
+    "l": "Wikidata Q13017415",
+    "u": "https://www.wikidata.org/wiki/Q13017415"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "norbugang-chorten-yuksom",
+  "name": "Norbugang Chorten",
+  "country": "India",
+  "state": "Sikkim",
+  "place": "Yuksom, Gyalshing district",
+  "lat": 27.3704,
+  "lng": 88.2168,
+  "tradition": "Buddhist",
+  "deity": "Memorial chorten of the first Chogyal’s coronation",
+  "built": [
+   1642,
+   1642
+  ],
+  "builtDisplay": "1642 (coronation of Phuntsog Namgyal)",
+  "dynasty": "Namgyal (Chogyal)",
+  "style": "Tibetan chorten",
+  "circuits": [],
+  "significance": "Raised at Yuksom in 1642 by Lhatsun Namkha Jigme and two fellow lamas at the moment they crowned Phuntsog Namgyal as the first Chogyal of Sikkim, this Nyingma chorten stands in Norbugang Park beside the stone coronation throne. It marks the founding of the Sikkimese monarchy and remains the focus of the site, about 42 km from Pelling.",
+  "story": "The chorten is said to enclose water and earth gathered from every part of Sikkim, and a nearby stone bears what tradition holds to be the footprint of one of the lamas who performed the coronation.",
+  "wiki": "https://en.wikipedia.org/wiki/Norbugang_Chorten",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Norbugang_Chorten"
+   },
+   {
+    "l": "Wikidata Q56204092",
+    "u": "https://www.wikidata.org/wiki/Q56204092"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kunala-stupa-taxila",
+  "name": "Kunala Stupa",
+  "country": "Pakistan",
+  "state": "Punjab",
+  "place": "Taxila",
+  "lat": 33.7504,
+  "lng": 72.8305,
+  "tradition": "Jain",
+  "deity": "Kunala, son of emperor Ashoka",
+  "built": [
+   100,
+   200
+  ],
+  "builtDisplay": "2nd c. CE",
+  "dynasty": "Kushan",
+  "style": "Stupa and monastery complex",
+  "circuits": [],
+  "significance": "A ruined stupa and monastery on a hill about 200 metres south of Sirkap at Taxila, named for Kunala, the son of Ashoka. Tradition credits its building to emperor Samprati in honour of his father, and Xuanzang recorded that pilgrims suffering from diseases of the eye came here in hope of a cure.",
+  "story": "Kunala is said to have been blinded through the jealousy of a queen, and afterwards reunited with his father and treated by a physician at Taxila.",
+  "wiki": "https://en.wikipedia.org/wiki/Kunala_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kunala_Stupa"
+   },
+   {
+    "l": "Wikidata Q55616283",
+    "u": "https://www.wikidata.org/wiki/Q55616283"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ramagrama-stupa-parasi",
+  "name": "Ramagrama Stupa",
+  "country": "Nepal",
+  "state": "Lumbini Province",
+  "place": "Ramgram, Parasi District",
+  "lat": 27.4978,
+  "lng": 83.6811,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   -300,
+   500
+  ],
+  "builtDisplay": "Mauryan to Gupta periods",
+  "dynasty": "Koliya",
+  "style": "Brick-and-earth stupa",
+  "circuits": [],
+  "significance": "The only one of the eight original relic stupas raised over the divided cremation remains of the Buddha that has never been opened, built at Ramagrama by the Koliya princes and enlarged between the Mauryan and Gupta periods. The seven-metre mound still lies largely buried and unexcavated, and was placed on UNESCO’s World Heritage tentative list in 1996.",
+  "story": "When Ashoka came to redistribute the relics of the Buddha, a naga guardian of the stupa is said to have stopped him, leaving Ramagrama alone undisturbed.",
+  "wiki": "https://en.wikipedia.org/wiki/Ramagrama_stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ramagrama_stupa"
+   },
+   {
+    "l": "Wikidata Q7288751",
+    "u": "https://www.wikidata.org/wiki/Q7288751"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phra-that-si-song-rak-dan-sai",
+  "name": "Phra That Si Song Rak",
+  "country": "Thailand",
+  "state": "Loei Province",
+  "place": "Dan Sai",
+  "lat": 17.27,
+  "lng": 101.1425,
+  "tradition": "Buddhist",
+  "deity": "Commemorative that of the Lan Xang–Ayutthaya friendship pact",
+  "built": [
+   1560,
+   1560
+  ],
+  "builtDisplay": "c. 1560",
+  "dynasty": "Lan Xang / Ayutthaya",
+  "circuits": [],
+  "significance": "A 20-metre stupa at Dan Sai in Loei, raised around 1560 jointly by King Setthathirath of Lan Xang and King Maha Chakkraphat of Ayutthaya to seal a mutual-defence pact; its name means the stupa in honour of two loves. A stone inscription pledging that neither kingdom would violate the other’s territory once stood here, and the monument appears on the seal of Loei province.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Si_Song_Rak",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Si_Song_Rak"
+   },
+   {
+    "l": "Wikidata Q3511815",
+    "u": "https://www.wikidata.org/wiki/Q3511815"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chorten-kora-trashiyangtse",
+  "name": "Chorten Kora",
+  "country": "Bhutan",
+  "state": "Trashiyangtse District",
+  "place": "Trashiyangtse",
+  "lat": 27.6058,
+  "lng": 91.495,
+  "tradition": "Buddhist",
+  "deity": "Memorial chorten of Lam Jangchub Gyeltshen",
+  "built": [
+   1740,
+   1740
+  ],
+  "builtDisplay": "1740 (Lama Ngawang Lodrö); 12 years building",
+  "dynasty": "18th-century Bhutan",
+  "style": "Stupa modelled on Boudhanath",
+  "circuits": [],
+  "significance": "A large whitewashed stupa beside the Kholong Chhu in eastern Bhutan, begun in 1740 by Lama Ngawang Lodrö in memory of Lam Jangchub Gyeltshen and to pacify a malignant spirit at the site; it took twelve years to complete and was modelled on the great stupa of Boudhanath in Nepal. Two circumambulation festivals, Dakpa Kora and Drukpa Kora, draw pilgrims from Trashiyangtse and from Tawang across the border.",
+  "story": "A Dakini princess from Arunachal Pradesh is said to have had herself entombed alive inside the stupa as the Yeshe Semba, to meditate there for the benefit of all beings.",
+  "wiki": "https://en.wikipedia.org/wiki/Chorten_Kora",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chorten_Kora"
+   },
+   {
+    "l": "Wikidata Q4232576",
+    "u": "https://www.wikidata.org/wiki/Q4232576"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "world-peace-pagoda-lumbini",
+  "name": "World Peace Pagoda, Lumbini",
+  "country": "Nepal",
+  "state": "Lumbini",
+  "place": "Lumbini",
+  "lat": 27.498,
+  "lng": 83.274,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Modern",
+  "style": "Whitewashed peace pagoda",
+  "circuits": [],
+  "significance": "A whitewashed stupa at the northern end of the Lumbini Master Plan axis, designed and built by Japanese Buddhists at a cost of roughly a million US dollars and also known as the Nipponzan peace pagoda. Four large gilded Buddha figures face the cardinal directions, and the grave of the Japanese monk Unataka Navatame lies at its base; the wetland north of it shelters the endangered sarus crane.",
+  "wiki": "https://en.wikipedia.org/wiki/World_Peace_Pagoda,_Lumbini",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/World_Peace_Pagoda,_Lumbini"
+   },
+   {
+    "l": "Wikidata Q100989576",
+    "u": "https://www.wikidata.org/wiki/Q100989576"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phra-chedi-klang-nam-rayong",
+  "name": "Phra Chedi Klang Nam",
+  "country": "Thailand",
+  "state": "Rayong Province",
+  "place": "Pak Nam, Mueang Rayong",
+  "lat": 12.6661,
+  "lng": 101.2419,
+  "tradition": "Buddhist",
+  "deity": "Phra Mae Khongkha (goddess of the waters)",
+  "built": [
+   1873,
+   1873
+  ],
+  "builtDisplay": "1873 (Kate Yomjinda)",
+  "dynasty": "Rattanakosin",
+  "style": "Bell-shaped chedi",
+  "circuits": [],
+  "significance": "A ten-metre bell-shaped chedi on a reddish-brick base at the mouth of the Rayong river, built in 1873 by the provincial administrator Kate Yomjinda in honour of Phra Mae Khongkha and long used by sailors as a landmark for the port. It has become an emblem of Rayong, with an annual festival in the twelfth lunar month and a December rite in which its spire is wrapped in six metres of red cloth.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_Chedi_Klang_Nam",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_Chedi_Klang_Nam"
+   },
+   {
+    "l": "Wikidata Q30673285",
+    "u": "https://www.wikidata.org/wiki/Q30673285"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhamala-stupa-haripur",
+  "name": "Bhamala Stupa",
+  "country": "Pakistan",
+  "state": "Khyber Pakhtunkhwa",
+  "place": "Haripur District",
+  "lat": 33.8328,
+  "lng": 72.9758,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   100,
+   500
+  ],
+  "builtDisplay": "2nd-5th c. CE",
+  "dynasty": "Undetermined",
+  "style": "Cruciform Gandharan stupa",
+  "circuits": [],
+  "significance": "One of the best preserved Buddhist sites in the Taxila valley, whose main stupa is the largest surviving cruciform example in the Taxila and Gandhara region, with stairways on all four sides and about nineteen smaller votive stupas around it. Excavations begun by John Marshall in 1929 and resumed in 2017 uncovered a Buddha figure roughly 1,700 years old, described as the oldest known image of the Buddha at the moment of enlightenment.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhamala_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhamala_Stupa"
+   },
+   {
+    "l": "Wikidata Q18110458",
+    "u": "https://www.wikidata.org/wiki/Q18110458"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-wang-wiwekaram-sangkhla-buri",
+  "name": "Wat Wang Wiwekaram",
+  "country": "Thailand",
+  "state": "Kanchanaburi Province",
+  "place": "Nong Lu, Sangkhla Buri",
+  "lat": 15.133,
+  "lng": 98.445,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha; relics of Luangpho Uttama",
+  "built": [
+   1985,
+   1985
+  ],
+  "builtDisplay": "1985 (rebuilt); founded 1953",
+  "origin": 1953,
+  "dynasty": "Modern",
+  "style": "Mon and Thai",
+  "circuits": [],
+  "significance": "A Theravada temple near the Thai-Burmese border at Sangkhla Buri, founded in 1953 by the monk Luangpho Uttama with Mon and Karen settlers and rebuilt on higher ground by 1985 after the Khao Laem Dam flooded its first site. The body of its founder rests here in a glass coffin, while the drowned original is now visited as the Sangkhlaburi underwater temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Wang_Wiwekaram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Wang_Wiwekaram"
+   },
+   {
+    "l": "Wikidata Q4105234",
+    "u": "https://www.wikidata.org/wiki/Q4105234"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "matho-monastery-ladakh",
+  "name": "Matho Monastery",
+  "country": "India",
+  "state": "Ladakh",
+  "place": "Matho, Leh district",
+  "lat": 33.9989,
+  "lng": 77.6308,
+  "tradition": "Buddhist",
+  "deity": "Shakyamuni Buddha (Sakya school)",
+  "built": [
+   1410,
+   1410
+  ],
+  "builtDisplay": "1410 (Lama Dugpa Dorje)",
+  "dynasty": "15th-century Ladakh",
+  "circuits": [],
+  "significance": "Founded in 1410 by Lama Dugpa Dorje on the south bank of the Indus about 26 km from Leh, Matho is the only Ladakhi monastery of the Sakya school. Its assembly hall centres on a Shakyamuni Buddha with chapels to Sakya Pandita and other lamas, and an adjoining museum holds thangkas of the 14th and 15th centuries along with festival masks and robes.",
+  "story": "At the Matho Nagrang festival two monks known as the Rongtsan oracles, chosen every three years after months of seclusion and meditation, are possessed by the monastery guardians and answer questions about the year ahead for Matho and for Ladakh.",
+  "wiki": "https://en.wikipedia.org/wiki/Matho_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Matho_Monastery"
+   },
+   {
+    "l": "Wikidata Q4286253",
+    "u": "https://www.wikidata.org/wiki/Q4286253"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-chiang-man-chiang-mai",
+  "name": "Wat Chiang Man",
+  "country": "Thailand",
+  "state": "Chiang Mai Province",
+  "place": "Chiang Mai",
+  "lat": 18.7938,
+  "lng": 98.989,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Phra Sae Tang Khamani and Phra Sila images)",
+  "built": [
+   1297,
+   1297
+  ],
+  "builtDisplay": "1297 (King Mangrai)",
+  "dynasty": "Mangrai (Lan Na)",
+  "circuits": [],
+  "significance": "The oldest temple inside the walls of Chiang Mai, founded in 1297 by King Mangrai as the city was being laid out. Its Chedi Chang Lom is buttressed by fifteen life-size brick-and-stucco elephants, the wihan holds a Buddha image of 1465 said to be the oldest surviving Thai image shown with an alms bowl, and a stone inscription of 1581 in the ubosot records the city’s founding on 12 April 1296.",
+  "story": "The small quartz Phra Sae Tang Khamani is believed to protect the city, and the stone Phra Sila, carved with the Buddha subduing the elephant Nalagiri, is credited with the power to bring rain.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Chiang_Man",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Chiang_Man"
+   },
+   {
+    "l": "Wikidata Q1515582",
+    "u": "https://www.wikidata.org/wiki/Q1515582"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]
