@@ -5,6 +5,7 @@ import "./globals.css";
 import { SITE_URL } from "@/lib/site-url.mjs";
 import Assistant from "./Assistant";
 import ServiceWorker from "./ServiceWorker";
+import { UiLanguageProvider } from "./useUiLanguage";
 
 const display = Marcellus({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const ui = Hanken_Grotesk({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-ui" });
@@ -32,8 +33,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           chat button that 503s on every question is worse than not offering one —
           and the key is server-side only, so this check cannot leak it. */}
       <body>
-        {children}
-        {process.env.SARVAM_API_KEY ? <Assistant /> : null}
+        <UiLanguageProvider>
+          {children}
+          {process.env.SARVAM_API_KEY ? <Assistant /> : null}
+        </UiLanguageProvider>
         <ServiceWorker />
       </body>
     </html>

@@ -185,17 +185,80 @@ export async function chat(opts: {
 }
 
 /** Bulbul. Returns base64 WAV clips — this is JSON, not a stream. */
+/**
+ * Voices Bulbul will synthesise, enumerated by the API itself.
+ *
+ * Not copied from the documentation — read off the live API on 2026-08-28 by
+ * sending a deliberately invalid speaker, which answers with the complete list
+ * for the calling key. That is worth doing rather than trusting a docs page:
+ * the list is what the key can actually use, and it is validated server-side.
+ *
+ * ON VOICE CLONING. A cloned voice CANNOT be used here today. Four checks agree:
+ * this list holds only stock voices and no custom one; an unrecognised
+ * `speaker` is rejected with the list above, so the field is a closed enum;
+ * `voice_id`, `speaker_id`, `custom_speaker` and `clone_id` are all accepted
+ * without error and silently discarded, which is how an API treats an unknown
+ * field rather than a real one; and every plausible clone endpoint —
+ * /voice-clone, /v1/voice-clone, /voice-library, /speaker/clone — answers 404,
+ * not 401 or 400, so the route does not exist. The official reference documents
+ * seven endpoints and none of them is voice cloning.
+ *
+ * If Sarvam exposes it, it will almost certainly arrive as an id accepted in
+ * THIS field, which is why `speaker` is a plain string on the wire and the
+ * allow-list is checked separately. The day it lands, this is an env var and a
+ * new entry in KNOWN_SPEAKERS — not a refactor.
+ */
+export const KNOWN_SPEAKERS: readonly string[] = [
+  // bulbul:v3
+  "shubh", "aditya", "ritu", "priya", "neha", "rahul", "pooja", "rohan", "simran",
+  "kavya", "amit", "dev", "ishita", "shreya", "ratan", "varun", "manan", "sumit",
+  "roopa", "kabir", "aayan", "ashutosh", "advait", "anand", "tanya", "tarun",
+  "sunny", "mani", "gokul", "vijay", "shruti", "suhani", "mohit", "kavitha",
+  "rehan", "soham", "rupali",
+  // bulbul:v2 only
+  "anushka", "abhilash", "manisha", "vidya", "arya", "karun", "hitesh",
+];
+
+/** Bulbul's own default, used when none is configured. */
+export const DEFAULT_SPEAKER = "shubh";
+
+/**
+ * The configured voice, or the default.
+ *
+ * An unrecognised name falls back rather than throwing. A typo in an env var
+ * must not take the spoken answer offline for every visitor — a wrong-sounding
+ * voice is a far smaller failure than no voice, and the mismatch is logged
+ * where an operator will see it.
+ */
+export function resolveSpeaker(configured?: string | null): string {
+  const wanted = (configured ?? "").trim().toLowerCase();
+  if (!wanted) return DEFAULT_SPEAKER;
+  if (KNOWN_SPEAKERS.includes(wanted)) return wanted;
+  console.warn(
+    `[sarvam] SARVAM_TTS_SPEAKER="${configured}" is not a voice Bulbul offers; using "${DEFAULT_SPEAKER}". ` +
+    `Known voices: ${KNOWN_SPEAKERS.join(", ")}`,
+  );
+  return DEFAULT_SPEAKER;
+}
+
 export async function textToSpeech(opts: {
   apiKey: string;
   text: string;
   languageCode: string;
+  /** A name from KNOWN_SPEAKERS. Absent means Bulbul's default. */
+  speaker?: string | null;
   signal?: AbortSignal;
 }): Promise<string[]> {
+  const speaker = resolveSpeaker(opts.speaker);
   const res = await fetch(`${BASE}/text-to-speech`, {
     method: "POST",
     headers: headers(opts.apiKey),
     signal: opts.signal,
-    body: JSON.stringify({ text: opts.text, target_language_code: opts.languageCode }),
+    body: JSON.stringify({
+      text: opts.text,
+      target_language_code: opts.languageCode,
+      speaker,
+    }),
   });
   if (!res.ok) throw new SarvamError(await res.text(), res.status);
   const json = await res.json();

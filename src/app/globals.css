@@ -160,7 +160,24 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .tip .tn{font:400 14.5px var(--font-display),serif;letter-spacing:.02em}
 .tip .tm{color:var(--ink2);font-size:11.5px}
 .tip .ty{font-family:var(--font-mono),monospace;font-size:10.5px;margin-top:2px}
-.maplegend{position:absolute;left:12px;bottom:10px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:10.5px;color:var(--ink2);display:flex;gap:10px;flex-wrap:wrap;max-width:60%}
+/* ---- the era key, collapsible ----
+   A legend is a KEY, not a control: you read it once and then you know that
+   gold means Ancient. Permanently occupying a fifth of a 390px map to keep
+   telling you is the wrong trade, so it folds away to its own button. The
+   toggle sits on the LEFT edge so the chevron points at the thing it opens,
+   and the button stays put between states — a control that moves when you
+   press it is a control you have to re-find. */
+.maplegend{position:absolute;left:12px;bottom:10px;z-index:4;
+  background:color-mix(in srgb,var(--panel) 92%,transparent);
+  border:1px solid var(--line);border-radius:10px;
+  font-size:10.5px;color:var(--ink2);
+  display:flex;align-items:flex-start;gap:0;max-width:min(60%,420px)}
+.legendtoggle{display:flex;align-items:center;gap:5px;flex:none;
+  padding:8px 9px;color:var(--ink2);border-radius:9px;min-height:34px}
+.legendtoggle:hover{color:var(--gold)}
+.legendchevron{font-size:15px;line-height:1;width:10px;text-align:center}
+.legendlabel{font-family:var(--font-mono),monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase}
+.legendbody{display:flex;gap:10px;flex-wrap:wrap;padding:8px 12px 8px 2px;border-left:1px solid var(--line)}
 .maplegend .li{display:flex;align-items:center;gap:5px;white-space:nowrap}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
 
@@ -1112,3 +1129,172 @@ table.gz tr:last-child td{border-bottom:none}
 .didyoumean button{display:inline-flex;align-items:baseline;gap:6px;border:1px solid var(--line2);border-radius:20px;padding:3px 11px;color:var(--ink);font-size:12.5px;line-height:1.7}
 .didyoumean button:hover{border-color:var(--gold);color:var(--gold)}
 .didyoumean button em{font-style:normal;font-size:10.5px;color:var(--mut)}
+
+/* ---- the timeline on a phone -------------------------------------------
+   Reported: on mobile the timeline was not visible at all.
+
+   The cause is a stacking one, not a sizing one. `.side.sheet` is fixed to
+   `bottom:0` and 100% tall, sliding up to its snap points; `.timeline` is the
+   last row of the `.app` flex column, in normal flow. So even at `snap-peek`,
+   where the sheet shows only its bottom 22%, it sits ON TOP of the timeline and
+   hides it completely. On a phone the timeline was unreachable whenever a
+   record was open — which, since tapping a mark opens one, is most of the time.
+
+   Fixed by reserving the timeline's height at the bottom of the viewport and
+   letting the sheet stop above it. --tl-h is declared once and used by both, so
+   the reservation and the offset cannot drift apart. */
+:root{
+  /* Both are first guesses only, overwritten from measurement on mount. AtlasClient measures the real height and overwrites
+     this on mount and on every resize — the timeline reflows with the viewport,
+     so no written-down number stays true. This value is what the sheet uses for
+     the one frame before that happens. */
+  --tl-h:96px;
+  --head-h:116px;
+}
+
+@media (max-width:720px){
+  /* The sheet now ends where the timeline begins, instead of covering it. */
+  .side.sheet{ bottom:var(--tl-h); height:calc(100% - var(--tl-h)); }
+
+  /* Above the sheet in the stacking order as well as beside it, so a
+     mid-drag sheet cannot briefly paint over the control. */
+  .timeline{ position:relative; z-index:12; padding:6px 12px 8px; }
+
+  /* Two rows: the readout and its buttons, then a full-width slider. At 390px
+     the desktop single row put the slider at about 90px wide, which is not a
+     control anyone can place a year with. */
+  .tl-top{ flex-wrap:wrap; gap:8px 10px; }
+  .yearbox{ font-size:13px; width:auto; flex:1 1 auto; min-width:0 }
+  .yearbox small{ font-size:8.5px; letter-spacing:.14em }
+  .play{ width:38px; height:38px }
+  .showall{ order:3; margin-left:auto }
+  .tlsvgwrap{ flex:1 0 100%; order:5 }
+  .tlsvgwrap svg{ height:42px }
+  .tlsvgwrap input[type=range]{ bottom:6px; height:38px }
+  /* 44px of thumb, drawn at 15px. A 15px target on glass is a miss. */
+  .tlsvgwrap input[type=range]::-webkit-slider-thumb{ width:19px; height:19px }
+  .tlsvgwrap input[type=range]::-moz-range-thumb{ width:19px; height:19px }
+
+  /* The era buttons scroll sideways rather than wrapping onto three rows and
+     pushing the slider off the screen — which is the same bug again. */
+  .tleras{ order:4; flex:1 0 100%; max-width:none; flex-wrap:nowrap;
+    overflow-x:auto; overscroll-behavior-x:contain; padding-bottom:2px;
+    scrollbar-width:none; }
+  .tleras::-webkit-scrollbar{ display:none }
+  .tlera{ flex:none; min-height:30px }
+
+  /* The key starts collapsed here, so it clears the map; it also has to clear
+     the timeline it now sits above. */
+  .maplegend{ bottom:8px; max-width:calc(100% - 24px) }
+  .legendbody{ font-size:10px }
+
+  /* The coach mark is anchored inside the timeline and must not reintroduce
+     the very overlap this section removes.
+     Positioned with `bottom:100%` against its zero-height anchor rather than
+     with a transform: `coach-in` is an animation whose last keyframe sets
+     `transform:none` with fill-mode `both`, and an animation's computed value
+     beats a normal declaration in the cascade. A translateY here is silently
+     discarded — measured, after it was — and the hint lands squarely on top of
+     the slider it is telling you to drag. */
+  .coach{ top:auto; bottom:calc(100% + 10px); max-width:calc(100vw - 24px) }
+}
+
+/* Very narrow: the readout loses its label before it loses its numbers. */
+@media (max-width:430px){
+  .yearbox small{ display:none }
+  .tleras{ gap:3px }
+  .tlera{ font-size:10px; padding:3px 7px }
+}
+
+/* ---- search in the header, and two rows reclaimed ------------------------
+   On a phone the atlas spent one row on search + filters and another on the
+   live count, on top of the brand row and the coverage row. Four rows of
+   chrome above a map is most of a 412px-wide viewport's usable height.
+
+   Search and filters now live behind one button in the header, and the count
+   moved to the end of the coverage row it belongs with. */
+.hactions{display:flex;align-items:center;gap:6px;flex:none;margin-left:10px}
+.hsearch{display:flex;align-items:center;gap:7px;min-height:34px;padding:0 11px;
+  border:1px solid var(--line2);border-radius:9px;color:var(--ink2)}
+.hsearch:hover,.hsearch.on{color:var(--gold);border-color:var(--gold)}
+.hsearchlabel{font-size:12.5px}
+/* The live count, at the end of the coverage row rather than on a row of its
+   own. `hnote` is a separate class from `st` because it is a STATE — it changes
+   as you filter — while the others are facts about the corpus. */
+.hnote{margin-left:auto;padding-left:12px;color:var(--gold);white-space:nowrap}
+.hnote b{color:var(--gold);font-weight:600}
+
+@media (max-width:720px){
+  /* The coverage row carries the count, so it must not centre or wrap. */
+  .hstats{width:100%;margin-left:0}
+  .hnote{margin-left:auto}
+
+  /* The filter bar becomes a popover under the header. Absolute, not a flex
+     row, so it costs the map no height at all when closed — which is the whole
+     point; `display:none` alone would still leave the row in the column. */
+  .filters{position:absolute;left:0;right:0;top:var(--head-h,116px);z-index:20;
+    display:none;flex-direction:column;align-items:stretch;gap:8px;
+    padding:12px;background:var(--panel);border-bottom:1px solid var(--line);
+    box-shadow:var(--shadow);
+    /* Capped and scrollable. At 360x560 the four selects plus the trace and
+       reset buttons stack 109px taller than the space under the header, and
+       with no cap the DOCUMENT scrolled — which on a 100dvh shell means the
+       header scrolls away and the timeline goes with it. The panel scrolls
+       instead of the page. */
+    max-height:calc(100dvh - var(--head-h,116px) - 12px);
+    overflow-y:auto;overscroll-behavior:contain}
+  .filters.open{display:flex}
+  .filters input[type=search]{width:100%;min-height:42px;font-size:16px}
+  /* 16px is not a style choice: iOS Safari zooms the whole page in on focus of
+     any input below it, and the map never comes back to where it was. */
+  .ftoggle{display:inline-flex;align-self:flex-start}
+  .fwrap.open select{flex:1 1 100%}
+  /* The count is in the header now; showing it twice is just the row again. */
+  .filters .count{display:none}
+
+  /* The popover is positioned against `.app`, since it is the header's SIBLING
+     and not its child — hence --head-h rather than `top:100%`. */
+  .app{position:relative}
+}
+
+/* ---- the map gives up height, never the timeline ------------------------
+   `.app` is a 100dvh column: header, filters, map, timeline. The map is the
+   only row that should shrink, because it is the only one whose content scales
+   — a shorter map is a smaller map, whereas a shorter timeline is a broken
+   control and a shorter header is a clipped brand.
+
+   min-height:0 is what makes that true. A flex item's default min-height is
+   `auto`, which refuses to shrink below its content, so at 600px the map
+   pushed the timeline off the bottom instead of yielding. This is that bug's
+   actual fix; `flex:none` on the timeline states the other half. */
+.main{min-height:0;flex:1 1 0}
+.mapwrap{min-height:0}
+.sitehead{flex:none}
+
+/* ---- interface language, in the header ----
+   Endonyms lead and the English name is secondary: a reader looking for Tamil
+   is looking for தமிழ־, and making them read English to stop reading English is
+   the failure this control exists to remove. Indic scripts need the taller
+   line-height and must never be letter-spaced. */
+.langpick{position:relative;flex:none}
+.langbtn{display:flex;align-items:center;gap:6px;min-height:34px;padding:0 10px;
+  border:1px solid var(--line2);border-radius:9px;color:var(--ink2)}
+.langbtn:hover,.langbtn.on{color:var(--gold);border-color:var(--gold)}
+.langcur{font-size:12.5px;line-height:1.7;letter-spacing:normal;max-width:11ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.langmenu{position:absolute;right:0;top:calc(100% + 6px);z-index:60;width:min(268px,86vw);
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);
+  padding:6px;max-height:min(60vh,420px);overflow-y:auto;overscroll-behavior:contain}
+.langmenu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.langmenu li button{display:flex;flex-direction:column;align-items:flex-start;gap:1px;
+  width:100%;min-height:44px;padding:6px 10px;border-radius:8px;text-align:left;color:var(--ink)}
+.langmenu li button:hover{background:var(--panel2)}
+.langmenu li button.on{background:var(--panel2);border:1px solid var(--gold)}
+.langendo{font-size:14.5px;line-height:1.7;letter-spacing:normal}
+.langeng{font-size:10.5px;color:var(--mut);letter-spacing:.02em}
+.langnote{font-size:11px;line-height:1.6;color:var(--ink2);padding:9px 10px 4px;margin-top:4px;border-top:1px solid var(--line)}
+
+/* The app shell must never scroll. It is a 100dvh column whose only scrolling
+   children are the detail rail and the drawer; a scroll here means something
+   inside asked to be revealed — a focused input, an anchor — and took the
+   timeline off the bottom of the screen with it. */
+.app{overflow:hidden;overscroll-behavior:none}

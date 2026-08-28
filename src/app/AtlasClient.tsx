@@ -14,6 +14,7 @@ import { ATLAS_STATS } from "@/lib/generated/atlas-stats";
 import { loadRecord, type RecordDetail } from "@/lib/record-detail";
 import { readVerification } from "@/lib/verification";
 import { useSpellingHelp } from "./useSpellingHelp";
+import { readPreference, writePreference, PREF_KEYS } from "@/lib/preference";
 import {
   DOUBLE_TAP_ZOOM, TAP_SLOP_PX, clampTranslate, distance, isDoubleTap, midpoint, pinchFactor,
   scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
@@ -146,6 +147,105 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
    * is what is new: raising it hides everything older, which is the only way to
    * see one era on its own.
    */
+  /**
+   * Whether the era key is showing. Closed on a phone, open on a desktop.
+   *
+   * Decided once on mount rather than by a CSS media query, because it is a
+   * STATE a reader can then override — a media query would slam it shut again
+   * on the next rotation, undoing a choice they just made.
+   */
+  /**
+   * Whether the search-and-filter panel is showing.
+   *
+   * On a phone it is a popover under the header, closed by default: search and
+   * filters had a row of their own and the live count had another, and on a
+   * 412px screen those two rows took roughly a fifth of the viewport away from
+   * the map they describe. On a desktop the panel is always shown and this flag
+   * only drives the button's pressed state.
+   */
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  const [legendOpen, setLegendOpenState] = useState(true);
+  useEffect(() => {
+    // A stored choice wins over the per-device default. Someone who opened the
+    // key on their phone has said what they want; defaulting it shut again on
+    // the next visit is overruling them with a guess about screen size.
+    const stored = readPreference<boolean | null>(PREF_KEYS.legendOpen, null);
+    setLegendOpenState(stored ?? !window.matchMedia(SHEET_QUERY).matches);
+  }, []);
+  const setLegendOpen = useCallback((next: boolean | ((v: boolean) => boolean)) => {
+    setLegendOpenState((prev) => {
+      const value = typeof next === "function" ? next(prev) : next;
+      writePreference(PREF_KEYS.legendOpen, value);
+      return value;
+    });
+  }, []);
+
+  /**
+   * Publish the timeline's real height as `--tl-h`, so the bottom sheet can
+   * stop above it instead of behind it.
+   *
+   * The height is not a constant anyone can write down: it changes with the
+   * viewport width as the era buttons and the slider reflow, and it changed
+   * again when the era buttons were added. A hardcoded reservation was measured
+   * at 96px against an actual 143px, which left the sheet's last 47px tucked
+   * behind the timeline — invisible, and unscrollable-to.
+   *
+   * Measured rather than guessed, and re-measured on resize and rotation, so
+   * the reservation cannot drift from the thing it is reserving for.
+   */
+  useEffect(() => {
+    if (!searchOpen) return;
+    // Opening a search panel and not landing in the box is a second tap for
+    // nothing — and on a phone the keyboard is the point of opening it.
+    // preventScroll is load-bearing, not a nicety. `.app` is height:100dvh with
+    // overflow:hidden, and focusing an input inside the popover made the browser
+    // scroll that container to "reveal" it — shifting the whole layout up by
+    // 109px and pushing the timeline off the bottom of the screen. Measured, on
+    // the very fix that was meant to keep the timeline visible.
+    document.querySelector<HTMLInputElement>("#atlas-filters input[type=search]")
+      ?.focus({ preventScroll: true });
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setSearchOpen(false); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [searchOpen]);
+
+  const timelineRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = timelineRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const publish = () => {
+      document.documentElement.style.setProperty("--tl-h", `${Math.ceil(el.getBoundingClientRect().height)}px`);
+    };
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  /**
+   * Publish the header's height as `--head-h`.
+   *
+   * The search popover is a SIBLING of the header, not a child of it, so
+   * `top:100%` resolved against `.app` and put the panel at the bottom of the
+   * viewport — and a `max-height` built on the same `100%` collapsed it to
+   * 25px. Both were measured, not reasoned about. The header's own height is
+   * the number both actually want, and it changes with the viewport as the
+   * coverage stats drop out, so it is measured rather than written down.
+   */
+  useEffect(() => {
+    if (typeof ResizeObserver === "undefined") return;
+    const el = document.querySelector<HTMLElement>(".sitehead");
+    if (!el) return;
+    const publish = () => {
+      document.documentElement.style.setProperty("--head-h", `${Math.ceil(el.getBoundingClientRect().height)}px`);
+    };
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   const [range, setRange] = useState<readonly [number, number]>([YEAR_MIN, YEAR_MAX]);
   const [from, year] = range;
   const setYear = useCallback((next: number | ((y: number) => number)) => {
@@ -1140,9 +1240,32 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
 
   return (
     <>
-      <SiteHeader stats={STATS} indexOpen={index} onIndexToggle={toggleIndex} />
+      <SiteHeader
+        stats={STATS}
+        indexOpen={index}
+        onIndexToggle={toggleIndex}
+        note={<><b>{shownCount}</b> shown</>}
+        actions={
+          <button
+            type="button"
+            className={`hsearch${searchOpen ? " on" : ""}`}
+            aria-expanded={searchOpen}
+            aria-controls="atlas-filters"
+            onClick={() => setSearchOpen((v) => !v)}
+            title={searchOpen ? "Hide search and filters" : "Search and filter"}
+          >
+            <svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" fill="none"
+              stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+              <circle cx="8.5" cy="8.5" r="5.2" /><path d="M12.5 12.5 L17 17" />
+            </svg>
+            <span className="hsearchlabel">
+              Search{(filters.q || filters.country || filters.trad || filters.dyn || filters.cir) ? " ·" : ""}
+            </span>
+          </button>
+        }
+      />
 
-      <div className="filters">
+      <div className={`filters${searchOpen ? " open" : ""}`} id="atlas-filters">
         <input type="search" placeholder="Search temples, deities, places…" aria-label="Search" value={filters.q}
           onChange={(e) => setFilters({ ...filters, q: e.target.value })} />
         <button className={`ftoggle ${fOpen ? "on" : ""}`} onClick={() => setFOpen(!fOpen)} aria-expanded={fOpen} aria-controls="fwrap">
@@ -1240,9 +1363,27 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
             <button aria-label="Zoom out" onClick={() => zoomCenter(1 / 1.5)}>−</button>
             <button aria-label="Reset view" style={{ fontSize: 12 }} onClick={resetView}>⌂</button>
           </div>
-          <div className="maplegend">
-            {ERAS.map((e, i) => <span className="li" key={e.name}><span className="dot" style={{ background: `var(--e${i + 1})` }} />{e.name}</span>)}
-            <span className="li" style={{ opacity: 0.8 }}>○ sacred, pre-structure</span>
+          {/* The legend is a KEY, not a control: once you know gold means
+              Ancient you do not need it again, but on a 390px screen it was
+              covering a fifth of the map permanently. It now collapses to its
+              own button, and starts collapsed on a phone — where the map is
+              scarcest — and open on a desktop, where it costs nothing. */}
+          <div className={`maplegend${legendOpen ? " open" : ""}`}>
+            <button
+              type="button"
+              className="legendtoggle"
+              aria-expanded={legendOpen}
+              aria-controls="map-legend-body"
+              onClick={() => setLegendOpen((v) => !v)}
+              title={legendOpen ? "Hide the era key" : "Show the era key"}
+            >
+              <span className="legendchevron" aria-hidden="true">{legendOpen ? "‹" : "›"}</span>
+              <span className="legendlabel">{legendOpen ? "Key" : "Key"}</span>
+            </button>
+            <div className="legendbody" id="map-legend-body" hidden={!legendOpen}>
+              {ERAS.map((e, i) => <span className="li" key={e.name}><span className="dot" style={{ background: `var(--e${i + 1})` }} />{e.name}</span>)}
+              <span className="li" style={{ opacity: 0.8 }}>○ sacred, pre-structure</span>
+            </div>
           </div>
           <div className="tip" ref={tipRef} role="status" />
         </div>
@@ -1428,7 +1569,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
         </aside>
       </div>
 
-      <div className="timeline">
+      <div className="timeline" ref={timelineRef}>
         <div className="coachanchor">
           {coach && (
             <div className="coach" role="note" aria-label="Tip">
