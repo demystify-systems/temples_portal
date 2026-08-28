@@ -7,9 +7,9 @@
     "dev": "next dev",
     "build": "npm run validate && next build",
     "build:index": "node scripts/build-search-index.mjs",
-    "prebuild": "npm run build:index",
-    "predev": "npm run build:index",
-    "pretest": "npm run build:index",
+    "prebuild": "npm run build:index && npm run build:artefacts",
+    "predev": "npm run build:index && npm run build:artefacts",
+    "pretest": "npm run build:index && npm run build:artefacts",
     "start": "next start",
     "validate": "node scripts/check-site-url.mjs && node scripts/validate-data.mjs && npm run gates",
     "gate:contrast": "node scripts/check-contrast.mjs",
@@ -31,7 +31,9 @@
     "report:circuits": "node scripts/report-circuits.mjs --write",
     "report:sources": "node scripts/report-sources.mjs --write",
     "report:health": "node scripts/report-health.mjs --write",
-    "reports": "npm run report:circuits && npm run report:sources && npm run report:health"
+    "reports": "npm run report:circuits && npm run report:sources && npm run report:health",
+    "build:artefacts": "node scripts/build-map-artefacts.mjs",
+    "gate:corpus-leak": "node scripts/check-corpus-leak.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
