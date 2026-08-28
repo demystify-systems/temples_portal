@@ -760,5 +760,300 @@
     ],
     "verified": "wikipedia-2026-08-27",
     "tier": "compact"
+  },
+  {
+    "id": "bhagavan-kovil-dharapuram",
+    "name": "Bhagavan Kovil, Kosavalasu",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "near Dharapuram, Tiruppur district",
+    "lat": 10.715,
+    "lng": 77.6425,
+    "tradition": "Hindu",
+    "deity": "Vishnu as Bhagavan Thirumalaiswamy",
+    "built": [
+      1800,
+      1900
+    ],
+    "builtDisplay": "19th c.",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Vaishnava temple near Dharapuram in Tiruppur district completed in the 19th century and credited to Aadhi Gounder. It is best known for its Ugadi festival on the Telugu new year in March or April, which draws hundreds of thousands of visitors.",
+    "wiki": "https://en.wikipedia.org/wiki/Bhagavan_Kovil",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Bhagavan_Kovil"
+      },
+      {
+        "l": "Wikidata Q40193468",
+        "u": "https://www.wikidata.org/wiki/Q40193468"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kanthaswamy-cheyyur",
+    "name": "Kanthaswamy Temple, Cheyyur",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Cheyyur, Chengalpattu district",
+    "lat": 12.3525,
+    "lng": 80.0394,
+    "tradition": "Hindu",
+    "deity": "Murugan as Kanthaswamy, with Valli and Deivasena",
+    "built": [
+      900,
+      1000
+    ],
+    "builtDisplay": "10th c. (Chola)",
+    "dynasty": "Chola",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A 10th-century Chola foundation at Cheyyur with rectangular granite walls and a flat rajagopuram on the north, now under the Tamil Nadu HR and CE board. Its sanctum holds a five-foot granite Vel, and rare carvings of the twenty-seven Bhutaganas ring the shrine.",
+    "story": "Murugan is said to have installed a Shiva image here to cleanse himself of the sin of killing the demon Sooran, and the village is said to take its name from his son Sei, who worshipped him at this spot.",
+    "wiki": "https://en.wikipedia.org/wiki/Kanthaswamy_temple,_Cheyyur",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kanthaswamy_temple,_Cheyyur"
+      },
+      {
+        "l": "Wikidata Q40193527",
+        "u": "https://www.wikidata.org/wiki/Q40193527"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "mritangeshvara-nandchand",
+    "name": "Mritangeshvara Shiva Temple, Nandchand",
+    "country": "India",
+    "state": "Madhya Pradesh",
+    "place": "Nandchand, Panna district",
+    "lat": 23.9934,
+    "lng": 80.0715,
+    "tradition": "Hindu",
+    "deity": "Shiva as Mritangeshvara",
+    "built": [
+      1000,
+      1800
+    ],
+    "builtDisplay": "Kalachuri era, undated",
+    "dynasty": "Kalachuri",
+    "circuits": [],
+    "significance": "The chief standing landmark of an archaeological site at Nandchand in Panna district that preserves remains of the Kalachuri kingdom. Sculpture recovered around the temple and across the site is now held in the Sagar University Museum.",
+    "wiki": "https://en.wikipedia.org/wiki/Nandchand",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nandchand"
+      },
+      {
+        "l": "Wikidata Q116163192",
+        "u": "https://www.wikidata.org/wiki/Q116163192"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kailasanathar-karaikal",
+    "name": "Kailasanathar Temple, Karaikal",
+    "country": "India",
+    "state": "Puducherry",
+    "place": "Karaikal",
+    "lat": 10.9237,
+    "lng": 79.8328,
+    "tradition": "Hindu",
+    "deity": "Shiva as Kailasanathar",
+    "built": [
+      700,
+      800
+    ],
+    "builtDisplay": "Pallava rebuilding, 8th c.; repaired under French rule",
+    "dynasty": "Pallava",
+    "circuits": [],
+    "significance": "The largest temple complex in Karaikal town, rebuilt by the Pallavas in the 8th century and again during French rule, with four ornate doorways facing the cardinal directions. Besides the consort Soundarambal it carries shrines to Nataraja, Dakshinamurthy, Vinayaka, Muruga and many saints, and keeps the Mangani, Theppotsavam and Rathotsavam festivals.",
+    "story": "Local belief holds the shrine to be more than two thousand years old.",
+    "wiki": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Karaikal",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kailasanathar_Temple,_Karaikal"
+      },
+      {
+        "l": "Wikidata Q30692836",
+        "u": "https://www.wikidata.org/wiki/Q30692836"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "karkuvel-ayyanar-kuthiraimozhi",
+    "name": "Karkuvel Ayyanar Temple",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Kuthiraimozhi, Thoothukudi district",
+    "lat": 8.5156,
+    "lng": 78.0103,
+    "tradition": "Hindu",
+    "deity": "Karkuvel Ayyanar, with consorts Poornam and Porkamalam",
+    "built": [
+      1000,
+      1500
+    ],
+    "builtDisplay": "reckoned 500–1,000 years old",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A guardian-deity temple about 14 km from Thiruchendur, set in a tract of red sand dunes often called the only desert in South India and ringed by cashew and palm. Its Kallar Vettu festival across late Karthigai and early Margazhi involves coconut-breaking and holy water carried from the Thamirabarani, and the last consecration was held on 1 September 2022.",
+    "story": "The deity is said to have emerged from a tree called Karkuva, and devotees gather the sand where the festival coconut water falls, believing it brings prosperity and guards against theft.",
+    "wiki": "https://en.wikipedia.org/wiki/Karkuvel_Ayyanar_Temple",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Karkuvel_Ayyanar_Temple"
+      },
+      {
+        "l": "Wikidata Q17037508",
+        "u": "https://www.wikidata.org/wiki/Q17037508"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "kalki-mandir-jaipur",
+    "name": "Kalki Mandir, Jaipur",
+    "country": "India",
+    "state": "Rajasthan",
+    "place": "Sireh Deori Bazar, Jaipur",
+    "lat": 26.9263,
+    "lng": 75.8269,
+    "tradition": "Hindu",
+    "deity": "Kalki, with Lakshmi",
+    "built": [
+      1700,
+      1800
+    ],
+    "builtDisplay": "18th c. (Jai Singh II)",
+    "dynasty": "Jaipur (Jai Singh II)",
+    "circuits": [],
+    "significance": "An 18th-century temple built by Jai Singh II opposite the palace gate in Jaipur's old city, dedicated to Kalki, the tenth and final avatar of Vishnu foretold in Hindu tradition, alongside Lakshmi. A white marble horse stands in its courtyard.",
+    "wiki": "https://en.wikipedia.org/wiki/Kalki_Mandir",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Kalki_Mandir"
+      },
+      {
+        "l": "Wikidata Q55615608",
+        "u": "https://www.wikidata.org/wiki/Q55615608"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "nariampara-puthiyakavu",
+    "name": "Nariampara Puthiyakavu Devikshethram",
+    "country": "India",
+    "state": "Kerala",
+    "place": "Nariampara, Kattappana, Idukki district",
+    "lat": 9.7625,
+    "lng": 77.0964,
+    "tradition": "Hindu",
+    "deity": "Devi",
+    "built": [
+      1989,
+      1989
+    ],
+    "builtDisplay": "rebuilt 1989",
+    "dynasty": "Modern",
+    "style": "Kerala",
+    "circuits": [],
+    "significance": "A Devi shrine in the high range about 3 km from Kattappana on the Kuttikkanam road, rebuilt in 1989 by the Kalloorath family under K. K. Thankapan in place of an earlier 20th-century shrine, and historically linked to the Moothedathu Devi Temple at Vaikom. Its festival is the Kumbha Bharani Mahotsavam in February and March.",
+    "wiki": "https://en.wikipedia.org/wiki/Nariampara_Puthiyakavu_Devikshethram",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Nariampara_Puthiyakavu_Devikshethram"
+      },
+      {
+        "l": "Wikidata Q26830815",
+        "u": "https://www.wikidata.org/wiki/Q26830815"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "arjuneswarar-kadathur",
+    "name": "Arjuneswarar Temple, Kadathur",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Kadathur, Tiruppur district",
+    "lat": 10.6206,
+    "lng": 77.3989,
+    "tradition": "Hindu",
+    "deity": "Shiva as Arjuneswarar, with Gomathi Amman",
+    "built": [
+      900,
+      1200
+    ],
+    "builtDisplay": "Chola period",
+    "dynasty": "Chola",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "An east-facing Chola-period Shiva temple on the bank of the Amaravathi in Tiruppur district, run by the Tamil Nadu HR and CE department with the Arjuneswarar Trust. Twice a year sunlight reflected off the river falls on the lingam, a cremation ground lies before the sanctum as at Kashi, and a marble Dakshinamurthy brought from Kashi is enshrined here.",
+    "story": "The temple takes its name from the belief that Arjuna worshipped this lingam in the time of the Mahabharata, and the lingam is said to carry the root impressions of an ancient Arjuna tree.",
+    "wiki": "https://en.wikipedia.org/wiki/Arjuneswarar",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Arjuneswarar"
+      },
+      {
+        "l": "Wikidata Q40195602",
+        "u": "https://www.wikidata.org/wiki/Q40195602"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
+  },
+  {
+    "id": "gomateshwar-mahadev-kerakat",
+    "name": "Gomateshwar Mahadev Temple, Kerakat",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "place": "Sihauli, Kerakat, Jaunpur district",
+    "lat": 25.6346,
+    "lng": 82.9098,
+    "tradition": "Hindu",
+    "deity": "Shiva (Mahadeva) as Gomateshwar",
+    "built": [
+      600,
+      700
+    ],
+    "builtDisplay": "7th c. (Harshavardhana era); rebuilt 1990",
+    "dynasty": "Harshavardhana era",
+    "circuits": [],
+    "significance": "Dated to the era of Harshavardhana in the 7th century, this is the largest and most ornate temple of the medieval group at Kerakat and is counted among the better-preserved medieval temples in India. Its lingam was buried by raiders and later recovered, and villagers rebuilt the temple in 1990; the name means the great god of the Gomti, on whose bank it stands.",
+    "wiki": "https://en.wikipedia.org/wiki/Gomateshwar_Mahadev_Temple,_Kerakat",
+    "sources": [
+      {
+        "l": "Wikipedia",
+        "u": "https://en.wikipedia.org/wiki/Gomateshwar_Mahadev_Temple,_Kerakat"
+      },
+      {
+        "l": "Wikidata Q55639811",
+        "u": "https://www.wikidata.org/wiki/Q55639811"
+      }
+    ],
+    "verified": "wikipedia-2026-08-27",
+    "tier": "compact"
   }
 ]

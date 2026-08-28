@@ -9,25 +9,16 @@
   "lng": 76.7685,
   "tradition": "Jain",
   "deity": "Parshvanatha",
-  "built": [
-   400,
-   600
-  ],
+  "built": [400, 600],
   "builtDisplay": "5th-6th c. (Western Ganga)",
   "dynasty": "Western Ganga",
   "circuits": [],
-  "significance": "A Digambara Jain pilgrimage centre near Maleyuru whose rock-cut and structural shrines begin with a Parshvanatha temple raised under the Western Gangas. Inscriptions across Ganga, Hoysala, Vijayanagara and Wadiyar patronage mark it as a long-lived monastic and institutional seat of Karnataka Jainism.",
+  "significance": "A Jain pilgrimage centre near Maleyuru whose rock-cut and structural shrines begin with a Parshvanatha temple raised under the Western Gangas. Inscriptions spanning Ganga, Hoysala, Vijayanagara and Wadiyar patronage mark it as a long-lived monastic and institutional seat of Karnataka Jainism.",
   "story": "Local tradition holds that Mahavira himself came here and held a samavasarana assembly, and that a Mysore queen was freed of kalasarpadosha through worship at the site.",
   "wiki": "https://en.wikipedia.org/wiki/Kanakagiri_Jain_tirth",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Kanakagiri_Jain_tirth"
-   },
-   {
-    "l": "Wikidata Q30590615",
-    "u": "https://www.wikidata.org/wiki/Q30590615"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kanakagiri_Jain_tirth"},
+   {"l": "Wikidata Q30590615", "u": "https://www.wikidata.org/wiki/Q30590615"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -42,26 +33,17 @@
   "lng": 86.3356,
   "tradition": "Hindu",
   "deity": "Varaha (Shveta Varaha, boar avatar of Vishnu)",
-  "built": [
-   1400,
-   1600
-  ],
+  "built": [1400, 1600],
   "builtDisplay": "15th-16th c. (Suryavamshi Gajapati)",
   "dynasty": "Suryavamshi Gajapati",
   "style": "Kalinga",
   "circuits": [],
-  "significance": "An ASI-protected temple on the island formed by the Vaitarani at Jajpur, enshrining the white Varaha form of Vishnu; the Madala Panji credits its building to Prataparudra Deva and it was later renovated under the Maratha ruler Raghoji I Bhonsle. Its deula and subsidiary shrines are a substantial example of medieval Kalinga temple building.",
+  "significance": "An ASI-protected temple on the island formed by the Vaitarani at Jajpur, enshrining the white Varaha form of Vishnu; the Madala Panji credits its building to Prataparudra Deva and it was later renovated under the Maratha ruler Raghoji I Bhonsle. Its deula and cluster of subsidiary shrines are a substantial example of medieval Kalinga temple building.",
   "story": "Legend says that when the Vedas were stolen during Brahma's ashvamedha sacrifice here, Vishnu rose from the sacrificial fire as the boar Varaha to recover them.",
   "wiki": "https://en.wikipedia.org/wiki/Varahanatha_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Varahanatha_Temple"
-   },
-   {
-    "l": "Wikidata Q7915407",
-    "u": "https://www.wikidata.org/wiki/Q7915407"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Varahanatha_Temple"},
+   {"l": "Wikidata Q7915407", "u": "https://www.wikidata.org/wiki/Q7915407"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -76,24 +58,15 @@
   "lng": 88.9186,
   "tradition": "Hindu",
   "deity": "Shiva",
-  "built": [
-   320,
-   600
-  ],
+  "built": [320, 600],
   "builtDisplay": "4th-6th c. (Gupta period)",
   "dynasty": "Gupta",
   "circuits": [],
   "significance": "An early Shiva shrine in the Jalpaiguri plains dated to the Gupta period and attributed to a feudatory of the Gupta kingdom. It is protected as an archaeological site and a West Bengal State Protected Monument, making it one of north Bengal's oldest surviving temple remains.",
   "wiki": "https://en.wikipedia.org/wiki/Jatileswar_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Jatileswar_Temple"
-   },
-   {
-    "l": "Wikidata Q66793721",
-    "u": "https://www.wikidata.org/wiki/Q66793721"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Jatileswar_Temple"},
+   {"l": "Wikidata Q66793721", "u": "https://www.wikidata.org/wiki/Q66793721"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -108,10 +81,7 @@
   "lng": 76.7612,
   "tradition": "Hindu",
   "deity": "Mahavishnu",
-  "built": [
-   1000,
-   1800
-  ],
+  "built": [1000, 1800],
   "builtDisplay": "dating unrecorded",
   "dynasty": "Undetermined",
   "style": "Kerala",
@@ -119,14 +89,8 @@
   "significance": "A Vishnu shrine in Kollam district historically owned by the Pisharikkal Mana of Kodungallur and now run by a local temple forum. It remains an active worship centre known for its fortnightly Lakshmi Narayana pooja and the Ashtami Rohini festival.",
   "wiki": "https://en.wikipedia.org/wiki/Vayalil_Thrikkovil_Mahavishnu_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Vayalil_Thrikkovil_Mahavishnu_Temple"
-   },
-   {
-    "l": "Wikidata Q7917556",
-    "u": "https://www.wikidata.org/wiki/Q7917556"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Vayalil_Thrikkovil_Mahavishnu_Temple"},
+   {"l": "Wikidata Q7917556", "u": "https://www.wikidata.org/wiki/Q7917556"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -141,25 +105,16 @@
   "lng": 81.9694,
   "tradition": "Jain",
   "deity": "Neminatha (with Ajitanatha and Shreyanasanatha)",
-  "built": [
-   800,
-   1100
-  ],
+  "built": [800, 1100],
   "builtDisplay": "9th-11th c. (Bhand Dewal late 11th c.)",
   "dynasty": "Haihaya",
   "style": "Bhumija",
   "circuits": [],
-  "significance": "A group of Jain temples at Arang, of which the late 11th-century Bhand Dewal is the principal survivor, built under the Haihaya rulers of the region. The sculpted tirthankara images and brick and stone detailing record Arang's standing as a joint Jain and Hindu religious centre in medieval Chhattisgarh.",
+  "significance": "A group of Jain temples at Arang, of which the late 11th-century Bhand Dewal is the principal survivor, built under the Haihaya rulers of the region. Their sculpted tirthankara images and brick and stone detailing record Arang's standing as a joint Jain and Hindu religious centre in medieval Chhattisgarh.",
   "wiki": "https://en.wikipedia.org/wiki/Arang_Jain_temples",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Arang_Jain_temples"
-   },
-   {
-    "l": "Wikidata Q41725692",
-    "u": "https://www.wikidata.org/wiki/Q41725692"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Arang_Jain_temples"},
+   {"l": "Wikidata Q41725692", "u": "https://www.wikidata.org/wiki/Q41725692"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -174,24 +129,15 @@
   "lng": 80.0973,
   "tradition": "Hindu",
   "deity": "Varadharaja Perumal (Vishnu) with Pushpavalli Thayar",
-  "built": [
-   1000,
-   1100
-  ],
+  "built": [1000, 1100],
   "builtDisplay": "c. 1,000 years old",
   "dynasty": "Undetermined",
   "circuits": [],
-  "significance": "A Vishnu temple in the Chennai suburb of Poonamallee, reckoned about a thousand years old and linked with the Vaishnava acharya Thirukatchi Nambi. Its Chola-period tank of over an acre long watered the surrounding paddy fields and supplied the town with domestic water.",
+  "significance": "A Vishnu temple in the Chennai suburb of Poonamallee, reckoned about a thousand years old and associated with the Vaishnava acharya Thirukatchi Nambi. Its Chola-period tank of over an acre long watered the surrounding paddy fields and supplied the town with domestic water.",
   "wiki": "https://en.wikipedia.org/wiki/Varadaraja_Perumal_Temple,_Poonamallee",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Varadaraja_Perumal_Temple,_Poonamallee"
-   },
-   {
-    "l": "Wikidata Q7915386",
-    "u": "https://www.wikidata.org/wiki/Q7915386"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Varadaraja_Perumal_Temple,_Poonamallee"},
+   {"l": "Wikidata Q7915386", "u": "https://www.wikidata.org/wiki/Q7915386"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -206,25 +152,16 @@
   "lng": 94.7928,
   "tradition": "Hindu",
   "deity": "Shiva",
-  "built": [
-   1742,
-   1759
-  ],
+  "built": [1742, 1759],
   "builtDisplay": "founded 1742, finished late 1750s (Ahom)",
   "dynasty": "Ahom",
   "style": "Ahom-Nilachal",
   "circuits": [],
-  "significance": "An Ahom-period doul begun in 1742 under Swargadeo Pramatta Singha and completed in the late 1750s, originally a Devi temple and now dedicated to Shiva; it was granted to the Raidongia king on his marriage to the king's sister Yamini. The Assam archaeology department lists it as a State Protected Monument for its Ahom sculptural work depicting Hindu deities and avatars.",
+  "significance": "An Ahom-period doul begun in 1742 under Swargadeo Pramatta Singha and completed in the late 1750s, originally a Devi temple and now dedicated to Shiva; it was granted to the Raidongia king on his marriage to the king's sister Yamini. Assam's archaeology department lists it as a State Protected Monument for its Ahom sculptural work depicting Hindu deities and avatars.",
   "wiki": "https://en.wikipedia.org/wiki/Raidongia_Doul",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Raidongia_Doul"
-   },
-   {
-    "l": "Wikidata Q84362575",
-    "u": "https://www.wikidata.org/wiki/Q84362575"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Raidongia_Doul"},
+   {"l": "Wikidata Q84362575", "u": "https://www.wikidata.org/wiki/Q84362575"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -239,10 +176,7 @@
   "lng": 79.4313,
   "tradition": "Hindu",
   "deity": "Vishnu (Veetrirundha Perumal)",
-  "built": [
-   850,
-   900
-  ],
+  "built": [850, 900],
   "origin": 400,
   "builtDisplay": "rebuilt in stone c. 850 (Pallava); brick original c. 400",
   "dynasty": "Pallava",
@@ -252,14 +186,8 @@
   "story": "The name, meaning the seated lord, is explained by the tradition that Rama sat here in grief and was comforted by Bhumi Devi and Nila Devi fanning him with a palm leaf.",
   "wiki": "https://en.wikipedia.org/wiki/Veetrirundha_Perumal_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Veetrirundha_Perumal_Temple"
-   },
-   {
-    "l": "Wikidata Q7918232",
-    "u": "https://www.wikidata.org/wiki/Q7918232"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Veetrirundha_Perumal_Temple"},
+   {"l": "Wikidata Q7918232", "u": "https://www.wikidata.org/wiki/Q7918232"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -274,10 +202,7 @@
   "lng": 79.4033,
   "tradition": "Hindu",
   "deity": "Venkataramana (Venkateswara)",
-  "built": [
-   1540,
-   1550
-  ],
+  "built": [1540, 1550],
   "builtDisplay": "1540-1550 (Nayak)",
   "dynasty": "Nayak",
   "style": "Vijayanagara",
@@ -285,14 +210,8 @@
   "significance": "The largest temple at the fort town of Gingee, raised around 1540-1550 by Muthyala Nayaka in full Vijayanagara idiom. Its ornamental pillars were dismantled by the French garrison in 1761 and further sculpture was carried off in 1860, so the ruin also documents the colonial dispersal of South Indian temple fabric.",
   "wiki": "https://en.wikipedia.org/wiki/Gingee_Venkataramana_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Gingee_Venkataramana_Temple"
-   },
-   {
-    "l": "Wikidata Q29467430",
-    "u": "https://www.wikidata.org/wiki/Q29467430"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gingee_Venkataramana_Temple"},
+   {"l": "Wikidata Q29467430", "u": "https://www.wikidata.org/wiki/Q29467430"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
@@ -307,24 +226,353 @@
   "lng": 80.0351,
   "tradition": "Hindu",
   "deity": "Poleramma",
-  "built": [
-   1800,
-   1900
-  ],
+  "built": [1800, 1900],
   "builtDisplay": "19th c. (about 200 years old)",
   "dynasty": "Colonial era",
   "circuits": [],
   "significance": "A village shrine in Nellore district dedicated to Poleramma, a pre-Vedic guardian goddess widely worshipped as a local form of Shakti across Andhra Pradesh. First put up by a British-era village officer roughly two centuries ago, it was later rebuilt with funds raised by the villagers themselves and remains a working centre of folk-deity worship and annual festivals.",
   "wiki": "https://en.wikipedia.org/wiki/Beeramgunta_Poleramma_Temple",
   "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Beeramgunta_Poleramma_Temple"
-   },
-   {
-    "l": "Wikidata Q48731043",
-    "u": "https://www.wikidata.org/wiki/Q48731043"
-   }
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Beeramgunta_Poleramma_Temple"},
+   {"l": "Wikidata Q48731043", "u": "https://www.wikidata.org/wiki/Q48731043"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "baneswar-shiva-cooch-behar",
+  "name": "Baneswar Shiva Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Baneswar, Cooch Behar district",
+  "lat": 26.3991,
+  "lng": 89.4975,
+  "tradition": "Hindu",
+  "deity": "Shiva (as Baneswar)",
+  "built": [1000, 1800],
+  "builtDisplay": "dating disputed",
+  "dynasty": "Undetermined",
+  "style": "Bengal",
+  "circuits": [],
+  "significance": "A Shiva temple about ten kilometres from Cooch Behar town whose linga stands in an underground sanctum beneath a squarish domed structure with a curved cornice. Its foundation is contested between several traditions, variously crediting Raja Jalpeswar, the Khen ruler Nilambar, and the Koch rulers Nara Narayan and Pran Narayan, and it draws large crowds at Maha Shivaratri.",
+  "story": "Tradition tells that the demon king Banasura persuaded Shiva to come down to earth, and that when Banasura halted at Baneswar the god vanished, leaving a linga on the bank of the Bangti river.",
+  "wiki": "https://en.wikipedia.org/wiki/Baneswar_Shiva_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Baneswar_Shiva_Temple"},
+   {"l": "Wikidata Q66809979", "u": "https://www.wikidata.org/wiki/Q66809979"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "mahudi-jain-temple-gandhinagar",
+  "name": "Mahudi Jain Temple",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Mahudi, Gandhinagar district",
+  "lat": 23.4933,
+  "lng": 72.7833,
+  "tradition": "Jain",
+  "deity": "Padmaprabha (complex also centred on Ghantakarna Mahavir)",
+  "built": [1916, 1917],
+  "builtDisplay": "1916-1917",
+  "dynasty": "Modern",
+  "style": "Maru-Gurjara",
+  "circuits": [],
+  "significance": "A Shvetambara Jain pilgrimage complex founded by the monk Buddhisagarsuri, its foundation stone laid in 1916 and the temple established the following year. Scholars credit it with turning the worship of the protective deity Ghantakarna Mahavir from a largely private monastic transmission into a public devotional cult that now draws well beyond the Jain community.",
+  "wiki": "https://en.wikipedia.org/wiki/Mahudi_Jain_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Mahudi_Jain_Temple"},
+   {"l": "Wikidata Q30589540", "u": "https://www.wikidata.org/wiki/Q30589540"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "adhirangam-ranganathaswamy-kallakurichi",
+  "name": "Adhirangam Ranganathaswamy Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Adhi Thiruvarangam, Sankarapuram, Kallakurichi district",
+  "lat": 12.0028,
+  "lng": 79.0617,
+  "tradition": "Hindu",
+  "deity": "Ranganatha (Vishnu) with Ranganayagi",
+  "built": [900, 1500],
+  "builtDisplay": "medieval (Chola and Vijayanagara)",
+  "dynasty": "Chola-Vijayanagara",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A five-acre Vishnu temple built up by Chola and Vijayanagara patrons, holding a reclining image some 29 feet long and counted among the 108 Abhimana Kshetrams of Vaishnavism. It is reputed to be older than Srirangam, which gives it the name Adhi Rangam, and it preserves an unusual brick grain store.",
+  "story": "The temple's legend has Ranganatha rise from the water here to recover the Vedas stolen by the demon king Somukan and to counsel Brahma.",
+  "wiki": "https://en.wikipedia.org/wiki/Adhirangam_Ranganathaswamy_temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Adhirangam_Ranganathaswamy_temple"},
+   {"l": "Wikidata Q30621981", "u": "https://www.wikidata.org/wiki/Q30621981"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "kamteswari-temple-gosanimari",
+  "name": "Kamteswari Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Gosanimari, Dinhata, Cooch Behar district",
+  "lat": 26.1351,
+  "lng": 89.3622,
+  "tradition": "Hindu",
+  "deity": "Kamteswari",
+  "built": [1665, 1665],
+  "builtDisplay": "1665 (Koch)",
+  "dynasty": "Koch (Cooch Behar)",
+  "style": "Bengal char-chala",
+  "circuits": [],
+  "significance": "A goddess temple at Gosanimari raised in 1665 by Maharaja Pran Narayan of Cooch Behar to replace an earlier shrine that had been destroyed. Standing 14 metres high on a square base with a curved cornice and circular dome, it is a state-protected monument and holds Pala-era sculpture alongside its images.",
+  "wiki": "https://en.wikipedia.org/wiki/Kamteswari_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kamteswari_Temple"},
+   {"l": "Wikidata Q66809983", "u": "https://www.wikidata.org/wiki/Q66809983"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "bezor-doul-dibrugarh",
+  "name": "Bezor Doul",
+  "country": "India",
+  "state": "Assam",
+  "place": "Bezor Pothar, Dhemechi, Dibrugarh district",
+  "lat": 27.1557,
+  "lng": 94.7734,
+  "tradition": "Hindu",
+  "deity": "Vishnu",
+  "built": [1600, 1800],
+  "builtDisplay": "Ahom era, late medieval",
+  "dynasty": "Ahom",
+  "style": "Nilachal",
+  "circuits": [],
+  "significance": "A late-medieval brick temple with an octagonal sanctuary, built under the Ahom king Rudra Singha in memory of a Bezbarua, a court physician granted extensive land in the area for his skill in traditional medicine. Though it holds no images inside, it remains in worship and is a State Protected Monument of Assam.",
+  "wiki": "https://en.wikipedia.org/wiki/Bezor_Doul",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Bezor_Doul"},
+   {"l": "Wikidata Q84362579", "u": "https://www.wikidata.org/wiki/Q84362579"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "vijayanarayana-gundlupet",
+  "name": "Vijayanarayana Temple, Gundlupet",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Gundlupet, Chamarajanagar district",
+  "lat": 11.8084,
+  "lng": 76.6894,
+  "tradition": "Hindu",
+  "deity": "Vijayanarayana (a form of Vishnu)",
+  "built": [900, 1000],
+  "builtDisplay": "10th c. (Western Ganga)",
+  "dynasty": "Western Ganga",
+  "circuits": [],
+  "significance": "A Vishnu temple in Gundlupet town going back to 10th-century Western Ganga rule, with patronage continuing into the Vijayanagara period. Its yali-pillared entrance, Garuda and Hanuman sculpture, and garbhagriha-navaranga-mandapa plan make it a working example of medieval South Indian temple craft.",
+  "story": "Tradition credits the Hoysala king Vishnuvardhana with consecrating the image of Vijayanarayana here.",
+  "wiki": "https://en.wikipedia.org/wiki/Vijayanarayana_Temple,_Gundlupet",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Vijayanarayana_Temple,_Gundlupet"},
+   {"l": "Wikidata Q7929290", "u": "https://www.wikidata.org/wiki/Q7929290"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "murali-mohan-bishnupur",
+  "name": "Murali Mohan Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Bishnupur, Bankura district",
+  "lat": 23.082,
+  "lng": 87.3177,
+  "tradition": "Hindu",
+  "deity": "Murali Mohan (Krishna)",
+  "built": [1665, 1665],
+  "builtDisplay": "1665 (Malla)",
+  "dynasty": "Malla",
+  "style": "Ek-ratna",
+  "circuits": [],
+  "significance": "A Krishna temple at Bishnupur built in 1665 by Churamoni Devi, wife of the Mallabhum king Bir Singha Dev. Its single tower over a pillared covered ambulatory is a textbook example of the Bengal ek-ratna form, and the ASI holds it as a Monument of National Importance.",
+  "wiki": "https://en.wikipedia.org/wiki/Murali_Mohan_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Murali_Mohan_Temple"},
+   {"l": "Wikidata Q56154247", "u": "https://www.wikidata.org/wiki/Q56154247"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "surya-temple-bundu-ranchi",
+  "name": "Surya Temple, Ranchi",
+  "country": "India",
+  "state": "Jharkhand",
+  "place": "Bundu, Ranchi district",
+  "lat": 23.1817,
+  "lng": 85.5617,
+  "tradition": "Hindu",
+  "deity": "Surya",
+  "built": [1991, 1994],
+  "builtDisplay": "1991-1994",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A modern sun temple near Bundu whose foundation was laid in 1991 and consecrated in 1994 by the Sanskriti Vihar trust under Sita Ram Maroo. Shaped as a great chariot with eighteen wheels and seven horses and also housing Shiva, Parvati and Ganesha, it has become a leading Chhath Puja destination with bathing and pilgrim facilities.",
+  "wiki": "https://en.wikipedia.org/wiki/Surya_Temple,_Ranchi",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Surya_Temple,_Ranchi"},
+   {"l": "Wikidata Q98736649", "u": "https://www.wikidata.org/wiki/Q98736649"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "kalyaneshwari-temple-asansol",
+  "name": "Kalyaneshwari Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Kalyaneshwari, Asansol, Paschim Bardhaman district",
+  "lat": 23.7772,
+  "lng": 86.8283,
+  "tradition": "Hindu",
+  "deity": "Kalyaneshwari (Devi)",
+  "built": [1500, 1600],
+  "builtDisplay": "site about 500 years old",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shakta shrine near Asansol described as some five centuries old, with the present temple built by Gurudin Prasad Pal. It is best known as a place of pilgrimage for childless women seeking a boon from the goddess.",
+  "story": "Legend holds that human sacrifices were once offered at Kalyaneshwari in the distant past.",
+  "wiki": "https://en.wikipedia.org/wiki/Kalyaneshwari_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kalyaneshwari_Temple"},
+   {"l": "Wikidata Q15233093", "u": "https://www.wikidata.org/wiki/Q15233093"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "patali-srikhetra-subarnapur",
+  "name": "Patali Srikhetra",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Kotsamalai, Birmaharajpur, Subarnapur district",
+  "lat": 21.0604,
+  "lng": 84.0326,
+  "tradition": "Hindu",
+  "deity": "Jagannath with Balabhadra and Subhadra",
+  "built": [1000, 1800],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A pilgrimage site at the foot of Trikut Hill in Subarnapur district, revered as the place where the Jagannath images were hidden for safekeeping and drawing together Shakta, Buddhist and Vaishnava strands of worship. The hill also carries evidence of prehistoric settlement, giving the site archaeological as well as devotional weight.",
+  "story": "The Madala Panji relates that King Sovanadeva concealed the images in the caves of Trikut Hill during Raktavahu's invasion, where they stayed 144 years until King Yayati Keshari recovered them.",
+  "wiki": "https://en.wikipedia.org/wiki/Patali_Srikhetra",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Patali_Srikhetra"},
+   {"l": "Wikidata Q12070321", "u": "https://www.wikidata.org/wiki/Q12070321"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jagannath-temple-delhi",
+  "name": "Jagannath Temple, Delhi",
+  "country": "India",
+  "state": "Delhi",
+  "place": "Hauz Khas, New Delhi",
+  "lat": 28.5543,
+  "lng": 77.1997,
+  "tradition": "Hindu",
+  "deity": "Jagannath",
+  "built": [1000, 1800],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Jagannath temple in the Safdarjung Development Area of Hauz Khas, built by Delhi's Odia community as its main religious centre in the capital. Its annual Rath Yatra procession draws thousands and is among the largest Odia cultural observances outside Odisha.",
+  "website": "https://jagannathmandirdelhi.com/",
+  "wiki": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Delhi",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Delhi"},
+   {"l": "Wikidata Q1092289", "u": "https://www.wikidata.org/wiki/Q1092289"},
+   {"l": "Official site", "u": "https://jagannathmandirdelhi.com/"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "malleswara-shiva-chandrakona",
+  "name": "Malleswara Shiva Temple",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Chandrakona, Paschim Medinipur district",
+  "lat": 22.7221,
+  "lng": 87.5125,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [1700, 1800],
+  "builtDisplay": "18th c.; renovated 1831",
+  "dynasty": "Bhan",
+  "style": "Pancharatna",
+  "circuits": [],
+  "significance": "A laterite Shiva temple at Chandrakona, 26 feet square and about 60 feet tall, carrying five ridged rekha turrets over a triple-arched porch and finished in decorative stucco. Built in the Bhan period and renovated by Maharaja Tejchandra in 1831, it is a notable survival of 18th-century Bengal temple architecture.",
+  "wiki": "https://en.wikipedia.org/wiki/Malleswara_Shiva_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Malleswara_Shiva_Temple"},
+   {"l": "Wikidata Q98546200", "u": "https://www.wikidata.org/wiki/Q98546200"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "rani-sati-mandir-mahuda",
+  "name": "Rani Sati Mandir, Mahuda",
+  "country": "India",
+  "state": "Jharkhand",
+  "place": "Mahuda, Dhanbad district",
+  "lat": 23.7506,
+  "lng": 86.2694,
+  "tradition": "Hindu",
+  "deity": "Rani Sati Dadi",
+  "built": [1992, 1992],
+  "builtDisplay": "completed 1992",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A temple to Rani Sati Dadi in the Mahuda area of Dhanbad district, completed on 20 February 1992. It is a prominent local shrine whose calendar centres on the annual Varshika Puja and on the celebration of its founding day.",
+  "wiki": "https://en.wikipedia.org/wiki/Rani_Sati_Mandir_Mahuda",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Rani_Sati_Mandir_Mahuda"},
+   {"l": "Wikidata Q28173226", "u": "https://www.wikidata.org/wiki/Q28173226"}
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "vasudev-doul-biswanath",
+  "name": "Vasudev Doul",
+  "country": "India",
+  "state": "Assam",
+  "place": "Barachuk, Gohpur, Biswanath district",
+  "lat": 26.863,
+  "lng": 93.7541,
+  "tradition": "Hindu",
+  "deity": "Vasudeva (a form of Vishnu)",
+  "built": [1679, 1681],
+  "builtDisplay": "c. 1680 (Ahom)",
+  "dynasty": "Ahom",
+  "style": "Ahom (pancharatha)",
+  "circuits": [],
+  "significance": "A Vaishnava temple of mud brick on a pancharatha plan, raised around 1680 under the patronage of the Ahom king Sulikphaa and counted among the better examples of late-medieval Ahom building. Protected by both the Assam government and the ASI, it remains the focus of local Doul Utsav and Bohag Bihu observances.",
+  "story": "Local tradition says the temple once bore a golden finial that was carried off during invasions.",
+  "wiki": "https://en.wikipedia.org/wiki/Vasudev_Doul",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Vasudev_Doul"},
+   {"l": "Wikidata Q84362994", "u": "https://www.wikidata.org/wiki/Q84362994"}
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
