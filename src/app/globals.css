@@ -178,6 +178,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .legendchevron{font-size:15px;line-height:1;width:10px;text-align:center}
 .legendlabel{font-family:var(--font-mono),monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase}
 .legendbody{display:flex;gap:10px;flex-wrap:wrap;padding:8px 12px 8px 2px;border-left:1px solid var(--line)}
+/* `display:flex` above beats the `hidden` attribute's UA `display:none`, so the
+   collapsed legend kept rendering at full size — the toggle flipped its state,
+   its aria-expanded and its chevron, and nothing moved. Any rule that sets
+   `display` on an element that can carry `hidden` has to say this. */
+.legendbody[hidden]{display:none}
 .maplegend .li{display:flex;align-items:center;gap:5px;white-space:nowrap}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
 
@@ -1201,9 +1206,16 @@ table.gz tr:last-child td{border-bottom:none}
   .tleras::-webkit-scrollbar{ display:none }
   .tlera{ flex:none; min-height:30px }
 
-  /* The key starts collapsed here, so it clears the map; it also has to clear
-     the timeline it now sits above. */
-  .maplegend{ bottom:8px; max-width:calc(100% - 24px) }
+  /* TOP-left on a phone, not bottom-left.
+     The bottom sheet owns the bottom of the screen: it is z-index 8, the key is
+     3, and at its smallest snap the sheet still covers the bottom of the map.
+     So the key was underneath it and could not be tapped at all — the toggle
+     flipped state only when clicked programmatically, which is exactly why it
+     looked dead to a finger and alive to a test.
+     elementFromPoint over the toggle returned the sheet's own contents.
+     Top-left is the one corner nothing else claims: the map tools are
+     top-right, the sheet is bottom, the timeline is below that. */
+  .maplegend{ top:8px; bottom:auto; left:12px; max-width:calc(100% - 24px) }
   .legendbody{ font-size:10px }
 
   /* The coach mark is anchored inside the timeline and must not reintroduce
@@ -1214,7 +1226,16 @@ table.gz tr:last-child td{border-bottom:none}
      beats a normal declaration in the cascade. A translateY here is silently
      discarded — measured, after it was — and the hint lands squarely on top of
      the slider it is telling you to drag. */
-  .coach{ top:auto; bottom:calc(100% + 10px); max-width:calc(100vw - 24px) }
+  /* Anchored to the RIGHT on a phone. The coach mark and the era key both live
+     at the bottom-left, and the coach is drawn above it (z-index 9 vs 3), so on
+     a first visit the key's toggle was covered by the hint: tapping it hit
+     "Got it" instead, and the legend looked broken until the coach was
+     dismissed. Verified with elementFromPoint, which returned BUTTON.coachok
+     for the centre of the legend toggle.
+
+     Moving the hint rather than the key, because the key is a permanent control
+     with a stored position and the hint appears once. */
+  .coach{ top:auto; bottom:calc(100% + 10px); left:auto; right:0; max-width:min(320px, calc(100vw - 24px)) }
 }
 
 /* Very narrow: the readout loses its label before it loses its numbers. */
