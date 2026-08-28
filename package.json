@@ -35,7 +35,8 @@
     "build:artefacts": "node scripts/build-map-artefacts.mjs",
     "gate:corpus-leak": "node scripts/check-corpus-leak.mjs",
     "build:ui-i18n": "node scripts/build-ui-translations.mjs",
-    "gate:migrations": "node scripts/check-migrations.mjs"
+    "gate:migrations": "node scripts/check-migrations.mjs",
+    "check:voice-agent": "node scripts/check-voice-agent.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
