@@ -241,7 +241,11 @@ if (UPDATE_FLOORS) {
 }
 
 const pct = (r) => `${(r * 100).toFixed(1)}%`;
-for (const [field, floor] of Object.entries(floors.floors ?? {})) {
+// After --update-floors the recorded floors ARE the current coverage, so checking
+// against the pre-write values would report the exact regression the operator is
+// deliberately accepting — and fail the run that was meant to accept it.
+const activeFloors = UPDATE_FLOORS ? coverage : (floors.floors ?? {});
+for (const [field, floor] of Object.entries(activeFloors)) {
   const now = coverage[field];
   if (!now) continue;
 
