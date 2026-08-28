@@ -191,6 +191,24 @@
    "source": "https://en.wikipedia.org/wiki/Osian,_Jodhpur",
    "found": "brief-6 co-located pass",
    "opened": "2026-08-27"
+  },
+  {
+   "id": "dandeeswarar-velachery",
+   "field": "lat/lng",
+   "ours": "12.8461, 80.0647 — but the record places the temple in Velachery, Chennai",
+   "theirs": "that point is Nandivaram-Guduvancheri in Chengalpattu district, 24 m from nandeesvarar-nandivanam and roughly 30 km from Velachery. One of the two records carries the other's coordinate.",
+   "source": "https://en.wikipedia.org/wiki/Dandeeswarar_Temple,_Velachery",
+   "found": "wave-7 proximity audit",
+   "opened": "2026-08-28"
+  },
+  {
+   "id": "kapila-ashram-kakraul",
+   "field": "lat/lng",
+   "ours": "26.3507, 86.0005 — the record places it at Kakraul, Madhubani district",
+   "theirs": "22 m from kapileshwar-rahika-madhubani, which the record places at Rahika. Kakraul and Rahika are separate villages, so one of the two coordinates is wrong.",
+   "source": "https://en.wikipedia.org/wiki/Kapila_Ashram",
+   "found": "wave-7 proximity audit",
+   "opened": "2026-08-28"
   }
  ]
 }
