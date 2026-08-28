@@ -10,16 +10,41 @@
 // they report loudly but do not break the build, so a concurrent batch session is
 // never blocked by a rule tightened underneath it. Flip them to --strict in CI
 // once the backlog behind each rule is cleared.
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 
 const sites = JSON.parse(readFileSync(new URL("../data/sites.json", import.meta.url)));
 const geo = JSON.parse(readFileSync(new URL("../data/geo.json", import.meta.url)));
 const { exceptions } = JSON.parse(readFileSync(new URL("../data/vocab/gate-exceptions.json", import.meta.url)));
+const { tiers } = JSON.parse(readFileSync(new URL("../data/vocab/tiers.json", import.meta.url)));
+const floorsPath = new URL("../data/vocab/coverage-floors.json", import.meta.url);
+const floors = JSON.parse(readFileSync(floorsPath));
 
 const STRICT = process.argv.includes("--strict");
+const UPDATE_FLOORS = process.argv.includes("--update-floors");
 const VERBOSE = process.argv.includes("--verbose");
 
-const REQUIRED = ["id", "name", "country", "place", "lat", "lng", "tradition", "deity", "built", "builtDisplay", "dynasty", "style", "significance", "sources"]; // story is optional for compact-tier records
+/**
+ * Required fields come from the tier contract, not a flat list.
+ *
+ * The gate previously demanded the compact set from EVERY record regardless of
+ * tier, which quietly made `stub` unreachable: docs/TIERS.md and tiers.json
+ * define a stub as name + coordinates + tradition + a source, but the gate
+ * rejected anything without deity, dating, dynasty, style and significance. The
+ * tier existed on paper and could not be used.
+ *
+ * That matters now. Roughly 30,000 Wikidata items in the fifteen countries carry
+ * CC0 coordinates and no English Wikipedia article, so they can only ever enter
+ * as stubs. Reading the contract from tiers.json makes that path real and keeps
+ * one definition of what each tier promises instead of two that can drift.
+ *
+ * Verified before switching: 0 of 2,728 compact and 0 of 68 flagship records
+ * fail under the tier-aware rule, so this loosens nothing that was enforced and
+ * tightens flagship to what it already meets.
+ */
+const TIER_REQUIRED = Object.fromEntries(
+  Object.entries(tiers).map(([name, def]) => [name, def.requires]),
+);
+const DEFAULT_TIER = "flagship"; // absent `tier` means a full record, per the corpus convention
 const TRADITIONS = new Set(["Hindu", "Buddhist", "Jain", "Sikh"]);
 const TIERS = new Set(["stub", "compact", "flagship"]);
 
@@ -63,13 +88,23 @@ for (const s of sites) {
   const tag = s.id ?? "<no id>";
 
   // ---- ERROR: long-standing invariants ------------------------------------
-  for (const k of REQUIRED) if (!(k in s)) errors.push(`${tag}: missing required field "${k}"`);
+  const tierName = s.tier ?? DEFAULT_TIER;
+  const required = TIER_REQUIRED[tierName] ?? TIER_REQUIRED[DEFAULT_TIER];
+  for (const k of required) {
+    const v = s[k];
+    if (v === undefined || v === null || v === "" || (Array.isArray(v) && v.length === 0)) {
+      errors.push(`${tag}: tier "${tierName}" requires "${k}"`);
+    }
+  }
   if (ids.has(s.id)) errors.push(`duplicate id: ${s.id}`);
   ids.add(s.id);
   if (!TRADITIONS.has(s.tradition)) errors.push(`${tag}: unknown tradition "${s.tradition}"`);
   if (!(s.lat > geo.LAT0 && s.lat < geo.LAT1 && s.lng > geo.LON0 && s.lng < geo.LON1))
     errors.push(`${tag}: coordinates ${s.lat},${s.lng} outside map bounds`);
-  if (!Array.isArray(s.built) || s.built.length !== 2 || s.built[0] > s.built[1])
+  // Shape-check `built` only when the record carries it. A stub has no dating by
+  // definition — the tier list above is what decides whether it MUST be present;
+  // this decides whether what is present is well formed.
+  if (s.built !== undefined && (!Array.isArray(s.built) || s.built.length !== 2 || s.built[0] > s.built[1]))
     errors.push(`${tag}: invalid built range ${JSON.stringify(s.built)}`);
   if (!Array.isArray(s.sources) || s.sources.length === 0)
     errors.push(`${tag}: NO SOURCES — unsourced records cannot be published`);
@@ -150,6 +185,85 @@ for (const s of sites) {
     if (!d.note) warn(s.id, "disputed-unexplained", `disputed "${d.circuit}" with no note`);
     if (d.status === "disputed" && !/^https?:\/\/\S+$/.test(d.source ?? ""))
       warn(s.id, "disputed-uncited", `disputed "${d.circuit}" without a source URL`);
+  }
+}
+
+// ---- ERROR: field coverage must never go backwards -------------------------
+//
+// A ratchet, not a target. Most fields are held by a small minority of records —
+// disputedCircuits by 1%, phone by 2%, access by 3% — and that creates a quiet
+// hazard: a test that filters to such a field and asserts a property PASSES on an
+// empty set. It stays green while silently testing nothing, right up until the
+// day the data disappears, at which point it still passes.
+//
+// So the guard lives in the data gate rather than in any test. Coverage may rise
+// freely; a DROP fails the build. When a decrease is deliberate — the deity tag
+// audit that correctly removed 23 wrong tags, taking coverage from 94.1% to
+// 93.3% — re-run with --update-floors and commit the new file with the reason.
+const COVERAGE_TRACKED = [
+  "deities", "deityGroup", "native", "admin", "website", "phone", "access",
+  "patron", "story", "circuits", "disputedCircuits", "status", "origin",
+  // Provenance. Both sit at 100%, so ANY drop is unambiguous: a wave that forgets
+  // to stamp `verified`, or a record that arrives with no source article, is
+  // exactly the silent regression this guard exists for.
+  "verified", "wiki",
+];
+
+/**
+ * How far a field's SHARE of the corpus may fall before it is a regression.
+ *
+ * The absolute count alone has a blind spot, and it is the likelier failure:
+ * a wave adds 400 records and nobody re-runs the tag generator. The count holds
+ * at 2,802 — no drop, green build — while coverage falls from 93% to 82%.
+ * Dilution is invisible to a ratchet that only watches deletion.
+ *
+ * Two percentage points absorbs ordinary noise (a handful of records arriving
+ * before their derived fields) without absorbing a forgotten regeneration.
+ */
+const COVERAGE_RATIO_TOLERANCE = 0.02;
+const held = (s, f) => {
+  const v = s[f];
+  return v !== undefined && v !== null && v !== "" && !(Array.isArray(v) && v.length === 0);
+};
+const coverage = Object.fromEntries(COVERAGE_TRACKED.map((f) => {
+  const count = sites.filter((s) => held(s, f)).length;
+  return [f, { count, ratio: Number((count / sites.length).toFixed(4)) }];
+}));
+
+if (UPDATE_FLOORS) {
+  writeFileSync(floorsPath, `${JSON.stringify({
+    _about: "Coverage ratchet for the data gate. A field's population may rise freely; a DROP fails the build. Regenerate with `npm run validate -- --update-floors` ONLY when a decrease is deliberate, and say why in the commit.",
+    _recorded_at: new Date().toISOString().slice(0, 10),
+    _records: sites.length,
+    floors: coverage,
+  }, null, 2)}\n`);
+  console.log(`✓ coverage floors updated for ${sites.length} records`);
+}
+
+const pct = (r) => `${(r * 100).toFixed(1)}%`;
+for (const [field, floor] of Object.entries(floors.floors ?? {})) {
+  const now = coverage[field];
+  if (!now) continue;
+
+  // Deletion: the field lost records outright.
+  if (now.count < floor.count) {
+    errors.push(
+      `coverage regression: "${field}" is held by ${now.count} records, was ${floor.count}. ` +
+      "A field losing records is either a data loss or a generator bug. If the drop is " +
+      "deliberate, re-run with --update-floors and record why.",
+    );
+    continue;
+  }
+
+  // Dilution: the count held, but the corpus outgrew it. Almost always a derived
+  // field whose generator was not re-run after a data wave.
+  if (floor.ratio - now.ratio > COVERAGE_RATIO_TOLERANCE) {
+    errors.push(
+      `coverage dilution: "${field}" covers ${pct(now.ratio)} of ${sites.length} records, was ` +
+      `${pct(floor.ratio)}. The count did not fall (${floor.count} -> ${now.count}), so nothing was ` +
+      "deleted — the corpus grew and this field did not keep up. If it is derived, re-run its " +
+      "generator; if the new records genuinely cannot carry it, re-run with --update-floors.",
+    );
   }
 }
 
