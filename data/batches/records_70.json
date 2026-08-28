@@ -229,40 +229,6 @@
   "tier": "compact"
  },
  {
-  "id": "veerataneswarar-tiruvirkudi",
-  "name": "Tiruvirkudi Veerataneswarar Temple",
-  "country": "India",
-  "state": "Tamil Nadu",
-  "place": "Thiruvirkudi, Mayiladuthurai district",
-  "lat": 10.8313,
-  "lng": 79.6637,
-  "tradition": "Hindu",
-  "deity": "Veerataneswarar (Shiva), with Elavar Kuzhali",
-  "built": [
-   800,
-   900
-  ],
-  "builtDisplay": "9th c. (Chola), later Nayak additions",
-  "dynasty": "Chola",
-  "style": "Dravidian",
-  "circuits": [],
-  "significance": "A Shiva temple in the Kaveri delta whose present masonry structure was raised by the Cholas in the 9th century and enlarged by the Thanjavur Nayaks; it is one of the ashta-virattanam shrines marking Shiva's heroic deeds.",
-  "story": "Shiva is said to have destroyed the demon Jalandhara here, after Vishnu had undone the chastity of Jalandhara's wife Tulasi that made him invincible.",
-  "wiki": "https://en.wikipedia.org/wiki/Tiruvirkudi_Veerataneswarar_Temple",
-  "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Tiruvirkudi_Veerataneswarar_Temple"
-   },
-   {
-    "l": "Wikidata Q16308508",
-    "u": "https://www.wikidata.org/wiki/Q16308508"
-   }
-  ],
-  "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
- },
- {
   "id": "changdeva-jalgaon",
   "name": "Changdeva Temple",
   "country": "India",

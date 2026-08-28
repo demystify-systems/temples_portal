@@ -5,5 +5,19 @@
   "batch": "records_22.json",
   "decided": "2026-08-27",
   "reason": "No correct coordinate exists in any citable source. English Wikipedia and Wikidata P625 both give 13.68325, 79.34719 — the Sri Venkateswara temple on Tirumala hill, roughly 20 km uphill from the Tirupati-town temple the article describes. Two sources agreeing does not make a coordinate true, and the atlas contradicts it: venkateswara-tirumala already occupies that point. Re-admit only with a coordinate from a source that puts it in Tirupati town."
+ },
+ {
+  "id": "veerataneswarar-tiruvirkudi",
+  "name": "Tiruvirkudi Veerataneswarar Temple",
+  "batch": "wave-7",
+  "decided": "2026-08-28",
+  "reason": "Merged into veerateeswarar-tiruvirkudi — the same temple under a different English transliteration, which a name-token dedupe cannot match, at a coordinate just past the 3 dp threshold. The surviving record holds the union of both source lists and the Paadal Petra Sthalam tag. Do NOT re-admit: a --all re-merge resurrected this once already."
+ },
+ {
+  "id": "uthrapathiswaraswamy-tiruchenkattankudi",
+  "name": "Uthrapathiswaraswamy Temple",
+  "batch": "wave-7",
+  "decided": "2026-08-28",
+  "reason": "Merged into uthirapasupatheeswarar-tiruchenkattankudi — the same temple under a different English transliteration, which a name-token dedupe cannot match, at a coordinate just past the 3 dp threshold. The surviving record holds the union of both source lists and the Paadal Petra Sthalam tag. Do NOT re-admit: a --all re-merge resurrected this once already."
  }
 ]

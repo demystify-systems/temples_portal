@@ -509,5 +509,102 @@
     ],
     "verified": "wikipedia-2026-08-28",
     "tier": "compact"
+  },
+  {
+    "id": "adikesava-perumal-paramandur",
+    "name": "Adikesava Perumal Temple, Paramandur",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Paramandur, Pudukkottai district",
+    "lat": 10.1041,
+    "lng": 79.0183,
+    "tradition": "Hindu",
+    "deity": "Vishnu as Adikesava Perumal, flanked by Sridevi and Bhudevi",
+    "built": [1000, 1800],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Vishnu temple at Paramandur in Pudukkottai district where the deity stands between Sridevi and Bhudevi. It is known locally for the ceremonial opening of the sorga vasal, the gate of heaven, in the Tamil month of Purattasi.",
+    "wiki": "https://en.wikipedia.org/wiki/Adikesava_Perumal_Temple,_Paramandur",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Adikesava_Perumal_Temple,_Paramandur" },
+      { "l": "Wikidata Q112153679", "u": "https://www.wikidata.org/wiki/Q112153679" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
+  },
+  {
+    "id": "gopal-mandir-ujjain",
+    "name": "Gopal Mandir, Ujjain",
+    "country": "India",
+    "state": "Madhya Pradesh",
+    "place": "Ujjain",
+    "lat": 23.1881,
+    "lng": 75.7711,
+    "tradition": "Hindu",
+    "deity": "Krishna as Dwarkadhish",
+    "built": [1800, 1900],
+    "builtDisplay": "19th c. (Scindia patronage)",
+    "dynasty": "Scindia (Maratha)",
+    "style": "Maratha",
+    "circuits": [],
+    "significance": "The second largest temple in Ujjain, built in the nineteenth century by Bayaji Bai Shinde, wife of the Maratha ruler Daulatrao Scindia, around a silver-clad marble image of Krishna. At Harihar Parva the Mahakaleshwar procession is brought here so that Shiva and Krishna may meet, and Janmashtami is its great festival.",
+    "wiki": "https://en.wikipedia.org/wiki/Gopal_Mandir",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gopal_Mandir" },
+      { "l": "Wikidata Q129900205", "u": "https://www.wikidata.org/wiki/Q129900205" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
+  },
+  {
+    "id": "shali-mata-khatnol",
+    "name": "Shali Mata Temple",
+    "country": "India",
+    "state": "Himachal Pradesh",
+    "place": "Khatnol, Shimla district",
+    "lat": 31.1914,
+    "lng": 77.2746,
+    "tradition": "Hindu",
+    "deity": "The goddess as Bhimakali and Shailaputri",
+    "built": [1900, 1930],
+    "builtDisplay": "present structure early 20th c. (Bushahr)",
+    "dynasty": "Bushahr (Raja Rana Bhupinder Singh)",
+    "style": "Kath Kuni",
+    "circuits": [],
+    "significance": "A goddess temple on the summit of Shali Tibba at about 2,862 m, some 36 km from Shimla and reached by a seven-kilometre walk through deodar and pine. The present timber-and-stone Kath Kuni building was renovated in the early twentieth century by Raja Rana Bhupinder Singh of Bushahr, and Navratri is its chief occasion.",
+    "story": "Local tradition says the goddess appeared in a dream and asked to be moved to the highest peak nearby so that her blessing would reach the whole region.",
+    "wiki": "https://en.wikipedia.org/wiki/Shali_Mata_Temple",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Shali_Mata_Temple" },
+      { "l": "Wikidata Q137441567", "u": "https://www.wikidata.org/wiki/Q137441567" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
+  },
+  {
+    "id": "vedanarayana-thirunarayanapuram",
+    "name": "Vedanarayana Perumal Temple, Thirunarayanapuram",
+    "country": "India",
+    "state": "Tamil Nadu",
+    "place": "Thirunarayanapuram, Tiruchirappalli district",
+    "lat": 10.9725,
+    "lng": 78.3182,
+    "tradition": "Hindu",
+    "deity": "Vishnu as Vedanarayana, with Lakshmi as Vedanayaki",
+    "built": [850, 1600],
+    "builtDisplay": "Chola and Vijayanagara periods",
+    "dynasty": "Medieval Chola and Vijayanagara",
+    "style": "Dravidian",
+    "circuits": [],
+    "significance": "A Vishnu temple in Tiruchirappalli district where the deity is enshrined in a reclining posture with Vedanayaki, built up under the medieval Cholas and later the Vijayanagara kings. Its chariot festival falls in the Tamil month of Chittirai.",
+    "story": "An Araiyar of Thiru Naraiyur is said to have given his own life and those of his children to shield the deity from a fire in the temple, and Narayana granted the family liberation.",
+    "wiki": "https://en.wikipedia.org/wiki/Vedanarayana_perumal_temple,_Thirunarayanapuram",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Vedanarayana_perumal_temple,_Thirunarayanapuram" },
+      { "l": "Wikidata Q121113869", "u": "https://www.wikidata.org/wiki/Q121113869" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
   }
 ]
