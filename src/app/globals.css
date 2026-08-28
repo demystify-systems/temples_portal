@@ -1,20 +1,72 @@
+/* ---------------------------------------------------------------------------
+ * DESIGN TOKENS — the single source of truth for colour in this project.
+ *
+ * CONTRAST (WCAG 2.2, recomputed 2026-08-28 from these exact hex values by
+ * scripts/check-contrast.mjs, which fails the build on a regression).
+ *
+ * Text tokens must clear 4.5:1 on BOTH --bg and --panel, in BOTH themes.
+ * --mut and --gold are used at 10-13px in .vnote, .eyebrow, .card .cm, .hstats,
+ * .leg .yr, .completeness .cnote and .asstcount — normal-size text, so the
+ * large-text 3:1 allowance does not apply to them.
+ *
+ *   token      theme   on --bg   on --panel   was (FAILED)
+ *   --ink      light    13.33      14.43       pass
+ *   --ink2     light     5.86       6.34       pass
+ *   --mut      light     4.50       4.87       3.08 / 3.33
+ *   --gold     light     4.51       4.88       3.19 / 3.45
+ *   --ink      dark     14.00      12.70       pass
+ *   --ink2     dark      6.98       6.33       pass
+ *   --mut      dark      4.99       4.53       3.95 / 3.59
+ *   --gold     dark      7.96       7.22       pass
+ *
+ * Control-border tokens must clear 3.0:1 (1.4.11 non-text). --line2 borders
+ * every input, select, .chip, .actions a and .tracebtn, and those sit ON
+ * --panel INSIDE and against --bg OUTSIDE, so both grounds are checked.
+ *
+ *   --line2    light     3.00       3.25       1.51 / 1.63
+ *   --line2    dark      3.31       3.00       1.88 / 1.70
+ *
+ * --line and --gold-soft are DECORATIVE ONLY (hairline rules, .pcount and
+ * .coach borders). They are exempt from 1.4.11 because they carry no state and
+ * no boundary a user must perceive. They may never be used for text or for a
+ * control border; check-contrast.mjs enforces that separately.
+ *
+ * NOTE ON DARK --mut: DESIGN-TOKENS.md section 2 said to change no dark value
+ * but --line2. Its own section 9 requires 4.5:1 in BOTH themes, and dark --mut
+ * measured 3.95 on --bg at 10-13px. The two instructions contradict; section 9
+ * is the correct one and is followed here.
+ *
+ * ERA PALETTE (--e1..--e6) is CATEGORICAL, not a sequential ramp, and is
+ * colour-blind validated (CLAUDE.md rule 7). Simulated 2026-08-28 for
+ * deuteranopia, protanopia and tritanopia in both themes via the Brettel-
+ * Vienot-Mollon model; minimum pairwise separation 11.4 dE (deuteranopia,
+ * light, --e1/--e3). Era is additionally carried as TEXT everywhere it is
+ * carried as colour, so no meaning rests on hue alone (WCAG 1.4.1).
+ * Re-run the simulation and update this date before changing any era hue.
+ *
+ * MIRROR: the dark palette is declared TWICE below — once under
+ * prefers-color-scheme and once under [data-theme="dark"] — because a media
+ * query cannot be overridden by an attribute selector alone. The two blocks
+ * must stay byte-identical; scripts/check-theme-mirror.mjs fails the build if
+ * they diverge.
+ * ------------------------------------------------------------------------- */
 :root{
-  --bg:#EFEBE2; --water:#ECE7DB; --panel:#F7F4EC; --panel2:#E9E4D7; --line:#D8D1C0; --line2:#C9C1AC;
-  --ink:#262218; --ink2:#5F594A; --mut:#8D8574; --gold:#A97B1F; --gold-soft:#C4A45A;
+  --bg:#EFEBE2; --water:#ECE7DB; --panel:#F7F4EC; --panel2:#E9E4D7; --line:#D8D1C0; --line2:#8D8779;
+  --ink:#262218; --ink2:#5F594A; --mut:#716A5D; --gold:#8A6419; --gold-soft:#C4A45A;
   --land:#E3DDCB; --land-ctx:#EAE5D8; --cty:#BFB69E;
   --e1:#96690A; --e2:#2E6BA8; --e3:#96391F; --e4:#0E7E5F; --e5:#6247AC; --e6:#AC4478;
   --shadow:0 8px 28px rgba(38,34,24,.14); --scrim:rgba(38,34,24,.42);
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#3A4560;
-  --ink:#EAE3D3; --ink2:#A9A190; --mut:#7C7666; --gold:#D9A441; --gold-soft:#8A6A2A;
+  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#616A80;
+  --ink:#EAE3D3; --ink2:#A9A190; --mut:#8C8779; --gold:#D9A441; --gold-soft:#8A6A2A;
   --land:#232B3E; --land-ctx:#1B2230; --cty:#3D4763;
   --e1:#BE8A2E; --e2:#4487CC; --e3:#AC4C34; --e4:#35A084; --e5:#7B5BC8; --e6:#C9679B;
   --shadow:0 10px 32px rgba(0,0,0,.45); --scrim:rgba(4,6,12,.62);
 }}
 :root[data-theme="dark"]{
-  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#3A4560;
-  --ink:#EAE3D3; --ink2:#A9A190; --mut:#7C7666; --gold:#D9A441; --gold-soft:#8A6A2A;
+  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#616A80;
+  --ink:#EAE3D3; --ink2:#A9A190; --mut:#8C8779; --gold:#D9A441; --gold-soft:#8A6A2A;
   --land:#232B3E; --land-ctx:#1B2230; --cty:#3D4763;
   --e1:#BE8A2E; --e2:#4487CC; --e3:#AC4C34; --e4:#35A084; --e5:#7B5BC8; --e6:#C9679B;
   --shadow:0 10px 32px rgba(0,0,0,.45); --scrim:rgba(4,6,12,.62);

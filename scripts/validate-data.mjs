@@ -44,7 +44,21 @@ const VERBOSE = process.argv.includes("--verbose");
 const TIER_REQUIRED = Object.fromEntries(
   Object.entries(tiers).map(([name, def]) => [name, def.requires]),
 );
-const DEFAULT_TIER = "flagship"; // absent `tier` means a full record, per the corpus convention
+/**
+ * The tier assumed when a record carries none.
+ *
+ * `stub` — the WEAKEST tier — not `flagship`. An absent tier used to be read as
+ * the highest one, so a record added without the field silently claimed to hold
+ * `story`, `access` and `patron`, and then failed its own promise. Records
+ * arrive in automated batches, so that was a question of when, not whether.
+ *
+ * This is now a floor that should never be reached: `tier` is checked for
+ * presence below and its absence is a hard error. It stays here so that if that
+ * check is ever removed, the failure mode is UNDER-claiming — the only direction
+ * a project whose whole pitch is its sourcing can afford to be wrong in.
+ * See CONTENT-CONTRACT.md section 2.1.
+ */
+const DEFAULT_TIER = "stub";
 const TRADITIONS = new Set(["Hindu", "Buddhist", "Jain", "Sikh"]);
 const TIERS = new Set(["stub", "compact", "flagship"]);
 
@@ -88,6 +102,11 @@ for (const s of sites) {
   const tag = s.id ?? "<no id>";
 
   // ---- ERROR: long-standing invariants ------------------------------------
+  // `tier` is a required field in its own right. Without this the gate checked
+  // that a PRESENT tier was recognised but never that one was present at all,
+  // which is what let the absent-means-flagship convention persist.
+  if (s.tier === undefined || s.tier === null || s.tier === "")
+    errors.push(`${tag}: missing required field "tier" (one of ${[...TIERS].join(", ")})`);
   const tierName = s.tier ?? DEFAULT_TIER;
   const required = TIER_REQUIRED[tierName] ?? TIER_REQUIRED[DEFAULT_TIER];
   for (const k of required) {

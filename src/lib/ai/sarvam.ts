@@ -169,12 +169,12 @@ export async function textToSpeech(opts: {
 export async function speechToText(opts: {
   apiKey: string;
   audio: Blob;
-  model?: "saarika:v2.5" | "saarika:flash" | "saaras:v3" | "saaras:v3-realtime" | "saaras:v4";
+  model?: "saaras:v4" | "saaras:v3" | "saaras:v3-realtime";
   signal?: AbortSignal;
 }): Promise<{ transcript: string; languageCode: string | null; confidence: number | null }> {
   const form = new FormData();
   form.append("file", opts.audio, "audio.wav");
-  form.append("model", opts.model ?? "saarika:v2.5");
+  form.append("model", opts.model ?? "saaras:v4");
 
   const res = await fetch(`${BASE}/speech-to-text`, {
     method: "POST",

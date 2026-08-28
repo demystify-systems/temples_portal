@@ -59,30 +59,56 @@ export const TTS_MAX_CHARS = 450;
 export const MAX_SPEECH_CHUNKS = 12;
 
 /**
- * Above this, accuracy beats latency and the model changes. See `sttModelFor`.
+ * The one-shot transcription model.
+ *
+ * Verified against the live API on 2026-08-28, re-probing every model name this
+ * file has ever used:
+ *
+ *   model            HTTP   transcript of "Where is the Jagannath temple?"
+ *   saarika:flash    400    DEPRECATED — "please use saaras:v3"
+ *   saarika:v2       400    DEPRECATED
+ *   saarika:v1       400    DEPRECATED
+ *   saarika:v2.5     200    "Where is Radhakrishna Temple?"     WRONG
+ *   saaras:v3        200    "Where is Radhakrishna Temple?"     WRONG
+ *   saaras:v4        200    "Where is Jagannath Temple?"        correct, p=1.0
+ *
+ * Two things follow, and both matter.
+ *
+ * First, this route was 503ing on every short question. `sttModelFor` returned
+ * `saarika:flash` for any clip under fifteen seconds, Sarvam answered 400, and
+ * the catch block reported "Voice input is unavailable right now" — a correct
+ * message about an incorrect cause, which is why it survived so long.
+ *
+ * Second, the two-model latency/accuracy split this file used to make no longer
+ * describes reality. Measured twice each, same clip: v4 0.51s/0.39s, v3
+ * 0.56s/0.43s, v2.5 0.77s/0.40s. saaras:v4 is the fastest AND the only one that
+ * hears an Indic proper noun correctly. When one model wins on both axes there
+ * is no trade to make, so there is no longer a duration threshold.
+ *
+ * The accuracy point is not cosmetic for this product. Every question here is
+ * about a temple, so the proper noun IS the query — a model that hears
+ * "Radhakrishna" for "Jagannath" does not degrade the answer, it retrieves a
+ * different temple and cites it confidently.
  */
-export const FLASH_MAX_MS = 15_000;
+export type SttModel = "saaras:v4";
 
-export type SttModel = "saarika:flash" | "saarika:v2.5";
+/** Retired model names, kept so the test can assert none is ever returned. */
+export const RETIRED_STT_MODELS: readonly string[] = [
+  "saarika:flash", "saarika:v2", "saarika:v1",
+] as const;
 
 /**
- * Which Saarika to send a clip to.
+ * Which model to send a clip to.
  *
- * `saaras:v3-realtime` is the streaming model, and this button is not a
- * streaming transport: it records while held, then uploads one file on release.
- * A realtime model over a one-shot multipart POST buys nothing and costs the
- * complexity of a session. So the choice is between the two one-shot models:
- *
- *   - `saarika:flash` for the short utterance the button is designed around
- *     ("How do I reach Kedarnath?"), where the round trip is what the user
- *     feels and a fraction of a second of accuracy is not.
- *   - `saarika:v2.5` past `FLASH_MAX_MS`, where the user has already invested
- *     fifteen seconds and a mis-transcription costs them the whole utterance.
- *
- * Both return `language_code`, which is the field the whole feature turns on.
+ * Takes a duration because callers pass one and a future model may reintroduce
+ * a length trade-off; today every clip gets the same answer. Deliberately still
+ * a function rather than a constant, so reinstating a split is a one-line change
+ * at one call site rather than a refactor of the route.
  */
-export const sttModelFor = (durationMs: number | null | undefined): SttModel =>
-  typeof durationMs === "number" && durationMs > FLASH_MAX_MS ? "saarika:v2.5" : "saarika:flash";
+export const sttModelFor = (durationMs: number | null | undefined): SttModel => {
+  void durationMs;
+  return "saaras:v4";
+};
 
 // ---------------------------------------------------------------------------
 // audio guards
