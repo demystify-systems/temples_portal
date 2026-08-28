@@ -116329,5 +116329,272 @@
    "Mahavira"
   ],
   "deityGroup": "Jain"
+ },
+ {
+  "id": "laung-bwann-brauk-mrauk-u",
+  "name": "Laung Bwann Brauk Pagoda",
+  "country": "Myanmar",
+  "state": "Rakhine State",
+  "place": "Mrauk U",
+  "lat": 20.602,
+  "lng": 93.1934,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1525,
+   1525
+  ],
+  "builtDisplay": "1525 (Min Khaung Raza); renovated 1625",
+  "dynasty": "Mrauk U",
+  "circuits": [],
+  "significance": "A Mrauk U stupa built in 1525 under King Min Khaung Raza and renovated in 1625 by King Thiri Thudhamma, rising through eight octagonal tiers to five tapering ones. Sixteen Buddha images sit in niches on the first tier, and the name, meaning coloured tile, comes from the sixty glazed petals in red, yellow, blue and green set into the square stone wall around it.",
+  "wiki": "https://en.wikipedia.org/wiki/Laung_Bwann_Brauk_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Laung_Bwann_Brauk_Pagoda"
+   },
+   {
+    "l": "Wikidata Q47509865",
+    "u": "https://www.wikidata.org/wiki/Q47509865"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "muhudu-maha-vihara-pottuvil",
+  "name": "Muhudu Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Pottuvil, Ampara District",
+  "lat": 6.8775,
+  "lng": 81.8389,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   -200,
+   -100
+  ],
+  "builtDisplay": "2nd c. BCE (King Kavan Tissa)",
+  "dynasty": "Ruhuna",
+  "circuits": [],
+  "significance": "A ruined seaside monastery among the dunes at Pottuvil, held to have been founded more than two thousand years ago by King Kavan Tissa of Ruhuna. Remains of stupas, a seema malaka, an avasa geya and stone images of the Buddha and of kings or gods still stand on the site.",
+  "story": "The Rajavaliya tells that Devi, daughter of the king of Kelaniya, was set adrift in a golden vessel to appease the sea gods and came ashore here, later marrying Kavan Tissa as Queen Viharamahadevi.",
+  "wiki": "https://en.wikipedia.org/wiki/Muhudu_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Muhudu_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q6573093",
+    "u": "https://www.wikidata.org/wiki/Q6573093"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "mingun-pahtodawgyi",
+  "name": "Mingun Pahtodawgyi",
+  "country": "Myanmar",
+  "state": "Sagaing Region",
+  "place": "Mingun",
+  "lat": 22.0508,
+  "lng": 96.0175,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1790,
+   1790
+  ],
+  "builtDisplay": "begun 1790 (Bodawpaya), never completed",
+  "dynasty": "Bodawpaya",
+  "circuits": [],
+  "significance": "A colossal brick stupa about 10 km northwest of Mandalay, begun by King Bodawpaya in 1790 and deliberately left unfinished; a small shrine with a Buddha image on the site is still used for worship.",
+  "story": "It was said locally that the country would be lost, or in another telling the king would die, the moment the pagoda was completed, so the work was slowed and then abandoned.",
+  "wiki": "https://en.wikipedia.org/wiki/Mingun_Pahtodawgyi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mingun_Pahtodawgyi"
+   },
+   {
+    "l": "Wikidata Q1936704",
+    "u": "https://www.wikidata.org/wiki/Q1936704"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "bao-quoc-hue",
+  "name": "Báo Quốc Temple",
+  "country": "Vietnam",
+  "state": "Thừa Thiên Huế",
+  "place": "Phường Đúc, Huế",
+  "lat": 16.4547,
+  "lng": 107.5804,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (triple Buddha statue; relics of the Buddha)",
+  "built": [
+   1670,
+   1670
+  ],
+  "builtDisplay": "1670; enlarged 1808",
+  "dynasty": "Nguyễn lords",
+  "circuits": [],
+  "significance": "A Thiền (Vietnamese Zen) temple on Hàm Long hill in Huế, founded in 1670 by the master Thích Giác Phong under the Nguyễn lords and enlarged from 1808 with the patronage of Empress Hiếu Khương, wife of Gia Long. Its triple gate, dragon-wound pillars and stupas stand above a spring that runs down into the grounds.",
+  "wiki": "https://en.wikipedia.org/wiki/B%C3%A1o_Qu%E1%BB%91c_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/B%C3%A1o_Qu%E1%BB%91c_Temple"
+   },
+   {
+    "l": "Wikidata Q4857424",
+    "u": "https://www.wikidata.org/wiki/Q4857424"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "buu-phong-bien-hoa",
+  "name": "Bửu Phong Temple",
+  "country": "Vietnam",
+  "state": "Đồng Nai",
+  "place": "Bình Điện, near Biên Hòa",
+  "lat": 10.9675,
+  "lng": 106.8001,
+  "tradition": "Buddhist",
+  "deity": "Amitabha Buddha",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "17th c.; rebuilt 1829",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Zen temple on a hill about 4 km from Biên Hòa, begun in the 17th century as a small shrine by Thích Bửu Phong, rebuilt by Chinese Buddhist settlers late in the 18th century, renovated in 1760 by Thích Viên Quang and enlarged in 1829 on donations from Nguyễn Văn Hiệp and Nguyễn Văn Tâm. Its main hall keeps an old statue of Amitabha, and a stupa on the grounds holds Buddhist relics.",
+  "wiki": "https://en.wikipedia.org/wiki/B%E1%BB%ADu_Phong_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/B%E1%BB%ADu_Phong_Temple"
+   },
+   {
+    "l": "Wikidata Q5003209",
+    "u": "https://www.wikidata.org/wiki/Q5003209"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "wat-phothivihan-tumpat",
+  "name": "Wat Phothivihan",
+  "country": "Malaysia",
+  "state": "Kelantan",
+  "place": "Tumpat",
+  "lat": 6.1302,
+  "lng": 102.1376,
+  "tradition": "Buddhist",
+  "deity": "Reclining Buddha",
+  "built": [
+   1973,
+   1979
+  ],
+  "builtDisplay": "founded 1973; reclining Buddha 1975–79",
+  "dynasty": "Modern",
+  "style": "Thai",
+  "circuits": [],
+  "significance": "A Thai Theravada temple in Tumpat district, Kelantan, founded in 1973 by the abbot Phra Krurasapia Chakorn and known for its 40-metre reclining Buddha, begun in 1975 and finished in 1979. The grounds also hold an eighteen-armed Avalokiteshvara and a four-faced Phra Phrom, mixing Chinese and Tibetan elements into a Thai temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phothivihan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Phothivihan"
+   },
+   {
+    "l": "Wikidata Q7972952",
+    "u": "https://www.wikidata.org/wiki/Q7972952"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "siong-lim-toa-payoh",
+  "name": "Siong Lim Temple",
+  "country": "Singapore",
+  "state": "Singapore",
+  "place": "Toa Payoh",
+  "lat": 1.3303,
+  "lng": 103.8575,
+  "tradition": "Buddhist",
+  "deity": "Guanyin",
+  "built": [
+   1902,
+   1907
+  ],
+  "builtDisplay": "founded 1898; built 1902–07",
+  "dynasty": "Modern",
+  "style": "Fujian (Fuzhou, Quanzhou and Zhangzhou)",
+  "circuits": [],
+  "significance": "Singapore's largest Chinese Mahayana temple complex, founded in 1898 by the Hokkien merchant Low Kim Pong and built between 1902 and 1907 at a cost of half a million dollars, modelled on Xi Chan Si in Fuzhou and blending Fuzhou, Quanzhou and Zhangzhou building traditions. It was gazetted a national monument in 1980.",
+  "story": "Low Kim Pong is said to have dreamt of a golden light rising from the sea to the west, and on meeting a Buddhist family who landed by boat soon after, promised to build them a temple; their head became its first abbot.",
+  "website": "https://www.shuanglin.sg/",
+  "wiki": "https://en.wikipedia.org/wiki/Siong_Lim_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Siong_Lim_Temple"
+   },
+   {
+    "l": "Wikidata Q2985111",
+    "u": "https://www.wikidata.org/wiki/Q2985111"
+   },
+   {
+    "l": "Official site",
+    "u": "https://www.shuanglin.sg/"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
  }
 ]
