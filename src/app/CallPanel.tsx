@@ -17,12 +17,14 @@
  */
 
 import { useCall } from "./useCall";
+import { SPOKEN_LANGUAGES, languageByCode } from "@/lib/ai/languages";
 
 /** Cap the orb's growth so a loud room does not push it off its own row. */
 const scaleFor = (level: number): number => 1 + Math.min(0.55, level * 3.2);
 
 export default function CallPanel({ onClose }: { readonly onClose: () => void }) {
   const call = useCall();
+  const chosen = languageByCode(call.language);
   const live = call.phase === "listening" || call.phase === "capturing";
   const busy = call.phase === "transcribing" || call.phase === "thinking";
 
@@ -35,6 +37,34 @@ export default function CallPanel({ onClose }: { readonly onClose: () => void })
         </div>
         <button className="callx" onClick={onClose} aria-label="Close">×</button>
       </header>
+
+      {/* The picker is the INVITATION as much as the setting. Without it the
+          interface is in English and reads as an English product that will not
+          understand you; with it, someone who would rather ask in Tamil can see
+          that they may. Every option is an endonym — a Tamil speaker looks for
+          தமிழ், not for the English word "Tamil". */}
+      <div className="calllang">
+        <label htmlFor="call-lang">Speak in</label>
+        <select
+          id="call-lang"
+          value={call.language ?? ""}
+          onChange={(e) => call.setLanguage(e.target.value || null)}
+        >
+          <option value="">Detect automatically</option>
+          {SPOKEN_LANGUAGES.map((l) => (
+            <option key={l.code} value={l.code} lang={l.code}>
+              {l.endonym}{l.speakable ? "" : " — text reply only"}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {chosen && !chosen.speakable && (
+        <p className="callnote">
+          The atlas understands {chosen.endonym} but cannot read an answer back aloud in it yet.
+          Ask in {chosen.endonym} and the reply will appear as text.
+        </p>
+      )}
 
       {!call.supported ? (
         <p className="callnote">
@@ -61,6 +91,16 @@ export default function CallPanel({ onClose }: { readonly onClose: () => void })
           <p className={`callphase mono ${busy ? "busy" : ""}`} role="status" aria-live="polite">
             {call.phase === "idle" ? "Press to start. It listens, and answers aloud." : call.label}
           </p>
+
+          {/* A wrong detection is visible BEFORE it becomes a wrong-language
+              answer. Shown only when it disagrees with the choice, so it is a
+              signal rather than noise on every turn. */}
+          {call.heard && call.language && call.heard !== call.language && (
+            <p className="callheard" role="status">
+              Heard in <b lang={call.heard}>{languageByCode(call.heard)?.endonym ?? call.heard}</b>,
+              not {chosen?.endonym}. Answering in what was heard.
+            </p>
+          )}
         </div>
       )}
 

@@ -33,6 +33,7 @@ import {
   nextPhase, vadIsLive, canBargeIn, PHASE_LABEL, type CallEvent, type CallPhase,
 } from "@/lib/ai/conversation";
 import { chunkForSpeech } from "@/lib/ai/voice";
+import { preferredFromLocale } from "@/lib/ai/languages";
 
 /** Analyser frame size. 1024 samples at 48 kHz is ~21 ms — the VAD's frame. */
 const FFT_SIZE = 2048;
@@ -55,6 +56,11 @@ export type Call = {
   readonly level: number;
   readonly error: string | null;
   readonly supported: boolean;
+  /** The language the person CHOSE, or null for detect-from-audio. */
+  readonly language: string | null;
+  /** The language actually heard on the last turn, which may differ. */
+  readonly heard: string | null;
+  setLanguage: (code: string | null) => void;
   start: () => void;
   stop: () => void;
 };
@@ -74,8 +80,21 @@ export function useCall(): Call {
   const [level, setLevel] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [supported, setSupported] = useState(false);
+  /**
+   * The language the person chose. `null` means detect from the audio, which
+   * stays the default: detection is better than a wrong choice, and someone who
+   * picks Tamil then asks in English should still be understood.
+   */
+  const [language, setLanguageState] = useState<string | null>(null);
+  const [heard, setHeard] = useState<string | null>(null);
 
-  useEffect(() => { setSupported(isSupported()); }, []);
+  useEffect(() => {
+    setSupported(isSupported());
+    // The device locale preselects the picker and decides nothing else: a
+    // locale says where a phone was bought at least as often as what its owner
+    // speaks.
+    setLanguageState(preferredFromLocale(typeof navigator === "undefined" ? null : navigator.language));
+  }, []);
 
   // Everything below is imperative machinery that must not re-render on change.
   const phaseRef = useRef<CallPhase>("idle");
@@ -92,6 +111,8 @@ export function useCall(): Call {
   const abortRef = useRef<AbortController | null>(null);
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const languageRef = useRef<string | null>(null);
+  const chosenRef = useRef<string | null>(null);
+  chosenRef.current = language;
 
   /** Single funnel for every transition, so no caller sets a phase directly. */
   const send = useCallback((event: CallEvent) => {
@@ -194,6 +215,10 @@ export function useCall(): Call {
   }, [fetchClips]);
 
   /** One complete turn: audio -> transcript -> answer -> speech. */
+  /** Prior turns, so a follow-up has an antecedent. Read from a ref, not state, because runTurn is not re-created per turn. */
+  const turnsRef = useRef<readonly CallTurn[]>([]);
+  turnsRef.current = turns;
+
   const runTurn = useCallback(async (audio: Blob, durationMs: number) => {
     const controller = new AbortController();
     abortRef.current = controller;
@@ -201,11 +226,17 @@ export function useCall(): Call {
       const form = new FormData();
       form.append("audio", audio, "utterance.webm");
       form.append("durationMs", String(Math.round(durationMs)));
+      // A hint to the transcriber, not a constraint on it.
+      if (chosenRef.current) form.append("language", chosenRef.current);
       const heard = await fetch("/api/voice/transcribe", { method: "POST", body: form, signal: controller.signal });
       if (!heard.ok) { send({ type: "error", message: "Could not make that out." }); return; }
       const said = (await heard.json()) as { transcript?: string; language?: string | null };
 
-      languageRef.current = said.language ?? languageRef.current;
+      // What was actually HEARD wins over what was chosen: it is a measurement,
+      // and answering in the language someone actually spoke is the whole point.
+      // The choice is the fallback for when detection declines to commit.
+      languageRef.current = said.language ?? chosenRef.current ?? languageRef.current;
+      setHeard(said.language ?? null);
       const text = (said.transcript ?? "").trim();
       // An empty transcript never reaches the model — see conversation.ts.
       if (send({ type: "transcript", text }) !== "thinking") return;
@@ -216,7 +247,16 @@ export function useCall(): Call {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
-        body: JSON.stringify({ question: text, language: languageRef.current ?? undefined }),
+        body: JSON.stringify({
+          question: text,
+          language: languageRef.current ?? undefined,
+          // The last two exchanges, so "when was it built" resolves. Trimmed
+          // server-side too; this is a convenience, not the boundary.
+          history: turnsRef.current.slice(-4).map((t) => ({ role: t.role, content: t.text })),
+          // The antecedent for a pronoun: what the previous answer cited.
+          context: (turnsRef.current.filter((t) => t.role === "assistant").at(-1)?.citations ?? [])
+            .slice(0, 3).map((c) => c.id),
+        }),
       });
       const payload = (await answered.json().catch(() => null)) as
         { answer?: string; citations?: CallTurn["citations"]; refused?: boolean } | null;
@@ -347,8 +387,14 @@ export function useCall(): Call {
 
   useEffect(() => () => { stop(); }, [stop]);
 
+  const setLanguage = useCallback((code: string | null) => {
+    setLanguageState(code);
+    chosenRef.current = code;
+  }, []);
+
   return {
     phase, label: PHASE_LABEL[phase], turns, level, error, supported,
+    language, heard, setLanguage,
     start: () => { void start(); }, stop,
   };
 }

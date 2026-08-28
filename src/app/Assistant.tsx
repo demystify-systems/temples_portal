@@ -148,6 +148,12 @@ export default function Assistant() {
         signal: controller.signal,
         body: JSON.stringify({
           question: asked,
+          // The same memory the call has. A typed follow-up — "and who built
+          // it?" — is as common as a spoken one, and refusing it because the
+          // pronoun names no temple is the same defect either way.
+          history: turns.slice(-4).map((t) => ({ role: t.role, content: t.text })),
+          context: (turns.filter((t) => t.role === "assistant").at(-1)?.citations ?? [])
+            .slice(0, 3).map((c) => c.id),
           // A spoken question carries the language the speech API DETECTED —
           // measured, not guessed. Only a typed one falls back to the browser
           // locale, which is a hint about the device rather than about the asker.

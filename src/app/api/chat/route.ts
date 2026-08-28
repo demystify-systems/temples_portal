@@ -27,8 +27,8 @@
 
 import { NextResponse } from "next/server";
 import { SITES, type Site } from "@/lib/sites";
-import { chat, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
-import { retrieve, type AtlasRecord } from "@/lib/ai/retrieve";
+import { chat, translate, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
+import { retrieve, retrieveById, type AtlasRecord } from "@/lib/ai/retrieve";
 import { TOOLS, executeTool } from "@/lib/ai/tools";
 import { buildAnswer, refusalPayload } from "@/lib/ai/answer";
 import { systemPrompt, userTurn, REFUSAL, MAX_QUESTION_CHARS } from "@/lib/ai/prompt";
@@ -63,8 +63,40 @@ const MAX_TOOL_ROUNDS = 3;
 const REQUEST_TIMEOUT_MS = 30_000;
 /** Records handed to the model on the first turn. */
 const RETRIEVAL_LIMIT = 5;
+/**
+ * Prior turns carried into the prompt. Two exchanges.
+ *
+ * Enough for the follow-ups people actually ask — "when was it built", "how do
+ * I get there", "who paid for it" — and short enough that the prompt stays
+ * bounded. Every turn kept is tokens spent on every subsequent question, so
+ * this is a cost ceiling as much as a memory window.
+ */
+const HISTORY_TURNS = 4;
+/** Records carried forward as the antecedent for a pronoun. */
+const CONTEXT_LIMIT = 3;
 /** Entries kept in the rate-limit map before the oldest are dropped. */
 const RATE_LIMIT_MAX_KEYS = 5000;
+
+/** Any script that is not Latin — the signal that retrieval needs translating. */
+const NON_LATIN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/u;
+
+/**
+ * Words that point at something already said rather than naming it.
+ *
+ * Latin-script only on purpose. A question in Tamil or Hindi has already been
+ * translated to English for retrieval by the time this runs, so the English
+ * pronoun is what arrives — and testing the ORIGINAL would need a pronoun list
+ * per language, each of which is a different grammar.
+ *
+ * `\bthere\b` covers "how do I get there"; `that|this temple` covers the
+ * half-restated case. Deliberately narrow: a false positive drags the previous
+ * temple into an unrelated question, so the list only holds words that are
+ * almost never the subject of a first question.
+ */
+const ANAPHOR = /\b(it|its|it's|there|him|her|his|hers|they|them|their|that one|the same|this temple|that temple|this one)\b/i;
+
+/** True when the question leans on something the previous turn established. */
+const isAnaphoric = (question: string): boolean => ANAPHOR.test(question);
 
 const UNAVAILABLE = { error: "assistant unavailable" } as const;
 const unavailable = (status = 503) => NextResponse.json(UNAVAILABLE, { status });
@@ -130,13 +162,36 @@ export async function POST(request: Request): Promise<Response> {
 
   let question = "";
   let language: string | undefined;
+  let history: { role: "user" | "assistant"; content: string }[] = [];
+  let contextIds: string[] = [];
   try {
     const body: unknown = await request.json();
-    const parsed = (body ?? {}) as { question?: unknown; language?: unknown };
+    const parsed = (body ?? {}) as { question?: unknown; language?: unknown; history?: unknown; context?: unknown };
     question = typeof parsed.question === "string" ? parsed.question.trim() : "";
     language = typeof parsed.language === "string" && parsed.language.trim()
       ? parsed.language.trim().slice(0, 40)
       : undefined;
+    // Prior turns, newest last. Trusted only as far as it is bounded: this comes
+    // from the browser, so length, role and size are all clamped here rather
+    // than assumed.
+    if (Array.isArray(parsed.history)) {
+      history = parsed.history
+        .filter((t): t is { role: string; content: string } =>
+          Boolean(t) && typeof t === "object"
+          && ((t as { role?: unknown }).role === "user" || (t as { role?: unknown }).role === "assistant")
+          && typeof (t as { content?: unknown }).content === "string")
+        .slice(-HISTORY_TURNS)
+        .map((t) => ({
+          role: t.role as "user" | "assistant",
+          content: t.content.slice(0, MAX_QUESTION_CHARS * 4),
+        }));
+    }
+    // Ids the previous answer cited. The antecedent for "it".
+    if (Array.isArray(parsed.context)) {
+      contextIds = parsed.context
+        .filter((id): id is string => typeof id === "string")
+        .slice(0, CONTEXT_LIMIT);
+    }
   } catch {
     return NextResponse.json({ error: "Malformed request." }, { status: 400 });
   }
@@ -149,7 +204,85 @@ export async function POST(request: Request): Promise<Response> {
     );
   }
 
-  const found = retrieve(CORPUS, question, {}, RETRIEVAL_LIMIT);
+  /**
+   * Retrieval runs on English, whatever the question was asked in.
+   *
+   * The corpus is stored in Latin script. `retrieve` matches keywords against
+   * it, so a question in Tamil or Devanagari shares no tokens with any record
+   * and matches NOTHING — measured: "தஞ்சாவூர் பிரகதீஸ்வரர் கோயில் எங்கே
+   * இருக்கிறது?" retrieved zero records and the assistant refused a question
+   * about one of the most famous temples it holds.
+   *
+   * That made the whole multilingual feature hollow. The atlas could HEAR Tamil
+   * and SPEAK Tamil and could not ANSWER in it, so every non-English question
+   * got a fluent refusal — which is worse than an honest "English only",
+   * because it reads as "we have no record of your temple".
+   *
+   * So the query is translated for RETRIEVAL only. Mayura returns
+   * "Where is the Brihadeeswarar Temple in Thanjavur?" for the above, which the
+   * keyword index and the Indic normaliser both handle. Three things are
+   * deliberately NOT translated:
+   *
+   *   - the corpus, ever (rule 2: a translated fact is an uncited fact);
+   *   - the question shown to the model, which stays in the asker's own words
+   *     so the answer addresses what they actually said;
+   *   - the answer, which is generated in the asker's language as before.
+   *
+   * A failed translation degrades to the original query rather than failing the
+   * request: the worst case is the refusal we would have given anyway.
+   */
+  let retrievalQuery = question;
+  if (NON_LATIN_SCRIPT.test(question)) {
+    try {
+      const english = await translate({
+        apiKey, text: question, from: "auto", to: "en-IN",
+      });
+      if (english.trim()) retrievalQuery = english.trim();
+    } catch (error) {
+      console.warn("[chat] query translation failed, retrieving on the original:", error);
+    }
+  }
+
+  let found = retrieve(CORPUS, retrievalQuery, {}, RETRIEVAL_LIMIT);
+
+  /**
+   * The antecedent for a pronoun.
+   *
+   * "When was it built?" names no temple, because the temple was named one turn
+   * ago. Without this the assistant refuses every follow-up, which on a voice
+   * call is fatal: nobody says "the Brihadisvara Temple at Thanjavur" twice, and
+   * being asked to is what makes a machine feel like a machine.
+   *
+   * The first attempt only carried context forward when retrieval came back
+   * EMPTY, and that was wrong in a way worth recording. "When was it built, and
+   * who paid for it?" is not empty — `built` is a stopword but `paid` is not, so
+   * it matched records whose prose happens to contain it. Retrieval "succeeded"
+   * with junk, the fallback never fired, and the assistant answered a question
+   * about Brihadisvara by citing the Dilwara Temples and declaring its patron
+   * "not recorded" — which is both wrong and exactly the kind of confident
+   * wrongness this project exists to avoid.
+   *
+   * So the test is the linguistic phenomenon itself: does the question lean on
+   * an antecedent it does not restate? If it does, the records the previous
+   * answer cited go FIRST, ahead of whatever the keywords dragged in.
+   *
+   * This is not widening the search. The model may still only assert what it is
+   * handed, and it is being handed records that were already retrieved and
+   * already cited IN THIS CONVERSATION. A pronoun with no antecedent — a first
+   * question that opens with "when was it built" — still refuses, because there
+   * is no context to carry.
+   */
+  if (contextIds.length > 0 && isAnaphoric(question)) {
+    const carried = contextIds
+      .map((id) => retrieveById(CORPUS, id))
+      .filter((record): record is (typeof CORPUS)[number] => record !== null);
+    if (carried.length > 0) {
+      const seen = new Set(carried.map((r) => r.id));
+      const records = [...carried, ...found.records.filter((r) => !seen.has(r.id))]
+        .slice(0, RETRIEVAL_LIMIT);
+      found = { ...found, records, empty: false, reason: "ok", total: Math.max(found.total, records.length) };
+    }
+  }
 
   // Nothing was really asked — a blank query, or nothing but function words.
   // That refuses for free; no model call can turn it into a sourced answer.
@@ -172,6 +305,11 @@ export async function POST(request: Request): Promise<Response> {
   try {
     const messages: ChatMessage[] = [
       { role: "system", content: systemPrompt({ records: found.records, language, total: found.total }) },
+      // Prior turns sit between the system prompt and the question, so a
+      // follow-up has its antecedent. They are NOT re-grounded: the records
+      // above are the only thing that may be asserted, and an earlier answer in
+      // the transcript is a record of what was said, not a new source.
+      ...history.map((turn) => ({ role: turn.role, content: turn.content })),
       { role: "user", content: userTurn(question) },
     ];
     const cited: AtlasRecord[] = [...found.records];
@@ -253,8 +391,6 @@ export async function POST(request: Request): Promise<Response> {
  * to someone who did not ask in English) is the kind of quiet exclusion the
  * multilingual design exists to avoid.
  */
-const NON_LATIN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/u;
-
 function needsTranslatedRefusal(question: string, language?: string): boolean {
   if (NON_LATIN_SCRIPT.test(question)) return true;
   return Boolean(language && !/^en\b/i.test(language) && language.toLowerCase() !== "english");

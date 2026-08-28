@@ -211,11 +211,22 @@ export async function speechToText(opts: {
   apiKey: string;
   audio: Blob;
   model?: "saaras:v4" | "saaras:v3" | "saaras:v3-realtime";
+  /**
+   * The language the speaker SAID they would use, when they chose one.
+   *
+   * A hint, not a constraint: Saarika still returns the language it actually
+   * heard, and someone who picked Tamil and then asked in English is still
+   * understood. It matters most on the short utterances a detector is worst at
+   * — "Kedarnath?" gives it very little to commit on — which is exactly when a
+   * mis-detection costs the whole question.
+   */
+  languageCode?: string | null;
   signal?: AbortSignal;
 }): Promise<{ transcript: string; languageCode: string | null; confidence: number | null }> {
   const form = new FormData();
   form.append("file", opts.audio, "audio.wav");
   form.append("model", opts.model ?? "saaras:v4");
+  if (opts.languageCode) form.append("language_code", opts.languageCode);
 
   const res = await fetch(`${BASE}/speech-to-text`, {
     method: "POST",
