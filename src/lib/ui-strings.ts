@@ -73,7 +73,15 @@ export const UI_STRINGS = {
   "map.showKey": "Show the era key",
   "map.hideKey": "Hide the era key",
 
-  "assistant.open": "Ask the Atlas",
+  /**
+   * Renamed from `assistant.open` when the words changed from "Ask the Atlas".
+   *
+   * A NEW KEY, not an edited value — which is this file's own rule and exactly
+   * why it has one. The translator skips keys it already has, so editing the
+   * English in place would have left eight languages confidently rendering the
+   * previous name for ever, with nothing to detect it.
+   */
+  "assistant.title": "Talk to Tirtha Atlas",
   "assistant.scope": "Answers only from cited records",
   "assistant.type": "Type",
   "assistant.speak": "Speak",

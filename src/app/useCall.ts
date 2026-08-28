@@ -28,7 +28,7 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { detectTurn, initialVadState, rms, shouldBargeIn, VAD, type VadState } from "@/lib/ai/vad";
+import { CALIBRATION, detectTurn, initialVadState, rms, shouldBargeIn, thresholdForFloor, VAD, type VadState } from "@/lib/ai/vad";
 import {
   nextPhase, vadIsLive, canBargeIn, PHASE_LABEL, type CallEvent, type CallPhase,
 } from "@/lib/ai/conversation";
@@ -109,6 +109,15 @@ export function useCall(): Call {
   const vadRef = useRef<VadState>(initialVadState);
   const bargeMsRef = useRef(0);
   const silentMsRef = useRef(0);
+  /**
+   * The speech threshold for THIS microphone, measured at the start of a call.
+   *
+   * Starts at the old constant so the first frames are never wilder than the
+   * previous behaviour, then is replaced by a calibrated value once the room
+   * has been sampled.
+   */
+  const thresholdRef = useRef<number>(VAD.SPEECH_RMS);
+  const calibRef = useRef<{ ms: number; sum: number; frames: number } | null>(null);
   const rafRef = useRef<number | null>(null);
   const lastFrameRef = useRef(0);
   const abortRef = useRef<AbortController | null>(null);
@@ -301,11 +310,29 @@ export function useCall(): Call {
     const loudness = rms(buffer);
     setLevel(loudness);
 
+    // Calibrate before listening for anything. Half a second of the actual room
+    // decides what counts as speech on this device; a fixed constant cannot,
+    // because microphone gain varies by an order of magnitude between a laptop,
+    // a headset and a phone at arm's length.
+    const calib = calibRef.current;
+    if (calib) {
+      calib.ms += frameMs;
+      calib.sum += loudness;
+      calib.frames += 1;
+      if (calib.ms >= CALIBRATION.MS) {
+        const floor = calib.frames > 0 ? calib.sum / calib.frames : 0;
+        thresholdRef.current = thresholdForFloor(floor);
+        calibRef.current = null;
+      }
+      rafRef.current = requestAnimationFrame(tick);
+      return;
+    }
+
     if (vadIsLive(phaseRef.current)) {
       // While the assistant is speaking the microphone also hears the assistant,
       // so interruption is judged on its own longer threshold, not the VAD's.
       if (canBargeIn(phaseRef.current)) {
-        bargeMsRef.current = loudness >= VAD.SPEECH_RMS ? bargeMsRef.current + frameMs : 0;
+        bargeMsRef.current = loudness >= thresholdRef.current ? bargeMsRef.current + frameMs : 0;
         if (shouldBargeIn(bargeMsRef.current)) {
           bargeMsRef.current = 0;
           silence();
@@ -314,7 +341,7 @@ export function useCall(): Call {
         }
       } else {
         bargeMsRef.current = 0;
-        const step = detectTurn(vadRef.current, loudness, frameMs);
+        const step = detectTurn(vadRef.current, loudness, frameMs, { speechRms: thresholdRef.current });
         vadRef.current = step.state;
 
         if (step.event === "speech-start") {
@@ -359,6 +386,8 @@ export function useCall(): Call {
     vadRef.current = initialVadState;
     bargeMsRef.current = 0;
     silentMsRef.current = 0;
+    calibRef.current = null;
+    thresholdRef.current = VAD.SPEECH_RMS;
     setLevel(0);
   }, [send, silence]);
 
@@ -381,6 +410,9 @@ export function useCall(): Call {
 
       send({ type: "start" });
       startRecorder();
+      // Sample the room before deciding what speech sounds like on this device.
+      calibRef.current = { ms: 0, sum: 0, frames: 0 };
+      thresholdRef.current = VAD.SPEECH_RMS;
       lastFrameRef.current = 0;
       rafRef.current = requestAnimationFrame(tick);
     } catch {

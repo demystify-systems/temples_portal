@@ -61,6 +61,8 @@ const SITE_BY_ID = MAP_SITE_BY_ID;
 const SHEET_QUERY = "(max-width: 720px)";
 /** Sheet snap points, as translateY percentages of the sheet's own height. */
 const SNAPS = { full: 6, half: 46, peek: 78 } as const;
+/** Longer than a flick, shorter than a deliberate hold. A tap cycles the snap. */
+const TAP_MS = 400;
 type SnapName = keyof typeof SNAPS;
 const SNAP_ORDER: readonly SnapName[] = ["full", "half", "peek"];
 /** Dragged past this, or flicked down faster than this, and the sheet closes. */
@@ -1104,6 +1106,27 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     setDragging(false);
     if (sideRef.current) sideRef.current.style.transform = "";
     if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
+
+    /**
+     * A TAP, not a drag.
+     *
+     * This is the reported bug: tapping the grab bar did nothing at all. The
+     * handler only ever ran `setSnap(nearestSnap(d.last))`, and on a tap
+     * `d.last` is still exactly the current snap — so the nearest snap is the
+     * one it is already on, and the sheet sat there looking broken.
+     *
+     * A drag is the gesture people discover second. The first thing anyone does
+     * to a bar like this is tap it, so a tap has to mean something: it moves one
+     * step towards open, and wraps back to `peek` from the top rather than
+     * dead-ending at full.
+     */
+    const moved = Math.abs(e.clientY - d.y0);
+    if (moved < TAP_SLOP_PX && e.timeStamp - d.at < TAP_MS) {
+      const at = SNAP_ORDER.indexOf(snap);
+      setSnap(SNAP_ORDER[at <= 0 ? SNAP_ORDER.length - 1 : at - 1]!);
+      return;
+    }
+
     if (d.last > SHEET_DISMISS_PCT || d.velocity > SHEET_FLICK_PCT_PER_MS) { closePanel(); return; }
     setSnap(nearestSnap(d.last));
   };
