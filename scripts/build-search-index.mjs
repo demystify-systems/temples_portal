@@ -90,6 +90,17 @@ const OUT = path.join(OUT_DIR, "search-index.ts");
 // at 2,271 records — 61% — and `search.ts` only reads it once someone types.
 const OUT_TEXT = path.join(OUT_DIR, "search-index-text.ts");
 const TEXT_COLUMN = "significance";
+/**
+ * The map's own columns, emitted separately from both of the above.
+ *
+ * `lat`, `lng` and `disputedCircuits` are read by AtlasClient and by nothing
+ * else: the gazetteer never plots a point. Keeping them out of search-index.ts
+ * means /sites does not download 3,031 coordinate pairs it will never use, and
+ * keeping them out of search-index-text.ts means the map does not wait on the
+ * prose column to draw. Three artefacts, three consumers, no shared waste.
+ */
+const OUT_GEO = path.join(OUT_DIR, "search-index-geo.ts");
+const GEO_COLUMNS = ["lat", "lng", "disputedCircuits"];
 
 /**
  * Every field the index carries, in the emitted column order.
@@ -159,6 +170,20 @@ const clip = (text, max) => {
 };
 
 const columnOf = (sites, field) => {
+  // Coordinates are REQUIRED — a record the map cannot place is a data bug, and
+  // validate-data.mjs already refuses to publish one. Failing loudly here beats
+  // emitting NaN and drawing a temple at the origin.
+  if (field === "lat" || field === "lng") return sites.map((s) => {
+    const v = s[field];
+    if (typeof v !== "number" || !Number.isFinite(v)) {
+      throw new Error(`record "${s.id}" has no usable \`${field}\`; the map needs it`);
+    }
+    return v;
+  });
+  // Only 27 of 3,031 records carry one, so this column is almost entirely `0`
+  // and costs a few bytes gzipped. Emitted as 0 rather than [] because a scalar
+  // is 1 byte where an empty array is 2, across three thousand rows.
+  if (field === "disputedCircuits") return sites.map((s) => s.disputedCircuits ?? 0);
   if (field === "circuits") return sites.map((s) => s.circuits ?? []);
   // An untagged record emits [], never a placeholder tag: its dedication names
   // no figure, and the UI must be able to tell that from a tagged record.
@@ -229,6 +254,39 @@ export const RECORD_COUNT = ${count};
 export const COLUMNS: SearchIndexColumns = JSON.parse(${payload});
 `;
 
+/**
+ * The map columns. Statically imported by AtlasClient, by nothing else.
+ *
+ * Not deferred, unlike the text column: the map cannot draw a single mark
+ * without coordinates, so making them arrive late would trade a smaller bundle
+ * for an empty map. They are merely kept OUT of the module every other list
+ * page imports.
+ */
+const renderGeo = (payload, count) => `// GENERATED FILE — DO NOT EDIT BY HAND.
+//
+// Written by scripts/build-search-index.mjs from data/sites.json.
+// The map's columns: coordinates, and the 27 contested circuit claims that
+// AtlasClient draws daggers for. Imported by src/app/AtlasClient.tsx alone —
+// /sites and the other list pages must never pull this in.
+
+/** A contested circuit membership. 0 on the 3,004 records that carry none. */
+export type DisputedCircuitRow = 0 | readonly {
+  readonly circuit: string;
+  readonly status: "disputed" | "unsourced";
+  readonly note: string;
+  readonly source?: string;
+}[];
+
+/** Length matches RECORD_COUNT in search-index.ts, in the same corpus order. */
+export const RECORD_COUNT = ${count};
+
+export const GEO_COLUMNS: {
+  readonly lat: readonly number[];
+  readonly lng: readonly number[];
+  readonly disputedCircuits: readonly DisputedCircuitRow[];
+} = JSON.parse(${payload});
+`;
+
 /** The deferred text column, loaded only when the visitor actually searches. */
 const renderText = (payload, count) => `// GENERATED FILE — DO NOT EDIT BY HAND.
 //
@@ -254,15 +312,19 @@ const main = () => {
 
   const allColumns = buildColumns(sites);
   const { [TEXT_COLUMN]: textColumn, ...coreColumns } = allColumns;
+  const geoColumns = Object.fromEntries(GEO_COLUMNS.map((f) => [f, columnOf(sites, f)]));
   const payload = JSON.stringify(JSON.stringify(coreColumns));
   const textPayload = JSON.stringify(JSON.stringify(textColumn));
+  const geoPayload = JSON.stringify(JSON.stringify(geoColumns));
   const source = render(payload, sites.length);
   const textSource = renderText(textPayload, sites.length);
+  const geoSource = renderGeo(geoPayload, sites.length);
 
   if (check) {
     const onDisk = existsSync(OUT) ? readFileSync(OUT, "utf8") : null;
     const onDiskText = existsSync(OUT_TEXT) ? readFileSync(OUT_TEXT, "utf8") : null;
-    if (onDisk === source && onDiskText === textSource) {
+    const onDiskGeo = existsSync(OUT_GEO) ? readFileSync(OUT_GEO, "utf8") : null;
+    if (onDisk === source && onDiskText === textSource && onDiskGeo === geoSource) {
       console.log(`build-search-index: up to date (${sites.length} records)`);
       return;
     }
@@ -276,6 +338,7 @@ const main = () => {
   mkdirSync(OUT_DIR, { recursive: true });
   writeFileSync(OUT, source);
   writeFileSync(OUT_TEXT, textSource);
+  writeFileSync(OUT_GEO, geoSource);
 
   // Both figures are gzip -9 of a JS module, so they are like for like. The
   // banner and the type declaration above are erased by the bundler, so the
@@ -289,6 +352,7 @@ const main = () => {
   console.log(`  corpus as it ships today  ${kb(before)} gzipped`);
   console.log(`  critical path             ${kb(after)} gzipped  (${Math.round((1 - after / before) * 100)}% smaller)`);
   console.log(`  deferred ${TEXT_COLUMN}     ${kb(deferred)} gzipped  (fetched on first keystroke)`);
+  console.log(`  map columns               ${kb(gz(`export const GEO_COLUMNS=JSON.parse(${geoPayload});`))} gzipped  (AtlasClient only)`);
 };
 
 // Only run when invoked as the entry point: search-index.test.ts imports

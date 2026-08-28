@@ -19,12 +19,53 @@
 const BASE = "https://api.sarvam.ai";
 
 /** Verified live. `sarvam-m` is deprecated and returns an error naming these. */
-export const CHAT_MODELS = ["sarvam-105b", "sarvam-105b-conversations"] as const;
+export const CHAT_MODELS = ["sarvam-105b-conversations", "sarvam-105b"] as const;
 export type ChatModel = (typeof CHAT_MODELS)[number];
 
 /**
- * Floor for any user-facing answer. Below roughly this, reasoning eats the whole
- * budget and `content` comes back null. Indic scripts need the higher figure.
+ * The model every call uses unless one is named.
+ *
+ * `sarvam-105b-conversations`, NOT `sarvam-105b`. Both were re-probed against
+ * the live API on 2026-08-28 with this project's own prompts. `sarvam-105b` is a
+ * REASONING model: it emits a long `reasoning_content` trace before a single
+ * visible character, and that trace is billed as completion tokens. Measured, on
+ * one identical corpus-grounded question:
+ *
+ *                              105b        conversations
+ *   simple lookup              595 tok       8 tok
+ *   refusal (out of corpus)    483 tok      13 tok
+ *   refusal (bait: priest's
+ *     phone number)            626 tok      13 tok
+ *   dated answer             1,182 tok      52 tok
+ *   Tamil question             362 tok      35 tok
+ *   tool call                   73 tok      18 tok
+ *   ------------------------------------------------
+ *   TOTAL                    3,321 tok     139 tok      24x
+ *
+ * The answers were identical or better — the Tamil reply was fuller — and the
+ * safety behaviour was unchanged: both refused "What is the capital of France?"
+ * and both refused to invent a priest's phone number. 99% of what the reasoning
+ * model billed was a trace no user ever sees.
+ *
+ * The switch also deletes a whole class of bug. Every "reasoning ate the budget"
+ * workaround below — the token floors, the truncated/retry path — existed
+ * because `sarvam-105b` returns `content: null` with `finish_reason: "length"`
+ * when max_tokens is spent on reasoning. With no trace, that does not happen.
+ * The workarounds are kept as a safety net, not as the normal path.
+ */
+export const DEFAULT_CHAT_MODEL: ChatModel = "sarvam-105b-conversations";
+
+/** True for models that emit a billed `reasoning_content` trace before answering. */
+export const isReasoningModel = (model: ChatModel): boolean => model === "sarvam-105b";
+
+/**
+ * Floor for any user-facing answer.
+ *
+ * `max_tokens` is a CEILING, not a charge — you are billed for what is actually
+ * generated — so a generous floor costs nothing on the conversations model and
+ * only protects a long answer from being cut mid-sentence. It stays high for
+ * that reason, and because it is the safety net if a caller ever names the
+ * reasoning model explicitly.
  */
 export const MIN_ANSWER_TOKENS = 1500;
 export const MIN_ANSWER_TOKENS_INDIC = 2500;
@@ -92,7 +133,7 @@ export async function chat(opts: {
   _isRetry?: boolean;
 }): Promise<ChatResult> {
   const {
-    apiKey, messages, model = "sarvam-105b", tools,
+    apiKey, messages, model = DEFAULT_CHAT_MODEL, tools,
     maxTokens = MIN_ANSWER_TOKENS, temperature = 0.2, signal,
   } = opts;
 
@@ -169,12 +210,12 @@ export async function textToSpeech(opts: {
 export async function speechToText(opts: {
   apiKey: string;
   audio: Blob;
-  model?: "saarika:v2.5" | "saarika:flash" | "saaras:v3" | "saaras:v3-realtime" | "saaras:v4";
+  model?: "saaras:v4" | "saaras:v3" | "saaras:v3-realtime";
   signal?: AbortSignal;
 }): Promise<{ transcript: string; languageCode: string | null; confidence: number | null }> {
   const form = new FormData();
   form.append("file", opts.audio, "audio.wav");
-  form.append("model", opts.model ?? "saarika:v2.5");
+  form.append("model", opts.model ?? "saaras:v4");
 
   const res = await fetch(`${BASE}/speech-to-text`, {
     method: "POST",

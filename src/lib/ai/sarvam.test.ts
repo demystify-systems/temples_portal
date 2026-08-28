@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   chat, tokenFloorFor, SarvamError,
-  MIN_ANSWER_TOKENS, MIN_ANSWER_TOKENS_INDIC, CHAT_MODELS,
+  MIN_ANSWER_TOKENS, MIN_ANSWER_TOKENS_INDIC, CHAT_MODELS, DEFAULT_CHAT_MODEL, isReasoningModel,
 } from "./sarvam.ts";
 
 /** Swap global fetch for one call, always restoring it. */
@@ -23,6 +23,16 @@ const completion = (over: Record<string, unknown> = {}) => ({
 test("sarvam-m is not offered — it is deprecated upstream", () => {
   assert.ok(!(CHAT_MODELS as readonly string[]).includes("sarvam-m"));
   assert.ok((CHAT_MODELS as readonly string[]).includes("sarvam-105b"));
+  assert.ok((CHAT_MODELS as readonly string[]).includes("sarvam-105b-conversations"));
+});
+
+test("the default model is the non-reasoning one", () => {
+  // sarvam-105b bills a long reasoning trace nobody sees: measured 3,321
+  // completion tokens across six probes where the conversations model spent
+  // 139, for identical answers and identical refusals. See sarvam.ts.
+  assert.equal(DEFAULT_CHAT_MODEL, "sarvam-105b-conversations");
+  assert.equal(isReasoningModel(DEFAULT_CHAT_MODEL), false, "the default must not bill a hidden trace");
+  assert.equal(isReasoningModel("sarvam-105b"), true);
 });
 
 test("token floor is higher for Indic scripts than Latin", () => {
