@@ -1,0 +1,141 @@
+/* ============================================================================
+   print.css — the offline pilgrim card (T-048 / BACKLOG A11)
+
+   Imported by src/app/site/[slug]/page.tsx and by nothing else. A temple page
+   is the one page here worth carrying to a place with no signal, so it prints
+   as a single sheet a pilgrim can fold into a pocket: what the place is called
+   (in both scripts, to show a local), where it is to four decimal places, when
+   it was built, to whom, how to reach it — and every citation with its URL
+   spelled out, because a printed link with no href is not a citation at all.
+
+   Screen rendering is untouched: every rule below sits inside @media print.
+   ========================================================================== */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 14mm 15mm;
+  }
+
+  /* ---- 1. drop everything that only makes sense on a screen --------------- */
+  /* Site chrome and navigation. */
+  .sitehead, .navdrawer, .navscrim, .navclose, .hamb, .footer,
+  /* Search and filter panels. */
+  .filters, .pagefilters, .ftoggle, .fwrap, .reset, .count,
+  /* Map chrome, in case this sheet is ever pulled onto the atlas route. */
+  .maptools, .maplegend, .tip, .tlsvgwrap, .showall, .play,
+  /* On-page affordances that a sheet of paper cannot honour. */
+  .actions, .related, .completeness, .emptystate, .skeltable, .skelcard {
+    display: none !important;
+  }
+
+  /* ---- 2. black on white, serif, no fills --------------------------------- */
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  body {
+    font: 10pt/1.45 Georgia, "Times New Roman", "Times", serif;
+  }
+  /* Inline era colours are set as style attributes on the page, so beating them
+     needs !important — a printed page must not depend on a colour cartridge. */
+  a, b, i, em, span, p, li, div, h1, h2, h3 {
+    color: #000 !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ---- 3. the identity block --------------------------------------------- */
+  /* Marcellus stays on the display type so the sheet is recognisably ours. */
+  .page h1 {
+    font: 400 20pt/1.15 var(--font-display), Georgia, serif;
+    letter-spacing: .02em;
+    margin: 0 0 2pt;
+  }
+  .eyebrow {
+    font-family: var(--font-mono), "Courier New", monospace;
+    font-size: 7.5pt;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    margin-bottom: 1pt;
+  }
+  /* The native-script name is the single most useful line on the sheet when the
+     signal is gone and the directions have to be asked for out loud. */
+  .native {
+    font-size: 12pt !important;
+    margin: 0 0 2pt;
+  }
+  .page p {
+    margin: 4pt 0;
+    max-width: none;
+    line-height: 1.45;
+  }
+  .page h2 {
+    font: 400 11.5pt var(--font-display), Georgia, serif;
+    letter-spacing: .03em;
+    margin: 9pt 0 2pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .mono {
+    font-family: var(--font-mono), "Courier New", monospace;
+    font-size: 8.5pt;
+  }
+
+  /* Deity / dynasty / style / circuits, as hairline pills — outlines, no fills. */
+  .chips { gap: 4pt; margin: 5pt 0; }
+  .chip {
+    border: .5pt solid #666;
+    border-radius: 999px;
+    padding: 1pt 5pt;
+    font-size: 8pt;
+  }
+  .chip-disputed { border-style: dashed; }
+
+  /* Dating panel: kept, because "when" is half of what the sheet is for. */
+  .dates {
+    border: .5pt solid #666;
+    margin: 5pt 0 7pt;
+    max-width: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .dates > div { padding: 4pt 7pt; }
+  .dates > div + div { border-left: .5pt solid #666; }
+  .dates .dl { font-size: 7pt; letter-spacing: .12em; }
+  .dates .dv { font-size: 9.5pt; }
+  .dates .ds { font-size: 8pt; }
+
+  /* ---- 4. citations, with their URLs spelled out -------------------------- */
+  a { text-decoration: none; }
+  .citations { margin: 4pt 0 0 12pt; }
+  .citations li {
+    font-size: 8.5pt !important;
+    line-height: 1.35;
+    margin: 2.5pt 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* The whole point of printing a source: the href, in full, next to its label.
+     Without this a printed citation is a label pointing at nothing. */
+  .citations a[href]::after {
+    content: " (" attr(href) ")";
+    font-family: var(--font-mono), "Courier New", monospace;
+    font-size: 7.5pt;
+    word-break: break-all;
+  }
+
+  /* ---- 5. hold it to one sheet ------------------------------------------- */
+  .disputed-note ul { margin-top: 3pt; }
+  .disputed-note li { font-size: 9pt; margin-bottom: 3pt; }
+  /* Nothing here is long enough to want a second page; if a record ever is,
+     break at a heading rather than mid-citation. */
+  h1, h2 { break-inside: avoid; page-break-inside: avoid; }
+  ul, ol { break-inside: auto; }
+}

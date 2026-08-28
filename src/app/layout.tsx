@@ -3,6 +3,7 @@ import { Marcellus, Hanken_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import { SITE_NAME, SITE_DESC } from "@/lib/sites";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site-url.mjs";
+import Assistant from "./Assistant";
 
 const display = Marcellus({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const ui = Hanken_Grotesk({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-ui" });
@@ -24,7 +25,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${ui.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      {/* The assistant is only mounted when it can actually answer. Rendering a
+          chat button that 503s on every question is worse than not offering one —
+          and the key is server-side only, so this check cannot leak it. */}
+      <body>{children}{process.env.SARVAM_API_KEY ? <Assistant /> : null}</body>
     </html>
   );
 }

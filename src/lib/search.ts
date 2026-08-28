@@ -31,7 +31,14 @@ export type Searchable = {
   readonly style: string;
   readonly circuits?: readonly string[];
   readonly tier?: string;
-  readonly significance: string;
+  /**
+   * Optional: the client index defers this column off the critical path, so a
+   * record legitimately has no significance until `loadSignificance()` resolves.
+   * `haystackOf` treats a missing value as an empty contribution, which means an
+   * early search matches on name/place/deity and silently gains full-text depth
+   * once the chunk lands.
+   */
+  readonly significance?: string;
   readonly built: readonly [number, number];
 };
 
@@ -242,7 +249,7 @@ const haystackOf = (site: Searchable): string => {
     site.dynasty,
     site.style,
     (site.circuits ?? []).join(" "),
-    site.significance,
+    site.significance ?? "",
   ].join(" "));
   haystacks.set(site, built);
   return built;

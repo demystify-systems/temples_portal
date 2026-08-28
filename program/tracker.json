@@ -425,12 +425,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "e2e:bottom sheet with snap points, 66/66 responsive green"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -446,12 +448,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:26 cluster tests; era colour + tradition shape preserved"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -466,12 +470,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:27 map-keyboard tests; tab in filtered order, Enter opens, Esc closes"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -486,12 +492,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "e2e:empty state + skeleton, no layout shift, verified 390/768/1440 both themes"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -506,12 +514,14 @@
       "deps": [
         "T-041"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:detail panel prev/next + share, in AtlasClient"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -527,12 +537,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:circuit mode with ordinal numbering; contested members badged"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -545,12 +557,14 @@
         "src/app/site/[slug]/completeness.tsx"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:13 completeness tests; absence-claim word ban enforced and proven non-vacuous"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -563,12 +577,14 @@
         "src/app/print.css"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "verified:print PDFs exactly 1 page for the 5 heaviest records; citation hrefs emitted"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -583,12 +599,14 @@
       "deps": [
         "T-040"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:timeline coach mark, localStorage guarded, reduced-motion respected"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -728,20 +746,18 @@
       "type": "data-derived",
       "title": "State and district boundary layers, India POV ONLY (Bhuvan / Survey of India). NEW file, never regenerate geo.json (CLAUDE.md rule 1)",
       "files": [
-        "data/boundaries/README.md",
-        "data/boundaries/states.json",
-        "data/boundaries/districts.json",
-        "src/lib/boundaries.ts",
-        "scripts/verify-boundaries.mjs"
+        "data/boundaries/README.md"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "needs_human",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
-      "last_error": null,
+      "evidence": [
+        "research:data/boundaries/README.md \u2014 NE has no admin_1 India-POV edition (403)"
+      ],
+      "last_error": "No verifiable India-POV state/district vector source without a Bhuvan account, an SoI dataset decision, or synthesising a boundary. Needs a human call (rule 1).",
       "commit": null
     },
     {
@@ -754,12 +770,14 @@
         "src/lib/flags.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:src/app/support/page.tsx behind a default-OFF flag; no payment code in either state"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -773,12 +791,14 @@
         "src/lib/ai/router.test.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:sarvam adapter 9 tests"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -794,12 +814,14 @@
       "deps": [
         "T-070"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:retrieve 21 tests; empty retrieval drives refusal"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -814,12 +836,14 @@
       "deps": [
         "T-071"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:src/app/api/chat/route.ts \u2014 rate limit, token ceiling, fails closed to 503"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -834,12 +858,14 @@
       "deps": [
         "T-072"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "file:src/app/Assistant.tsx \u2014 mounted only when SARVAM_API_KEY is present"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -855,12 +881,14 @@
       "deps": [
         "T-071"
       ],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "test:tools 25 tests; contactInfo returns absence as data, invents no phone"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -874,12 +902,14 @@
         "src/lib/search-index.test.ts"
       ],
       "deps": [],
-      "status": "pending",
+      "status": "done",
       "retries": 0,
       "max_retries": 3,
       "retry_after_iteration": 0,
       "status_iteration": 1,
-      "evidence": [],
+      "evidence": [
+        "measured:index 309->183.6 kB; page bundle 570->300 kB once consumed"
+      ],
       "last_error": null,
       "commit": null
     },
@@ -926,6 +956,29 @@
       ],
       "last_error": null,
       "commit": "29e1b73"
+    },
+    {
+      "id": "T-069",
+      "milestone": "M5",
+      "type": "code",
+      "title": "Lazy-load `significance` off the critical path. At 2,271 records /sites is 461 kB First Load JS again; significance is the bulk of the index and is read only once the visitor types (N4)",
+      "files": [
+        "src/app/SiteFilters.tsx",
+        "src/lib/search-index.ts",
+        "scripts/build-search-index.mjs",
+        "src/lib/search.ts"
+      ],
+      "deps": [],
+      "status": "done",
+      "retries": 0,
+      "max_retries": 3,
+      "retry_after_iteration": 0,
+      "status_iteration": 1,
+      "evidence": [
+        "measured:critical path 579.8 -> 133.4 kB gzipped (77%); /sites 461 -> 248 kB First Load JS"
+      ],
+      "last_error": null,
+      "commit": null
     }
   ]
 }

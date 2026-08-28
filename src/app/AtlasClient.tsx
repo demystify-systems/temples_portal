@@ -8,6 +8,15 @@ import {
   scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
   type Point, type Tap, type View,
 } from "@/lib/map-gestures";
+import {
+  cellSizeFor, clusterAriaLabel, clusterPoints, clusterRadius, donutArcs, pipOffsets,
+  shouldCluster, viewForBounds, type Cluster, type ClusterPoint,
+} from "@/lib/cluster";
+import {
+  CIRCUIT_ORDER_NOTE, CONTESTED_BADGE, badgeFor, circuitRoute, contestsCircuit,
+  domIdFor, focusOrder, keyIntent, resolveMove, targetFromDomId,
+  type CircuitRoute, type FocusTarget,
+} from "@/lib/map-keyboard";
 import SiteHeader from "./SiteHeader";
 
 const { W, H, LON0, LON1, LAT0, LAT1 } = GEO;
@@ -20,6 +29,24 @@ const PY = (lat: number) => ((YT - mercY(lat)) / (YT - YB)) * H;
 const TRADS: Record<string, string> = { Hindu: "circle", Buddhist: "square", Jain: "diamond", Sikh: "triangle" };
 const YEAR_MIN = -650, YEAR_MAX = 2030;
 const STATS = headerStats();
+const ERA_NAMES = ERAS.map((e) => e.name);
+/** Id lookup. `ringSpot` runs once per animation frame; a linear scan there is not free. */
+const SITE_BY_ID = new Map(SITES.map((s) => [s.id, s] as const));
+
+/** Below this width the detail rail becomes a bottom sheet (T-041). */
+const SHEET_QUERY = "(max-width: 720px)";
+/** Sheet snap points, as translateY percentages of the sheet's own height. */
+const SNAPS = { full: 6, half: 46, peek: 78 } as const;
+type SnapName = keyof typeof SNAPS;
+const SNAP_ORDER: readonly SnapName[] = ["full", "half", "peek"];
+/** Dragged past this, or flicked down faster than this, and the sheet closes. */
+const SHEET_DISMISS_PCT = 90;
+const SHEET_FLICK_PCT_PER_MS = 0.14;
+const COACH_KEY = "tirtha.coach.timeline.v1";
+/** Long enough for the opening timeline sweep to finish before the hint lands. */
+const COACH_DELAY_MS = 2200;
+/** Zoom quantisation for the cluster cache: ~7% steps. See `ensureLayout`. */
+const ZOOM_STEPS_PER_OCTAVE = 10;
 
 function eraColor(i: number) {
   if (typeof window === "undefined") return "#888";
@@ -31,6 +58,31 @@ function shapePath(kind: string, r: number) {
   if (kind === "triangle") { const a = r * 1.3; return `M0 ${-a}L${a * 0.9} ${a * 0.75}L${-a * 0.9} ${a * 0.75}Z`; }
   return "";
 }
+
+/** Everything that reaches innerHTML goes through this: site data is not markup. */
+const esc = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+/** Nearest sheet snap to a translateY percentage. Pure; ties resolve toward more content. */
+function nearestSnap(pct: number): SnapName {
+  let best: SnapName = "half", bestDelta = Infinity;
+  for (const name of SNAP_ORDER) {
+    const delta = Math.abs(SNAPS[name] - pct);
+    if (delta < bestDelta) { bestDelta = delta; best = name; }
+  }
+  return best;
+}
+
+/** localStorage throws outright in some privacy contexts, so every touch is guarded. */
+const readFlag = (key: string): string | null => {
+  try { return window.localStorage.getItem(key); } catch { return null; }
+};
+const writeFlag = (key: string, value: string) => {
+  try { window.localStorage.setItem(key, value); } catch { /* storage blocked; the hint simply returns */ }
+};
+
+const byDomId = (id: string) =>
+  (document.getElementById(id) as (Element & { focus?: (o?: FocusOptions) => void }) | null);
 
 type Filters = { q: string; country: string; trad: string; dyn: string; cir: string };
 const EMPTY: Filters = { q: "", country: "", trad: "", dyn: "", cir: "" };
@@ -53,9 +105,14 @@ export default function AtlasClient() {
   const [year, setYear] = useState(YEAR_MAX);
   const [sel, setSel] = useState<string | null>(null);
   const [index, setIndex] = useState(false);
+  const [circuit, setCircuit] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
   const [shownCount, setShownCount] = useState(SITES.length);
   const [fOpen, setFOpen] = useState(false);
+  const [isSheet, setIsSheet] = useState(false);
+  const [snap, setSnap] = useState<SnapName>("half");
+  const [dragging, setDragging] = useState(false);
+  const [coach, setCoach] = useState(false);
 
   // Opening the index always clears the site panel — they share the one side rail.
   const toggleIndex = useCallback(() => { setIndex((v) => !v); setSel(null); }, []);
@@ -63,14 +120,33 @@ export default function AtlasClient() {
   const mapRef = useRef<SVGSVGElement>(null);
   const worldRef = useRef<SVGGElement>(null);
   const ptsRef = useRef<SVGGElement>(null);
+  const clustersRef = useRef<SVGGElement>(null);
+  const badgeRef = useRef<SVGGElement>(null);
+  const ringRef = useRef<SVGGElement>(null);
   const tipRef = useRef<HTMLDivElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
+  const sideRef = useRef<HTMLElement>(null);
   const tlRef = useRef<SVGSVGElement>(null);
   const view = useRef<View>({ x: 0, y: 0, k: 1 });
   const marks = useRef(new Map<string, { g: SVGGElement; mark: SVGElement; halo: SVGCircleElement; kind: string }>());
   const yearRef = useRef(year); yearRef.current = year;
   const filtersRef = useRef(filters); filtersRef.current = filters;
   const selRef = useRef(sel); selRef.current = sel;
+  const circuitRef = useRef(circuit); circuitRef.current = circuit;
+
+  /** Cached cluster layout. Rebuilt only when the *answer* can have changed. */
+  const layout = useRef<{ key: string; clusters: Cluster[]; clustered: Set<string> }>(
+    { key: "", clusters: [], clustered: new Set() },
+  );
+  /** Ids of the marks that are actually drawn, in filtered order: the tab order. */
+  const markOrder = useRef<string[]>([]);
+  /** What the map's keyboard focus is on, and whether it earned a visible ring. */
+  const focused = useRef<FocusTarget | null>(null);
+  const ringVisible = useRef(false);
+  /** The mark to hand focus back to when the panel closes. */
+  const returnTo = useRef<string | null>(null);
+  /** Circuit badge elements by site id, so a badge can be hidden with its mark. */
+  const badgeEls = useRef(new Map<string, SVGTextElement>());
 
   const lists = useMemo(() => ({
     countries: [...new Set(SITES.map((s) => s.country))].sort(),
@@ -98,15 +174,126 @@ export default function AtlasClient() {
     frame.current = requestAnimationFrame(() => { frame.current = 0; applyView(); });
   };
 
+  // ---- clustering (T-042) -------------------------------------------------
+  // Circuit mode suspends the circuit *filter*: tracing dims the rest of the map
+  // rather than deleting it, so the route is read in its geographic context.
+  const activeFilters = (): Filters =>
+    circuitRef.current ? { ...filtersRef.current, cir: "" } : filtersRef.current;
+
+  /** Signature of everything that can change *which* sites are on the map. */
+  const dataKey = () => {
+    const f = filtersRef.current;
+    return [f.q, f.country, f.trad, f.dyn, f.cir, yearRef.current, circuitRef.current ?? ""].join("|");
+  };
+
+  /**
+   * Clusters are recomputed only when the answer can have changed: the visible
+   * set, or the zoom. Panning cannot change either — cells are keyed to content
+   * coordinates (see cluster.ts) — so a drag reuses the cached layout and the
+   * clusters simply travel inside the already-transformed world group.
+   *
+   * Zoom is quantised to ~7% steps so a pinch does not rebuild ~150 DOM nodes on
+   * every one of its sixty frames a second. Between steps a glyph is at most 7%
+   * off its ideal screen size, which nobody can see mid-pinch, and the gesture's
+   * final frame lands on a step and settles.
+   */
+  function ensureLayout(k: number) {
+    const bucket = Math.round(Math.log2(Math.max(k, 1e-6)) * ZOOM_STEPS_PER_OCTAVE);
+    const key = `${bucket}|${dataKey()}`;
+    if (layout.current.key === key) return layout.current;
+
+    const kq = 2 ** (bucket / ZOOM_STEPS_PER_OCTAVE);
+    const f = activeFilters();
+    const cir = circuitRef.current;
+    let clusters: Cluster[] = [];
+    let clustered = new Set<string>();
+    if (shouldCluster(kq)) {
+      const points: ClusterPoint[] = [];
+      for (const s of SITES) {
+        if (!visible(s, f, yearRef.current)) continue;
+        // A numbered stop must stay its own mark: a badge needs something to sit on.
+        if (cir && (s.circuits ?? []).includes(cir)) continue;
+        points.push({ id: s.id, x: PX(s.lng), y: PY(s.lat), era: eraOf(s), tradition: s.tradition });
+      }
+      const result = clusterPoints(points, cellSizeFor(kq));
+      clusters = [...result.clusters];
+      clustered = new Set(result.clustered);
+    }
+    layout.current = { key, clusters, clustered };
+    drawClusters(clusters, kq);
+    return layout.current;
+  }
+
+  /**
+   * A cluster is drawn as a ring of era-proportional arcs (colour keeps meaning
+   * era), a row of tradition pips — one per distinct tradition present, in the
+   * tradition's own shape (shape keeps meaning tradition) — and the exact count.
+   * A mixed cluster therefore shows several pips; it never borrows one shape and
+   * implies the group is homogeneous.
+   */
+  function drawClusters(clusters: readonly Cluster[], k: number) {
+    const g = clustersRef.current;
+    if (!g) return;
+    const active = document.activeElement;
+    const restore = active instanceof Element && g.contains(active) ? active.id : null;
+    if (!clusters.length) { g.innerHTML = ""; return; }
+
+    const base = Math.max(4.6 / k, 1.6);
+    const sw = 1.1 / k;
+    const pipR = Math.max(base * 0.4, 0.85);
+    let html = "";
+    for (const c of clusters) {
+      const r = clusterRadius(c.count, base);
+      const arcs = donutArcs(c.eras, r)
+        .map((a) => `<path fill="none" stroke="var(--e${a.era + 1})" stroke-width="${(sw * 2.8).toFixed(2)}" d="${a.d}"/>`)
+        .join("");
+      const pipY = (r + pipR * 2.1).toFixed(2);
+      const pips = pipOffsets(c.traditions.length, pipR)
+        .map((dx, i) => {
+          const kind = TRADS[c.traditions[i]] ?? "circle";
+          const shape = kind === "circle"
+            ? `<circle r="${pipR.toFixed(2)}"/>`
+            : `<path d="${shapePath(kind, pipR)}"/>`;
+          return `<g transform="translate(${dx} ${pipY})">${shape}</g>`;
+        })
+        .join("");
+      const digits = c.count < 10 ? 1 : c.count < 100 ? 2 : 3;
+      const fontSize = r * (digits === 1 ? 1 : digits === 2 ? 0.82 : 0.62);
+      html +=
+        `<g class="cl" id="${domIdFor({ kind: "cluster", id: c.key })}" tabindex="0" role="button"` +
+        ` data-cl="${esc(c.key)}" aria-label="${esc(clusterAriaLabel(c, ERA_NAMES))}"` +
+        ` transform="translate(${c.x.toFixed(1)} ${c.y.toFixed(1)})">` +
+        `<circle class="cdisc" r="${Math.max(r - sw * 1.4, 0.5).toFixed(2)}" stroke-width="${(sw * 0.9).toFixed(2)}"/>` +
+        arcs +
+        `<g class="cpips">${pips}</g>` +
+        `<text class="cct" font-size="${fontSize.toFixed(2)}" dy="${(fontSize * 0.35).toFixed(2)}">${c.count}</text>` +
+        `</g>`;
+    }
+    g.innerHTML = html;
+    if (restore) byDomId(restore)?.focus?.({ preventScroll: true });
+  }
+
   function renderPoints() {
     const k = view.current.k, r = Math.max(4.6 / k, 1.6), sw = 1.1 / k;
+    const { clustered } = ensureLayout(k);
+    const f = activeFilters();
+    const cir = circuitRef.current;
+    ptsRef.current?.classList.toggle("tracing", cir !== null);
+    clustersRef.current?.classList.toggle("tracing", cir !== null);
+
     let shown = 0;
+    const order: string[] = [];
     for (const s of SITES) {
       const m = marks.current.get(s.id); if (!m) continue;
-      const vis = visible(s, filtersRef.current, yearRef.current);
-      m.g.style.display = vis ? "" : "none";
-      if (!vis) continue;
-      shown++;
+      const vis = visible(s, f, yearRef.current);
+      if (vis) shown++;
+      const draw = vis && !clustered.has(s.id);
+      m.g.style.display = draw ? "" : "none";
+      // A numbered stop the year scrub has hidden must not leave its badge floating.
+      const badge = cir === null ? undefined : badgeEls.current.get(s.id);
+      if (badge) badge.style.display = draw ? "" : "none";
+      if (!draw) continue;
+      order.push(s.id);
       const builtYet = s.built[0] <= yearRef.current;
       const col = eraColor(eraOf(s));
       if (m.kind === "circle") (m.mark as SVGCircleElement).setAttribute("r", String(r));
@@ -118,9 +305,123 @@ export default function AtlasClient() {
       m.halo.setAttribute("stroke", col);
       m.halo.setAttribute("stroke-width", String(sw * 1.4));
       m.g.classList.toggle("sel", selRef.current === s.id);
+      // circuit mode: members carry the route ring, contested claims a dashed one
+      const member = cir !== null && (s.circuits ?? []).includes(cir);
+      const contested = member && contestsCircuit(s.disputedCircuits, cir as string);
+      m.g.classList.toggle("cm", member);
+      m.g.classList.toggle("cont", contested);
+      m.halo.setAttribute("stroke-dasharray", contested ? `${(sw * 3).toFixed(2)} ${(sw * 2.4).toFixed(2)}` : "");
     }
+    markOrder.current = order;
+
+    // circuit badges: built once per circuit at exact site coordinates, then only
+    // shifted and resized here, so a pan or a zoom never re-serialises them.
+    const badges = badgeRef.current;
+    if (badges) {
+      badges.setAttribute("transform", `translate(${(r * 1.55).toFixed(2)} ${(-r * 1.35).toFixed(2)})`);
+      badges.style.fontSize = `${(r * 2.1).toFixed(2)}px`;
+    }
+    positionFocusRing(r, sw);
     setShownCount(shown);
   }
+
+  // ---- keyboard navigation (T-043) ---------------------------------------
+  // The map is a list of focusable marks in DOM order, and DOM order is the
+  // filtered order, so plain Tab already walks the map correctly and not one
+  // positive tabindex is needed anywhere. Arrows, Home and End are the fast
+  // path over the same order; Enter opens; Escape closes.
+  const currentOrder = () => focusOrder(layout.current.clusters.map((c) => c.key), markOrder.current);
+
+  function ringSpot(target: FocusTarget | null, r: number): { x: number; y: number; r: number } | null {
+    if (!target) return null;
+    if (target.kind === "cluster") {
+      const c = layout.current.clusters.find((x) => x.key === target.id);
+      return c ? { x: c.x, y: c.y, r: clusterRadius(c.count, r) } : null;
+    }
+    const s = SITE_BY_ID.get(target.id);
+    return s ? { x: PX(s.lng), y: PY(s.lat), r } : null;
+  }
+
+  /**
+   * One shared focus ring rather than a hidden ring inside each of 1,126 marks.
+   * Two concentric circles at the same radius — a wide `--bg` band under a gold
+   * one — so the ring reads against land, water and both colour schemes without
+   * depending on a filter or a blend mode.
+   */
+  function positionFocusRing(r: number, sw: number) {
+    const g = ringRef.current;
+    if (!g) return;
+    const spot = ringVisible.current ? ringSpot(focused.current, r) : null;
+    if (!spot) { g.style.display = "none"; return; }
+    g.style.display = "";
+    g.setAttribute("transform", `translate(${spot.x.toFixed(1)} ${spot.y.toFixed(1)})`);
+    const radius = (spot.r * 2.7 + sw).toFixed(2);
+    const under = g.firstElementChild, over = g.lastElementChild;
+    under?.setAttribute("r", radius); under?.setAttribute("stroke-width", (sw * 6).toFixed(2));
+    over?.setAttribute("r", radius); over?.setAttribute("stroke-width", (sw * 2.6).toFixed(2));
+  }
+
+  function focusTarget(target: FocusTarget) {
+    const el = byDomId(domIdFor(target));
+    if (!el) return;
+    const spot = ringSpot(target, Math.max(4.6 / view.current.k, 1.6));
+    if (spot) ensureInView(spot.x, spot.y);
+    el.focus?.({ preventScroll: true });
+  }
+
+  /** Recentre only when the target is off the stage: arrow keys should not lurch. */
+  function ensureInView(x: number, y: number) {
+    const { k } = view.current;
+    const sx = x * k + view.current.x, sy = y * k + view.current.y;
+    const pad = 48;
+    if (sx > pad && sx < W - pad && sy > pad && sy < H - pad) return;
+    setView({ k, x: W / 2 - x * k, y: H / 2 - y * k });
+  }
+
+  function activate(target: FocusTarget) {
+    if (target.kind === "mark") { returnTo.current = domIdFor(target); select(target.id, false, true); return; }
+    const c = layout.current.clusters.find((x) => x.key === target.id);
+    if (!c) return;
+    setView(viewForBounds(c.bounds, EXTENT));
+    // The cluster is about to dissolve; hand focus to the member it opened onto,
+    // and fall back to the map itself so focus is never dropped on the body.
+    const first = c.ids[0];
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const el = byDomId(domIdFor({ kind: "mark", id: first }));
+      (el ?? mapRef.current)?.focus?.({ preventScroll: true });
+    }));
+  }
+
+  /** Escape ladder: site, then index or circuit list, then circuit mode. */
+  const dismiss = useCallback(() => {
+    if (selRef.current) {
+      select(null, false);
+      const back = returnTo.current;
+      if (back) byDomId(back)?.focus?.({ preventScroll: true });
+      return true;
+    }
+    if (index) { setIndex(false); return true; }
+    if (circuitRef.current) { setCircuit(null); return true; }
+    return false;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
+
+  const onMapKeyDown = (e: React.KeyboardEvent) => {
+    const intent = keyIntent(e);
+    if (!intent) return;
+    if (intent === "dismiss") { if (dismiss()) e.preventDefault(); return; }
+    const target = e.target instanceof Element ? targetFromDomId(e.target.id) : null;
+    if (intent === "activate") {
+      if (!target) return;
+      e.preventDefault();
+      activate(target);
+      return;
+    }
+    const next = resolveMove(currentOrder(), target, intent);
+    if (!next) return;
+    e.preventDefault();
+    focusTarget(next);
+  };
 
   // build points once
   useEffect(() => {
@@ -129,13 +430,19 @@ export default function AtlasClient() {
     for (const s of SITES) {
       const g = document.createElementNS(NS, "g");
       g.setAttribute("class", "pt");
+      // Focusable, named, and in filtered DOM order: the whole of T-043's
+      // traversal contract lives in these three attributes.
+      g.setAttribute("id", domIdFor({ kind: "mark", id: s.id }));
+      g.setAttribute("tabindex", "0");
+      g.setAttribute("role", "button");
+      g.setAttribute("aria-label", `${s.name} — ${s.place}, ${s.country}. ${s.builtDisplay}. ${s.tradition}.`);
       g.setAttribute("transform", `translate(${PX(s.lng).toFixed(1)} ${PY(s.lat).toFixed(1)})`);
       const halo = document.createElementNS(NS, "circle");
       halo.setAttribute("class", "halo"); halo.setAttribute("fill", "none");
       const kind = TRADS[s.tradition] ?? "circle";
       const mark = document.createElementNS(NS, kind === "circle" ? "circle" : "path");
       g.appendChild(halo); g.appendChild(mark);
-      g.addEventListener("click", (e) => { e.stopPropagation(); select(s.id, false); });
+      g.addEventListener("click", (e) => { e.stopPropagation(); returnTo.current = g.id; select(s.id, false); });
       g.addEventListener("mouseenter", (e) => showTip(s, e as MouseEvent));
       g.addEventListener("mousemove", (e) => moveTip(e as MouseEvent));
       g.addEventListener("mouseleave", hideTip);
@@ -156,7 +463,7 @@ export default function AtlasClient() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, year, sel]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- gestures: pan, pinch zoom, double tap, wheel ----------------------
   // One Pointer Events pipeline drives all of them. Every pointer that is down
@@ -217,7 +524,7 @@ export default function AtlasClient() {
       try { map.setPointerCapture(e.pointerId); } catch { /* pointer already gone; the Map still tracks it */ }
       // A second finger cancels any tap in flight: this is a pinch, not a tap.
       tap = pointers.size === 1
-        ? { id: e.pointerId, onBackground: !(e.target instanceof Element && e.target.closest(".pt")) }
+        ? { id: e.pointerId, onBackground: !(e.target instanceof Element && e.target.closest(".pt,.cl")) }
         : null;
       if (pointers.size > 1) { lastTap = null; hideTip(); }
       resync();
@@ -285,13 +592,69 @@ export default function AtlasClient() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Clicking a cluster zooms to its bounds; hovering one explains its mix.
+  useEffect(() => {
+    const g = clustersRef.current!;
+    const clusterOf = (target: EventTarget | null) => {
+      const el = target instanceof Element ? target.closest(".cl") : null;
+      const key = el?.getAttribute("data-cl");
+      return key ? layout.current.clusters.find((c) => c.key === key) ?? null : null;
+    };
+    const onClick = (e: MouseEvent) => {
+      const c = clusterOf(e.target);
+      if (!c) return;
+      e.stopPropagation();
+      hideTip();
+      setView(viewForBounds(c.bounds, EXTENT));
+    };
+    const onOver = (e: MouseEvent) => { const c = clusterOf(e.target); if (c) showClusterTip(c, e); };
+    const onMove = (e: MouseEvent) => { if (clusterOf(e.target)) moveTip(e); };
+    g.addEventListener("click", onClick);
+    g.addEventListener("mouseover", onOver);
+    g.addEventListener("mousemove", onMove);
+    g.addEventListener("mouseout", hideTip);
+    return () => {
+      g.removeEventListener("click", onClick);
+      g.removeEventListener("mouseover", onOver);
+      g.removeEventListener("mousemove", onMove);
+      g.removeEventListener("mouseout", hideTip);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Track which mark or cluster holds focus, and whether it was reached by
+  // keyboard: a mouse click must not paint a focus ring on the map.
+  useEffect(() => {
+    const wrap = wrapRef.current!;
+    const repaint = () => {
+      const k = view.current.k;
+      positionFocusRing(Math.max(4.6 / k, 1.6), 1.1 / k);
+    };
+    const onIn = (e: FocusEvent) => {
+      const el = e.target instanceof Element ? e.target : null;
+      const target = targetFromDomId(el?.id);
+      focused.current = target;
+      let keyboard = target !== null;
+      try { keyboard = keyboard && !!el?.matches(":focus-visible"); } catch { /* older engine: assume keyboard */ }
+      ringVisible.current = keyboard;
+      if (target && keyboard && el) showTipFor(target, el);
+      repaint();
+    };
+    const onOut = () => { focused.current = null; ringVisible.current = false; hideTip(); repaint(); };
+    wrap.addEventListener("focusin", onIn);
+    wrap.addEventListener("focusout", onOut);
+    return () => { wrap.removeEventListener("focusin", onIn); wrap.removeEventListener("focusout", onOut); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const zoomCenter = (f: number) => (mapRef.current as unknown as { _zoomAt: (x: number, y: number, f: number) => void })._zoomAt(W / 2, H / 2, f);
   const resetView = () => setView({ x: 0, y: 0, k: 1 });
   const flyTo = (s: Site) => { const k = Math.max(view.current.k, 4.5); setView({ k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }); };
 
-  function select(id: string | null, fly = true) {
+  function select(id: string | null, fly = true, focusPanel = false) {
     setSel(id); setIndex(false);
-    if (id) { const s = SITES.find((x) => x.id === id)!; if (fly) flyTo(s); }
+    if (id) { const s = SITE_BY_ID.get(id); if (s && fly) flyTo(s); }
+    if (focusPanel) requestAnimationFrame(() => sideRef.current?.focus({ preventScroll: true }));
     // shareable deep link: /#site=<id>
     try { history.replaceState(null, "", id ? `#site=${id}` : window.location.pathname); } catch { /* no-op */ }
   }
@@ -299,24 +662,163 @@ export default function AtlasClient() {
   // open a site from the URL hash on load (e.g. /#site=angkor-wat)
   useEffect(() => {
     const m = window.location.hash.match(/^#site=([a-z0-9-]+)$/);
-    if (m && SITES.some((s) => s.id === m[1])) {
+    if (m && SITE_BY_ID.has(m[1])) {
       const t = setTimeout(() => select(m[1], true), 600);
       return () => clearTimeout(t);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // ---- circuit mode (T-046) ----------------------------------------------
+  const route: CircuitRoute | null = useMemo(() => {
+    if (!circuit) return null;
+    return circuitRoute(
+      SITES.filter((s) => (s.circuits ?? []).includes(circuit)).map((s) => ({
+        id: s.id, name: s.name, lat: s.lat, lng: s.lng,
+        contested: contestsCircuit(s.disputedCircuits, circuit),
+      })),
+    );
+  }, [circuit]);
+
+  useEffect(() => {
+    const g = badgeRef.current;
+    if (!g) return;
+    if (!route) { g.innerHTML = ""; badgeEls.current = new Map(); return; }
+    g.innerHTML = [...route.stops, ...route.contested]
+      .map((stop) => {
+        const s = SITE_BY_ID.get(stop.id);
+        if (!s) return "";
+        const cls = stop.ordinal === null ? "cbadge cont" : "cbadge";
+        return `<text class="${cls}" data-site="${esc(stop.id)}" x="${PX(s.lng).toFixed(1)}" y="${PY(s.lat).toFixed(1)}">${esc(badgeFor(stop))}</text>`;
+      })
+      .join("");
+    const els = new Map<string, SVGTextElement>();
+    for (const el of Array.from(g.querySelectorAll<SVGTextElement>("text[data-site]"))) {
+      const id = el.getAttribute("data-site");
+      if (id) els.set(id, el);
+    }
+    badgeEls.current = els;
+    renderPoints();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route]);
+
+  const toggleTrace = () => {
+    if (circuit) { setCircuit(null); return; }
+    if (!filters.cir) return;
+    setSel(null); setIndex(false); setCircuit(filters.cir);
+  };
+
+  // ---- bottom sheet (T-041) ----------------------------------------------
+  useEffect(() => {
+    const mq = matchMedia(SHEET_QUERY);
+    const sync = () => setIsSheet(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  const panelOpen = sel !== null || index || circuit !== null;
+  const wasOpen = useRef(false);
+  useEffect(() => {
+    if (panelOpen && !wasOpen.current) setSnap("half");  // a fresh open starts half way
+    wasOpen.current = panelOpen;
+  }, [panelOpen]);
+
+  const closePanel = useCallback(() => {
+    setSel(null); setIndex(false); setCircuit(null);
+    try { history.replaceState(null, "", window.location.pathname); } catch { /* no-op */ }
+  }, []);
+
+  /**
+   * Sheet drag. Deliberately bound to the grab bar alone and not to the sheet
+   * body: the map captures its pointers on the `svg` itself, so a gesture that
+   * begins on this element can never reach the map's pipeline, and the sheet's
+   * own content keeps native scrolling. The bar carries `touch-action:none` so
+   * the browser does not claim the drag first.
+   */
+  const drag = useRef<
+    { id: number; y0: number; base: number; height: number; last: number; at: number; velocity: number }
+    | null
+  >(null);
+
+  const onGrabDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!isSheet || !panelOpen) return;
+    const el = sideRef.current;
+    if (!el) return;
+    e.currentTarget.setPointerCapture(e.pointerId);
+    drag.current = {
+      id: e.pointerId, y0: e.clientY, base: SNAPS[snap],
+      height: el.offsetHeight || 1, last: SNAPS[snap], at: e.timeStamp, velocity: 0,
+    };
+    setDragging(true);
+  };
+
+  const onGrabMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    if (!d || d.id !== e.pointerId || !sideRef.current) return;
+    const pct = Math.min(100, Math.max(SNAPS.full, d.base + ((e.clientY - d.y0) / d.height) * 100));
+    d.velocity = (pct - d.last) / Math.max(e.timeStamp - d.at, 1);
+    d.last = pct; d.at = e.timeStamp;
+    sideRef.current.style.transform = `translateY(${pct}%)`;
+  };
+
+  const onGrabUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    if (!d || d.id !== e.pointerId) return;
+    drag.current = null;
+    setDragging(false);
+    if (sideRef.current) sideRef.current.style.transform = "";
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
+    if (d.last > SHEET_DISMISS_PCT || d.velocity > SHEET_FLICK_PCT_PER_MS) { closePanel(); return; }
+    setSnap(nearestSnap(d.last));
+  };
+
+  const onGrabKeyDown = (e: React.KeyboardEvent) => {
+    const at = SNAP_ORDER.indexOf(snap);
+    if (e.key === "ArrowUp" && at > 0) { e.preventDefault(); setSnap(SNAP_ORDER[at - 1]); }
+    else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      if (at < SNAP_ORDER.length - 1) setSnap(SNAP_ORDER[at + 1]); else closePanel();
+    }
+  };
+
+  // ---- coach mark (T-049) -------------------------------------------------
+  useEffect(() => {
+    if (readFlag(COACH_KEY) === "seen") return;
+    const t = setTimeout(() => setCoach(true), COACH_DELAY_MS);
+    return () => clearTimeout(t);
+  }, []);
+  const dismissCoach = useCallback(() => { setCoach(false); writeFlag(COACH_KEY, "seen"); }, []);
+
   // tooltip
   function showTip(s: Site, e: MouseEvent) {
     const tip = tipRef.current!;
-    tip.innerHTML = `<div class="tn">${s.name}</div><div class="tm">${s.place} · ${s.country}</div><div class="ty" style="color:${eraColor(eraOf(s))}">${s.builtDisplay}</div>`;
+    tip.innerHTML = `<div class="tn">${esc(s.name)}</div><div class="tm">${esc(s.place)} · ${esc(s.country)}</div><div class="ty" style="color:${eraColor(eraOf(s))}">${esc(s.builtDisplay)}</div>`;
     tip.style.opacity = "1"; moveTip(e);
+  }
+  function showClusterTip(c: Cluster, e: MouseEvent) {
+    const tip = tipRef.current!;
+    const eras = c.eras.map((x) => `${x.count} ${ERA_NAMES[x.era] ?? ""}`).join(" · ");
+    tip.innerHTML = `<div class="tn">${c.count} sites</div><div class="tm">${esc(c.traditions.join(" · "))}</div><div class="ty">${esc(eras)}</div>`;
+    tip.style.opacity = "1"; moveTip(e);
+  }
+  /** Keyboard focus gets the same tooltip, anchored on the element, not a cursor. */
+  function showTipFor(target: FocusTarget, el: Element) {
+    const box = el.getBoundingClientRect();
+    const at = { clientX: box.left + box.width / 2, clientY: box.top + box.height / 2 } as MouseEvent;
+    if (target.kind === "cluster") {
+      const c = layout.current.clusters.find((x) => x.key === target.id);
+      if (c) showClusterTip(c, at);
+      return;
+    }
+    const s = SITE_BY_ID.get(target.id);
+    if (s) showTip(s, at);
   }
   function moveTip(e: MouseEvent) {
     const tip = tipRef.current!, r = wrapRef.current!.getBoundingClientRect();
     let x = e.clientX - r.left + 14, y = e.clientY - r.top + 10;
     if (x > r.width - 250) x -= 270; if (y > r.height - 90) y -= 80;
-    tip.style.left = `${x}px`; tip.style.top = `${y}px`;
+    tip.style.left = `${Math.max(4, x)}px`; tip.style.top = `${Math.max(4, y)}px`;
   }
   function hideTip() { if (tipRef.current) tipRef.current.style.opacity = "0"; }
 
@@ -369,12 +871,15 @@ export default function AtlasClient() {
     return () => clearInterval(iv);
   }, [playing]);
 
-  const selected = sel ? SITES.find((s) => s.id === sel)! : null;
+  const selected = sel ? SITE_BY_ID.get(sel) ?? null : null;
   const visList = SITES.filter((s) => visible(s, filters, year));
   const shapes: Record<string, string> = {
     circle: '<circle cx="5.5" cy="5.5" r="4.6"/>', square: '<rect x="1.4" y="1.4" width="8.2" height="8.2"/>',
     diamond: '<path d="M5.5 0L11 5.5L5.5 11L0 5.5Z"/>', triangle: '<path d="M5.5 0.4L10.8 10.2H0.2Z"/>',
   };
+  const disputesFor = (s: Site, c: string) => (s.disputedCircuits ?? []).filter((d) => d.circuit === c);
+  const sideClass = ["side", panelOpen ? "open" : "", isSheet ? `sheet snap-${snap}` : "", dragging ? "dragging" : ""]
+    .filter(Boolean).join(" ");
 
   return (
     <>
@@ -399,18 +904,34 @@ export default function AtlasClient() {
           <select aria-label="Circuit" value={filters.cir} onChange={(e) => setFilters({ ...filters, cir: e.target.value })}>
             <option value="">All circuits</option>{lists.cirs.map((c) => <option key={c}>{c}</option>)}
           </select>
-          <button className="reset" onClick={() => setFilters(EMPTY)}>reset</button>
+          <button className={`tracebtn ${circuit ? "on" : ""}`} onClick={toggleTrace} aria-pressed={circuit !== null}
+            disabled={!circuit && !filters.cir}
+            title={circuit ? "Leave circuit mode" : "Number and highlight the selected circuit on the map"}>
+            {circuit ? "Exit circuit" : "Trace circuit"}
+          </button>
+          <button className="reset" onClick={() => { setFilters(EMPTY); setCircuit(null); }}>reset</button>
         </div>
         <span className="count"><b>{shownCount}</b> of {SITES.length} sites shown</span>
       </div>
 
       <div className="main">
-        <div className="mapwrap" ref={wrapRef}>
-          <svg ref={mapRef} className="map" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img"
-            aria-label="Map of South and Southeast Asia with sacred sites (boundaries as per Government of India)">
+        <div className="mapwrap" ref={wrapRef} onKeyDown={onMapKeyDown}>
+          {/* role="group", not role="img": role="img" makes the whole subtree
+              presentational, which would hide every focusable mark from assistive
+              technology and undo T-043. The boundary statement stays the label. */}
+          <svg ref={mapRef} className="map" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="group"
+            tabIndex={-1}
+            aria-label="Map of South and Southeast Asia with sacred sites (boundaries as per Government of India). Use Tab or the arrow keys to move between marks, Enter to open one, Escape to close.">
             <g ref={worldRef}>
               <g dangerouslySetInnerHTML={{ __html: GEO.svgInner }} />
-              <g ref={ptsRef} />
+              {/* clusters precede marks so the tab order meets the aggregate first */}
+              <g ref={clustersRef} className="clusters" />
+              <g ref={ptsRef} className="pts" />
+              <g ref={badgeRef} className="cbadges" aria-hidden="true" />
+              <g ref={ringRef} className="focusring" aria-hidden="true" style={{ display: "none" }}>
+                <circle className="fr-u" fill="none" />
+                <circle className="fr" fill="none" />
+              </g>
             </g>
           </svg>
           <div className="maptools">
@@ -425,10 +946,31 @@ export default function AtlasClient() {
           <div className="tip" ref={tipRef} role="status" />
         </div>
 
-        <aside className={`side ${sel || index ? "open" : ""}`}>
+        <aside
+          ref={sideRef}
+          className={sideClass}
+          tabIndex={-1}
+          aria-label={selected ? selected.name : circuit ? `${circuit} circuit` : index ? "Gazetteer index" : "About the atlas"}
+          onKeyDown={(e) => { if (keyIntent(e) === "dismiss" && dismiss()) e.preventDefault(); }}
+        >
+          {/* One sticky header holds both, so the sheet's controls stay put while
+              its content scrolls. Neither exists above the sheet breakpoint. */}
+          <div className="sheethead">
+            <div className="sheetgrab" role="slider" tabIndex={isSheet && panelOpen ? 0 : -1}
+              aria-label="Panel height" aria-valuemin={0} aria-valuemax={SNAP_ORDER.length - 1}
+              aria-valuenow={SNAP_ORDER.length - 1 - SNAP_ORDER.indexOf(snap)} aria-valuetext={snap}
+              onPointerDown={onGrabDown} onPointerMove={onGrabMove} onPointerUp={onGrabUp}
+              onPointerCancel={onGrabUp} onKeyDown={onGrabKeyDown}>
+              <span className="grabline" />
+            </div>
+            <button className="sheetclose" onClick={closePanel} aria-label="Close panel">×</button>
+          </div>
+
           {selected ? (
             <div className="pan">
-              <span className="crumb" onClick={() => select(null, false)}>← all sites</span>
+              <button className="crumb" onClick={() => select(null, false)}>
+                ← {circuit ? `back to ${circuit}` : "all sites"}
+              </button>
               <div className="eyebrow" style={{ color: eraColor(eraOf(selected)) }}>{ERAS[eraOf(selected)].name} · {selected.country}</div>
               <h2 className="site">{selected.name}</h2>
               {selected.native && <div className="native">{selected.native}</div>}
@@ -457,6 +999,63 @@ export default function AtlasClient() {
                 <div className="vnote">coords: {selected.verified ?? "curated"} · retrieved 2026-08-26</div>
               </div>
             </div>
+          ) : circuit && route ? (
+            <div className="pan cir">
+              <button className="crumb" onClick={() => setCircuit(null)}>← leave circuit mode</button>
+              <div className="eyebrow">Circuit</div>
+              <h2 className="site" style={{ fontSize: 21 }}>{circuit}</h2>
+              <p className="lead">
+                {route.stops.length} numbered {route.stops.length === 1 ? "stop" : "stops"}
+                {route.contested.length > 0 ? ` · ${route.contested.length} contested ${route.contested.length === 1 ? "claim" : "claims"}` : ""}
+              </p>
+              <p className="ordernote">{CIRCUIT_ORDER_NOTE}</p>
+              <ol className="cirlist">
+                {route.stops.map((stop) => {
+                  const s = SITE_BY_ID.get(stop.id);
+                  if (!s) return null;
+                  return (
+                    <li key={stop.id}>
+                      <button className="cirrow" onClick={() => { returnTo.current = domIdFor({ kind: "mark", id: stop.id }); select(stop.id); }}>
+                        <span className="ord" style={{ borderColor: eraColor(eraOf(s)) }}>{stop.ordinal}</span>
+                        <span className="nm">{s.name}</span>
+                        <span className="yr">{s.place}</span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ol>
+              {route.contested.length > 0 && (
+                <div className="sect">
+                  <h3>Contested claims</h3>
+                  <p className="practical">
+                    These records claim {circuit} and carry their own cited note contesting the claim. They are drawn
+                    with {CONTESTED_BADGE} and a dashed ring, and are deliberately left unnumbered: numbering one
+                    would assert a slot that rival shrines dispute.
+                  </p>
+                  <ol className="cirlist contested">
+                    {route.contested.map((stop) => {
+                      const s = SITE_BY_ID.get(stop.id);
+                      if (!s) return null;
+                      return (
+                        <li key={stop.id}>
+                          <button className="cirrow" onClick={() => { returnTo.current = domIdFor({ kind: "mark", id: stop.id }); select(stop.id); }}>
+                            <span className="ord cont">{CONTESTED_BADGE}</span>
+                            <span className="nm">{s.name}</span>
+                            <span className="yr">{s.place}</span>
+                          </button>
+                          {disputesFor(s, circuit).map((d) => (
+                            <p className="disputenote" key={d.note}>
+                              {d.note}{" "}
+                              {d.source && <a href={d.source} target="_blank" rel="noopener noreferrer">source ↗</a>}
+                            </p>
+                          ))}
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+              )}
+            </div>
           ) : index ? (
             <div className="pan ix">
               <div className="eyebrow">Index</div>
@@ -465,11 +1064,12 @@ export default function AtlasClient() {
                 <div key={c}>
                   <h4>{c} · {visList.filter((s) => s.country === c).length}</h4>
                   {visList.filter((s) => s.country === c).sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
-                    <div className="ixrow" key={s.id} onClick={() => select(s.id)}>
+                    <button className="ixrow" key={s.id}
+                      onClick={() => { returnTo.current = domIdFor({ kind: "mark", id: s.id }); select(s.id); }}>
                       <span className="d" style={{ background: eraColor(eraOf(s)) }} />
                       <span className="nm">{s.name}</span>
                       <span className="yr">{fmtYear(s.built[0])}</span>
-                    </div>
+                    </button>
                   ))}
                 </div>
               ))}
@@ -502,6 +1102,8 @@ export default function AtlasClient() {
                   ))}
                 </div>
               </div>
+              <div className="sect"><h3>Clusters</h3><p style={{ fontSize: 12.5, color: "var(--ink2)" }}>Where sites crowd, they gather into one ring carrying the exact count. The ring is split by era colour in proportion, and one small pip sits below it for <em>every</em> tradition inside, so a mixed group never borrows a single shape. Click a ring, or press Enter on it, to zoom in.</p></div>
+              <div className="sect"><h3>Keyboard</h3><p style={{ fontSize: 12.5, color: "var(--ink2)" }}>Tab walks the marks in the order they are filtered; arrow keys move faster, Home and End jump to the ends, Enter opens an entry and Escape closes it.</p></div>
               <div className="sect"><h3>While time-scrubbing</h3><p style={{ fontSize: 12.5, color: "var(--ink2)" }}>A hollow mark = site already sacred, today&apos;s structure not yet raised. It fills the year construction begins.</p></div>
             </div>
           )}
@@ -509,13 +1111,22 @@ export default function AtlasClient() {
       </div>
 
       <div className="timeline">
+        <div className="coachanchor">
+          {coach && (
+            <div className="coach" role="note" aria-label="Tip">
+              <b>Try the time scrubber</b>
+              <p>Drag the slider, or press play, to watch every site appear in the century it was built.</p>
+              <button className="coachok" onClick={dismissCoach}>Got it</button>
+            </div>
+          )}
+        </div>
         <div className="tl-top">
-          <button className="play" aria-label={playing ? "Pause timeline" : "Play timeline"} onClick={() => setPlaying(!playing)}>{playing ? "⏸" : "▶"}</button>
+          <button className="play" aria-label={playing ? "Pause timeline" : "Play timeline"} onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
           <div className="yearbox"><small>YEAR</small><span>{fmtYear(year === YEAR_MAX ? 2026 : year)}</span></div>
           <div className="tlsvgwrap">
             <svg ref={tlRef} aria-hidden="true" />
             <input type="range" min={YEAR_MIN} max={YEAR_MAX} step={5} value={Math.min(year, YEAR_MAX)} aria-label="Timeline year"
-              onChange={(e) => { setPlaying(false); setYear(+e.target.value); }} />
+              onChange={(e) => { dismissCoach(); setPlaying(false); setYear(+e.target.value); }} />
           </div>
           <button className="showall" onClick={() => { setPlaying(false); setYear(YEAR_MAX); }}>show all eras</button>
         </div>
@@ -523,4 +1134,3 @@ export default function AtlasClient() {
     </>
   );
 }
-

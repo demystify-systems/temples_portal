@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "npm run validate && next build",
+    "build:index": "node scripts/build-search-index.mjs",
+    "prebuild": "npm run build:index",
+    "predev": "npm run build:index",
+    "pretest": "npm run build:index",
     "start": "next start",
     "validate": "node scripts/check-site-url.mjs && node scripts/validate-data.mjs",
     "drift:wikidata": "node scripts/wikidata-drift.mjs",
