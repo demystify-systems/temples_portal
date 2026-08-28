@@ -215,18 +215,41 @@ h2.site{font:400 24px/1.2 var(--font-display),serif;margin:5px 0 2px;text-wrap:b
 .ixrow .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ixrow .yr{margin-left:auto;font-family:var(--font-mono),monospace;font-size:10.5px;color:var(--mut);flex:none}
 
-.timeline{border-top:1px solid var(--line);padding:8px 18px 12px;background:var(--panel)}
+/* flex:none is load-bearing. `.app` is a 100dvh flex column and `.main` is
+   flex:1, so without it the timeline is a flex:0 1 auto item that SHRINKS when
+   the viewport is short — the control slid under the fold and the page looked
+   like it had no timeline at all. It is the one row that must never give up
+   height, so it declares that rather than relying on its content to hold it. */
+.timeline{flex:none;border-top:1px solid var(--line);padding:8px 18px 12px;background:var(--panel)}
 .tl-top{display:flex;align-items:center;gap:14px}
 .play{width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-size:13px;flex:none;display:flex;align-items:center;justify-content:center}
 .play:hover{background:var(--gold);color:var(--bg)}
-.yearbox{font-family:var(--font-mono),monospace;font-size:20px;color:var(--ink);width:118px;flex:none;font-weight:500}
+.yearbox{font-family:var(--font-mono),monospace;font-size:16px;color:var(--ink);width:170px;flex:none;font-weight:500;font-variant-numeric:tabular-nums}
 .yearbox small{display:block;font-size:9.5px;letter-spacing:.16em;color:var(--mut);font-weight:400}
 .tlsvgwrap{flex:1;min-width:0;position:relative}
 .tlsvgwrap svg{width:100%;height:64px;display:block}
-.tlsvgwrap input[type=range]{position:absolute;left:0;right:0;bottom:14px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:transparent;height:22px;cursor:pointer}
-.tlsvgwrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
-.tlsvgwrap input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
+/* Two real <input type=range> stacked on one track. The track itself is
+   click-through so the pair does not fight over a drag; only the thumbs take
+   pointer events, so whichever handle you grab is the one that moves. Using two
+   native sliders rather than a custom widget means each is keyboard-operable
+   and screen-reader-announced without any of it being reimplemented. */
+.tlsvgwrap input[type=range]{position:absolute;left:0;right:0;bottom:14px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:transparent;height:22px;pointer-events:none}
+.tlsvgwrap input[type=range]::-webkit-slider-thumb{pointer-events:auto;cursor:grab;-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
+.tlsvgwrap input[type=range]::-moz-range-thumb{pointer-events:auto;cursor:grab;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
 .tlsvgwrap input[type=range]::-webkit-slider-runnable-track{height:0}
+/* The lower handle is hollow, so the two are told apart at a glance and by
+   anyone who cannot rely on position alone to read which is which. */
+.tlsvgwrap input.tlfrom::-webkit-slider-thumb{background:var(--bg);border-color:var(--gold)}
+.tlsvgwrap input.tlfrom::-moz-range-thumb{background:var(--bg);border-color:var(--gold)}
+.tlsvgwrap input[type=range]:focus-visible::-webkit-slider-thumb{outline:2px solid var(--gold);outline-offset:2px}
+
+/* Era shortcuts: the fast path to "show me one period", which is the whole
+   reason the range exists. Each carries its own era colour on the border, the
+   same encoding the map and the legend use. */
+.tleras{display:flex;gap:4px;flex:none;flex-wrap:wrap;max-width:330px}
+.tlera{font-size:10.5px;padding:3px 8px;border:1px solid var(--line2);border-left-width:3px;border-radius:7px;color:var(--ink2);white-space:nowrap;background:var(--panel)}
+.tlera:hover{color:var(--gold)}
+.tlera.on{color:var(--ink);background:var(--panel2);border-color:var(--gold);font-weight:600}
 .showall{font-size:11px;color:var(--mut);text-decoration:underline;text-underline-offset:3px;flex:none}
 .showall:hover{color:var(--gold)}
 

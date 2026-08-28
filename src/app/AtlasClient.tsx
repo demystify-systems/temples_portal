@@ -105,8 +105,21 @@ const byDomId = (id: string) =>
 type Filters = { q: string; country: string; trad: string; dyn: string; cir: string };
 const EMPTY: Filters = { q: "", country: "", trad: "", dyn: "", cir: "" };
 
-function visible(s: MapSite, f: Filters, year: number) {
-  if (appearYear(s) > year) return false;
+function visible(s: MapSite, f: Filters, from: number, to: number) {
+  // A RANGE, not a ceiling. The single-handle version could only ever answer
+  // "what existed by year N", so isolating an era meant reading the colours off
+  // a map that still showed everything older. Two handles answer the question
+  // people actually have: show me the temples of THIS period.
+  const appeared = appearYear(s);
+  // YEAR_MIN is where the SLIDER stops, not where the corpus does. Thirteen
+  // records carry an `origin` older than it — Kashi Vishwanath at 1500 BCE,
+  // Krishna Janmabhoomi at 3100 BCE, Somnath, Kedarnath, Ayodhya — because
+  // `origin` is first attestation as a sacred site, not the standing structure.
+  // Treating the handle's floor as a filter would quietly drop some of the most
+  // significant records in the atlas from the default view, so at rest the lower
+  // bound means "no lower bound".
+  if (from > YEAR_MIN && appeared < from) return false;
+  if (appeared > to) return false;
   if (f.country && s.country !== f.country) return false;
   if (f.trad && s.tradition !== f.trad) return false;
   if (f.dyn && s.dynasty !== f.dyn) return false;
@@ -120,7 +133,27 @@ function visible(s: MapSite, f: Filters, year: number) {
 
 export default function AtlasClient({ outlines }: { readonly outlines: string }) {
   const [filters, setFilters] = useState<Filters>(EMPTY);
-  const [year, setYear] = useState(YEAR_MAX);
+  /**
+   * The visible period, as [from, to].
+   *
+   * `to` alone reproduces the old behaviour — drag it and watch temples rise —
+   * so the play sweep and the coach mark still describe something true. `from`
+   * is what is new: raising it hides everything older, which is the only way to
+   * see one era on its own.
+   */
+  const [range, setRange] = useState<readonly [number, number]>([YEAR_MIN, YEAR_MAX]);
+  const [from, year] = range;
+  const setYear = useCallback((next: number | ((y: number) => number)) => {
+    setRange(([lo, hi]) => {
+      const value = typeof next === "function" ? next(hi) : next;
+      // The handles may meet but never cross; a crossed range shows nothing and
+      // reads as a broken control rather than an empty result.
+      return [Math.min(lo, value), Math.max(lo, value)];
+    });
+  }, []);
+  const setFrom = useCallback((value: number) => {
+    setRange(([, hi]) => [Math.min(value, hi), hi]);
+  }, []);
   const [sel, setSel] = useState<string | null>(null);
   const [index, setIndex] = useState(false);
   const [circuit, setCircuit] = useState<string | null>(null);
@@ -148,6 +181,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   const view = useRef<View>({ x: 0, y: 0, k: 1 });
   const marks = useRef(new Map<string, { g: SVGGElement; mark: SVGElement; halo: SVGCircleElement; kind: string }>());
   const yearRef = useRef(year); yearRef.current = year;
+  const fromRef = useRef(from); fromRef.current = from;
   const filtersRef = useRef(filters); filtersRef.current = filters;
   const selRef = useRef(sel); selRef.current = sel;
   const circuitRef = useRef(circuit); circuitRef.current = circuit;
@@ -349,7 +383,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   /** Signature of everything that can change *which* sites are on the map. */
   const dataKey = () => {
     const f = filtersRef.current;
-    return [f.q, f.country, f.trad, f.dyn, f.cir, yearRef.current, circuitRef.current ?? ""].join("|");
+    return [f.q, f.country, f.trad, f.dyn, f.cir, fromRef.current, yearRef.current, circuitRef.current ?? ""].join("|");
   };
 
   /**
@@ -376,7 +410,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     if (shouldCluster(kq)) {
       const points: ClusterPoint[] = [];
       for (const s of MAP_SITES) {
-        if (!visible(s, f, yearRef.current)) continue;
+        if (!visible(s, f, fromRef.current, yearRef.current)) continue;
         // A numbered stop must stay its own mark: a badge needs something to sit on.
         if (cir && (s.circuits ?? []).includes(cir)) continue;
         points.push({ id: s.id, x: PX(s.lng), y: PY(s.lat), era: eraOf(s), tradition: s.tradition });
@@ -451,7 +485,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     const order: string[] = [];
     for (const s of MAP_SITES) {
       const m = marks.current.get(s.id); if (!m) continue;
-      const vis = visible(s, f, yearRef.current);
+      const vis = visible(s, f, fromRef.current, yearRef.current);
       if (vis) shown++;
       const draw = vis && !clustered.has(s.id);
       m.g.style.display = draw ? "" : "none";
@@ -632,7 +666,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     if (!reduced) {
       let y = YEAR_MIN;
       const t = setTimeout(() => {
-        setYear(YEAR_MIN);
+        setRange([YEAR_MIN, YEAR_MIN]);
         const iv = setInterval(() => { y += 28; if (y >= YEAR_MAX) { y = YEAR_MAX; clearInterval(iv); } setYear(y); }, 26);
       }, 450);
       return () => clearTimeout(t);
@@ -640,7 +674,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, from, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- gestures: pan, pinch zoom, double tap, wheel ----------------------
   // One Pointer Events pipeline drives all of them. Every pointer that is down
@@ -1060,7 +1094,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   useEffect(() => {
     if (!playing) return;
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) { setYear(YEAR_MAX); setPlaying(false); return; }
-    if (yearRef.current >= YEAR_MAX) setYear(YEAR_MIN);
+    if (yearRef.current >= YEAR_MAX) setYear(fromRef.current);
     const iv = setInterval(() => {
       setYear((y) => { const n = y + 12; if (n >= YEAR_MAX) { clearInterval(iv); setPlaying(false); return YEAR_MAX; } return n; });
     }, 40);
@@ -1087,7 +1121,8 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     // and paint the previous temple's history under the current temple's name.
     return () => controller.abort();
   }, [sel]);
-  const visList = MAP_SITES.filter((s) => visible(s, filters, year));
+  const spanAll = from === YEAR_MIN && year >= YEAR_MAX;
+  const visList = MAP_SITES.filter((s) => visible(s, filters, from, year));
   const shapes: Record<string, string> = {
     circle: '<circle cx="5.5" cy="5.5" r="4.6"/>', square: '<rect x="1.4" y="1.4" width="8.2" height="8.2"/>',
     diamond: '<path d="M5.5 0L11 5.5L5.5 11L0 5.5Z"/>', triangle: '<path d="M5.5 0.4L10.8 10.2H0.2Z"/>',
@@ -1369,14 +1404,49 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
           )}
         </div>
         <div className="tl-top">
-          <button className="play" aria-label={playing ? "Pause timeline" : "Play timeline"} onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
-          <div className="yearbox"><small>YEAR</small><span>{fmtYear(year === YEAR_MAX ? 2026 : year)}</span></div>
+          <button className="play" aria-label={playing ? "Pause the timeline sweep" : "Play the timeline sweep"}
+            aria-pressed={playing}
+            onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
+          <div className="yearbox">
+            <small>PERIOD</small>
+            <span>{spanAll ? "All eras" : `${fmtYear(from)} – ${fmtYear(year === YEAR_MAX ? 2026 : year)}`}</span>
+          </div>
           <div className="tlsvgwrap">
             <svg ref={tlRef} aria-hidden="true" />
-            <input type="range" min={YEAR_MIN} max={YEAR_MAX} step={5} value={Math.min(year, YEAR_MAX)} aria-label="Timeline year"
+            {/* Two overlaid range inputs rather than a custom widget. Each is a
+                real slider, so it arrives keyboard-operable and announced by a
+                screen reader for free; the track is click-through and only the
+                thumbs take pointer events, so the nearer handle always wins.
+                aria-valuetext gives the formatted year ("1010 CE") in place of
+                the raw number a reader would otherwise hear (PA 5.4). */}
+            <input className="tlfrom" type="range" min={YEAR_MIN} max={YEAR_MAX} step={5}
+              value={from}
+              aria-label="Earliest year shown"
+              aria-valuetext={`from ${fmtYear(from)}`}
+              onChange={(e) => { dismissCoach(); setPlaying(false); setFrom(+e.target.value); }} />
+            <input className="tlto" type="range" min={YEAR_MIN} max={YEAR_MAX} step={5}
+              value={Math.min(year, YEAR_MAX)}
+              aria-label="Latest year shown"
+              aria-valuetext={`to ${fmtYear(year === YEAR_MAX ? 2026 : year)}`}
               onChange={(e) => { dismissCoach(); setPlaying(false); setYear(+e.target.value); }} />
           </div>
-          <button className="showall" onClick={() => { setPlaying(false); setYear(YEAR_MAX); }}>show all eras</button>
+          <div className="tleras" role="group" aria-label="Jump to an era">
+            {ERAS.map((era, i) => {
+              const lo = i === 0 ? YEAR_MIN : ERAS[i - 1].to;
+              const hi = Math.min(era.to, YEAR_MAX);
+              const on = from === lo && year === hi;
+              return (
+                <button key={era.name} className={`tlera${on ? " on" : ""}`}
+                  style={{ borderColor: `var(--e${i + 1})` }}
+                  aria-pressed={on}
+                  title={`${fmtYear(lo)} – ${fmtYear(hi)}`}
+                  onClick={() => { dismissCoach(); setPlaying(false); setRange(on ? [YEAR_MIN, YEAR_MAX] : [lo, hi]); }}>
+                  {era.name}
+                </button>
+              );
+            })}
+          </div>
+          <button className="showall" onClick={() => { setPlaying(false); setRange([YEAR_MIN, YEAR_MAX]); }}>show all eras</button>
         </div>
       </div>
     </>
