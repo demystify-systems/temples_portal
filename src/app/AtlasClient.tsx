@@ -17,7 +17,7 @@ import { useSpellingHelp } from "./useSpellingHelp";
 import { readPreference, writePreference, PREF_KEYS } from "@/lib/preference";
 import {
   DOUBLE_TAP_ZOOM, TAP_SLOP_PX, clampTranslate, distance, isDoubleTap, midpoint, pinchFactor,
-  scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
+  scaleAbout, siteMarkRadius, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
   type Point, type Tap, type View,
 } from "@/lib/map-gestures";
 import {
@@ -590,7 +590,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }
 
   function renderPoints() {
-    const k = view.current.k, r = Math.max(4.6 / k, 1.6), sw = 1.1 / k;
+    const k = view.current.k, r = siteMarkRadius(k), sw = 1.1 / k;
     const { clustered } = ensureLayout(k);
     const f = activeFilters();
     const cir = circuitRef.current;

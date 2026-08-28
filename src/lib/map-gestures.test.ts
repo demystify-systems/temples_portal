@@ -2,9 +2,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   MIN_ZOOM, MAX_ZOOM, DOUBLE_TAP_MS, DOUBLE_TAP_PX,
-  clamp, clampZoom, clampTranslate, distance, midpoint, project, unproject,
-  scaleAbout, translateBy, viewportScale, toStagePoint, pinchFactor,
-  wheelZoomFactor, isDoubleTap, type View,
+  clamp, clampZoom, clampTranslate, distance,
+  midpoint, project, unproject, scaleAbout,
+  translateBy, viewportScale, toStagePoint, pinchFactor,
+  wheelZoomFactor, isDoubleTap, type View, MARK_TAPER_FROM_ZOOM,
+  SITE_MARK_STAGE_R, SITE_MARK_STAGE_R_CLOSE, siteMarkRadius,
 } from "./map-gestures.ts";
 
 const EXTENT = { width: 1000, height: 700 };
@@ -166,4 +168,50 @@ test("a second tap outside the distance threshold is NOT a double tap", () => {
 test("isDoubleTap needs a previous tap and rejects a backwards clock", () => {
   assert.equal(isDoubleTap(null, { x: 0, y: 0, time: 1000 }), false, "the very first tap is never a double");
   assert.equal(isDoubleTap({ x: 0, y: 0, time: 1000 }, { x: 0, y: 0, time: 900 }), false);
+});
+
+// ---- mark sizing: the regression that made dots swallow districts ----------
+
+test("a mark keeps a constant screen size while clustering is active", () => {
+  // Arrange: cluster.ts sizes its cells assuming exactly this.
+  for (const k of [1, 2, 4, 8, MARK_TAPER_FROM_ZOOM]) {
+    // Act
+    const onScreen = siteMarkRadius(k) * k;
+    // Assert
+    assert.ok(Math.abs(onScreen - SITE_MARK_STAGE_R) < 1e-9, `k=${k} gave ${onScreen}`);
+  }
+});
+
+test("a mark never grows on screen as the map zooms in", () => {
+  // The old `Math.max(4.6 / k, 1.6)` floored the radius in *content* units, so
+  // past k≈2.9 the screen radius grew as 1.6·k — a 52px blob at full zoom.
+  let previous = Infinity;
+  for (let k = 1; k <= MAX_ZOOM; k *= 1.2) {
+    const onScreen = siteMarkRadius(k) * k;
+    assert.ok(onScreen <= previous + 1e-9, `screen radius grew at k=${k}`);
+    previous = onScreen;
+  }
+});
+
+test("marks are smaller at full zoom than at the world view, so dense towns resolve", () => {
+  const far = siteMarkRadius(MIN_ZOOM) * MIN_ZOOM;
+  const close = siteMarkRadius(MAX_ZOOM) * MAX_ZOOM;
+  assert.ok(close < far, `close ${close} should be under far ${far}`);
+  assert.ok(Math.abs(close - SITE_MARK_STAGE_R_CLOSE) < 1e-9);
+});
+
+test("the radius stays positive and finite across the whole zoom range", () => {
+  for (const k of [MIN_ZOOM, 1.5, 10, 100, MAX_ZOOM]) {
+    const r = siteMarkRadius(k);
+    assert.ok(Number.isFinite(r) && r > 0, `k=${k} gave ${r}`);
+  }
+});
+
+test("full zoom resolves two temples a few hundred metres apart", () => {
+  // Thanjavur district: the screenshot's problem case. One content unit is
+  // (LON1-LON0)/W = 74/1480 = 0.05° of longitude ≈ 5.46 km at 11°N.
+  const KM_PER_CONTENT_UNIT = 0.05 * 111.32 * Math.cos((11 * Math.PI) / 180);
+  const markKm = siteMarkRadius(MAX_ZOOM) * KM_PER_CONTENT_UNIT;
+  // Two marks separate once their centres are more than a diameter apart.
+  assert.ok(markKm * 2 < 0.5, `mark spans ${(markKm * 2).toFixed(3)} km on the ground`);
 });
