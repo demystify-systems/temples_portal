@@ -1060,5 +1060,135 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "parshvanatha-basadi-shravanabelagola",
+  "name": "Parshvanatha Basadi, Shravanabelagola",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Chandragiri, Shravanabelagola",
+  "lat": 12.8617,
+  "lng": 76.487,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1000,
+   1200
+  ],
+  "builtDisplay": "11th–12th c.; manastambha added under Chikka Devaraja",
+  "dynasty": "Undetermined",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A Jain temple on Chandragiri hill at Shravanabelagola, also called the Kamatha Parshvanatha basadi, whose mulnayak is an 18-foot monolithic image of Parshvanatha. Its manastambha pillar was raised by Puttayya during the reign of Chikka Devaraja of the Mysore kingdom.",
+  "wiki": "https://en.wikipedia.org/wiki/Parshvanatha_basadi,_Shravanabelgola",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Parshvanatha_basadi,_Shravanabelgola"
+   },
+   {
+    "l": "Wikidata Q97440965",
+    "u": "https://www.wikidata.org/wiki/Q97440965"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "jain-temples-abhapur",
+  "name": "Jain Temples, Abhapur",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Abhapur, Polo Forest, Sabarkantha district",
+  "lat": 23.9885,
+  "lng": 73.2706,
+  "tradition": "Jain",
+  "deity": "Parshvanatha (also Rishabhanatha and Neminatha)",
+  "built": [
+   1400,
+   1500
+  ],
+  "builtDisplay": "15th c.",
+  "dynasty": "Undetermined",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "A group of twelve fifteenth-century Svetambara Jain temples in sandstone at Abhapur, inside the Polo Forest of Sabarkantha district, noted for their carved ceilings and pierced jali screens. The principal image is Parshvanatha attended by the goddess Padmavati, with shrines also of Rishabhanatha and Neminatha.",
+  "wiki": "https://en.wikipedia.org/wiki/Jain_temples,_Abhapur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jain_temples,_Abhapur"
+   },
+   {
+    "l": "Wikidata Q106676304",
+    "u": "https://www.wikidata.org/wiki/Q106676304"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "songadh-jain-temple",
+  "name": "Songadh Jain Temple",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Songadh, Bhavnagar district",
+  "lat": 21.7133,
+  "lng": 71.8846,
+  "tradition": "Jain",
+  "deity": "Simandhara Swami",
+  "built": [
+   1930,
+   1937
+  ],
+  "builtDisplay": "established 1930; first temple 1937",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Digambara Jain temple complex at Songadh in Bhavnagar district, established in 1930 around the teaching of Kanji Swami, whose Svadhyaya Mandir of 1937 was its first building. Its white marble shrines, one of them dedicated to Simandhara, carry carved scriptural texts and murals.",
+  "wiki": "https://en.wikipedia.org/wiki/Songadh_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Songadh_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q111942956",
+    "u": "https://www.wikidata.org/wiki/Q111942956"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "poondi-arugar-temple",
+  "name": "Poondi Arugar Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Irumbedu, Arani, Tiruvannamalai district",
+  "lat": 12.6975,
+  "lng": 79.3015,
+  "tradition": "Jain",
+  "deity": "Ponnezhilnathar (Arugar)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; built by the Cholas",
+  "dynasty": "Chola",
+  "circuits": [],
+  "significance": "A Jain temple near Irumbedu, about three kilometres from Arani in Tiruvannamalai district, built by the Cholas. Its presiding image is known as Ponnezhilnathar.",
+  "wiki": "https://en.wikipedia.org/wiki/Poondi_Arugar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Poondi_Arugar_Temple"
+   },
+   {
+    "l": "Wikidata Q16935468",
+    "u": "https://www.wikidata.org/wiki/Q16935468"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

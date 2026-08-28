@@ -561,40 +561,6 @@
   "tier": "compact"
  },
  {
-  "id": "uthrapathiswaraswamy-tiruchenkattankudi",
-  "name": "Uthrapathiswaraswamy Temple",
-  "country": "India",
-  "state": "Tamil Nadu",
-  "place": "Tiruchenkattankudi, Nagapattinam district",
-  "lat": 10.8633,
-  "lng": 79.7222,
-  "tradition": "Hindu",
-  "deity": "Shiva (Uthrapathiswaraswamy); best known for its Vatapi Ganapati",
-  "built": [
-   1000,
-   1800
-  ],
-  "builtDisplay": "dating unrecorded",
-  "dynasty": "Undetermined",
-  "style": "Dravidian",
-  "circuits": [],
-  "significance": "A Shiva temple at Tiruchenkattankudi more famous for its Ganesha icons, including one shown with a human rather than an elephant head. Oral tradition holds that its Vatapi Ganapati was carried here as spoil by the Pallava general Paranjothi after the sack of Vatapi in 642 CE, though no written record confirms it.",
-  "story": "Ganesha is said to have killed the demon Gajamukhasura and then worshipped his father Shiva at this spot.",
-  "wiki": "https://en.wikipedia.org/wiki/Uthrapathiswaraswamy_Temple",
-  "sources": [
-   {
-    "l": "Wikipedia",
-    "u": "https://en.wikipedia.org/wiki/Uthrapathiswaraswamy_Temple"
-   },
-   {
-    "l": "Wikidata Q60617889",
-    "u": "https://www.wikidata.org/wiki/Q60617889"
-   }
-  ],
-  "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
- },
- {
   "id": "vishamangalesvarar-thudaiyur",
   "name": "Vishamangalesvarar Temple, Thudaiyur",
   "country": "India",
