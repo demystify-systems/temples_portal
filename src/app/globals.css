@@ -681,7 +681,14 @@ table.gz tr:last-child td{border-bottom:none}
     width: auto; max-width: 100%; height: 100%;
     border-left: none; border-top: 1px solid var(--line);
     border-radius: 16px 16px 0 0;
-    transform: translateY(100%);
+    /* Must clear the TIMELINE as well as its own height.
+       The sheet's bottom edge sits --tl-h above the viewport bottom, so
+       translating by 100% of its own height leaves exactly --tl-h of it still
+       on screen — a dead strip that cannot be tapped, dragged or closed, and
+       which is what "there is a gap" was describing. This was invisible before
+       the timeline started reserving space, when the sheet was viewport-height
+       and 100% was genuinely enough. */
+    transform: translateY(calc(100% + var(--tl-h, 0px)));
   }
   .side.sheet.open.snap-full { transform: translateY(6%); }
   .side.sheet.open.snap-half { transform: translateY(46%); }
