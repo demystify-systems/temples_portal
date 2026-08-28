@@ -25,7 +25,9 @@ const apply = process.argv.includes("--apply");
 const vocab = JSON.parse(readFileSync(VOCAB, "utf8"));
 const sites = JSON.parse(readFileSync(SITES, "utf8"));
 
-const norm = (v) => String(v ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+const norm = (v) => String(v ?? "")
+  .normalize("NFD").replace(/[\u0300-\u036f]/g, "")   // fold diacritics: Avalokiteśvara -> avalokitesvara
+  .toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
 const esc = (v) => v.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 // Matching is TOKEN-AWARE, and that is the whole trick.
@@ -72,7 +74,9 @@ function scan(text, allowed) {
   const tokens = text.split(" ").filter(Boolean);
   const claimed = new Array(tokens.length).fill(false);
   tokens.forEach((tok, i) => {
-    const hit = single.get(tok);
+    // "Buddhas" and "Tirthankaras" are the same figure as the singular; try it
+    // when the literal token matches nothing.
+    const hit = single.get(tok) ?? (tok.endsWith("s") ? single.get(tok.slice(0, -1)) : undefined);
     if (hit && allowed.has(groupOf[hit])) { found.add(hit); claimed[i] = true; }
     else if (hit) claimed[i] = true;   // claimed by an out-of-tradition deity: still not free for a suffix
   });
