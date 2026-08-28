@@ -218,6 +218,15 @@
    "source": "https://en.wikipedia.org/wiki/Kunala_Stupa",
    "found": "wave-8 builder",
    "opened": "2026-08-28"
+  },
+  {
+   "id": "adi-annamalaiyar",
+   "field": "lat/lng",
+   "ours": "9.6647, 77.3036 — taken faithfully from the cited sources",
+   "theirs": "that point is in the Western Ghats near Theni, about 344 km from Adi Annamalai, which sits beside Tiruvannamalai (our arunachaleswarar-tiruvannamalai record is at 12.2317, 79.0676). English Wikipedia AND Wikidata Q31441145 both publish the same wrong value at 0.0001 precision, so there is no third source to adjudicate with and no correct coordinate may be invented.",
+   "source": "https://www.wikidata.org/wiki/Q31441145",
+   "found": "paadal-petra roster reconciliation",
+   "opened": "2026-08-28"
   }
  ]
 }
