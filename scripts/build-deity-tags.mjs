@@ -44,7 +44,7 @@ const matchers = Object.entries(vocab.canonical).map(([name, def]) => ({
 const ALLOWED = {
   Hindu: new Set(["Shaiva", "Vaishnava", "Shakta", "Smarta"]),
   Jain: new Set(["Jain"]),
-  Buddhist: new Set(["Buddhist"]),
+  Buddhist: new Set(["Buddhist", "Shakta"]),  // Tara is a Mahavidya and a bodhisattva both
   Sikh: new Set(["Sikh"]),
 };
 

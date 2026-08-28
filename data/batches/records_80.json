@@ -235,5 +235,123 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "kaliya-jue-temple-dinajpur",
+  "name": "Kaliya Jue Temple",
+  "country": "Bangladesh",
+  "state": "Rangpur Division",
+  "place": "Dinajpur Sadar, Dinajpur District",
+  "lat": 25.7905,
+  "lng": 88.6667,
+  "tradition": "Hindu",
+  "deity": "Krishna",
+  "built": [1000, 1800],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Krishna temple standing just west of the Dinajpur Rajbari palace complex in northern Bangladesh.",
+  "wiki": "https://en.wikipedia.org/wiki/Kaliya_jue_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kaliya_jue_Temple"},
+   {"l": "Wikidata Q1187561", "u": "https://www.wikidata.org/wiki/Q1187561"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "swami-bagh-temple-dhaka",
+  "name": "Swami Bagh Temple",
+  "country": "Bangladesh",
+  "state": "Dhaka Division",
+  "place": "Swamibagh, Dhaka",
+  "lat": 23.7138,
+  "lng": 90.423,
+  "tradition": "Hindu",
+  "deity": "Jagannath",
+  "built": [1902, 1902],
+  "builtDisplay": "1902",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Vaishnava temple established in Dhaka in 1902, with subsidiary Shiva and Kali shrines, now run by ISKCON. Its annual Jagannath Rath Yatra procession travels through the city to the Dhakeshwari National Temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Swami_Bagh_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Swami_Bagh_Temple"},
+   {"l": "Wikidata Q1187594", "u": "https://www.wikidata.org/wiki/Q1187594"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "pathirakali-amman-trincomalee",
+  "name": "Pathirakali Amman Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Trincomalee",
+  "lat": 8.5745,
+  "lng": 81.2339,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali (Kali Amman)",
+  "built": [1000, 1100],
+  "builtDisplay": "pre-11th c.; enlarged under Rajendra Chola I",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian)",
+  "circuits": [],
+  "significance": "A Bhadrakali temple in Trincomalee whose foundation date is unknown but which is named in inscriptions from the 11th century and earlier, and was greatly enlarged by the Chola king Rajendra I. It draws pilgrims jointly with the nearby Koneswaram temple during the Ther Thiruvillah chariot festival.",
+  "wiki": "https://en.wikipedia.org/wiki/Pathirakali_Amman_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Pathirakali_Amman_Temple"},
+   {"l": "Wikidata Q7144783", "u": "https://www.wikidata.org/wiki/Q7144783"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ariyalai-siddhivinayakar-jaffna",
+  "name": "Ariyalai Siddhivinayakar Temple",
+  "country": "Sri Lanka",
+  "state": "Northern Province",
+  "place": "Ariyalai, Jaffna District",
+  "lat": 9.6593,
+  "lng": 80.0475,
+  "tradition": "Hindu",
+  "deity": "Ganesha (as Siddhivinayakar)",
+  "built": [1918, 1918],
+  "builtDisplay": "rebuilt c. 1918",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Ganesha temple at Ariyalai, about five kilometres from Jaffna town, rehabilitated around 1918 by Advocate Arulampalam. It has drawn notable visitors including Yogar Swami and Kunrakudi Adigal.",
+  "wiki": "https://en.wikipedia.org/wiki/Ariyalai_Siddhivinayakar_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Ariyalai_Siddhivinayakar_Temple"},
+   {"l": "Wikidata Q4791177", "u": "https://www.wikidata.org/wiki/Q4791177"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thambiluvil-kannaki-amman",
+  "name": "Thambiluvil Kannaki Amman Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thambiluvil, Ampara District",
+  "lat": 7.1261,
+  "lng": 81.8478,
+  "tradition": "Hindu",
+  "deity": "Kannaki Amman",
+  "built": [113, 135],
+  "builtDisplay": "traditionally 2nd c. CE; royal patronage from the 14th c.",
+  "dynasty": "Kotte and Kandyan kings",
+  "style": "Non-Agamic, with four halls (karuvarai, mun, nadu and maha mandapam)",
+  "circuits": [],
+  "significance": "A temple to Kannaki, the heroine of the Tamil epic Silappatikaram, in Ampara District in eastern Sri Lanka, traditionally traced to the arrival of the Pattini cult under Gajabahu I. Kandyan and Kotte kings patronised it from the 14th century onward, and an inscription of Vijayabahu VII of Kotte (1507-1521) was found in its grounds.",
+  "story": "A golden pigeon is said to have revealed the goddess's image at Urakkai, a paddy field west of the village.",
+  "wiki": "https://en.wikipedia.org/wiki/Thambiluvil_Kannaki_Amman_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Thambiluvil_Kannaki_Amman_Temple"},
+   {"l": "Wikidata Q3533266", "u": "https://www.wikidata.org/wiki/Q3533266"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

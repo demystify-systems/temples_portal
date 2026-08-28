@@ -1,0 +1,122 @@
+[
+ {
+  "id": "muthumariamman-matale",
+  "name": "Sri Muthumariamman Temple, Matale",
+  "country": "Sri Lanka",
+  "state": "Central Province",
+  "place": "Matale, Matale District",
+  "lat": 7.4773,
+  "lng": 80.6239,
+  "tradition": "Hindu",
+  "deity": "Muthumariamman (Mariamman, goddess of rain and fertility)",
+  "built": [1852, 1874],
+  "builtDisplay": "1852–1874; rajagopuram 2007",
+  "dynasty": "Modern",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "The main Hindu temple of the Sri Lankan hill town of Matale, raised on paddy land gifted in 1852 and completed in 1874 under Nattukottai Chettiar patronage. Its 108-foot rajagopuram, finished in 2007 and carrying over a thousand sculpted figures, is one of the tallest temple towers on the island.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Muthumariamman_Temple,_Matale",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Sri_Muthumariamman_Temple,_Matale"},
+   {"l": "Wikidata Q16308678", "u": "https://www.wikidata.org/wiki/Q16308678"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "shiva-mandir-johi",
+  "name": "Shiva Mandir, Johi",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Johi, Dadu District",
+  "lat": 26.6895,
+  "lng": 67.6111,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [1850, 1859],
+  "builtDisplay": "c. 1850s",
+  "dynasty": "Modern",
+  "style": "Twin-domed Hindu temple architecture",
+  "circuits": [],
+  "significance": "A mid-19th-century Shiva temple in the Sindhi town of Johi, known locally as the Qubi for its unusual pair of domes and its mix of iron, cement and cheeroli construction. The idols once fixed to its outer walls were destroyed after Partition, and only their traces survive.",
+  "wiki": "https://en.wikipedia.org/wiki/Shiva_Mandir,_Johi",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Shiva_Mandir,_Johi"},
+   {"l": "Wikidata Q28868562", "u": "https://www.wikidata.org/wiki/Q28868562"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thaanthonreeswarar-kokkadicholai",
+  "name": "Kokkadicholai Thaanthonreeswarar Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Kokkadicholai, Batticaloa District",
+  "lat": 7.6167,
+  "lng": 81.7167,
+  "tradition": "Hindu",
+  "deity": "Shiva (Thaanthonreeswarar)",
+  "built": [850, 1279],
+  "builtDisplay": "Chola era",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian)",
+  "circuits": [],
+  "significance": "A Shaiva temple southwest of Batticaloa, ascribed to Ulaga Naachi of the Chola realm and counted among the oldest and most important Shiva kovils in Sri Lanka. Its lingam is reported to be a naturally formed one, a rarity on the island.",
+  "story": "Local tradition holds that the temple's stone bull came to life, grazed on the grass and drove Portuguese soldiers away from the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Kokkadicholai_Thaanthonreeswarar_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kokkadicholai_Thaanthonreeswarar_Temple"},
+   {"l": "Wikidata Q25551289", "u": "https://www.wikidata.org/wiki/Q25551289"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "magderu-dhrasanvel",
+  "name": "Magderu Temple, Dhrasanvel",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Dhrasanvel, Okhamandal, Devbhumi Dwarka district",
+  "lat": 22.2891,
+  "lng": 69.0515,
+  "tradition": "Hindu",
+  "deity": "Shiva today; probably Surya originally",
+  "built": [740, 760],
+  "builtDisplay": "mid-8th c. (Maitraka period)",
+  "dynasty": "Maitraka",
+  "style": "Early Nagara (saptayatana plan)",
+  "circuits": [],
+  "significance": "An 8th-century saptayatana temple near Dwarka, its large central shrine ringed by six smaller ones, now a Monument of National Importance in the ASI's Vadodara Circle. Scholars link the name element Maga to the Aboti Maga Brahmins, Surya worshippers who migrated from Iran to western India, and read the site as an original sun temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Magderu",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Magderu"},
+   {"l": "Wikidata Q47501093", "u": "https://www.wikidata.org/wiki/Q47501093"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "raghunath-srinagar",
+  "name": "Raghunath Temple, Srinagar",
+  "country": "India",
+  "state": "Jammu and Kashmir",
+  "place": "Srinagar",
+  "lat": 34.0857,
+  "lng": 74.8055,
+  "tradition": "Hindu",
+  "deity": "Raghunath (Rama)",
+  "built": [1835, 1860],
+  "builtDisplay": "1835–1860 (Dogra)",
+  "dynasty": "Dogra",
+  "circuits": [],
+  "significance": "A Dogra-period Rama temple in Srinagar, begun in 1835 under Maharaja Gulab Singh and completed in 1860 under Maharaja Ranbir Singh. Attacked and left abandoned after the exodus of Kashmiri Hindus, it is now undergoing restoration.",
+  "wiki": "https://en.wikipedia.org/wiki/Raghunath_Temple,_Srinagar",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Raghunath_Temple,_Srinagar"},
+   {"l": "Wikidata Q110912713", "u": "https://www.wikidata.org/wiki/Q110912713"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

@@ -293,5 +293,334 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "uruwala-valagamba-gampaha",
+  "name": "Uruwala Valagamba Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Uruwala, Gampaha District",
+  "lat": 7.0564,
+  "lng": 80.0518,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (ancient sacred Bo tree)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An ancient Buddhist temple at Uruwala in the Gampaha District, formally protected by the Sri Lankan government as an archaeological site. Its old sacred fig tree stands within a rampart, and the temple is held to have belonged with neighbouring shrines to a single monastic complex of the early Anuradhapura period.",
+  "wiki": "https://en.wikipedia.org/wiki/Uruwala_Valagamba_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Uruwala_Valagamba_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q28002465",
+    "u": "https://www.wikidata.org/wiki/Q28002465"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sri-pushparama-ratmalana",
+  "name": "Sri Pushparama Vihara, Ratmalana",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Ratmalana",
+  "lat": 6.8218,
+  "lng": 79.8712,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1795,
+   1800
+  ],
+  "builtDisplay": "1795–1800",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Buddhist temple at Ratmalana in the Colombo District, built between 1795 and 1800 by Balapitiye Dheerananda Thera. The Sri Lankan government declared it a protected archaeological monument on 23 February 2007.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Ratmalana",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Ratmalana"
+   },
+   {
+    "l": "Wikidata Q28938639",
+    "u": "https://www.wikidata.org/wiki/Q28938639"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "delgamuwa-kuruwita",
+  "name": "Delgamuwa Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Sabaragamuwa",
+  "place": "Kuruwita, Ratnapura District",
+  "lat": 6.7759,
+  "lng": 80.3563,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Sacred Tooth Relic, formerly hidden here)",
+  "built": [
+   1521,
+   1594
+  ],
+  "builtDisplay": "Sitawaka period (16th c.)",
+  "dynasty": "Sitawaka",
+  "circuits": [],
+  "significance": "A Buddhist temple at Kuruwita in the Ratnapura District, remembered as the refuge of the Buddha's Tooth Relic during Portuguese rule: King Mayadunne of Sitawaka had the relic brought here about 1549, and it lay concealed inside a kurakkan grinding stone on the premises until Wimaladharmasuriya I recovered it in 1592 and carried it to Kandy.",
+  "wiki": "https://en.wikipedia.org/wiki/Delgamuwa_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Delgamuwa_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q23010020",
+    "u": "https://www.wikidata.org/wiki/Q23010020"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sri-pushparama-balapitiya",
+  "name": "Sri Pushparama Vihara, Balapitiya",
+  "country": "Sri Lanka",
+  "state": "Southern Province",
+  "place": "Balapitiya, Galle District",
+  "lat": 6.2916,
+  "lng": 80.0421,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "preaching hall in colonial church manner",
+  "circuits": [],
+  "significance": "A Buddhist temple at Balapitiya in the Galle District, headquarters of the Mulaghandi sect of the Amarapura Nikaya and a protected archaeological monument since 6 June 2008. The doors and windows of its dhamma preaching hall follow colonial church design, with two wooden stairs rising to a balcony that runs round the inner hall.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Balapitiya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Balapitiya"
+   },
+   {
+    "l": "Wikidata Q29248261",
+    "u": "https://www.wikidata.org/wiki/Q29248261"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "asgiriya-gampaha",
+  "name": "Asgiriya Raja Maha Vihara, Gampaha",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Gampaha",
+  "lat": 7.111,
+  "lng": 79.9896,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Samadhi image; stone Buddha footprint)",
+  "built": [
+   -89,
+   -77
+  ],
+  "builtDisplay": "trad. King Valagamba, 1st c. BCE",
+  "dynasty": "Anuradhapura",
+  "style": "cave temple, wattle and daub",
+  "circuits": [],
+  "significance": "A cave temple at Gampaha in the Western Province whose foundation is traced to the reign of King Valagamba (89–77 BCE), with a 5th-century inscription found on its grounds. It keeps a Samadhi Buddha statue and flanking abhaya-mudra images carved in Kandyan-period manner, together with a stone bearing a footprint of the Buddha; the provincial ruler Sakalakala Wallabha patronised it under Parakramabahu VI.",
+  "story": "The place is said to have taken the name Asgiri from a horse lost there by Prince Uttiya, brother of King Kelani Tissa.",
+  "wiki": "https://en.wikipedia.org/wiki/Asgiriya_Raja_Maha_Vihara,_Gampaha",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Asgiriya_Raja_Maha_Vihara,_Gampaha"
+   },
+   {
+    "l": "Wikidata Q19707959",
+    "u": "https://www.wikidata.org/wiki/Q19707959"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "yatawatte-purana-gampaha",
+  "name": "Yatawatte Purana Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Yatawatte, Gampaha District",
+  "lat": 7.0889,
+  "lng": 79.9863,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (stupa and tempita image house)",
+  "built": [
+   1861,
+   1861
+  ],
+  "builtDisplay": "tempita image house 1861",
+  "origin": 1400,
+  "originNote": "history traced to the reign of Parakramabahu VI (15th c.)",
+  "dynasty": "Undetermined",
+  "style": "Tempita vihara (image house on granite pillars)",
+  "circuits": [],
+  "significance": "A Buddhist temple about a kilometre from Gampaha town whose history is believed to reach back to the reign of Parakramabahu VI. Its tempita image house — of the type raised on granite pillars that was popular in Sri Lanka between the 17th and 19th centuries — is dated to 21 March 1861, and a stupa stands beside it.",
+  "wiki": "https://en.wikipedia.org/wiki/Yatawatte_Purana_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Yatawatte_Purana_Vihara"
+   },
+   {
+    "l": "Wikidata Q26904723",
+    "u": "https://www.wikidata.org/wiki/Q26904723"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "gonagolla-vihara-ampara",
+  "name": "Gonagolla Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Gonagolla, Ampara District",
+  "lat": 7.4155,
+  "lng": 81.6557,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (ancient stupa)",
+  "built": [
+   -300,
+   -200
+  ],
+  "builtDisplay": "3rd c. BCE stupa; frescoes 3rd c. CE",
+  "dynasty": "Anuradhapura",
+  "style": "cave temple with vatadage",
+  "circuits": [],
+  "significance": "An ancient Buddhist site at Gonagolla in the Ampara District where a stupa and two ponds are dated to the third century BCE, surrounded by drip-ledged caves, a vatadage, stone stairways and carved pillars. Its third-century CE frescoes have earned it the local name Punchi Seegiriya, 'little Sigiriya', and rock inscriptions of the 3rd to 5th centuries record gifts by monks and by the wives of district governors.",
+  "wiki": "https://en.wikipedia.org/wiki/Gonagolla_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gonagolla_Vihara"
+   },
+   {
+    "l": "Wikidata Q25637912",
+    "u": "https://www.wikidata.org/wiki/Q25637912"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "koskandawala-gampaha",
+  "name": "Koskandawala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Koskandawala, Gampaha District",
+  "lat": 7.0797,
+  "lng": 80.0523,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (stupa and image house)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "cave temple",
+  "circuits": [],
+  "significance": "An old Buddhist cave temple at Koskandawala in the Gampaha District, with a stupa and an image house. It is counted among neighbouring cave temples said to have formed a single monastic complex in the early Anuradhapura period.",
+  "wiki": "https://en.wikipedia.org/wiki/Koskandawala_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Koskandawala_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q28002504",
+    "u": "https://www.wikidata.org/wiki/Q28002504"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "nagadeepa-purana-nainativu",
+  "name": "Nagadeepa Purana Vihara",
+  "country": "Sri Lanka",
+  "state": "Northern Province",
+  "place": "Nainativu, Jaffna District",
+  "lat": 9.6128,
+  "lng": 79.774,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (gem-studded throne; stone Buddha footprint)",
+  "built": [
+   -307,
+   -137
+  ],
+  "builtDisplay": "rebuilt under Devanampiya Tissa and Dutugemunu",
+  "dynasty": "Anuradhapura",
+  "circuits": [],
+  "significance": "A Buddhist temple on the island of Nainativu off the Jaffna coast, revered as the place the Buddha visited to reconcile two Naga kings. It was rebuilt under Devanampiya Tissa and again under Dutugemunu, and keeps a stone bearing the Buddha's footprint along with a gem-studded throne given by Ratnapura businessmen in 2011.",
+  "story": "The Buddha is said to have come here five years after his enlightenment to settle the quarrel of the Naga kings Chulodara and Mahodara over a gem-studded throne, converting them by his miracles.",
+  "wiki": "https://en.wikipedia.org/wiki/Nagadeepa_Purana_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Nagadeepa_Purana_Vihara"
+   },
+   {
+    "l": "Wikidata Q6958314",
+    "u": "https://www.wikidata.org/wiki/Q6958314"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sri-dharmendrarama-ampara",
+  "name": "Sri Dharmendrarama Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Mayadunna, Gonagolla, Ampara District",
+  "lat": 7.4271,
+  "lng": 81.634,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Sri Pathul Gala footprint slabs)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An archaeological Buddhist temple at Mayadunna in Gonagolla village, Ampara District, protected as an archaeological site since 10 October 2014. Its remains include a stupa, Buddha-footprint slabs, fragments of moonstones, building bases, pillars and a rock inscription — footprint slabs being among the objects used to represent the Buddha before statues of him were made.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Dharmendrarama_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Dharmendrarama_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q38043552",
+    "u": "https://www.wikidata.org/wiki/Q38043552"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

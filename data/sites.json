@@ -6399,7 +6399,11 @@
    "Siem Reap",
    "Siem Reap Municipality",
    "Siem Reap Province"
-  ]
+  ],
+  "deities": [
+   "Prajnaparamita"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "preah-vihear",
@@ -7069,7 +7073,11 @@
    "Beraban",
    "Kediri",
    "Tabanan"
-  ]
+  ],
+  "deities": [
+   "Varuna"
+  ],
+  "deityGroup": "Smarta"
  },
  {
   "id": "uluwatu",
@@ -20574,7 +20582,11 @@
    "Kathmandu District",
    "Bagmati Province",
    "Nepal"
-  ]
+  ],
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "jeshoreshwari-ishwaripur",
@@ -21073,7 +21085,7 @@
    "Madhya Pradesh"
   ],
   "deities": [
-   "Devi"
+   "Narmada"
   ],
   "deityGroup": "Shakta"
  },
@@ -21479,7 +21491,11 @@
    "Nainital district",
    "Kumaon division",
    "Uttarakhand"
-  ]
+  ],
+  "deities": [
+   "Sai Baba"
+  ],
+  "deityGroup": "Smarta"
  },
  {
   "id": "surkanda-devi-tehri",
@@ -21765,7 +21781,11 @@
    "Chamoli district",
    "Garhwal division",
    "Uttarakhand"
-  ]
+  ],
+  "deities": [
+   "Ganga"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "karnaprayag-chamoli",
@@ -22684,7 +22704,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Dattatreya"
+  ],
+  "deityGroup": "Smarta"
  },
  {
   "id": "renuka-lake-sirmaur",
@@ -23649,7 +23673,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "salasar-balaji",
@@ -24393,7 +24421,11 @@
    "Bikaner district",
    "Bikaner division",
    "Rajasthan"
-  ]
+  ],
+  "deities": [
+   "Dattatreya"
+  ],
+  "deityGroup": "Smarta"
  },
  {
   "id": "bhandasar-jain-bikaner",
@@ -27038,7 +27070,11 @@
   "admin": [
    "Madhya Pradesh",
    "India"
-  ]
+  ],
+  "deities": [
+   "Bagalamukhi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "bijasan-salkanpur",
@@ -27385,7 +27421,11 @@
    "Anuppur district",
    "Shahdol division",
    "Madhya Pradesh"
-  ]
+  ],
+  "deities": [
+   "Narmada"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "ahilyeshwar-maheshwar",
@@ -28109,7 +28149,8 @@
   "phone": "9337892106",
   "phoneVerified": "official-site-2026-08-27",
   "deities": [
-   "Devi"
+   "Devi",
+   "Tara"
   ],
   "deityGroup": "Shakta"
  },
@@ -28517,7 +28558,11 @@
    "Ramgarh district",
    "North Chotanagpur division",
    "Jharkhand"
-  ]
+  ],
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "maluti-dumka",
@@ -28606,7 +28651,11 @@
    "Rampurhat II community development block",
    "Rampurhat subdivision",
    "Birbhum district"
-  ]
+  ],
+  "deities": [
+   "Tara"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "tarakeswar-hooghly",
@@ -28638,9 +28687,10 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Shiva"
+   "Shiva",
+   "Tara"
   ],
-  "deityGroup": "Shaiva"
+  "deityGroup": "Shakta"
  },
  {
   "id": "tovp-mayapur",
@@ -29361,7 +29411,11 @@
    "West Tripura District",
    "Tripura",
    "India"
-  ]
+  ],
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "rumtek-gangtok",
@@ -30151,7 +30205,11 @@
    "Cholachagudda",
    "Badami Taluk",
    "Bagalkot district"
-  ]
+  ],
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "mahakuta-badami",
@@ -32932,7 +32990,11 @@
    "Guntur district",
    "Andhra Pradesh",
    "India"
-  ]
+  ],
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "undavalli-caves",
@@ -34893,6 +34955,7 @@
    "Lumbini Province"
   ],
   "deities": [
+   "Devi",
    "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"
@@ -35716,7 +35779,11 @@
    "Karachi",
    "Sindh",
    "Pakistan"
-  ]
+  ],
+  "deities": [
+   "Varuna"
+  ],
+  "deityGroup": "Smarta"
  },
  {
   "id": "panchmukhi-hanuman-karachi",
@@ -37934,7 +38001,7 @@
   "deities": [
    "Tara"
   ],
-  "deityGroup": "Buddhist"
+  "deityGroup": "Shakta"
  },
  {
   "id": "candi-mendut-magelang",
@@ -40363,7 +40430,11 @@
    "Guwahati",
    "Kamrup Metropolitan district",
    "Lower Assam division"
-  ]
+  ],
+  "deities": [
+   "Tara"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "doul-govinda-north-guwahati",
@@ -41390,7 +41461,11 @@
    "Ujjain division"
   ],
   "phone": "+91 81037 16972",
-  "phoneVerified": "official-site-2026-08-27"
+  "phoneVerified": "official-site-2026-08-27",
+  "deities": [
+   "Bagalamukhi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "kanch-mandir-indore",
@@ -43803,9 +43878,10 @@
    "Karnataka"
   ],
   "deities": [
-   "Shiva"
+   "Shiva",
+   "Tara"
   ],
-  "deityGroup": "Shaiva"
+  "deityGroup": "Shakta"
  },
  {
   "id": "kedareshvara-balligavi",
@@ -50983,6 +51059,7 @@
   "style": "—",
   "deities": [
    "Brahma",
+   "Devi",
    "Kali"
   ],
   "deityGroup": "Shakta"
@@ -65977,7 +66054,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "parasuramalingeswarar-ayanavaram",
@@ -74088,7 +74169,11 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "kunnandarkoil-cave",
@@ -74691,6 +74776,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
+   "Dattatreya",
    "Shiva"
   ],
   "deityGroup": "Shaiva"
@@ -77439,7 +77525,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-27",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "ananthagiri-temple-vikarabad",
@@ -89775,7 +89865,8 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Durga"
+   "Durga",
+   "Tara"
   ],
   "deityGroup": "Shakta"
  },
@@ -98300,7 +98391,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "nandinadesvarar-poikainallur",
@@ -99162,7 +99257,8 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Devi"
+   "Devi",
+   "Tara"
   ],
   "deityGroup": "Shakta"
  },
@@ -99580,7 +99676,7 @@
   "deities": [
    "Tara"
   ],
-  "deityGroup": "Buddhist"
+  "deityGroup": "Shakta"
  },
  {
   "id": "pura-penataran-sasih-pejeng",
@@ -106888,7 +106984,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "ashokdham-lakhisarai",
@@ -108005,7 +108105,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Bagalamukhi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "avanoor-sreekanteswaram",
@@ -109152,5 +109256,4407 @@
    "Vishnu"
   ],
   "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "devasathan-bangkok",
+  "name": "Devasathan",
+  "country": "Thailand",
+  "state": "Bangkok",
+  "place": "Sao Chingcha, Phra Nakhon, Bangkok",
+  "lat": 13.7525,
+  "lng": 100.5006,
+  "tradition": "Hindu",
+  "deity": "Shiva and Vishnu (with shrines to Ganesha and Brahma)",
+  "built": [
+   1784,
+   1784
+  ],
+  "builtDisplay": "1784 (Rama I, Chakri)",
+  "dynasty": "Chakri",
+  "style": "Thai",
+  "circuits": [],
+  "significance": "The principal Brahmin temple of Thailand, founded in Bangkok in 1784 by King Rama I, housing separate shrines for Shiva, Vishnu and Ganesha. It remains the seat of the royal court Brahmins who conduct state Hindu rites.",
+  "wiki": "https://en.wikipedia.org/wiki/Devasathan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Devasathan"
+   },
+   {
+    "l": "Wikidata Q1206639",
+    "u": "https://www.wikidata.org/wiki/Q1206639"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Brahma",
+   "Ganesha",
+   "Shiva",
+   "Vishnu"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "siddheswari-kalimandir-dhaka",
+  "name": "Shree Shree Siddheswari Kalimandir",
+  "country": "Bangladesh",
+  "state": "Dhaka Division",
+  "place": "Siddheshwari, Dhaka",
+  "lat": 23.744,
+  "lng": 90.4113,
+  "tradition": "Hindu",
+  "deity": "Kali",
+  "built": [
+   1441,
+   1441
+  ],
+  "builtDisplay": "1441 (attributed to Chand Rai)",
+  "dynasty": "Chand Rai (attributed)",
+  "circuits": [],
+  "significance": "An old Kali temple in central Dhaka, dated to 1441 and attributed to a founder named Chand Rai, whose central image of the goddess is its chief object of worship. The Siddheshwari neighbourhood of the city takes its name from the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Shree_Shree_Siddheswari_Kalimandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shree_Shree_Siddheswari_Kalimandir"
+   },
+   {
+    "l": "Wikidata Q1187548",
+    "u": "https://www.wikidata.org/wiki/Q1187548"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "laxmi-narayan-mandir-dhaka",
+  "name": "Laxmi Narayan Mandir, Dhaka",
+  "country": "Bangladesh",
+  "state": "Dhaka Division",
+  "place": "Nawabpur Road, Kotwali, Dhaka",
+  "lat": 23.7157,
+  "lng": 90.4117,
+  "tradition": "Hindu",
+  "deity": "Lakshmi (Laxmi Narayan)",
+  "built": [
+   1649,
+   1649
+  ],
+  "builtDisplay": "Bengali year 1056 (c. 1649)",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A roughly three-century-old two-storeyed temple on Nawabpur Road in old Dhaka dedicated to Lakshmi, the goddess of wealth. It has no dome, carries carved scenes from Hindu mythology and holds marble images brought from Jaipur; it is now run as a private temple with a residence inside its compound.",
+  "wiki": "https://en.wikipedia.org/wiki/Laxmi_Narayan_Mandir,_Dhaka",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Laxmi_Narayan_Mandir,_Dhaka"
+   },
+   {
+    "l": "Wikidata Q1187543",
+    "u": "https://www.wikidata.org/wiki/Q1187543"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Lakshmi",
+   "Vishnu"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "lalmai-chandi-temple-comilla",
+  "name": "Lalmai Chandi Temple",
+  "country": "Bangladesh",
+  "state": "Chittagong Division",
+  "place": "Lalmai hill, Barura, Comilla District",
+  "lat": 23.3533,
+  "lng": 91.1318,
+  "tradition": "Hindu",
+  "deity": "Kali",
+  "built": [
+   600,
+   700
+  ],
+  "builtDisplay": "7th c.; renovated 17th c. and 1972-73",
+  "dynasty": "Rani Probhaboti (attributed)",
+  "circuits": [],
+  "significance": "Also called Chandimura Mandir, this Kali temple crowns the Lalmai hill in Comilla District and is traced to a 7th-century foundation by Rani Probhaboti. It was restored in the 17th century and again in 1972-73, and a Shiva temple stands beside it.",
+  "wiki": "https://en.wikipedia.org/wiki/Lalmai_Chandi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Lalmai_Chandi_Temple"
+   },
+   {
+    "l": "Wikidata Q1187576",
+    "u": "https://www.wikidata.org/wiki/Q1187576"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "bishyanath-temple-mymensingh",
+  "name": "Bishyanath Temple",
+  "country": "Bangladesh",
+  "state": "Mymensingh Division",
+  "place": "Mymensingh district",
+  "lat": 24.7517,
+  "lng": 90.4174,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda-like",
+  "circuits": [],
+  "significance": "A Shiva temple in Mymensingh district, Bangladesh, noted for its unusual pagoda-like form among the region's Hindu shrines.",
+  "wiki": "https://en.wikipedia.org/wiki/Bishyanath_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bishyanath_Temple"
+   },
+   {
+    "l": "Wikidata Q1187537",
+    "u": "https://www.wikidata.org/wiki/Q1187537"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "boro-kali-bari-mymensingh",
+  "name": "Boro Kali Bari Temple",
+  "country": "Bangladesh",
+  "state": "Mymensingh Division",
+  "place": "Mymensingh",
+  "lat": 24.7554,
+  "lng": 90.4143,
+  "tradition": "Hindu",
+  "deity": "Kali (worshipped as Joy Kali)",
+  "built": [
+   1700,
+   1800
+  ],
+  "builtDisplay": "c. 18th c. (reign of Nawab Alivardi Khan)",
+  "dynasty": "Nawabs of Bengal",
+  "circuits": [],
+  "significance": "A Shakta temple in Mymensingh city said to be about three centuries old, founded by Tantric practitioners during the reign of Nawab Alivardi Khan. Its black stone image of Kali was replaced by a new one during a renovation completed in 2026.",
+  "story": "Temple lore says a fisherman drew a black stone image of Kali from the Brahmaputra in his net and cried out 'Joy Kali!', giving the goddess her name; Tantrics then consecrated the image beneath an old banyan tree.",
+  "wiki": "https://en.wikipedia.org/wiki/Boro_Kali_Bari_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Boro_Kali_Bari_Temple"
+   },
+   {
+    "l": "Wikidata Q1187556",
+    "u": "https://www.wikidata.org/wiki/Q1187556"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "kal-bhairab-brahmanbaria",
+  "name": "Kal Bhairab Temple, Brahmanbaria",
+  "country": "Bangladesh",
+  "state": "Chittagong Division",
+  "place": "Medda, Brahmanbaria District",
+  "lat": 23.9859,
+  "lng": 91.1129,
+  "tradition": "Hindu",
+  "deity": "Shiva as Kal Bhairab",
+  "built": [
+   1800,
+   1900
+  ],
+  "builtDisplay": "19th c. (c. 200 years old)",
+  "dynasty": "Sarail zamindari",
+  "circuits": [],
+  "significance": "A Shaiva pilgrimage temple at Medda in Brahmanbaria, built about two centuries ago by the sculptor Durgacharan Acharjee on land given by Noor Muhammad, a landlord of Sarail. Its 28-foot image of Kal Bhairab is claimed to be the largest of its kind, and images of Kali and Parvati stand alongside.",
+  "story": "The sculptor Durgacharan Acharjee is said to have been moved by a dream to shape the great earthen image of Kal Bhairab.",
+  "wiki": "https://en.wikipedia.org/wiki/Kal_Bhairab_Temple,_Brahmanbaria",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kal_Bhairab_Temple,_Brahmanbaria"
+   },
+   {
+    "l": "Wikidata Q62495",
+    "u": "https://www.wikidata.org/wiki/Q62495"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "joy-kali-temple-dhaka",
+  "name": "Joy Kali Temple",
+  "country": "Bangladesh",
+  "state": "Dhaka Division",
+  "place": "Wari, Dhaka",
+  "lat": 23.7216,
+  "lng": 90.4167,
+  "tradition": "Hindu",
+  "deity": "Kali",
+  "built": [
+   1594,
+   1594
+  ],
+  "builtDisplay": "Bengali year 1001 (c. 1594)",
+  "dynasty": "Nawabi Bengal",
+  "style": "North Indian (shikhara) with terracotta work",
+  "circuits": [],
+  "significance": "A Kali temple in old Dhaka, reckoned about four centuries old, founded by the Dewans Tulsi Narayan Ghosh and Nabh Narayan Ghosh under the saint Bancharam. It has terracotta-clad walls and columns, a shikhara over the sanctum with mandapa and antarala, and a domed Shiva shrine in the compound.",
+  "wiki": "https://en.wikipedia.org/wiki/Joy_Kali_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Joy_Kali_Temple"
+   },
+   {
+    "l": "Wikidata Q1187572",
+    "u": "https://www.wikidata.org/wiki/Q1187572"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "sugandha-shakta-pitha-barisal",
+  "name": "Sugandha Shakta Pitha",
+  "country": "Bangladesh",
+  "state": "Barisal Division",
+  "place": "Shikarpur, Barisal District",
+  "lat": 22.8434,
+  "lng": 90.2593,
+  "tradition": "Hindu",
+  "deity": "Goddess Sunanda (Ugratara)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "One of the Shakta pithas, standing at Shikarpur village about ten miles north of Barisal in Bangladesh, where the goddess is worshipped as Sunanda or Ugratara. Shiva-Chaturdashi is its principal annual festival.",
+  "story": "The site is held to be where the nose of Sati fell when Vishnu's discus dismembered her body as the grieving Shiva carried it.",
+  "wiki": "https://en.wikipedia.org/wiki/Sugandha_Shakta_pitha",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sugandha_Shakta_pitha"
+   },
+   {
+    "l": "Wikidata Q857669",
+    "u": "https://www.wikidata.org/wiki/Q857669"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Tara"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "muktagachha-shiva-temple",
+  "name": "Muktagachha Shiva Temple",
+  "country": "Bangladesh",
+  "state": "Mymensingh Division",
+  "place": "Muktagachha, Mymensingh District",
+  "lat": 24.7674,
+  "lng": 90.2558,
+  "tradition": "Hindu",
+  "deity": "Shiva (as Anandamoyi Shiva), with a paired Kali shrine",
+  "built": [
+   1820,
+   1820
+  ],
+  "builtDisplay": "1820 (Muktagachha zamindars)",
+  "dynasty": "Muktagachha zamindari",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "Twin Shiva and Kali temples raised in 1820 by Rani Bimola Devi of the Muktagachha zamindar family, named for her mother Anandamoyee. Cited as fine examples of mirrored temple pairs in Bengal, they are a listed heritage site now in fragile condition.",
+  "wiki": "https://en.wikipedia.org/wiki/Muktagachha_Shiva_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Muktagachha_Shiva_temple"
+   },
+   {
+    "l": "Wikidata Q1187582",
+    "u": "https://www.wikidata.org/wiki/Q1187582"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Kali",
+   "Shiva"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "kaliya-jue-temple-dinajpur",
+  "name": "Kaliya Jue Temple",
+  "country": "Bangladesh",
+  "state": "Rangpur Division",
+  "place": "Dinajpur Sadar, Dinajpur District",
+  "lat": 25.7905,
+  "lng": 88.6667,
+  "tradition": "Hindu",
+  "deity": "Krishna",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Krishna temple standing just west of the Dinajpur Rajbari palace complex in northern Bangladesh.",
+  "wiki": "https://en.wikipedia.org/wiki/Kaliya_jue_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kaliya_jue_Temple"
+   },
+   {
+    "l": "Wikidata Q1187561",
+    "u": "https://www.wikidata.org/wiki/Q1187561"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "swami-bagh-temple-dhaka",
+  "name": "Swami Bagh Temple",
+  "country": "Bangladesh",
+  "state": "Dhaka Division",
+  "place": "Swamibagh, Dhaka",
+  "lat": 23.7138,
+  "lng": 90.423,
+  "tradition": "Hindu",
+  "deity": "Jagannath",
+  "built": [
+   1902,
+   1902
+  ],
+  "builtDisplay": "1902",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Vaishnava temple established in Dhaka in 1902, with subsidiary Shiva and Kali shrines, now run by ISKCON. Its annual Jagannath Rath Yatra procession travels through the city to the Dhakeshwari National Temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Swami_Bagh_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Swami_Bagh_Temple"
+   },
+   {
+    "l": "Wikidata Q1187594",
+    "u": "https://www.wikidata.org/wiki/Q1187594"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Vishnu"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "pathirakali-amman-trincomalee",
+  "name": "Pathirakali Amman Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Trincomalee",
+  "lat": 8.5745,
+  "lng": 81.2339,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali (Kali Amman)",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "pre-11th c.; enlarged under Rajendra Chola I",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian)",
+  "circuits": [],
+  "significance": "A Bhadrakali temple in Trincomalee whose foundation date is unknown but which is named in inscriptions from the 11th century and earlier, and was greatly enlarged by the Chola king Rajendra I. It draws pilgrims jointly with the nearby Koneswaram temple during the Ther Thiruvillah chariot festival.",
+  "wiki": "https://en.wikipedia.org/wiki/Pathirakali_Amman_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pathirakali_Amman_Temple"
+   },
+   {
+    "l": "Wikidata Q7144783",
+    "u": "https://www.wikidata.org/wiki/Q7144783"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Devi",
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "ariyalai-siddhivinayakar-jaffna",
+  "name": "Ariyalai Siddhivinayakar Temple",
+  "country": "Sri Lanka",
+  "state": "Northern Province",
+  "place": "Ariyalai, Jaffna District",
+  "lat": 9.6593,
+  "lng": 80.0475,
+  "tradition": "Hindu",
+  "deity": "Ganesha (as Siddhivinayakar)",
+  "built": [
+   1918,
+   1918
+  ],
+  "builtDisplay": "rebuilt c. 1918",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Ganesha temple at Ariyalai, about five kilometres from Jaffna town, rehabilitated around 1918 by Advocate Arulampalam. It has drawn notable visitors including Yogar Swami and Kunrakudi Adigal.",
+  "wiki": "https://en.wikipedia.org/wiki/Ariyalai_Siddhivinayakar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ariyalai_Siddhivinayakar_Temple"
+   },
+   {
+    "l": "Wikidata Q4791177",
+    "u": "https://www.wikidata.org/wiki/Q4791177"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Ganesha"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "thambiluvil-kannaki-amman",
+  "name": "Thambiluvil Kannaki Amman Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thambiluvil, Ampara District",
+  "lat": 7.1261,
+  "lng": 81.8478,
+  "tradition": "Hindu",
+  "deity": "Kannaki Amman",
+  "built": [
+   113,
+   135
+  ],
+  "builtDisplay": "traditionally 2nd c. CE; royal patronage from the 14th c.",
+  "dynasty": "Kotte and Kandyan kings",
+  "style": "Non-Agamic, with four halls (karuvarai, mun, nadu and maha mandapam)",
+  "circuits": [],
+  "significance": "A temple to Kannaki, the heroine of the Tamil epic Silappatikaram, in Ampara District in eastern Sri Lanka, traditionally traced to the arrival of the Pattini cult under Gajabahu I. Kandyan and Kotte kings patronised it from the 14th century onward, and an inscription of Vijayabahu VII of Kotte (1507-1521) was found in its grounds.",
+  "story": "A golden pigeon is said to have revealed the goddess's image at Urakkai, a paddy field west of the village.",
+  "wiki": "https://en.wikipedia.org/wiki/Thambiluvil_Kannaki_Amman_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thambiluvil_Kannaki_Amman_Temple"
+   },
+   {
+    "l": "Wikidata Q3533266",
+    "u": "https://www.wikidata.org/wiki/Q3533266"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "choleeswaram-kantalai",
+  "name": "Choleeswaram Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Peraru, Kantalai, Trincomalee District",
+  "lat": 8.4167,
+  "lng": 81.0667,
+  "tradition": "Hindu",
+  "deity": "Shiva (as Solesvara)",
+  "built": [
+   1000,
+   1010
+  ],
+  "builtDisplay": "c. 1010 (Chola)",
+  "dynasty": "Chola",
+  "style": "Dravidian (Chola period)",
+  "circuits": [],
+  "significance": "A Shiva temple at Peraru near Kantalai in eastern Sri Lanka, raised in honour of the emperor Rajaraja Chola I when the island was under Chola rule. Its remains are read as Dravidian work of the Chola period.",
+  "wiki": "https://en.wikipedia.org/wiki/Choleeswaram_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Choleeswaram_temple"
+   },
+   {
+    "l": "Wikidata Q4501090",
+    "u": "https://www.wikidata.org/wiki/Q4501090"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "thirukkovil-ampara",
+  "name": "Thirukkovil Chitravelayudhar Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thirukkovil, Ampara District",
+  "lat": 7.1183,
+  "lng": 81.8561,
+  "tradition": "Hindu",
+  "deity": "Chitravelayudhar (Murugan)",
+  "built": [
+   993,
+   1070
+  ],
+  "builtDisplay": "Chola era (993-1070); later rebuilt in stone",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian); Pandya-style sanctum",
+  "circuits": [],
+  "significance": "A Murugan temple on Sri Lanka's eastern coast whose founding is placed in the period of Chola rule over the island, with a later reconstruction in stone attributed to Manuneya Gajabahu. The sanctum is identified as Pandya work.",
+  "story": "An elderly devadasi named Thangammai, dismissed from temple service, is said to have reappeared the next morning as an eight-year-old girl ready to perform the rituals.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirukkovil_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thirukkovil_Temple"
+   },
+   {
+    "l": "Wikidata Q12984075",
+    "u": "https://www.wikidata.org/wiki/Q12984075"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Murugan"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "laxmi-narayan-karachi",
+  "name": "Shri Laxmi Narayan Mandir",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Native Jetty Bridge, Karachi",
+  "lat": 24.8444,
+  "lng": 66.9912,
+  "tradition": "Hindu",
+  "deity": "Lakshmi and Vishnu (Lakshmi Narayan)",
+  "built": [
+   1800,
+   1850
+  ],
+  "builtDisplay": "c. early 19th c. (about 200 years old)",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A seafront Hindu temple beneath Karachi's Native Jetty Bridge, dedicated to Lakshmi and Vishnu and reported to be around two centuries old. It also houses images of Hanuman and Sai Baba of Shirdi.",
+  "wiki": "https://en.wikipedia.org/wiki/Shri_Laxmi_Narayan_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shri_Laxmi_Narayan_Mandir"
+   },
+   {
+    "l": "Wikidata Q7503818",
+    "u": "https://www.wikidata.org/wiki/Q7503818"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Lakshmi",
+   "Vishnu"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "chauchala-chhota-govinda-puthia",
+  "name": "Chauchala Chhota Govinda Mandir",
+  "country": "Bangladesh",
+  "state": "Rajshahi",
+  "place": "Puthia, Rajshahi Division",
+  "lat": 24.3623,
+  "lng": 88.8349,
+  "tradition": "Hindu",
+  "deity": "Govinda (Krishna)",
+  "built": [
+   1790,
+   1810
+  ],
+  "builtDisplay": "c. 1790s-1800s",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A small four-roofed (chauchala) brick temple at Puthia in Rajshahi Division, dedicated to Govinda. Its walls carry terracotta plaques showing the ten avatars of Vishnu alongside Ramayana and Radha-Krishna scenes.",
+  "wiki": "https://en.wikipedia.org/wiki/Chauchala_Chhota_Govinda_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chauchala_Chhota_Govinda_Mandir"
+   },
+   {
+    "l": "Wikidata Q19898997",
+    "u": "https://www.wikidata.org/wiki/Q19898997"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "muthumariamman-matale",
+  "name": "Sri Muthumariamman Temple, Matale",
+  "country": "Sri Lanka",
+  "state": "Central Province",
+  "place": "Matale, Matale District",
+  "lat": 7.4773,
+  "lng": 80.6239,
+  "tradition": "Hindu",
+  "deity": "Muthumariamman (Mariamman, goddess of rain and fertility)",
+  "built": [
+   1852,
+   1874
+  ],
+  "builtDisplay": "1852–1874; rajagopuram 2007",
+  "dynasty": "Modern",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "The main Hindu temple of the Sri Lankan hill town of Matale, raised on paddy land gifted in 1852 and completed in 1874 under Nattukottai Chettiar patronage. Its 108-foot rajagopuram, finished in 2007 and carrying over a thousand sculpted figures, is one of the tallest temple towers on the island.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Muthumariamman_Temple,_Matale",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Muthumariamman_Temple,_Matale"
+   },
+   {
+    "l": "Wikidata Q16308678",
+    "u": "https://www.wikidata.org/wiki/Q16308678"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Devi",
+   "Mariamman"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "shiva-mandir-johi",
+  "name": "Shiva Mandir, Johi",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Johi, Dadu District",
+  "lat": 26.6895,
+  "lng": 67.6111,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1850,
+   1859
+  ],
+  "builtDisplay": "c. 1850s",
+  "dynasty": "Modern",
+  "style": "Twin-domed Hindu temple architecture",
+  "circuits": [],
+  "significance": "A mid-19th-century Shiva temple in the Sindhi town of Johi, known locally as the Qubi for its unusual pair of domes and its mix of iron, cement and cheeroli construction. The idols once fixed to its outer walls were destroyed after Partition, and only their traces survive.",
+  "wiki": "https://en.wikipedia.org/wiki/Shiva_Mandir,_Johi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shiva_Mandir,_Johi"
+   },
+   {
+    "l": "Wikidata Q28868562",
+    "u": "https://www.wikidata.org/wiki/Q28868562"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "thaanthonreeswarar-kokkadicholai",
+  "name": "Kokkadicholai Thaanthonreeswarar Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Kokkadicholai, Batticaloa District",
+  "lat": 7.6167,
+  "lng": 81.7167,
+  "tradition": "Hindu",
+  "deity": "Shiva (Thaanthonreeswarar)",
+  "built": [
+   850,
+   1279
+  ],
+  "builtDisplay": "Chola era",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian)",
+  "circuits": [],
+  "significance": "A Shaiva temple southwest of Batticaloa, ascribed to Ulaga Naachi of the Chola realm and counted among the oldest and most important Shiva kovils in Sri Lanka. Its lingam is reported to be a naturally formed one, a rarity on the island.",
+  "story": "Local tradition holds that the temple's stone bull came to life, grazed on the grass and drove Portuguese soldiers away from the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Kokkadicholai_Thaanthonreeswarar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kokkadicholai_Thaanthonreeswarar_Temple"
+   },
+   {
+    "l": "Wikidata Q25551289",
+    "u": "https://www.wikidata.org/wiki/Q25551289"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "magderu-dhrasanvel",
+  "name": "Magderu Temple, Dhrasanvel",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Dhrasanvel, Okhamandal, Devbhumi Dwarka district",
+  "lat": 22.2891,
+  "lng": 69.0515,
+  "tradition": "Hindu",
+  "deity": "Shiva today; probably Surya originally",
+  "built": [
+   740,
+   760
+  ],
+  "builtDisplay": "mid-8th c. (Maitraka period)",
+  "dynasty": "Maitraka",
+  "style": "Early Nagara (saptayatana plan)",
+  "circuits": [],
+  "significance": "An 8th-century saptayatana temple near Dwarka, its large central shrine ringed by six smaller ones, now a Monument of National Importance in the ASI's Vadodara Circle. Scholars link the name element Maga to the Aboti Maga Brahmins, Surya worshippers who migrated from Iran to western India, and read the site as an original sun temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Magderu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Magderu"
+   },
+   {
+    "l": "Wikidata Q47501093",
+    "u": "https://www.wikidata.org/wiki/Q47501093"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva",
+   "Surya"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "raghunath-srinagar",
+  "name": "Raghunath Temple, Srinagar",
+  "country": "India",
+  "state": "Jammu and Kashmir",
+  "place": "Srinagar",
+  "lat": 34.0857,
+  "lng": 74.8055,
+  "tradition": "Hindu",
+  "deity": "Raghunath (Rama)",
+  "built": [
+   1835,
+   1860
+  ],
+  "builtDisplay": "1835–1860 (Dogra)",
+  "dynasty": "Dogra",
+  "circuits": [],
+  "significance": "A Dogra-period Rama temple in Srinagar, begun in 1835 under Maharaja Gulab Singh and completed in 1860 under Maharaja Ranbir Singh. Attacked and left abandoned after the exodus of Kashmiri Hindus, it is now undergoing restoration.",
+  "wiki": "https://en.wikipedia.org/wiki/Raghunath_Temple,_Srinagar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Raghunath_Temple,_Srinagar"
+   },
+   {
+    "l": "Wikidata Q110912713",
+    "u": "https://www.wikidata.org/wiki/Q110912713"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Rama"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "prasat-ta-krabey",
+  "name": "Prasat Ta Krabey",
+  "country": "Cambodia",
+  "state": "Oddar Meanchey",
+  "place": "Bakdai",
+  "lat": 14.3561,
+  "lng": 103.3775,
+  "tradition": "Hindu",
+  "deity": "Shiva (Svayambhuva Linga)",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Angkor period)",
+  "dynasty": "Khmer (Angkor)",
+  "style": "Khmer, Bayon",
+  "circuits": [],
+  "significance": "A small laterite Khmer sanctuary on the Dangrek escarpment, raised under Suryavarman I and Udayadityavarman II and left unfinished, enclosing a linga called Svayambhuva. It stands on the contested Cambodia-Thailand frontier and its carvings include Yama riding his buffalo mount.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Ta_Krabey",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Ta_Krabey"
+   },
+   {
+    "l": "Wikidata Q1511068",
+    "u": "https://www.wikidata.org/wiki/Q1511068"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "wat-kamphaeng-laeng-phetchaburi",
+  "name": "Wat Kamphaeng Laeng",
+  "country": "Thailand",
+  "state": "Phetchaburi",
+  "place": "Mueang Phetchaburi",
+  "lat": 13.1056,
+  "lng": 99.9561,
+  "tradition": "Hindu",
+  "deity": "Uma (consort of Shiva)",
+  "built": [
+   1200,
+   1250
+  ],
+  "builtDisplay": "c. 1200-1250 (Jayavarman VII)",
+  "dynasty": "Khmer (Angkor)",
+  "style": "Khmer, Bayon and Lopburi",
+  "circuits": [],
+  "significance": "A walled Khmer complex of four laterite towers and a cruciform shrine built in the reign of Jayavarman VII, the westernmost surviving Khmer sanctuary in Thailand. An image of Uma recovered here in 1956 marks its Hindu foundation; the site later became a Buddhist wat.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Kamphaeng_Laeng",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Kamphaeng_Laeng"
+   },
+   {
+    "l": "Wikidata Q3566583",
+    "u": "https://www.wikidata.org/wiki/Q3566583"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Parvati",
+   "Shiva"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "gopinath-pabna",
+  "name": "Gopinath Temple, Pabna",
+  "country": "Bangladesh",
+  "state": "Pabna District",
+  "place": "Pabna",
+  "lat": 24.0015,
+  "lng": 89.245,
+  "tradition": "Hindu",
+  "deity": "Gopinath (Krishna)",
+  "built": [
+   1856,
+   1857
+  ],
+  "builtDisplay": "1856-57",
+  "dynasty": "Colonial era",
+  "style": "Jor-bangla (chala)",
+  "circuits": [],
+  "significance": "A Vaishnava brick temple in Pabna town built by Brajmohan Krori, a tahsildar under the Nawabs of Murshidabad, in the jor-bangla form of two joined do-chala roofs. Its terracotta panels illustrate Ramayana and Mahabharata scenes; the image was moved to a nearby Kali temple in 1910 and worship has ceased.",
+  "wiki": "https://en.wikipedia.org/wiki/Gopinath_Temple,_Pabna",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gopinath_Temple,_Pabna"
+   },
+   {
+    "l": "Wikidata Q123359292",
+    "u": "https://www.wikidata.org/wiki/Q123359292"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "shadani-darbar-ghotki",
+  "name": "Shadani Darbar",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Hayat Pitafi, Ghotki District",
+  "lat": 27.9585,
+  "lng": 69.5084,
+  "tradition": "Hindu",
+  "deity": "Sant Shadaram Sahib",
+  "built": [
+   1786,
+   1786
+  ],
+  "builtDisplay": "founded 1786",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Hindu shrine in Mirpur Mathelo taluka founded in 1786 by Sant Shadaram Sahib, reported to be the largest Hindu temple in Sindh. Its liturgy combines agni puja with recitation of the Bhagavad Gita and the Guru Granth Sahib, and the saint's birth anniversary draws an annual gathering.",
+  "wiki": "https://en.wikipedia.org/wiki/Shadani_Darbar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shadani_Darbar"
+   },
+   {
+    "l": "Wikidata Q104834764",
+    "u": "https://www.wikidata.org/wiki/Q104834764"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "saraswati-gyan-mandir-chattogram",
+  "name": "Saraswati Gyan Mandir",
+  "country": "Bangladesh",
+  "state": "Chattogram District",
+  "place": "University of Chittagong campus",
+  "lat": 22.4837,
+  "lng": 91.7929,
+  "tradition": "Hindu",
+  "deity": "Saraswati",
+  "built": [
+   2019,
+   2026
+  ],
+  "builtDisplay": "2019-2026",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A temple to Saraswati on the University of Chittagong campus, financed by Adul Kanti Chowdhury and Anita Chowdhury through their foundation; its foundation stone was laid in 2019 and it opened in 2026. It gives the university a permanent shrine for the Saraswati Puja long observed there, and is described as the only one of its kind in Bangladesh.",
+  "wiki": "https://en.wikipedia.org/wiki/Saraswati_Gyan_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Saraswati_Gyan_Mandir"
+   },
+   {
+    "l": "Wikidata Q139898431",
+    "u": "https://www.wikidata.org/wiki/Q139898431"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Saraswati"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "narai-cheng-weng-sakon-nakhon",
+  "name": "Phra That Narai Cheng Weng",
+  "country": "Thailand",
+  "state": "Sakon Nakhon",
+  "place": "That Na Weng, Mueang Sakon Nakhon",
+  "lat": 17.1871,
+  "lng": 104.0958,
+  "tradition": "Hindu",
+  "deity": "Krishna (Vishnu)",
+  "built": [
+   957,
+   1157
+  ],
+  "builtDisplay": "16th-17th Buddhist c. (Baphuon-period Khmer art)",
+  "dynasty": "Khmer",
+  "style": "Khmer, Baphuon",
+  "circuits": [],
+  "significance": "A sandstone Khmer prang on a laterite base outside Sakon Nakhon town, carved with a lintel showing Krishna slaying a lion in Baphuon-period style. It is the principal Khmer Hindu monument surviving in the province.",
+  "story": "Local tradition holds that the sanctuary was raised entirely by women, in a building contest against the men who put up Phra That Phu Pek.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Narai_Cheng_Weng",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Narai_Cheng_Weng"
+   },
+   {
+    "l": "Wikidata Q6630400",
+    "u": "https://www.wikidata.org/wiki/Q6630400"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Krishna",
+   "Vishnu"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "prasat-huai-thap-than",
+  "name": "Prasat Huai Thap Than",
+  "country": "Thailand",
+  "state": "Sisaket",
+  "place": "Huai Thap Than",
+  "lat": 15.1953,
+  "lng": 102.1768,
+  "tradition": "Hindu",
+  "deity": "Trimurti (Brahma, Vishnu and Shiva)",
+  "built": [
+   1040,
+   1060
+  ],
+  "builtDisplay": "mid-11th c. (Baphuon period)",
+  "dynasty": "Khmer",
+  "style": "Khmer and Lao",
+  "circuits": [],
+  "significance": "A Khmer sanctuary of the Baphuon period whose three towers on a shared platform stood for the Trimurti, registered as a national monument in 1935. Rebuilt under Lan Xang influence in the 18th-19th centuries, it passed into Buddhist use and its name changed from Prasat Ban Prasat to That Chedi and then to its present form.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Huai_Thap_Than",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Huai_Thap_Than"
+   },
+   {
+    "l": "Wikidata Q3401340",
+    "u": "https://www.wikidata.org/wiki/Q3401340"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Brahma",
+   "Shiva",
+   "Vishnu"
+  ],
+  "deityGroup": "Vaishnava"
+ },
+ {
+  "id": "mahilara-sarkar-math-barishal",
+  "name": "Mahilara Sarkar Math",
+  "country": "Bangladesh",
+  "state": "Barishal District",
+  "place": "Mahilara, Gournadi",
+  "lat": 22.9237,
+  "lng": 90.2459,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1740,
+   1756
+  ],
+  "builtDisplay": "1740-56 (Nawab Alivardi Khan's reign)",
+  "dynasty": "Nawabs of Bengal",
+  "style": "Shikhara, octagonal spire",
+  "circuits": [],
+  "significance": "A brick math at Mahilara in Gournadi raised by the local notable Sarkar Rup Ram Das Gupta under Nawab Alivardi Khan, built for Shiva and painted inside with Radha-Krishna imagery. Its tiered octagonal spire, with cornice mouldings that borrow from European church design, now leans noticeably and is the only tilted temple of its kind in Bangladesh.",
+  "wiki": "https://en.wikipedia.org/wiki/Mahilara_Sarkar_Math",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mahilara_Sarkar_Math"
+   },
+   {
+    "l": "Wikidata Q31724140",
+    "u": "https://www.wikidata.org/wiki/Q31724140"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "prasat-kao-noi-sa-kaeo",
+  "name": "Prasat Kao Noi",
+  "country": "Thailand",
+  "state": "Sa Kaeo",
+  "place": "Aranyaprathet",
+  "lat": 13.5824,
+  "lng": 102.5283,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   600,
+   700
+  ],
+  "builtDisplay": "7th c.; central tower rebuilt 11th c.",
+  "dynasty": "Chenla",
+  "style": "Khmer, late Sambor Prei Kuk to early Prei Kmeng",
+  "circuits": [],
+  "significance": "Three east-facing brick towers on a shared base near Aranyaprathet, put up in the 7th century under Isanavarman I or Bhavavarman II and reckoned the oldest Khmer monument of consequence in Thailand. Lingas and pedestals found here had been broken into fragments, evidence that the shrine was deliberately desecrated.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Kao_Noi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Kao_Noi"
+   },
+   {
+    "l": "Wikidata Q3401351",
+    "u": "https://www.wikidata.org/wiki/Q3401351"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "sindurmati-tirthadham-kurigram",
+  "name": "Sindurmati Tirthadham",
+  "country": "Bangladesh",
+  "state": "Kurigram District",
+  "place": "Sindurmati",
+  "lat": 25.8131,
+  "lng": 89.5171,
+  "tradition": "Hindu",
+  "deity": "Durga, Krishna, Vishnu, Rama and Kali",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A pilgrimage site around a large tank on the Kurigram-Lalmonirhat boundary, founded by the zamindar Raj Narayan Chakraborty and carrying shrines to Durga, Krishna, Vishnu, Rama and Kali. The complex was restored under a government programme in 1975.",
+  "story": "A childless zamindar is said to have dug the tank in hope of offspring and named his two daughters Sindur and Moti after they were born; during a Navami puja held at the centre of the tank the water rose and drowned them, and after he dreamed that they had become immortal the water took their names.",
+  "wiki": "https://en.wikipedia.org/wiki/Sindurmati_Tirthadham",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sindurmati_Tirthadham"
+   },
+   {
+    "l": "Wikidata Q113699165",
+    "u": "https://www.wikidata.org/wiki/Q113699165"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Durga",
+   "Kali",
+   "Krishna",
+   "Rama",
+   "Vishnu"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "bhairabkunda-shiva-mandir",
+  "name": "Bhairabkunda Shiva Mandir",
+  "country": "Bhutan",
+  "state": "Samdrup Jongkhar District",
+  "place": "Jomotsangkha (Daifam)",
+  "lat": 26.8933,
+  "lng": 92.091,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   2002,
+   2005
+  ],
+  "origin": 1950,
+  "builtDisplay": "rebuilt 2002-05 (wooden shrine after the 1950 earthquake)",
+  "dynasty": "Modern",
+  "style": "Hindu temple with Bhutanese elements",
+  "circuits": [],
+  "significance": "A Shiva shrine in southern Bhutan near the Assam border, first built in timber after the 1950 Assam-Tibet earthquake and replaced by the present structure between 2002 and 2005. Its design deliberately blends Hindu temple forms with traditional Bhutanese architecture, and it draws pilgrims from across the frontier.",
+  "story": "It is counted among the Shakta pithas where a part of Sati fell; Indra is said to have meditated here on his celestial elephant, Bhairab Nath to have found a self-formed Shiva lingam at the spot, and a cave beneath the temple to mark where Shiva himself meditated.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhairabkunda_Shiva_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhairabkunda_Shiva_Mandir"
+   },
+   {
+    "l": "Wikidata Q105095291",
+    "u": "https://www.wikidata.org/wiki/Q105095291"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "prasat-phanom-wan-nakhon-ratchasima",
+  "name": "Prasat Phanom Wan",
+  "country": "Thailand",
+  "state": "Nakhon Ratchasima",
+  "place": "Ban Pho, Mueang Nakhon Ratchasima",
+  "lat": 15.0251,
+  "lng": 102.194,
+  "tradition": "Hindu",
+  "deity": "Maheshwara (Shiva)",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c.; stone sanctuary 13th-14th c.",
+  "dynasty": "Khmer (Angkor)",
+  "style": "Khmer",
+  "circuits": [],
+  "significance": "A Khmer sanctuary outside Khorat, founded in the 11th century for Maheshwara and rebuilt in sandstone in the 13th-14th centuries, with a main prang of three arched gateways joined to a surrounding cloister. It later passed into Buddhist use and was listed as an ancient monument by the Fine Arts Department in 1936.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Phanom_Wan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Phanom_Wan"
+   },
+   {
+    "l": "Wikidata Q2084796",
+    "u": "https://www.wikidata.org/wiki/Q2084796"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Shiva"
+  ],
+  "deityGroup": "Shaiva"
+ },
+ {
+  "id": "kalka-cave-temple-aror",
+  "name": "Kalka Cave Temple",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Aror, Sukkur District",
+  "lat": 27.6261,
+  "lng": 68.9309,
+  "tradition": "Hindu",
+  "deity": "Kali (Kalka Devi)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Natural cave shrine",
+  "circuits": [],
+  "significance": "A cave shrine to Kali at Aror near Sukkur, known as the Asthan of Kalka Devi and one of the few active Hindu pilgrimage places in upper Sindh. Devotees gather there on the evening of the first Monday of each month.",
+  "story": "Kalka Devi is said to have manifested at this spot while travelling to the Hinglaj Mata temple, and the shrine's caretaker holds that two tunnels in the cave run all the way to Hinglaj.",
+  "wiki": "https://en.wikipedia.org/wiki/Kalka_Cave_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kalka_Cave_Temple"
+   },
+   {
+    "l": "Wikidata Q97353646",
+    "u": "https://www.wikidata.org/wiki/Q97353646"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Devi",
+   "Kali"
+  ],
+  "deityGroup": "Shakta"
+ },
+ {
+  "id": "burmese-buddhist-temple-singapore",
+  "name": "Burmese Buddhist Temple",
+  "country": "Singapore",
+  "state": "",
+  "place": "Novena",
+  "lat": 1.3284,
+  "lng": 103.8469,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (white marble image)",
+  "built": [
+   1988,
+   1991
+  ],
+  "origin": 1875,
+  "builtDisplay": "founded 1875; present temple 1991",
+  "dynasty": "Modern",
+  "style": "Traditional Burmese",
+  "circuits": [],
+  "significance": "Singapore's Theravada temple in the Burmese tradition, begun in 1875 by U Thar Hnin and rehoused on Tai Gin Road in 1991; it is described as the only Burmese temple outside Myanmar built in the traditional Burmese manner, with teak carving throughout. Its 3-metre image, carved in 1918 from Sagyin marble and shipped 2,500 km to Singapore in 1921, is the largest pure white marble Buddha outside Myanmar.",
+  "wiki": "https://en.wikipedia.org/wiki/Burmese_Buddhist_Temple_(Singapore)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Burmese_Buddhist_Temple_(Singapore)"
+   },
+   {
+    "l": "Wikidata Q4999418",
+    "u": "https://www.wikidata.org/wiki/Q4999418"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "manuha-myinkaba-bagan",
+  "name": "Manuha Temple",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Myinkaba, Bagan",
+  "lat": 21.1534,
+  "lng": 94.8592,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (three seated images and a reclining parinirvana image)",
+  "built": [
+   1067,
+   1067
+  ],
+  "builtDisplay": "1067 (King Manuha)",
+  "dynasty": "Pagan (Bagan)",
+  "circuits": [],
+  "significance": "A two-storey rectangular shrine at Myinkaba in Bagan, finished in 1067 by Manuha, the captive Mon king of Thaton. Its four colossal images - three seated Buddhas and one entering final nibbana - are wedged so tightly into their chambers that the cramped setting is read as an expression of the king's captivity.",
+  "story": "The Glass Palace Chronicle relates that Manuha, in remorse, raised the great images and prayed that wherever he might be reborn in samsara he would never again be conquered by another.",
+  "wiki": "https://en.wikipedia.org/wiki/Manuha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Manuha_Temple"
+   },
+   {
+    "l": "Wikidata Q3517578",
+    "u": "https://www.wikidata.org/wiki/Q3517578"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "ramkot-banashram-ramu",
+  "name": "Ramkot Banashram",
+  "country": "Bangladesh",
+  "state": "Cox's Bazar District",
+  "place": "Rajarkul, Ramu",
+  "lat": 21.4022,
+  "lng": 92.1104,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (chest-bone relic; image in abhaya mudra)",
+  "built": [
+   -308,
+   -268
+  ],
+  "builtDisplay": "c. 3rd c. BCE (Ashokan); restored 1919",
+  "dynasty": "Maurya",
+  "circuits": [],
+  "significance": "A hilltop monastery near Ramu, held to be one of the stupas raised in Ashoka's reign and named from words meaning chest bone, for the relic of the Buddha it is said to enshrine. Lost for centuries, it was rediscovered after a stone inscription came to light and was restored in 1919 by the Sri Lankan monk Jagat Jyoti Mahasthavir.",
+  "story": "Tradition holds that the Buddha came here with Ananda and foretold that a pagoda would one day stand on the spot to hold a relic from his chest.",
+  "wiki": "https://en.wikipedia.org/wiki/Ramkot_Banashram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ramkot_Banashram"
+   },
+   {
+    "l": "Wikidata Q60715689",
+    "u": "https://www.wikidata.org/wiki/Q60715689"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "taung-mingyi-amarapura",
+  "name": "Taung Mingyi Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Amarapura",
+  "lat": 21.8942,
+  "lng": 96.0508,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (the Taung Mingyi image)",
+  "built": [
+   1786,
+   1786
+  ],
+  "builtDisplay": "1786; restored 1850-53",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "One of the four great pagodas of Amarapura, built in 1786 by the minister Thaung Mingyi and sheltering a standing Buddha image nearly 14.3 metres high. Wrecked by the earthquake of 1838, it was rebuilt on the order of King Pagan Min from 1850 and finished under Mindon in 1853; the 2025 Myanmar earthquake damaged it again.",
+  "wiki": "https://en.wikipedia.org/wiki/Taung_Mingyi_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Taung_Mingyi_Pagoda"
+   },
+   {
+    "l": "Wikidata Q65336875",
+    "u": "https://www.wikidata.org/wiki/Q65336875"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kothduwa-balapitiya",
+  "name": "Kothduwa Temple",
+  "country": "Sri Lanka",
+  "state": "Galle District",
+  "place": "Balapitiya, Madu Ganga",
+  "lat": 6.3073,
+  "lng": 80.0521,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Bodhi tree grown from the Jaya Sri Maha Bodhi)",
+  "built": [
+   1860,
+   1869
+  ],
+  "builtDisplay": "1860s (Samson Rajapakse)",
+  "dynasty": "Colonial era",
+  "circuits": [],
+  "significance": "An island temple in the Madu Ganga estuary reached only by boat, built in the 1860s by the businessman Samson Rajapakse around a Bodhi tree raised from the Jaya Sri Maha Bodhi. It is remembered as a resting place of the Buddha's tooth relic in the fourth century.",
+  "story": "Princess Hemamali and Prince Danthakumara are said to have carried the tooth relic from India disguised as brahmins, the relic hidden in the princess's hair, and to have concealed it at Kothduwa before handing it to King Sirimeghavanna.",
+  "wiki": "https://en.wikipedia.org/wiki/Kothduwa_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kothduwa_Temple"
+   },
+   {
+    "l": "Wikidata Q6434031",
+    "u": "https://www.wikidata.org/wiki/Q6434031"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "xa-loi-pagoda-ho-chi-minh",
+  "name": "Xá Lợi Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "District 3, Ho Chi Minh City",
+  "lat": 10.7781,
+  "lng": 106.6867,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Buddha relic)",
+  "built": [
+   1956,
+   1958
+  ],
+  "builtDisplay": "1956-1958",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A pagoda in District 3 of Ho Chi Minh City raised between 1956 and 1958 to enshrine a relic of Gautama Buddha, with its bell tower opened in 1961. Its sanctuary carries fourteen painted scenes running from the Buddha's birth as Prince Siddhartha to his attainment of nirvana.",
+  "wiki": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda"
+   },
+   {
+    "l": "Wikidata Q1005868",
+    "u": "https://www.wikidata.org/wiki/Q1005868"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "thay-temple-quoc-oai",
+  "name": "Thầy Temple",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Quốc Oai, Hanoi",
+  "lat": 21.0223,
+  "lng": 105.6456,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha with eighteen arhats, alongside Zen master Từ Đạo Hạnh and Emperor Lý Nhân Tông",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Lý dynasty)",
+  "dynasty": "Lý",
+  "style": "Vietnamese",
+  "circuits": [],
+  "significance": "A Buddhist temple complex west of Hanoi in Quốc Oai, established in the 11th century under Emperor Lý Nhân Tông and refurbished repeatedly since. Its halls venerate the Buddha together with the Zen master Từ Đạo Hạnh, around whose cult the site grew.",
+  "story": "Từ Đạo Hạnh is said to have burned his finger to summon rain and healed villagers by blessing them, and to have been reborn three times - once as a Buddha, then as the son of King Lý Nhân Tông, then as the monk who saved King Thần Tông.",
+  "wiki": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple"
+   },
+   {
+    "l": "Wikidata Q7799949",
+    "u": "https://www.wikidata.org/wiki/Q7799949"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "bagaya-monastery-inwa",
+  "name": "Bagaya Monastery",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Inwa",
+  "lat": 21.8484,
+  "lng": 95.9682,
+  "tradition": "Buddhist",
+  "deity": "Shin Dhammabhinanda",
+  "built": [
+   1992,
+   1992
+  ],
+  "origin": 1593,
+  "builtDisplay": "orig. 1593; rebuilt 1992",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "A Theravada monastery at the old capital of Inwa, dedicated to Shin Dhammabhinanda and first built in 1593, later endowed during King Hsinbyushin's reign by the town officer of Magwe. Destroyed by fire in 1821, it was rebuilt in 1992.",
+  "wiki": "https://en.wikipedia.org/wiki/Bagaya_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bagaya_Monastery"
+   },
+   {
+    "l": "Wikidata Q17005346",
+    "u": "https://www.wikidata.org/wiki/Q17005346"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "ngahtatgyi-buddha-temple-yangon",
+  "name": "Ngahtatgyi Buddha Temple",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Bahan Township, Yangon",
+  "lat": 16.8084,
+  "lng": 96.1626,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Ngahtatgyi Buddha image)",
+  "built": [
+   1558,
+   1558
+  ],
+  "builtDisplay": "1558",
+  "dynasty": "Toungoo",
+  "circuits": [],
+  "significance": "A Theravada temple in Yangon's Bahan Township whose five-tiered pagoda shelters a seated Buddha image 6.2 m high, donated by Prince Minyedeippa and completed in 1558. A further Buddha statue was erected at the temple in 1900.",
+  "wiki": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple"
+   },
+   {
+    "l": "Wikidata Q4315287",
+    "u": "https://www.wikidata.org/wiki/Q4315287"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "girihandu-seya-thiriyai",
+  "name": "Girihandu Seya",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thiriyai, Trincomalee District",
+  "lat": 8.8704,
+  "lng": 81.0073,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (hair relics)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "enlarged 8th c.; repaired 11th c.",
+  "dynasty": "Anuradhapura",
+  "style": "Vatadage",
+  "circuits": [],
+  "significance": "A hilltop stupa at Thiriyai believed to hold hair relics of the Buddha, enlarged in the 8th century and enclosed by a vatadage of concentric stone pillars like those at Thuparama and Lankarama. An inscription links it to King Silamegha, and it was later repaired under Vijayabahu I.",
+  "story": "The Pujavaliya tells that the merchants Tapassu and Bhalluka, carrying the Buddha's hair relics, set the casket down on this rock and found it could no longer be lifted, so they raised a stupa over it.",
+  "wiki": "https://en.wikipedia.org/wiki/Girihandu_Seya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Girihandu_Seya"
+   },
+   {
+    "l": "Wikidata Q48733604",
+    "u": "https://www.wikidata.org/wiki/Q48733604"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kyauktawgyi-temple-yangon",
+  "name": "Kyauktawgyi Buddha Temple, Yangon",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Insein Township, Yangon",
+  "lat": 16.8846,
+  "lng": 96.1232,
+  "tradition": "Buddhist",
+  "deity": "Loka Chantha Abhaya Labha Muni (Gautama Buddha image)",
+  "built": [
+   2000,
+   2002
+  ],
+  "builtDisplay": "2000-2002",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Theravada temple in Insein Township, Yangon, built around the Loka Chantha Abhaya Labha Muni, a 37-foot marble Buddha image brought to the site in August 2000 and consecrated in February 2002. Its construction was led by Senior General Than Shwe.",
+  "wiki": "https://en.wikipedia.org/wiki/Kyauktawgyi_Buddha_Temple_(Yangon)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kyauktawgyi_Buddha_Temple_(Yangon)"
+   },
+   {
+    "l": "Wikidata Q20991985",
+    "u": "https://www.wikidata.org/wiki/Q20991985"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "wat-phra-singh-chiang-mai",
+  "name": "Wat Phra Singh",
+  "country": "Thailand",
+  "state": "Chiang Mai",
+  "place": "Mueang Chiang Mai, Chiang Mai",
+  "lat": 18.7888,
+  "lng": 98.9812,
+  "tradition": "Buddhist",
+  "deity": "Phra Buddha Sihing image",
+  "built": [
+   1345,
+   1345
+  ],
+  "builtDisplay": "1345 (Lan Na)",
+  "dynasty": "Mangrai (Lan Na)",
+  "style": "Lanna",
+  "circuits": [],
+  "significance": "A leading royal temple of Chiang Mai, founded in 1345 by Phayu, fifth king of Lan Na, and named for the Phra Buddha Sihing image brought there in 1400. Its Viharn Lai Kham was built between 1815 and 1821, and it was granted royal temple status in 1935.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_Singh",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Phra_Singh"
+   },
+   {
+    "l": "Wikidata Q1657130",
+    "u": "https://www.wikidata.org/wiki/Q1657130"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "tran-quoc-pagoda-hanoi",
+  "name": "Trấn Quốc Pagoda",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Tây Hồ District, Hanoi",
+  "lat": 21.0478,
+  "lng": 105.8367,
+  "tradition": "Buddhist",
+  "deity": "Mother Goddesses Mẫu Thượng Ngàn, Mẫu Thoải and Mẫu Thượng Thiên",
+  "built": [
+   1615,
+   1615
+  ],
+  "origin": 544,
+  "builtDisplay": "founded 544-548; moved to present site 1615",
+  "dynasty": "Early Lý",
+  "circuits": [],
+  "significance": "A Buddhist pagoda in Tây Hồ District, Hanoi, first founded under Emperor Lý Nam Đế between 544 and 548, moved to its present site in 1615 and heavily repaired in 1815. Beside its Buddhist halls it holds shrines to the three Mother Goddesses of Vietnamese tradition, and a Bodhi sapling from Bodh Gaya was planted there in 1959.",
+  "wiki": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_Qu%E1%BB%91c_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_Qu%E1%BB%91c_Pagoda"
+   },
+   {
+    "l": "Wikidata Q864770",
+    "u": "https://www.wikidata.org/wiki/Q864770"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "abeyadana-temple-bagan",
+  "name": "Abeyadana Temple",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Bagan",
+  "lat": 21.1489,
+  "lng": 94.8577,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (brick image)",
+  "built": [
+   1090,
+   1090
+  ],
+  "builtDisplay": "c. 1090 (Pagan)",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A brick temple at Bagan built around 1090 during the reign of King Kyanzittha, its main image a brick Gautama Buddha. A later inscription credits its construction to Kyanzittha's queen Abeyadana, and its murals mix Tantric and Brahmanic figures with Buddhist ones.",
+  "story": "Local legend holds that the temple stands on the spot where Kyanzittha's queen Abeyadana waited for him.",
+  "wiki": "https://en.wikipedia.org/wiki/Abeyadana_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Abeyadana_Temple"
+   },
+   {
+    "l": "Wikidata Q319840",
+    "u": "https://www.wikidata.org/wiki/Q319840"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kong-meng-san-phor-kark-see-singapore",
+  "name": "Kong Meng San Phor Kark See Monastery",
+  "country": "Singapore",
+  "state": "Singapore",
+  "place": "Bishan, Singapore",
+  "lat": 1.3614,
+  "lng": 103.836,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha and Guanyin (Avalokiteśvara)",
+  "built": [
+   1920,
+   1921
+  ],
+  "builtDisplay": "1920-21",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Mahayana Buddhist monastery in Bishan, Singapore, founded in 1920-21 by the Venerable Zhuan Dao on land given by the businessman Tay Woo Seng and later supported by the Aw brothers. Its grounds hold a large bronze Buddha, an outdoor Guanyin statue and a Bodhi sapling descended from the tree at Anuradhapura.",
+  "wiki": "https://en.wikipedia.org/wiki/Kong_Meng_San_Phor_Kark_See_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kong_Meng_San_Phor_Kark_See_Monastery"
+   },
+   {
+    "l": "Wikidata Q2890360",
+    "u": "https://www.wikidata.org/wiki/Q2890360"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Avalokiteshvara",
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "man-buddha-sale",
+  "name": "Man Buddha Temple",
+  "country": "Myanmar",
+  "state": "Magway Region",
+  "place": "Sale",
+  "lat": 20.8356,
+  "lng": 94.7455,
+  "tradition": "Buddhist",
+  "deity": "Shinbin Maha Laba Man Buddha",
+  "built": [
+   1300,
+   1300
+  ],
+  "builtDisplay": "c. 1300 (Buddha image)",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Theravada Buddhist temple at Sale in Myanmar's Magway Region that enshrines the Shinbin Maha Laba Man Buddha, a hollow gold-lacquered figure of about 20 feet said to be the largest lacquer Buddha image in the country. The image itself is dated to around 1300.",
+  "story": "The image is said to have floated downriver from Monywa to Sale during the great floods of 1888.",
+  "wiki": "https://en.wikipedia.org/wiki/Man_Buddha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Man_Buddha_Temple"
+   },
+   {
+    "l": "Wikidata Q60748794",
+    "u": "https://www.wikidata.org/wiki/Q60748794"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "but-thap-thuan-thanh",
+  "name": "Bút Tháp Temple",
+  "country": "Vietnam",
+  "state": "Bắc Ninh",
+  "place": "Thuận Thành",
+  "lat": 21.0608,
+  "lng": 106.0222,
+  "tradition": "Buddhist",
+  "deity": "Thousand-armed, thousand-eyed Quan Âm (Avalokiteshvara)",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "17th c. fabric (founded 13th c.)",
+  "origin": 1200,
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Buddhist temple beside the Đuống River dyke in Bắc Ninh province, founded in the 13th century but whose surviving architecture, sculpture and decoration all belong to the 17th century, when the Zen master Chuyet Chuyet made it famous. Its ten buildings run for about 100 metres and hold a celebrated thousand-armed, thousand-eyed Quan Âm alongside the Buddha triad, Manjushri and Samantabhadra.",
+  "wiki": "https://en.wikipedia.org/wiki/B%C3%BAt_Th%C3%A1p_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/B%C3%BAt_Th%C3%A1p_Temple"
+   },
+   {
+    "l": "Wikidata Q1091048",
+    "u": "https://www.wikidata.org/wiki/Q1091048"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "quan-su-hanoi",
+  "name": "Quán Sứ Pagoda",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Hoàn Kiếm, Hanoi",
+  "lat": 21.0245,
+  "lng": 105.8453,
+  "tradition": "Buddhist",
+  "deity": "The Buddha (front hall); Master Minh Không (rear hall)",
+  "built": [
+   1400,
+   1500
+  ],
+  "builtDisplay": "15th c. (Lê); renovated 1822",
+  "dynasty": "Lê",
+  "circuits": [],
+  "significance": "A 15th-century Buddhist pagoda on Quan Su Street in central Hanoi, raised on the grounds of a Lê-dynasty guest house built for envoys from Champa and Laos, who as Buddhists wanted a place of worship on the premises. Renovated in 1822, it now serves as the headquarters of the Buddhist Sangha of Vietnam.",
+  "wiki": "https://en.wikipedia.org/wiki/Qu%C3%A1n_S%E1%BB%A9_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Qu%C3%A1n_S%E1%BB%A9_Pagoda"
+   },
+   {
+    "l": "Wikidata Q7273080",
+    "u": "https://www.wikidata.org/wiki/Q7273080"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "changangkha-lhakhang-thimphu",
+  "name": "Changangkha Lhakhang",
+  "country": "Bhutan",
+  "state": "Thimphu",
+  "place": "Thimphu",
+  "lat": 27.4733,
+  "lng": 89.6283,
+  "tradition": "Buddhist",
+  "deity": "Avalokiteshvara in Mahakarunika form",
+  "built": [
+   1200,
+   1400
+  ],
+  "builtDisplay": "13th–14th c.",
+  "dynasty": "Drukpa Kagyu (Phajo lineage)",
+  "circuits": [],
+  "significance": "One of Thimphu's oldest temples, set on a ridge above the city and founded in the 13th or 14th century by Nyima, a son of Phajo Drugom Zhigpo who brought the Drukpa Kagyu teachings to Bhutan. Its bronze Avalokiteshvara is the main image, and the protector Genyen Domtsangpa is invoked as the birth deity of children born at the national referral hospital below.",
+  "story": "Some hold that the bronze Avalokiteshvara arose of itself rather than being carved, while others credit a Newar master craftsman working at the time the temple was built.",
+  "wiki": "https://en.wikipedia.org/wiki/Changangkha_Lhakhang",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Changangkha_Lhakhang"
+   },
+   {
+    "l": "Wikidata Q109385874",
+    "u": "https://www.wikidata.org/wiki/Q109385874"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kwan-im-thong-hood-cho-rochor",
+  "name": "Kwan Im Thong Hood Cho Temple",
+  "country": "Singapore",
+  "state": "Singapore",
+  "place": "Rochor",
+  "lat": 1.3009,
+  "lng": 103.853,
+  "tradition": "Buddhist",
+  "deity": "Guanyin (Kuan Yim), worshipped here in her Cundi form",
+  "built": [
+   1884,
+   1884
+  ],
+  "builtDisplay": "1884; rebuilt 1895 and 1980",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Chinese Buddhist temple on Waterloo Street in Singapore's Rochor district, begun in 1884 after the firm Chen Liang Cheng gave the land, and rebuilt in 1895 and again in 1980. Its image of Cundi, a form of Guanyin, draws crowds of worshippers seeking good fortune.",
+  "wiki": "https://en.wikipedia.org/wiki/Kwan_Im_Thong_Hood_Cho_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kwan_Im_Thong_Hood_Cho_Temple"
+   },
+   {
+    "l": "Wikidata Q5164818",
+    "u": "https://www.wikidata.org/wiki/Q5164818"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "payathonzu-bagan",
+  "name": "Payathonzu Temple",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Minnanthu, Bagan",
+  "lat": 21.1622,
+  "lng": 94.9033,
+  "tradition": "Buddhist",
+  "deity": "Three Buddhas",
+  "built": [
+   1250,
+   1300
+  ],
+  "builtDisplay": "late 13th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A late 13th-century brick temple at Minnanthu, southeast of Bagan, whose Burmese name means Temple of Three Buddhas: three shrines joined by narrow passages, left unfinished by its builders. Its interior murals are noted for Mahayana and Tantric elements unusual in Bagan.",
+  "wiki": "https://en.wikipedia.org/wiki/Payathonzu_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Payathonzu_Temple"
+   },
+   {
+    "l": "Wikidata Q3373246",
+    "u": "https://www.wikidata.org/wiki/Q3373246"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "shwesandaw-bagan",
+  "name": "Shwesandaw Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Nyaung-U, Bagan",
+  "lat": 21.1638,
+  "lng": 94.866,
+  "tradition": "Buddhist",
+  "deity": "Hair relics of Gautama Buddha",
+  "built": [
+   1057,
+   1057
+  ],
+  "builtDisplay": "1057 (Anawrahta)",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "The tallest pagoda at Bagan, raised in 1057 by King Anawrahta to enshrine hair relics of the Buddha brought from Thaton. Five receding terraces, once faced with terracotta Jataka plaques, carry a cylindrical stupa whose jewelled hti was thrown down by the earthquake of 1975.",
+  "wiki": "https://en.wikipedia.org/wiki/Shwesandaw_Pagoda_(Bagan)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shwesandaw_Pagoda_(Bagan)"
+   },
+   {
+    "l": "Wikidata Q338782",
+    "u": "https://www.wikidata.org/wiki/Q338782"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "buduruvagala-wellawaya",
+  "name": "Buduruvagala",
+  "country": "Sri Lanka",
+  "state": "Uva Province",
+  "place": "Wellawaya, Monaragala District",
+  "lat": 6.6869,
+  "lng": 81.0783,
+  "tradition": "Buddhist",
+  "deity": "Standing Buddha, flanked by Avalokiteshvara, Tara, Maitreya and Vajrapani",
+  "built": [
+   800,
+   1000
+  ],
+  "builtDisplay": "9th–10th c.",
+  "dynasty": "Undetermined",
+  "style": "Rock-cut",
+  "circuits": [],
+  "significance": "A group of seven colossal figures carved into a rock face near Wellawaya in southern Sri Lanka, dated by most authorities to the 9th or 10th century. The central standing Buddha is the island's tallest, and the flanking bodhisattvas mark the site as a rare surviving Mahayana monument in a Theravada country.",
+  "story": "A hollow carved into the same rock is said to weep a mustard-scented oil that no one has been able to trace to a source.",
+  "wiki": "https://en.wikipedia.org/wiki/Buduruvagala",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Buduruvagala"
+   },
+   {
+    "l": "Wikidata Q2927591",
+    "u": "https://www.wikidata.org/wiki/Q2927591"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Avalokiteshvara",
+   "Gautama Buddha",
+   "Maitreya",
+   "Tara"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "seruwila-mangala-raja-maha-vihara",
+  "name": "Seruwila Mangala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Seruwawila, Trincomalee District",
+  "lat": 8.3708,
+  "lng": 81.3194,
+  "tradition": "Buddhist",
+  "deity": "Forehead relic (Lalata Dhatu) and hair relics of Gautama Buddha",
+  "built": [
+   -200,
+   -100
+  ],
+  "builtDisplay": "2nd c. BCE (King Kavantissa)",
+  "dynasty": "Ruhuna (Kavantissa)",
+  "circuits": [],
+  "significance": "An Early Anuradhapura-period stupa in Trincomalee District built by King Kavantissa, and the only site known to enshrine the Buddha's forehead bone relic along with hair relics. It counts as the ninth of the Solosmasthana, the sixteen holiest Buddhist pilgrimage places in Sri Lanka, and its four carved guardstones are unmatched at any other Sri Lankan stupa.",
+  "story": "The Dhatuvamsa relates that the Buddha came to this spot with five hundred arahants on his third visit to the island, and that Kavantissa enshrined the forehead relic here in fulfilment of an old prophecy.",
+  "wiki": "https://en.wikipedia.org/wiki/Seruwila_Mangala_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Seruwila_Mangala_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q10666450",
+    "u": "https://www.wikidata.org/wiki/Q10666450"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "somawathiya-chaitya",
+  "name": "Somawathiya Chaitya",
+  "country": "Sri Lanka",
+  "state": "North Central Province",
+  "place": "Somawathiya National Park, Polonnaruwa District",
+  "lat": 8.1209,
+  "lng": 81.1689,
+  "tradition": "Buddhist",
+  "deity": "Right canine tooth relic of Gautama Buddha",
+  "built": [
+   -200,
+   -100
+  ],
+  "builtDisplay": "2nd c. BCE (reign of Kavan Tissa)",
+  "dynasty": "Anuradhapura",
+  "circuits": [],
+  "significance": "A stupa on the Mahaweli floodplain in Polonnaruwa District, built in the reign of King Kavan Tissa by Prince Giri Abhaya to enshrine the Buddha's right canine tooth relic, which he received from Arahat Mahinda. It takes its name from the prince's wife, Princess Somawathi, sister of the king, and the couple handed the completed shrine to the monks.",
+  "wiki": "https://en.wikipedia.org/wiki/Somawathiya_Chaitya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Somawathiya_Chaitya"
+   },
+   {
+    "l": "Wikidata Q18379203",
+    "u": "https://www.wikidata.org/wiki/Q18379203"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "ayeik-ma-htwet-mandalay",
+  "name": "Ayeik Ma Htwet Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay",
+  "place": "Mandalay",
+  "lat": 22.0088,
+  "lng": 96.0883,
+  "tradition": "Buddhist",
+  "deity": "Buddha (enshrined relics)",
+  "built": [
+   1064,
+   1064
+  ],
+  "builtDisplay": "1064 (Pagan)",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A brick stupa in Aungmyethazan Township, Mandalay, which a stone inscription credits to King Kyansittha of the Pagan kingdom in 1064; relics of the Buddha are enshrined in a chamber within it.",
+  "story": "The pagoda is said to cast no shadow in sunlight, answering Kyansittha's vow that its shadow should never fall again in any of his future births.",
+  "wiki": "https://en.wikipedia.org/wiki/Ayeik_Ma_Htwet_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ayeik_Ma_Htwet_Pagoda"
+   },
+   {
+    "l": "Wikidata Q65338661",
+    "u": "https://www.wikidata.org/wiki/Q65338661"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "mahabodhi-bagan",
+  "name": "Mahabodhi Temple, Bagan",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Bagan",
+  "lat": 21.1732,
+  "lng": 94.8605,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1200,
+   1235
+  ],
+  "builtDisplay": "early 13th c. (Htilominlo)",
+  "dynasty": "Pagan",
+  "style": "Gupta-period type, pyramidal tower",
+  "circuits": [],
+  "significance": "A Theravada temple at Bagan raised in the early 13th century under King Htilominlo as a copy of the Mahabodhi Temple at Bodh Gaya; over 450 Buddha images fill the niches of its tall pyramidal tower, which was repaired after the 1975 Bagan earthquake.",
+  "wiki": "https://en.wikipedia.org/wiki/Mahabodhi_Temple,_Bagan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mahabodhi_Temple,_Bagan"
+   },
+   {
+    "l": "Wikidata Q3517643",
+    "u": "https://www.wikidata.org/wiki/Q3517643"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "wat-phra-that-phanom",
+  "name": "Wat Phra That Phanom",
+  "country": "Thailand",
+  "state": "Nakhon Phanom",
+  "place": "That Phanom",
+  "lat": 16.9434,
+  "lng": 104.726,
+  "tradition": "Buddhist",
+  "deity": "Buddha (Phra Uranghathat, the breast-bone relic)",
+  "built": [
+   600,
+   800
+  ],
+  "builtDisplay": "7th–8th c. earliest structure; later rebuilt",
+  "dynasty": "Mon",
+  "style": "Lao stupa form with Dvaravati, Khmer and Cham elements",
+  "circuits": [],
+  "significance": "The chief Buddhist stupa of northeastern Thailand, standing near the Mekong in That Phanom district and enshrining what tradition holds to be the Buddha's breast bone; archaeology dates the earliest structure on the site to the 7th or 8th century, and the pagoda has been restored in modern times with royal Thai patronage.",
+  "story": "The That Phanom Chronicle says the Buddha asked Mahakasyapa to carry his breast-bone relic to Phu Kamphra after his death, and that the disciple with five hundred arhats raised the stupa over it there.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_That_Phanom",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Phra_That_Phanom"
+   },
+   {
+    "l": "Wikidata Q1725518",
+    "u": "https://www.wikidata.org/wiki/Q1725518"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "sakya-man-aung-mrauk-u",
+  "name": "Sakya Man Aung Pagoda",
+  "country": "Myanmar",
+  "state": "Rakhine",
+  "place": "Mrauk U",
+  "lat": 20.5948,
+  "lng": 93.2009,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1629,
+   1629
+  ],
+  "builtDisplay": "1629 (Mrauk U)",
+  "dynasty": "Mrauk U",
+  "circuits": [],
+  "significance": "A Buddhist temple about a kilometre northeast of the royal palace at Mrauk U, commissioned in 1629 by King Thiri Thudhamma Raza; its stupa is laid out on an eight-petalled lotus plan and turns from an octagonal form to a bell above nine rising tiers.",
+  "wiki": "https://en.wikipedia.org/wiki/Sakya-Man-Aung_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sakya-Man-Aung_Temple"
+   },
+   {
+    "l": "Wikidata Q47514769",
+    "u": "https://www.wikidata.org/wiki/Q47514769"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "giac-lam-ho-chi-minh-city",
+  "name": "Giác Lâm Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "Ho Chi Minh City",
+  "lat": 10.7794,
+  "lng": 106.6492,
+  "tradition": "Buddhist",
+  "deity": "Amitabha Buddha",
+  "built": [
+   1744,
+   1744
+  ],
+  "builtDisplay": "1744 (Nguyễn lords)",
+  "dynasty": "Nguyễn lords",
+  "circuits": [],
+  "significance": "A Buddhist pagoda in the Tân Bình district of Ho Chi Minh City, founded in 1744 by Lý Thụy Long during the rule of the Nguyễn lord Nguyễn Phúc Khoát. Amitabha dominates its main altar, with Shakyamuni and four bodhisattvas set before him, and a bodhi tree brought from Sri Lanka in 1953 grows in its garden.",
+  "wiki": "https://en.wikipedia.org/wiki/Gi%C3%A1c_L%C3%A2m_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gi%C3%A1c_L%C3%A2m_Temple"
+   },
+   {
+    "l": "Wikidata Q3360457",
+    "u": "https://www.wikidata.org/wiki/Q3360457"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "hoi-khanh-thu-dau-mot",
+  "name": "Hội Khánh Temple",
+  "country": "Vietnam",
+  "state": "Bình Dương",
+  "place": "Thủ Dầu Một",
+  "lat": 10.981,
+  "lng": 106.6596,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (with Ksitigarbha and other bodhisattvas)",
+  "built": [
+   1741,
+   1741
+  ],
+  "builtDisplay": "1741; rebuilt after 1861",
+  "dynasty": "Undetermined",
+  "style": "Vietnamese",
+  "circuits": [],
+  "significance": "A Buddhist temple at Thủ Dầu Một in Bình Dương province, built in 1741, destroyed in 1861 during the French colonial conflict and rebuilt soon after by Thích Chánh Đắc. Between 1923 and 1926 anti-colonial activists, among them Ho Chi Minh's father Nguyễn Sinh Sắc, met within its walls.",
+  "wiki": "https://en.wikipedia.org/wiki/H%E1%BB%99i_Kh%C3%A1nh_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/H%E1%BB%99i_Kh%C3%A1nh_Temple"
+   },
+   {
+    "l": "Wikidata Q5877747",
+    "u": "https://www.wikidata.org/wiki/Q5877747"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "pu-tuo-si-kota-kinabalu",
+  "name": "Pu Tuo Si Temple",
+  "country": "Malaysia",
+  "state": "Sabah",
+  "place": "Kota Kinabalu",
+  "lat": 5.9928,
+  "lng": 116.1167,
+  "tradition": "Buddhist",
+  "deity": "Buddha (with Guanyin and Dashizhi)",
+  "built": [
+   1980,
+   1980
+  ],
+  "builtDisplay": "completed 1980",
+  "dynasty": "Modern",
+  "style": "Chinese temple",
+  "circuits": [],
+  "significance": "A Chinese Buddhist temple in Kota Kinabalu, Sabah, completed in 1980. Its Daxiong Baodian main hall holds a large Buddha image flanked by Guanyin on the left and Dashizhi on the right.",
+  "wiki": "https://en.wikipedia.org/wiki/Pu_Tuo_Si_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pu_Tuo_Si_Temple"
+   },
+   {
+    "l": "Wikidata Q28187444",
+    "u": "https://www.wikidata.org/wiki/Q28187444"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Avalokiteshvara",
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "maha-wizaya-yangon",
+  "name": "Maha Wizaya Pagoda",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Yangon",
+  "lat": 16.7949,
+  "lng": 96.1522,
+  "tradition": "Buddhist",
+  "deity": "Buddha (enshrined relics given by the King of Nepal)",
+  "built": [
+   1980,
+   1980
+  ],
+  "builtDisplay": "1980",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A stupa in Dagon Township, Yangon, built in 1980 to commemorate the First Congregation for the purification of the Buddha Sasana, out of which came the State Sangha Maha Nayaka Committee. It enshrines relics contributed by the King of Nepal, and Ne Win consecrated its crowning umbrella.",
+  "wiki": "https://en.wikipedia.org/wiki/Maha_Wizaya_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maha_Wizaya_Pagoda"
+   },
+   {
+    "l": "Wikidata Q6732674",
+    "u": "https://www.wikidata.org/wiki/Q6732674"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "vinh-nghiem-ho-chi-minh-city",
+  "name": "Vĩnh Nghiêm Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "Ho Chi Minh City",
+  "lat": 10.7904,
+  "lng": 106.6823,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (with Manjushri and Samantabhadra)",
+  "built": [
+   1964,
+   1964
+  ],
+  "builtDisplay": "begun 1964",
+  "dynasty": "Modern",
+  "style": "Vietnamese traditional, built in concrete",
+  "circuits": [],
+  "significance": "A large pagoda in District 3 of Ho Chi Minh City, begun in 1964 by the monks Thích Tâm Giác and Thích Thanh Kiểm and named for an 11th-century predecessor in Bắc Giang province. It was the first in Vietnam to render traditional Vietnamese temple architecture in concrete, and its seven-storey, 40 m tower was built with help from the Japan–Vietnam Friendship Association.",
+  "wiki": "https://en.wikipedia.org/wiki/V%C4%A9nh_Nghi%C3%AAm_Pagoda,_Ho_Chi_Minh_City",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/V%C4%A9nh_Nghi%C3%AAm_Pagoda,_Ho_Chi_Minh_City"
+   },
+   {
+    "l": "Wikidata Q7932538",
+    "u": "https://www.wikidata.org/wiki/Q7932538"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "uruwala-valagamba-gampaha",
+  "name": "Uruwala Valagamba Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Uruwala, Gampaha District",
+  "lat": 7.0564,
+  "lng": 80.0518,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (ancient sacred Bo tree)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An ancient Buddhist temple at Uruwala in the Gampaha District, formally protected by the Sri Lankan government as an archaeological site. Its old sacred fig tree stands within a rampart, and the temple is held to have belonged with neighbouring shrines to a single monastic complex of the early Anuradhapura period.",
+  "wiki": "https://en.wikipedia.org/wiki/Uruwala_Valagamba_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Uruwala_Valagamba_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q28002465",
+    "u": "https://www.wikidata.org/wiki/Q28002465"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "sri-pushparama-ratmalana",
+  "name": "Sri Pushparama Vihara, Ratmalana",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Ratmalana",
+  "lat": 6.8218,
+  "lng": 79.8712,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1795,
+   1800
+  ],
+  "builtDisplay": "1795–1800",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Buddhist temple at Ratmalana in the Colombo District, built between 1795 and 1800 by Balapitiye Dheerananda Thera. The Sri Lankan government declared it a protected archaeological monument on 23 February 2007.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Ratmalana",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Ratmalana"
+   },
+   {
+    "l": "Wikidata Q28938639",
+    "u": "https://www.wikidata.org/wiki/Q28938639"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "delgamuwa-kuruwita",
+  "name": "Delgamuwa Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Sabaragamuwa",
+  "place": "Kuruwita, Ratnapura District",
+  "lat": 6.7759,
+  "lng": 80.3563,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Sacred Tooth Relic, formerly hidden here)",
+  "built": [
+   1521,
+   1594
+  ],
+  "builtDisplay": "Sitawaka period (16th c.)",
+  "dynasty": "Sitawaka",
+  "circuits": [],
+  "significance": "A Buddhist temple at Kuruwita in the Ratnapura District, remembered as the refuge of the Buddha's Tooth Relic during Portuguese rule: King Mayadunne of Sitawaka had the relic brought here about 1549, and it lay concealed inside a kurakkan grinding stone on the premises until Wimaladharmasuriya I recovered it in 1592 and carried it to Kandy.",
+  "wiki": "https://en.wikipedia.org/wiki/Delgamuwa_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Delgamuwa_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q23010020",
+    "u": "https://www.wikidata.org/wiki/Q23010020"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "sri-pushparama-balapitiya",
+  "name": "Sri Pushparama Vihara, Balapitiya",
+  "country": "Sri Lanka",
+  "state": "Southern Province",
+  "place": "Balapitiya, Galle District",
+  "lat": 6.2916,
+  "lng": 80.0421,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "preaching hall in colonial church manner",
+  "circuits": [],
+  "significance": "A Buddhist temple at Balapitiya in the Galle District, headquarters of the Mulaghandi sect of the Amarapura Nikaya and a protected archaeological monument since 6 June 2008. The doors and windows of its dhamma preaching hall follow colonial church design, with two wooden stairs rising to a balcony that runs round the inner hall.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Balapitiya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Pushparama_Vihara,_Balapitiya"
+   },
+   {
+    "l": "Wikidata Q29248261",
+    "u": "https://www.wikidata.org/wiki/Q29248261"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "asgiriya-gampaha",
+  "name": "Asgiriya Raja Maha Vihara, Gampaha",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Gampaha",
+  "lat": 7.111,
+  "lng": 79.9896,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Samadhi image; stone Buddha footprint)",
+  "built": [
+   -89,
+   -77
+  ],
+  "builtDisplay": "trad. King Valagamba, 1st c. BCE",
+  "dynasty": "Anuradhapura",
+  "style": "cave temple, wattle and daub",
+  "circuits": [],
+  "significance": "A cave temple at Gampaha in the Western Province whose foundation is traced to the reign of King Valagamba (89–77 BCE), with a 5th-century inscription found on its grounds. It keeps a Samadhi Buddha statue and flanking abhaya-mudra images carved in Kandyan-period manner, together with a stone bearing a footprint of the Buddha; the provincial ruler Sakalakala Wallabha patronised it under Parakramabahu VI.",
+  "story": "The place is said to have taken the name Asgiri from a horse lost there by Prince Uttiya, brother of King Kelani Tissa.",
+  "wiki": "https://en.wikipedia.org/wiki/Asgiriya_Raja_Maha_Vihara,_Gampaha",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Asgiriya_Raja_Maha_Vihara,_Gampaha"
+   },
+   {
+    "l": "Wikidata Q19707959",
+    "u": "https://www.wikidata.org/wiki/Q19707959"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "yatawatte-purana-gampaha",
+  "name": "Yatawatte Purana Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Yatawatte, Gampaha District",
+  "lat": 7.0889,
+  "lng": 79.9863,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (stupa and tempita image house)",
+  "built": [
+   1861,
+   1861
+  ],
+  "builtDisplay": "tempita image house 1861",
+  "origin": 1400,
+  "originNote": "history traced to the reign of Parakramabahu VI (15th c.)",
+  "dynasty": "Undetermined",
+  "style": "Tempita vihara (image house on granite pillars)",
+  "circuits": [],
+  "significance": "A Buddhist temple about a kilometre from Gampaha town whose history is believed to reach back to the reign of Parakramabahu VI. Its tempita image house — of the type raised on granite pillars that was popular in Sri Lanka between the 17th and 19th centuries — is dated to 21 March 1861, and a stupa stands beside it.",
+  "wiki": "https://en.wikipedia.org/wiki/Yatawatte_Purana_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Yatawatte_Purana_Vihara"
+   },
+   {
+    "l": "Wikidata Q26904723",
+    "u": "https://www.wikidata.org/wiki/Q26904723"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "gonagolla-vihara-ampara",
+  "name": "Gonagolla Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Gonagolla, Ampara District",
+  "lat": 7.4155,
+  "lng": 81.6557,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (ancient stupa)",
+  "built": [
+   -300,
+   -200
+  ],
+  "builtDisplay": "3rd c. BCE stupa; frescoes 3rd c. CE",
+  "dynasty": "Anuradhapura",
+  "style": "cave temple with vatadage",
+  "circuits": [],
+  "significance": "An ancient Buddhist site at Gonagolla in the Ampara District where a stupa and two ponds are dated to the third century BCE, surrounded by drip-ledged caves, a vatadage, stone stairways and carved pillars. Its third-century CE frescoes have earned it the local name Punchi Seegiriya, 'little Sigiriya', and rock inscriptions of the 3rd to 5th centuries record gifts by monks and by the wives of district governors.",
+  "wiki": "https://en.wikipedia.org/wiki/Gonagolla_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gonagolla_Vihara"
+   },
+   {
+    "l": "Wikidata Q25637912",
+    "u": "https://www.wikidata.org/wiki/Q25637912"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "koskandawala-gampaha",
+  "name": "Koskandawala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Koskandawala, Gampaha District",
+  "lat": 7.0797,
+  "lng": 80.0523,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (stupa and image house)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "cave temple",
+  "circuits": [],
+  "significance": "An old Buddhist cave temple at Koskandawala in the Gampaha District, with a stupa and an image house. It is counted among neighbouring cave temples said to have formed a single monastic complex in the early Anuradhapura period.",
+  "wiki": "https://en.wikipedia.org/wiki/Koskandawala_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Koskandawala_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q28002504",
+    "u": "https://www.wikidata.org/wiki/Q28002504"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "nagadeepa-purana-nainativu",
+  "name": "Nagadeepa Purana Vihara",
+  "country": "Sri Lanka",
+  "state": "Northern Province",
+  "place": "Nainativu, Jaffna District",
+  "lat": 9.6128,
+  "lng": 79.774,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (gem-studded throne; stone Buddha footprint)",
+  "built": [
+   -307,
+   -137
+  ],
+  "builtDisplay": "rebuilt under Devanampiya Tissa and Dutugemunu",
+  "dynasty": "Anuradhapura",
+  "circuits": [],
+  "significance": "A Buddhist temple on the island of Nainativu off the Jaffna coast, revered as the place the Buddha visited to reconcile two Naga kings. It was rebuilt under Devanampiya Tissa and again under Dutugemunu, and keeps a stone bearing the Buddha's footprint along with a gem-studded throne given by Ratnapura businessmen in 2011.",
+  "story": "The Buddha is said to have come here five years after his enlightenment to settle the quarrel of the Naga kings Chulodara and Mahodara over a gem-studded throne, converting them by his miracles.",
+  "wiki": "https://en.wikipedia.org/wiki/Nagadeepa_Purana_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Nagadeepa_Purana_Vihara"
+   },
+   {
+    "l": "Wikidata Q6958314",
+    "u": "https://www.wikidata.org/wiki/Q6958314"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "sri-dharmendrarama-ampara",
+  "name": "Sri Dharmendrarama Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Mayadunna, Gonagolla, Ampara District",
+  "lat": 7.4271,
+  "lng": 81.634,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Sri Pathul Gala footprint slabs)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An archaeological Buddhist temple at Mayadunna in Gonagolla village, Ampara District, protected as an archaeological site since 10 October 2014. Its remains include a stupa, Buddha-footprint slabs, fragments of moonstones, building bases, pillars and a rock inscription — footprint slabs being among the objects used to represent the Buddha before statues of him were made.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Dharmendrarama_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Dharmendrarama_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q38043552",
+    "u": "https://www.wikidata.org/wiki/Q38043552"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "mahiyangana-raja-maha-vihara",
+  "name": "Mahiyangana Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Uva Province",
+  "place": "Mahiyanganaya",
+  "lat": 7.3221,
+  "lng": 80.9908,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (hair relic stupa)",
+  "built": [
+   1953,
+   1980
+  ],
+  "builtDisplay": "stupa rebuilt 1953–1980 (ancient foundation)",
+  "dynasty": "Anuradhapura to Kandyan kings; modern rebuild",
+  "circuits": [],
+  "significance": "One of the principal Buddhist pilgrimage sites of Sri Lanka, whose stupa is held to enshrine hair relics of the Buddha and was successively enlarged by rulers from Devanampiya Tissa and Dutthagamani through Vijayabahu I to Kirti Sri Rajasinha. The present casing over the older stupa was built between 1953 and 1980.",
+  "story": "The Buddha is said to have come here in the ninth month after his enlightenment, subduing the yakshas who then inhabited the island and giving Saman a handful of his hair, which Saman enshrined in the first small stupa.",
+  "website": "https://mahiyanganarajamahaviharaya.com",
+  "wiki": "https://en.wikipedia.org/wiki/Mahiyangana_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mahiyangana_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q19718381",
+    "u": "https://www.wikidata.org/wiki/Q19718381"
+   },
+   {
+    "l": "Official site",
+    "u": "https://mahiyanganarajamahaviharaya.com"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "seema-malaka-colombo",
+  "name": "Seema Malaka",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Colombo",
+  "lat": 6.9176,
+  "lng": 79.8533,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (with subsidiary shrines to Guanyin, Kataragama deviyo, Upulvan and Ganesha)",
+  "built": [
+   1976,
+   1976
+  ],
+  "builtDisplay": "rebuilt 1976 (originally late 19th c.)",
+  "dynasty": "Modern",
+  "style": "Modern Sri Lankan (Geoffrey Bawa)",
+  "circuits": [],
+  "significance": "A meditation and ordination hall of the Gangaramaya temple, set on timber-decked platforms in Colombo's Beira Lake. The original late-19th-century pavilion was replaced in 1976 by a design from the architect Geoffrey Bawa, funded by S. H. Musaji and his wife in memory of their son, drawing on the forest-monastery layouts of Anuradhapura and Ritigala.",
+  "wiki": "https://en.wikipedia.org/wiki/Seema_Malaka",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Seema_Malaka"
+   },
+   {
+    "l": "Wikidata Q24239464",
+    "u": "https://www.wikidata.org/wiki/Q24239464"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Avalokiteshvara",
+   "Devi",
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "warana-raja-maha-vihara",
+  "name": "Warana Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Gampaha District",
+  "lat": 7.1043,
+  "lng": 80.0747,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (cave image house of Buddha statues)",
+  "built": [
+   -307,
+   -267
+  ],
+  "builtDisplay": "3rd c. BCE (Devanampiya Tissa)",
+  "dynasty": "Anuradhapura",
+  "style": "Cave temple",
+  "circuits": [],
+  "significance": "A terraced cave monastery on three levels whose foundation is attributed to King Devanampiya Tissa, holding Buddha images, wall paintings and a stupa on its middle terrace. Later kings including Valagamba, Nissanka Malla, Parakramabahu VI and Kirti Sri Rajasinha are recorded as renovating it.",
+  "wiki": "https://en.wikipedia.org/wiki/Warana_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Warana_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q19735846",
+    "u": "https://www.wikidata.org/wiki/Q19735846"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "thuparamaya-anuradhapura",
+  "name": "Thuparamaya",
+  "country": "Sri Lanka",
+  "state": "North Central Province",
+  "place": "Anuradhapura",
+  "lat": 8.3553,
+  "lng": 80.3961,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (right collar-bone relic)",
+  "built": [
+   1842,
+   1842
+  ],
+  "builtDisplay": "3rd c. BCE; present dagoba rebuilt 1842",
+  "origin": -247,
+  "dynasty": "Anuradhapura (Devanampiya Tissa)",
+  "style": "Bell-shaped dagoba",
+  "circuits": [],
+  "significance": "Regarded as the first stupa raised in Sri Lanka after the island's conversion to Buddhism, built by King Devanampiya Tissa at the request of the missionary Mahinda to enshrine the Buddha's right collar-bone. The dome standing today is the product of an 1842 rebuilding, ringed by the stone pillars of its former vatadage.",
+  "wiki": "https://en.wikipedia.org/wiki/Thuparamaya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thuparamaya"
+   },
+   {
+    "l": "Wikidata Q7799227",
+    "u": "https://www.wikidata.org/wiki/Q7799227"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "sunandarama-vihara-galle",
+  "name": "Sunandarama Vihara",
+  "country": "Sri Lanka",
+  "state": "Southern Province",
+  "place": "Galle District",
+  "lat": 6.2341,
+  "lng": 80.0571,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (image houses and a sacred Bodhi tree)",
+  "built": [
+   1750,
+   1970
+  ],
+  "builtDisplay": "Bodhi planted c. 1750; temple developed from 1970",
+  "dynasty": "Undetermined",
+  "style": "Kandyan",
+  "circuits": [],
+  "significance": "A Buddhist temple in the Galle District grown up around a Bodhi tree planted about 1750, with image houses holding Buddha statues including a marble figure presented from Burma. Its systematic development as a monastery began in 1970.",
+  "story": "Its Bodhi tree is held to be one of the eight branches taken from the sacred Sri Maha Bodhi at Anuradhapura.",
+  "wiki": "https://en.wikipedia.org/wiki/Sunandarama_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sunandarama_Vihara"
+   },
+   {
+    "l": "Wikidata Q24944930",
+    "u": "https://www.wikidata.org/wiki/Q24944930"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kasagala-raja-maha-vihara",
+  "name": "Kasagala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Southern Province",
+  "place": "Hambantota District",
+  "lat": 6.1364,
+  "lng": 80.8125,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (two ancient stupas and a Sri Maha Bodhi sapling)",
+  "built": [
+   -205,
+   -161
+  ],
+  "builtDisplay": "2nd c. BCE (Kavan Tissa)",
+  "dynasty": "Anuradhapura",
+  "style": "Kandyan-tradition painting and sculpture",
+  "circuits": [],
+  "significance": "An ancient monastery in the Hambantota District whose origin is traced to the planting of one of the saplings of the sacred Sri Maha Bodhi, with construction generally credited to the reign of Kavan Tissa and later patronage from Dappula I, Vijayabahu I and Kirti Sri Rajasinha. Its two stupas are attributed to Devanampiya Tissa and Saddha Tissa, and its murals show southern Kandyan work with European decorative influence.",
+  "story": "Local folklore derives the name from monks spreading their saffron robes to dry on the rock, which made the outcrop appear yellow from a distance.",
+  "wiki": "https://en.wikipedia.org/wiki/Kasagala_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kasagala_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q20823160",
+    "u": "https://www.wikidata.org/wiki/Q20823160"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "maligatenna-raja-maha-vihara",
+  "name": "Maligatenna Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Gampaha District",
+  "lat": 7.0669,
+  "lng": 80.0644,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (image house, stupa and Bodhi tree, with an old devalaya)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "Anuradhapura period; 8th c. carved doorframe",
+  "dynasty": "Anuradhapura",
+  "style": "Cave temple",
+  "circuits": [],
+  "significance": "A rock and cave temple in the Gampaha District with an image house, stupa, Bodhi tree and an old devalaya; an engraved stone door frame on the site has been assigned to about the 8th century. Its later history reaches into the Kotte kingdom under Don Juan Dharmapala and the Portuguese period.",
+  "story": "Folklore holds that King Valagamba sheltered here during invasions and that the Buddha's tooth relic was hidden at the site for a time before being moved on.",
+  "wiki": "https://en.wikipedia.org/wiki/Maligatenna_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maligatenna_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q19718656",
+    "u": "https://www.wikidata.org/wiki/Q19718656"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "ovagiriya-ampara",
+  "name": "Ovagiriya",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Ampara District",
+  "lat": 7.2241,
+  "lng": 81.5627,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (granite image in the image house)",
+  "built": [
+   400,
+   500
+  ],
+  "builtDisplay": "5th c. or earlier",
+  "dynasty": "Early Anuradhapura",
+  "circuits": [],
+  "significance": "An archaeological monastery site of about three hectares in the Ampara District, dated to the fifth century or earlier and formally identified by the Department of Archaeology in 1956. Its image house holds a 3.5 m granite Buddha, restored in 2008, and its stupa stands on an unusual octagonal platform rather than the customary circular or square one.",
+  "wiki": "https://en.wikipedia.org/wiki/Ovagiriya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ovagiriya"
+   },
+   {
+    "l": "Wikidata Q20821270",
+    "u": "https://www.wikidata.org/wiki/Q20821270"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "samanabedda-cave-temple",
+  "name": "Samanabedda cave temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Uhana, Ampara District",
+  "lat": 7.3431,
+  "lng": 81.6497,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (image house)",
+  "built": [
+   -137,
+   -119
+  ],
+  "builtDisplay": "2nd–1st c. BCE (attributed to Saddha Tissa)",
+  "dynasty": "Anuradhapura",
+  "style": "Cave temple",
+  "circuits": [],
+  "significance": "A cave temple near Uhana on the Ampara–Mahaoya road, traditionally attributed to King Saddha Tissa and now a protected archaeological monument. It retains a Buddha image in its image house and the remains of a ruined stupa.",
+  "wiki": "https://en.wikipedia.org/wiki/Samanabedda_cave_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Samanabedda_cave_temple"
+   },
+   {
+    "l": "Wikidata Q28379866",
+    "u": "https://www.wikidata.org/wiki/Q28379866"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "panasawanarama-purana-vihara",
+  "name": "Panasawanarama Purana Vihara",
+  "country": "Sri Lanka",
+  "state": "Western Province",
+  "place": "Gampaha District",
+  "lat": 7.1289,
+  "lng": 79.9967,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (stupa, Bodhi tree and image house)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "An old Buddhist temple in the Gampaha District of Sri Lanka, recognised as an archaeological site, whose surviving elements are a stupa, a Bodhi tree and an image house.",
+  "wiki": "https://en.wikipedia.org/wiki/Panasawanarama_Purana_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Panasawanarama_Purana_Vihara"
+   },
+   {
+    "l": "Wikidata Q37294763",
+    "u": "https://www.wikidata.org/wiki/Q37294763"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "kadurugoda-viharaya-jaffna",
+  "name": "Ancient Kadurugoda Viharaya",
+  "country": "Sri Lanka",
+  "state": "Northern Province",
+  "place": "Kantharodai, Jaffna District",
+  "lat": 9.75,
+  "lng": 80.0167,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupas; Buddha and Bodhisattva images)",
+  "built": [
+   923,
+   935
+  ],
+  "builtDisplay": "Anuradhapura period; dated pillar of Dappula IV (923–935)",
+  "dynasty": "Anuradhapura",
+  "style": "Coral-stone stupas with fixed umbrella pinnacles",
+  "circuits": [],
+  "significance": "A field of small grey coral-stone stupas at Kantharodai in the Jaffna peninsula, the most striking Buddhist archaeological site in northern Sri Lanka. Its history reaches back to the Anuradhapura era, a stone pillar there dates to the reign of Dappula IV, Polonnaruwa-period coins have been recovered, and finds include fragments of Buddha and Bodhisattva statues and Buddha footprint slabs.",
+  "story": "The little stupas are said to hold the remains of sixty arhat monks who died together at the site, by poisoned mushroom curry or by famine, while fleeing persecution.",
+  "wiki": "https://en.wikipedia.org/wiki/Ancient_Kadurugoda_Viharaya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ancient_Kadurugoda_Viharaya"
+   },
+   {
+    "l": "Wikidata Q21975633",
+    "u": "https://www.wikidata.org/wiki/Q21975633"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "naigala-raja-maha-vihara",
+  "name": "Naigala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Southern Province",
+  "place": "Hambantota District",
+  "lat": 6.1484,
+  "lng": 80.7848,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Bodhi tree sapling, seven stupas and an image house)",
+  "built": [
+   200,
+   500
+  ],
+  "builtDisplay": "inscriptions of the 3rd–5th c.",
+  "dynasty": "Anuradhapura (Gotabhaya and Mahananga)",
+  "style": "Pabbata Vihara with panchayatana layout",
+  "circuits": [],
+  "significance": "A monastery in the Hambantota District laid out on the Pabbata Vihara plan with panchayatana features and seven stupas, its founding credited to the kings Gotabhaya and Mahananga. Rock inscriptions at the site have been dated to the third to fifth centuries, and its Bodhi tree is counted a sapling of the Sri Maha Bodhi planted by an arahant.",
+  "story": "King Mahananga is said to have been led by a great snake to a pool of water during a drought, and the place took the name Naigala, the rock the snake showed.",
+  "wiki": "https://en.wikipedia.org/wiki/Naigala_Raja_Maha_Vihara",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Naigala_Raja_Maha_Vihara"
+   },
+   {
+    "l": "Wikidata Q20823221",
+    "u": "https://www.wikidata.org/wiki/Q20823221"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "gori-nagarparkar",
+  "name": "Gori Temple",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Nagarparkar, Tharparkar district",
+  "lat": 24.6381,
+  "lng": 70.6178,
+  "tradition": "Jain",
+  "deity": "Parshvanatha, the twenty-third Tirthankara",
+  "built": [
+   1375,
+   1376
+  ],
+  "builtDisplay": "1375–1376 CE",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shvetambara Jain temple of marble in the Nagarparkar area of Sindh, dedicated to Parshvanatha and holding twenty-four small cells for the twenty-four Tirthankaras. Its design is compared to the Jain temples of Mount Abu, and it survives as one of the most important Jain monuments left in Pakistan.",
+  "story": "Local tradition credits the temple to a Jain devotee named Gorichom, from whom its name is said to derive.",
+  "wiki": "https://en.wikipedia.org/wiki/Gori_Temple,_Nagarparkar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gori_Temple,_Nagarparkar"
+   },
+   {
+    "l": "Wikidata Q60045535",
+    "u": "https://www.wikidata.org/wiki/Q60045535"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Mahavira",
+   "Parshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "akkana-basadi-shravanabelagola",
+  "name": "Akkana Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shravanabelagola, Hassan district",
+  "lat": 12.8588,
+  "lng": 76.4891,
+  "tradition": "Jain",
+  "deity": "Parshvanatha, the twenty-third Tirthankara",
+  "built": [
+   1181,
+   1181
+  ],
+  "builtDisplay": "1181 CE (Hoysala)",
+  "dynasty": "Hoysala",
+  "style": "Hoysala",
+  "circuits": [],
+  "significance": "A Hoysala-period Jain basadi at Shravanabelagola, built in 1181 during the reign of Veera Ballala II by Achiyakka (Achala Devi), wife of the minister Chandramouli. It is among the best preserved of the town's smaller basadis and is dedicated to Parshvanatha.",
+  "wiki": "https://en.wikipedia.org/wiki/Akkana_Basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Akkana_Basadi"
+   },
+   {
+    "l": "Wikidata Q16242675",
+    "u": "https://www.wikidata.org/wiki/Q16242675"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Parshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "bajramath-gyaraspur",
+  "name": "Bajramath Temple, Gyaraspur",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Gyaraspur, Vidisha district",
+  "lat": 23.6625,
+  "lng": 78.1117,
+  "tradition": "Jain",
+  "deity": "Jain Tirthankaras (three shrines)",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Pratihara)",
+  "dynasty": "Pratihara",
+  "style": "Māru-Gurjara",
+  "circuits": [],
+  "significance": "A ninth-century temple at Gyaraspur with three sanctums in a row, now enshrining Jain Tirthankara images and protected by the Archaeological Survey of India. Its carving is a well-known example of post-Gupta workmanship under Pratihara patronage.",
+  "wiki": "https://en.wikipedia.org/wiki/Bajramath_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bajramath_Temple"
+   },
+   {
+    "l": "Wikidata Q97946308",
+    "u": "https://www.wikidata.org/wiki/Q97946308"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "kere-basadi-varanga",
+  "name": "Kere Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Varanga, Udupi district",
+  "lat": 13.3963,
+  "lng": 75.0084,
+  "tradition": "Jain",
+  "deity": "Parshvanatha, the twenty-third Tirthankara",
+  "built": [
+   1100,
+   1200
+  ],
+  "builtDisplay": "12th c.",
+  "dynasty": "Undetermined",
+  "style": "Chaturmukha (four-faced, four entrances)",
+  "circuits": [],
+  "significance": "A Jain basadi standing on an island in the middle of a lake at Varanga, reached by boat, with four entrances facing the images of Parshvanatha, Neminatha, Shantinatha and Anantanatha. Inscriptions record land grants from the Vijayanagara ruler Deva Raya II in 1424 and later donors in the sixteenth century.",
+  "story": "Devotees hold that a flower falling from the right side of the image is a sign of the Tirthankara's blessing.",
+  "wiki": "https://en.wikipedia.org/wiki/Kere_Basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kere_Basadi"
+   },
+   {
+    "l": "Wikidata Q87266450",
+    "u": "https://www.wikidata.org/wiki/Q87266450"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Parshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "shantinath-jain-teerth-indapur",
+  "name": "Shantinath Jain Teerth",
+  "country": "India",
+  "state": "Maharashtra",
+  "place": "Indapur, Pune district",
+  "lat": 18.1239,
+  "lng": 75.0176,
+  "tradition": "Jain",
+  "deity": "Munisuvrata, the twentieth Tirthankara",
+  "built": [
+   2011,
+   2011
+  ],
+  "builtDisplay": "2011",
+  "dynasty": "Modern",
+  "style": "South Indian",
+  "circuits": [],
+  "significance": "A modern Digambara Jain pilgrimage temple near Indapur, opened in 2011 and built to a South Indian design. Its principal image is a 27-foot granite figure of Munisuvrata weighing about thirty tons, carved over two years from stone quarried near Bengaluru; the gilded facade has earned it the local name of the Golden Temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Shantinath_Jain_Teerth",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shantinath_Jain_Teerth"
+   },
+   {
+    "l": "Wikidata Q17069782",
+    "u": "https://www.wikidata.org/wiki/Q17069782"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Munisuvrata"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "shantinatha-ramtek",
+  "name": "Shantinatha Temple, Ramtek",
+  "country": "India",
+  "state": "Maharashtra",
+  "place": "Ramtek, Nagpur district",
+  "lat": 21.4056,
+  "lng": 79.3298,
+  "tradition": "Jain",
+  "deity": "Shantinatha, the sixteenth Tirthankara",
+  "built": [
+   1000,
+   1200
+  ],
+  "builtDisplay": "11th–12th c.",
+  "dynasty": "Undetermined",
+  "style": "North Indian, in yellow sandstone",
+  "circuits": [],
+  "significance": "A Digambara Jain temple at Ramtek dated to the eleventh or twelfth century and built of yellow sandstone in the northern Indian manner. Further shrines were added to the complex in the eighteenth and nineteenth centuries by an official of the Bhonsle court at Nagpur, and it has since hosted several chaturmas retreats of Acharya Vidyasagar.",
+  "wiki": "https://en.wikipedia.org/wiki/Shantinatha_temple,_Ramtek",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shantinatha_temple,_Ramtek"
+   },
+   {
+    "l": "Wikidata Q118451844",
+    "u": "https://www.wikidata.org/wiki/Q118451844"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Shantinatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "jain-temples-pavagadh",
+  "name": "Jain Temples, Pavagadh",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Pavagadh Hill, Panchmahal district",
+  "lat": 22.4847,
+  "lng": 73.5339,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha, Parshvanatha, Chandraprabha and Suparshvanatha",
+  "built": [
+   1200,
+   1300
+  ],
+  "builtDisplay": "13th c.",
+  "dynasty": "Vaghela era; patron Vastupala",
+  "circuits": [],
+  "significance": "A group of Jain temples on Pavagadh Hill, mostly of the thirteenth century and associated with Vastupala, minister of the Vaghela rulers. Originally Shvetambara foundations, they later passed to the Digambara community, and the hill's Jain associations are traced back in tradition to an image installed by King Samprati.",
+  "story": "The Achalgacch order is said to have begun here when the demi-goddess Mahakali appeared before Acharya Aryarakshitsuri as he climbed the hill to undertake sallekhana and asked him not to proceed.",
+  "wiki": "https://en.wikipedia.org/wiki/Jain_temples,_Pavagadh",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jain_temples,_Pavagadh"
+   },
+   {
+    "l": "Wikidata Q112669656",
+    "u": "https://www.wikidata.org/wiki/Q112669656"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Chandraprabha",
+   "Parshvanatha",
+   "Rishabhanatha",
+   "Suparshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "neminath-girnar",
+  "name": "Neminath Jain Temple, Girnar",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Girnar, Junagadh district",
+  "lat": 21.5267,
+  "lng": 70.5232,
+  "tradition": "Jain",
+  "deity": "Neminatha, the twenty-second Tirthankara",
+  "built": [
+   1129,
+   1129
+  ],
+  "builtDisplay": "c. 1129 (Chaulukya)",
+  "dynasty": "Chaulukya (Solanki)",
+  "style": "Māru-Gurjara (Solanki)",
+  "circuits": [],
+  "significance": "The principal and largest of the Jain temples on Girnar hill, dedicated to Neminatha, whose oldest surviving portion was raised about 1129 CE by Sajjana, the Chaulukya governor of Saurashtra. It anchors one of the most important Jain pilgrimage hills in western India.",
+  "story": "A layman named Ratnasar is said to have bathed an ancient clay image until it dissolved, and after a fast of twenty-one days to have received a stone image of Neminatha from the demi-goddess Ambika, consecrated in Vikram Samvat 980.",
+  "wiki": "https://en.wikipedia.org/wiki/Neminath_Jain_Temple,_Girnar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Neminath_Jain_Temple,_Girnar"
+   },
+   {
+    "l": "Wikidata Q117231222",
+    "u": "https://www.wikidata.org/wiki/Q117231222"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Neminatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "digambara-jain-khandagiri",
+  "name": "Digambara Jain Temple, Khandagiri",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Khandagiri, Bhubaneswar",
+  "lat": 20.2619,
+  "lng": 85.7861,
+  "tradition": "Jain",
+  "deity": "Parshvanatha, the twenty-third Tirthankara",
+  "built": [
+   1800,
+   1825
+  ],
+  "builtDisplay": "early 19th c.",
+  "dynasty": "Maratha era",
+  "style": "Kalinga, pidha deul with vimana and jagamohana",
+  "circuits": [],
+  "significance": "The living Digambara Jain temple on the summit of Khandagiri hill above the ancient Jain caves at Bhubaneswar, its present structure built in the first quarter of the nineteenth century in Kalinga style. The main shrine holds Parshvanatha along with images of Mahavira and other Tirthankaras.",
+  "story": "Local legend attributes the temple to the Kalinga king Kharavela of the first century BCE, an attribution its architecture does not support.",
+  "wiki": "https://en.wikipedia.org/wiki/Digambara_Jain_temple,_Khandagiri",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Digambara_Jain_temple,_Khandagiri"
+   },
+   {
+    "l": "Wikidata Q5275550",
+    "u": "https://www.wikidata.org/wiki/Q5275550"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Parshvanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "sarnath-jain-tirth",
+  "name": "Sarnath Jain Tirth",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Sarnath, Varanasi district",
+  "lat": 25.3806,
+  "lng": 83.0239,
+  "tradition": "Jain",
+  "deity": "Shreyansanatha, the eleventh Tirthankara",
+  "built": [
+   1824,
+   1824
+  ],
+  "builtDisplay": "1824",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Jain temple at Sarnath built in 1824, revered by both Digambaras and Shvetambaras, holding a large image of Shreyansanatha together with his footprint impressions. It marks the site associated with four of that Tirthankara's five kalyanakas.",
+  "story": "Singhpuri beside Sarnath is held to be the ancient Simhapuri where Shreyansanatha was conceived, born, renounced the world and attained omniscience.",
+  "wiki": "https://en.wikipedia.org/wiki/Sarnath_Jain_Tirth",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sarnath_Jain_Tirth"
+   },
+   {
+    "l": "Wikidata Q107490368",
+    "u": "https://www.wikidata.org/wiki/Q107490368"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Mahavira"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "jambudweep-hastinapur",
+  "name": "Jambudweep",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Hastinapur, Meerut district",
+  "lat": 29.1658,
+  "lng": 78.0068,
+  "tradition": "Jain",
+  "deity": "Jain Tirthankaras, in a complex modelling the Jambudvipa cosmos",
+  "built": [
+   1972,
+   1985
+  ],
+  "builtDisplay": "1972–1985",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Digambara Jain pilgrimage complex at Hastinapur founded in 1972 by the nun Gyanmati, laid out as a 250-foot circular model of Jambudvipa as described in Jain cosmology, with a 101-foot Mount Sumeru of pink marble at its centre. The model was completed in 1985 and the site is now a major teaching centre for Jain cosmography.",
+  "story": "Gyanmati is said to have seen the structure of the universe in a vision while meditating in 1965, which she later matched against the cosmographical scriptures and reproduced here.",
+  "website": "https://www.jambudweep.org",
+  "wiki": "https://en.wikipedia.org/wiki/Jambudweep",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jambudweep"
+   },
+   {
+    "l": "Wikidata Q28164225",
+    "u": "https://www.wikidata.org/wiki/Q28164225"
+   },
+   {
+    "l": "Official site",
+    "u": "https://www.jambudweep.org"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Mahavira"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "bade-baba-kundalpur",
+  "name": "Bade Baba Temple",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Kundalpur, Damoh district",
+  "lat": 23.98,
+  "lng": 79.7242,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha (Adinatha), the first Tirthankara, known here as Bade Baba",
+  "built": [
+   1997,
+   2006
+  ],
+  "builtDisplay": "rebuilt 1997–2006 (image post-Gupta)",
+  "origin": 700,
+  "dynasty": "Modern",
+  "style": "Nagara, with modern Rajasthani elements",
+  "circuits": [],
+  "significance": "The chief Digambara Jain temple of Kundalpur, housing a post-Gupta image of Rishabhanatha venerated as Bade Baba. An eighth-century temple stood here first and was rebuilt in Vikram Samvat 1757 by Bhattaraka Surendrakirti with the help of the Bundela ruler Chhatrasal; the present larger temple was begun in 1997 under Acharya Vidyasagar and received the image in January 2006.",
+  "website": "https://shreebadebaba.com",
+  "wiki": "https://en.wikipedia.org/wiki/Bade_Baba_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bade_Baba_Temple"
+   },
+   {
+    "l": "Wikidata Q106405622",
+    "u": "https://www.wikidata.org/wiki/Q106405622"
+   },
+   {
+    "l": "Official site",
+    "u": "https://shreebadebaba.com"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Mahavira",
+   "Rishabhanatha"
+  ],
+  "deityGroup": "Jain"
+ },
+ {
+  "id": "kanishka-stupa-peshawar",
+  "name": "Kanishka Stupa",
+  "country": "Pakistan",
+  "state": "Khyber Pakhtunkhwa",
+  "place": "Peshawar",
+  "lat": 33.9992,
+  "lng": 71.5918,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   151,
+   151
+  ],
+  "builtDisplay": "c. 151 CE (Kanishka); rebuilt 4th c.",
+  "dynasty": "Kushan",
+  "style": "Cruciform stupa with tiered wooden superstructure",
+  "circuits": [],
+  "significance": "The ruined mound at Shaji-ki-Dheri outside Peshawar's old walled city is the base of the colossal relic stupa raised by the Kushan emperor Kanishka; excavation there recovered a rock-crystal reliquary holding fragments of bone identified as relics of the Buddha. Chinese pilgrims described it as one of the tallest buildings of the ancient world, and the site was re-identified in 2011 though it remains unpreserved.",
+  "story": "Buddhist texts record a prophecy that Kanishka would build a great stupa bearing his name on the spot where a small boy had piled up a stupa of mud, and that celestial beings helped to raise it.",
+  "wiki": "https://en.wikipedia.org/wiki/Kanishka_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kanishka_Stupa"
+   },
+   {
+    "l": "Wikidata Q842918",
+    "u": "https://www.wikidata.org/wiki/Q842918"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "phra-pathommachedi-nakhon-pathom",
+  "name": "Phra Pathommachedi",
+  "country": "Thailand",
+  "state": "Nakhon Pathom Province",
+  "place": "Nakhon Pathom",
+  "lat": 13.8197,
+  "lng": 100.0603,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   1853,
+   1870
+  ],
+  "builtDisplay": "1853-1870 (King Mongkut); Dvaravati origin",
+  "origin": -193,
+  "dynasty": "Chakri",
+  "style": "Sri Lankan-style bell-shaped stupa",
+  "circuits": [],
+  "significance": "Thailand's tallest stupa, rising over 120 metres at Nakhon Pathom, encases a far older Dvaravati-period monument and enshrines relics of the Buddha. King Mongkut ordered the present bell-shaped casing built from 1853, completed under his successor in 1870; the ashes of King Vajiravudh and members of his family are also interred here.",
+  "story": "Local legend tells of Phraya Gong and Phraya Phan, a prince who unknowingly killed his own father and afterwards raised the great stupa in expiation.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_Pathommachedi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_Pathommachedi"
+   },
+   {
+    "l": "Wikidata Q1150964",
+    "u": "https://www.wikidata.org/wiki/Q1150964"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "memorial-chorten-thimphu",
+  "name": "National Memorial Chorten",
+  "country": "Bhutan",
+  "state": "Thimphu District",
+  "place": "Thimphu",
+  "lat": 27.4664,
+  "lng": 89.6378,
+  "tradition": "Buddhist",
+  "deity": "Nyingma tantric deities; memorial to Jigme Dorji Wangchuck",
+  "built": [
+   1974,
+   1974
+  ],
+  "builtDisplay": "1974",
+  "dynasty": "Modern (Wangchuck)",
+  "style": "Tibetan-style Jangchup chorten",
+  "circuits": [],
+  "significance": "A 108-foot whitewashed chorten in central Thimphu raised in 1974 by Queen Ashi Phuntsho Choden Wangchuck in memory of her son, the third king Jigme Dorji Wangchuck. Unusually for a chorten it holds no bodily remains, only the king's photograph, while its three interior levels are filled with paintings and sculptures of wrathful Nyingma deities; it is one of Thimphu's busiest daily places of worship.",
+  "wiki": "https://en.wikipedia.org/wiki/Memorial_Chorten,_Thimphu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Memorial_Chorten,_Thimphu"
+   },
+   {
+    "l": "Wikidata Q864865",
+    "u": "https://www.wikidata.org/wiki/Q864865"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sandamuni-pagoda-mandalay",
+  "name": "Sandamuni Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Mandalay",
+  "lat": 22.0035,
+  "lng": 96.1098,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (iron image); memorial to Prince Kanaung Mintha",
+  "built": [
+   1874,
+   1874
+  ],
+  "builtDisplay": "1874 (King Mindon Min)",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "Built in 1874 southwest of Mandalay Hill on the site of King Mindon's provisional palace, this Theravada pagoda commemorates his brother Prince Kanaung Mintha and three other princes killed in the Myingun rebellion of 1866, whose graves lie within. Its shrine houses a huge iron Buddha image cast by King Bodawpaya in 1802 and brought here from Amarapura.",
+  "wiki": "https://en.wikipedia.org/wiki/Sandamuni_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sandamuni_Pagoda"
+   },
+   {
+    "l": "Wikidata Q19702014",
+    "u": "https://www.wikidata.org/wiki/Q19702014"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "mohra-muradu-taxila",
+  "name": "Mohra Muradu",
+  "country": "Pakistan",
+  "state": "Punjab",
+  "place": "Taxila",
+  "lat": 33.7608,
+  "lng": 72.8606,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   100,
+   200
+  ],
+  "builtDisplay": "2nd c. CE; renovated 5th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Buddhist monastery and stupa complex in a quiet valley near Taxila, set far enough from the city of Sirsukh for monks to meditate yet close enough for the daily alms round. Excavated by John Marshall in 1914-15, it preserves a main stupa on a high plinth and a two-storey monastery of 27 cells around a courtyard pool, and forms part of the Taxila World Heritage Site inscribed in 1980.",
+  "wiki": "https://en.wikipedia.org/wiki/Mohra_Muradu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mohra_Muradu"
+   },
+   {
+    "l": "Wikidata Q938223",
+    "u": "https://www.wikidata.org/wiki/Q938223"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "thul-mir-rukan-daulatpur",
+  "name": "Thul Mir Rukan",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Daulatpur, Shaheed Benazirabad District",
+  "lat": 26.4545,
+  "lng": 68.1066,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   600,
+   1100
+  ],
+  "builtDisplay": "6th-11th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A ruined baked-brick stupa about 60 feet high standing in the Sindh plain near Kazi Ahmed and Daulatpur, the surviving core of a Buddhist religious centre. Finds from the site connect it to the veneration of Gautama Buddha, though its portable artefacts have long since been removed.",
+  "wiki": "https://en.wikipedia.org/wiki/Thul_Mir_Rukan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thul_Mir_Rukan"
+   },
+   {
+    "l": "Wikidata Q51670280",
+    "u": "https://www.wikidata.org/wiki/Q51670280"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "phra-that-kham-kaen",
+  "name": "Phra That Kham Kaen",
+  "country": "Thailand",
+  "state": "Khon Kaen Province",
+  "place": "Ban Kham, Nam Phong",
+  "lat": 16.5635,
+  "lng": 102.9519,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic)",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "17th c. (estimated)",
+  "dynasty": "Lan Xang",
+  "style": "Lao-style chedi",
+  "circuits": [],
+  "significance": "A 19-metre gilded chedi at Ban Kham northeast of Khon Kaen that enshrines a relic of the Buddha and gives the province its name. No record of its founding survives, but scholars place it in the 17th century, when the region belonged to the Lao kingdom of Lan Xang or its successors, and date it alongside Phra That Si Song Rak in Loei.",
+  "story": "Monks carrying relics of the Buddha are said to have camped by a dead tamarind stump here, and on their return journey found it sprouting fresh growth; reading this as a sign, they built the shrine on the spot with the help of local villagers.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Kham_Kaen",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Kham_Kaen"
+   },
+   {
+    "l": "Wikidata Q13017415",
+    "u": "https://www.wikidata.org/wiki/Q13017415"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "norbugang-chorten-yuksom",
+  "name": "Norbugang Chorten",
+  "country": "India",
+  "state": "Sikkim",
+  "place": "Yuksom, Gyalshing district",
+  "lat": 27.3704,
+  "lng": 88.2168,
+  "tradition": "Buddhist",
+  "deity": "Memorial chorten of the first Chogyal’s coronation",
+  "built": [
+   1642,
+   1642
+  ],
+  "builtDisplay": "1642 (coronation of Phuntsog Namgyal)",
+  "dynasty": "Namgyal (Chogyal)",
+  "style": "Tibetan chorten",
+  "circuits": [],
+  "significance": "Raised at Yuksom in 1642 by Lhatsun Namkha Jigme and two fellow lamas at the moment they crowned Phuntsog Namgyal as the first Chogyal of Sikkim, this Nyingma chorten stands in Norbugang Park beside the stone coronation throne. It marks the founding of the Sikkimese monarchy and remains the focus of the site, about 42 km from Pelling.",
+  "story": "The chorten is said to enclose water and earth gathered from every part of Sikkim, and a nearby stone bears what tradition holds to be the footprint of one of the lamas who performed the coronation.",
+  "wiki": "https://en.wikipedia.org/wiki/Norbugang_Chorten",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Norbugang_Chorten"
+   },
+   {
+    "l": "Wikidata Q56204092",
+    "u": "https://www.wikidata.org/wiki/Q56204092"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kunala-stupa-taxila",
+  "name": "Kunala Stupa",
+  "country": "Pakistan",
+  "state": "Punjab",
+  "place": "Taxila",
+  "lat": 33.7504,
+  "lng": 72.8305,
+  "tradition": "Jain",
+  "deity": "Kunala, son of emperor Ashoka",
+  "built": [
+   100,
+   200
+  ],
+  "builtDisplay": "2nd c. CE",
+  "dynasty": "Kushan",
+  "style": "Stupa and monastery complex",
+  "circuits": [],
+  "significance": "A ruined stupa and monastery on a hill about 200 metres south of Sirkap at Taxila, named for Kunala, the son of Ashoka. Tradition credits its building to emperor Samprati in honour of his father, and Xuanzang recorded that pilgrims suffering from diseases of the eye came here in hope of a cure.",
+  "story": "Kunala is said to have been blinded through the jealousy of a queen, and afterwards reunited with his father and treated by a physician at Taxila.",
+  "wiki": "https://en.wikipedia.org/wiki/Kunala_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kunala_Stupa"
+   },
+   {
+    "l": "Wikidata Q55616283",
+    "u": "https://www.wikidata.org/wiki/Q55616283"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ramagrama-stupa-parasi",
+  "name": "Ramagrama Stupa",
+  "country": "Nepal",
+  "state": "Lumbini Province",
+  "place": "Ramgram, Parasi District",
+  "lat": 27.4978,
+  "lng": 83.6811,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (relic stupa)",
+  "built": [
+   -300,
+   500
+  ],
+  "builtDisplay": "Mauryan to Gupta periods",
+  "dynasty": "Koliya",
+  "style": "Brick-and-earth stupa",
+  "circuits": [],
+  "significance": "The only one of the eight original relic stupas raised over the divided cremation remains of the Buddha that has never been opened, built at Ramagrama by the Koliya princes and enlarged between the Mauryan and Gupta periods. The seven-metre mound still lies largely buried and unexcavated, and was placed on UNESCO’s World Heritage tentative list in 1996.",
+  "story": "When Ashoka came to redistribute the relics of the Buddha, a naga guardian of the stupa is said to have stopped him, leaving Ramagrama alone undisturbed.",
+  "wiki": "https://en.wikipedia.org/wiki/Ramagrama_stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ramagrama_stupa"
+   },
+   {
+    "l": "Wikidata Q7288751",
+    "u": "https://www.wikidata.org/wiki/Q7288751"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
+ },
+ {
+  "id": "phra-that-si-song-rak-dan-sai",
+  "name": "Phra That Si Song Rak",
+  "country": "Thailand",
+  "state": "Loei Province",
+  "place": "Dan Sai",
+  "lat": 17.27,
+  "lng": 101.1425,
+  "tradition": "Buddhist",
+  "deity": "Commemorative that of the Lan Xang–Ayutthaya friendship pact",
+  "built": [
+   1560,
+   1560
+  ],
+  "builtDisplay": "c. 1560",
+  "dynasty": "Lan Xang / Ayutthaya",
+  "circuits": [],
+  "significance": "A 20-metre stupa at Dan Sai in Loei, raised around 1560 jointly by King Setthathirath of Lan Xang and King Maha Chakkraphat of Ayutthaya to seal a mutual-defence pact; its name means the stupa in honour of two loves. A stone inscription pledging that neither kingdom would violate the other’s territory once stood here, and the monument appears on the seal of Loei province.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Si_Song_Rak",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Si_Song_Rak"
+   },
+   {
+    "l": "Wikidata Q3511815",
+    "u": "https://www.wikidata.org/wiki/Q3511815"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—"
+ },
+ {
+  "id": "chorten-kora-trashiyangtse",
+  "name": "Chorten Kora",
+  "country": "Bhutan",
+  "state": "Trashiyangtse District",
+  "place": "Trashiyangtse",
+  "lat": 27.6058,
+  "lng": 91.495,
+  "tradition": "Buddhist",
+  "deity": "Memorial chorten of Lam Jangchub Gyeltshen",
+  "built": [
+   1740,
+   1740
+  ],
+  "builtDisplay": "1740 (Lama Ngawang Lodrö); 12 years building",
+  "dynasty": "18th-century Bhutan",
+  "style": "Stupa modelled on Boudhanath",
+  "circuits": [],
+  "significance": "A large whitewashed stupa beside the Kholong Chhu in eastern Bhutan, begun in 1740 by Lama Ngawang Lodrö in memory of Lam Jangchub Gyeltshen and to pacify a malignant spirit at the site; it took twelve years to complete and was modelled on the great stupa of Boudhanath in Nepal. Two circumambulation festivals, Dakpa Kora and Drukpa Kora, draw pilgrims from Trashiyangtse and from Tawang across the border.",
+  "story": "A Dakini princess from Arunachal Pradesh is said to have had herself entombed alive inside the stupa as the Yeshe Semba, to meditate there for the benefit of all beings.",
+  "wiki": "https://en.wikipedia.org/wiki/Chorten_Kora",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chorten_Kora"
+   },
+   {
+    "l": "Wikidata Q4232576",
+    "u": "https://www.wikidata.org/wiki/Q4232576"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

@@ -220,7 +220,10 @@
         "rajagopala",
         "banke bihari",
         "radha krishna",
-        "radha-krishna"
+        "radha-krishna",
+        "khatu shyam",
+        "barbarika",
+        "shyam baba"
       ]
     },
     "Rama": {
@@ -311,7 +314,12 @@
         "bhawani",
         "bhavani",
         "ambe",
-        "jagadambika"
+        "jagadambika",
+        "banashankari",
+        "shakambhari",
+        "chaturdasha devata",
+        "bhagvati",
+        "vaishnavi"
       ],
       "suffixes": [
         "amman",
@@ -349,7 +357,12 @@
         "chinnamasta",
         "kalika",
         "karumari",
-        "smashan kali"
+        "smashan kali",
+        "chhinnamasta",
+        "chinnamastika",
+        "guhyakali",
+        "guhyeshwari",
+        "guhyeshwori"
       ]
     },
     "Lakshmi": {
@@ -436,7 +449,11 @@
         "swami samarth",
         "gajanan maharaj",
         "sant gajanan",
-        "swami samartha"
+        "swami samartha",
+        "baba balak nath",
+        "balaknath",
+        "kapila",
+        "kapil muni"
       ]
     },
     "Naga": {
@@ -557,12 +574,14 @@
       ]
     },
     "Tara": {
-      "group": "Buddhist",
+      "group": "Shakta",
       "aliases": [
         "tara",
         "green tara",
         "white tara",
-        "dolma"
+        "dolma",
+        "ugratara",
+        "tarapith"
       ]
     },
     "Padmasambhava": {
@@ -615,6 +634,8 @@
         "ganga",
         "goddess ganga",
         "ganga devi",
+        "bhagirathi",
+        "alaknanda",
         "bhagirathi"
       ]
     },
@@ -639,7 +660,9 @@
       "aliases": [
         "sai baba",
         "shirdi sai",
-        "sainath"
+        "sainath",
+        "neem karoli",
+        "neeb karori"
       ]
     },
     "Ajitanatha": {
@@ -682,6 +705,34 @@
       "aliases": [
         "suparshvanatha",
         "suparshvanath"
+      ]
+    },
+    "Bagalamukhi": {
+      "group": "Shakta",
+      "aliases": [
+        "bagalamukhi",
+        "baglamukhi",
+        "pitambara"
+      ]
+    },
+    "Narmada": {
+      "group": "Shakta",
+      "aliases": [
+        "narmada"
+      ]
+    },
+    "Varuna": {
+      "group": "Smarta",
+      "aliases": [
+        "varuna",
+        "dewa baruna",
+        "baruna"
+      ]
+    },
+    "Prajnaparamita": {
+      "group": "Buddhist",
+      "aliases": [
+        "prajnaparamita"
       ]
     }
   }

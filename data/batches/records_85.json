@@ -162,5 +162,77 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "buduruvagala-wellawaya",
+  "name": "Buduruvagala",
+  "country": "Sri Lanka",
+  "state": "Uva Province",
+  "place": "Wellawaya, Monaragala District",
+  "lat": 6.6869,
+  "lng": 81.0783,
+  "tradition": "Buddhist",
+  "deity": "Standing Buddha, flanked by Avalokiteshvara, Tara, Maitreya and Vajrapani",
+  "built": [800, 1000],
+  "builtDisplay": "9th–10th c.",
+  "dynasty": "Undetermined",
+  "style": "Rock-cut",
+  "circuits": [],
+  "significance": "A group of seven colossal figures carved into a rock face near Wellawaya in southern Sri Lanka, dated by most authorities to the 9th or 10th century. The central standing Buddha is the island's tallest, and the flanking bodhisattvas mark the site as a rare surviving Mahayana monument in a Theravada country.",
+  "story": "A hollow carved into the same rock is said to weep a mustard-scented oil that no one has been able to trace to a source.",
+  "wiki": "https://en.wikipedia.org/wiki/Buduruvagala",
+  "sources": [
+   { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Buduruvagala" },
+   { "l": "Wikidata Q2927591", "u": "https://www.wikidata.org/wiki/Q2927591" }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "seruwila-mangala-raja-maha-vihara",
+  "name": "Seruwila Mangala Raja Maha Vihara",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Seruwawila, Trincomalee District",
+  "lat": 8.3708,
+  "lng": 81.3194,
+  "tradition": "Buddhist",
+  "deity": "Forehead relic (Lalata Dhatu) and hair relics of Gautama Buddha",
+  "built": [-200, -100],
+  "builtDisplay": "2nd c. BCE (King Kavantissa)",
+  "dynasty": "Ruhuna (Kavantissa)",
+  "circuits": [],
+  "significance": "An Early Anuradhapura-period stupa in Trincomalee District built by King Kavantissa, and the only site known to enshrine the Buddha's forehead bone relic along with hair relics. It counts as the ninth of the Solosmasthana, the sixteen holiest Buddhist pilgrimage places in Sri Lanka, and its four carved guardstones are unmatched at any other Sri Lankan stupa.",
+  "story": "The Dhatuvamsa relates that the Buddha came to this spot with five hundred arahants on his third visit to the island, and that Kavantissa enshrined the forehead relic here in fulfilment of an old prophecy.",
+  "wiki": "https://en.wikipedia.org/wiki/Seruwila_Mangala_Raja_Maha_Vihara",
+  "sources": [
+   { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Seruwila_Mangala_Raja_Maha_Vihara" },
+   { "l": "Wikidata Q10666450", "u": "https://www.wikidata.org/wiki/Q10666450" }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "somawathiya-chaitya",
+  "name": "Somawathiya Chaitya",
+  "country": "Sri Lanka",
+  "state": "North Central Province",
+  "place": "Somawathiya National Park, Polonnaruwa District",
+  "lat": 8.1209,
+  "lng": 81.1689,
+  "tradition": "Buddhist",
+  "deity": "Right canine tooth relic of Gautama Buddha",
+  "built": [-200, -100],
+  "builtDisplay": "2nd c. BCE (reign of Kavan Tissa)",
+  "dynasty": "Anuradhapura",
+  "circuits": [],
+  "significance": "A stupa on the Mahaweli floodplain in Polonnaruwa District, built in the reign of King Kavan Tissa by Prince Giri Abhaya to enshrine the Buddha's right canine tooth relic, which he received from Arahat Mahinda. It takes its name from the prince's wife, Princess Somawathi, sister of the king, and the couple handed the completed shrine to the monks.",
+  "wiki": "https://en.wikipedia.org/wiki/Somawathiya_Chaitya",
+  "sources": [
+   { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Somawathiya_Chaitya" },
+   { "l": "Wikidata Q18379203", "u": "https://www.wikidata.org/wiki/Q18379203" }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]
