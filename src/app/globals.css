@@ -1079,3 +1079,16 @@ table.gz tr:last-child td{border-bottom:none}
 .asstmode{flex:1;padding:6px 10px;border:1px solid var(--line2);border-radius:8px;font-size:12.5px;color:var(--ink2);background:var(--panel)}
 .asstmode:hover{color:var(--gold);border-color:var(--gold)}
 .asstmode.on{color:var(--gold);border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--panel))}
+
+/* ---- sthala katha: legend, marked as legend ----
+   Rule 3 (history is never blended with legend) used to be carried entirely by
+   `font-style:italic` and a lighter colour. Italic is not a semantic signal: a
+   screen reader announces nothing, and a sighted reader has to already know the
+   convention. The distinction now has a tinted ground, a rule down the side, and
+   — the part that actually carries it — a sentence saying what this is. The
+   styling reinforces the words; it no longer replaces them. */
+.sect.katha,.page section.katha{background:var(--panel2);border-left:3px solid var(--line2);border-radius:0 8px 8px 0;padding:12px 14px;margin:16px 0}
+.sect.katha p,.page section.katha p{font-style:normal}
+.page section.katha h2{margin-top:0;font-size:19px}
+.kathaframe{font-family:var(--font-mono),monospace;font-size:11px;line-height:1.6;color:var(--mut);
+  border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:9px;max-width:none}

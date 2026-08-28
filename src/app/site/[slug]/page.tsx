@@ -99,7 +99,20 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
 
       <h2>History & significance</h2>
       <p className="ink">{s.significance}</p>
-      {s.story && (<><h2>Sthala katha — the legend</h2><p><i>{s.story}</i></p></>)}
+      {s.story && (
+        <section className="katha" aria-label="Sthala katha — traditional account, not documented history">
+          <h2>Sthala katha — the traditional account</h2>
+          <p className="kathaframe">
+            {/* The same sentence the map rail shows. History and katha are held
+                apart in the data (rule 3) and jsonld.ts already honours it; this
+                is where a READER is told which one they are looking at. */}
+            What follows is the temple&rsquo;s own traditional account, transmitted
+            through liturgy and local memory. It is recorded here as tradition, not
+            as attested history.
+          </p>
+          <p>{s.story}</p>
+        </section>
+      )}
       {s.access && (<><h2>Reaching there</h2><p>{s.access}</p></>)}
 
       <div className="actions" style={{ marginTop: 20 }}>

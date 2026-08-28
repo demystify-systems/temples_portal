@@ -45,6 +45,10 @@ const PX = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
 const PY = (lat: number) => ((YT - mercY(lat)) / (YT - YB)) * H;
 const TRADS: Record<string, string> = { Hindu: "circle", Buddhist: "square", Jain: "diamond", Sikh: "triangle" };
 const YEAR_MIN = -650, YEAR_MAX = 2030;
+
+/** Stated in words, not carried by italics. See the katha section below. */
+const KATHA_FRAMING =
+  "What follows is sthala katha — the temple’s own traditional account, transmitted through liturgy and local memory. It is recorded here as tradition, not as attested history.";
 /** Computed at BUILD time (scripts/build-map-artefacts.mjs), never in the browser. */
 const STATS = ATLAS_STATS;
 const ERA_NAMES = ERAS.map((e) => e.name);
@@ -1263,7 +1267,20 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
                 <div><div className="dl">Standing structure</div><div className="dv">{selected.builtDisplay}</div><div className="ds">{detail?.patron ? `patron: ${detail.patron}` : selected.dynasty}</div></div>
               </div>
               <div className="sect"><h3>Deity & significance</h3><p><b>{selected.deity}.</b> {detail?.significance ?? ""}</p></div>
-              {detail?.story && <div className="sect katha"><h3>Sthala katha · legend</h3><p>{detail.story}</p></div>}
+              {detail?.story && (
+                /* CLAUDE.md rule 3 is the project's second-most-important
+                   guarantee, and its whole visual expression used to be
+                   `font-style: italic` plus a lighter colour — invisible to a
+                   screen reader and ambiguous to everyone else. A real
+                   <section> with an accessible name states the distinction in
+                   the DOM, and the framing line states it in words, so it
+                   survives both assistive technology and CSS being removed. */
+                <section className="sect katha" aria-label="Sthala katha — traditional account, not documented history">
+                  <h3>Sthala katha · traditional account</h3>
+                  <p className="kathaframe">{KATHA_FRAMING}</p>
+                  <p>{detail.story}</p>
+                </section>
+              )}
               {detail?.access && <div className="sect"><h3>Reaching there</h3><p className="practical">{detail.access}</p></div>}
               <div className="actions">
                 <Link className="primary" href={`/site/${selected.id}`}>Full entry →</Link>
