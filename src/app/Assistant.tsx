@@ -15,11 +15,20 @@
  *   3. **`dir="auto"`, not a hardcoded direction.** The question can be typed in
  *      any script and the reply comes back in that script; a fixed `ltr` would
  *      mangle Urdu and Arabic-script answers.
+ *   4. **A spoken question lands in the input box, not in a request.** The
+ *      transcript is shown for the user to read and correct before anything is
+ *      asked, and the language it was *detected* in — a measured value from the
+ *      speech API, not `navigator.language` — is what the reply is generated and
+ *      read back in.
  *
  * NOT mounted anywhere by this file — it is exported for a parent to place.
+ * `layout.tsx` mounts it only when `SARVAM_API_KEY` is set, which is also why
+ * the voice controls inside it need no key check of their own: no key, no
+ * assistant, no microphone button.
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import VoiceButton, { SpeakButton, type VoiceTranscript } from "./VoiceButton";
 
 type Source = { l: string; u: string };
 type Citation = { id: string; name: string; place: string; sources: Source[] };
@@ -29,6 +38,17 @@ type Turn = {
   readonly text: string;
   readonly citations: readonly Citation[];
   readonly refused: boolean;
+  /** The language the question was measured to be in, or null when typed. */
+  readonly lang: string | null;
+  /** Asked out loud — so the answer is read back without being asked to be. */
+  readonly spoken: boolean;
+};
+
+/** What the microphone last heard, kept until the question is asked or cleared. */
+type Heard = {
+  readonly language: string | null;
+  readonly label: string | null;
+  readonly speakable: boolean;
 };
 
 const MAX_CHARS = 500;
@@ -46,6 +66,9 @@ export default function Assistant() {
   const [question, setQuestion] = useState("");
   const [turns, setTurns] = useState<readonly Turn[]>([]);
   const [pending, setPending] = useState(false);
+  const [heard, setHeard] = useState<Heard | null>(null);
+  /** Bumped to silence any playback from outside — closing must not keep talking. */
+  const [halt, setHalt] = useState(0);
 
   const launcherRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -57,6 +80,8 @@ export default function Assistant() {
     abortRef.current = null;
     setPending(false);
     setOpen(false);
+    // A closed panel must not leave an answer reciting into an empty room.
+    setHalt((n) => n + 1);
     // Return focus where it came from, or a keyboard user is stranded.
     launcherRef.current?.focus();
   }, []);
@@ -82,10 +107,19 @@ export default function Assistant() {
     const asked = question.trim();
     if (!asked || pending) return;
 
+    // Captured before the state is cleared: the answer belongs to the language
+    // THIS question was heard in, even if the next one is typed.
+    const askedLanguage = heard?.language ?? null;
+    const askedAloud = heard !== null;
+
     const controller = new AbortController();
     abortRef.current = controller;
-    setTurns((prev) => [...prev, { id: nextId++, role: "user", text: asked, citations: [], refused: false }]);
+    setTurns((prev) => [
+      ...prev,
+      { id: nextId++, role: "user", text: asked, citations: [], refused: false, lang: askedLanguage, spoken: askedAloud },
+    ]);
     setQuestion("");
+    setHeard(null);
     setPending(true);
 
     try {
@@ -95,9 +129,10 @@ export default function Assistant() {
         signal: controller.signal,
         body: JSON.stringify({
           question: asked,
-          // The reply language is the asker's, and the browser is the only hint
-          // available before voice input lands (which measures it properly).
-          language: typeof navigator === "undefined" ? undefined : navigator.language,
+          // A spoken question carries the language the speech API DETECTED —
+          // measured, not guessed. Only a typed one falls back to the browser
+          // locale, which is a hint about the device rather than about the asker.
+          language: askedLanguage ?? (typeof navigator === "undefined" ? undefined : navigator.language),
         }),
       });
       const data: unknown = await response.json().catch(() => null);
@@ -118,19 +153,35 @@ export default function Assistant() {
           text,
           citations: response.ok ? (payload.citations ?? []) : [],
           refused: Boolean(payload.refused) || !response.ok,
+          lang: askedLanguage,
+          // Read back only when the question was asked out loud: a typed
+          // question has not consented to sound.
+          spoken: askedAloud && response.ok && Boolean(payload.answer),
         },
       ]);
     } catch (error) {
       if ((error as Error)?.name === "AbortError") return;
       setTurns((prev) => [
         ...prev,
-        { id: nextId++, role: "assistant", text: UNAVAILABLE_TEXT, citations: [], refused: true },
+        { id: nextId++, role: "assistant", text: UNAVAILABLE_TEXT, citations: [], refused: true, lang: askedLanguage, spoken: false },
       ]);
     } finally {
       abortRef.current = null;
       setPending(false);
     }
-  }, [question, pending]);
+  }, [question, pending, heard]);
+
+  /**
+   * A spoken question arrives here, and stops here. It is written into the
+   * input box — visible, editable, unsent — because a mis-transcription that
+   * goes straight to an answer cannot be told apart from the assistant
+   * misunderstanding the question.
+   */
+  const onTranscript = useCallback((result: VoiceTranscript) => {
+    setQuestion(result.text.slice(0, MAX_CHARS));
+    setHeard({ language: result.language, label: result.label, speakable: result.speakable });
+    inputRef.current?.focus();
+  }, []);
 
   return (
     <>
@@ -202,6 +253,10 @@ export default function Assistant() {
                   )}
                 </div>
               )}
+
+              {turn.role === "assistant" && (turn.spoken || turn.lang) && (
+                <SpeakButton text={turn.text} language={turn.lang} autoPlay={turn.spoken} halt={halt} />
+              )}
             </article>
           ))}
 
@@ -231,7 +286,12 @@ export default function Assistant() {
             maxLength={MAX_CHARS}
             value={question}
             placeholder="e.g. Which Jyotirlinga is nearest Ujjain?"
-            onChange={(event) => setQuestion(event.target.value)}
+            onChange={(event) => {
+              setQuestion(event.target.value);
+              // Emptying the box ends the spoken question; a fresh typed one
+              // must not inherit the language of the last thing that was said.
+              if (!event.target.value.trim()) setHeard(null);
+            }}
             onKeyDown={(event) => {
               if (event.key === "Enter" && !event.shiftKey) {
                 event.preventDefault();
@@ -239,7 +299,15 @@ export default function Assistant() {
               }
             }}
           />
+          {heard && (
+            <p className="voxheard" role="status">
+              Heard in <b>{heard.label ?? "an unrecognised language"}</b>. Check it, correct anything wrong, then ask.
+              {!heard.speakable && " The answer will be text only — the atlas cannot read that language aloud yet."}
+            </p>
+          )}
+
           <div className="asstactions">
+            <VoiceButton onTranscript={onTranscript} disabled={pending} />
             <span className="asstcount" aria-hidden="true">
               {question.length}/{MAX_CHARS}
             </span>

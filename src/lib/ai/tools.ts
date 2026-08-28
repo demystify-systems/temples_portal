@@ -23,6 +23,7 @@ import {
   DEFAULT_RADIUS_KM, isSourced,
   type AtlasRecord, type Source, type DisputedCircuit,
 } from "./retrieve.ts";
+import { siteUrl } from "./answer.ts";
 
 // ---------------------------------------------------------------------------
 // the notes — exported so tests pin the exact wording the pilgrim sees
@@ -116,6 +117,16 @@ export type BriefRecord = {
   readonly tradition: string;
   readonly deity: string;
   readonly built: string;
+  /**
+   * The record's own page in the atlas, `/site/<id>`.
+   *
+   * It travels with the result so the *interface* can turn an answer into a
+   * doorway — the card under the reply links here. It is built from the id, so
+   * a link can only ever exist for a record a tool really returned. The model
+   * is told (prompt rule 7) never to write it into its prose: a URL typed by a
+   * model is a guess wearing the shape of a citation.
+   */
+  readonly url: string;
   readonly sources: readonly Source[];
 };
 
@@ -130,6 +141,7 @@ export const brief = (record: AtlasRecord): BriefRecord => ({
   tradition: record.tradition,
   deity: record.deity,
   built: record.builtDisplay,
+  url: siteUrl(record.id),
   sources: record.sources,
 });
 
@@ -290,6 +302,8 @@ export type ContactField = { readonly value: string; readonly source: string };
 export type ContactResult = {
   readonly site: string;
   readonly name?: string;
+  /** The record's page in the atlas. Absent when no such record exists. */
+  readonly url?: string;
   readonly website: ContactField | null;
   readonly phone: ContactField | null;
   readonly access: ContactField | null;
@@ -328,14 +342,29 @@ const findSites = <T extends AtlasRecord>(corpus: readonly T[], args: Args): Too
   if (found.empty) {
     return { result: { count: 0, records: [], note: NO_MATCH_NOTE, reason: found.reason }, cited: [] };
   }
+  // `fuzzy` is true only when NOTHING matched the query as typed and the records
+  // were reached by transliteration folding — "jaganath" finding Jagannath. The
+  // model must be told, or it answers a misspelling with silent confidence and
+  // the reader never learns the spelling we actually hold. This is a fact about
+  // the retrieval, not about the temple, so it belongs in the note rather than
+  // in any record.
+  const notes = [
+    found.total > found.records.length
+      ? `${found.total} records match; the ${found.records.length} most relevant are shown.`
+      : "",
+    found.fuzzy
+      ? "No record matched the query as spelled; these were found by transliteration. " +
+        "Say which spelling the atlas holds, so the reader can search it directly."
+      : "",
+  ].filter(Boolean);
+
   return {
     result: {
       count: found.records.length,
       total: found.total,
       records: found.records.map(brief),
-      ...(found.total > found.records.length
-        ? { note: `${found.total} records match; the ${found.records.length} most relevant are shown.` }
-        : {}),
+      ...(found.fuzzy ? { matchedByTransliteration: true } : {}),
+      ...(notes.length ? { note: notes.join(" ") } : {}),
     },
     cited: found.records,
   };
@@ -391,6 +420,7 @@ const contactInfo = <T extends AtlasRecord>(corpus: readonly T[], args: Args): T
   const result: ContactResult = {
     site: record.id,
     name: record.name,
+    url: siteUrl(record.id),
     website,
     phone,
     access,

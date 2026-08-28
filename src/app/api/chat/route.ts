@@ -30,6 +30,7 @@ import { SITES, type Site } from "@/lib/sites";
 import { chat, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
 import { retrieve, type AtlasRecord } from "@/lib/ai/retrieve";
 import { TOOLS, executeTool } from "@/lib/ai/tools";
+import { buildAnswer, refusalPayload } from "@/lib/ai/answer";
 import { systemPrompt, userTurn, REFUSAL, MAX_QUESTION_CHARS } from "@/lib/ai/prompt";
 
 export const runtime = "nodejs";
@@ -99,34 +100,14 @@ const withinRateLimit = (ip: string, now: number): boolean => {
 };
 
 // ---------------------------------------------------------------------------
-// citations
+// the response
 // ---------------------------------------------------------------------------
-
-export type Citation = {
-  readonly id: string;
-  readonly name: string;
-  readonly place: string;
-  readonly sources: readonly { readonly l: string; readonly u: string }[];
-};
-
-/**
- * Citations come from the records the tools actually returned, never from the
- * model's text. A model cannot fabricate a citation it was never given, so this
- * is the mechanism that makes contract 1 true rather than merely requested.
- */
-const toCitations = (records: readonly AtlasRecord[]): Citation[] => {
-  const seen = new Map<string, Citation>();
-  for (const record of records) {
-    if (seen.has(record.id)) continue;
-    seen.set(record.id, {
-      id: record.id,
-      name: record.name,
-      place: [record.place, record.state, record.country].filter(Boolean).join(", "),
-      sources: record.sources,
-    });
-  }
-  return [...seen.values()];
-};
+//
+// Citations AND result cards are both shaped in `answer.ts`, from `cited` — the
+// records the tools actually returned. Neither is ever derived from the model's
+// text: a citation the model typed would be unverifiable, and a *link* the
+// model typed would be an unverifiable citation that also navigates. See the
+// header of answer.ts.
 
 // ---------------------------------------------------------------------------
 // handler
@@ -181,7 +162,7 @@ export async function POST(request: Request): Promise<Response> {
   // WITH tools, and refuses only if findSites also comes back empty.
   const nothingAsked = found.reason === "blank-query" || found.reason === "no-terms";
   if (nothingAsked && !needsTranslatedRefusal(question, language)) {
-    return NextResponse.json({ answer: REFUSAL, citations: [], refused: true });
+    return NextResponse.json(refusalPayload(REFUSAL));
   }
 
   const controller = new AbortController();
@@ -230,11 +211,22 @@ export async function POST(request: Request): Promise<Response> {
       // no answer to render, and half a sourced answer is worse than none.
       if (!result.content) return unavailable();
 
-      return NextResponse.json({
+      // `refused` is decided by what the TOOLS returned, not by the first
+      // retrieval. A `no-match` question that findSites then answered has real
+      // records behind it — keying the refusal off `found.empty` threw those
+      // citations away and rendered a sourced answer as an unsourced one.
+      const payload = buildAnswer({
         answer: result.content,
-        citations: found.empty ? [] : toCitations(cited),
-        refused: found.empty,
+        cited,
+        corpus: CORPUS,
+        refusalText: REFUSAL,
       });
+      if (payload.dropped.length > 0) {
+        // Server-side only. A sentence naming a record no tool returned was
+        // removed rather than shipped beside cards that contradict it.
+        console.warn(`[chat] dropped unsupported claims: ${payload.dropped.join(", ")}`);
+      }
+      return NextResponse.json(payload);
     }
 
     return unavailable();

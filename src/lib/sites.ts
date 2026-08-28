@@ -1,6 +1,7 @@
 import rawSites from "../../data/sites.json";
 import geo from "../../data/geo.json";
 import { ERAS, eraIndex, eraOf, appearYear, fmtYear, slugify, gmapsUrl } from "./site-utils";
+import { groupByValues } from "./search";
 
 // Pure helpers live in site-utils.ts so they are testable without loading the
 // corpus; re-exported here so every existing import keeps working.
@@ -24,7 +25,28 @@ export type Site = {
   lat: number;
   lng: number;
   tradition: "Hindu" | "Buddhist" | "Jain" | "Sikh";
+  /**
+   * Free text, exactly as sourced — "Meenakshi (Parvati) & Sundareswarar
+   * (Shiva)", "Devi Bargabhima (Kapalini / Bhimarupa), a form of Kali". It
+   * carries the epithet, the consort and the local name, and it is what a record
+   * page SHOWS. `deities` below is the filter index beside it, never a
+   * replacement: the tag flattens away the very detail this field exists to keep.
+   */
   deity: string;
+  /**
+   * GENERATED. Canonical deity tags, written onto the corpus by
+   * scripts/build-deity-tags.mjs from data/vocab/deity.json. Never hand-edited.
+   *
+   * Multi-valued — a temple to a divine couple carries both — and legitimately
+   * ABSENT: a dedication that names no figure (a relic stupa, a monastic
+   * university, "Parabrahma, worshipped without image", a river confluence) gets
+   * no tag rather than a guessed one, per constitution rule 2. An untagged record
+   * renders no deity chip and counts toward no deity facet. There is no "unknown"
+   * bucket and no placeholder — the absence is the honest answer.
+   */
+  deities?: string[];
+  /** GENERATED. The stream the tags roll up to: Shaiva, Vaishnava, Shakta, Smarta, Jain, Buddhist, Sikh. */
+  deityGroup?: string;
   built: [number, number];
   builtDisplay: string;
   origin?: number;
@@ -79,6 +101,32 @@ export const allCircuits = () => {
   }
   return [...m.entries()].sort((a, b) => b[1].length - a[1].length);
 };
+
+/**
+ * Every canonical deity tag in use, with the records carrying it.
+ *
+ * DERIVED FROM THE DATA, never a hard-coded list. The vocabulary grows with
+ * every data wave, and both the tag set and the counts have moved several times
+ * in a single day — so anything that enumerates deities must read the corpus at
+ * build time, or it silently stops offering the newest tags. No count is written
+ * down anywhere in this file for the same reason.
+ *
+ * Multi-valued, like `allCircuits`: a record tagged ["Parvati", "Shiva"] appears
+ * under both, so the group sizes sum higher than SITES.length. Records with no
+ * tag appear under nothing at all — that is the point, not an oversight.
+ *
+ * Ordered by size, then name: the largest tag is the entry nearly everyone wants
+ * first, and the name tiebreak keeps the order stable across rebuilds so slugs
+ * and sitemap entries do not shuffle when two tags draw level.
+ */
+export const allDeities = () => groupByValues(SITES, (s) => s.deities ?? []);
+
+/**
+ * Every tradition stream in use, with its records. Single-valued per record, so
+ * these counts sum to the number of TAGGED records — short of SITES.length by
+ * exactly the untagged ones, which is expected and must not be papered over.
+ */
+export const allDeityGroups = () => groupByValues(SITES, (s) => (s.deityGroup ? [s.deityGroup] : []));
 
 
 export const SITE_NAME = "Tirtha Atlas";

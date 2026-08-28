@@ -659,3 +659,304 @@ table.gz tr:last-child td{border-bottom:none}
    pixel-identical. */
 .crumb { padding: 0; text-align: left; }
 .ixrow { width: 100%; text-align: left; }
+
+/* ---- Ask the Atlas: result cards (Q4 follow-through) -----------------------
+   APPENDED, never edited. An answer used to end in prose; these cards turn it
+   into a doorway into the atlas.
+
+   The visual language is the site's existing `.card` / `.cn` / `.cm` / `.cy`
+   and `.chip` / `.chip-disputed` — nothing new is invented here. The only
+   reason any of this exists is that `.cardgrid`'s layout rule is scoped to
+   `.page`, and the assistant panel is not a page; and that `.cn` becomes a
+   real anchor here rather than a div. Every colour is a token, so both themes
+   come for free, exactly like the rest of the `asst*` block. */
+.asstresults{margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+.asstresults h3{margin:0 0 7px;font-family:var(--font-mono),monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
+/* One column: the panel is 430px at its widest and full-width on a phone, so a
+   multi-column grid would only ever produce two cramped cards. */
+.asstresults .cardgrid{display:grid;grid-template-columns:1fr;gap:8px;margin:0;padding:0;list-style:none}
+.asstresults .card{position:relative;padding:10px 12px}
+/* A card is reached by tabbing to the name inside it; without this the focus
+   ring would sit on the text alone and the tile would look inert. */
+.asstresults .card:focus-within{border-color:var(--gold)}
+.asstresults .card .cn{display:block;font-size:15px;color:var(--ink);text-decoration:none}
+.asstresults .card .cn::after{content:"";position:absolute;inset:0;border-radius:12px}
+.asstresults .card:hover .cn,.asstresults .card .cn:focus-visible{color:var(--gold)}
+.asstrnative{margin-top:2px;font-size:12.5px;color:var(--ink2)}
+.asstresults .card .cm{font-size:11.5px}
+.asstresults .card .cy{font-size:10px;color:var(--mut);margin-top:5px}
+/* Chips sit above the stretched name link so they stay separately clickable. */
+.asstrdeep{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.asstrdeep .chip{display:inline-flex;align-items:center;text-decoration:none;font-size:11px;line-height:1.5}
+.asstrdeep .chip:hover{color:var(--gold);border-color:var(--gold)}
+.asstrdeep .chip em{font-size:9.5px}
+.asstrmore{margin:8px 0 0;font-size:12px}
+.asstrmore a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+.asstrmore a:hover{border-color:var(--gold)}
+/* Thumb targets on a phone: a 44px row for the deep links, which are the only
+   controls on the card small enough to miss. */
+@media (max-width:720px){
+  .asstresults .card{padding:12px}
+  .asstrdeep .chip{min-height:32px;padding:5px 11px}
+  .asstrmore a{display:inline-block;min-height:44px;line-height:44px}
+}
+
+/* ============ voice: hold to talk, hear the answer =========================
+   Appended, never edited: nothing above this line moves. Namespaced `vox*` so
+   it cannot collide with `asst*` or the atlas vocabulary, and it reads only the
+   tokens declared at the top of this file, so both themes come for free.
+
+   The recording state is deliberately over-signalled: the border and text
+   colour change, AND the glyph changes from a dot to a square, AND the label
+   becomes a climbing clock. Colour alone would fail WCAG 1.4.1 — and would fail
+   a pilgrim reading this in direct sunlight, which is the actual case. */
+.voxwrap{position:relative;display:flex;align-items:center;flex:none}
+
+.voxmic{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:6px 14px 6px 11px;border:1px solid var(--line2);border-radius:999px;background:var(--panel2);color:var(--ink2);font-size:12.5px;font-weight:600;letter-spacing:.02em;
+  /* Holding a button must not scroll the sheet, select the label, or raise iOS's
+     long-press menu — all three break hold-to-talk on a phone. */
+  touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.voxmic:hover:not(:disabled){color:var(--gold);border-color:var(--gold)}
+.voxmic:disabled{opacity:.45;cursor:not-allowed}
+.voxmic.on{color:var(--e3);border-color:var(--e3);background:var(--panel)}
+
+.voxicon{display:inline-flex;flex:none;width:11px;height:11px;align-items:center;justify-content:center}
+.voxdot{display:block;width:9px;height:9px;border-radius:50%;background:currentColor}
+.voxsquare{display:block;width:9px;height:9px;border-radius:2px;background:currentColor}
+/* Tabular figures: the clock must not jitter the button's width as it counts. */
+.voxlabel{font-variant-numeric:tabular-nums}
+
+/* A small toast anchored above the button. Absolute so a two-line message never
+   reflows the send row, and `:empty` so the resting state draws nothing at all. */
+.voxstatus{position:absolute;left:0;bottom:100%;z-index:2;margin:0 0 8px;width:max-content;max-width:min(300px,calc(100vw - 64px));padding:7px 10px;border:1px solid var(--line2);border-left:2px solid var(--gold);border-radius:8px;background:var(--panel2);color:var(--ink2);font-size:12px;line-height:1.5;box-shadow:var(--shadow);overflow-wrap:anywhere}
+.voxstatus:empty{display:none}
+
+.voxheard{margin:9px 0 0;padding:7px 9px;border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:8px;background:var(--panel2);color:var(--ink2);font-size:12px;line-height:1.55}
+.voxheard b{color:var(--ink);font-weight:600}
+
+.voxplay{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:9px}
+.voxspeak{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:5px 12px;border:1px solid var(--line2);border-radius:999px;background:var(--panel2);color:var(--ink2);font-family:var(--font-mono),monospace;font-size:11px;letter-spacing:.06em}
+.voxspeak:hover{color:var(--gold);border-color:var(--gold)}
+.voxspeak.on{color:var(--e3);border-color:var(--e3)}
+.voxspeak span{font-size:9px;line-height:1}
+.voxnote{margin:6px 0 0;font-size:11.5px;line-height:1.55;color:var(--mut)}
+
+/* Phone: the mic and the play control become full 44px targets. Verified at
+   390px, where the send row is mic + counter + Ask and must stay on one line. */
+@media (max-width:560px){
+  .voxmic{min-height:44px;padding:8px 14px 8px 12px}
+  .voxspeak{min-height:38px}
+  .voxstatus{max-width:calc(100vw - 44px)}
+}
+
+/* Reduced motion: the pulse is the only movement here, and it is redundant —
+   the square glyph, the colour and the clock all already say "recording". */
+@media (prefers-reduced-motion:no-preference){
+  .voxmic.on .voxsquare{animation:voxpulse 1.1s ease-in-out infinite}
+  @keyframes voxpulse{0%,100%{opacity:1}50%{opacity:.35}}
+}
+
+/* ---------------------------------------------------------------------------
+   Deity tags (APPENDED — nothing above this line was changed)
+
+   The canonical `deities` tags rendered on a result card. These are deliberately
+   quieter than the record page's `.chip` row: on a card they are metadata under
+   the name, not the headline, and a card can carry several of them (a temple to
+   a divine couple is tagged with both).
+
+   There is no style here for an "untagged" state, and there must not be. A
+   record whose dedication names no figure renders no chip and no container at
+   all — see DeityChips in SiteFilters.tsx. An empty slot styled to look
+   deliberate would still be telling the reader something false.
+   --------------------------------------------------------------------------- */
+.cdeity{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.chip-deity{
+  border:1px solid var(--line2);
+  border-radius:999px;
+  padding:1px 8px;
+  font-size:10.5px;
+  line-height:1.5;
+  color:var(--mut);
+  white-space:nowrap;
+}
+/* The card is a link, so its hover state owns the chips inside it. */
+.card:hover .chip-deity{border-color:var(--gold-soft);color:var(--ink2)}
+
+/* On a narrow screen a long tag list is the first thing worth truncating: the
+   name, the place and the date all matter more. Two rows, then clip. */
+@media (max-width:560px){
+  .cdeity{max-height:38px;overflow:hidden}
+}
+
+/* ============ map layers (registry: src/lib/layers.ts) ============
+   Everything below is additive. `data/geo.json` is untouched and remains the
+   only India-point-of-view country geometry on the site (CLAUDE.md rule 1);
+   these rules either hide geometry that is already there, or paint a raster
+   fetched from a remote service on top of it. */
+
+/* ---- builtin layers: switched by a class on the wrapper, never re-serialised.
+   `.no-countries` keeps the land fill and drops only the outline, because a
+   map with no landmass is not a layer state anybody wants. */
+.mapwrap.no-graticule .grat { display: none; }
+.mapwrap.no-countries .cty { stroke: none; }
+
+/* ---- the remote raster ----------------------------------------------------
+   Never interactive: an <image> spanning half the map would otherwise swallow
+   every click meant for a site mark and every drag meant for the map. */
+.wmslayers { pointer-events: none; }
+.wmslayer { pointer-events: none; }
+
+/* Bhuvan draws state outlines in yellow with black place names — one light
+   feature and one dark one in the same raster, which no single hue shift can
+   serve in both colour schemes. `brightness(0)` flattens every opaque pixel to
+   black (alpha untouched), so lines and names become one silhouette that can
+   then be pushed to whichever end of the scheme needs it. Neutral grey on
+   purpose: the era palette is colour-blind-validated (rule 7) and a boundary
+   layer must not introduce a seventh hue competing with it. */
+.wl-india-state-outlines { filter: brightness(0); opacity: .46; }
+.wl-india-state-areas { filter: saturate(.3); opacity: .2; mix-blend-mode: multiply; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wl-india-state-outlines { filter: brightness(0) invert(1); opacity: .4; }
+  :root:not([data-theme="light"]) .wl-india-state-areas { filter: saturate(.35) brightness(1.15); opacity: .22; mix-blend-mode: screen; }
+}
+:root[data-theme="dark"] .wl-india-state-outlines { filter: brightness(0) invert(1); opacity: .4; }
+:root[data-theme="dark"] .wl-india-state-areas { filter: saturate(.35) brightness(1.15); opacity: .22; mix-blend-mode: screen; }
+
+/* ---- the control ---------------------------------------------------------
+   Top-left is the one free corner of the map: the zoom tools own top-right and
+   the era legend owns bottom-left. */
+/* Top-right, tucked left of the zoom column. Deliberately NOT top-left: at the
+   home view India sits under the left edge of the map, and a panel about state
+   boundaries that covers the only country with state boundaries is a bad joke.
+   Opening rightward-anchored keeps the panel over the eastern ocean instead. */
+.layerctl { position: absolute; top: 12px; right: 56px; z-index: 6; }
+.layerbtn {
+  display: flex; align-items: center; gap: 7px;
+  min-height: 34px; padding: 5px 11px;
+  background: var(--panel); border: 1px solid var(--line2); border-radius: 9px;
+  box-shadow: var(--shadow); color: var(--ink2); font-size: 12.5px; font-weight: 600;
+}
+.layerbtn:hover, .layerbtn.on { color: var(--gold); border-color: var(--gold); }
+.layercount {
+  min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px;
+  background: var(--gold); color: var(--bg);
+  font: 600 10px/16px var(--font-mono), monospace; text-align: center;
+}
+
+.layerpanel {
+  position: absolute; top: calc(100% + 7px); right: 0;
+  width: min(304px, calc(100vw - 26px));
+  max-height: min(74vh, 570px); overflow-y: auto; overscroll-behavior: contain;
+  /* .mapwrap sets touch-action:none so the map can own every gesture; without
+     this the panel would be unscrollable by touch on a phone. */
+  touch-action: pan-y;
+  background: var(--panel); border: 1px solid var(--line2); border-radius: 11px;
+  box-shadow: var(--shadow); padding: 10px 12px 12px;
+}
+.layerhead {
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+}
+.layerclose { width: 26px; height: 26px; margin: -4px -6px -4px 0; font-size: 17px; color: var(--mut); }
+.layerclose:hover { color: var(--gold); }
+
+.layerlist { list-style: none; padding: 0; margin: 0; }
+.layerrow { padding: 5px 0; border-top: 1px solid var(--line); }
+.layerrow:first-child { border-top: none; }
+.layerlabel { display: flex; gap: 9px; align-items: flex-start; min-height: 34px; cursor: pointer; }
+.layerlabel input { margin-top: 4px; flex: none; width: 15px; height: 15px; accent-color: var(--gold); }
+.layertext { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.layername { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--ink); }
+.layerlive {
+  font: 500 8.5px/1 var(--font-mono), monospace; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--gold-soft); border-radius: 999px; padding: 2px 5px;
+}
+.layerblurb { font-size: 11.5px; line-height: 1.45; color: var(--ink2); }
+/* Coverage and status hang under the row they belong to, aligned with its text. */
+.layernote, .layerstatus { margin: 3px 0 1px 24px; font-size: 11px; line-height: 1.45; }
+.layernote { color: var(--mut); }
+.layerattr { margin: 3px 0 1px 24px; font-size: 10.5px; line-height: 1.45; color: var(--mut); }
+.layerstatus { font-family: var(--font-mono), monospace; font-size: 10px; color: var(--ink2); }
+.layerstatus.s-unavailable, .layerstatus.s-out-of-view { color: var(--gold); }
+
+.layerfoot, .layerterms {
+  margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--line);
+  font-size: 11px; line-height: 1.5; color: var(--mut);
+}
+/* The unconfirmed-terms note is a claim about someone else's rights, so it is
+   stated in the panel body — not a tooltip, not a hover, not a footnote. */
+.layerterms { color: var(--ink2); border-color: var(--gold-soft); }
+
+/* ---- attribution ---------------------------------------------------------
+   Displayed for as long as a credited layer is on, panel open or closed. Using
+   the service is conditional on this being visible, so it is not inside the
+   panel and it is not dismissible. */
+.layercredit {
+  position: absolute; right: 12px; bottom: 10px; z-index: 5;
+  max-width: 36%; pointer-events: none;
+  display: flex; flex-direction: column; gap: 2px; text-align: right;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  border: 1px solid var(--line); border-radius: 9px; padding: 5px 9px;
+  font-size: 10px; line-height: 1.4; color: var(--ink2);
+}
+
+@media (max-width: 720px) {
+  .layerbtn { min-height: 44px; }
+  .layerlabel { min-height: 44px; align-items: center; }
+  .layerclose { width: 34px; height: 34px; }
+  /* Bottom-right belongs to the era legend at this width, so the credit moves
+     up under the Layers button and stops short of the zoom column. */
+  .layercredit {
+    top: 62px; bottom: auto; left: 12px; right: 56px;
+    max-width: none; text-align: left;
+  }
+}
+
+/* The /deities empty state. `.note` was already taken by a rule scoped under
+   `.leg`, so this is its own name rather than a second meaning for that one. */
+.emptynote{color:var(--mut);font-size:13px;max-width:60ch}
+.emptynote code{font-family:var(--font-mono),monospace;font-size:12px;color:var(--ink2)}
+
+/* ============ index-page search + decorative icons (A4) ============ */
+/* The search bar itself is `.filters.pagefilters` above, unchanged — /dynasties,
+   /circuits and /patrons deliberately wear the same control as the record lists.
+   Everything below is only what an INDEX page adds on top of it: a per-group
+   count beside its heading, and the four icon devices.
+
+   EVERY GLYPH HERE IS DECORATIVE. Each sits beside a real text label and is
+   rendered aria-hidden, so a font with no flag emoji (most Windows builds) or a
+   screen reader loses nothing at all. Nothing below may become the only carrier
+   of a fact. */
+
+/* Live count beside a group heading, e.g. "Named on a single site  412". */
+.idxn{margin-left:9px;font-family:var(--font-mono),monospace;font-size:11.5px;color:var(--mut);letter-spacing:.04em}
+
+/* Rows of icon + label pairs under a card's meta line. Wrapping is what keeps a
+   three-country dynasty card from widening the grid at 390px. */
+.ictags{display:flex;flex-wrap:wrap;align-items:center;gap:3px 10px;margin-top:6px;min-width:0}
+.ictags:empty{display:none}
+.ictag{display:inline-flex;align-items:center;gap:5px;min-width:0;font-size:11.5px;color:var(--mut);overflow-wrap:anywhere}
+.ictag .shape{fill:currentColor}
+.icmore{font-family:var(--font-mono),monospace;font-size:10.5px}
+
+/* Emoji flags: sized in their own em so a colour font cannot lift the line box,
+   and never allowed to line-break away from the country name beside them. */
+.icflag{font-size:12.5px;line-height:1;flex:none;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.patronlist .pl-m .icflag{margin-right:5px;vertical-align:-1px}
+
+/* The circuit route glyph: three nodes on a line = "more than one member".
+   It says nothing about order, because the corpus records none. */
+.icroute{width:22px;height:11px;flex:none;fill:var(--mut);margin-right:6px;vertical-align:-1px}
+
+/* The dynasty era band. Colour comes from --e1..--e6 (constitution rule 7 —
+   the validated palette, referenced, never redefined); the century span printed
+   under it is what actually states the date. */
+.idxcard{position:relative}
+.erabar{position:absolute;top:0;left:0;right:0;height:3px;border-radius:12px 12px 0 0;opacity:.85}
+.idxcard .cn{margin-top:2px}
+
+@media (max-width:560px){
+  .ictags{gap:2px 8px}
+  .idxn{margin-left:7px}
+}

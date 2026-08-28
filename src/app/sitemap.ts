@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITES, allCircuits, allDynasties, slugify, type Site } from "@/lib/sites";
+import { SITES, allCircuits, allDeities, allDynasties, slugify, type Site } from "@/lib/sites";
 import { allPatrons } from "@/lib/patrons";
 import { SITE_URL as base } from "@/lib/site-url.mjs";
 
@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sites`, lastModified: CORPUS_LAST_MODIFIED, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/circuits`, lastModified: CORPUS_LAST_MODIFIED, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/dynasties`, lastModified: CORPUS_LAST_MODIFIED, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/deities`, lastModified: CORPUS_LAST_MODIFIED, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/patrons`, lastModified: CORPUS_LAST_MODIFIED, changeFrequency: "monthly", priority: 0.7 },
 
     // Grouping pages: each moves when one of its member records is re-verified.
@@ -63,6 +64,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: latest(sites),
       changeFrequency: "monthly" as const,
       priority: 0.5,
+    })),
+    // One per canonical deity tag, derived from the corpus exactly as
+    // generateStaticParams does — so the sitemap and the routes that exist can
+    // never disagree, however the vocabulary grows. A corpus with no tags
+    // contributes no entries here at all.
+    ...allDeities().map(([name, sites]) => ({
+      url: `${base}/deity/${slugify(name)}`,
+      lastModified: latest(sites),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
     })),
     ...allPatrons(SITES).map((p) => ({
       url: `${base}/patron/${p.slug}`,

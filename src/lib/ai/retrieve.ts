@@ -25,7 +25,10 @@
  * runtime DB (constitution rule 6), and 1126 records is nothing to scan.
  */
 
-import { filterSites, normalise, tokenise, expandToken, type Searchable, type SearchQuery } from "../search.ts";
+import {
+  compileQuery, filterSites, normalise, qualityOf, scoreSite, tokenise, expandToken,
+  type Searchable, type SearchQuery,
+} from "../search.ts";
 
 // ---------------------------------------------------------------------------
 // the retrievable record
@@ -160,6 +163,17 @@ export type Retrieval<T extends AtlasRecord = AtlasRecord> = {
   readonly reason: RetrievalReason;
   /** Matches found before the limit was applied — lets the answer say "and N more". */
   readonly total: number;
+  /**
+   * True when NOTHING matched as typed and every returned record was reached
+   * only through the transliteration fold in `fuzzy.ts`.
+   *
+   * This is a weaker result, and it is reported rather than hidden: the asker
+   * spelled something we do not store, and an answer that silently pretends
+   * otherwise is the same failure as a wrong answer. When any record matched
+   * exactly this is false, because those records rank first and carry the
+   * answer.
+   */
+  readonly fuzzy: boolean;
 };
 
 const emptyResult = <T extends AtlasRecord>(query: string, reason: RetrievalReason): Retrieval<T> => ({
@@ -168,6 +182,7 @@ const emptyResult = <T extends AtlasRecord>(query: string, reason: RetrievalReas
   empty: true,
   reason,
   total: 0,
+  fuzzy: false,
 });
 
 /**
@@ -203,7 +218,7 @@ const STOPWORDS = new Set([
   "but", "if", "then", "than", "as", "it", "its", "there", "their",
   // conversational filler around a real question
   "tell", "me", "us", "you", "i", "my", "our", "please", "know", "want",
-  "give", "show", "find", "list", "any", "some", "more", "much", "many",
+  "give", "show", "find", "list", "any", "some", "more", "most", "much", "many",
   "old", "have", "has", "had", "get", "go", "like",
   // Verbs that describe the ASKING, not the temple. In a corpus where every
   // record is a built religious structure, "built" and "founded" discriminate
@@ -212,6 +227,19 @@ const STOPWORDS = new Set([
   "built", "build", "founded", "found", "constructed", "established", "made",
   "reach", "reaching", "visit", "visiting", "see", "seen", "located", "situated",
   "called", "named", "known", "say", "says", "said", "means", "mean",
+  // Relational and superlative words. These describe the SHAPE of the question,
+  // not the entity being asked about: "Which Jyotirlinga is nearest Ujjain?"
+  // names two things the corpus holds (Jyotirlinga, Ujjain) and one thing it
+  // does not (`nearest`, a relation between them). ANDed, the relation vetoes
+  // the entities and the assistant refuses its own placeholder question.
+  // The relation is answered by the tools — `nearby`, `circuitMembership`,
+  // the `built` range — from the records these terms retrieve. It is never
+  // answered by finding the word "nearest" written in a temple's history.
+  // ("near", "old" and "list" are already above, among the prepositions and filler.)
+  "nearest", "nearby", "closest", "close", "around", "between", "within",
+  "oldest", "newest", "earliest", "latest", "biggest", "largest", "smallest",
+  "tallest", "highest", "longest", "greatest", "best", "top", "famous",
+  "important", "popular", "major", "main",
 ]);
 
 /**
@@ -259,18 +287,40 @@ export function retrieve<T extends AtlasRecord>(
   const matched = filterSites(pool, { ...facets, q: terms });
   if (matched.length === 0) return emptyResult<T>(trimmed, "no-match");
 
-  // Stable: equal relevance keeps corpus order, which is roughly prominence.
-  const ranked = matched
-    .map((record, index) => ({ record, score: relevance(record, trimmed), index }))
-    .sort((a, b) => b.score - a.score || a.index - b.index)
-    .map((entry) => entry.record);
+  // Rank on the discriminating terms, not the sentence: `relevance` asks whether
+  // every token is in the name or the place, and a question's stopwords are in
+  // neither, so ranking on the raw sentence flattens every record to the floor.
+  // A facet-only query has no terms; `matchQuality` calls that "exact", which is
+  // right — nothing was spelled, so nothing was folded.
+  const compiled = compileQuery(terms);
+  const scored = matched.map((record, index) => ({
+    record,
+    quality: qualityOf(record, compiled),
+    /**
+     * The precedence ladder in search.ts, packed: whole word before folded word
+     * before fragment, and within a tier, name before place/deity before
+     * dynasty/style before significance.
+     */
+    match: scoreSite(record, compiled),
+    score: relevance(record, terms),
+    index,
+  }));
+
+  // The ladder first — it already knows that a whole word, even a folded one,
+  // answers better than a fragment of a longer one, which is what put
+  // Pataleeswarar Temple at *Thirupathi*puliyur above Tirumala for "thirupathi".
+  // Then `relevance`, then corpus order, which is roughly prominence. The sort
+  // is stable, so equal entries keep that order.
+  const ranked = [...scored].sort((a, b) =>
+    b.match - a.match || b.score - a.score || a.index - b.index);
 
   return {
     query: trimmed,
-    records: ranked.slice(0, boundedLimit(limit)),
+    records: ranked.slice(0, boundedLimit(limit)).map((entry) => entry.record),
     empty: false,
     reason: "ok",
     total: matched.length,
+    fuzzy: scored.every((entry) => entry.quality === "fuzzy"),
   };
 }
 

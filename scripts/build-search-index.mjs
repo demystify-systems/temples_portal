@@ -94,10 +94,17 @@ const TEXT_COLUMN = "significance";
 /**
  * Every field the index carries, in the emitted column order.
  *
- * `search.ts` searches: name, alt, native, deity, place, state, country,
- * dynasty, style, circuits, significance — and facets on tradition, country,
- * state, circuits, tier and built (via era). SiteFilters additionally renders
- * id, name, place, state, tradition, dynasty, built and builtDisplay.
+ * `search.ts` searches: name, alt, native, deity, deities, deityGroup, place,
+ * state, country, dynasty, style, circuits, significance — and facets on
+ * tradition, country, state, circuits, tier, deities, deityGroup and built (via
+ * era). SiteFilters additionally renders id, name, place, state, tradition,
+ * dynasty, built and builtDisplay.
+ *
+ * `deities` and `deityGroup` are on the CRITICAL path, not in the deferred
+ * chunk with `significance`. They are facets: the dropdowns have to be built
+ * and counted before anyone types, so deferring them would leave the deity
+ * filter empty on page load — the one moment it is most likely to be used. They
+ * are also tiny, being drawn from a closed vocabulary of a few dozen words.
  *
  * Everything else in a record is deliberately absent. Adding a field here is a
  * decision to ship it to every visitor of every list page — measure first.
@@ -105,8 +112,15 @@ const TEXT_COLUMN = "significance";
 export const COLUMN_ORDER = [
   // 1. enumerations
   "tradition", "tier", "country", "state", "circuits",
-  // 2. dates and attribution vocabulary
-  "built", "builtDisplay", "style", "dynasty", "deity",
+  // 2. dates and attribution vocabulary. `deities` and `deityGroup` sit beside
+  //    `deity` for READABILITY — the three are one subject — and not for any
+  //    measured packing benefit. Unlike the proper-noun family below, their
+  //    placement is NOT load-bearing: measured on 3,002 records, moving them
+  //    adjacent to `deity`, splitting them across the layout, or pushing them to
+  //    the far end all land within 0.09 kB of each other. They cost +5.6 kB
+  //    gzipped (+3.2%) wherever they go, because a closed vocabulary of ~58 tags
+  //    repeated across 2,800 records compresses to nearly nothing either way.
+  "built", "builtDisplay", "style", "dynasty", "deityGroup", "deities", "deity",
   // 3. native scripts
   "native",
   // 4. the prose bulk
@@ -146,6 +160,9 @@ const clip = (text, max) => {
 
 const columnOf = (sites, field) => {
   if (field === "circuits") return sites.map((s) => s.circuits ?? []);
+  // An untagged record emits [], never a placeholder tag: its dedication names
+  // no figure, and the UI must be able to tell that from a tagged record.
+  if (field === "deities") return sites.map((s) => s.deities ?? []);
   if (field === "significance") return sites.map((s) => clip(s.significance ?? "", SIGNIFICANCE_MAX_CHARS));
   if (field === "built") return sites.map((s) => {
     const built = s.built;
@@ -171,6 +188,7 @@ export const buildColumns = (sites) => {
 /** Columns that are not `string[]`. Everything else is. */
 const COLUMN_TS_TYPES = {
   circuits: "readonly (readonly string[])[]",
+  deities: "readonly (readonly string[])[]",
   built: "readonly (readonly number[])[]",
 };
 
