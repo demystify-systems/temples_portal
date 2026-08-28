@@ -150,13 +150,23 @@ const isTierKey = (value: string): value is TierKey =>
 /**
  * The tier a record is measured against.
  *
- * An absent `tier` means flagship — the corpus convention documented in
- * docs/TIERS.md, and the reading `/about` already uses. An *unrecognised* label
- * is not a promise we can honour, so it is read as `stub`: the badge then
- * under-claims rather than announcing a contract the record never made.
+ * An absent OR unrecognised `tier` reads as `stub`, for one reason: a tier is a
+ * PROMISE, and neither case is a promise this project actually made. The badge
+ * then under-claims rather than announcing a contract the record never entered.
+ *
+ * This returned `flagship` for an absent tier until 2026-08-28 — the old corpus
+ * convention, where 68 records carried no tier and were read as the highest one.
+ * That made ABSENCE encode the STRONGEST claim, so any record added without the
+ * field silently promised `story` + `access` + `patron` and then failed its own
+ * promise. Records arrive in automated batches, so that was a question of when.
+ *
+ * Closed on three sides together: those 68 records now carry `tier: "flagship"`
+ * explicitly (all 68 genuinely met it, verified before the backfill),
+ * `validate-data.mjs` refuses to publish a record without the field, and the
+ * default here is the weakest tier. See CONTENT-CONTRACT.md section 2.1.
  */
 export const resolveTier = (raw?: string | null): TierKey => {
-  if (!filled(raw ?? undefined)) return "flagship";
+  if (!filled(raw ?? undefined)) return "stub";
   const key = raw!.trim().toLowerCase();
   return isTierKey(key) ? key : "stub";
 };
@@ -174,7 +184,10 @@ const promises = (tier: TierKey, field: ScaleField): boolean =>
  */
 export const completenessOf = (record: Recorded): Completeness => {
   const tier = resolveTier(record.tier);
-  const recognisedTier = !filled(record.tier) || isTierKey(record.tier!.trim().toLowerCase());
+  // An absent tier is no longer a recognised convention, it is a missing field.
+  // validate-data.mjs refuses to publish one, so reaching here means a fixture
+  // or a caller outside the corpus; "Record" is the honest label for that.
+  const recognisedTier = filled(record.tier) && isTierKey(record.tier!.trim().toLowerCase());
 
   const fields: readonly FieldState[] = FIELD_SCALE.map((field) => ({
     ...field,

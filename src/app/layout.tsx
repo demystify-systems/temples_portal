@@ -4,6 +4,7 @@ import { SITE_NAME, SITE_DESC } from "@/lib/sites";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site-url.mjs";
 import Assistant from "./Assistant";
+import ServiceWorker from "./ServiceWorker";
 
 const display = Marcellus({ weight: "400", subsets: ["latin"], variable: "--font-display" });
 const ui = Hanken_Grotesk({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-ui" });
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "./" },
   openGraph: { title: SITE_NAME, description: SITE_DESC, type: "website", siteName: SITE_NAME, url: SITE_URL },
   twitter: { card: "summary_large_image", title: SITE_NAME, description: SITE_DESC },
+  manifest: "/manifest.webmanifest",
+  appleWebApp: { capable: true, title: "Tirtha Atlas", statusBarStyle: "default" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -28,7 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* The assistant is only mounted when it can actually answer. Rendering a
           chat button that 503s on every question is worse than not offering one —
           and the key is server-side only, so this check cannot leak it. */}
-      <body>{children}{process.env.SARVAM_API_KEY ? <Assistant /> : null}</body>
+      <body>
+        {children}
+        {process.env.SARVAM_API_KEY ? <Assistant /> : null}
+        <ServiceWorker />
+      </body>
     </html>
   );
 }

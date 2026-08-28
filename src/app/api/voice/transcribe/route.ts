@@ -84,6 +84,7 @@ export async function POST(request: Request): Promise<Response> {
 
   let audio: File | null = null;
   let durationMs: number | null = null;
+  let chosenLanguage: string | null = null;
   try {
     const form = await request.formData();
     const field = form.get("audio");
@@ -91,6 +92,10 @@ export async function POST(request: Request): Promise<Response> {
     const rawDuration = form.get("durationMs");
     const parsed = typeof rawDuration === "string" ? Number(rawDuration) : Number.NaN;
     durationMs = Number.isFinite(parsed) ? parsed : null;
+    // Normalised here rather than trusted: this arrives from the browser, and a
+    // malformed tag is a 400 from Sarvam for a reason the user cannot act on.
+    const rawLanguage = form.get("language");
+    chosenLanguage = typeof rawLanguage === "string" ? normaliseLanguageCode(rawLanguage) : null;
   } catch {
     return fail("That recording could not be read. Please try again.", 400);
   }
@@ -117,6 +122,7 @@ export async function POST(request: Request): Promise<Response> {
       apiKey,
       audio: named,
       model: sttModelFor(durationMs),
+      languageCode: chosenLanguage,
       signal: controller.signal,
     });
 

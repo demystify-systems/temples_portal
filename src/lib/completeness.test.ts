@@ -8,6 +8,10 @@ import {
 
 /** A record that has sourced every field on the scale — flagship by convention (no `tier`). */
 const complete: Recorded = {
+  // Stated, not implied. Until 2026-08-28 an absent `tier` was read as flagship
+  // and this fixture leaned on that; the 68 corpus records that did the same now
+  // carry the field explicitly, and so does this.
+  tier: "flagship",
   deity: "Shiva",
   builtDisplay: "c. 1010 CE",
   dynasty: "Chola",
@@ -55,11 +59,27 @@ test("a flagship record with every field reports 100%", () => {
   assert.ok(c.meetsTier);
 });
 
-test("a missing tier means flagship — the corpus convention, not a default of stub", () => {
-  assert.equal(resolveTier(undefined), "flagship");
-  assert.equal(resolveTier(""), "flagship");
-  assert.equal(resolveTier("   "), "flagship");
+test("a missing tier means stub — absence must never encode the strongest claim", () => {
+  // The inverse of this was a live trap: absent read as `flagship`, so a record
+  // added without the field silently promised story + access + patron and then
+  // failed its own promise. Records arrive in automated batches, so it was a
+  // question of when, not whether. CONTENT-CONTRACT.md section 2.1.
+  assert.equal(resolveTier(undefined), "stub");
+  assert.equal(resolveTier(""), "stub");
+  assert.equal(resolveTier("   "), "stub");
+  assert.equal(resolveTier(null), "stub");
   assert.equal(resolveTier("Compact"), "compact", "the label is matched case-insensitively");
+  assert.equal(resolveTier("Flagship"), "flagship");
+  assert.equal(resolveTier("nonsense"), "stub", "an unrecognised label is not a promise either");
+});
+
+test("no input to resolveTier can ever yield flagship by default", () => {
+  // The whole point of the change: over-claiming must be unreachable by omission.
+  for (const raw of [undefined, null, "", "   ", "\t", "unknown", "FLAGSHIP-ish", "compact "]) {
+    const tier = resolveTier(raw as string | null | undefined);
+    if (String(raw ?? "").trim().toLowerCase() === "flagship") continue;
+    assert.notEqual(tier, "flagship", `resolveTier(${JSON.stringify(raw)}) over-claimed`);
+  }
 });
 
 test("a compact record reports exactly the fields it has not sourced", () => {
@@ -115,8 +135,14 @@ test("an empty record does not throw and reports 0 of 9", () => {
   assert.equal(c.sourcedCount, 0);
   assert.equal(c.pct, 0);
   assert.equal(c.next?.key, "significance");
-  assert.equal(c.tier, "flagship", "no tier still means flagship, so the gaps are all named");
-  assert.equal(c.meetsTier, false);
+  assert.equal(c.tier, "stub", "no tier means stub — the weakest promise, never the strongest");
+  assert.equal(c.tierLabel, "Record", "an absent tier is a missing field, not a recognised label");
+  assert.equal(c.recognisedTier, false);
+  // A stub promises nothing on the nine-field scale, so an empty record keeps
+  // its (empty) promise. The gaps are still all named in `absent` — under-claiming
+  // hides nothing from the reader, which is the point.
+  assert.equal(c.meetsTier, true);
+  assert.equal(c.absent.length, 9, "every gap is still reported");
 });
 
 test("only a non-Wikimedia citation counts as an independent source", () => {

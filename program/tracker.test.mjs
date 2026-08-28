@@ -95,11 +95,66 @@ test("parallel-eligible tasks own disjoint files", () => {
   }
 });
 
-test("no task writes data/sites.json (the other session owns it)", () => {
+/**
+ * Fields that hold a CITED FACT ABOUT THE WORLD. No automated task may write one.
+ *
+ * This is CLAUDE.md rule 2 expressed as a gate: a fact reaches the corpus with a
+ * citation, added by a human (or an explicitly instructed session) in the same
+ * commit as its source. A batch job that writes `significance` or appends to
+ * `sources` is inventing provenance, and that is the one failure this project
+ * cannot recover from — every other bug is visible, an uncited fact is not.
+ */
+const SOURCED_FACT_FIELDS = [
+  "significance", "story", "access", "patron", "sources", "phone", "website",
+  "deity", "dynasty", "style", "built", "builtDisplay", "native", "alt",
+  "lat", "lng", "circuits", "disputedCircuits",
+];
+
+/**
+ * Bookkeeping fields — derived, structural, or a restatement of what the record
+ * already implies. Writing one asserts nothing new about the world.
+ *
+ * `tier` is here because a tier is a PROMISE ABOUT WHICH FIELDS ARE PRESENT, not
+ * a fact about the temple: it is computable from the record itself. `deities`,
+ * `deityGroup` and `admin` are derived by scripts from `deity` and from Wikidata
+ * and are regenerated, never authored.
+ */
+const BOOKKEEPING_FIELDS = ["tier", "deities", "deityGroup", "admin", "verified", "status"];
+
+test("a task touching the corpus declares which fields, and never a sourced fact", () => {
+  // This replaced a blanket ban on writing data/sites.json. That ban existed for
+  // COORDINATION — a second session owned the file while batches 22-24 were in
+  // flight — and that reason expired when those waves merged. The rule worth
+  // keeping is not "never touch the file", it is "never author a fact", so the
+  // guard now tracks the real constraint instead of a stale scheduling one.
   for (const t of db.tasks) {
+    if (!t.files.includes("data/sites.json")) continue;
+
     assert.ok(
-      !t.files.includes("data/sites.json"),
-      `${t.id} declares a write to data/sites.json — forbidden while the batch session is live`,
+      Array.isArray(t.corpus_fields) && t.corpus_fields.length > 0,
+      `${t.id} declares a write to data/sites.json but no \`corpus_fields\` list — ` +
+      `say exactly which fields it writes, or do not declare the file`,
     );
+
+    for (const field of t.corpus_fields) {
+      assert.ok(
+        !SOURCED_FACT_FIELDS.includes(field),
+        `${t.id} would write "${field}", a sourced fact field. A fact enters the corpus ` +
+        `with its citation, added by a human in the same commit (CLAUDE.md rule 2) — ` +
+        `never by an automated task.`,
+      );
+      assert.ok(
+        BOOKKEEPING_FIELDS.includes(field),
+        `${t.id} would write "${field}", which is neither a known bookkeeping field nor ` +
+        `a listed fact field. Classify it in program/tracker.test.mjs before writing it.`,
+      );
+    }
   }
+});
+
+test("the two field lists stay disjoint", () => {
+  // A field in both lists would make the guard above pass and fail at once, and
+  // whichever assertion ran first would decide policy. That is not a policy.
+  const both = SOURCED_FACT_FIELDS.filter((f) => BOOKKEEPING_FIELDS.includes(f));
+  assert.deepEqual(both, [], `classified as both fact and bookkeeping: ${both.join(", ")}`);
 });

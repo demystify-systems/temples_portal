@@ -2,7 +2,18 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { SITES, GEO, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, headerStats, type Site } from "@/lib/sites";
+// NOT "@/lib/sites". That module does `import rawSites from "data/sites.json"`,
+// so importing ANYTHING from it — even a pure helper or a stats function —
+// inlines all 3,031 records into this client chunk. That is exactly the bug
+// this page had: 922.1 kB in one chunk, 1,025.7 kB of JS on the homepage.
+// site-utils is the corpus-free half of that module and is safe to import.
+import { ERAS, eraOf, appearYear, fmtYear, gmapsUrl } from "@/lib/site-utils";
+import { MAP_SITES, MAP_SITE_BY_ID, type MapSite } from "@/lib/map-sites";
+import { MAP_BOX } from "@/lib/generated/map-projection";
+import { ATLAS_STATS } from "@/lib/generated/atlas-stats";
+import { loadRecord, type RecordDetail } from "@/lib/record-detail";
+import { readVerification } from "@/lib/verification";
+import { useSpellingHelp } from "./useSpellingHelp";
 import {
   DOUBLE_TAP_ZOOM, TAP_SLOP_PX, clampTranslate, distance, isDoubleTap, midpoint, pinchFactor,
   scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
@@ -24,7 +35,7 @@ import {
 import SiteHeader from "./SiteHeader";
 import LayerControl from "./LayerControl";
 
-const { W, H, LON0, LON1, LAT0, LAT1 } = GEO;
+const { W, H, LON0, LON1, LAT0, LAT1 } = MAP_BOX;
 /** The map's own coordinate box. Every gesture is clamped to it. */
 const EXTENT = { width: W, height: H };
 /** The same box as the layer maths wants it. `layers.test.ts` pins the two together. */
@@ -35,10 +46,15 @@ const PX = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
 const PY = (lat: number) => ((YT - mercY(lat)) / (YT - YB)) * H;
 const TRADS: Record<string, string> = { Hindu: "circle", Buddhist: "square", Jain: "diamond", Sikh: "triangle" };
 const YEAR_MIN = -650, YEAR_MAX = 2030;
-const STATS = headerStats();
+
+/** Stated in words, not carried by italics. See the katha section below. */
+const KATHA_FRAMING =
+  "What follows is sthala katha — the temple’s own traditional account, transmitted through liturgy and local memory. It is recorded here as tradition, not as attested history.";
+/** Computed at BUILD time (scripts/build-map-artefacts.mjs), never in the browser. */
+const STATS = ATLAS_STATS;
 const ERA_NAMES = ERAS.map((e) => e.name);
 /** Id lookup. `ringSpot` runs once per animation frame; a linear scan there is not free. */
-const SITE_BY_ID = new Map(SITES.map((s) => [s.id, s] as const));
+const SITE_BY_ID = MAP_SITE_BY_ID;
 
 /** Below this width the detail rail becomes a bottom sheet (T-041). */
 const SHEET_QUERY = "(max-width: 720px)";
@@ -94,8 +110,21 @@ const byDomId = (id: string) =>
 type Filters = { q: string; country: string; trad: string; dyn: string; cir: string };
 const EMPTY: Filters = { q: "", country: "", trad: "", dyn: "", cir: "" };
 
-function visible(s: Site, f: Filters, year: number) {
-  if (appearYear(s) > year) return false;
+function visible(s: MapSite, f: Filters, from: number, to: number) {
+  // A RANGE, not a ceiling. The single-handle version could only ever answer
+  // "what existed by year N", so isolating an era meant reading the colours off
+  // a map that still showed everything older. Two handles answer the question
+  // people actually have: show me the temples of THIS period.
+  const appeared = appearYear(s);
+  // YEAR_MIN is where the SLIDER stops, not where the corpus does. Thirteen
+  // records carry an `origin` older than it — Kashi Vishwanath at 1500 BCE,
+  // Krishna Janmabhoomi at 3100 BCE, Somnath, Kedarnath, Ayodhya — because
+  // `origin` is first attestation as a sacred site, not the standing structure.
+  // Treating the handle's floor as a filter would quietly drop some of the most
+  // significant records in the atlas from the default view, so at rest the lower
+  // bound means "no lower bound".
+  if (from > YEAR_MIN && appeared < from) return false;
+  if (appeared > to) return false;
   if (f.country && s.country !== f.country) return false;
   if (f.trad && s.tradition !== f.trad) return false;
   if (f.dyn && s.dynasty !== f.dyn) return false;
@@ -107,14 +136,34 @@ function visible(s: Site, f: Filters, year: number) {
   return true;
 }
 
-export default function AtlasClient() {
+export default function AtlasClient({ outlines }: { readonly outlines: string }) {
   const [filters, setFilters] = useState<Filters>(EMPTY);
-  const [year, setYear] = useState(YEAR_MAX);
+  /**
+   * The visible period, as [from, to].
+   *
+   * `to` alone reproduces the old behaviour — drag it and watch temples rise —
+   * so the play sweep and the coach mark still describe something true. `from`
+   * is what is new: raising it hides everything older, which is the only way to
+   * see one era on its own.
+   */
+  const [range, setRange] = useState<readonly [number, number]>([YEAR_MIN, YEAR_MAX]);
+  const [from, year] = range;
+  const setYear = useCallback((next: number | ((y: number) => number)) => {
+    setRange(([lo, hi]) => {
+      const value = typeof next === "function" ? next(hi) : next;
+      // The handles may meet but never cross; a crossed range shows nothing and
+      // reads as a broken control rather than an empty result.
+      return [Math.min(lo, value), Math.max(lo, value)];
+    });
+  }, []);
+  const setFrom = useCallback((value: number) => {
+    setRange(([, hi]) => [Math.min(value, hi), hi]);
+  }, []);
   const [sel, setSel] = useState<string | null>(null);
   const [index, setIndex] = useState(false);
   const [circuit, setCircuit] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [shownCount, setShownCount] = useState(SITES.length);
+  const [shownCount, setShownCount] = useState(MAP_SITES.length);
   const [fOpen, setFOpen] = useState(false);
   const [isSheet, setIsSheet] = useState(false);
   const [snap, setSnap] = useState<SnapName>("half");
@@ -137,6 +186,7 @@ export default function AtlasClient() {
   const view = useRef<View>({ x: 0, y: 0, k: 1 });
   const marks = useRef(new Map<string, { g: SVGGElement; mark: SVGElement; halo: SVGCircleElement; kind: string }>());
   const yearRef = useRef(year); yearRef.current = year;
+  const fromRef = useRef(from); fromRef.current = from;
   const filtersRef = useRef(filters); filtersRef.current = filters;
   const selRef = useRef(sel); selRef.current = sel;
   const circuitRef = useRef(circuit); circuitRef.current = circuit;
@@ -156,10 +206,10 @@ export default function AtlasClient() {
   const badgeEls = useRef(new Map<string, SVGTextElement>());
 
   const lists = useMemo(() => ({
-    countries: [...new Set(SITES.map((s) => s.country))].sort(),
-    trads: [...new Set(SITES.map((s) => s.tradition))].sort(),
-    dyns: [...new Set(SITES.map((s) => s.dynasty))].sort(),
-    cirs: [...new Set(SITES.flatMap((s) => s.circuits ?? []))].sort(),
+    countries: [...new Set(MAP_SITES.map((s) => s.country))].sort(),
+    trads: [...new Set(MAP_SITES.map((s) => s.tradition))].sort(),
+    dyns: [...new Set(MAP_SITES.map((s) => s.dynasty))].sort(),
+    cirs: [...new Set(MAP_SITES.flatMap((s) => s.circuits ?? []))].sort(),
   }), []);
 
   // ---- map layers ---------------------------------------------------------
@@ -338,7 +388,7 @@ export default function AtlasClient() {
   /** Signature of everything that can change *which* sites are on the map. */
   const dataKey = () => {
     const f = filtersRef.current;
-    return [f.q, f.country, f.trad, f.dyn, f.cir, yearRef.current, circuitRef.current ?? ""].join("|");
+    return [f.q, f.country, f.trad, f.dyn, f.cir, fromRef.current, yearRef.current, circuitRef.current ?? ""].join("|");
   };
 
   /**
@@ -364,8 +414,8 @@ export default function AtlasClient() {
     let clustered = new Set<string>();
     if (shouldCluster(kq)) {
       const points: ClusterPoint[] = [];
-      for (const s of SITES) {
-        if (!visible(s, f, yearRef.current)) continue;
+      for (const s of MAP_SITES) {
+        if (!visible(s, f, fromRef.current, yearRef.current)) continue;
         // A numbered stop must stay its own mark: a badge needs something to sit on.
         if (cir && (s.circuits ?? []).includes(cir)) continue;
         points.push({ id: s.id, x: PX(s.lng), y: PY(s.lat), era: eraOf(s), tradition: s.tradition });
@@ -438,9 +488,9 @@ export default function AtlasClient() {
 
     let shown = 0;
     const order: string[] = [];
-    for (const s of SITES) {
+    for (const s of MAP_SITES) {
       const m = marks.current.get(s.id); if (!m) continue;
-      const vis = visible(s, f, yearRef.current);
+      const vis = visible(s, f, fromRef.current, yearRef.current);
       if (vis) shown++;
       const draw = vis && !clustered.has(s.id);
       m.g.style.display = draw ? "" : "none";
@@ -582,7 +632,7 @@ export default function AtlasClient() {
   useEffect(() => {
     const ptsG = ptsRef.current!; ptsG.innerHTML = "";
     const NS = "http://www.w3.org/2000/svg";
-    for (const s of SITES) {
+    for (const s of MAP_SITES) {
       const g = document.createElementNS(NS, "g");
       g.setAttribute("class", "pt");
       // Focusable, named, and in filtered DOM order: the whole of T-043's
@@ -621,7 +671,7 @@ export default function AtlasClient() {
     if (!reduced) {
       let y = YEAR_MIN;
       const t = setTimeout(() => {
-        setYear(YEAR_MIN);
+        setRange([YEAR_MIN, YEAR_MIN]);
         const iv = setInterval(() => { y += 28; if (y >= YEAR_MAX) { y = YEAR_MAX; clearInterval(iv); } setYear(y); }, 26);
       }, 450);
       return () => clearTimeout(t);
@@ -629,7 +679,7 @@ export default function AtlasClient() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { renderPoints(); drawTimeline(); }, [filters, from, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- gestures: pan, pinch zoom, double tap, wheel ----------------------
   // One Pointer Events pipeline drives all of them. Every pointer that is down
@@ -834,7 +884,7 @@ export default function AtlasClient() {
 
   const zoomCenter = (f: number) => (mapRef.current as unknown as { _zoomAt: (x: number, y: number, f: number) => void })._zoomAt(W / 2, H / 2, f);
   const resetView = () => setView({ x: 0, y: 0, k: 1 });
-  const flyTo = (s: Site) => { const k = Math.max(view.current.k, 4.5); setView({ k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }); };
+  const flyTo = (s: MapSite) => { const k = Math.max(view.current.k, 4.5); setView({ k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }); };
 
   function select(id: string | null, fly = true, focusPanel = false) {
     setSel(id); setIndex(false);
@@ -858,7 +908,7 @@ export default function AtlasClient() {
   const route: CircuitRoute | null = useMemo(() => {
     if (!circuit) return null;
     return circuitRoute(
-      SITES.filter((s) => (s.circuits ?? []).includes(circuit)).map((s) => ({
+      MAP_SITES.filter((s) => (s.circuits ?? []).includes(circuit)).map((s) => ({
         id: s.id, name: s.name, lat: s.lat, lng: s.lng,
         contested: contestsCircuit(s.disputedCircuits, circuit),
       })),
@@ -976,7 +1026,7 @@ export default function AtlasClient() {
   const dismissCoach = useCallback(() => { setCoach(false); writeFlag(COACH_KEY, "seen"); }, []);
 
   // tooltip
-  function showTip(s: Site, e: MouseEvent) {
+  function showTip(s: MapSite, e: MouseEvent) {
     const tip = tipRef.current!;
     tip.innerHTML = `<div class="tn">${esc(s.name)}</div><div class="tm">${esc(s.place)} · ${esc(s.country)}</div><div class="ty" style="color:${eraColor(eraOf(s))}">${esc(s.builtDisplay)}</div>`;
     tip.style.opacity = "1"; moveTip(e);
@@ -1014,12 +1064,12 @@ export default function AtlasClient() {
     svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
     const x = (y: number) => ((y - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * w;
     const BIN = 50; const bins: Record<number, number> = {};
-    for (const s of SITES) { const b = Math.floor(s.built[0] / BIN) * BIN; bins[b] = (bins[b] ?? 0) + 1; }
+    for (const s of MAP_SITES) { const b = Math.floor(s.built[0] / BIN) * BIN; bins[b] = (bins[b] ?? 0) + 1; }
     const max = Math.max(...Object.values(bins));
     let bars = "";
     for (const [bs, n] of Object.entries(bins)) {
       const b = +bs; const bh = Math.max(2, (n / max) * 34);
-      bars += `<rect x="${x(b) + 0.5}" y="${44 - bh}" width="${Math.max(2, x(b + BIN) - x(b) - 1.5)}" height="${bh}" rx="1.5" fill="var(--e${eraOf({ built: [b + BIN / 2, 0] } as Site) + 1})" opacity="${b + BIN / 2 <= yearRef.current ? 1 : 0.22}"/>`;
+      bars += `<rect x="${x(b) + 0.5}" y="${44 - bh}" width="${Math.max(2, x(b + BIN) - x(b) - 1.5)}" height="${bh}" rx="1.5" fill="var(--e${eraOf({ built: [b + BIN / 2, 0] }) + 1})" opacity="${b + BIN / 2 <= yearRef.current ? 1 : 0.22}"/>`;
     }
     let bands = "", labels = ""; let prev = YEAR_MIN;
     ERAS.forEach((e, i) => {
@@ -1049,7 +1099,7 @@ export default function AtlasClient() {
   useEffect(() => {
     if (!playing) return;
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) { setYear(YEAR_MAX); setPlaying(false); return; }
-    if (yearRef.current >= YEAR_MAX) setYear(YEAR_MIN);
+    if (yearRef.current >= YEAR_MAX) setYear(fromRef.current);
     const iv = setInterval(() => {
       setYear((y) => { const n = y + 12; if (n >= YEAR_MAX) { clearInterval(iv); setPlaying(false); return YEAR_MAX; } return n; });
     }, 40);
@@ -1057,12 +1107,34 @@ export default function AtlasClient() {
   }, [playing]);
 
   const selected = sel ? SITE_BY_ID.get(sel) ?? null : null;
-  const visList = SITES.filter((s) => visible(s, filters, year));
+
+  /**
+   * The selected record's prose, fetched on selection rather than bundled.
+   *
+   * `null` while it is in flight, so the rail renders its header, chips, dates
+   * and coordinates immediately from the map index and fills the prose in when
+   * it lands. That ordering is deliberate: everything above the fold is already
+   * in memory, so the panel never shows a spinner where a name should be.
+   */
+  const [detail, setDetail] = useState<RecordDetail | null>(null);
+  useEffect(() => {
+    if (!sel) { setDetail(null); return; }
+    const controller = new AbortController();
+    setDetail(null);
+    loadRecord(sel, controller.signal).then((d) => { if (!controller.signal.aborted) setDetail(d); });
+    // Abort on a fast re-select so a slow fetch cannot land after a newer one
+    // and paint the previous temple's history under the current temple's name.
+    return () => controller.abort();
+  }, [sel]);
+  const spanAll = from === YEAR_MIN && year >= YEAR_MAX;
+  const visList = MAP_SITES.filter((s) => visible(s, filters, from, year));
+  // Asked only when the bundled index has already come back empty.
+  const spellingHelp = useSpellingHelp(filters.q, visList.length);
   const shapes: Record<string, string> = {
     circle: '<circle cx="5.5" cy="5.5" r="4.6"/>', square: '<rect x="1.4" y="1.4" width="8.2" height="8.2"/>',
     diamond: '<path d="M5.5 0L11 5.5L5.5 11L0 5.5Z"/>', triangle: '<path d="M5.5 0.4L10.8 10.2H0.2Z"/>',
   };
-  const disputesFor = (s: Site, c: string) => (s.disputedCircuits ?? []).filter((d) => d.circuit === c);
+  const disputesFor = (s: MapSite, c: string) => (s.disputedCircuits ?? []).filter((d) => d.circuit === c);
   const sideClass = ["side", panelOpen ? "open" : "", isSheet ? `sheet snap-${snap}` : "", dragging ? "dragging" : ""]
     .filter(Boolean).join(" ");
 
@@ -1096,7 +1168,22 @@ export default function AtlasClient() {
           </button>
           <button className="reset" onClick={() => { setFilters(EMPTY); setCircuit(null); }}>reset</button>
         </div>
-        <span className="count"><b>{shownCount}</b> of {SITES.length} sites shown</span>
+        <span className="count"><b>{shownCount}</b> of {MAP_SITES.length} sites shown</span>
+        {spellingHelp.length > 0 && (
+          /* Suggestions, not results. The local index found nothing, so these
+             come from Postgres, where the name is matched on a transliteration-
+             normalised form. Offered beside the count rather than merged into
+             it, because a fuzzy hit is not the same claim as a match. */
+          <div className="didyoumean" role="status">
+            <span>Did you mean</span>
+            {spellingHelp.map((s) => (
+              <button key={s.id} type="button" onClick={() => { setFilters((f) => ({ ...f, q: s.name })); select(s.id, true); }}>
+                {s.name}
+                <em>{s.place}</em>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="main">
@@ -1109,7 +1196,11 @@ export default function AtlasClient() {
             tabIndex={-1}
             aria-label="Map of South and Southeast Asia with sacred sites (boundaries as per Government of India). Use Tab or the arrow keys to move between marks, Enter to open one, Escape to close.">
             <g ref={worldRef}>
-              <g dangerouslySetInnerHTML={{ __html: GEO.svgInner }} />
+              {/* Static country outlines, rendered by the SERVER (page.tsx) and
+                  handed down as markup. 385 kB of SVG that never changes between
+                  deploys and that nothing interactive reads — shipping it as a
+                  JS module cost 136.7 kB gzipped on every homepage load. */}
+              <g dangerouslySetInnerHTML={{ __html: outlines }} />
               {/* Remote layers sit above the land fill and below every mark, so a
                   boundary never covers a site. An <image> exists only once its
                   bytes have already loaded off-DOM — that is what makes a dead
@@ -1190,23 +1281,40 @@ export default function AtlasClient() {
                 {(selected.circuits ?? []).map((c) => <span className="chip gold" key={c}>{c}</span>)}
               </div>
               <div className="dates">
-                <div><div className="dl">Sacred since</div><div className="dv">{fmtYear(appearYear(selected))}</div><div className="ds">{selected.originNote ?? "first attestation / structure"}</div></div>
-                <div><div className="dl">Standing structure</div><div className="dv">{selected.builtDisplay}</div><div className="ds">{selected.patron ? `patron: ${selected.patron}` : selected.dynasty}</div></div>
+                <div><div className="dl">Sacred since</div><div className="dv">{fmtYear(appearYear({ ...selected, origin: detail?.origin }))}</div><div className="ds">{detail?.originNote ?? "first attestation / structure"}</div></div>
+                <div><div className="dl">Standing structure</div><div className="dv">{selected.builtDisplay}</div><div className="ds">{detail?.patron ? `patron: ${detail.patron}` : selected.dynasty}</div></div>
               </div>
-              <div className="sect"><h3>Deity & significance</h3><p><b>{selected.deity}.</b> {selected.significance}</p></div>
-              {selected.story && <div className="sect katha"><h3>Sthala katha · legend</h3><p>{selected.story}</p></div>}
-              {selected.access && <div className="sect"><h3>Reaching there</h3><p className="practical">{selected.access}</p></div>}
+              <div className="sect"><h3>Deity & significance</h3><p><b>{selected.deity}.</b> {detail?.significance ?? ""}</p></div>
+              {detail?.story && (
+                /* CLAUDE.md rule 3 is the project's second-most-important
+                   guarantee, and its whole visual expression used to be
+                   `font-style: italic` plus a lighter colour — invisible to a
+                   screen reader and ambiguous to everyone else. A real
+                   <section> with an accessible name states the distinction in
+                   the DOM, and the framing line states it in words, so it
+                   survives both assistive technology and CSS being removed. */
+                <section className="sect katha" aria-label="Sthala katha — traditional account, not documented history">
+                  <h3>Sthala katha · traditional account</h3>
+                  <p className="kathaframe">{KATHA_FRAMING}</p>
+                  <p>{detail.story}</p>
+                </section>
+              )}
+              {detail?.access && <div className="sect"><h3>Reaching there</h3><p className="practical">{detail.access}</p></div>}
               <div className="actions">
                 <Link className="primary" href={`/site/${selected.id}`}>Full entry →</Link>
-                {selected.website && <a href={selected.website} target="_blank" rel="noopener noreferrer">Official site ↗</a>}
+                {detail?.website && <a href={detail.website} target="_blank" rel="noopener noreferrer">Official site ↗</a>}
                 <a href={gmapsUrl(selected)} target="_blank" rel="noopener noreferrer">Google Maps ↗</a>
-                {selected.wiki && <a href={selected.wiki} target="_blank" rel="noopener noreferrer">Wikipedia ↗</a>}
+                {detail?.wiki && <a href={detail.wiki} target="_blank" rel="noopener noreferrer">Wikipedia ↗</a>}
               </div>
-              {selected.phone && <p className="practical mono" style={{ marginTop: 6 }}>☏ {selected.phone}</p>}
+              {detail?.phone && <p className="practical mono" style={{ marginTop: 6 }}>☏ {detail.phone}</p>}
               <div className="srcs">
                 <h3 style={{ fontFamily: "var(--font-mono),monospace", fontSize: 10, letterSpacing: ".18em", color: "var(--mut)", textTransform: "uppercase", marginBottom: 2 }}>Sources</h3>
-                <ul>{selected.sources.map((x) => <li key={x.u}><a href={x.u} target="_blank" rel="noopener noreferrer">{x.l}</a></li>)}</ul>
-                <div className="vnote">coords: {selected.verified ?? "curated"} · retrieved 2026-08-26</div>
+                <ul>{(detail?.sources ?? []).map((x) => <li key={x.u}><a href={x.u} target="_blank" rel="noopener noreferrer">{x.l}</a></li>)}</ul>
+                {/* The stamp is a METHOD and a date, not a human verification:
+                    2,102 of 3,031 records share one timestamp because one script
+                    checked them in an afternoon. readVerification says so plainly
+                    and never emits the word "verified" for an automated check. */}
+                <div className="vnote">{readVerification(detail?.verified).label}</div>
               </div>
             </div>
           ) : circuit && route ? (
@@ -1290,9 +1398,9 @@ export default function AtlasClient() {
               <h2 className="site" style={{ fontSize: 21 }}>Twenty-six centuries of sacred building</h2>
               <p className="lead">Scrub the timeline to watch temples rise from Mauryan stupas to the newest mandirs — or click any mark for history, legend, pilgrim routes, and full citations. Colour is the era of the standing structure; shape is the tradition.</p>
               <div className="statgrid">
-                <div className="stat"><b>{SITES.length}</b><span>sites</span></div>
-                <div className="stat"><b>{new Set(SITES.map((s) => s.country)).size}</b><span>countries</span></div>
-                <div className="stat"><b>{SITES.filter((s) => (s.status ?? []).includes("UNESCO") || (s.circuits ?? []).some((c) => c.includes("UNESCO"))).length}</b><span>UNESCO</span></div>
+                <div className="stat"><b>{MAP_SITES.length}</b><span>sites</span></div>
+                <div className="stat"><b>{STATS.countries}</b><span>countries</span></div>
+                <div className="stat"><b>{STATS.unesco}</b><span>UNESCO</span></div>
               </div>
               <div className="sect"><h3>Construction era</h3>
                 <div className="leg">
@@ -1331,14 +1439,49 @@ export default function AtlasClient() {
           )}
         </div>
         <div className="tl-top">
-          <button className="play" aria-label={playing ? "Pause timeline" : "Play timeline"} onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
-          <div className="yearbox"><small>YEAR</small><span>{fmtYear(year === YEAR_MAX ? 2026 : year)}</span></div>
+          <button className="play" aria-label={playing ? "Pause the timeline sweep" : "Play the timeline sweep"}
+            aria-pressed={playing}
+            onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
+          <div className="yearbox">
+            <small>PERIOD</small>
+            <span>{spanAll ? "All eras" : `${fmtYear(from)} – ${fmtYear(year === YEAR_MAX ? 2026 : year)}`}</span>
+          </div>
           <div className="tlsvgwrap">
             <svg ref={tlRef} aria-hidden="true" />
-            <input type="range" min={YEAR_MIN} max={YEAR_MAX} step={5} value={Math.min(year, YEAR_MAX)} aria-label="Timeline year"
+            {/* Two overlaid range inputs rather than a custom widget. Each is a
+                real slider, so it arrives keyboard-operable and announced by a
+                screen reader for free; the track is click-through and only the
+                thumbs take pointer events, so the nearer handle always wins.
+                aria-valuetext gives the formatted year ("1010 CE") in place of
+                the raw number a reader would otherwise hear (PA 5.4). */}
+            <input className="tlfrom" type="range" min={YEAR_MIN} max={YEAR_MAX} step={5}
+              value={from}
+              aria-label="Earliest year shown"
+              aria-valuetext={`from ${fmtYear(from)}`}
+              onChange={(e) => { dismissCoach(); setPlaying(false); setFrom(+e.target.value); }} />
+            <input className="tlto" type="range" min={YEAR_MIN} max={YEAR_MAX} step={5}
+              value={Math.min(year, YEAR_MAX)}
+              aria-label="Latest year shown"
+              aria-valuetext={`to ${fmtYear(year === YEAR_MAX ? 2026 : year)}`}
               onChange={(e) => { dismissCoach(); setPlaying(false); setYear(+e.target.value); }} />
           </div>
-          <button className="showall" onClick={() => { setPlaying(false); setYear(YEAR_MAX); }}>show all eras</button>
+          <div className="tleras" role="group" aria-label="Jump to an era">
+            {ERAS.map((era, i) => {
+              const lo = i === 0 ? YEAR_MIN : ERAS[i - 1].to;
+              const hi = Math.min(era.to, YEAR_MAX);
+              const on = from === lo && year === hi;
+              return (
+                <button key={era.name} className={`tlera${on ? " on" : ""}`}
+                  style={{ borderColor: `var(--e${i + 1})` }}
+                  aria-pressed={on}
+                  title={`${fmtYear(lo)} – ${fmtYear(hi)}`}
+                  onClick={() => { dismissCoach(); setPlaying(false); setRange(on ? [YEAR_MIN, YEAR_MAX] : [lo, hi]); }}>
+                  {era.name}
+                </button>
+              );
+            })}
+          </div>
+          <button className="showall" onClick={() => { setPlaying(false); setRange([YEAR_MIN, YEAR_MAX]); }}>show all eras</button>
         </div>
       </div>
     </>

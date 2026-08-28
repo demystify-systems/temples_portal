@@ -28,17 +28,32 @@ import {
 // model choice
 // ---------------------------------------------------------------------------
 
-test("short clips go to the flash model, long ones to the accurate one", () => {
-  assert.equal(sttModelFor(2_000), "saarika:flash");
-  assert.equal(sttModelFor(15_000), "saarika:flash", "the boundary stays on flash");
-  assert.equal(sttModelFor(15_001), "saarika:v2.5");
-  assert.equal(sttModelFor(29_000), "saarika:v2.5");
+test("every clip goes to saaras:v4, whatever its length", () => {
+  // One model, not two. Measured against the live API on 2026-08-28: saaras:v4
+  // is BOTH the fastest one-shot model (0.39-0.51s vs 0.40-0.77s for v2.5) and
+  // the only one that transcribed "Where is the Jagannath temple?" correctly —
+  // saarika:v2.5 and saaras:v3 both returned "Radhakrishna Temple". When one
+  // model wins on latency AND on accuracy there is no trade left to make.
+  assert.equal(sttModelFor(2_000), "saaras:v4");
+  assert.equal(sttModelFor(15_000), "saaras:v4");
+  assert.equal(sttModelFor(15_001), "saaras:v4");
+  assert.equal(sttModelFor(29_000), "saaras:v4");
 });
 
-test("an unknown duration is treated as short, never as a reason to fail", () => {
-  assert.equal(sttModelFor(null), "saarika:flash");
-  assert.equal(sttModelFor(undefined), "saarika:flash");
-  assert.equal(sttModelFor(Number.NaN), "saarika:flash");
+test("an unknown duration still selects a model, never a reason to fail", () => {
+  assert.equal(sttModelFor(null), "saaras:v4");
+  assert.equal(sttModelFor(undefined), "saaras:v4");
+  assert.equal(sttModelFor(Number.NaN), "saaras:v4");
+});
+
+test("no deprecated model can be returned", () => {
+  // saarika:flash, saarika:v2 and saarika:v1 are all retired and answer 400.
+  // Shipping one is a 503 on every voice question, which is the bug this
+  // replaces: sttModelFor returned saarika:flash for any clip under 15s.
+  const RETIRED = ["saarika:flash", "saarika:v2", "saarika:v1"];
+  for (const ms of [0, 1_000, 15_000, 15_001, 60_000]) {
+    assert.ok(!RETIRED.includes(sttModelFor(ms)), `${ms}ms selected a retired model`);
+  }
 });
 
 // ---------------------------------------------------------------------------

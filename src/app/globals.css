@@ -1,20 +1,72 @@
+/* ---------------------------------------------------------------------------
+ * DESIGN TOKENS — the single source of truth for colour in this project.
+ *
+ * CONTRAST (WCAG 2.2, recomputed 2026-08-28 from these exact hex values by
+ * scripts/check-contrast.mjs, which fails the build on a regression).
+ *
+ * Text tokens must clear 4.5:1 on BOTH --bg and --panel, in BOTH themes.
+ * --mut and --gold are used at 10-13px in .vnote, .eyebrow, .card .cm, .hstats,
+ * .leg .yr, .completeness .cnote and .asstcount — normal-size text, so the
+ * large-text 3:1 allowance does not apply to them.
+ *
+ *   token      theme   on --bg   on --panel   was (FAILED)
+ *   --ink      light    13.33      14.43       pass
+ *   --ink2     light     5.86       6.34       pass
+ *   --mut      light     4.50       4.87       3.08 / 3.33
+ *   --gold     light     4.51       4.88       3.19 / 3.45
+ *   --ink      dark     14.00      12.70       pass
+ *   --ink2     dark      6.98       6.33       pass
+ *   --mut      dark      4.99       4.53       3.95 / 3.59
+ *   --gold     dark      7.96       7.22       pass
+ *
+ * Control-border tokens must clear 3.0:1 (1.4.11 non-text). --line2 borders
+ * every input, select, .chip, .actions a and .tracebtn, and those sit ON
+ * --panel INSIDE and against --bg OUTSIDE, so both grounds are checked.
+ *
+ *   --line2    light     3.00       3.25       1.51 / 1.63
+ *   --line2    dark      3.31       3.00       1.88 / 1.70
+ *
+ * --line and --gold-soft are DECORATIVE ONLY (hairline rules, .pcount and
+ * .coach borders). They are exempt from 1.4.11 because they carry no state and
+ * no boundary a user must perceive. They may never be used for text or for a
+ * control border; check-contrast.mjs enforces that separately.
+ *
+ * NOTE ON DARK --mut: DESIGN-TOKENS.md section 2 said to change no dark value
+ * but --line2. Its own section 9 requires 4.5:1 in BOTH themes, and dark --mut
+ * measured 3.95 on --bg at 10-13px. The two instructions contradict; section 9
+ * is the correct one and is followed here.
+ *
+ * ERA PALETTE (--e1..--e6) is CATEGORICAL, not a sequential ramp, and is
+ * colour-blind validated (CLAUDE.md rule 7). Simulated 2026-08-28 for
+ * deuteranopia, protanopia and tritanopia in both themes via the Brettel-
+ * Vienot-Mollon model; minimum pairwise separation 11.4 dE (deuteranopia,
+ * light, --e1/--e3). Era is additionally carried as TEXT everywhere it is
+ * carried as colour, so no meaning rests on hue alone (WCAG 1.4.1).
+ * Re-run the simulation and update this date before changing any era hue.
+ *
+ * MIRROR: the dark palette is declared TWICE below — once under
+ * prefers-color-scheme and once under [data-theme="dark"] — because a media
+ * query cannot be overridden by an attribute selector alone. The two blocks
+ * must stay byte-identical; scripts/check-theme-mirror.mjs fails the build if
+ * they diverge.
+ * ------------------------------------------------------------------------- */
 :root{
-  --bg:#EFEBE2; --water:#ECE7DB; --panel:#F7F4EC; --panel2:#E9E4D7; --line:#D8D1C0; --line2:#C9C1AC;
-  --ink:#262218; --ink2:#5F594A; --mut:#8D8574; --gold:#A97B1F; --gold-soft:#C4A45A;
+  --bg:#EFEBE2; --water:#ECE7DB; --panel:#F7F4EC; --panel2:#E9E4D7; --line:#D8D1C0; --line2:#8D8779;
+  --ink:#262218; --ink2:#5F594A; --mut:#716A5D; --gold:#8A6419; --gold-soft:#C4A45A;
   --land:#E3DDCB; --land-ctx:#EAE5D8; --cty:#BFB69E;
   --e1:#96690A; --e2:#2E6BA8; --e3:#96391F; --e4:#0E7E5F; --e5:#6247AC; --e6:#AC4478;
   --shadow:0 8px 28px rgba(38,34,24,.14); --scrim:rgba(38,34,24,.42);
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#3A4560;
-  --ink:#EAE3D3; --ink2:#A9A190; --mut:#7C7666; --gold:#D9A441; --gold-soft:#8A6A2A;
+  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#616A80;
+  --ink:#EAE3D3; --ink2:#A9A190; --mut:#8C8779; --gold:#D9A441; --gold-soft:#8A6A2A;
   --land:#232B3E; --land-ctx:#1B2230; --cty:#3D4763;
   --e1:#BE8A2E; --e2:#4487CC; --e3:#AC4C34; --e4:#35A084; --e5:#7B5BC8; --e6:#C9679B;
   --shadow:0 10px 32px rgba(0,0,0,.45); --scrim:rgba(4,6,12,.62);
 }}
 :root[data-theme="dark"]{
-  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#3A4560;
-  --ink:#EAE3D3; --ink2:#A9A190; --mut:#7C7666; --gold:#D9A441; --gold-soft:#8A6A2A;
+  --bg:#131722; --water:#10141D; --panel:#1A2030; --panel2:#212939; --line:#2B3450; --line2:#616A80;
+  --ink:#EAE3D3; --ink2:#A9A190; --mut:#8C8779; --gold:#D9A441; --gold-soft:#8A6A2A;
   --land:#232B3E; --land-ctx:#1B2230; --cty:#3D4763;
   --e1:#BE8A2E; --e2:#4487CC; --e3:#AC4C34; --e4:#35A084; --e5:#7B5BC8; --e6:#C9679B;
   --shadow:0 10px 32px rgba(0,0,0,.45); --scrim:rgba(4,6,12,.62);
@@ -163,18 +215,41 @@ h2.site{font:400 24px/1.2 var(--font-display),serif;margin:5px 0 2px;text-wrap:b
 .ixrow .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ixrow .yr{margin-left:auto;font-family:var(--font-mono),monospace;font-size:10.5px;color:var(--mut);flex:none}
 
-.timeline{border-top:1px solid var(--line);padding:8px 18px 12px;background:var(--panel)}
+/* flex:none is load-bearing. `.app` is a 100dvh flex column and `.main` is
+   flex:1, so without it the timeline is a flex:0 1 auto item that SHRINKS when
+   the viewport is short — the control slid under the fold and the page looked
+   like it had no timeline at all. It is the one row that must never give up
+   height, so it declares that rather than relying on its content to hold it. */
+.timeline{flex:none;border-top:1px solid var(--line);padding:8px 18px 12px;background:var(--panel)}
 .tl-top{display:flex;align-items:center;gap:14px}
 .play{width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font-size:13px;flex:none;display:flex;align-items:center;justify-content:center}
 .play:hover{background:var(--gold);color:var(--bg)}
-.yearbox{font-family:var(--font-mono),monospace;font-size:20px;color:var(--ink);width:118px;flex:none;font-weight:500}
+.yearbox{font-family:var(--font-mono),monospace;font-size:16px;color:var(--ink);width:170px;flex:none;font-weight:500;font-variant-numeric:tabular-nums}
 .yearbox small{display:block;font-size:9.5px;letter-spacing:.16em;color:var(--mut);font-weight:400}
 .tlsvgwrap{flex:1;min-width:0;position:relative}
 .tlsvgwrap svg{width:100%;height:64px;display:block}
-.tlsvgwrap input[type=range]{position:absolute;left:0;right:0;bottom:14px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:transparent;height:22px;cursor:pointer}
-.tlsvgwrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
-.tlsvgwrap input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
+/* Two real <input type=range> stacked on one track. The track itself is
+   click-through so the pair does not fight over a drag; only the thumbs take
+   pointer events, so whichever handle you grab is the one that moves. Using two
+   native sliders rather than a custom widget means each is keyboard-operable
+   and screen-reader-announced without any of it being reimplemented. */
+.tlsvgwrap input[type=range]{position:absolute;left:0;right:0;bottom:14px;width:100%;margin:0;-webkit-appearance:none;appearance:none;background:transparent;height:22px;pointer-events:none}
+.tlsvgwrap input[type=range]::-webkit-slider-thumb{pointer-events:auto;cursor:grab;-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
+.tlsvgwrap input[type=range]::-moz-range-thumb{pointer-events:auto;cursor:grab;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2.5px solid var(--bg);box-shadow:0 0 0 1.5px var(--gold)}
 .tlsvgwrap input[type=range]::-webkit-slider-runnable-track{height:0}
+/* The lower handle is hollow, so the two are told apart at a glance and by
+   anyone who cannot rely on position alone to read which is which. */
+.tlsvgwrap input.tlfrom::-webkit-slider-thumb{background:var(--bg);border-color:var(--gold)}
+.tlsvgwrap input.tlfrom::-moz-range-thumb{background:var(--bg);border-color:var(--gold)}
+.tlsvgwrap input[type=range]:focus-visible::-webkit-slider-thumb{outline:2px solid var(--gold);outline-offset:2px}
+
+/* Era shortcuts: the fast path to "show me one period", which is the whole
+   reason the range exists. Each carries its own era colour on the border, the
+   same encoding the map and the legend use. */
+.tleras{display:flex;gap:4px;flex:none;flex-wrap:wrap;max-width:330px}
+.tlera{font-size:10.5px;padding:3px 8px;border:1px solid var(--line2);border-left-width:3px;border-radius:7px;color:var(--ink2);white-space:nowrap;background:var(--panel)}
+.tlera:hover{color:var(--gold)}
+.tlera.on{color:var(--ink);background:var(--panel2);border-color:var(--gold);font-weight:600}
 .showall{font-size:11px;color:var(--mut);text-decoration:underline;text-underline-offset:3px;flex:none}
 .showall:hover{color:var(--gold)}
 
@@ -960,3 +1035,80 @@ table.gz tr:last-child td{border-bottom:none}
   .ictags{gap:2px 8px}
   .idxn{margin-left:7px}
 }
+
+/* ============ the call surface (Speak to the Atlas) ============ */
+.call{display:flex;flex-direction:column;gap:var(--sp-3,12px);padding:16px 18px 18px}
+.callhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.callhead h2{font:400 21px var(--font-display),serif;color:var(--gold)}
+.callsub{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:2px}
+.callx{width:30px;height:30px;border-radius:8px;font-size:22px;line-height:1;color:var(--mut);flex:none}
+.callx:hover{color:var(--gold)}
+
+.callstage{display:flex;flex-direction:column;align-items:center;gap:12px;padding:22px 0 6px}
+.orb{position:relative;width:112px;height:112px;display:flex;align-items:center;justify-content:center;flex:none}
+.orbring{position:absolute;inset:0;border-radius:50%;border:1px solid var(--line2);background:var(--panel2);
+  transition:transform .09s linear,border-color .2s,background .2s}
+.orb.on .orbring{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,var(--panel2))}
+.orb.hear .orbring{border-width:2px}
+.orbcore{position:relative;font:400 16px var(--font-display),serif;letter-spacing:.06em;color:var(--ink)}
+.orb.on .orbcore{color:var(--gold)}
+.callphase{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);text-align:center;min-height:1.4em}
+.callphase.busy{color:var(--mut)}
+.callnote,.callerr{font-size:13px;color:var(--ink2);line-height:1.5}
+.callerr{color:var(--e3)}
+
+.calllog{list-style:none;display:flex;flex-direction:column;gap:10px;margin:0;padding:12px 0 0;border-top:1px solid var(--line);max-height:40vh;overflow-y:auto}
+.callturn p{font-size:13.5px;line-height:1.55}
+.callturn.user{align-self:flex-end;max-width:88%;background:var(--panel2);border:1px solid var(--line2);border-radius:12px 12px 3px 12px;padding:7px 11px}
+.callturn.assistant{max-width:95%}
+.callcites{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;padding:0}
+.callcites li a{font-size:11px;color:var(--ink2);border:1px solid var(--line2);border-radius:20px;padding:2px 9px;text-decoration:none;display:inline-block}
+.callcites li a:hover{color:var(--gold);border-color:var(--gold)}
+.callnocite{font-size:11.5px;color:var(--mut);margin-top:5px}
+
+/* The orb is the one animated thing here, and it exists to show that the
+   microphone is live. Under reduced-motion it stops scaling and reports the
+   same fact with a static ring — the information is in the phase line too. */
+@media (prefers-reduced-motion: reduce){
+  .orbring{transition:border-color .2s,background .2s;transform:none !important}
+}
+
+/* Type / Speak. One panel, two ways in — never two rival launchers, because
+   both answer the same question from the same cited records. */
+.asstmodes{display:flex;gap:4px;padding:8px 16px 0}
+.asstmode{flex:1;padding:6px 10px;border:1px solid var(--line2);border-radius:8px;font-size:12.5px;color:var(--ink2);background:var(--panel)}
+.asstmode:hover{color:var(--gold);border-color:var(--gold)}
+.asstmode.on{color:var(--gold);border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--panel))}
+
+/* ---- sthala katha: legend, marked as legend ----
+   Rule 3 (history is never blended with legend) used to be carried entirely by
+   `font-style:italic` and a lighter colour. Italic is not a semantic signal: a
+   screen reader announces nothing, and a sighted reader has to already know the
+   convention. The distinction now has a tinted ground, a rule down the side, and
+   — the part that actually carries it — a sentence saying what this is. The
+   styling reinforces the words; it no longer replaces them. */
+.sect.katha,.page section.katha{background:var(--panel2);border-left:3px solid var(--line2);border-radius:0 8px 8px 0;padding:12px 14px;margin:16px 0}
+.sect.katha p,.page section.katha p{font-style:normal}
+.page section.katha h2{margin-top:0;font-size:19px}
+.kathaframe{font-family:var(--font-mono),monospace;font-size:11px;line-height:1.6;color:var(--mut);
+  border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:9px;max-width:none}
+
+/* Language choice. Sits above the orb because it is read BEFORE the call
+   starts — it is the invitation to speak your own language, not a setting you
+   go looking for afterwards. */
+.calllang{display:flex;align-items:center;gap:9px;padding:10px 0 2px}
+.calllang label{font-family:var(--font-mono),monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);flex:none}
+.calllang select{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line2);border-radius:8px;color:var(--ink);padding:6px 9px;font:inherit;font-size:13.5px;
+  /* Indic scripts clip their matras at the body 1.55; never letter-spaced. */
+  line-height:1.7;letter-spacing:normal}
+.callheard{font-size:11.5px;color:var(--ink2);text-align:center;line-height:1.6;max-width:36ch;margin:0 auto}
+.callheard b{color:var(--gold);font-weight:500;line-height:1.7}
+
+/* "Did you mean" — suggestions from the database when the bundled index found
+   nothing. Visually subordinate to the count on purpose: these are guesses at a
+   spelling, not results, and they must not read as either. */
+.didyoumean{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11.5px;color:var(--ink2);width:100%;padding-top:6px}
+.didyoumean > span{font-family:var(--font-mono),monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);flex:none}
+.didyoumean button{display:inline-flex;align-items:baseline;gap:6px;border:1px solid var(--line2);border-radius:20px;padding:3px 11px;color:var(--ink);font-size:12.5px;line-height:1.7}
+.didyoumean button:hover{border-color:var(--gold);color:var(--gold)}
+.didyoumean button em{font-style:normal;font-size:10.5px;color:var(--mut)}

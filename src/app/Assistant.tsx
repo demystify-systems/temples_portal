@@ -29,6 +29,19 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import VoiceButton, { SpeakButton, type VoiceTranscript } from "./VoiceButton";
+import dynamic from "next/dynamic";
+
+/**
+ * The call surface, loaded only when someone actually asks to speak.
+ *
+ * It pulls in an AudioContext, a MediaRecorder and the VAD loop, none of which
+ * a person who types their question will ever run. `ssr: false` because every
+ * one of those APIs is browser-only.
+ */
+const CallPanel = dynamic(() => import("./CallPanel"), {
+  ssr: false,
+  loading: () => <p className="callnote">Opening the line…</p>,
+});
 
 type Source = { l: string; u: string };
 type Citation = { id: string; name: string; place: string; sources: Source[] };
@@ -69,6 +82,12 @@ export default function Assistant() {
   const [heard, setHeard] = useState<Heard | null>(null);
   /** Bumped to silence any playback from outside — closing must not keep talking. */
   const [halt, setHalt] = useState(0);
+  /**
+   * Typed chat or a spoken call. One panel, two modes, rather than two floating
+   * launchers: they answer the same question from the same records, and offering
+   * them as rival products would imply otherwise.
+   */
+  const [mode, setMode] = useState<"type" | "call">("type");
 
   const launcherRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -129,6 +148,12 @@ export default function Assistant() {
         signal: controller.signal,
         body: JSON.stringify({
           question: asked,
+          // The same memory the call has. A typed follow-up — "and who built
+          // it?" — is as common as a spoken one, and refusing it because the
+          // pronoun names no temple is the same defect either way.
+          history: turns.slice(-4).map((t) => ({ role: t.role, content: t.text })),
+          context: (turns.filter((t) => t.role === "assistant").at(-1)?.citations ?? [])
+            .slice(0, 3).map((c) => c.id),
           // A spoken question carries the language the speech API DETECTED —
           // measured, not guessed. Only a typed one falls back to the browser
           // locale, which is a hint about the device rather than about the asker.
@@ -218,6 +243,19 @@ export default function Assistant() {
           </button>
         </header>
 
+        <div className="asstmodes" role="tablist" aria-label="How to ask">
+          <button type="button" role="tab" aria-selected={mode === "type"}
+            className={`asstmode${mode === "type" ? " on" : ""}`} onClick={() => setMode("type")}>
+            Type
+          </button>
+          <button type="button" role="tab" aria-selected={mode === "call"}
+            className={`asstmode${mode === "call" ? " on" : ""}`} onClick={() => setMode("call")}>
+            Speak
+          </button>
+        </div>
+
+        {mode === "call" ? <CallPanel onClose={() => setMode("type")} /> : (
+        <>
         <div className="asstlog" ref={logRef} role="log" aria-live="polite" aria-atomic="false">
           {turns.length === 0 && <p className="asstopener">{OPENER}</p>}
 
@@ -316,6 +354,8 @@ export default function Assistant() {
             </button>
           </div>
         </form>
+        </>
+        )}
       </section>
     </>
   );
