@@ -5,6 +5,10 @@ import { SITES, getSite, ERAS, eraOf, appearYear, fmtYear, gmapsUrl, slugify } f
 import { placeJsonLd, breadcrumbJsonLd, faqJsonLd, serializeJsonLd } from "@/lib/jsonld";
 import { siteTitle, siteDescription, siteKeywords } from "@/lib/seo";
 import { PageShell } from "../../ui";
+import Completeness from "../../Completeness";
+// The offline pilgrim card (T-048). Imported here and nowhere else: it is all
+// @media print, and only a temple page is worth carrying to a place with no signal.
+import "../../print.css";
 
 export function generateStaticParams() {
   return SITES.map((s) => ({ slug: s.id }));
@@ -107,7 +111,7 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
       {s.phone && <p className="mono" style={{ fontSize: 13 }}>☏ {s.phone} <span style={{ color: "var(--mut)" }}>(from the official site, verified 2026-08-26)</span></p>}
 
       {related.length > 0 && (
-        <>
+        <section className="related">
           <h2>Related sites</h2>
           <div className="cardgrid">
             {related.map((r) => (
@@ -118,13 +122,14 @@ export default async function SitePage({ params }: { params: Promise<{ slug: str
               </Link>
             ))}
           </div>
-        </>
+        </section>
       )}
 
       <h2>Sources</h2>
-      <ul style={{ marginLeft: 18 }}>
+      <ul className="citations" style={{ marginLeft: 18 }}>
         {s.sources.map((x) => <li key={x.u} style={{ color: "var(--ink2)", fontSize: 13.5, margin: "5px 0" }}><a href={x.u} target="_blank" rel="noopener noreferrer">{x.l}</a></li>)}
       </ul>
+      <Completeness site={s} />
       <p className="mono" style={{ fontSize: 11, color: "var(--mut)" }}>coordinates: {s.verified ?? "curated"} · sources retrieved 2026-08-26 · dynasty page: <Link href={`/dynasty/${slugify(s.dynasty)}`} style={{ color: "var(--gold)" }}>{s.dynasty}</Link></p>
     </PageShell>
   );

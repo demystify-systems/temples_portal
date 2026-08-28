@@ -324,3 +324,338 @@ table.gz tr:last-child td{border-bottom:none}
 .disputed-note li { color: var(--ink2); line-height: 1.65; margin-bottom: 8px; max-width: 68ch; }
 .disputed-note li b { color: var(--ink); font-weight: 500; }
 .disputed-note a { color: var(--gold); }
+
+/* ============ Ask the Atlas assistant (Q4) =================================
+   Appended, never edited: five agents share this file. Everything below is
+   namespaced `asst*` so it cannot collide with the atlas or page vocabulary,
+   and it reads only the tokens declared at the top of this file, so both
+   themes come for free.
+   The panel is fixed and does not lock the page: `aria-modal="false"` in the
+   markup matches that — a pilgrim reading a site page should be able to keep
+   reading it while an answer arrives. */
+.asstlaunch{position:fixed;right:16px;bottom:16px;z-index:44;display:flex;align-items:center;gap:7px;padding:10px 16px;min-height:44px;border:1px solid var(--gold);border-radius:999px;background:var(--panel);color:var(--gold);font-size:13.5px;font-weight:600;letter-spacing:.02em;box-shadow:var(--shadow)}
+.asstlaunch:hover{background:var(--panel2)}
+.asstlaunch span{font-size:15px;line-height:1}
+
+.asstscrim{position:fixed;inset:0;z-index:44;background:var(--scrim);opacity:1;transition:opacity .18s}
+
+.asstpanel{position:fixed;right:16px;bottom:16px;z-index:45;display:flex;flex-direction:column;width:min(430px,calc(100vw - 32px));max-height:min(620px,calc(100dvh - 32px));border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:var(--shadow);overflow:hidden;transform:translateY(8px);opacity:0;transition:transform .2s ease,opacity .16s ease}
+.asstpanel.open{transform:none;opacity:1}
+.asstpanel[hidden]{display:none}
+
+.assthead{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex:none;padding:13px 14px 11px;border-bottom:1px solid var(--line)}
+.assthead h2{font:400 18px var(--font-display),serif;letter-spacing:.06em;color:var(--gold);margin:0}
+.asstsub{margin:2px 0 0;font-family:var(--font-mono),monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut)}
+.asstclose{position:relative;flex:none;width:30px;height:30px;border-radius:8px;font-size:22px;line-height:1;color:var(--mut)}
+.asstclose:hover{color:var(--gold)}
+.asstclose::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px}
+
+.asstlog{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:14px;display:flex;flex-direction:column;gap:14px}
+.asstopener{margin:0;font-size:13px;line-height:1.65;color:var(--ink2)}
+
+.asstturn{margin:0}
+.asstturn.user .assttext{margin-left:auto;max-width:88%;width:fit-content;padding:8px 12px;border:1px solid var(--line2);border-radius:12px 12px 3px 12px;background:var(--panel2);color:var(--ink);font-size:13.5px;line-height:1.6}
+.asstturn.assistant .assttext{margin:0;font-size:14px;line-height:1.7;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
+
+/* Citations are never optional furniture: they carry the same weight as the
+   answer, and their absence is stated rather than left blank. */
+.asstcites{margin-top:9px;padding-top:8px;border-top:1px solid var(--line)}
+.asstcites h3{margin:0 0 5px;font-family:var(--font-mono),monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.asstcites ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.asstcites li{font-size:12px;line-height:1.5;color:var(--ink2);overflow-wrap:anywhere}
+.asstcites li>a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line2)}
+.asstcites li>a:hover{color:var(--gold);border-color:var(--gold)}
+.asstwhere{color:var(--mut)}
+.asstsrc{display:block;margin-top:2px}
+.asstsrc a{display:inline-block;margin-right:6px;padding:1px 7px;border:1px solid var(--line2);border-radius:999px;font-family:var(--font-mono),monospace;font-size:10px;color:var(--mut);text-decoration:none}
+.asstsrc a:hover{color:var(--gold);border-color:var(--gold)}
+.asstnocite{margin:0;font-size:11.5px;line-height:1.55;color:var(--mut)}
+
+.asstpending{margin:0;font-family:var(--font-mono),monospace;font-size:11px;letter-spacing:.06em;color:var(--mut)}
+
+.asstform{flex:none;padding:11px 12px 12px;border-top:1px solid var(--line);background:var(--panel)}
+.asstlabel{display:block;margin-bottom:5px;font-family:var(--font-mono),monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.asstinput{width:100%;resize:none;background:var(--bg);border:1px solid var(--line2);border-radius:9px;color:var(--ink);padding:8px 10px;font:inherit;font-size:14px;line-height:1.5}
+.asstinput::placeholder{color:var(--mut)}
+.asstactions{display:flex;align-items:center;gap:10px;margin-top:8px}
+.asstcount{font-family:var(--font-mono),monospace;font-size:10.5px;color:var(--mut)}
+.asstsend{margin-left:auto;min-height:36px;padding:7px 18px;border:1px solid var(--gold);border-radius:999px;background:var(--gold);color:var(--bg);font-size:13px;font-weight:600}
+.asstsend:hover:not(:disabled){background:var(--panel);color:var(--gold)}
+.asstsend:disabled{opacity:.45;cursor:not-allowed}
+
+/* Phone: the panel becomes a bottom sheet edge to edge, and the launcher shrinks
+   to a pill that clears the sheet. Verified against a 390px viewport. */
+@media (max-width:560px){
+  .asstlaunch{right:12px;bottom:12px;padding:10px 14px;font-size:13px}
+  .asstpanel{right:0;left:0;bottom:0;width:100%;max-height:min(82dvh,calc(100dvh - 44px));border-radius:14px 14px 0 0;border-bottom:none}
+  .asstlog{padding:12px}
+  .asstturn.user .assttext{max-width:92%}
+}
+
+/* Reduced motion: the panel appears rather than slides. Nothing here conveys
+   meaning through movement, so removing it costs nothing. */
+@media (prefers-reduced-motion:reduce){
+  .asstpanel,.asstscrim{transition:none}
+  .asstpanel{transform:none}
+}
+
+/* ============ completeness badge (B10 + B12) ============ */
+/* Appended, never edited: nothing above this line moves.
+   Borrows the .patronnote idiom already in use — panel, hairline, gold left
+   rule — so a page that admits a gap still looks like part of the atlas rather
+   than like an error state. The number carries the meaning; the bar is
+   decoration, and the copy does the actual work (see Completeness.tsx). */
+.completeness{
+  border:1px solid var(--line);border-left:2px solid var(--gold);border-radius:8px;
+  background:var(--panel);padding:12px 15px;margin:18px 0 6px;
+}
+.page .completeness p{margin:0;max-width:62ch}
+.completeness .clabel{
+  font-family:var(--font-mono),monospace;font-size:12px;letter-spacing:.02em;color:var(--ink2);
+}
+.completeness .clabel b{color:var(--gold);font-weight:500}
+.completeness .cbar{
+  height:3px;border-radius:999px;background:var(--line2);overflow:hidden;margin:8px 0 10px;
+}
+.completeness .cbar span{display:block;height:100%;background:var(--gold);border-radius:999px}
+.page .completeness .cmiss{color:var(--ink);font-size:13.5px;line-height:1.6;margin-bottom:6px}
+.page .completeness .cnote{color:var(--ink2);font-size:12.5px;line-height:1.65}
+.page .completeness .ccta{color:var(--ink2);font-size:12.5px;line-height:1.65;margin-top:8px}
+.completeness .ccta b{color:var(--ink);font-weight:600}
+.completeness a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+
+/* ============ empty & loading results (T-044) ============ */
+/* The dashed outline says "this box is waiting for something", where the solid
+   panel of .completeness says "this box is telling you something". */
+.emptystate{
+  border:1px dashed var(--line2);border-radius:12px;background:var(--panel);
+  padding:26px 20px;margin:16px 0;text-align:center;
+}
+.emptystate .eshead{font:400 19px var(--font-display),serif;letter-spacing:.02em;color:var(--ink);margin:0}
+.page .emptystate .eshead{margin:0}
+.emptystate .esnote{color:var(--ink2);font-size:13px;line-height:1.65;margin:8px auto 0;max-width:44ch}
+.page .emptystate .esnote{margin:8px auto 0;max-width:44ch}
+.emptystate .esreset{
+  display:inline-block;margin-top:14px;border:1px solid var(--line2);border-radius:8px;
+  padding:7px 14px;font-size:12.5px;font-weight:600;color:var(--ink);
+}
+.emptystate .esreset:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Placeholders are sized from the real rows they stand in for, so the swap
+   reflows nothing above them: a .skelrow is one table.gz row (8px padding +
+   13px/1.55 text), a .skelcard is one .card (14px padding + three lines). */
+.skel{
+  display:block;border-radius:4px;
+  background:linear-gradient(90deg,var(--panel2) 0%,var(--line) 50%,var(--panel2) 100%);
+  background-size:200% 100%;animation:skelshimmer 1.4s linear infinite;
+}
+@keyframes skelshimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+.skeltable{width:100%}
+.skelhead{padding:9px 12px;border-bottom:1px solid var(--line)}
+.skelhead .skel{height:10px;width:38%;max-width:220px}
+.skelrow{display:flex;align-items:center;gap:12px;min-height:37px;padding:8px 12px;border-bottom:1px solid var(--line)}
+.skelrow:last-child{border-bottom:none}
+.skelrow .skel{height:11px}
+.skelrow .skel-a{flex:0 0 30%}
+.skelrow .skel-b{flex:0 0 26%}
+.skelrow .skel-c{flex:0 0 16%}
+.skelcard{height:93px}
+.skelcard .skel-cn{height:14px;width:72%}
+.skelcard .skel-cm{height:10px;width:52%;margin-top:8px}
+.skelcard .skel-cy{height:9px;width:34%;margin-top:9px}
+
+/* ---- /support (T-065, flagged) --------------------------------------------
+   One callout, modelled on .patronnote, carrying the only thing on the page
+   that must not be skimmed past: that this project is not taking money. Left
+   rule is --ink2 rather than --gold because gold reads as a call to action on
+   every other surface here, and this is the opposite of one. */
+.supportnote {
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--ink2);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 12px 15px;
+  margin: 18px 0 6px;
+}
+.page .supportnote p { margin: 0; font-size: 13.5px; line-height: 1.65; max-width: none; color: var(--ink2); }
+.page .supportnote p b { color: var(--ink); font-weight: 600; }
+
+/* ============ atlas map: clusters, keyboard, circuit mode, sheet, coach ============
+   Appended block for T-042/T-043/T-046/T-041/T-049. Nothing above is edited: every
+   rule here either names a class that did not exist before, or raises specificity
+   over an existing one deliberately (`.side.sheet`, which re-seats the detail rail
+   as a bottom sheet below 720px). */
+
+/* ---- T-042 marker clusters ------------------------------------------------
+   The glyph carries three separate claims and each has its own element: the disc
+   is the hit target, the arcs are the era mix (colour keeps meaning era), the
+   pips are the traditions present (shape keeps meaning tradition), and the text
+   is the exact count. Nothing is inferred from a single dominant value. */
+.cl { cursor: pointer; }
+.cl:focus { outline: none; }
+.cdisc { fill: var(--panel); stroke: var(--line2); }
+.cl:hover .cdisc { stroke: var(--gold); }
+.cpips { fill: var(--ink2); }
+.cct {
+  fill: var(--ink); text-anchor: middle; pointer-events: none;
+  font-family: var(--font-mono), monospace; font-weight: 500;
+}
+
+/* ---- T-043 keyboard focus -------------------------------------------------
+   The default outline is suppressed on the marks because an SVG outline is drawn
+   in *scaled* user units and becomes a hairline at high zoom. It is replaced by
+   the shared two-tone ring: one wide `--bg` band beneath one gold band, at the
+   same radius, so the ring is legible over land, water, a dimmed circuit and
+   both colour schemes without relying on a filter or a blend mode. */
+.map:focus { outline: none; }
+.pt:focus { outline: none; }
+.focusring { pointer-events: none; }
+.focusring .fr-u { stroke: var(--bg); }
+.focusring .fr { stroke: var(--gold); }
+
+/* ---- T-046 circuit mode ---------------------------------------------------
+   Tracing dims rather than deletes: the route has to be read against the
+   geography it crosses. A contested claim is never silently ranked — it carries
+   a dagger badge and a dashed ring on the map, and its own cited note in the list. */
+.pts.tracing .pt { opacity: .13; }
+.pts.tracing .pt.cm, .pts.tracing .pt.sel { opacity: 1; }
+.pts.tracing .pt.cm .halo { opacity: .85; }
+.clusters.tracing .cl { opacity: .22; }
+.cbadges { pointer-events: none; font-family: var(--font-mono), monospace; font-weight: 500; }
+.cbadge {
+  fill: var(--gold); text-anchor: middle;
+  stroke: var(--bg); stroke-width: 3; paint-order: stroke;
+  vector-effect: non-scaling-stroke;
+}
+.cbadge.cont { fill: var(--ink2); }
+
+.tracebtn {
+  border: 1px solid var(--line2); border-radius: 8px; padding: 6px 12px;
+  font-size: 12.5px; font-weight: 600; color: var(--ink2); min-height: 34px;
+}
+.tracebtn.on, .tracebtn:hover:not(:disabled) { color: var(--gold); border-color: var(--gold); }
+.tracebtn:disabled { opacity: .45; cursor: default; }
+.fwrap.open .tracebtn { flex: 1 1 44%; }
+
+.cir .ordernote {
+  font-size: 11.5px; color: var(--mut); line-height: 1.55;
+  border-left: 2px solid var(--line2); padding-left: 10px; margin: 0 0 12px;
+}
+.cirlist { list-style: none; margin: 6px 0 0; padding: 0; }
+.cirlist li { margin: 0 0 2px; }
+.cirrow {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 5px 6px; border-radius: 8px; text-align: left; font-size: 13px;
+}
+.cirrow:hover { background: var(--panel2); }
+.cirrow .ord {
+  flex: none; min-width: 25px; height: 22px; padding: 0 5px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--line2); border-radius: 999px;
+  font-family: var(--font-mono), monospace; font-size: 11px; color: var(--ink);
+}
+.cirrow .ord.cont { border-style: dashed; color: var(--mut); }
+.cirrow .nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cirrow .yr {
+  margin-left: auto; flex: none; max-width: 42%;
+  font-family: var(--font-mono), monospace; font-size: 10.5px; color: var(--mut);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.disputenote { font-size: 11.5px; color: var(--ink2); line-height: 1.6; margin: 2px 0 9px 36px; }
+.disputenote a { color: var(--gold); }
+
+/* ---- T-041 mobile bottom sheet -------------------------------------------
+   Below 720px the right-hand drawer is wrong: at 390px it covers the map it is
+   describing. The same element becomes a bottom sheet with three snap points.
+   Its drag lives on `.sheetgrab` alone — the map captures pointers on the `svg`
+   itself, so a gesture that starts here can never reach the map's pipeline, and
+   the sheet body keeps native scrolling. `touch-action:none` on the bar stops
+   the browser claiming the drag before the handler sees it. */
+.sheethead { display: none; }
+@media (max-width: 720px) {
+  .side.sheet {
+    top: auto; left: 0; right: 0; bottom: 0;
+    width: auto; max-width: 100%; height: 100%;
+    border-left: none; border-top: 1px solid var(--line);
+    border-radius: 16px 16px 0 0;
+    transform: translateY(100%);
+  }
+  .side.sheet.open.snap-full { transform: translateY(6%); }
+  .side.sheet.open.snap-half { transform: translateY(46%); }
+  .side.sheet.open.snap-peek { transform: translateY(78%); }
+  .side.sheet.dragging { transition: none; }
+
+  .side.sheet .sheethead {
+    display: block; position: sticky; top: 0; z-index: 3;
+    height: 44px; background: var(--panel); border-radius: 16px 16px 0 0;
+  }
+  .side.sheet .sheetgrab {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 44px; touch-action: none; cursor: grab;
+  }
+  .side.sheet .sheetgrab .grabline {
+    display: block; width: 46px; height: 4px; border-radius: 999px; background: var(--line2);
+  }
+  .side.sheet .sheetgrab:focus-visible { outline: 2px solid var(--gold); outline-offset: -4px; }
+  .side.sheet .sheetclose {
+    display: flex; position: absolute; top: 0; right: 4px;
+    width: 44px; height: 44px; align-items: center; justify-content: center;
+    font-size: 23px; line-height: 1; color: var(--mut); border-radius: 999px;
+  }
+  .side.sheet .sheetclose:hover { color: var(--gold); }
+
+  /* 44px floor on everything the thumb can reach inside the sheet */
+  .side.sheet .pan { padding: 4px 16px 34px; }
+  .side.sheet .crumb { min-height: 44px; display: inline-flex; align-items: center; }
+  .side.sheet .ixrow, .side.sheet .cirrow { min-height: 44px; padding: 8px; }
+  .side.sheet .actions a { min-height: 44px; display: inline-flex; align-items: center; }
+  .side.sheet .srcs li { padding: 5px 0; }
+  .side.sheet .chip { padding: 6px 12px; }
+}
+/* The grab bar and close button never exist outside sheet mode. */
+.sheetgrab, .sheetclose { display: none; }
+
+/* ---- T-049 timeline coach mark -------------------------------------------
+   A zero-height anchor inside `.timeline` gives the bubble a positioning parent
+   without changing a single existing rule. Width is clamped to the anchor so the
+   hint can never be the thing that puts a phone into horizontal scroll. */
+.coachanchor { position: relative; height: 0; }
+.coach {
+  position: absolute; left: 0; bottom: 8px; z-index: 9;
+  width: min(320px, 100%);
+  padding: 11px 13px 11px;
+  background: var(--panel); box-shadow: var(--shadow);
+  border: 1px solid var(--gold-soft); border-left: 3px solid var(--gold);
+  border-radius: 12px;
+}
+.coach b {
+  display: block; color: var(--gold);
+  font: 400 15px var(--font-display), serif; letter-spacing: .03em;
+}
+.coach p { font-size: 12.5px; color: var(--ink2); line-height: 1.55; margin: 3px 0 9px; }
+.coachok {
+  min-height: 36px; padding: 6px 14px; border: 1px solid var(--line2);
+  border-radius: 8px; font-size: 12.5px; font-weight: 600; color: var(--ink);
+}
+.coachok:hover { color: var(--gold); border-color: var(--gold); }
+/* The entrance only exists where motion is welcome. The global reduce block
+   already neutralises animations; declaring it this way means the hint never
+   animates at all rather than animating for zero seconds. */
+@media (prefers-reduced-motion: no-preference) {
+  .coach { animation: coach-in .26s ease-out both; }
+  @keyframes coach-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+}
+@media (max-width: 720px) {
+  .coach { right: 0; width: auto; }
+  .coachok { min-height: 44px; width: 100%; }
+}
+
+/* ---- T-043 follow-through: the panel's own controls are reachable ---------
+   `.crumb` and `.ixrow` were a <span> and a <div> carrying onClick — invisible
+   to the keyboard and to assistive technology, which is the same WCAG failure
+   T-043 exists to clear. They are <button> elements now. These two rules only
+   undo what the UA stylesheet adds to a button (padding, centred text, shrink
+   -to-fit width); the originals above are untouched and the rendering is
+   pixel-identical. */
+.crumb { padding: 0; text-align: left; }
+.ixrow { width: 100%; text-align: left; }

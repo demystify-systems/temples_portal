@@ -1,0 +1,262 @@
+/**
+ * POST /api/chat — "Ask the Atlas".
+ *
+ * Everything expensive or dangerous is bounded here, because this is the only
+ * endpoint in the project that spends money and the only one that can put words
+ * in the site's voice.
+ *
+ * The four guards, and why each exists:
+ *
+ *   - **Retrieval first, model second.** The corpus is searched before the
+ *     model is called. Nothing retrieved means the answer is a refusal, and a
+ *     refusal never needs a fluent model to compose it if the question was
+ *     asked in English. That makes the commonest bad case free.
+ *   - **Per-IP rate limit.** In-memory, per instance. Not a security boundary —
+ *     a serverless fleet has many instances — but it is what stops one open tab
+ *     with a loop in it from running up a bill.
+ *   - **Hard token ceiling and a bounded tool loop.** A reasoning model that
+ *     keeps calling tools is a model that keeps billing. Three rounds, then it
+ *     answers with what it has.
+ *   - **Fail closed.** Every failure path returns "assistant unavailable". None
+ *     returns a model-composed apology, because composing one costs a call, and
+ *     none falls back to answering unsourced.
+ *
+ * The key is read from `SARVAM_API_KEY` — server-side only. It must never be
+ * `NEXT_PUBLIC_*`: that would inline it into the client bundle of a public repo.
+ */
+
+import { NextResponse } from "next/server";
+import { SITES, type Site } from "@/lib/sites";
+import { chat, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
+import { retrieve, type AtlasRecord } from "@/lib/ai/retrieve";
+import { TOOLS, executeTool } from "@/lib/ai/tools";
+import { systemPrompt, userTurn, REFUSAL, MAX_QUESTION_CHARS } from "@/lib/ai/prompt";
+
+export const runtime = "nodejs";
+/** Never cached: it is a POST that spends money and reads an env var. */
+export const dynamic = "force-dynamic";
+
+// ---------------------------------------------------------------------------
+// ceilings
+// ---------------------------------------------------------------------------
+
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX_REQUESTS = 6;
+/**
+ * Ceiling on the budget handed to any single call. sarvam.ts sets its own floor
+ * (reasoning eats a small budget before a visible character appears) and may
+ * double this once on a truncated reply, so the real per-call worst case is
+ * twice this figure. That is why the cumulative budget below exists as well.
+ */
+const MAX_TOKENS_PER_CALL = 3000;
+/**
+ * The hard ceiling. Completion tokens include the reasoning trace and are
+ * billed, so this — not the per-call figure — is what bounds the cost of one
+ * question. Reaching it stops the tool loop and makes the model answer with
+ * what it already has.
+ */
+const TOKEN_BUDGET_PER_REQUEST = 12_000;
+/** Tool rounds before the model must answer with what it has. */
+const MAX_TOOL_ROUNDS = 3;
+/** Whole-request wall clock, including retries inside sarvam.ts. */
+const REQUEST_TIMEOUT_MS = 30_000;
+/** Records handed to the model on the first turn. */
+const RETRIEVAL_LIMIT = 5;
+/** Entries kept in the rate-limit map before the oldest are dropped. */
+const RATE_LIMIT_MAX_KEYS = 5000;
+
+const UNAVAILABLE = { error: "assistant unavailable" } as const;
+const unavailable = (status = 503) => NextResponse.json(UNAVAILABLE, { status });
+
+// ---------------------------------------------------------------------------
+// rate limiting
+// ---------------------------------------------------------------------------
+
+/** ip -> timestamps within the current window. Per instance, deliberately. */
+const hits = new Map<string, number[]>();
+
+/**
+ * Client IP from the proxy headers Vercel sets. Never trusted for anything but
+ * bucketing — a spoofed header buys a fresh bucket, which is why the token
+ * ceiling below exists independently of this.
+ */
+const clientIp = (request: Request): string =>
+  request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+  request.headers.get("x-real-ip")?.trim() ||
+  "unknown";
+
+const withinRateLimit = (ip: string, now: number): boolean => {
+  // Cheap eviction: the map is bounded so a header-spoofing client cannot grow
+  // it without limit.
+  if (hits.size > RATE_LIMIT_MAX_KEYS) hits.clear();
+  const recent = (hits.get(ip) ?? []).filter((at) => now - at < RATE_LIMIT_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT_MAX_REQUESTS) {
+    hits.set(ip, recent);
+    return false;
+  }
+  hits.set(ip, [...recent, now]);
+  return true;
+};
+
+// ---------------------------------------------------------------------------
+// citations
+// ---------------------------------------------------------------------------
+
+export type Citation = {
+  readonly id: string;
+  readonly name: string;
+  readonly place: string;
+  readonly sources: readonly { readonly l: string; readonly u: string }[];
+};
+
+/**
+ * Citations come from the records the tools actually returned, never from the
+ * model's text. A model cannot fabricate a citation it was never given, so this
+ * is the mechanism that makes contract 1 true rather than merely requested.
+ */
+const toCitations = (records: readonly AtlasRecord[]): Citation[] => {
+  const seen = new Map<string, Citation>();
+  for (const record of records) {
+    if (seen.has(record.id)) continue;
+    seen.set(record.id, {
+      id: record.id,
+      name: record.name,
+      place: [record.place, record.state, record.country].filter(Boolean).join(", "),
+      sources: record.sources,
+    });
+  }
+  return [...seen.values()];
+};
+
+// ---------------------------------------------------------------------------
+// handler
+// ---------------------------------------------------------------------------
+
+const CORPUS = SITES as unknown as readonly (Site & AtlasRecord)[];
+
+export async function POST(request: Request): Promise<Response> {
+  const apiKey = process.env.SARVAM_API_KEY;
+  // No key configured is an unavailable assistant, not a broken page. The rest
+  // of the site is static and must keep working.
+  if (!apiKey) return unavailable();
+
+  if (!withinRateLimit(clientIp(request), Date.now())) {
+    return NextResponse.json(
+      { error: "Too many questions in a short time. Please wait a moment." },
+      { status: 429, headers: { "Retry-After": String(RATE_LIMIT_WINDOW_MS / 1000) } },
+    );
+  }
+
+  let question = "";
+  let language: string | undefined;
+  try {
+    const body: unknown = await request.json();
+    const parsed = (body ?? {}) as { question?: unknown; language?: unknown };
+    question = typeof parsed.question === "string" ? parsed.question.trim() : "";
+    language = typeof parsed.language === "string" && parsed.language.trim()
+      ? parsed.language.trim().slice(0, 40)
+      : undefined;
+  } catch {
+    return NextResponse.json({ error: "Malformed request." }, { status: 400 });
+  }
+
+  if (!question) return NextResponse.json({ error: "Ask a question." }, { status: 400 });
+  if (question.length > MAX_QUESTION_CHARS) {
+    return NextResponse.json(
+      { error: `Please keep the question under ${MAX_QUESTION_CHARS} characters.` },
+      { status: 413 },
+    );
+  }
+
+  const found = retrieve(CORPUS, question, {}, RETRIEVAL_LIMIT);
+
+  // Nothing retrieved. The answer is a refusal, and for a Latin-script question
+  // it needs no model at all — the sentence is fixed. Only a non-Latin question
+  // is worth one bounded call, to say the same thing in the asker's language.
+  if (found.empty && !needsTranslatedRefusal(question, language)) {
+    return NextResponse.json({ answer: REFUSAL, citations: [], refused: true });
+  }
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const maxTokens = Math.min(tokenFloorFor(question), MAX_TOKENS_PER_CALL);
+
+  try {
+    const messages: ChatMessage[] = [
+      { role: "system", content: systemPrompt({ records: found.records, language, total: found.total }) },
+      { role: "user", content: userTurn(question) },
+    ];
+    const cited: AtlasRecord[] = [...found.records];
+    let spent = 0;
+
+    for (let round = 0; round <= MAX_TOOL_ROUNDS; round += 1) {
+      const result = await chat({
+        apiKey,
+        messages,
+        maxTokens,
+        signal: controller.signal,
+        // The final round is answer-only: offering tools there invites a call
+        // whose result nothing would read.
+        ...(found.empty || round === MAX_TOOL_ROUNDS ? {} : { tools: [...TOOLS] }),
+      });
+
+      spent += result.completionTokens;
+
+      // Another tool round only if there is budget left for one. Out of budget,
+      // the model answers from what it has or the request fails closed — it
+      // never keeps looping on the bill.
+      if (result.toolCalls.length > 0 && round < MAX_TOOL_ROUNDS && spent < TOKEN_BUDGET_PER_REQUEST) {
+        messages.push({ role: "assistant", content: result.content, tool_calls: result.toolCalls });
+        for (const call of result.toolCalls) {
+          const outcome = executeTool(call.function.name, call.function.arguments, CORPUS);
+          cited.push(...outcome.cited);
+          messages.push({
+            role: "tool",
+            tool_call_id: call.id,
+            content: JSON.stringify(outcome.result),
+          });
+        }
+        continue;
+      }
+
+      // Truncated by the reasoning trace even after sarvam.ts's retry: there is
+      // no answer to render, and half a sourced answer is worse than none.
+      if (!result.content) return unavailable();
+
+      return NextResponse.json({
+        answer: result.content,
+        citations: found.empty ? [] : toCitations(cited),
+        refused: found.empty,
+      });
+    }
+
+    return unavailable();
+  } catch (error) {
+    // Fail closed, and log server-side only: an upstream message can carry a
+    // request id or a key fragment and must never reach the browser.
+    if (error instanceof SarvamError) {
+      console.error(`[chat] sarvam ${error.status}${error.requestId ? ` req=${error.requestId}` : ""}: ${error.message}`);
+    } else {
+      console.error("[chat] failed:", error);
+    }
+    return unavailable();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * Whether a refusal is worth a model call to translate.
+ *
+ * Latin-script questions get the fixed English sentence for free. A question in
+ * Devanagari, Tamil, Bengali and the rest deserves its refusal in that script —
+ * that is one small, bounded call, and the alternative (an English wall of text
+ * to someone who did not ask in English) is the kind of quiet exclusion the
+ * multilingual design exists to avoid.
+ */
+const NON_LATIN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/u;
+
+function needsTranslatedRefusal(question: string, language?: string): boolean {
+  if (NON_LATIN_SCRIPT.test(question)) return true;
+  return Boolean(language && !/^en\b/i.test(language) && language.toLowerCase() !== "english");
+}

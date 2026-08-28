@@ -1,12 +1,18 @@
 "use client";
 
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { SITES, eraOf, fmtYear, type Site } from "@/lib/sites";
+// The slim, generated search index — NOT "@/lib/sites". Importing anything from
+// that module pulls data/sites.json into the client bundle (309 kB gzipped), and
+// this component is what ships it to every list page. eraOf/fmtYear come from
+// site-utils, which is deliberately corpus-free, for the same reason.
+import { eraOf, fmtYear } from "@/lib/site-utils";
+import { SEARCH_INDEX, type IndexedSite } from "@/lib/search-index";
 import {
   EMPTY_QUERY, FACET_KEYS, facetsOf, filterSites, isActive,
   type FacetCount, type FacetKey, type SearchQuery,
 } from "@/lib/search";
+import { EmptyState, ResultsSkeleton } from "./EmptyState";
 
 /** Long enough to swallow a burst of typing, short enough to feel immediate. */
 const DEBOUNCE_MS = 150;
@@ -78,9 +84,9 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
   queryRef.current = query;
 
   const scoped = useMemo(() => {
-    if (circuit) return SITES.filter((s) => (s.circuits ?? []).includes(circuit));
-    if (dynasty) return SITES.filter((s) => s.dynasty === dynasty);
-    return SITES;
+    if (circuit) return SEARCH_INDEX.filter((s) => (s.circuits ?? []).includes(circuit));
+    if (dynasty) return SEARCH_INDEX.filter((s) => s.dynasty === dynasty);
+    return SEARCH_INDEX;
   }, [circuit, dynasty]);
 
   // Adopt whatever the URL says, on load and on every back/forward.
@@ -133,6 +139,19 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
   }, [commit]);
 
   const results = useMemo(() => filterSites(scoped, query), [scoped, query]);
+
+  /**
+   * The count above is always live; the list below may lag by a beat.
+   *
+   * Filtering is cheap — rendering up to 1,126 rows is not, and the first render
+   * after mount does exactly that whenever the URL arrives with filters on it
+   * (the static HTML is deliberately unfiltered). Deferring only the *rendered*
+   * array lets React keep the controls responsive and tells us, in `isStale`,
+   * precisely when a placeholder is owed. On the first render, server and client
+   * both see the same array instance, so hydration is untouched.
+   */
+  const shownResults = useDeferredValue(results);
+  const isStale = shownResults !== results;
 
   /**
    * Each dropdown counts against the results of every *other* filter, so its
@@ -195,26 +214,19 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
         </span>
       </div>
 
-      <div id={`${panelId}-results`}>
+      <div id={`${panelId}-results`} aria-busy={isStale}>
         {results.length === 0
-          ? <EmptyState onClear={clearAll} />
-          : layout === "table" ? <ResultTable sites={results} /> : <ResultCards sites={results} />}
+          ? <EmptyState total={scoped.length} onClear={clearAll} />
+          : isStale
+            ? <ResultsSkeleton layout={layout} />
+            : layout === "table" ? <ResultTable sites={shownResults} /> : <ResultCards sites={shownResults} />}
       </div>
     </>
   );
 }
 
-function EmptyState({ onClear }: { readonly onClear: () => void }) {
-  return (
-    <p className="noresults">
-      No sites match these filters.{" "}
-      <button type="button" className="reset" onClick={onClear}>clear all</button>
-    </p>
-  );
-}
-
 /** The gazetteer's table, still grouped by country — empty countries drop out. */
-function ResultTable({ sites }: { readonly sites: readonly Site[] }) {
+function ResultTable({ sites }: { readonly sites: readonly IndexedSite[] }) {
   const countries = [...new Set(sites.map((s) => s.country))].sort();
   return (
     <>
@@ -225,7 +237,7 @@ function ResultTable({ sites }: { readonly sites: readonly Site[] }) {
             <h2>{country} · {rows.length}</h2>
             <div className="tablewrap">
               <table className="gz">
-                <thead><tr><th>Site</th><th>Place</th><th>Tradition</th><th>Dynasty</th><th>Built</th></tr></thead>
+                <thead><tr><th>IndexedSite</th><th>Place</th><th>Tradition</th><th>Dynasty</th><th>Built</th></tr></thead>
                 <tbody>
                   {rows.map((s) => (
                     <tr key={s.id}>
@@ -250,7 +262,7 @@ function ResultTable({ sites }: { readonly sites: readonly Site[] }) {
 }
 
 /** The circuit / dynasty card grid. */
-function ResultCards({ sites }: { readonly sites: readonly Site[] }) {
+function ResultCards({ sites }: { readonly sites: readonly IndexedSite[] }) {
   return (
     <div className="cardgrid">
       {sites.map((s) => (
