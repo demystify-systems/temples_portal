@@ -961,9 +961,12 @@
       "id": "T-069",
       "milestone": "M5",
       "type": "code",
-      "title": "Lazy-load `significance` off the critical path: 107.8kB of the 183.6kB index, read only when the visitor types. Target 75.8kB first load (N4)",
+      "title": "Lazy-load `significance` off the critical path. At 2,271 records /sites is 461 kB First Load JS again; significance is the bulk of the index and is read only once the visitor types (N4)",
       "files": [
-        "src/app/SiteFilters.tsx"
+        "src/app/SiteFilters.tsx",
+        "src/lib/search-index.ts",
+        "scripts/build-search-index.mjs",
+        "src/lib/search.ts"
       ],
       "deps": [],
       "status": "done",
@@ -972,7 +975,7 @@
       "retry_after_iteration": 0,
       "status_iteration": 1,
       "evidence": [
-        "measured:/sites First Load JS 570 kB -> 300 kB after wiring the index in"
+        "measured:critical path 579.8 -> 133.4 kB gzipped (77%); /sites 461 -> 248 kB First Load JS"
       ],
       "last_error": null,
       "commit": null

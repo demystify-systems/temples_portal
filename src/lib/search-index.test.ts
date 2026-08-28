@@ -1,8 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { SEARCH_INDEX, type IndexedSite } from "./search-index.ts";
+import { SEARCH_INDEX, loadSignificance, type IndexedSite } from "./search-index.ts";
 import { RECORD_COUNT, COLUMNS } from "./generated/search-index.ts";
+import { TEXT, RECORD_COUNT as TEXT_COUNT } from "./generated/search-index-text.ts";
 import { buildColumns, COLUMN_ORDER } from "../../scripts/build-search-index.mjs";
 import { facetsOf, filterSites, matches, FACET_KEYS, type Searchable } from "./search.ts";
 
@@ -13,6 +14,9 @@ import { facetsOf, filterSites, matches, FACET_KEYS, type Searchable } from "./s
  * index is only trustworthy if it still says what data/sites.json says.
  */
 type Corpus = readonly Record<string, unknown>[];
+/** buildColumns still returns every column; the generator is what splits them. */
+const textColumnOf = (columns: Record<string, string[]>) => columns.significance;
+
 const CORPUS: Corpus = JSON.parse(
   readFileSync(new URL("../../data/sites.json", import.meta.url), "utf8"),
 );
@@ -20,7 +24,7 @@ const CORPUS: Corpus = JSON.parse(
 /** Exactly the fields `search.ts` reads out of a record, per `Searchable`. */
 const SEARCHED_TEXT = [
   "name", "alt", "native", "country", "state", "place",
-  "tradition", "deity", "dynasty", "style", "significance",
+  "tradition", "deity", "dynasty", "style",
 ] as const;
 
 /** What a list page renders on top of what it searches. */
@@ -36,8 +40,16 @@ test("the index holds one record per corpus record, in corpus order", () => {
   );
 });
 
+test("the deferred text column matches the core index row for row", () => {
+  assert.equal(TEXT_COUNT, RECORD_COUNT, "the two halves must describe the same corpus");
+  assert.equal(TEXT.length, CORPUS.length);
+  TEXT.forEach((value, i) => assert.equal(value, CORPUS[i].significance ?? "",
+    `${CORPUS[i].id}: deferred significance must be verbatim`));
+});
+
 test("every generated column is as long as the corpus", () => {
-  for (const field of COLUMN_ORDER) {
+  // `significance` lives in the deferred chunk, covered by the test above.
+  for (const field of COLUMN_ORDER.filter((f: string) => f !== "significance")) {
     const column = (COLUMNS as unknown as Record<string, readonly unknown[]>)[field];
     assert.ok(Array.isArray(column), `column ${field} is missing from the generated file`);
     assert.equal(column.length, CORPUS.length, `column ${field} is the wrong length`);
@@ -69,7 +81,10 @@ test("the index carries nothing a list page does not read", () => {
   assert.deepEqual([...keys].sort(), [...SEARCHED_TEXT, ...RENDERED, "built", "circuits", "tier"].sort());
 });
 
-test("searching the index gives the same answers as searching the corpus", () => {
+test("searching the index gives the same answers as searching the corpus", async () => {
+  // Parity only holds once the deferred text has landed — before that the index
+  // deliberately searches fewer fields, which is the whole point of the split.
+  await loadSignificance();
   const corpusRecords = CORPUS as unknown as readonly Searchable[];
   const queries = [
     "", "meenakshi", "shree", "temple madurai", "chola", "brihadisvara",
@@ -99,14 +114,14 @@ test("a record with no significance is indexed, not rejected", () => {
     style: "Kerala", built: [900, 950], builtDisplay: "10th c.",
   };
   const columns = buildColumns([bare]);
-  assert.equal(columns.significance[0], "", "absent significance becomes an empty column entry");
+  assert.equal(textColumnOf(columns)[0], "", "absent significance becomes an empty column entry");
   assert.equal(columns.alt[0], "");
   assert.equal(columns.native[0], "");
   assert.equal(columns.tier[0], "");
   assert.deepEqual(columns.circuits[0], []);
 
   // And the record still searches on the fields it does have.
-  const record: Searchable = { ...bare, significance: columns.significance[0], circuits: [] };
+  const record: Searchable = { ...bare, significance: textColumnOf(columns)[0], circuits: [] };
   assert.equal(matches(record, "bare"), true);
   assert.equal(matches(record, "nowhere shiva"), true);
   assert.equal(matches(record, "vimana"), false);
@@ -118,8 +133,8 @@ test("a record with no significance survives the whole projection", () => {
     return rest;
   });
   const columns = buildColumns(withoutSignificance);
-  assert.equal(columns.significance.length, CORPUS.length);
-  assert.ok(columns.significance.every((value: string) => value === ""));
+  assert.equal(textColumnOf(columns).length, CORPUS.length);
+  assert.ok(textColumnOf(columns).every((value: string) => value === ""));
   assert.deepEqual(columns.name, CORPUS.map((s) => s.name), "the other columns are unaffected");
 });
 
@@ -151,7 +166,24 @@ test("IndexedSite is assignable to Searchable", () => {
   const asSearchable: readonly Searchable[] = SEARCH_INDEX;
   const first: IndexedSite = SEARCH_INDEX[0];
   assert.equal(asSearchable.length, SEARCH_INDEX.length);
-  assert.equal(typeof first.significance, "string", "significance is never undefined");
+  // Deliberately NOT asserted as undefined here: loadSignificance() mutates the
+  // shared records in place, so whether it has run depends on test order. What
+  // must hold either way is that the value is never invented — it is absent, or
+  // it is the corpus text verbatim.
+  assert.ok(
+    first.significance === undefined || first.significance === CORPUS[0].significance,
+    "significance is either deferred or verbatim — never synthesised",
+  );
   assert.equal(typeof first.id, "string");
   assert.equal(Object.isFrozen(SEARCH_INDEX), true, "the index array is frozen");
+});
+
+test("the critical-path chunk carries no significance at all", () => {
+  // Order-independent, unlike an assertion on a mutated record: this reads the
+  // generated file. If significance ever leaks back into the core chunk, the
+  // 208.7 kB saving silently disappears and only this catches it.
+  const core = readFileSync(new URL("./generated/search-index.ts", import.meta.url), "utf8");
+  assert.ok(!/"significance"/.test(core), "significance must live in the deferred chunk only");
+  const text = readFileSync(new URL("./generated/search-index-text.ts", import.meta.url), "utf8");
+  assert.match(text, /export const TEXT/, "the deferred chunk must export TEXT");
 });

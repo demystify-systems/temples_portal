@@ -85,6 +85,11 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CORPUS = path.join(ROOT, "data", "sites.json");
 const OUT_DIR = path.join(ROOT, "src", "lib", "generated");
 const OUT = path.join(OUT_DIR, "search-index.ts");
+// `significance` is emitted separately so it can be fetched on the first
+// keystroke instead of on page load. It is 209 kB of the index's 345 kB gzipped
+// at 2,271 records — 61% — and `search.ts` only reads it once someone types.
+const OUT_TEXT = path.join(OUT_DIR, "search-index-text.ts");
+const TEXT_COLUMN = "significance";
 
 /**
  * Every field the index carries, in the emitted column order.
@@ -173,7 +178,7 @@ const COLUMN_TS_TYPES = {
  * The emitted `SearchIndexColumns` declaration, derived from COLUMN_ORDER so the
  * two cannot drift: adding a column here is one edit, not two.
  */
-const renderType = () => COLUMN_ORDER
+const renderType = () => COLUMN_ORDER.filter((f) => f !== TEXT_COLUMN)
   .map((field) => `  readonly ${field}: ${COLUMN_TS_TYPES[field] ?? "readonly string[]"};`)
   .join("\n");
 
@@ -206,6 +211,21 @@ export const RECORD_COUNT = ${count};
 export const COLUMNS: SearchIndexColumns = JSON.parse(${payload});
 `;
 
+/** The deferred text column, loaded only when the visitor actually searches. */
+const renderText = (payload, count) => `// GENERATED FILE — DO NOT EDIT BY HAND.
+//
+// Written by scripts/build-search-index.mjs from data/sites.json.
+// Split out of search-index.ts on purpose: this is the ${TEXT_COLUMN} column,
+// the bulk of the index, and search.ts reads it only once a visitor types. It is
+// dynamically imported by src/lib/search-index.ts so it never lands on the
+// critical path of a page nobody searches on.
+
+/** Length matches RECORD_COUNT in search-index.ts, in the same corpus order. */
+export const RECORD_COUNT = ${count};
+
+export const TEXT: readonly string[] = JSON.parse(${payload});
+`;
+
 const main = () => {
   const check = process.argv.includes("--check");
   const sites = JSON.parse(readFileSync(CORPUS, "utf8"));
@@ -214,12 +234,17 @@ const main = () => {
     process.exit(1);
   }
 
-  const payload = JSON.stringify(JSON.stringify(buildColumns(sites)));
+  const allColumns = buildColumns(sites);
+  const { [TEXT_COLUMN]: textColumn, ...coreColumns } = allColumns;
+  const payload = JSON.stringify(JSON.stringify(coreColumns));
+  const textPayload = JSON.stringify(JSON.stringify(textColumn));
   const source = render(payload, sites.length);
+  const textSource = renderText(textPayload, sites.length);
 
   if (check) {
     const onDisk = existsSync(OUT) ? readFileSync(OUT, "utf8") : null;
-    if (onDisk === source) {
+    const onDiskText = existsSync(OUT_TEXT) ? readFileSync(OUT_TEXT, "utf8") : null;
+    if (onDisk === source && onDiskText === textSource) {
       console.log(`build-search-index: up to date (${sites.length} records)`);
       return;
     }
@@ -232,6 +257,7 @@ const main = () => {
 
   mkdirSync(OUT_DIR, { recursive: true });
   writeFileSync(OUT, source);
+  writeFileSync(OUT_TEXT, textSource);
 
   // Both figures are gzip -9 of a JS module, so they are like for like. The
   // banner and the type declaration above are erased by the bundler, so the
@@ -240,9 +266,11 @@ const main = () => {
   const gz = (text) => gzipSync(Buffer.from(text), { level: 9 }).length;
   const before = gz(`export default ${JSON.stringify(sites)};`);
   const after = gz(`export const COLUMNS=JSON.parse(${payload});`);
+  const deferred = gz(`export const TEXT=JSON.parse(${textPayload});`);
   console.log(`build-search-index: ${sites.length} records -> src/lib/generated/search-index.ts`);
   console.log(`  corpus as it ships today  ${kb(before)} gzipped`);
-  console.log(`  this index                ${kb(after)} gzipped  (${Math.round((1 - after / before) * 100)}% smaller)`);
+  console.log(`  critical path             ${kb(after)} gzipped  (${Math.round((1 - after / before) * 100)}% smaller)`);
+  console.log(`  deferred ${TEXT_COLUMN}     ${kb(deferred)} gzipped  (fetched on first keystroke)`);
 };
 
 // Only run when invoked as the entry point: search-index.test.ts imports

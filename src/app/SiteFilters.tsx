@@ -7,7 +7,7 @@ import Link from "next/link";
 // this component is what ships it to every list page. eraOf/fmtYear come from
 // site-utils, which is deliberately corpus-free, for the same reason.
 import { eraOf, fmtYear } from "@/lib/site-utils";
-import { SEARCH_INDEX, type IndexedSite } from "@/lib/search-index";
+import { SEARCH_INDEX, loadSignificance, type IndexedSite } from "@/lib/search-index";
 import {
   EMPTY_QUERY, FACET_KEYS, facetsOf, filterSites, isActive,
   type FacetCount, type FacetKey, type SearchQuery,
@@ -76,6 +76,14 @@ type Props = {
  */
 export default function SiteFilters({ layout, circuit, dynasty, placeholder }: Props) {
   const [query, setQuery] = useState<SearchQuery>(EMPTY_QUERY);
+  /**
+   * Bumped once the deferred `significance` column arrives. `loadSignificance()`
+   * mutates the shared records in place, so React has no way to know the
+   * haystacks just got deeper — this is what re-runs the filter against the
+   * fuller text. Until then a search matches on name, place, deity and dynasty,
+   * which is what the reader sees first anyway.
+   */
+  const [textReady, setTextReady] = useState(0);
   const [draft, setDraft] = useState("");
   const [open, setOpen] = useState(false);
   const panelId = useId();
@@ -99,6 +107,8 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
       queryRef.current = next;
       setQuery(next);
       setDraft(next.q ?? "");
+      // A shared link can arrive with ?q= already set; that is a search too.
+      if (next.q?.trim()) requestText();
     };
     sync();
     window.addEventListener("popstate", sync);
@@ -122,7 +132,24 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
     else window.history.replaceState(null, "", url);
   }, []);
 
+  /**
+   * Fetch the full-text column on the first real keystroke, not on page load.
+   * It is 208.7 kB gzipped of the index's 342 kB at 2,271 records, and nothing
+   * reads it until someone searches — so a visitor who only browses or filters
+   * by facet never pays for it at all.
+   */
+  const textRequested = useRef(false);
+  const requestText = useCallback(() => {
+    if (textRequested.current) return;
+    textRequested.current = true;
+    loadSignificance().then(() => setTextReady((n) => n + 1)).catch(() => {
+      // Full-text depth is an enhancement; the other fields still search.
+      textRequested.current = false;
+    });
+  }, []);
+
   const onSearch = useCallback((value: string) => {
+    if (value.trim()) requestText();
     setDraft(value);
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => commit({ ...queryRef.current, q: value }, false), DEBOUNCE_MS);
@@ -138,7 +165,14 @@ export default function SiteFilters({ layout, circuit, dynasty, placeholder }: P
     commit({ ...EMPTY_QUERY }, true);
   }, [commit]);
 
-  const results = useMemo(() => filterSites(scoped, query), [scoped, query]);
+  // `textReady` is a deliberate dependency, not a stray one: loadSignificance()
+  // mutates the shared records in place, so `scoped` and `query` are
+  // referentially unchanged even though the searchable text just grew.
+  const results = useMemo(
+    () => filterSites(scoped, query),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [scoped, query, textReady],
+  );
 
   /**
    * The count above is always live; the list below may lag by a beat.

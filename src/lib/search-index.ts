@@ -31,9 +31,15 @@ import { COLUMNS, RECORD_COUNT } from "./generated/search-index.ts";
  * from the year pair. Deriving the other 1,122 would be inventing a fact the
  * sources do not support (constitution rule 2).
  */
-export type IndexedSite = Searchable & {
+export type IndexedSite = Omit<Searchable, "significance"> & {
   readonly id: string;
   readonly builtDisplay: string;
+  /**
+   * Absent until `loadSignificance()` resolves. Optional in the type on purpose:
+   * anything reading it must cope with it not being there yet, and `search.ts`
+   * already treats a missing field as an empty haystack contribution.
+   */
+  significance?: string;
 };
 
 /**
@@ -59,7 +65,6 @@ const recordAt = (i: number): IndexedSite => ({
   tier: orUndefined(COLUMNS.tier[i]),
   built: [COLUMNS.built[i][0], COLUMNS.built[i][1]],
   builtDisplay: COLUMNS.builtDisplay[i],
-  significance: COLUMNS.significance[i],
 });
 
 /**
@@ -81,12 +86,36 @@ export const SEARCH_INDEX: readonly IndexedSite[] = Object.freeze(
 );
 
 /**
- * NEXT STEP, once this is wired into SiteFilters and measured in a real build.
+ * Attach the deferred `significance` text.
  *
- * `significance` is 107.5 kB of the 183.6 kB, and it is read by exactly one
- * thing: the full-text haystack in `search.ts`, which only runs when the visitor
- * types. Splitting it into its own chunk that a list page `import()`s on the
- * first keystroke leaves 75.9 kB gzipped on the critical path — a 75% cut
- * against today's 309 kB — while still searching the full, untruncated text.
- * That needs a change in `SiteFilters.tsx`, which is why it is not done here.
+ * `significance` is the bulk of the index — 208.7 kB gzipped of 342 kB at 2,271
+ * records — and exactly one thing reads it: the full-text haystack in
+ * `search.ts`, which only runs once a visitor types. Keeping it off the critical
+ * path takes a list page from 342 kB to 133 kB gzipped; the rest arrives on the
+ * first keystroke, by which point the reader is already looking at results
+ * matched on name, place, deity and dynasty.
+ *
+ * Records are mutated in place rather than rebuilt, deliberately: `search.ts`
+ * caches each record's folded haystack in a `WeakMap` keyed by object identity,
+ * so replacing the objects would silently orphan every cached entry. The cache
+ * is only ever populated by a search, and no search has run before this resolves.
+ *
+ * Idempotent, and safe to call from several places at once — concurrent callers
+ * share the one in-flight import.
  */
+let significancePromise: Promise<void> | null = null;
+
+export const isSignificanceLoaded = (): boolean => significancePromise !== null;
+
+export function loadSignificance(): Promise<void> {
+  significancePromise ??= import("./generated/search-index-text.ts").then(({ TEXT }) => {
+    if (TEXT.length !== SEARCH_INDEX.length) {
+      // A stale half of the pair. Search still works on the other fields, so
+      // degrade rather than throw in the visitor's face.
+      console.warn(`search index: text column has ${TEXT.length} rows, expected ${SEARCH_INDEX.length}`);
+      return;
+    }
+    SEARCH_INDEX.forEach((record, i) => { (record as { significance?: string }).significance = TEXT[i]; });
+  });
+  return significancePromise;
+}

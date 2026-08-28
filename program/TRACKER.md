@@ -100,8 +100,8 @@
       - evidence: measured:index 309->183.6 kB; page bundle 570->300 kB once consumed
 - [x] `T-067` SEO/AEO helpers, /llms.txt and /llms-full.txt, robots AI-crawler policy, data-derived sitemap lastmod (N1)
       - evidence: test:24 seo tests; siteDescription cannot read story (type-enforced)
-- [x] `T-069` Lazy-load `significance` off the critical path: 107.8kB of the 183.6kB index, read only when the visitor types. Target 75.8kB first load (N4)
-      - evidence: measured:/sites First Load JS 570 kB -> 300 kB after wiring the index in
+- [x] `T-069` Lazy-load `significance` off the critical path. At 2,271 records /sites is 461 kB First Load JS again; significance is the bulk of the index and is read only once the visitor types (N4)
+      - evidence: measured:critical path 579.8 -> 133.4 kB gzipped (77%); /sites 461 -> 248 kB First Load JS
 
 ## M6 — Multilingual AI assistant
 
