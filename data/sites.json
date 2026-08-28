@@ -4979,7 +4979,11 @@
   ],
   "verified": "wikipedia-2026-08-26",
   "wiki": "https://en.wikipedia.org/wiki/Boudhanath",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "swayambhunath",
@@ -5828,7 +5832,11 @@
    "Bagan",
    "Mandalay Region",
    "Myanmar"
-  ]
+  ],
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "shwezigon-bagan",
@@ -6913,7 +6921,11 @@
    "Magelang",
    "Central Java",
    "Indonesia"
-  ]
+  ],
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "prambanan",
@@ -29057,9 +29069,10 @@
   "tier": "compact",
   "style": "—",
   "deities": [
-   "Navagraha"
+   "Navagraha",
+   "Shiva"
   ],
-  "deityGroup": "Smarta"
+  "deityGroup": "Shaiva"
  },
  {
   "id": "basistha-guwahati",
@@ -30335,7 +30348,11 @@
   "tier": "compact",
   "style": "—",
   "phone": "08023471956",
-  "phoneVerified": "official-site-2026-08-27"
+  "phoneVerified": "official-site-2026-08-27",
+  "deities": [
+   "Krishna"
+  ],
+  "deityGroup": "Vaishnava"
  },
  {
   "id": "bull-temple-bengaluru",
@@ -33554,7 +33571,8 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Guru Granth Sahib"
+   "Guru Granth Sahib",
+   "Guru Har Krishan"
   ],
   "deityGroup": "Sikh"
  },
@@ -33708,6 +33726,7 @@
    "Punjab"
   ],
   "deities": [
+   "Guru Amar Das",
    "Guru Granth Sahib"
   ],
   "deityGroup": "Sikh"
@@ -34570,7 +34589,11 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Padmaprabha"
+  ],
+  "deityGroup": "Jain"
  },
  {
   "id": "kulpakji-kolanupaka",
@@ -34690,6 +34713,7 @@
    "Gandaki Province"
   ],
   "deities": [
+   "Devi",
    "Durga"
   ],
   "deityGroup": "Shakta"
@@ -37472,7 +37496,11 @@
    "Thma Puok District",
    "Banteay Meanchey Province",
    "Cambodia"
-  ]
+  ],
+  "deities": [
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "prasat-thom-koh-ker",
@@ -37887,7 +37915,8 @@
    "Indonesia"
   ],
   "deities": [
-   "Avalokiteshvara"
+   "Avalokiteshvara",
+   "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"
  },
@@ -42062,6 +42091,7 @@
    "Mahavira",
    "Neminatha",
    "Parshvanatha",
+   "Sambhavanatha",
    "Shantinatha"
   ],
   "deityGroup": "Jain"
@@ -42385,7 +42415,11 @@
    "Amritsar",
    "Amritsar district",
    "Jalandhar division"
-  ]
+  ],
+  "deities": [
+   "Akal Purakh"
+  ],
+  "deityGroup": "Sikh"
  },
  {
   "id": "baba-bakala-amritsar",
@@ -42777,6 +42811,7 @@
    "India"
   ],
   "deities": [
+   "Amitabha",
    "Gautama Buddha",
    "Maitreya"
   ],
@@ -44114,7 +44149,8 @@
   ],
   "deities": [
    "Ajitanatha",
-   "Rishabhanatha"
+   "Rishabhanatha",
+   "Sambhavanatha"
   ],
   "deityGroup": "Jain"
  },
@@ -48453,7 +48489,11 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Bhairavi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "bhattarika-baramba",
@@ -50589,9 +50629,10 @@
   "tier": "compact",
   "style": "—",
   "deities": [
+   "Bhairavi",
    "Shiva"
   ],
-  "deityGroup": "Shaiva"
+  "deityGroup": "Shakta"
  },
  {
   "id": "rojhri-dham-anupgarh",
@@ -65815,7 +65856,11 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Bhairavi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "patnadevi-chalisgaon",
@@ -83215,7 +83260,8 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Mahavira"
+   "Mahavira",
+   "Padmaprabha"
   ],
   "deityGroup": "Jain"
  },
@@ -86620,7 +86666,8 @@
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
   "deities": [
-   "Krishna"
+   "Krishna",
+   "Shiva"
   ],
   "deityGroup": "Vaishnava"
  },
@@ -86695,7 +86742,13 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Guru Har Krishan",
+   "Guru Har Rai",
+   "Guru Hargobind"
+  ],
+  "deityGroup": "Sikh"
  },
  {
   "id": "nilamadhav-kantilo",
@@ -92955,6 +93008,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
+   "Devi",
    "Durga",
    "Tripura Sundari"
   ],
@@ -93094,7 +93148,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "venkatesh-mandir-kathmandu",
@@ -93197,7 +93255,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Devi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "balkumari-lalitpur",
@@ -95087,7 +95149,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Bhairavi"
+  ],
+  "deityGroup": "Shakta"
  },
  {
   "id": "rana-ujeshwori-tansen",
@@ -99648,7 +99714,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "surawana-kediri",
@@ -104394,7 +104464,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Guru Hargobind"
+  ],
+  "deityGroup": "Sikh"
  },
  {
   "id": "manji-sahib-alamgir",
@@ -106422,7 +106496,12 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Amitabha",
+   "Avalokiteshvara"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "raghunath-kullu",
@@ -111197,7 +111276,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "shwesandaw-bagan",
@@ -111535,6 +111618,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
+   "Amitabha",
    "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"
@@ -114383,7 +114467,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Gautama Buddha"
+  ],
+  "deityGroup": "Buddhist"
  },
  {
   "id": "thatta-thattaha-maha-bawdi-naypyidaw",
@@ -115468,7 +115556,11 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
-  "style": "—"
+  "style": "—",
+  "deities": [
+   "Sikh martyrs"
+  ],
+  "deityGroup": "Sikh"
  },
  {
   "id": "gurdwara-sahib-klang",
@@ -115579,7 +115671,8 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "deities": [
-   "Guru Granth Sahib"
+   "Guru Granth Sahib",
+   "Guru Ram Das"
   ],
   "deityGroup": "Sikh"
  },
@@ -115692,7 +115785,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Sikh martyrs"
+  ],
+  "deityGroup": "Sikh"
  },
  {
   "id": "beri-sahib-sialkot",
@@ -116290,7 +116387,11 @@
    }
   ],
   "verified": "wikipedia-2026-08-28",
-  "tier": "compact"
+  "tier": "compact",
+  "deities": [
+   "Sambhavanatha"
+  ],
+  "deityGroup": "Jain"
  },
  {
   "id": "muchhal-mahavir-ghanerao",
@@ -116513,6 +116614,7 @@
   "tier": "compact",
   "style": "—",
   "deities": [
+   "Amitabha",
    "Gautama Buddha"
   ],
   "deityGroup": "Buddhist"

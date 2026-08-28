@@ -229,7 +229,9 @@
         "radha-krishna",
         "khatu shyam",
         "barbarika",
-        "shyam baba"
+        "shyam baba",
+        "krishnachandra",
+        "radha krishnachandra"
       ]
     },
     "Rama": {
@@ -325,7 +327,10 @@
         "shakambhari",
         "chaturdasha devata",
         "bhagvati",
-        "vaishnavi"
+        "vaishnavi",
+        "bhagawati",
+        "dakneshwori",
+        "palanchok bhagawati"
       ],
       "suffixes": [
         "amman",
@@ -557,7 +562,12 @@
         "tooth relic",
         "reclining buddha",
         "seated buddha",
-        "maravijaya"
+        "maravijaya",
+        "buddhas",
+        "dhyani buddhas",
+        "dhyani buddha",
+        "seated buddhas",
+        "standing buddhas"
       ]
     },
     "Avalokiteshvara": {
@@ -568,7 +578,10 @@
         "chenrezig",
         "kuan yim",
         "guanyin",
-        "lokesvara"
+        "lokesvara",
+        "lokeshvara",
+        "lokesvara",
+        "thousand armed avalokitesvara"
       ]
     },
     "Maitreya": {
@@ -739,6 +752,106 @@
       "group": "Buddhist",
       "aliases": [
         "prajnaparamita"
+      ]
+    },
+    "Bhairavi": {
+      "group": "Shakta",
+      "aliases": [
+        "bhairavi",
+        "bhairabi",
+        "siddha bhairavi"
+      ]
+    },
+    "Padmaprabha": {
+      "group": "Jain",
+      "aliases": [
+        "padmaprabha",
+        "padmaprabhu"
+      ]
+    },
+    "Sambhavanatha": {
+      "group": "Jain",
+      "aliases": [
+        "sambhavanatha",
+        "sambhavanath",
+        "shobhnath"
+      ]
+    },
+    "Amitabha": {
+      "group": "Buddhist",
+      "aliases": [
+        "amitabha",
+        "amitayus",
+        "opame"
+      ]
+    },
+    "Guru Angad": {
+      "group": "Sikh",
+      "aliases": [
+        "guru angad",
+        "angad dev"
+      ]
+    },
+    "Guru Amar Das": {
+      "group": "Sikh",
+      "aliases": [
+        "guru amar das",
+        "amar das"
+      ]
+    },
+    "Guru Ram Das": {
+      "group": "Sikh",
+      "aliases": [
+        "guru ram das",
+        "ram das"
+      ]
+    },
+    "Guru Hargobind": {
+      "group": "Sikh",
+      "aliases": [
+        "guru hargobind",
+        "hargobind"
+      ]
+    },
+    "Guru Har Rai": {
+      "group": "Sikh",
+      "aliases": [
+        "guru har rai",
+        "har rai"
+      ]
+    },
+    "Guru Har Krishan": {
+      "group": "Sikh",
+      "aliases": [
+        "guru har krishan",
+        "har krishan"
+      ]
+    },
+    "Guru Amardas": {
+      "group": "Sikh",
+      "aliases": [
+        "guru amardas"
+      ]
+    },
+    "Akal Purakh": {
+      "group": "Sikh",
+      "aliases": [
+        "akal purakh",
+        "the timeless one",
+        "timeless one",
+        "waheguru",
+        "akal"
+      ]
+    },
+    "Sikh martyrs": {
+      "group": "Sikh",
+      "aliases": [
+        "sikh martyr",
+        "sikh martyrs",
+        "bhai taru singh",
+        "bhai mani singh",
+        "shahid",
+        "shaheed"
       ]
     }
   }
