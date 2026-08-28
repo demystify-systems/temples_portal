@@ -52,4 +52,6 @@ export const PREF_KEYS = {
   voiceLanguage: "voice.lang",
   /** Whether the map's era key is expanded. */
   legendOpen: "map.legend",
+  /** Whether the intro card has been dismissed. A first-run explanation that returns every visit is an advertisement. */
+  overviewDismissed: "atlas.introDismissed",
 } as const;
