@@ -97659,5 +97659,71 @@
   "verified": "wikipedia-2026-08-28",
   "tier": "compact",
   "style": "—"
+ },
+ {
+  "id": "wat-botum-phnom-penh",
+  "name": "Wat Botum",
+  "country": "Cambodia",
+  "state": "Phnom Penh",
+  "place": "Phnom Penh",
+  "lat": 11.5594,
+  "lng": 104.931,
+  "tradition": "Buddhist",
+  "deity": "Buddha (relics from Sri Lanka enshrined in the main stupa)",
+  "built": [
+   1442,
+   1442
+  ],
+  "builtDisplay": "founded 1442, rebuilt 1865",
+  "dynasty": "Post-Angkorian (King Ponhea Yat)",
+  "style": "Khmer Buddhist pagoda",
+  "circuits": [],
+  "significance": "One of the oldest and most important pagodas in Phnom Penh, founded as Wat Khpob Ta Yang by King Ponhea Yat in 1442 and renamed Wat Botum Vatey Reachvararam, the temple fenced with lotus, when King Norodom rebuilt and enlarged it in 1865. Its 33 m quadrangular main stupa, flanked by four 6 m corner stupas, holds Buddha relics presented from Sri Lanka in 1887.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Botum",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Botum"
+   },
+   {
+    "l": "Wikidata Q7972919",
+    "u": "https://www.wikidata.org/wiki/Q7972919"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-saravan-phnom-penh",
+  "name": "Wat Saravan",
+  "country": "Cambodia",
+  "state": "Phnom Penh",
+  "place": "Phnom Penh",
+  "lat": 11.5658,
+  "lng": 104.926,
+  "tradition": "Buddhist",
+  "deity": "Buddha (Theravada monastery)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Theravada monastery in Daun Penh district, north-west of the Royal Palace and south-west of Wat Ounalom, formally called Wat Saravan Techo. It keeps more than 3,400 manuscripts, a collection described as the largest library in Cambodia.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Saravan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Saravan"
+   },
+   {
+    "l": "Wikidata Q7972956",
+    "u": "https://www.wikidata.org/wiki/Q7972956"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact",
+  "style": "—"
  }
 ]

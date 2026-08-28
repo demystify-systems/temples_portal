@@ -517,7 +517,7 @@
     "dynasty": "Undetermined",
     "style": "Early Central Javanese Hindu candi form",
     "circuits": [],
-    "significance": "A small andesite Shaivite temple on an island in Situ Cangkuang lake, 8.5 m tall on a 4.5 m square base, sheltering a 62 cm stone Shiva. Its plain three-stepped roof with pseudo-lingam pinnacles resembles the earliest Central Javanese Hindu temples, and experts put it around the early 8th century, roughly contemporary with the Dieng group.",
+    "significance": "A small andesite Shaivite temple on an island in Situ Cangkuang lake, 8.5 m tall on a 4.5 m square base, sheltering a 62 cm stone image of Shiva. Its plain three-stepped roof with pseudo-lingam pinnacles follows the earliest Central Javanese Hindu temples, and experts put it around the early 8th century, roughly contemporary with the Dieng group.",
     "wiki": "https://en.wikipedia.org/wiki/Cangkuang",
     "sources": [
       { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Cangkuang" },
@@ -542,7 +542,7 @@
     "style": "Fortified plateau settlement with candi architecture",
     "circuits": [],
     "significance": "A walled complex of gates, terraces, pools and shrines on a plateau about 3 km south of Prambanan, identified with the Abhayagiri Vihara, the monastery on the hill free from danger. Occupied through the 8th and 9th centuries, it mixes Buddhist remains such as an Avalokitesvara shrine, Dhyani Buddhas and an Akshobhya effigy with Hindu ones including a lingam and yoni, Durga, Ganesha and Garuda.",
-    "story": "Javanese folklore makes the plateau the palace of King Boko, whose daughter Loro Jonggrang set Prince Bandung Bondowoso to raise a thousand temples in a night, then had the village women pound rice so the cocks would crow early, for which the prince turned her to stone.",
+    "story": "Javanese folklore makes the plateau the palace of King Boko, whose daughter Loro Jonggrang set Prince Bandung Bondowoso to raise a thousand temples in one night and then had the crowing of cocks faked at dawn to spoil the work, for which the prince turned her to stone.",
     "wiki": "https://en.wikipedia.org/wiki/Ratu_Boko",
     "sources": [
       { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Ratu_Boko" },
@@ -565,7 +565,7 @@
     "builtDisplay": "founded 1443",
     "dynasty": "Post-Angkorian (King Ponhea Yat)",
     "circuits": [],
-    "significance": "The spiritual and administrative centre of Cambodian Theravada Buddhism and long the seat of the Mahanikaya order, a 44-building compound founded in 1443 under King Ponhea Yat over an earlier Angkorian stone sanctuary. Its name recalls the unnalom, the hair from between the Buddha's brows enshrined in its central stupa; the monastery was restored after the Khmer Rouge years.",
+    "significance": "The spiritual and administrative centre of Cambodian Theravada Buddhism and long the seat of the Mahanikaya order, a 44-building compound founded in 1443 and raised over an earlier Angkorian stone sanctuary, so reckoned older than Phnom Penh itself. Its name recalls the unnalom, the hair from between the Buddha's brows that the central stupa enshrines; the monastery was rebuilt after the Khmer Rouge years.",
     "wiki": "https://en.wikipedia.org/wiki/Wat_Ounalom",
     "sources": [
       { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Wat_Ounalom" },
@@ -594,6 +594,53 @@
     "sources": [
       { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Wat_Damnak" },
       { "l": "Wikidata Q107735892", "u": "https://www.wikidata.org/wiki/Q107735892" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
+  },
+  {
+    "id": "wat-botum-phnom-penh",
+    "name": "Wat Botum",
+    "country": "Cambodia",
+    "state": "Phnom Penh",
+    "place": "Phnom Penh",
+    "lat": 11.5594,
+    "lng": 104.931,
+    "tradition": "Buddhist",
+    "deity": "Buddha (relics from Sri Lanka enshrined in the main stupa)",
+    "built": [1442, 1442],
+    "builtDisplay": "founded 1442, rebuilt 1865",
+    "dynasty": "Post-Angkorian (King Ponhea Yat)",
+    "style": "Khmer Buddhist pagoda",
+    "circuits": [],
+    "significance": "One of the oldest and most important pagodas in Phnom Penh, founded as Wat Khpob Ta Yang by King Ponhea Yat in 1442 and renamed Wat Botum Vatey Reachvararam, the temple fenced with lotus, when King Norodom rebuilt and enlarged it in 1865. Its 33 m quadrangular main stupa, flanked by four 6 m corner stupas, holds Buddha relics presented from Sri Lanka in 1887.",
+    "wiki": "https://en.wikipedia.org/wiki/Wat_Botum",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Wat_Botum" },
+      { "l": "Wikidata Q7972919", "u": "https://www.wikidata.org/wiki/Q7972919" }
+    ],
+    "verified": "wikipedia-2026-08-28",
+    "tier": "compact"
+  },
+  {
+    "id": "wat-saravan-phnom-penh",
+    "name": "Wat Saravan",
+    "country": "Cambodia",
+    "state": "Phnom Penh",
+    "place": "Phnom Penh",
+    "lat": 11.5658,
+    "lng": 104.926,
+    "tradition": "Buddhist",
+    "deity": "Buddha (Theravada monastery)",
+    "built": [1000, 1800],
+    "builtDisplay": "dating unrecorded",
+    "dynasty": "Undetermined",
+    "circuits": [],
+    "significance": "A Theravada monastery in Daun Penh district, north-west of the Royal Palace and south-west of Wat Ounalom, formally called Wat Saravan Techo. It keeps more than 3,400 manuscripts, a collection described as the largest library in Cambodia.",
+    "wiki": "https://en.wikipedia.org/wiki/Wat_Saravan",
+    "sources": [
+      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Wat_Saravan" },
+      { "l": "Wikidata Q7972956", "u": "https://www.wikidata.org/wiki/Q7972956" }
     ],
     "verified": "wikipedia-2026-08-28",
     "tier": "compact"
