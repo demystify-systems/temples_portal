@@ -215,6 +215,10 @@ export function useCall(): Call {
   }, [fetchClips]);
 
   /** One complete turn: audio -> transcript -> answer -> speech. */
+  /** Prior turns, so a follow-up has an antecedent. Read from a ref, not state, because runTurn is not re-created per turn. */
+  const turnsRef = useRef<readonly CallTurn[]>([]);
+  turnsRef.current = turns;
+
   const runTurn = useCallback(async (audio: Blob, durationMs: number) => {
     const controller = new AbortController();
     abortRef.current = controller;
@@ -243,7 +247,16 @@ export function useCall(): Call {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
-        body: JSON.stringify({ question: text, language: languageRef.current ?? undefined }),
+        body: JSON.stringify({
+          question: text,
+          language: languageRef.current ?? undefined,
+          // The last two exchanges, so "when was it built" resolves. Trimmed
+          // server-side too; this is a convenience, not the boundary.
+          history: turnsRef.current.slice(-4).map((t) => ({ role: t.role, content: t.text })),
+          // The antecedent for a pronoun: what the previous answer cited.
+          context: (turnsRef.current.filter((t) => t.role === "assistant").at(-1)?.citations ?? [])
+            .slice(0, 3).map((c) => c.id),
+        }),
       });
       const payload = (await answered.json().catch(() => null)) as
         { answer?: string; citations?: CallTurn["citations"]; refused?: boolean } | null;
