@@ -219,6 +219,49 @@ export function pickRecordingMime(isSupported: (type: string) => boolean): strin
  * on an Opus body is a way to be told "unsupported" by an API that would
  * otherwise have coped.
  */
+/**
+ * MIME types Sarvam's speech-to-text will accept, read off the API itself.
+ *
+ * Obtained by sending a deliberately invalid type, which answers with the whole
+ * list. Copied here rather than trusted from documentation, because the exact
+ * membership is what matters: `audio/webm` is on it and `audio/webm;codecs=opus`
+ * is NOT, and Sarvam compares the STRING, not the base type.
+ */
+export const SARVAM_AUDIO_TYPES: readonly string[] = [
+  "audio/mpeg", "audio/mp3", "audio/mpeg3", "audio/x-mpeg-3", "audio/x-mp3",
+  "audio/wav", "audio/x-wav", "audio/wave", "audio/pcm_s16le", "audio/l16",
+  "audio/raw", "application/octet-stream", "audio/aac", "audio/x-aac",
+  "audio/aiff", "audio/x-aiff", "audio/ogg", "audio/opus", "audio/flac",
+  "audio/x-flac", "audio/mp4", "audio/x-m4a", "audio/amr", "audio/x-ms-wma",
+  "audio/webm", "video/webm",
+];
+
+/**
+ * The Content-Type to send one recording under.
+ *
+ * THIS IS WHY VOICE INPUT NEVER WORKED. `MediaRecorder` reports its output as
+ * `audio/webm;codecs=opus` — every Chromium browser, every recording — and the
+ * route forwarded that string verbatim. Sarvam matches the full string against
+ * the list above, so the codec parameter alone made every upload fail:
+ *
+ *   audio/webm               -> 200
+ *   audio/webm;codecs=opus   -> "Invalid file type"
+ *
+ * The route's catch reported that as "Voice input is unavailable right now" —
+ * a message about a key or an outage, for what was actually a punctuation
+ * mismatch, which is why it survived a model fix that was aimed at the same
+ * symptom.
+ *
+ * Parameters are therefore stripped, and anything still unrecognised falls back
+ * to `application/octet-stream`, which Sarvam accepts explicitly and for which
+ * it infers the format from the filename — the reason `fileNameFor` exists.
+ */
+export function uploadMimeType(type: string | null | undefined): string {
+  const base = baseMimeType(type);
+  if (SARVAM_AUDIO_TYPES.includes(base)) return base;
+  return "application/octet-stream";
+}
+
 export function fileNameFor(type: string | null | undefined): string {
   const base = baseMimeType(type);
   const extension =

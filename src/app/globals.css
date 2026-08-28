@@ -167,7 +167,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
    toggle sits on the LEFT edge so the chevron points at the thing it opens,
    and the button stays put between states — a control that moves when you
    press it is a control you have to re-find. */
-.maplegend{position:absolute;left:12px;bottom:10px;z-index:4;
+.maplegend{position:absolute;left:12px;bottom:10px;z-index:3;
   background:color-mix(in srgb,var(--panel) 92%,transparent);
   border:1px solid var(--line);border-radius:10px;
   font-size:10.5px;color:var(--ink2);
@@ -425,10 +425,16 @@ table.gz tr:last-child td{border-bottom:none}
    The panel is fixed and does not lock the page: `aria-modal="false"` in the
    markup matches that — a pilgrim reading a site page should be able to keep
    reading it while an answer arrives. */
-.asstlaunch{position:fixed;right:16px;bottom:16px;z-index:44;display:flex;align-items:center;gap:7px;padding:10px 16px;min-height:44px;border:1px solid var(--gold);border-radius:999px;background:var(--panel);color:var(--gold);font-size:13.5px;font-weight:600;letter-spacing:.02em;box-shadow:var(--shadow)}
+/* Clear of the timeline by default. The timeline is the full width of the
+   screen and 143px tall on a phone, so a launcher pinned to bottom:16px lands
+   on the era buttons and the year slider — a control covering a control.
+   --tl-h is 0 on pages that have no timeline, so this is still bottom:16px
+   there. It can also be dragged anywhere and it stays put. */
+.asstlaunch{position:fixed;right:16px;bottom:calc(var(--tl-h, 0px) + 16px);z-index:44;touch-action:none;display:flex;align-items:center;gap:7px;padding:10px 16px;min-height:44px;border:1px solid var(--gold);border-radius:999px;background:var(--panel);color:var(--gold);font-size:13.5px;font-weight:600;letter-spacing:.02em;box-shadow:var(--shadow)}
 .asstlaunch:hover{background:var(--panel2)}
 .asstlaunch span{font-size:15px;line-height:1}
 
+.asstlaunch.dragging{opacity:.9;cursor:grabbing;transition:none;box-shadow:0 12px 34px rgba(0,0,0,.28)}
 .asstscrim{position:fixed;inset:0;z-index:44;background:var(--scrim);opacity:1;transition:opacity .18s}
 
 .asstpanel{position:fixed;right:16px;bottom:16px;z-index:45;display:flex;flex-direction:column;width:min(430px,calc(100vw - 32px));max-height:min(620px,calc(100dvh - 32px));border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:var(--shadow);overflow:hidden;transform:translateY(8px);opacity:0;transition:transform .2s ease,opacity .16s ease}
@@ -478,7 +484,12 @@ table.gz tr:last-child td{border-bottom:none}
 /* Phone: the panel becomes a bottom sheet edge to edge, and the launcher shrinks
    to a pill that clears the sheet. Verified against a 390px viewport. */
 @media (max-width:560px){
-  .asstlaunch{right:12px;bottom:12px;padding:10px 14px;font-size:13px}
+  /* Must clear the timeline here too. This rule is WHY the launcher sat on the
+     era buttons: the base rule already accounted for --tl-h and this one
+     silently put it back at bottom:12px, which on a 915px screen is exactly
+     where the slider is. A narrower media query overriding a computed offset
+     with a constant is the whole bug in one line. */
+  .asstlaunch{right:12px;bottom:calc(var(--tl-h, 0px) + 12px);padding:10px 14px;font-size:13px}
   .asstpanel{right:0;left:0;bottom:0;width:100%;max-height:min(82dvh,calc(100dvh - 44px));border-radius:14px 14px 0 0;border-bottom:none}
   .asstlog{padding:12px}
   .asstturn.user .assttext{max-width:92%}
@@ -1148,7 +1159,7 @@ table.gz tr:last-child td{border-bottom:none}
      this on mount and on every resize — the timeline reflows with the viewport,
      so no written-down number stays true. This value is what the sheet uses for
      the one frame before that happens. */
-  --tl-h:96px;
+  --tl-h:0px;
   --head-h:116px;
 }
 

@@ -73,6 +73,56 @@ export const VAD = {
   BARGE_IN_MS: 400,
 } as const;
 
+/**
+ * Calibration: work out what "silence" sounds like on THIS microphone.
+ *
+ * A fixed absolute threshold cannot work across devices. Microphone gain varies
+ * by an order of magnitude between a laptop, a headset and a phone held at
+ * arm's length, and the browser's own automatic gain control moves it again
+ * while you speak. Measured on a synthetic capture device, a whole call sat at
+ * RMS 0.001 — fifty times below the 0.02 constant — so the detector never once
+ * fired and the call sat on "Listening" forever, issuing no requests and giving
+ * the user nothing to react to.
+ *
+ * So the floor is measured instead of assumed: sample the room for half a second
+ * at the start of a call, and set the speech threshold as a multiple of what was
+ * actually there.
+ */
+export const CALIBRATION = {
+  /** How long to listen before deciding. Long enough to average out a cough. */
+  MS: 600,
+  /** Speech must be this many times the noise floor. */
+  FACTOR: 3.5,
+  /**
+   * The threshold can never go below this, however quiet the room.
+   *
+   * In a silent room the floor approaches zero, and a threshold of
+   * 3.5 x nothing would trigger on the microphone's own hiss. This is the
+   * "definitely not silence" line for a signal normalised to [-1, 1].
+   */
+  MIN: 0.006,
+  /**
+   * Nor above this, however loud the room.
+   *
+   * Calibrating in a bus should not raise the bar past ordinary speech and
+   * leave someone unable to be heard at all. Above this the room is the problem
+   * and a higher threshold will not fix it.
+   */
+  MAX: 0.05,
+} as const;
+
+/**
+ * The speech threshold for a measured noise floor.
+ *
+ * Pure, so the clamping either side is testable without a microphone — which is
+ * the whole reason the original constant went unchallenged.
+ */
+export const thresholdForFloor = (floorRms: number): number => {
+  const scaled = floorRms * CALIBRATION.FACTOR;
+  if (!Number.isFinite(scaled) || scaled < CALIBRATION.MIN) return CALIBRATION.MIN;
+  return Math.min(scaled, CALIBRATION.MAX);
+};
+
 /** Root-mean-square amplitude of one frame of PCM samples in [-1, 1]. */
 export function rms(samples: ArrayLike<number>): number {
   if (samples.length === 0) return 0;

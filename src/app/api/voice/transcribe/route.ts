@@ -27,6 +27,7 @@ import { speechToText, SarvamError } from "@/lib/ai/sarvam";
 import {
   MAX_AUDIO_BYTES,
   fileNameFor,
+  uploadMimeType,
   guardAudio,
   isSpeakable,
   languageLabel,
@@ -114,8 +115,12 @@ export async function POST(request: Request): Promise<Response> {
     // Re-wrapped rather than forwarded as-is: Sarvam reads the filename
     // extension, and a `blob` with no extension is a rejection for a reason
     // that has nothing to do with the audio.
+    // The type is NORMALISED, not forwarded. MediaRecorder reports
+    // `audio/webm;codecs=opus`, Sarvam matches the whole string against its
+    // accepted list, and the codec parameter alone was rejecting every single
+    // browser recording. See uploadMimeType.
     const named = new File([await audio.arrayBuffer()], fileNameFor(audio.type), {
-      type: audio.type || "audio/webm",
+      type: uploadMimeType(audio.type),
     });
 
     const result = await speechToText({

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { rms, detectTurn, initialVadState, shouldBargeIn, VAD, type VadState } from "./vad.ts";
+import { rms, detectTurn, initialVadState, shouldBargeIn, thresholdForFloor, CALIBRATION, VAD, type VadState } from "./vad.ts";
 
 const FRAME = 20; // ms per frame, as the Web Audio worklet delivers them
 
@@ -132,4 +132,62 @@ test("the silence window can be overridden without touching the module", () => {
     if (step.event !== "none") events.push(step.event);
   }
   assert.deepEqual(events, ["speech-end"], "a shorter window ends the turn sooner");
+});
+
+// ---------------------------------------------------------------------------
+// calibration — why a fixed threshold could not work
+// ---------------------------------------------------------------------------
+
+test("the threshold scales with the room, not with a constant", () => {
+  // A quiet laptop mic and a phone at arm's length differ by an order of
+  // magnitude, and the browser's own gain control moves it again mid-sentence.
+  assert.ok(thresholdForFloor(0.01) > thresholdForFloor(0.002));
+  assert.equal(thresholdForFloor(0.004), 0.004 * CALIBRATION.FACTOR);
+});
+
+test("a silent room does not produce a threshold of nearly zero", () => {
+  // 3.5 x nothing is nothing, and the detector would then trigger on the
+  // microphone's own hiss and send silence to a paid transcription.
+  assert.equal(thresholdForFloor(0), CALIBRATION.MIN);
+  assert.equal(thresholdForFloor(0.0001), CALIBRATION.MIN);
+  assert.equal(thresholdForFloor(Number.NaN), CALIBRATION.MIN);
+});
+
+test("a loud room does not raise the bar past ordinary speech", () => {
+  // Calibrating on a bus must not leave someone unable to be heard at all.
+  assert.equal(thresholdForFloor(0.9), CALIBRATION.MAX);
+  assert.ok(thresholdForFloor(0.2) <= CALIBRATION.MAX);
+});
+
+test("a quiet microphone that the old constant ignored now opens a turn", () => {
+  // The measured failure: a whole call at RMS 0.001-0.004, fifty times below
+  // the 0.02 constant, so the detector never fired and the call sat on
+  // "Listening" for ever with no request and nothing to react to.
+  const quietFloor = 0.0008;
+  const threshold = thresholdForFloor(quietFloor);
+  const quietSpeech = 0.012; // audible, but far under the old 0.02
+  assert.ok(quietSpeech >= threshold, "quiet speech must clear a calibrated threshold");
+
+  let state = initialVadState;
+  const events: string[] = [];
+  for (let i = 0; i < 20; i += 1) {
+    const step = detectTurn(state, quietSpeech, FRAME, { speechRms: threshold });
+    state = step.state;
+    if (step.event !== "none") events.push(step.event);
+  }
+  assert.deepEqual(events, ["speech-start"]);
+});
+
+test("calibrated silence still ends a turn", () => {
+  const threshold = thresholdForFloor(0.0008);
+  let state = initialVadState;
+  for (let i = 0; i < 20; i += 1) state = detectTurn(state, 0.012, FRAME, { speechRms: threshold }).state;
+  assert.ok(state.speaking);
+  const events: string[] = [];
+  for (let i = 0; i < 60; i += 1) {
+    const step = detectTurn(state, 0.0008, FRAME, { speechRms: threshold });
+    state = step.state;
+    if (step.event !== "none") events.push(step.event);
+  }
+  assert.deepEqual(events, ["speech-end"]);
 });
