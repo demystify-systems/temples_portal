@@ -27,7 +27,7 @@
 
 import { NextResponse } from "next/server";
 import { SITES, type Site } from "@/lib/sites";
-import { chat, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
+import { chat, translate, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
 import { retrieve, type AtlasRecord } from "@/lib/ai/retrieve";
 import { TOOLS, executeTool } from "@/lib/ai/tools";
 import { buildAnswer, refusalPayload } from "@/lib/ai/answer";
@@ -65,6 +65,9 @@ const REQUEST_TIMEOUT_MS = 30_000;
 const RETRIEVAL_LIMIT = 5;
 /** Entries kept in the rate-limit map before the oldest are dropped. */
 const RATE_LIMIT_MAX_KEYS = 5000;
+
+/** Any script that is not Latin — the signal that retrieval needs translating. */
+const NON_LATIN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/u;
 
 const UNAVAILABLE = { error: "assistant unavailable" } as const;
 const unavailable = (status = 503) => NextResponse.json(UNAVAILABLE, { status });
@@ -149,7 +152,46 @@ export async function POST(request: Request): Promise<Response> {
     );
   }
 
-  const found = retrieve(CORPUS, question, {}, RETRIEVAL_LIMIT);
+  /**
+   * Retrieval runs on English, whatever the question was asked in.
+   *
+   * The corpus is stored in Latin script. `retrieve` matches keywords against
+   * it, so a question in Tamil or Devanagari shares no tokens with any record
+   * and matches NOTHING — measured: "தஞ்சாவூர் பிரகதீஸ்வரர் கோயில் எங்கே
+   * இருக்கிறது?" retrieved zero records and the assistant refused a question
+   * about one of the most famous temples it holds.
+   *
+   * That made the whole multilingual feature hollow. The atlas could HEAR Tamil
+   * and SPEAK Tamil and could not ANSWER in it, so every non-English question
+   * got a fluent refusal — which is worse than an honest "English only",
+   * because it reads as "we have no record of your temple".
+   *
+   * So the query is translated for RETRIEVAL only. Mayura returns
+   * "Where is the Brihadeeswarar Temple in Thanjavur?" for the above, which the
+   * keyword index and the Indic normaliser both handle. Three things are
+   * deliberately NOT translated:
+   *
+   *   - the corpus, ever (rule 2: a translated fact is an uncited fact);
+   *   - the question shown to the model, which stays in the asker's own words
+   *     so the answer addresses what they actually said;
+   *   - the answer, which is generated in the asker's language as before.
+   *
+   * A failed translation degrades to the original query rather than failing the
+   * request: the worst case is the refusal we would have given anyway.
+   */
+  let retrievalQuery = question;
+  if (NON_LATIN_SCRIPT.test(question)) {
+    try {
+      const english = await translate({
+        apiKey, text: question, from: "auto", to: "en-IN",
+      });
+      if (english.trim()) retrievalQuery = english.trim();
+    } catch (error) {
+      console.warn("[chat] query translation failed, retrieving on the original:", error);
+    }
+  }
+
+  const found = retrieve(CORPUS, retrievalQuery, {}, RETRIEVAL_LIMIT);
 
   // Nothing was really asked — a blank query, or nothing but function words.
   // That refuses for free; no model call can turn it into a sourced answer.
@@ -253,8 +295,6 @@ export async function POST(request: Request): Promise<Response> {
  * to someone who did not ask in English) is the kind of quiet exclusion the
  * multilingual design exists to avoid.
  */
-const NON_LATIN_SCRIPT = /[^\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/u;
-
 function needsTranslatedRefusal(question: string, language?: string): boolean {
   if (NON_LATIN_SCRIPT.test(question)) return true;
   return Boolean(language && !/^en\b/i.test(language) && language.toLowerCase() !== "english");
