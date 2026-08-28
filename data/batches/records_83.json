@@ -1,0 +1,232 @@
+[
+ {
+  "id": "prasat-ta-krabey",
+  "name": "Prasat Ta Krabey",
+  "country": "Cambodia",
+  "state": "Oddar Meanchey",
+  "place": "Bakdai",
+  "lat": 14.3561,
+  "lng": 103.3775,
+  "tradition": "Hindu",
+  "deity": "Shiva (Svayambhuva Linga)",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Angkor period)",
+  "dynasty": "Khmer (Angkor)",
+  "style": "Khmer, Bayon",
+  "circuits": [],
+  "significance": "A small laterite Khmer sanctuary on the Dangrek escarpment, raised under Suryavarman I and Udayadityavarman II and left unfinished, enclosing a linga called Svayambhuva. It stands on the contested Cambodia-Thailand frontier and its carvings include Yama riding his buffalo mount.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Ta_Krabey",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Ta_Krabey"
+   },
+   {
+    "l": "Wikidata Q1511068",
+    "u": "https://www.wikidata.org/wiki/Q1511068"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-kamphaeng-laeng-phetchaburi",
+  "name": "Wat Kamphaeng Laeng",
+  "country": "Thailand",
+  "state": "Phetchaburi",
+  "place": "Mueang Phetchaburi",
+  "lat": 13.1056,
+  "lng": 99.9561,
+  "tradition": "Hindu",
+  "deity": "Uma (consort of Shiva)",
+  "built": [
+   1200,
+   1250
+  ],
+  "builtDisplay": "c. 1200-1250 (Jayavarman VII)",
+  "dynasty": "Khmer (Angkor)",
+  "style": "Khmer, Bayon and Lopburi",
+  "circuits": [],
+  "significance": "A walled Khmer complex of four laterite towers and a cruciform shrine built in the reign of Jayavarman VII, the westernmost surviving Khmer sanctuary in Thailand. An image of Uma recovered here in 1956 marks its Hindu foundation; the site later became a Buddhist wat.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Kamphaeng_Laeng",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Kamphaeng_Laeng"
+   },
+   {
+    "l": "Wikidata Q3566583",
+    "u": "https://www.wikidata.org/wiki/Q3566583"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "gopinath-pabna",
+  "name": "Gopinath Temple, Pabna",
+  "country": "Bangladesh",
+  "state": "Pabna District",
+  "place": "Pabna",
+  "lat": 24.0015,
+  "lng": 89.245,
+  "tradition": "Hindu",
+  "deity": "Gopinath (Krishna)",
+  "built": [
+   1856,
+   1857
+  ],
+  "builtDisplay": "1856-57",
+  "dynasty": "Colonial era",
+  "style": "Jor-bangla (chala)",
+  "circuits": [],
+  "significance": "A Vaishnava brick temple in Pabna town built by Brajmohan Krori, a tahsildar under the Nawabs of Murshidabad, in the jor-bangla form of two joined do-chala roofs. Its terracotta panels illustrate Ramayana and Mahabharata scenes; the image was moved to a nearby Kali temple in 1910 and worship has ceased.",
+  "wiki": "https://en.wikipedia.org/wiki/Gopinath_Temple,_Pabna",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gopinath_Temple,_Pabna"
+   },
+   {
+    "l": "Wikidata Q123359292",
+    "u": "https://www.wikidata.org/wiki/Q123359292"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "shadani-darbar-ghotki",
+  "name": "Shadani Darbar",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Hayat Pitafi, Ghotki District",
+  "lat": 27.9585,
+  "lng": 69.5084,
+  "tradition": "Hindu",
+  "deity": "Sant Shadaram Sahib",
+  "built": [
+   1786,
+   1786
+  ],
+  "builtDisplay": "founded 1786",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Hindu shrine in Mirpur Mathelo taluka founded in 1786 by Sant Shadaram Sahib, reported to be the largest Hindu temple in Sindh. Its liturgy combines agni puja with recitation of the Bhagavad Gita and the Guru Granth Sahib, and the saint's birth anniversary draws an annual gathering.",
+  "wiki": "https://en.wikipedia.org/wiki/Shadani_Darbar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shadani_Darbar"
+   },
+   {
+    "l": "Wikidata Q104834764",
+    "u": "https://www.wikidata.org/wiki/Q104834764"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "saraswati-gyan-mandir-chattogram",
+  "name": "Saraswati Gyan Mandir",
+  "country": "Bangladesh",
+  "state": "Chattogram District",
+  "place": "University of Chittagong campus",
+  "lat": 22.4837,
+  "lng": 91.7929,
+  "tradition": "Hindu",
+  "deity": "Saraswati",
+  "built": [
+   2019,
+   2026
+  ],
+  "builtDisplay": "2019-2026",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A temple to Saraswati on the University of Chittagong campus, financed by Adul Kanti Chowdhury and Anita Chowdhury through their foundation; its foundation stone was laid in 2019 and it opened in 2026. It gives the university a permanent shrine for the Saraswati Puja long observed there, and is described as the only one of its kind in Bangladesh.",
+  "wiki": "https://en.wikipedia.org/wiki/Saraswati_Gyan_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Saraswati_Gyan_Mandir"
+   },
+   {
+    "l": "Wikidata Q139898431",
+    "u": "https://www.wikidata.org/wiki/Q139898431"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "narai-cheng-weng-sakon-nakhon",
+  "name": "Phra That Narai Cheng Weng",
+  "country": "Thailand",
+  "state": "Sakon Nakhon",
+  "place": "That Na Weng, Mueang Sakon Nakhon",
+  "lat": 17.1871,
+  "lng": 104.0958,
+  "tradition": "Hindu",
+  "deity": "Krishna (Vishnu)",
+  "built": [
+   957,
+   1157
+  ],
+  "builtDisplay": "16th-17th Buddhist c. (Baphuon-period Khmer art)",
+  "dynasty": "Khmer",
+  "style": "Khmer, Baphuon",
+  "circuits": [],
+  "significance": "A sandstone Khmer prang on a laterite base outside Sakon Nakhon town, carved with a lintel showing Krishna slaying a lion in Baphuon-period style. It is the principal Khmer Hindu monument surviving in the province.",
+  "story": "Local tradition holds that the sanctuary was raised entirely by women, in a building contest against the men who put up Phra That Phu Pek.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_That_Narai_Cheng_Weng",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_That_Narai_Cheng_Weng"
+   },
+   {
+    "l": "Wikidata Q6630400",
+    "u": "https://www.wikidata.org/wiki/Q6630400"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "prasat-huai-thap-than",
+  "name": "Prasat Huai Thap Than",
+  "country": "Thailand",
+  "state": "Sisaket",
+  "place": "Huai Thap Than",
+  "lat": 15.1953,
+  "lng": 102.1768,
+  "tradition": "Hindu",
+  "deity": "Trimurti (Brahma, Vishnu and Shiva)",
+  "built": [
+   1040,
+   1060
+  ],
+  "builtDisplay": "mid-11th c. (Baphuon period)",
+  "dynasty": "Khmer",
+  "style": "Khmer and Lao",
+  "circuits": [],
+  "significance": "A Khmer sanctuary of the Baphuon period whose three towers on a shared platform stood for the Trimurti, registered as a national monument in 1935. Rebuilt under Lan Xang influence in the 18th-19th centuries, it passed into Buddhist use and its name changed from Prasat Ban Prasat to That Chedi and then to its present form.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Huai_Thap_Than",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Prasat_Huai_Thap_Than"
+   },
+   {
+    "l": "Wikidata Q3401340",
+    "u": "https://www.wikidata.org/wiki/Q3401340"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

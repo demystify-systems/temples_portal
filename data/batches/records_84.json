@@ -1,0 +1,122 @@
+[
+ {
+  "id": "xa-loi-pagoda-ho-chi-minh",
+  "name": "Xá Lợi Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "District 3, Ho Chi Minh City",
+  "lat": 10.7781,
+  "lng": 106.6867,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Buddha relic)",
+  "built": [1956, 1958],
+  "builtDisplay": "1956-1958",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A pagoda in District 3 of Ho Chi Minh City raised between 1956 and 1958 to enshrine a relic of Gautama Buddha, with its bell tower opened in 1961. Its sanctuary carries fourteen painted scenes running from the Buddha's birth as Prince Siddhartha to his attainment of nirvana.",
+  "wiki": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda"},
+   {"l": "Wikidata Q1005868", "u": "https://www.wikidata.org/wiki/Q1005868"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thay-temple-quoc-oai",
+  "name": "Thầy Temple",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Quốc Oai, Hanoi",
+  "lat": 21.0223,
+  "lng": 105.6456,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha with eighteen arhats, alongside Zen master Từ Đạo Hạnh and Emperor Lý Nhân Tông",
+  "built": [1000, 1100],
+  "builtDisplay": "11th c. (Lý dynasty)",
+  "dynasty": "Lý",
+  "style": "Vietnamese",
+  "circuits": [],
+  "significance": "A Buddhist temple complex west of Hanoi in Quốc Oai, established in the 11th century under Emperor Lý Nhân Tông and refurbished repeatedly since. Its halls venerate the Buddha together with the Zen master Từ Đạo Hạnh, whose cult the site is built around.",
+  "story": "Từ Đạo Hạnh is said to have burned his finger to summon rain and healed villagers by blessing them, and to have been reborn three times - once as a Buddha, then as the son of King Lý Nhân Tông, then as the monk who saved King Thần Tông.",
+  "wiki": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple"},
+   {"l": "Wikidata Q7799949", "u": "https://www.wikidata.org/wiki/Q7799949"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bagaya-monastery-inwa",
+  "name": "Bagaya Monastery",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Inwa",
+  "lat": 21.8484,
+  "lng": 95.9682,
+  "tradition": "Buddhist",
+  "deity": "Shin Dhammabhinanda",
+  "built": [1992, 1992],
+  "origin": 1593,
+  "builtDisplay": "orig. 1593; rebuilt 1992",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "A Theravada monastery at the old capital of Inwa, dedicated to Shin Dhammabhinanda and first built in 1593, later endowed during King Hsinbyushin's reign by the town officer of Magwe. Destroyed by fire in 1821, it was rebuilt in 1992.",
+  "wiki": "https://en.wikipedia.org/wiki/Bagaya_Monastery",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Bagaya_Monastery"},
+   {"l": "Wikidata Q17005346", "u": "https://www.wikidata.org/wiki/Q17005346"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ngahtatgyi-buddha-temple-yangon",
+  "name": "Ngahtatgyi Buddha Temple",
+  "country": "Myanmar",
+  "state": "Yangon Region",
+  "place": "Bahan Township, Yangon",
+  "lat": 16.8084,
+  "lng": 96.1626,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Ngahtatgyi Buddha image)",
+  "built": [1558, 1558],
+  "builtDisplay": "1558",
+  "dynasty": "Toungoo",
+  "circuits": [],
+  "significance": "A Theravada temple in Yangon's Bahan Township whose five-tiered pagoda shelters a seated Buddha image 6.2 m high, donated by Prince Minyedeippa and completed in 1558. A further Buddha statue was erected at the temple in 1900.",
+  "wiki": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple"},
+   {"l": "Wikidata Q4315287", "u": "https://www.wikidata.org/wiki/Q4315287"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "girihandu-seya-thiriyai",
+  "name": "Girihandu Seya",
+  "country": "Sri Lanka",
+  "state": "Trincomalee District",
+  "place": "Thiriyai",
+  "lat": 8.8704,
+  "lng": 81.0073,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (hair relics)",
+  "built": [700, 800],
+  "builtDisplay": "enlarged 8th c.; repaired 11th c.",
+  "dynasty": "Anuradhapura",
+  "style": "Vatadage",
+  "circuits": [],
+  "significance": "A hilltop stupa at Thiriyai believed to hold hair relics of the Buddha, enlarged in the 8th century and enclosed by a vatadage of concentric stone pillars like those at Thuparama and Lankarama. An inscription links it to King Silamegha, and it was repaired under Vijayabahu I.",
+  "story": "The Pujavaliya tells that the merchants Tapassu and Bhalluka, carrying the Buddha's hair relics, set the casket down on this rock and found it could no longer be lifted, so they raised a stupa over it.",
+  "wiki": "https://en.wikipedia.org/wiki/Girihandu_Seya",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Girihandu_Seya"},
+   {"l": "Wikidata Q48733604", "u": "https://www.wikidata.org/wiki/Q48733604"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

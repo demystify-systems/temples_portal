@@ -1,0 +1,297 @@
+[
+ {
+  "id": "ayeik-ma-htwet-mandalay",
+  "name": "Ayeik Ma Htwet Pagoda",
+  "country": "Myanmar",
+  "state": "Mandalay",
+  "place": "Mandalay",
+  "lat": 22.0088,
+  "lng": 96.0883,
+  "tradition": "Buddhist",
+  "deity": "Buddha (enshrined relics)",
+  "built": [
+   1064,
+   1064
+  ],
+  "builtDisplay": "1064 (Pagan)",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A brick stupa in Aungmyethazan Township, Mandalay, which a stone inscription credits to King Kyansittha of the Pagan kingdom in 1064; relics of the Buddha are enshrined in a chamber within it.",
+  "story": "The pagoda is said to cast no shadow in sunlight, answering Kyansittha's vow that its shadow should never fall again in any of his future births.",
+  "wiki": "https://en.wikipedia.org/wiki/Ayeik_Ma_Htwet_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ayeik_Ma_Htwet_Pagoda"
+   },
+   {
+    "l": "Wikidata Q65338661",
+    "u": "https://www.wikidata.org/wiki/Q65338661"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "mahabodhi-bagan",
+  "name": "Mahabodhi Temple, Bagan",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Bagan",
+  "lat": 21.1732,
+  "lng": 94.8605,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1200,
+   1235
+  ],
+  "builtDisplay": "early 13th c. (Htilominlo)",
+  "dynasty": "Pagan",
+  "style": "Gupta-period type, pyramidal tower",
+  "circuits": [],
+  "significance": "A Theravada temple at Bagan raised in the early 13th century under King Htilominlo as a copy of the Mahabodhi Temple at Bodh Gaya; over 450 Buddha images fill the niches of its tall pyramidal tower, which was repaired after the 1975 Bagan earthquake.",
+  "wiki": "https://en.wikipedia.org/wiki/Mahabodhi_Temple,_Bagan",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mahabodhi_Temple,_Bagan"
+   },
+   {
+    "l": "Wikidata Q3517643",
+    "u": "https://www.wikidata.org/wiki/Q3517643"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-phra-that-phanom",
+  "name": "Wat Phra That Phanom",
+  "country": "Thailand",
+  "state": "Nakhon Phanom",
+  "place": "That Phanom",
+  "lat": 16.9434,
+  "lng": 104.726,
+  "tradition": "Buddhist",
+  "deity": "Buddha (Phra Uranghathat, the breast-bone relic)",
+  "built": [
+   600,
+   800
+  ],
+  "builtDisplay": "7th–8th c. earliest structure; later rebuilt",
+  "dynasty": "Mon",
+  "style": "Lao stupa form with Dvaravati, Khmer and Cham elements",
+  "circuits": [],
+  "significance": "The chief Buddhist stupa of northeastern Thailand, standing near the Mekong in That Phanom district and enshrining what tradition holds to be the Buddha's breast bone; archaeology dates the earliest structure on the site to the 7th or 8th century, and the pagoda has been restored in modern times with royal Thai patronage.",
+  "story": "The That Phanom Chronicle says the Buddha asked Mahakasyapa to carry his breast-bone relic to Phu Kamphra after his death, and that the disciple with five hundred arhats raised the stupa over it there.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_That_Phanom",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Phra_That_Phanom"
+   },
+   {
+    "l": "Wikidata Q1725518",
+    "u": "https://www.wikidata.org/wiki/Q1725518"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sakya-man-aung-mrauk-u",
+  "name": "Sakya Man Aung Pagoda",
+  "country": "Myanmar",
+  "state": "Rakhine",
+  "place": "Mrauk U",
+  "lat": 20.5948,
+  "lng": 93.2009,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1629,
+   1629
+  ],
+  "builtDisplay": "1629 (Mrauk U)",
+  "dynasty": "Mrauk U",
+  "circuits": [],
+  "significance": "A Buddhist temple about a kilometre northeast of the royal palace at Mrauk U, commissioned in 1629 by King Thiri Thudhamma Raza; its stupa is laid out on an eight-petalled lotus plan and turns from an octagonal form to a bell above nine rising tiers.",
+  "wiki": "https://en.wikipedia.org/wiki/Sakya-Man-Aung_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sakya-Man-Aung_Temple"
+   },
+   {
+    "l": "Wikidata Q47514769",
+    "u": "https://www.wikidata.org/wiki/Q47514769"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "giac-lam-ho-chi-minh-city",
+  "name": "Giác Lâm Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "Ho Chi Minh City",
+  "lat": 10.7794,
+  "lng": 106.6492,
+  "tradition": "Buddhist",
+  "deity": "Amitabha Buddha",
+  "built": [
+   1744,
+   1744
+  ],
+  "builtDisplay": "1744 (Nguyễn lords)",
+  "dynasty": "Nguyễn lords",
+  "circuits": [],
+  "significance": "A Buddhist pagoda in the Tân Bình district of Ho Chi Minh City, founded in 1744 by Lý Thụy Long during the rule of the Nguyễn lord Nguyễn Phúc Khoát. Amitabha dominates its main altar, with Shakyamuni and four bodhisattvas set before him, and a bodhi tree brought from Sri Lanka in 1953 grows in its garden.",
+  "wiki": "https://en.wikipedia.org/wiki/Gi%C3%A1c_L%C3%A2m_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gi%C3%A1c_L%C3%A2m_Temple"
+   },
+   {
+    "l": "Wikidata Q3360457",
+    "u": "https://www.wikidata.org/wiki/Q3360457"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "hoi-khanh-thu-dau-mot",
+  "name": "Hội Khánh Temple",
+  "country": "Vietnam",
+  "state": "Bình Dương",
+  "place": "Thủ Dầu Một",
+  "lat": 10.981,
+  "lng": 106.6596,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (with Ksitigarbha and other bodhisattvas)",
+  "built": [
+   1741,
+   1741
+  ],
+  "builtDisplay": "1741; rebuilt after 1861",
+  "dynasty": "Undetermined",
+  "style": "Vietnamese",
+  "circuits": [],
+  "significance": "A Buddhist temple at Thủ Dầu Một in Bình Dương province, built in 1741, destroyed in 1861 during the French colonial conflict and rebuilt soon after by Thích Chánh Đắc. Between 1923 and 1926 anti-colonial activists, among them Ho Chi Minh's father Nguyễn Sinh Sắc, met within its walls.",
+  "wiki": "https://en.wikipedia.org/wiki/H%E1%BB%99i_Kh%C3%A1nh_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/H%E1%BB%99i_Kh%C3%A1nh_Temple"
+   },
+   {
+    "l": "Wikidata Q5877747",
+    "u": "https://www.wikidata.org/wiki/Q5877747"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "pu-tuo-si-kota-kinabalu",
+  "name": "Pu Tuo Si Temple",
+  "country": "Malaysia",
+  "state": "Sabah",
+  "place": "Kota Kinabalu",
+  "lat": 5.9928,
+  "lng": 116.1167,
+  "tradition": "Buddhist",
+  "deity": "Buddha (with Guanyin and Dashizhi)",
+  "built": [
+   1980,
+   1980
+  ],
+  "builtDisplay": "completed 1980",
+  "dynasty": "Modern",
+  "style": "Chinese temple",
+  "circuits": [],
+  "significance": "A Chinese Buddhist temple in Kota Kinabalu, Sabah, completed in 1980. Its Daxiong Baodian main hall holds a large Buddha image flanked by Guanyin on the left and Dashizhi on the right.",
+  "wiki": "https://en.wikipedia.org/wiki/Pu_Tuo_Si_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Pu_Tuo_Si_Temple"
+   },
+   {
+    "l": "Wikidata Q28187444",
+    "u": "https://www.wikidata.org/wiki/Q28187444"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "maha-wizaya-yangon",
+  "name": "Maha Wizaya Pagoda",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Yangon",
+  "lat": 16.7949,
+  "lng": 96.1522,
+  "tradition": "Buddhist",
+  "deity": "Buddha (enshrined relics given by the King of Nepal)",
+  "built": [
+   1980,
+   1980
+  ],
+  "builtDisplay": "1980",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A stupa in Dagon Township, Yangon, built in 1980 to commemorate the First Congregation for the purification of the Buddha Sasana, out of which came the State Sangha Maha Nayaka Committee. It enshrines relics contributed by the King of Nepal, and Ne Win consecrated its crowning umbrella.",
+  "wiki": "https://en.wikipedia.org/wiki/Maha_Wizaya_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maha_Wizaya_Pagoda"
+   },
+   {
+    "l": "Wikidata Q6732674",
+    "u": "https://www.wikidata.org/wiki/Q6732674"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "vinh-nghiem-ho-chi-minh-city",
+  "name": "Vĩnh Nghiêm Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "Ho Chi Minh City",
+  "lat": 10.7904,
+  "lng": 106.6823,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (with Manjushri and Samantabhadra)",
+  "built": [
+   1964,
+   1964
+  ],
+  "builtDisplay": "begun 1964",
+  "dynasty": "Modern",
+  "style": "Vietnamese traditional, built in concrete",
+  "circuits": [],
+  "significance": "A large pagoda in District 3 of Ho Chi Minh City, begun in 1964 by the monks Thích Tâm Giác and Thích Thanh Kiểm and named for an 11th-century predecessor in Bắc Giang province. It was the first in Vietnam to render traditional Vietnamese temple architecture in concrete, and its seven-storey, 40 m tower was built with help from the Japan–Vietnam Friendship Association.",
+  "wiki": "https://en.wikipedia.org/wiki/V%C4%A9nh_Nghi%C3%AAm_Pagoda,_Ho_Chi_Minh_City",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/V%C4%A9nh_Nghi%C3%AAm_Pagoda,_Ho_Chi_Minh_City"
+   },
+   {
+    "l": "Wikidata Q7932538",
+    "u": "https://www.wikidata.org/wiki/Q7932538"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]
