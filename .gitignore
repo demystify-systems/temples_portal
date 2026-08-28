@@ -31,3 +31,5 @@ src/lib/generated/*
 # into the repo root by the MCP browser tool during UI checks. Regenerable, and
 # they accumulate: 45 files / ~1 MB from a single afternoon of screenshot runs.
 .playwright-mcp/
+.vercel
+.env*

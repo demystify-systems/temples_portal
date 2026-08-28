@@ -263,6 +263,15 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }, []);
   const [sel, setSel] = useState<string | null>(null);
   const [index, setIndex] = useState(false);
+  /** Whether the reader has dismissed the intro card. Remembered across visits. */
+  const [overviewDismissed, setOverviewDismissedState] = useState(false);
+  useEffect(() => {
+    setOverviewDismissedState(readPreference<boolean>(PREF_KEYS.overviewDismissed, false));
+  }, []);
+  const dismissOverview = useCallback(() => {
+    setOverviewDismissedState(true);
+    writePreference(PREF_KEYS.overviewDismissed, true);
+  }, []);
   const [circuit, setCircuit] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
   const [shownCount, setShownCount] = useState(MAP_SITES.length);
@@ -1054,14 +1063,44 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     return () => mq.removeEventListener("change", sync);
   }, []);
 
-  const panelOpen = sel !== null || index || circuit !== null;
+  /**
+   * The intro panel is a PANEL, not decoration.
+   *
+   * Reported: on a phone the "Twenty-six centuries" card could not be closed,
+   * expanded or collapsed, while the same sheet worked perfectly for a selected
+   * temple. The cause is that it was visible without being OPEN.
+   *
+   * `.side` always renders; the overview is simply what it shows when nothing
+   * is selected. `panelOpen` was false in that state, so the sheet never got its
+   * `.open` class — and every control is gated on that. `onGrabDown` returned
+   * immediately, and `closePanel()` set `sel`, `index` and `circuit` to null
+   * when all three were already null. Both did nothing, precisely and silently.
+   *
+   * It used to be invisible too, which is why nobody noticed: the sheet's closed
+   * transform is `translateY(100%)`, which moved it fully off-screen while it
+   * was viewport-height. It stopped being viewport-height when the timeline
+   * started reserving space at the bottom, so the closed sheet came to rest
+   * partly on screen — visible, and inert.
+   *
+   * So the overview is now a real open state. It can be dragged, tapped and
+   * closed like any other, and closing it is remembered: a first-run
+   * explanation that returns on every visit is an advertisement.
+   */
+  const overviewOpen = isSheet && !overviewDismissed;
+  const panelOpen = sel !== null || index || circuit !== null || overviewOpen;
   const wasOpen = useRef(false);
   useEffect(() => {
-    if (panelOpen && !wasOpen.current) setSnap("half");  // a fresh open starts half way
+    // A record opens half way; the intro card only peeks, because it is an
+    // invitation rather than an answer and must not cover the map it describes.
+    if (panelOpen && !wasOpen.current) setSnap(sel === null && !index && circuit === null ? "peek" : "half");
     wasOpen.current = panelOpen;
   }, [panelOpen]);
 
   const closePanel = useCallback(() => {
+    // Also dismisses the intro card. Closing the panel while the overview is
+    // what it holds must actually close something, or the button is a no-op
+    // that looks broken — which is exactly what was reported.
+    dismissOverview();
     setSel(null); setIndex(false); setCircuit(null);
     try { history.replaceState(null, "", window.location.pathname); } catch { /* no-op */ }
   }, []);
@@ -1082,7 +1121,13 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     if (!isSheet || !panelOpen) return;
     const el = sideRef.current;
     if (!el) return;
-    e.currentTarget.setPointerCapture(e.pointerId);
+    // Guarded: setPointerCapture THROWS for a pointer id the browser does not
+    // consider active, and it throws BEFORE drag.current is assigned — so the
+    // whole gesture is lost and the following pointerup finds nothing to act on.
+    // That is why tapping the grab bar did nothing even once the panel was
+    // properly open. Capture is an enhancement — it keeps a drag alive when the
+    // finger leaves the bar — and losing it must not cost the gesture.
+    try { e.currentTarget.setPointerCapture(e.pointerId); } catch { /* drag still works within the bar */ }
     drag.current = {
       id: e.pointerId, y0: e.clientY, base: SNAPS[snap],
       height: el.offsetHeight || 1, last: SNAPS[snap], at: e.timeStamp, velocity: 0,
@@ -1105,7 +1150,9 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     drag.current = null;
     setDragging(false);
     if (sideRef.current) sideRef.current.style.transform = "";
+    try {
     if (e.currentTarget.hasPointerCapture(e.pointerId)) e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch { /* never captured */ }
 
     /**
      * A TAP, not a drag.
