@@ -6,16 +6,20 @@ import { usePathname } from "next/navigation";
 
 export type HeaderStats = { sites: number; countries: number; traditions: number; centuries: number };
 
-type NavLink = { href: string; label: string; note: string; match?: string };
+import LanguagePicker from "./LanguagePicker";
+import { useUiLanguage } from "./useUiLanguage";
+import type { UiKey } from "@/lib/ui-strings";
+
+type NavLink = { href: string; key: UiKey; noteKey: UiKey; match?: string };
 
 const NAV_LINKS: NavLink[] = [
-  { href: "/", label: "Atlas map", note: "Interactive time-map of every site" },
-  { href: "/sites", label: "Gazetteer", note: "All sites, by country", match: "/site/" },
-  { href: "/circuits", label: "Circuits", note: "Pilgrimage networks", match: "/circuit/" },
-  { href: "/dynasties", label: "Dynasties", note: "Ruling houses and eras", match: "/dynasty/" },
-  { href: "/deities", label: "Deities", note: "Who the temples are for", match: "/deity/" },
-  { href: "/patrons", label: "Patrons", note: "Who funded these temples", match: "/patron/" },
-  { href: "/about", label: "About & sources", note: "Method, boundaries, licences" },
+  { href: "/", key: "nav.atlas", noteKey: "nav.atlas.note" },
+  { href: "/sites", key: "nav.gazetteer", noteKey: "nav.gazetteer.note", match: "/site/" },
+  { href: "/circuits", key: "nav.circuits", noteKey: "nav.circuits.note", match: "/circuit/" },
+  { href: "/dynasties", key: "nav.dynasties", noteKey: "nav.dynasties.note", match: "/dynasty/" },
+  { href: "/deities", key: "nav.deities", noteKey: "nav.deities.note", match: "/deity/" },
+  { href: "/patrons", key: "nav.patrons", noteKey: "nav.patrons.note", match: "/patron/" },
+  { href: "/about", key: "nav.about", noteKey: "nav.about.note" },
 ];
 
 const FOCUSABLE = 'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])';
@@ -48,11 +52,25 @@ export default function SiteHeader({
   stats,
   indexOpen = false,
   onIndexToggle,
+  actions,
+  note,
 }: {
   stats: HeaderStats;
   indexOpen?: boolean;
   onIndexToggle?: () => void;
+  /**
+   * Controls that belong to the PAGE, rendered at the end of the header row.
+   *
+   * The atlas puts its search and filter buttons here. On a phone that is worth
+   * two whole rows: search and filters had a row of their own and the live
+   * count had another, which together took about a fifth of the viewport from
+   * the map they describe.
+   */
+  actions?: React.ReactNode;
+  /** A short status for the end of the coverage row — the atlas's live count. */
+  note?: React.ReactNode;
 }) {
+  const { t, lang } = useUiLanguage();
   const [open, setOpen] = useState(false);
   const pathname = usePathname() ?? "/";
   const menuId = useId();
@@ -132,10 +150,16 @@ export default function SiteHeader({
         </p>
 
         <div className="hstats" aria-label="Atlas coverage">
-          <span className="st"><b>{stats.sites}</b> sites</span>
-          <span className="st"><b>{stats.countries}</b> countries</span>
-          <span className="st st-trad"><b>{stats.traditions}</b> traditions</span>
-          <span className="st st-cent"><b>{stats.centuries}</b> centuries</span>
+          <span className="st"><b>{stats.sites}</b> <span lang={lang}>{t("stats.sites")}</span></span>
+          <span className="st"><b>{stats.countries}</b> <span lang={lang}>{t("stats.countries")}</span></span>
+          <span className="st st-trad"><b>{stats.traditions}</b> <span lang={lang}>{t("stats.traditions")}</span></span>
+          <span className="st st-cent"><b>{stats.centuries}</b> <span lang={lang}>{t("stats.centuries")}</span></span>
+          {note ? <span className="hnote">{note}</span> : null}
+        </div>
+
+        <div className="hactions">
+          {actions}
+          <LanguagePicker />
         </div>
       </header>
 
@@ -155,7 +179,7 @@ export default function SiteHeader({
         inert={!open}
       >
         <div className="navhead">
-          <span className="eyebrow">Navigate</span>
+          <span className="eyebrow" lang={lang}>{t("nav.heading")}</span>
           <button type="button" className="navclose" onClick={() => close(true)} aria-label="Close menu">×</button>
         </div>
 
@@ -170,8 +194,11 @@ export default function SiteHeader({
                   aria-current={current ? "page" : undefined}
                   onClick={() => close()}
                 >
-                  <span className="nl">{link.label}</span>
-                  <span className="nn">{link.note}</span>
+                  {/* lang on the label so a screen reader switches voice, and so
+                      Indic text inherits the taller line-height rather than the
+                      Latin body default that clips its matras. */}
+                  <span className="nl" lang={lang}>{t(link.key)}</span>
+                  <span className="nn" lang={lang}>{t(link.noteKey)}</span>
                 </Link>
               </li>
             );
@@ -184,13 +211,13 @@ export default function SiteHeader({
                 aria-pressed={indexOpen}
                 onClick={() => { onIndexToggle(); close(); }}
               >
-                <span className="nl">Index</span>
-                <span className="nn">{indexOpen ? "Hide the site list on the map" : "Site list beside the map"}</span>
+                <span className="nl" lang={lang}>{t("nav.index")}</span>
+                <span className="nn" lang={lang}>{t("nav.index.note")}</span>
               </button>
             ) : (
               <Link href="/sites" className="navitem" onClick={() => close()}>
-                <span className="nl">Index</span>
-                <span className="nn">Site list beside the map</span>
+                <span className="nl" lang={lang}>{t("nav.index")}</span>
+                <span className="nn" lang={lang}>{t("nav.index.note")}</span>
               </Link>
             )}
           </li>

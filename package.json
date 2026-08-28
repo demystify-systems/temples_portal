@@ -14,7 +14,7 @@
     "validate": "node scripts/check-site-url.mjs && node scripts/validate-data.mjs && npm run gates",
     "gate:contrast": "node scripts/check-contrast.mjs",
     "gate:theme-mirror": "node scripts/check-theme-mirror.mjs",
-    "gates": "npm run gate:contrast && npm run gate:theme-mirror",
+    "gates": "npm run gate:contrast && npm run gate:theme-mirror && npm run gate:migrations",
     "drift:wikidata": "node scripts/wikidata-drift.mjs",
     "freshness": "node scripts/source-freshness.mjs",
     "db:seed": "node scripts/seed-supabase.mjs",
@@ -33,7 +33,9 @@
     "report:health": "node scripts/report-health.mjs --write",
     "reports": "npm run report:circuits && npm run report:sources && npm run report:health",
     "build:artefacts": "node scripts/build-map-artefacts.mjs",
-    "gate:corpus-leak": "node scripts/check-corpus-leak.mjs"
+    "gate:corpus-leak": "node scripts/check-corpus-leak.mjs",
+    "build:ui-i18n": "node scripts/build-ui-translations.mjs",
+    "gate:migrations": "node scripts/check-migrations.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
