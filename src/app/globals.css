@@ -1235,7 +1235,14 @@ table.gz tr:last-child td{border-bottom:none}
 
      Moving the hint rather than the key, because the key is a permanent control
      with a stored position and the hint appears once. */
-  .coach{ top:auto; bottom:calc(100% + 10px); left:auto; right:0; max-width:min(320px, calc(100vw - 24px)) }
+  /* Bottom-LEFT again, now that the era key has moved to the top.
+     It was pushed right to clear the key, and that put it directly under the
+     assistant launcher (z-index 44 vs 9) — so "Got it" could not be tapped and
+     the hint could not be dismissed. Found by hit-testing every control on the
+     page rather than by looking, which is the only way this class of bug shows
+     up: the button renders perfectly and simply never receives the tap.
+     Left is now free: the key is top-left, the launcher is bottom-right. */
+  .coach{ top:auto; bottom:calc(100% + 10px); left:0; right:auto; max-width:min(320px, calc(100vw - 24px)) }
 }
 
 /* Very narrow: the readout loses its label before it loses its numbers. */
