@@ -620,5 +620,533 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "maula-kalika-gaindakot",
+  "name": "Maula Kalika Temple",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Gaindakot, Nawalpur District",
+  "lat": 27.7275,
+  "lng": 84.4088,
+  "tradition": "Hindu",
+  "deity": "Kalika (the goddess Kali)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A temple of the goddess Kalika above Gaindakot town in Nawalpur District of Gandaki Province, one of the better-known Shakta shrines of central Nepal.",
+  "wiki": "https://en.wikipedia.org/wiki/Maula_Kalika_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maula_Kalika_Temple"
+   },
+   {
+    "l": "Wikidata Q6792424",
+    "u": "https://www.wikidata.org/wiki/Q6792424"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "swargadwari-pyuthan",
+  "name": "Swargadwari",
+  "country": "Nepal",
+  "place": "Swargadwari, Pyuthan District",
+  "lat": 28.1213,
+  "lng": 82.6735,
+  "tradition": "Hindu",
+  "deity": "Narayana (Vishnu) and Shiva",
+  "built": [
+   1895,
+   1895
+  ],
+  "builtDisplay": "1895",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A hill pilgrimage centre in Pyuthan District dedicated to Narayana and Shiva, established in 1895 (Vaisakha Purnima 1952 BS) by Guru Maharaj Narayana Gautama Khatri, known as Swami Hamsananda, who spent most of his life on the ridge herding and milking thousands of cows; the site is closely bound to the veneration of the cow in Hinduism.",
+  "wiki": "https://en.wikipedia.org/wiki/Swargadwari",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Swargadwari"
+   },
+   {
+    "l": "Wikidata Q13187340",
+    "u": "https://www.wikidata.org/wiki/Q13187340"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ganeshthan-bharatpur",
+  "name": "Ganeshthan Temple",
+  "country": "Nepal",
+  "place": "Bharatpur, Chitwan District",
+  "lat": 27.7061,
+  "lng": 84.4486,
+  "tradition": "Hindu",
+  "deity": "Ganesha",
+  "built": [
+   1952,
+   1952
+  ],
+  "origin": 1400,
+  "builtDisplay": "rebuilt 1952; origin 15th c.",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Ganesha temple in ward 11 of Bharatpur in Chitwan District whose original shrine is placed in the fifteenth century and credited to Muni Makunda, king of Palpa; the present building went up in 1952 during the reign of King Mahendra, and worshippers gather chiefly on Tuesdays.",
+  "wiki": "https://en.wikipedia.org/wiki/Ganeshthan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ganeshthan_Temple"
+   },
+   {
+    "l": "Wikidata Q5520885",
+    "u": "https://www.wikidata.org/wiki/Q5520885"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kumbheshwar-patan",
+  "name": "Kumbheshwar Temple",
+  "country": "Nepal",
+  "place": "Patan, Lalitpur District",
+  "lat": 27.6767,
+  "lng": 85.3258,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1392,
+   1392
+  ],
+  "builtDisplay": "c. 1392 (Jayasthiti Malla)",
+  "dynasty": "Malla",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A five-storey free-standing pagoda dedicated to Shiva, standing about 200 m north of Patan Durbar Square in Lalitpur and built around 1392 by King Jayasthiti Malla.",
+  "story": "The ponds within the temple courtyard are believed to be fed by a spring rising from Gosainkunda, some 43 km north of Kathmandu.",
+  "wiki": "https://en.wikipedia.org/wiki/Kumbheshwar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kumbheshwar_Temple"
+   },
+   {
+    "l": "Wikidata Q18344056",
+    "u": "https://www.wikidata.org/wiki/Q18344056"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "naradevi-kathmandu",
+  "name": "Naradevi Temple",
+  "country": "Nepal",
+  "place": "Naradevi, Kathmandu",
+  "lat": 27.7076,
+  "lng": 85.306,
+  "tradition": "Hindu",
+  "deity": "Sweta Kali, called Nyata Ajima by Newars",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Gunakamadeva)",
+  "dynasty": "Gunakamadeva era",
+  "circuits": [],
+  "significance": "A shrine in central Kathmandu dedicated to Sweta Kali, known among Newars as Nyata Ajima, and believed to have been founded in the ninth century by Gunakamadeva, the founder of the city; its three-tiered roof includes a gilded storey carried on carved struts.",
+  "story": "A king of Patan who lost his way while hunting and was chased by a wild elephant is said to have hidden in a tree at this spot, where the goddess Swetakali appeared and gave him back his life, upon which he founded the temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Naradevi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Naradevi_Temple"
+   },
+   {
+    "l": "Wikidata Q25620593",
+    "u": "https://www.wikidata.org/wiki/Q25620593"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhutandevi-hetauda",
+  "name": "Bhutandevi Mandir",
+  "country": "Nepal",
+  "state": "Bagmati",
+  "place": "Hetauda, Makwanpur District",
+  "lat": 27.4241,
+  "lng": 85.0232,
+  "tradition": "Hindu",
+  "deity": "Bhutandevi (Hidimbi)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple in Hetauda, Makwanpur District, dedicated to Bhutandevi, identified with Hidimbi, a wife of Bhima and the mother of Ghatotkacha.",
+  "story": "Hidimba is held to be another manifestation of Durga, and the name of Hetauda itself is believed to come from the goddess.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhutandevi_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhutandevi_Mandir"
+   },
+   {
+    "l": "Wikidata Q28183939",
+    "u": "https://www.wikidata.org/wiki/Q28183939"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhadrakali-pokhara",
+  "name": "Bhadrakali Temple, Pokhara",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Kundahar, east of Pokhara, Kaski District",
+  "lat": 28.2125,
+  "lng": 84.0071,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali (Kali)",
+  "built": [
+   1817,
+   1817
+  ],
+  "builtDisplay": "1817",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A hilltop pagoda at Kundahar east of Pokhara in Kaski District, founded in 1817 and dedicated to Bhadrakali as goddess of power and strength; it stands at about 2,930 feet over some 135 ropanies and is reached by stairways of 292 steps from the east and 265 from the south.",
+  "story": "The goddess is said to have told a priest to dig into the hill, where her image was uncovered and thereafter worshipped as Bhadrakali.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhadrakali_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhadrakali_Temple"
+   },
+   {
+    "l": "Wikidata Q97357162",
+    "u": "https://www.wikidata.org/wiki/Q97357162"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kapileshwar-janakpur",
+  "name": "Kapileshwar Temple, Janakpur",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Janakpur, Dhanusha District",
+  "lat": 26.7277,
+  "lng": 85.9453,
+  "tradition": "Hindu",
+  "deity": "Shiva as Kapileshwar Mahadev",
+  "built": [
+   1934,
+   1940
+  ],
+  "builtDisplay": "rebuilt after the 1934 earthquake",
+  "dynasty": "Modern",
+  "style": "Simrangad",
+  "circuits": [],
+  "significance": "One of the Shiva shrines that mark the corners of Janakpur in Dhanusha District, worshipped as Kapileshwar Mahadev; raised originally in the Simrangad style, it was rebuilt after the earthquake of 1934.",
+  "story": "King Janak is said to have built Shiva temples at the four corners of his capital Janakpur in the Treta Yuga, and the sage Kapil to have kept his ashram at this one, which is how it got its name.",
+  "wiki": "https://en.wikipedia.org/wiki/Kapileshwar_Temple,_Janakpur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kapileshwar_Temple,_Janakpur"
+   },
+   {
+    "l": "Wikidata Q106238324",
+    "u": "https://www.wikidata.org/wiki/Q106238324"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bishnupaduka-dharan",
+  "name": "Bishnupaduka",
+  "country": "Nepal",
+  "state": "Koshi",
+  "place": "Dharan, Sunsari District",
+  "lat": 26.8235,
+  "lng": 87.2479,
+  "tradition": "Hindu",
+  "deity": "Vishnu",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Shikhara",
+  "circuits": [],
+  "significance": "A shikhara shrine at Dharan in Sunsari District built over a rock bearing two footprints venerated as those of Vishnu.",
+  "story": "Local people are said to have come upon a rock marked with two clear footprints, which are believed to be Vishnu's own.",
+  "wiki": "https://en.wikipedia.org/wiki/Bishnupaduka_(shrine)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bishnupaduka_(shrine)"
+   },
+   {
+    "l": "Wikidata Q13186165",
+    "u": "https://www.wikidata.org/wiki/Q13186165"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "manakamana-sankhuwasabha",
+  "name": "Manakamana Temple, Sankhuwasabha",
+  "country": "Nepal",
+  "state": "Koshi",
+  "place": "Tumlingtar, Sankhuwasabha District",
+  "lat": 27.3396,
+  "lng": 87.1889,
+  "tradition": "Hindu",
+  "deity": "Manakamana Devi",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Manakamana Devi about 5 km north of Tumlingtar airport in Sankhuwasabha District, eastern Nepal, distinct from the better-known Manakamana shrine in Gorkha.",
+  "story": "A farmer ploughing his field is said to have struck a stone that oozed milk and blood, which the devotee Lakhan Thapa read as the return of a seventeenth-century queen of Gorkha who had committed sati after her husband's death.",
+  "wiki": "https://en.wikipedia.org/wiki/Manakamana_Temple_(Sankhuwasabha)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Manakamana_Temple_(Sankhuwasabha)"
+   },
+   {
+    "l": "Wikidata Q6746791",
+    "u": "https://www.wikidata.org/wiki/Q6746791"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sheshnarayan-pharping",
+  "name": "Sheshnarayan Temple",
+  "country": "Nepal",
+  "place": "Pharping, Kathmandu District",
+  "lat": 27.63,
+  "lng": 85.27,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Sheshnarayan",
+  "built": [
+   400,
+   750
+  ],
+  "builtDisplay": "Licchavi period (reign of Vishnugupta)",
+  "dynasty": "Licchavi",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Vishnu in his Sheshnarayan form near Pharping in the southern Kathmandu Valley, believed to have been raised in the reign of the Licchavi king Vishnugupta; it is counted among the four Narayana temples of the valley.",
+  "story": "The four Narayana temples are said to stand on hilltops at the cardinal points to guard the Kathmandu Valley.",
+  "wiki": "https://en.wikipedia.org/wiki/Sheshnarayan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sheshnarayan_Temple"
+   },
+   {
+    "l": "Wikidata Q7495631",
+    "u": "https://www.wikidata.org/wiki/Q7495631"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kalika-bhagawati-baglung",
+  "name": "Kalika Bhagawati Temple",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Baglung, Baglung District",
+  "lat": 28.2559,
+  "lng": 83.6136,
+  "tradition": "Hindu",
+  "deity": "Kalika (Kali)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple southeast of Baglung town on the southern bank of the Kali Gandaki in Gandaki Province, dedicated to Kalika, one of the fiercest forms of Shakti.",
+  "story": "A king is said to have received the goddess's image as dowry, and when the wedding party halted overnight in a forest and no one could lift the idol the next morning, he built the temple on that spot.",
+  "wiki": "https://en.wikipedia.org/wiki/Kalika_Bhagawati_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kalika_Bhagawati_Temple"
+   },
+   {
+    "l": "Wikidata Q60761465",
+    "u": "https://www.wikidata.org/wiki/Q60761465"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "rajdevi-gaur",
+  "name": "Rajdevi Temple, Gaur",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Gaur, Rajdevi Municipality, Rautahat District",
+  "lat": 26.7683,
+  "lng": 85.3158,
+  "tradition": "Hindu",
+  "deity": "Rajdevi",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Hindu temple at Gaur in Rautahat District of Madhesh Province whose presiding deity is the goddess Rajdevi; the surrounding municipality takes its name from the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Rajdevi_Temple_(Gaur)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Rajdevi_Temple_(Gaur)"
+   },
+   {
+    "l": "Wikidata Q28184004",
+    "u": "https://www.wikidata.org/wiki/Q28184004"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kulpani-dang",
+  "name": "Kulpani Mandir",
+  "country": "Nepal",
+  "state": "Lumbini",
+  "place": "Badahara, Gadhawa Rural Municipality, Dang District",
+  "lat": 27.8071,
+  "lng": 82.7099,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda-style Shiva temple at Badahara in ward 1 of Gadhawa Rural Municipality, Dang District, Lumbini Province.",
+  "wiki": "https://en.wikipedia.org/wiki/Kulpani_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kulpani_Mandir"
+   },
+   {
+    "l": "Wikidata Q28408062",
+    "u": "https://www.wikidata.org/wiki/Q28408062"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chintang-devi-dhankuta",
+  "name": "Chintang Devi Temple",
+  "country": "Nepal",
+  "place": "Chintang, Dhankuta District",
+  "lat": 26.955,
+  "lng": 87.2041,
+  "tradition": "Hindu",
+  "deity": "Chintang Devi (Jalpadevi)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A goddess temple in Dhankuta District dedicated to Chintang Devi, also called Jalpadevi, and held in reverence in both Hindu and Kirati worship.",
+  "story": "The shrine takes its name from Chintang, one of the seven daughters of Budhahang.",
+  "wiki": "https://en.wikipedia.org/wiki/Chintang_Devi_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chintang_Devi_temple"
+   },
+   {
+    "l": "Wikidata Q104879211",
+    "u": "https://www.wikidata.org/wiki/Q104879211"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhaleshwor-chandragiri",
+  "name": "Bhaleshwor Mahadev Temple",
+  "country": "Nepal",
+  "state": "Bagmati",
+  "place": "Chandragiri Hill, Kathmandu District",
+  "lat": 27.6661,
+  "lng": 85.2054,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Shiva on the summit of Chandragiri hill on the southwestern rim of the Kathmandu Valley in Bagmati Province.",
+  "story": "The shrine is said to mark the place where the forehead of Sati Devi fell as Shiva carried her lifeless body across the world after her death at her father's sacrifice.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhaleshwor_Mahadev",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhaleshwor_Mahadev"
+   },
+   {
+    "l": "Wikidata Q30232689",
+    "u": "https://www.wikidata.org/wiki/Q30232689"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

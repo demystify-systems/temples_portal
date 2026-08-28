@@ -1,0 +1,1064 @@
+[
+ {
+  "id": "lunwa-atishaya-kshetra",
+  "name": "Atishaya Kshetra Lunwa Jain Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Lunwa",
+  "lat": 27.0338,
+  "lng": 75.1942,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha (Adinatha)",
+  "built": [
+   1615,
+   1615
+  ],
+  "builtDisplay": "established V.S. 1672 (c. 1615)",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Digambara Jain pilgrimage centre (atishaya kshetra) at Lunwa village in Rajasthan, whose Khandelwal Digambar Jain Mandir enshrines an image of Adinatha and whose adjoining Nasiya Ji shrine is dedicated to Neminatha. The temple's ancient images have long drawn Digambara pilgrims to the site.",
+  "story": "An image of Chandraprabha is said to have been unearthed by a farmer digging a well, then placed on a bullock cart that ran some 45 km before halting of its own accord at the Adinatha temple at Lunwa.",
+  "wiki": "https://en.wikipedia.org/wiki/Atishaya_Kshetra_Lunwa_Jain_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Atishaya_Kshetra_Lunwa_Jain_Temple"
+   },
+   {
+    "l": "Wikidata Q24947310",
+    "u": "https://www.wikidata.org/wiki/Q24947310"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "simhanagadde-jain-temple",
+  "name": "Simhanagadde Jain Temple",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Narasimharajapura",
+  "lat": 13.6052,
+  "lng": 75.4975,
+  "tradition": "Jain",
+  "deity": "Jwalamalini (Jain yakshi)",
+  "built": [
+   1400,
+   1600
+  ],
+  "builtDisplay": "15th–16th c.",
+  "dynasty": "Vijayanagara",
+  "style": "Vijayanagara",
+  "circuits": [],
+  "significance": "A Digambara Jain atishaya kshetra in Chikkamagaluru district whose principal shrine is dedicated to the yakshi Jwalamalini, shown seated in sukhasana with eight arms. The site is associated with the Yapaniya branch of the Mula Sangha, and a fourteenth-century inscription survives on an image in its Shantinatha basadi.",
+  "story": "Tradition holds that the ascetic Chikka Samantabhadra brought the Jwalamalini image from another Jain centre and installed it at Simhanagadde.",
+  "wiki": "https://en.wikipedia.org/wiki/Simhanagadde_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Simhanagadde_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q38251878",
+    "u": "https://www.wikidata.org/wiki/Q38251878"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "pavapuri-tirth-dham-sirohi",
+  "name": "Shree Pavapuri Tirth Dham",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Kushalgarh, Sirohi district",
+  "lat": 24.7503,
+  "lng": 72.7098,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1998,
+   2001
+  ],
+  "builtDisplay": "built 1998–2001",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A modern Svetambara Jain tirtha near Sirohi, begun in 1998 and completed in 2001 through the patronage of the K. P. Sanghvi family. Alongside the Parshvanatha temple the complex runs a large animal welfare centre, in keeping with the Jain principle of ahimsa.",
+  "wiki": "https://en.wikipedia.org/wiki/Shree_Pavapuri_Tirth_Dham",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shree_Pavapuri_Tirth_Dham"
+   },
+   {
+    "l": "Wikidata Q7503509",
+    "u": "https://www.wikidata.org/wiki/Q7503509"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "brahma-jinalaya-lakkundi",
+  "name": "Brahma Jinalaya, Lakkundi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Lakkundi",
+  "lat": 15.3895,
+  "lng": 75.7142,
+  "tradition": "Jain",
+  "deity": "Neminatha (originally Mahavira)",
+  "built": [
+   1007,
+   1007
+  ],
+  "builtDisplay": "1007 CE (Western Chalukya)",
+  "dynasty": "Western Chalukya",
+  "style": "Vesara (Western Chalukya)",
+  "circuits": [],
+  "significance": "The largest of Lakkundi's Jain temples, raised in 1007 CE by Attimabbe, wife of the general Nagadeva, and the earliest dated example of the Western Chalukya idiom in the village. Its sanctum lintel carries Mahavira, though the temple is now worshipped as a shrine of Neminatha.",
+  "wiki": "https://en.wikipedia.org/wiki/Brahma_Jinalaya,_Lakkundi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Brahma_Jinalaya,_Lakkundi"
+   },
+   {
+    "l": "Wikidata Q16726744",
+    "u": "https://www.wikidata.org/wiki/Q16726744"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "odegal-basadi-shravanabelagola",
+  "name": "Odegal Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shravanabelagola",
+  "lat": 12.855,
+  "lng": 76.485,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha, Neminatha & Shantinatha",
+  "built": [
+   1300,
+   1400
+  ],
+  "builtDisplay": "14th c.",
+  "dynasty": "Undetermined",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A fourteenth-century three-celled Jain basadi on Vindhyagiri hill at Shravanabelagola, housing dark schist images of Rishabhanatha, Neminatha and Shantinatha. Its name comes from the stone buttresses propping its walls, and it is a protected monument.",
+  "wiki": "https://en.wikipedia.org/wiki/Odegal_basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Odegal_basadi"
+   },
+   {
+    "l": "Wikidata Q104521581",
+    "u": "https://www.wikidata.org/wiki/Q104521581"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ahichchhatra-jain-temples",
+  "name": "Ahichchhatra Jain Temples",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Ahichchhatra, Bareilly district",
+  "lat": 28.3731,
+  "lng": 79.1183,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1975,
+   2007
+  ],
+  "builtDisplay": "Digambara temple rebuilt 1975; new shrines 2002–2007",
+  "origin": 96,
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Jain tirtha on the ancient mound of Ahichchhatra in Bareilly district, held to be the place where Parshvanatha, the twenty-third Tirthankara, attained kevala jnana. Both Digambara and Svetambara establishments stand here; the Digambara temple was rebuilt in 1975 and further shrines added in 2002 and 2007, on a site whose antiquities run back to the Indo-Scythian, Kushan and Gupta periods.",
+  "story": "While Parshvanatha meditated, a demon is said to have flooded him to the neck, whereupon the serpent king Dharanendra spread a thousand-hooded canopy above him and the goddess Padmavati coiled about his body to hold him clear of the water.",
+  "wiki": "https://en.wikipedia.org/wiki/Ahichchhatra_Jain_temples",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ahichchhatra_Jain_temples"
+   },
+   {
+    "l": "Wikidata Q111951167",
+    "u": "https://www.wikidata.org/wiki/Q111951167"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chavundaraya-basadi-shravanabelagola",
+  "name": "Chavundaraya Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shravanabelagola",
+  "lat": 12.8617,
+  "lng": 76.4868,
+  "tradition": "Jain",
+  "deity": "Neminatha",
+  "built": [
+   982,
+   982
+  ],
+  "builtDisplay": "982 CE (Western Ganga)",
+  "dynasty": "Western Ganga",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A Jain temple on Chandragiri hill at Shravanabelagola, raised in 982 CE by the Ganga minister Chavundaraya during the reign of Marasimha II and completed by his son Jinadeva. Its sanctum holds an image of Neminatha, and the temple is also called Sruta-tirtha because the acharya Nemichandra is said to have composed the Gommatsara here.",
+  "wiki": "https://en.wikipedia.org/wiki/Chavundaraya_Basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chavundaraya_Basadi"
+   },
+   {
+    "l": "Wikidata Q80831086",
+    "u": "https://www.wikidata.org/wiki/Q80831086"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "aharji-tikamgarh",
+  "name": "Aharji Jain Tirth",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Ahar, Tikamgarh district",
+  "lat": 24.75,
+  "lng": 79.14,
+  "tradition": "Jain",
+  "deity": "Shantinatha",
+  "built": [
+   1180,
+   1180
+  ],
+  "builtDisplay": "1180 CE (Chandela)",
+  "dynasty": "Chandela",
+  "circuits": [],
+  "significance": "A Digambara Jain tirtha near Baldeogarh in Tikamgarh district, known for an eighteen-foot standing (khadgasana) colossus of Shantinatha. The main temple was built in 1180 CE by two brothers, Jahad and Udaichandra, under the Chandela ruler Paramardi, within a phase of Jain building at the site running from the tenth to the thirteenth century.",
+  "wiki": "https://en.wikipedia.org/wiki/Aharji",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Aharji"
+   },
+   {
+    "l": "Wikidata Q4694978",
+    "u": "https://www.wikidata.org/wiki/Q4694978"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "andeshwar-parshwanath-banswara",
+  "name": "Andeshwar Parshwanath Jain Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Andeshwar, Banswara district",
+  "lat": 23.296,
+  "lng": 74.348,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1300,
+   1400
+  ],
+  "builtDisplay": "14th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Digambara Jain atishaya kshetra in Kushalgarh tehsil of Banswara district, some 40 km from Banswara town. The fourteenth-century temple's chief image is a mulnayak of Parshvanatha thought to be older still, of the twelfth or thirteenth century.",
+  "story": "The Parshvanatha image is said to have come to light when local tribespeople turned it up while working their fields.",
+  "wiki": "https://en.wikipedia.org/wiki/Andeshwar_Parshwanath_Jain_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Andeshwar_Parshwanath_Jain_Temple"
+   },
+   {
+    "l": "Wikidata Q4754291",
+    "u": "https://www.wikidata.org/wiki/Q4754291"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "tirumalai-jain-complex",
+  "name": "Tirumalai Jain Complex",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Tirumalai, Polur, Tiruvannamalai district",
+  "lat": 12.5567,
+  "lng": 79.2059,
+  "tradition": "Jain",
+  "deity": "Neminatha",
+  "built": [
+   800,
+   1000
+  ],
+  "builtDisplay": "9th–10th c. (Chola); later shrines to the 17th c.",
+  "dynasty": "Chola",
+  "style": "Jain rock-cut",
+  "circuits": [],
+  "significance": "A Jain hill complex near Polur with three caves, two temples and a 16-foot sculpture of the Tirthankara Neminatha, in use from at least the ninth century. The Kunthavai Jinalaya was endowed by the Chola princess Kundavai in the tenth century, and inscriptions of Rajendra Chola I survive here; Mahavira and Parshvanatha shrines were added in the sixteenth and seventeenth centuries.",
+  "story": "Tradition holds that eight thousand Jain monks who came south with Bhadrabahu performed penance on this hill and attained nirvana here.",
+  "wiki": "https://en.wikipedia.org/wiki/Tirumalai_(Tamil_Nadu)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tirumalai_(Tamil_Nadu)"
+   },
+   {
+    "l": "Wikidata Q7809341",
+    "u": "https://www.wikidata.org/wiki/Q7809341"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bijolia-parshvanath-temple",
+  "name": "Bijolia Parshvanath Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Bijolia, Bhilwara district",
+  "lat": 25.1498,
+  "lng": 75.3375,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1160,
+   1160
+  ],
+  "builtDisplay": "1160 CE (Chahamana)",
+  "dynasty": "Chahamana",
+  "style": "Panchayatana",
+  "circuits": [],
+  "significance": "A Digambara Jain pilgrimage centre at Bijolia, also called Tapodaya Tirth Kshetra, dedicated to Parshvanatha. Five temples were built here in 1160 CE by the merchant Lala during the reign of the Chahamana king Somesvara, laid out in a panchayatana arrangement beside a stepped reservoir.",
+  "wiki": "https://en.wikipedia.org/wiki/Bijolia_Parshvanath_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bijolia_Parshvanath_temple"
+   },
+   {
+    "l": "Wikidata Q112072703",
+    "u": "https://www.wikidata.org/wiki/Q112072703"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "tijara-jain-temple",
+  "name": "Tijara Jain Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Tijara, Khairthal-Tijara district",
+  "lat": 27.93,
+  "lng": 76.85,
+  "tradition": "Jain",
+  "deity": "Chandraprabha",
+  "built": [
+   1956,
+   1956
+  ],
+  "builtDisplay": "established 1956",
+  "origin": 1497,
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Digambara Jain atishaya kshetra at Tijara in Rajasthan, established in 1956 around a 15-inch white marble mulnayak of Chandraprabha, the eighth Tirthankara, whose inscription records its installation in V.S. 1554 (1497 CE). The temple is decorated with carvings, paintings and glasswork and stands about 110 km from Delhi.",
+  "wiki": "https://en.wikipedia.org/wiki/Tijara_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tijara_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q7801817",
+    "u": "https://www.wikidata.org/wiki/Q7801817"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "parsvanath-jain-temple-ii-khandagiri",
+  "name": "Parsvanath Jain Temple-II, Khandagiri",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Khandagiri, Bhubaneswar",
+  "lat": 20.2706,
+  "lng": 85.7856,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1900,
+   2000
+  ],
+  "builtDisplay": "20th c.",
+  "dynasty": "Modern",
+  "style": "Kalinga",
+  "circuits": [],
+  "significance": "A twentieth-century Digambara Jain temple in the Khandagiri precinct at Bhubaneswar, built in the Kalinga idiom. Its sanctum enshrines a standing image of Parshvanatha crowned with a serpent hood.",
+  "wiki": "https://en.wikipedia.org/wiki/Parsvanath_Jain_Temple-II",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Parsvanath_Jain_Temple-II"
+   },
+   {
+    "l": "Wikidata Q7140075",
+    "u": "https://www.wikidata.org/wiki/Q7140075"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "nakodaji-parshvanath",
+  "name": "Nakoda Parshvanath Tirth (Nakodaji)",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Nakoda, Barmer district",
+  "lat": 25.7881,
+  "lng": 72.1525,
+  "tradition": "Jain",
+  "deity": "Parshvanatha (Nakoda Parshvanath)",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Solanki); renovated 1449",
+  "dynasty": "Solanki (Chaulukya)",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "One of the principal Svetambara Jain tirthas of western Rajasthan, standing between the villages of Vikrampura and Nakoda in Barmer district. The present temple dates to the eleventh century and was renovated by Acharya Kirtisuri in 1449; its 24-inch black stone image of Parshvanatha is worshipped alongside the guardian Nakoda Bhairava, and the temple is managed by the Tapa Gaccha of the Murtipujaka Svetambaras.",
+  "story": "The buried image is said to have eluded searchers until Bhairava appeared in a dream and pointed out the exact spot where it lay.",
+  "wiki": "https://en.wikipedia.org/wiki/Nakodaji",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Nakodaji"
+   },
+   {
+    "l": "Wikidata Q112119156",
+    "u": "https://www.wikidata.org/wiki/Q112119156"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chandraprabha-jain-temple-kumbakonam",
+  "name": "Bhagawan Chandraprabha Jain Temple, Kumbakonam",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Kumbakonam, Thanjavur district",
+  "lat": 10.9572,
+  "lng": 79.3731,
+  "tradition": "Jain",
+  "deity": "Chandraprabha",
+  "built": [
+   1903,
+   1903
+  ],
+  "builtDisplay": "established 1903",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Jain temple in the temple town of Kumbakonam, established in 1903 with its consecration (panchakalyanaka) celebrated in 1905. Its presiding image is Chandraprabha, the eighth Tirthankara.",
+  "wiki": "https://en.wikipedia.org/wiki/Kumbakonam_Jain_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kumbakonam_Jain_Temple"
+   },
+   {
+    "l": "Wikidata Q19805738",
+    "u": "https://www.wikidata.org/wiki/Q19805738"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "atma-vallabh-jain-smarak-delhi",
+  "name": "Shri Atma Vallabh Jain Smarak",
+  "country": "India",
+  "state": "Delhi",
+  "place": "Nangli Poona, GT Karnal Road",
+  "lat": 28.7774,
+  "lng": 77.1405,
+  "tradition": "Jain",
+  "deity": "Vasupujya",
+  "built": [
+   1979,
+   1989
+  ],
+  "builtDisplay": "built 1979–1989",
+  "dynasty": "Modern",
+  "style": "Jain sthapatya (dome over stepped roof)",
+  "circuits": [],
+  "significance": "A Svetambara Jain memorial complex on the GT Karnal Road north of Delhi, raised between 1979 and 1989 by followers of Acharya Vijay Vallabh Suri in his memory. The main shrine enshrines Vasupujya, the twelfth Tirthankara, and the buildings follow traditional Jain temple architecture.",
+  "wiki": "https://en.wikipedia.org/wiki/Shri_Atma_Vallabh_Jain_Smarak",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shri_Atma_Vallabh_Jain_Smarak"
+   },
+   {
+    "l": "Wikidata Q83442133",
+    "u": "https://www.wikidata.org/wiki/Q83442133"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "neminatha-basadi-malkheda",
+  "name": "Neminatha Jain Temple, Malkheda",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Malkheda (Manyakheta), Kalaburagi district",
+  "lat": 17.195,
+  "lng": 77.1608,
+  "tradition": "Jain",
+  "deity": "Neminatha",
+  "built": [
+   800,
+   1100
+  ],
+  "builtDisplay": "9th c., with 9th–11th-c. pillars and walls",
+  "dynasty": "Rashtrakuta",
+  "circuits": [],
+  "significance": "A ninth-century Jain temple of Neminatha at Malkheda on the Kagina river, the settlement that as Manyakheta was the imperial capital of the Rashtrakutas under Amoghavarsha I and later of the Western Chalukyas. Its pillars and walls span the ninth to eleventh centuries, and a Jain Bhattaraka math continues at the site.",
+  "wiki": "https://en.wikipedia.org/wiki/Manyakheta",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Manyakheta"
+   },
+   {
+    "l": "Wikidata Q191771",
+    "u": "https://www.wikidata.org/wiki/Q191771"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "mirpur-jain-temple-sirohi",
+  "name": "Mirpur Jain Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Mirpur, Sirohi district",
+  "lat": 24.783,
+  "lng": 72.7864,
+  "tradition": "Jain",
+  "deity": "Parshvanatha (Bhidbhanjan Parshvanath)",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Solanki)",
+  "dynasty": "Solanki (Chaulukya)",
+  "circuits": [],
+  "significance": "A Svetambara Jain temple at Mirpur in Sirohi district, dedicated to the twenty-third Tirthankara Parshvanatha under the name Bhidbhanjan Parshvanath. Built in the ninth century under Solanki rule, it is noted for its marble domes, pillars and carved borders.",
+  "story": "The main image shows the serpent king Dharanendra raising a five-hooded canopy over Parshvanatha to shield him from the storm loosed by his adversary Kamatha.",
+  "wiki": "https://en.wikipedia.org/wiki/Mirpur_Jain_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mirpur_Jain_Temple"
+   },
+   {
+    "l": "Wikidata Q16895212",
+    "u": "https://www.wikidata.org/wiki/Q16895212"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "dehra-temple-bhond-nuh",
+  "name": "Dehra Temple",
+  "country": "India",
+  "state": "Haryana",
+  "place": "Bhond, Nuh district",
+  "lat": 27.7814,
+  "lng": 76.9187,
+  "tradition": "Jain",
+  "deity": "Ajitanatha",
+  "built": [
+   900,
+   1000
+  ],
+  "builtDisplay": "10th c.; inscription of 1451 (V.S. 1508)",
+  "dynasty": "Undetermined",
+  "style": "Lodi-influenced",
+  "circuits": [],
+  "significance": "A tenth-century Jain temple at Bhond near Ferozepur Jhirka in Haryana's Nuh district, dedicated to the Tirthankara Ajitanatha and carrying an inscription of 1451. Its fabric mixes Hindu temple forms with the Lodi idiom of the Delhi Sultanate; a Shiva lingam once kept here was later moved to the Jain temple at Ferozepur Jhirka.",
+  "wiki": "https://en.wikipedia.org/wiki/Dehra_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dehra_Temple"
+   },
+   {
+    "l": "Wikidata Q60617896",
+    "u": "https://www.wikidata.org/wiki/Q60617896"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "jahaj-mandir-mandwala",
+  "name": "Jahaj Mandir",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Mandwala, Jalore district",
+  "lat": 25.4294,
+  "lng": 72.5234,
+  "tradition": "Jain",
+  "deity": "Shantinatha",
+  "built": [
+   1993,
+   1999
+  ],
+  "builtDisplay": "built 1993–1999",
+  "dynasty": "Modern",
+  "style": "Ship-shaped, Makrana marble",
+  "circuits": [],
+  "significance": "A Svetambara Jain temple at Mandwala in Jalore district, built between 1993 and 1999 in the shape of a ship some 55 feet high and faced in Makrana marble. Shantinatha is its mulnayak, at the centre of the shrine.",
+  "story": "Devotees recount that at the cremation of Acharya Jin Kantisagar Suri on 3 December 1985 the master's right hand rose from the pyre and swayed, taken as a last blessing to the thousands watching.",
+  "website": "https://www.jahajmandir.com",
+  "wiki": "https://en.wikipedia.org/wiki/Jahaj_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jahaj_Mandir"
+   },
+   {
+    "l": "Wikidata Q6123017",
+    "u": "https://www.wikidata.org/wiki/Q6123017"
+   },
+   {
+    "l": "Official site",
+    "u": "https://www.jahajmandir.com"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "vahelna-jain-temple",
+  "name": "Vahelna Jain Temple",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Vahelna, Muzaffarnagar district",
+  "lat": 29.4286,
+  "lng": 77.6881,
+  "tradition": "Jain",
+  "deity": "Parshvanatha",
+  "built": [
+   1900,
+   2000
+  ],
+  "builtDisplay": "20th c.",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A twentieth-century Digambara Jain atishaya kshetra at Vahelna village in Muzaffarnagar district, formally titled Shri 1008 Parshvnath Digamber Jain Atishaya Kshetra. Its principal image is Parshvanatha seated in padmasana.",
+  "wiki": "https://en.wikipedia.org/wiki/Vahelna_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vahelna_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q106758728",
+    "u": "https://www.wikidata.org/wiki/Q106758728"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "vijayamangalam-jain-temple",
+  "name": "Vijayamangalam Jain Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Vijayamangalam, Erode district",
+  "lat": 11.2494,
+  "lng": 77.5029,
+  "tradition": "Jain",
+  "deity": "Chandraprabha",
+  "built": [
+   678,
+   678
+  ],
+  "builtDisplay": "678 CE",
+  "dynasty": "Velir (Konguvelir)",
+  "style": "Western Ganga",
+  "circuits": [],
+  "significance": "One of the oldest surviving Jain temples in the Kongu country, founded in 678 CE by the Velir king Konguvelir at Vijayamangalam in Erode district. Also called the Chandraprabha Tirthankarar temple, it is dedicated to Chandraprabha, the eighth Tirthankara.",
+  "story": "Local tradition recalls a Tamil assembly convened here when Konguvelir composed the epic Perunkathai, his maidservant helping him answer the scholars' questions — an episode later commemorated by images installed at the temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Vijayamangalam_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Vijayamangalam_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q97481101",
+    "u": "https://www.wikidata.org/wiki/Q97481101"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sarvodaya-jain-temple-amarkantak",
+  "name": "Sarvodaya Jain Temple, Amarkantak",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Amarkantak, Anuppur district",
+  "lat": 22.6792,
+  "lng": 81.7597,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha",
+  "built": [
+   2006,
+   2006
+  ],
+  "builtDisplay": "begun 2006; still under construction",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A large Jain temple under construction at Amarkantak in Madhya Pradesh since 2006. Its mulnayak is a 24-tonne ashtadhatu image of Rishabhanatha set on a lotus-shaped ashtadhatu pedestal weighing 28 tonnes.",
+  "wiki": "https://en.wikipedia.org/wiki/Sarvodaya_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sarvodaya_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q105087102",
+    "u": "https://www.wikidata.org/wiki/Q105087102"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "lachhuar-jain-temple",
+  "name": "Lachhuar Jain Temple",
+  "country": "India",
+  "state": "Bihar",
+  "place": "Lachhuar, Jamui district",
+  "lat": 24.9145,
+  "lng": 86.0144,
+  "tradition": "Jain",
+  "deity": "Mahavira",
+  "built": [
+   1857,
+   1857
+  ],
+  "builtDisplay": "1857",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Svetambara Jain temple at Lachhuar in Jamui district, built in 1857 under the patronage of Raja Dhanpat Singh Bahadur. It is dedicated to Mahavira and for a time sheltered an ancient image of the Tirthankara.",
+  "wiki": "https://en.wikipedia.org/wiki/Lachhuar_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Lachhuar_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q111992495",
+    "u": "https://www.wikidata.org/wiki/Q111992495"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "mangi-tungi",
+  "name": "Mangi-Tungi",
+  "country": "India",
+  "state": "Maharashtra",
+  "place": "Taharabad, Nashik district",
+  "lat": 20.8422,
+  "lng": 74.0844,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha (Adinatha) and other Tirthankaras",
+  "built": [
+   595,
+   2016
+  ],
+  "builtDisplay": "images from 595 CE; 1343 inscription; 108-ft colossus consecrated 2016",
+  "dynasty": "Undetermined",
+  "style": "Rock-cut caves and temples",
+  "circuits": [],
+  "significance": "A twin-pinnacled Digambara Jain pilgrimage hill in Nashik district, honeycombed with rock-cut caves and shrines holding Tirthankara images in padmasana and kayotsarga. Images installed in 595 CE survive here and an inscription of 1343 is recorded in the Adinatha cave; a 108-foot statue was consecrated in 2016 at the inspiration of the nun Gyanmati Mataji.",
+  "story": "Jain tradition holds that Rama, Hanuman, Sugriva and ninety-nine crore ascetics attained moksha from these hills.",
+  "wiki": "https://en.wikipedia.org/wiki/Mangi-Tungi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mangi-Tungi"
+   },
+   {
+    "l": "Wikidata Q3429894",
+    "u": "https://www.wikidata.org/wiki/Q3429894"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "shantinatha-basadi-jinanathapura",
+  "name": "Shantinatha Basadi, Jinanathapura",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Jinanathapura, Hassan district",
+  "lat": 12.8614,
+  "lng": 76.4866,
+  "tradition": "Jain",
+  "deity": "Shantinatha",
+  "built": [
+   1117,
+   1117
+  ],
+  "builtDisplay": "c. 1117 (Hoysala)",
+  "dynasty": "Hoysala",
+  "style": "Hoysala",
+  "circuits": [],
+  "significance": "A Hoysala-period Jain temple at Jinanathapura, just north of Shravanabelagola, dedicated to the sixteenth Tirthankara Shantinatha. Raised around 1117 during Vishnuvardhana's reign and attributed to Recana, a general and minister of Ballala II, it is admired for the dense lathe-turned pillars and wall sculpture typical of Hoysala work.",
+  "wiki": "https://en.wikipedia.org/wiki/Shantinatha_Basadi,_Jinanathapura",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Shantinatha_Basadi,_Jinanathapura"
+   },
+   {
+    "l": "Wikidata Q19898328",
+    "u": "https://www.wikidata.org/wiki/Q19898328"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ghantai-temple-khajuraho",
+  "name": "Ghantai Temple, Khajuraho",
+  "country": "India",
+  "state": "Madhya Pradesh",
+  "place": "Khajuraho, Chhatarpur district",
+  "lat": 24.8461,
+  "lng": 79.9333,
+  "tradition": "Jain",
+  "deity": "Rishabhanatha (Adinatha)",
+  "built": [
+   995,
+   995
+  ],
+  "builtDisplay": "c. 995 (Chandela)",
+  "dynasty": "Chandela",
+  "circuits": [],
+  "significance": "A ruined Digambara Jain temple in the eastern group at Khajuraho, built around 995 CE under the Chandela king Dhanga and dedicated to Rishabhanatha. Only its pillared hall survives, and it takes its name from the chain-and-bell motif carved on those pillars.",
+  "wiki": "https://en.wikipedia.org/wiki/Ghantai_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ghantai_temple"
+   },
+   {
+    "l": "Wikidata Q28171838",
+    "u": "https://www.wikidata.org/wiki/Q28171838"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chandragupta-basadi-shravanabelagola",
+  "name": "Chandragupta Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shravanabelagola",
+  "lat": 12.8617,
+  "lng": 76.4868,
+  "tradition": "Jain",
+  "deity": "Parshvanatha (with Padmavati and Kushmandini)",
+  "built": [
+   800,
+   1000
+  ],
+  "builtDisplay": "9th–10th c.; perforated screens c. 12th c.",
+  "dynasty": "Undetermined",
+  "style": "Three-celled, south-facing with small towers",
+  "circuits": [],
+  "significance": "One of the oldest shrines on Chandragiri hill at Shravanabelagola, a three-celled temple whose central cell holds Parshvanatha flanked by cells for the yakshis Padmavati and Kushmandini. Its perforated stone screens and ornamental doorway, attributed to the sculptor Dasoja, were added around the twelfth century.",
+  "story": "Tradition holds that the Mauryan emperor Chandragupta, who is said to have ended his life in Jain asceticism on this hill, had the temple built.",
+  "wiki": "https://en.wikipedia.org/wiki/Chandragupta_basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chandragupta_basadi"
+   },
+   {
+    "l": "Wikidata Q5071343",
+    "u": "https://www.wikidata.org/wiki/Q5071343"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chitharal-jain-monuments",
+  "name": "Chitharal Jain Monuments",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Chitharal, Kanyakumari district",
+  "lat": 8.3325,
+  "lng": 77.2384,
+  "tradition": "Jain",
+  "deity": "Tirthankaras (with an adjoining Bhagavati shrine)",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c.; rock beds from c. 1st c. BCE",
+  "origin": -100,
+  "dynasty": "Pandya",
+  "style": "Rock-cut",
+  "circuits": [],
+  "significance": "A hilltop rock-cut Digambara Jain temple in Kanyakumari district with Tirthankara reliefs on its outer face, standing beside a Hindu Bhagavati shrine. The Archaeological Survey of India dates the ascetics' rock beds here between the first century BCE and the sixth century CE, while the temple work belongs to the ninth century and an inscription records the twenty-eighth regnal year of Vikramaditya Varaguna; the site is read as evidence of overlap rather than conflict between the two traditions.",
+  "wiki": "https://en.wikipedia.org/wiki/Chitharal_Jain_Monuments_and_Bhagavati_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chitharal_Jain_Monuments_and_Bhagavati_Temple"
+   },
+   {
+    "l": "Wikidata Q12681046",
+    "u": "https://www.wikidata.org/wiki/Q12681046"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "melsithamur-jina-kanchi-math",
+  "name": "Jina Kanchi Jain Math, Melsithamur",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Melsithamur, Villupuram district",
+  "lat": 12.2697,
+  "lng": 79.5142,
+  "tradition": "Jain",
+  "deity": "Parshvanatha (second shrine: Mallinatha)",
+  "built": [
+   1570,
+   1600
+  ],
+  "builtDisplay": "built under Venkatappa Nayak (1570–1600); altered 1860",
+  "origin": 800,
+  "dynasty": "Nayak of Gingee",
+  "circuits": [],
+  "significance": "The seat of the Digambara Jain pontiff of the Tamil country, about 10 km east of Gingee, with two temples — one of Parshvanatha and one of Mallinatha, the latter holding rock-cut images carved in the ninth century. The math was built with the permission of Venkatappa Nayak of Gingee and modified in 1860 by the Jain official Sri Baliah.",
+  "wiki": "https://en.wikipedia.org/wiki/Mel_Sithamur_Jain_Math",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Mel_Sithamur_Jain_Math"
+   },
+   {
+    "l": "Wikidata Q6810843",
+    "u": "https://www.wikidata.org/wiki/Q6810843"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "naugaza-jain-temple-alwar",
+  "name": "Naugaza Digambar Jain Temple",
+  "country": "India",
+  "state": "Rajasthan",
+  "place": "Naugaza, Rajgarh, Alwar district",
+  "lat": 27.2462,
+  "lng": 76.3489,
+  "tradition": "Jain",
+  "deity": "Shantinatha",
+  "built": [
+   922,
+   923
+  ],
+  "builtDisplay": "c. 922 CE (V.S. 979; Gurjara-Pratihara)",
+  "dynasty": "Gurjara-Pratihara",
+  "style": "Gurjara-Pratihara",
+  "circuits": [],
+  "significance": "A ruined tenth-century Digambara Jain temple in the Rajgarh area of Alwar district, dated by inscription to V.S. 979 under the Gurjara-Pratihara ruler Mahipala I of Kannauj. Of the temple only a colossal 17.5-foot standing image of the Tirthankara Shantinatha survives intact.",
+  "wiki": "https://en.wikipedia.org/wiki/Naugaza_Digambar_Jain_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Naugaza_Digambar_Jain_temple"
+   },
+   {
+    "l": "Wikidata Q60155046",
+    "u": "https://www.wikidata.org/wiki/Q60155046"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhandara-basadi-shravanabelagola",
+  "name": "Bhandara Basadi",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shravanabelagola",
+  "lat": 12.8567,
+  "lng": 76.4887,
+  "tradition": "Jain",
+  "deity": "The twenty-four Tirthankaras",
+  "built": [
+   1159,
+   1159
+  ],
+  "builtDisplay": "1159 CE (Hoysala)",
+  "dynasty": "Hoysala",
+  "style": "Hoysala",
+  "circuits": [],
+  "significance": "Also called the Chaturvimsati Tirthankara Basadi, this temple in Shravanabelagola town was built in 1159 CE by Hulla Raja, treasurer and chief minister of the Hoysala king Narasimha I, and is dedicated to all twenty-four Tirthankaras.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhandara_Basadi",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhandara_Basadi"
+   },
+   {
+    "l": "Wikidata Q112109096",
+    "u": "https://www.wikidata.org/wiki/Q112109096"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]
