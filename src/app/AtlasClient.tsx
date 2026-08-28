@@ -17,11 +17,18 @@ import {
   domIdFor, focusOrder, keyIntent, resolveMove, targetFromDomId,
   type CircuitRoute, type FocusTarget,
 } from "@/lib/map-keyboard";
+import {
+  MAP_LAYERS, REFRESH_DEBOUNCE_MS, REQUEST_CACHE_LIMIT, builtinOffClasses, defaultLayerState,
+  isWms, wmsRequest, type ContentRect, type LayerRequest, type LayerStatus, type MapFrame, type MapLayer,
+} from "@/lib/layers";
 import SiteHeader from "./SiteHeader";
+import LayerControl from "./LayerControl";
 
 const { W, H, LON0, LON1, LAT0, LAT1 } = GEO;
 /** The map's own coordinate box. Every gesture is clamped to it. */
 const EXTENT = { width: W, height: H };
+/** The same box as the layer maths wants it. `layers.test.ts` pins the two together. */
+const FRAME: MapFrame = { W, H, LON0, LON1, LAT0, LAT1 };
 const mercY = (t: number) => Math.log(Math.tan(Math.PI / 4 + (t * Math.PI) / 180 / 2));
 const YT = mercY(LAT1), YB = mercY(LAT0);
 const PX = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
@@ -155,10 +162,158 @@ export default function AtlasClient() {
     cirs: [...new Set(SITES.flatMap((s) => s.circuits ?? []))].sort(),
   }), []);
 
+  // ---- map layers ---------------------------------------------------------
+  // Everything a layer is lives in `MAP_LAYERS` (src/lib/layers.ts). This block
+  // only *drives* the registry: it never names a layer.
+  //
+  // Two rules are load-bearing rather than stylistic:
+  //  1. A remote layer is fetched only while it is switched on. There is no
+  //     prefetch and no warm-up on mount, so a reader who never opens the panel
+  //     never touches ISRO's servers. Nothing here is persisted either — the
+  //     opt-in lasts one session, deliberately.
+  //  2. A failed fetch must be invisible. The image is preloaded off-DOM and
+  //     the `<image>` element is only created once the bytes are in; a 404, a
+  //     timeout or a dead service therefore leaves the map exactly as it was,
+  //     with no broken-image glyph anywhere.
+  const [layersOn, setLayersOn] = useState<Record<string, boolean>>(defaultLayerState);
+  const [layerStatus, setLayerStatus] = useState<Record<string, LayerStatus>>({});
+  const [overlays, setOverlays] = useState<Record<string, { href: string; rect: ContentRect } | null>>({});
+  const layersOnRef = useRef(layersOn); layersOnRef.current = layersOn;
+  /** The request key currently placed for each layer: the "nothing changed" test. */
+  const placedKey = useRef(new Map<string, string>());
+  /** Outcome per request key, so a bbox already tried is not tried again. */
+  const requestCache = useRef(new Map<string, "ok" | "error">());
+  const inFlight = useRef(new Map<string, HTMLImageElement>());
+  const overlayTimer = useRef(0);
+
+  const setStatus = (id: string, next: LayerStatus) =>
+    setLayerStatus((prev) => (prev[id] === next ? prev : { ...prev, [id]: next }));
+
+  const remember = (key: string, outcome: "ok" | "error") => {
+    const cache = requestCache.current;
+    cache.delete(key);
+    cache.set(key, outcome);
+    // Insertion-ordered Map, so the first key is the least recently written.
+    while (cache.size > REQUEST_CACHE_LIMIT) {
+      const oldest = cache.keys().next().value;
+      if (oldest === undefined) break;
+      cache.delete(oldest);
+    }
+  };
+
+  /**
+   * Fetch one tile off-DOM. Resolves into `overlays` on success and into a
+   * status line on failure; either way the map itself is never disturbed.
+   */
+  const loadTile = useCallback((layer: MapLayer & { source: { timeoutMs: number } }, req: LayerRequest) => {
+    const img = new Image();
+    let settled = false;
+    const fail = () => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      img.src = "";                       // cancel a transfer still in the air
+      inFlight.current.delete(req.key);
+      remember(req.key, "error");
+      setStatus(layer.id, "unavailable");
+    };
+    const timer = window.setTimeout(fail, layer.source.timeoutMs);
+    img.onerror = fail;
+    img.onload = () => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      inFlight.current.delete(req.key);
+      remember(req.key, "ok");
+      // The reader may have switched the layer off while this was in flight.
+      if (!layersOnRef.current[layer.id]) return;
+      placedKey.current.set(layer.id, req.key);
+      setOverlays((prev) => ({ ...prev, [layer.id]: { href: req.url, rect: req.rect } }));
+      setStatus(layer.id, "ready");
+    };
+    inFlight.current.set(req.key, img);
+    img.src = req.url;
+  }, []);
+
+  const refreshOverlays = useCallback(() => {
+    const on = layersOnRef.current;
+    const map = mapRef.current;
+    if (!map) return;
+    const box = map.getBoundingClientRect();
+    const viewport = { width: box.width, height: box.height };
+    const dpr = typeof window === "undefined" ? 1 : window.devicePixelRatio || 1;
+
+    for (const layer of MAP_LAYERS) {
+      if (!isWms(layer)) continue;
+      if (!on[layer.id]) continue;          // rule 1: off means no request, ever
+
+      const req = wmsRequest(layer, FRAME, view.current, viewport, dpr);
+      if (!req) {
+        // Panned off the layer's coverage. Drop the stale raster rather than
+        // leave a tile of India floating over the Bay of Bengal.
+        setOverlays((prev) => (prev[layer.id] ? { ...prev, [layer.id]: null } : prev));
+        placedKey.current.delete(layer.id);
+        setStatus(layer.id, "out-of-view");
+        continue;
+      }
+      if (placedKey.current.get(layer.id) === req.key) continue;
+      if (inFlight.current.has(req.key)) continue;
+      if (requestCache.current.get(req.key) === "error") { setStatus(layer.id, "unavailable"); continue; }
+      setStatus(layer.id, "loading");
+      loadTile(layer, req);
+    }
+  }, [loadTile]);
+
+  /**
+   * Debounced: a pinch fires a pointermove per finger per frame, and every one
+   * of them changes the bbox. Requests go out once the view has settled.
+   */
+  const scheduleOverlays = useCallback(() => {
+    const on = layersOnRef.current;
+    if (!MAP_LAYERS.some((l) => isWms(l) && on[l.id])) return;   // no timer for a layer nobody wants
+    window.clearTimeout(overlayTimer.current);
+    overlayTimer.current = window.setTimeout(refreshOverlays, REFRESH_DEBOUNCE_MS);
+  }, [refreshOverlays]);
+
+  const toggleLayer = useCallback((id: string, next: boolean) => {
+    setLayersOn((prev) => ({ ...prev, [id]: next }));
+    if (next) return;
+    // Switching off drops the raster now, and forgets this layer's failures so
+    // that switching it on again genuinely retries a service that may be back.
+    setOverlays((prev) => (prev[id] ? { ...prev, [id]: null } : prev));
+    placedKey.current.delete(id);
+    for (const key of [...requestCache.current.keys()]) {
+      if (key.startsWith(`${id}|`)) requestCache.current.delete(key);
+    }
+    setLayerStatus((prev) => {
+      if (!(id in prev)) return prev;
+      const next2 = { ...prev }; delete next2[id]; return next2;
+    });
+  }, []);
+
+  // An explicit opt-in should not wait out the pan debounce.
+  useEffect(() => {
+    if (!MAP_LAYERS.some((l) => isWms(l) && layersOn[l.id])) return;
+    refreshOverlays();
+  }, [layersOn, refreshOverlays]);
+
+  // The viewport size feeds the requested pixel size, so a resize re-asks.
+  useEffect(() => {
+    const onResize = () => scheduleOverlays();
+    addEventListener("resize", onResize);
+    return () => {
+      removeEventListener("resize", onResize);
+      window.clearTimeout(overlayTimer.current);
+      for (const img of inFlight.current.values()) img.src = "";
+      inFlight.current.clear();
+    };
+  }, [scheduleOverlays]);
+
   const applyView = () => {
     const { x, y, k } = view.current;
     worldRef.current?.setAttribute("transform", `translate(${x} ${y}) scale(${k})`);
     renderPoints();
+    scheduleOverlays();
   };
 
   /**
@@ -433,6 +588,9 @@ export default function AtlasClient() {
       // Focusable, named, and in filtered DOM order: the whole of T-043's
       // traversal contract lives in these three attributes.
       g.setAttribute("id", domIdFor({ kind: "mark", id: s.id }));
+      // Read back on pointerup to resolve a tap — see the note on `tap` below:
+      // pointer capture stops the click listener firing on touch devices.
+      g.setAttribute("data-site", s.id);
       g.setAttribute("tabindex", "0");
       g.setAttribute("role", "button");
       g.setAttribute("aria-label", `${s.name} — ${s.place}, ${s.country}. ${s.builtDisplay}. ${s.tradition}.`);
@@ -442,7 +600,15 @@ export default function AtlasClient() {
       const kind = TRADS[s.tradition] ?? "circle";
       const mark = document.createElementNS(NS, kind === "circle" ? "circle" : "path");
       g.appendChild(halo); g.appendChild(mark);
-      g.addEventListener("click", (e) => { e.stopPropagation(); returnTo.current = g.id; select(s.id, false); });
+      // Kept for mouse and for synthetic clicks from keyboard activation. The
+      // pointerup path handles touch, where this never fires; `selRef` guards
+      // the overlap so a mouse click does not select twice.
+      g.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (selRef.current === s.id) return;
+        returnTo.current = g.id;
+        select(s.id, false);
+      });
       g.addEventListener("mouseenter", (e) => showTip(s, e as MouseEvent));
       g.addEventListener("mousemove", (e) => moveTip(e as MouseEvent));
       g.addEventListener("mouseleave", hideTip);
@@ -492,7 +658,12 @@ export default function AtlasClient() {
     let pan: { id: number; from: Point; base: View } | null = null;
     let spread = 0;                     // finger distance at the last pinch sample
     let pinchMid: Point | null = null;  // client midpoint at the last pinch sample
-    let tap: { id: number; onBackground: boolean } | null = null;
+    // The element the tap started on, not just whether it was background.
+    // `click` cannot be trusted here: the map takes pointer capture on every
+    // pointerdown, and the browser retargets the synthesised click to the
+    // capture element — so a listener on a mark or a cluster never fires. Taps
+    // are therefore resolved from the pointerdown target on pointerup.
+    let tap: { id: number; hit: Element | null; onBackground: boolean } | null = null;
     let lastTap: Tap | null = null;
 
     // Re-derive the gesture from whatever is still down. Called after every
@@ -523,9 +694,8 @@ export default function AtlasClient() {
       pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       try { map.setPointerCapture(e.pointerId); } catch { /* pointer already gone; the Map still tracks it */ }
       // A second finger cancels any tap in flight: this is a pinch, not a tap.
-      tap = pointers.size === 1
-        ? { id: e.pointerId, onBackground: !(e.target instanceof Element && e.target.closest(".pt,.cl")) }
-        : null;
+      const hit = e.target instanceof Element ? e.target.closest(".pt,.cl") : null;
+      tap = pointers.size === 1 ? { id: e.pointerId, hit, onBackground: !hit } : null;
       if (pointers.size > 1) { lastTap = null; hideTip(); }
       resync();
     };
@@ -566,7 +736,22 @@ export default function AtlasClient() {
         return;
       }
       lastTap = now;
-      if (candidate.onBackground) select(null, false);
+
+      if (candidate.onBackground) { select(null, false); return; }
+
+      // Resolve the hit here rather than relying on a click listener that
+      // pointer capture prevents from firing.
+      const hit = candidate.hit;
+      if (hit?.classList.contains("cl")) {
+        const key = hit.getAttribute("data-cl");
+        const c = key ? layout.current.clusters.find((cl) => cl.key === key) : null;
+        if (c) { hideTip(); setView(viewForBounds(c.bounds, EXTENT)); }
+        return;
+      }
+      if (hit?.classList.contains("pt")) {
+        const id = hit.getAttribute("data-site");
+        if (id) { returnTo.current = hit.id || null; select(id, false); }
+      }
     };
 
     // A call or notification mid-gesture: drop everything and re-derive.
@@ -915,7 +1100,8 @@ export default function AtlasClient() {
       </div>
 
       <div className="main">
-        <div className="mapwrap" ref={wrapRef} onKeyDown={onMapKeyDown}>
+        {/* Builtin layers are switched by class, not by re-serialising geo.json. */}
+        <div className={`mapwrap ${builtinOffClasses(layersOn)}`.trimEnd()} ref={wrapRef} onKeyDown={onMapKeyDown}>
           {/* role="group", not role="img": role="img" makes the whole subtree
               presentational, which would hide every focusable mark from assistive
               technology and undo T-043. The boundary statement stays the label. */}
@@ -924,6 +1110,29 @@ export default function AtlasClient() {
             aria-label="Map of South and Southeast Asia with sacred sites (boundaries as per Government of India). Use Tab or the arrow keys to move between marks, Enter to open one, Escape to close.">
             <g ref={worldRef}>
               <g dangerouslySetInnerHTML={{ __html: GEO.svgInner }} />
+              {/* Remote layers sit above the land fill and below every mark, so a
+                  boundary never covers a site. An <image> exists only once its
+                  bytes have already loaded off-DOM — that is what makes a dead
+                  service invisible rather than a row of broken-image glyphs. */}
+              <g className="wmslayers" aria-hidden="true">
+                {MAP_LAYERS.filter(isWms).map((layer) => {
+                  const placed = layersOn[layer.id] ? overlays[layer.id] : null;
+                  if (!placed) return null;
+                  return (
+                    <image
+                      key={layer.id}
+                      className={`wmslayer wl-${layer.id}`}
+                      href={placed.href}
+                      x={placed.rect.x}
+                      y={placed.rect.y}
+                      width={placed.rect.width}
+                      height={placed.rect.height}
+                      preserveAspectRatio="none"
+                      onError={() => setOverlays((prev) => ({ ...prev, [layer.id]: null }))}
+                    />
+                  );
+                })}
+              </g>
               {/* clusters precede marks so the tab order meets the aggregate first */}
               <g ref={clustersRef} className="clusters" />
               <g ref={ptsRef} className="pts" />
@@ -934,6 +1143,7 @@ export default function AtlasClient() {
               </g>
             </g>
           </svg>
+          <LayerControl on={layersOn} onToggle={toggleLayer} status={layerStatus} />
           <div className="maptools">
             <button aria-label="Zoom in" onClick={() => zoomCenter(1.5)}>+</button>
             <button aria-label="Zoom out" onClick={() => zoomCenter(1 / 1.5)}>−</button>

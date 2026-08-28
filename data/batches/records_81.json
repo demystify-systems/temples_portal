@@ -1,0 +1,97 @@
+[
+ {
+  "id": "choleeswaram-kantalai",
+  "name": "Choleeswaram Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Peraru, Kantalai, Trincomalee District",
+  "lat": 8.4167,
+  "lng": 81.0667,
+  "tradition": "Hindu",
+  "deity": "Shiva (as Solesvara)",
+  "built": [1000, 1010],
+  "builtDisplay": "c. 1010 (Chola)",
+  "dynasty": "Chola",
+  "style": "Dravidian (Chola period)",
+  "circuits": [],
+  "significance": "A Shiva temple at Peraru near Kantalai in eastern Sri Lanka, raised in honour of the emperor Rajaraja Chola I when the island was under Chola rule. Its remains are read as Dravidian work of the Chola period.",
+  "wiki": "https://en.wikipedia.org/wiki/Choleeswaram_temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Choleeswaram_temple"},
+   {"l": "Wikidata Q4501090", "u": "https://www.wikidata.org/wiki/Q4501090"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thirukkovil-ampara",
+  "name": "Thirukkovil Chitravelayudhar Temple",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thirukkovil, Ampara District",
+  "lat": 7.1183,
+  "lng": 81.8561,
+  "tradition": "Hindu",
+  "deity": "Chitravelayudhar (Murugan)",
+  "built": [993, 1070],
+  "builtDisplay": "Chola era (993-1070); later rebuilt in stone",
+  "dynasty": "Chola",
+  "style": "Tamil (Dravidian); Pandya-style sanctum",
+  "circuits": [],
+  "significance": "A Murugan temple on Sri Lanka's eastern coast whose founding is placed in the period of Chola rule over the island, with a later reconstruction in stone attributed to Manuneya Gajabahu. The sanctum is identified as Pandya work.",
+  "story": "An elderly devadasi named Thangammai, dismissed from temple service, is said to have reappeared the next morning as an eight-year-old girl ready to perform the rituals.",
+  "wiki": "https://en.wikipedia.org/wiki/Thirukkovil_Temple",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Thirukkovil_Temple"},
+   {"l": "Wikidata Q12984075", "u": "https://www.wikidata.org/wiki/Q12984075"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "laxmi-narayan-karachi",
+  "name": "Shri Laxmi Narayan Mandir",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Native Jetty Bridge, Karachi",
+  "lat": 24.8444,
+  "lng": 66.9912,
+  "tradition": "Hindu",
+  "deity": "Lakshmi and Vishnu (Lakshmi Narayan)",
+  "built": [1800, 1850],
+  "builtDisplay": "c. early 19th c. (about 200 years old)",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A seafront Hindu temple beneath Karachi's Native Jetty Bridge, dedicated to Lakshmi and Vishnu and reported to be around two centuries old. It also houses images of Hanuman and Sai Baba of Shirdi.",
+  "wiki": "https://en.wikipedia.org/wiki/Shri_Laxmi_Narayan_Mandir",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Shri_Laxmi_Narayan_Mandir"},
+   {"l": "Wikidata Q7503818", "u": "https://www.wikidata.org/wiki/Q7503818"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chauchala-chhota-govinda-puthia",
+  "name": "Chauchala Chhota Govinda Mandir",
+  "country": "Bangladesh",
+  "state": "Rajshahi",
+  "place": "Puthia, Rajshahi Division",
+  "lat": 24.3623,
+  "lng": 88.8349,
+  "tradition": "Hindu",
+  "deity": "Govinda (Krishna)",
+  "built": [1790, 1810],
+  "builtDisplay": "c. 1790s-1800s",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A small four-roofed (chauchala) brick temple at Puthia in Rajshahi Division, dedicated to Govinda. Its walls carry terracotta plaques showing the ten avatars of Vishnu alongside Ramayana and Radha-Krishna scenes.",
+  "wiki": "https://en.wikipedia.org/wiki/Chauchala_Chhota_Govinda_Mandir",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Chauchala_Chhota_Govinda_Mandir"},
+   {"l": "Wikidata Q19898997", "u": "https://www.wikidata.org/wiki/Q19898997"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

@@ -191,6 +191,42 @@
    "source": "https://en.wikipedia.org/wiki/Osian,_Jodhpur",
    "found": "brief-6 co-located pass",
    "opened": "2026-08-27"
+  },
+  {
+   "id": "dandeeswarar-velachery",
+   "field": "lat/lng",
+   "ours": "12.8461, 80.0647 — but the record places the temple in Velachery, Chennai",
+   "theirs": "that point is Nandivaram-Guduvancheri in Chengalpattu district, 24 m from nandeesvarar-nandivanam and roughly 30 km from Velachery. One of the two records carries the other's coordinate.",
+   "source": "https://en.wikipedia.org/wiki/Dandeeswarar_Temple,_Velachery",
+   "found": "wave-7 proximity audit",
+   "opened": "2026-08-28"
+  },
+  {
+   "id": "kapila-ashram-kakraul",
+   "field": "lat/lng",
+   "ours": "26.3507, 86.0005 — the record places it at Kakraul, Madhubani district",
+   "theirs": "22 m from kapileshwar-rahika-madhubani, which the record places at Rahika. Kakraul and Rahika are separate villages, so one of the two coordinates is wrong.",
+   "source": "https://en.wikipedia.org/wiki/Kapila_Ashram",
+   "found": "wave-7 proximity audit",
+   "opened": "2026-08-28"
+  },
+  {
+   "id": "kunala-stupa-taxila",
+   "field": "tradition",
+   "ours": "tradition \"Jain\" — the article attributes the stupa to emperor Samprati as a Jaina foundation honouring his father Kunala",
+   "theirs": "the same article places it inside Buddhist Taxila and describes Buddhist pilgrims visiting it. The source is internally inconsistent; the builder recorded the Jaina attribution and flagged it rather than silently choosing.",
+   "source": "https://en.wikipedia.org/wiki/Kunala_Stupa",
+   "found": "wave-8 builder",
+   "opened": "2026-08-28"
+  },
+  {
+   "id": "adi-annamalaiyar",
+   "field": "lat/lng",
+   "ours": "9.6647, 77.3036 — taken faithfully from the cited sources",
+   "theirs": "that point is in the Western Ghats near Theni, about 344 km from Adi Annamalai, which sits beside Tiruvannamalai (our arunachaleswarar-tiruvannamalai record is at 12.2317, 79.0676). English Wikipedia AND Wikidata Q31441145 both publish the same wrong value at 0.0001 precision, so there is no third source to adjudicate with and no correct coordinate may be invented.",
+   "source": "https://www.wikidata.org/wiki/Q31441145",
+   "found": "paadal-petra roster reconciliation",
+   "opened": "2026-08-28"
   }
  ]
 }

@@ -16,6 +16,12 @@
  * The corpus stays canonical (constitution rule 6). This is a projection of it,
  * regenerated from it on every build, and it adds nothing: no field here holds a
  * value `data/sites.json` does not already hold, verbatim.
+ *
+ * `deities` and `deityGroup` ride the CRITICAL path alongside the other facet
+ * fields, not the deferred `significance` chunk. A facet has to be counted
+ * before the reader types — deferring them would render the deity filter empty
+ * on arrival — and they are drawn from a closed vocabulary of a few dozen words,
+ * so they compress to almost nothing next to the free-text `deity` column.
  */
 
 import type { Searchable } from "./search.ts";
@@ -59,6 +65,14 @@ const recordAt = (i: number): IndexedSite => ({
   place: COLUMNS.place[i],
   tradition: COLUMNS.tradition[i],
   deity: COLUMNS.deity[i],
+  /**
+   * `deities` stays `[]` rather than folding to `undefined`, like `circuits`:
+   * every reader spreads or maps it. `deityGroup` DOES fold, so the ordinary
+   * `s.deityGroup ? … : …` test tells a record whose dedication names a figure
+   * from one whose does not — the contract the untagged records rely on.
+   */
+  deities: COLUMNS.deities[i],
+  deityGroup: orUndefined(COLUMNS.deityGroup[i]),
   dynasty: COLUMNS.dynasty[i],
   style: COLUMNS.style[i],
   circuits: COLUMNS.circuits[i],

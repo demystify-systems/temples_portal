@@ -1,562 +1,1152 @@
 [
-  {
-    "id": "mounagiri-hanuman-hampapuram",
-    "name": "Mounagiri Hanuman Temple",
-    "country": "India",
-    "state": "Andhra Pradesh",
-    "place": "Hampapuram, Anantapur district",
-    "lat": 14.614,
-    "lng": 77.2777,
-    "tradition": "Hindu",
-    "deity": "Hanuman (Abhaya Hanuman)",
-    "built": [2010, 2010],
-    "builtDisplay": "consecrated 2010",
-    "dynasty": "Modern",
-    "circuits": [],
-    "significance": "A modern hilltop Hanuman shrine near Hampapuram in Anantapur district, developed by the Mounagiri Global Trust under Eswaraiah Swamy and consecrated in November 2010. Around a thousand artisans and five hundred volunteers worked on it, the main Hanuman image alone costing some 90 lakh rupees.",
-    "wiki": "https://en.wikipedia.org/wiki/Mounagiri_Hanuman_Temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Mounagiri_Hanuman_Temple" },
-      { "l": "Wikidata Q15256657", "u": "https://www.wikidata.org/wiki/Q15256657" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "baba-ranadhir-bhuna",
-    "name": "Baba Ranadhir Temple",
-    "country": "India",
-    "state": "Haryana",
-    "place": "Bhuna, Fatehabad district",
-    "lat": 29.53,
-    "lng": 75.705,
-    "tradition": "Hindu",
-    "deity": "Baba Ranadhir, a saint venerated as a healer",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A shrine at Bhuna in Haryana's Fatehabad district raised in homage to Baba Ranadhir, an early saint remembered for healing the afflicted. Thursday is its principal day of visitation.",
-    "story": "Devotees hold that a sprinkle of water from the shrine's tank cures every kind of skin affliction.",
-    "wiki": "https://en.wikipedia.org/wiki/Baba_Ranadhir",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Baba_Ranadhir" },
-      { "l": "Wikidata Q4837376", "u": "https://www.wikidata.org/wiki/Q4837376" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "alarnatha-brahmagiri",
-    "name": "Alarnatha Temple",
-    "country": "India",
-    "state": "Odisha",
-    "place": "Brahmagiri, Puri district",
-    "lat": 19.7949,
-    "lng": 85.6502,
-    "tradition": "Hindu",
-    "deity": "Vishnu as Alarnath Dev, with a shrine to Mahalakshmi",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A Vaishnava temple at Brahmagiri, some 23 km from Puri, counted among the 108 Abhimana Kshetras. It is associated with Ramanujacharya's journey through Odisha and preserves a stone slab linked to Chaitanya Mahaprabhu's sankirtana.",
-    "story": "Devotees say Jagannath directed Chaitanya Mahaprabhu here during Anavasara, the fortnight when the Puri image is withdrawn from view and the lord is believed to appear instead as Alarnath.",
-    "wiki": "https://en.wikipedia.org/wiki/Alarnatha_Mandira",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Alarnatha_Mandira" },
-      { "l": "Wikidata Q4708398", "u": "https://www.wikidata.org/wiki/Q4708398" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "iskcon-patna",
-    "name": "ISKCON Temple, Patna",
-    "country": "India",
-    "state": "Bihar",
-    "place": "Patna",
-    "lat": 25.6081,
-    "lng": 85.1344,
-    "tradition": "Hindu",
-    "deity": "Radha Banke Bihari (Krishna)",
-    "built": [2007, 2023],
-    "builtDisplay": "2007-2023",
-    "dynasty": "Modern",
-    "style": "Contemporary north Indian temple architecture",
-    "circuits": [],
-    "significance": "An ISKCON temple on Buddha Marg in Patna whose foundation stone was laid in 2007 and which opened in phases, the first in May 2022 and the remainder in 2023, at a cost of roughly 100 crore rupees. Subsidiary shrines hold Gaura-Nitai and Rama, Sita, Lakshmana and Hanuman.",
-    "wiki": "https://en.wikipedia.org/wiki/ISKCON_Temple,_Patna",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/ISKCON_Temple,_Patna" },
-      { "l": "Wikidata Q17005925", "u": "https://www.wikidata.org/wiki/Q17005925" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "boyakonda-gangamma",
-    "name": "Boyakonda Gangamma Temple",
-    "country": "India",
-    "state": "Andhra Pradesh",
-    "place": "Boyakonda, Annamayya district",
-    "lat": 13.5676,
-    "lng": 78.4632,
-    "tradition": "Hindu",
-    "deity": "Gangamma, a form of Shakti",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A hill shrine above Diguvapalli in Chowdepalli mandal, Annamayya district, built and long maintained by the Boya and Pala Ekari communities of the surrounding forest. It passed to the Andhra Pradesh Endowments Department in 1990.",
-    "story": "The goddess is said to have come down from the hillock to shield the forest communities from a Nawab's soldiers, destroying his army and hanging the heads of the slain on the branches of a banyan.",
-    "wiki": "https://en.wikipedia.org/wiki/Boyakonda_Gangamma",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Boyakonda_Gangamma" },
-      { "l": "Wikidata Q4952193", "u": "https://www.wikidata.org/wiki/Q4952193" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "dhirdham-darjeeling",
-    "name": "Dhirdham Temple",
-    "country": "India",
-    "state": "West Bengal",
-    "place": "Darjeeling",
-    "lat": 27.0375,
-    "lng": 88.2598,
-    "tradition": "Hindu",
-    "deity": "Shiva",
-    "built": [1939, 1939],
-    "builtDisplay": "1939",
-    "dynasty": "Modern",
-    "style": "Nepali, modelled on the Pashupatinath Temple at Kathmandu",
-    "circuits": [],
-    "significance": "A Shiva temple at Darjeeling built in 1939 by Rai Saheb Purna Bahadur Pradhan of Nepal. Beg Raj Shakya designed it as a smaller echo of the Pashupatinath Temple in Kathmandu.",
-    "wiki": "https://en.wikipedia.org/wiki/Dhirdham_Temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Dhirdham_Temple" },
-      { "l": "Wikidata Q108427252", "u": "https://www.wikidata.org/wiki/Q108427252" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "kolaramma-kolar",
-    "name": "Kolaramma Temple",
-    "country": "India",
-    "state": "Karnataka",
-    "place": "Kolar",
-    "lat": 13.1384,
-    "lng": 78.1387,
-    "tradition": "Hindu",
-    "deity": "Kolaramma, with a second shrine to Chelamma the scorpion goddess",
-    "built": [1000, 1100],
-    "builtDisplay": "c. 11th c. (Ganga; Chola additions)",
-    "dynasty": "Ganga of Talakad; Chola",
-    "style": "South Indian",
-    "circuits": [],
-    "significance": "A goddess temple at Kolar raised about a thousand years ago by the Talakad Gangas and enlarged under the Cholas, whose inscriptions and granite reliefs, including one of Rajendra Chola I in battle, survive on its walls. The Mysore maharajas were later patrons.",
-    "story": "Worshippers hold that praying at the Chelamma shrine keeps a person safe from scorpion stings.",
-    "wiki": "https://en.wikipedia.org/wiki/Kolaramma",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kolaramma" },
-      { "l": "Wikidata Q6427067", "u": "https://www.wikidata.org/wiki/Q6427067" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "kamaldah-jain-patna",
-    "name": "Kamaldah Jain Temple",
-    "country": "India",
-    "state": "Bihar",
-    "place": "Patna",
-    "lat": 25.5966,
-    "lng": 85.2031,
-    "tradition": "Jain",
-    "deity": "Neminatha",
-    "built": [1729, 1729],
-    "builtDisplay": "1729",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A Shvetambara Jain temple built at Patna in 1729 to commemorate the acharya Sthulabhadra, with a second shrine dedicated to Sudarshana and an inscription of 1792. It is a fixture of Bihar's Jain pilgrimage circuit.",
-    "story": "The temple is believed to stand on the ground where Sthulabhadra, successor of Bhadrabahu, spent his last days.",
-    "wiki": "https://en.wikipedia.org/wiki/Kamaldah_Jain_temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kamaldah_Jain_temple" },
-      { "l": "Wikidata Q107556941", "u": "https://www.wikidata.org/wiki/Q107556941" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "nada-sahib-panchkula",
-    "name": "Gurdwara Nada Sahib",
-    "country": "India",
-    "state": "Haryana",
-    "place": "Panchkula district",
-    "lat": 30.6942,
-    "lng": 76.8808,
-    "tradition": "Sikh",
-    "deity": "Guru Granth Sahib; commemorates Guru Gobind Singh's halt here",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded; marks a halt of 1688",
-    "dynasty": "Undetermined",
-    "style": "Sikh architecture",
-    "circuits": [],
-    "significance": "A gurdwara in Panchkula district marking the spot where Guru Gobind Singh halted while travelling from Paonta Sahib to Anandpur Sahib after the Battle of Bhangani in 1688, his first battle, fought at nineteen. The site lay forgotten until a villager, Bhai Motha Singh, raised a platform on it; management passed to the PEPSU Dharmarth Board in 1948 and to the SGPC after 1956.",
-    "wiki": "https://en.wikipedia.org/wiki/Nada_Sahib",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Nada_Sahib" },
-      { "l": "Wikidata Q6957398", "u": "https://www.wikidata.org/wiki/Q6957398" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "shantinath-shiva-chandrakona",
-    "name": "Shantinath Shiva Temple",
-    "country": "India",
-    "state": "West Bengal",
-    "place": "Chandrakona, Paschim Medinipur district",
-    "lat": 22.7382,
-    "lng": 87.5189,
-    "tradition": "Hindu",
-    "deity": "Shiva, worshipped here as Shantinath",
-    "built": [1828, 1828],
-    "builtDisplay": "1828",
-    "dynasty": "Undetermined",
-    "style": "Bengali nava-ratna with ridged turrets",
-    "circuits": [],
-    "significance": "An 1828 nine-pinnacled nava-ratna Shiva temple in the Mitrasenpur quarter of Chandrakona, roughly nineteen and a half feet square and protected as a state monument. Its terracotta panels carry Ramayana battle scenes, Krishna lila, Bhishma on his bed of arrows, the Dashavatara and rows of musicians.",
-    "wiki": "https://en.wikipedia.org/wiki/Shantinath_Shiva_Temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Shantinath_Shiva_Temple" },
-      { "l": "Wikidata Q66456995", "u": "https://www.wikidata.org/wiki/Q66456995" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "katta-maisamma-telangana",
-    "name": "Katta Maisamma Temple",
-    "country": "India",
-    "state": "Telangana",
-    "place": "Hyderabad",
-    "lat": 17.6167,
-    "lng": 78.8,
-    "tradition": "Hindu",
-    "deity": "Katta Maisamma, a manifestation of Shakti",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "style": "South Indian",
-    "circuits": [],
-    "significance": "A goddess shrine raised beside a tank bund by the Golconda Patel family when the bund was built, its name taken from katta, the bund itself. The Nizams offered here in the month of Ashadha for the safety of the kingdom, and the sixth Nizam, Mir Mahbub Ali Khan, made an offering on the banks of the Musi during the flood of 1908.",
-    "story": "The 1908 flood is said to have subsided the moment the Nizam completed his offering to the goddess.",
-    "wiki": "https://en.wikipedia.org/wiki/Katta_Maisamma_Temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Katta_Maisamma_Temple" },
-      { "l": "Wikidata Q6378277", "u": "https://www.wikidata.org/wiki/Q6378277" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "kodlamane-vishnumurthy",
-    "name": "Kodlamane Vishnumurthy Temple",
-    "country": "India",
-    "state": "Karnataka",
-    "place": "Kodlamane, Honnavar taluk, Uttara Kannada district",
-    "lat": 14.2358,
-    "lng": 74.5086,
-    "tradition": "Hindu",
-    "deity": "Vishnu, worshipped as Vishnumurthy",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A Vishnu temple at Kodlamane in Honnavar taluk of Uttara Kannada district, about a kilometre from Idagunji and 23 km from Honnavar town. A natural stream called Vishnu Tirtha runs beside it.",
-    "story": "The shrine is said to have been found several centuries ago deep inside dense hill forest.",
-    "wiki": "https://en.wikipedia.org/wiki/Kodlamane",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Kodlamane" },
-      { "l": "Wikidata Q6425381", "u": "https://www.wikidata.org/wiki/Q6425381" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "lakshmeshwara-jain-temples",
-    "name": "Lakshmeshwara Jain Temples",
-    "country": "India",
-    "state": "Karnataka",
-    "place": "Lakshmeshwara, Gadag district",
-    "lat": 15.1269,
-    "lng": 75.4642,
-    "tradition": "Jain",
-    "deity": "Neminatha at the Shankha Basadi and Anantanatha at the Anantanatha Basadi",
-    "built": [600, 1200],
-    "builtDisplay": "7th-12th c. (Chalukya)",
-    "dynasty": "Badami Chalukya; Western Ganga; Kalyani Chalukya",
-    "style": "Badami Chalukya, with rekhanagara and phamsana shikharas",
-    "circuits": [],
-    "significance": "A group of Jain basadis at Lakshmeshwara in Gadag district, known in antiquity as Puligere or Hugligere, of which the Shankha Basadi dates from the 7th century and the Anantanatha Basadi from about the 12th. Inscriptions of the 7th and 8th centuries record grants to them, and Kunkuma Mahadevi, sister of Vijayaditya, built a large Jain temple here in the reign of Kirtivarman II.",
-    "wiki": "https://en.wikipedia.org/wiki/Lakshmeshwara_Jain_temples",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Lakshmeshwara_Jain_temples" },
-      { "l": "Wikidata Q106759356", "u": "https://www.wikidata.org/wiki/Q106759356" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "dukh-nivaran-sahib-patiala",
-    "name": "Gurdwara Dukh Nivaran Sahib",
-    "country": "India",
-    "state": "Punjab",
-    "place": "Patiala",
-    "lat": 30.3471,
-    "lng": 76.3961,
-    "tradition": "Sikh",
-    "deity": "Guru Granth Sahib; commemorates the visit of Guru Tegh Bahadur",
-    "built": [1930, 1942],
-    "builtDisplay": "1930-1942",
-    "dynasty": "Modern",
-    "style": "Sikh architecture",
-    "circuits": [],
-    "significance": "A Patiala gurdwara on the ground of the old village of Lehal, where Guru Tegh Bahadur stayed beneath a banyan tree on 24 January 1672. Raja Amar Singh laid out a memorial garden on the spot, Maharaja Bhupinder Singh had a proposed railway line moved so the tree would survive, and Maharaja Yadavindra Singh built the present shrine and sarovar between 1930 and 1942.",
-    "story": "The villagers of Lehal are said to have begged the Guru to come because a mysterious sickness was killing them, and devotees still hold the water of the sarovar to be healing.",
-    "wiki": "https://en.wikipedia.org/wiki/Gurdwara_Dukh_Nivaran_Sahib",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gurdwara_Dukh_Nivaran_Sahib" },
-      { "l": "Wikidata Q5619956", "u": "https://www.wikidata.org/wiki/Q5619956" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "umamaheshwaram-achampet",
-    "name": "Umamaheshwaram Temple",
-    "country": "India",
-    "state": "Telangana",
-    "place": "Rangapur, Achampet, Nagarkurnool district",
-    "lat": 16.3701,
-    "lng": 78.7247,
-    "tradition": "Hindu",
-    "deity": "Shiva",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A Shiva temple set in the Nallamala forest about 4 km from Rangapur village near Achampet, some 100 km from Hyderabad. It is regarded as the northern gateway to Srisailam, one of the twelve jyotirlingas.",
-    "wiki": "https://en.wikipedia.org/wiki/Umamaheshwaram",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Umamaheshwaram" },
-      { "l": "Wikidata Q17070110", "u": "https://www.wikidata.org/wiki/Q17070110" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "tegh-bahadur-sahib-dhubri",
-    "name": "Gurdwara Sri Guru Tegh Bahadur Sahib, Dhubri",
-    "country": "India",
-    "state": "Assam",
-    "place": "Dhubri",
-    "lat": 26.0179,
-    "lng": 89.9943,
-    "tradition": "Sikh",
-    "deity": "Guru Granth Sahib; commemorates the visit of Guru Tegh Bahadur",
-    "built": [1669, 1700],
-    "builtDisplay": "17th c.",
-    "dynasty": "Undetermined",
-    "circuits": [],
-    "significance": "A gurdwara on the Brahmaputra bank at Dhubri, established in the 17th century after Guru Tegh Bahadur travelled here from Dhaka in late 1669 and Sikhs of his retinue stayed on to maintain it. During the Dundiya rising of the early 1790s it quartered Sikh and Punjabi barkandaze militiamen, and President Giani Zail Singh visited in 1983.",
-    "story": "Sikh lore tells of a washerwoman who hurled trees and rocks at the Guru by witchcraft and, when none of it touched him, became his devotee.",
-    "website": "https://www.gurudwaradhubrisahib.com",
-    "wiki": "https://en.wikipedia.org/wiki/Gurdwara_Sri_Guru_Tegh_Bahadur_Sahib",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gurdwara_Sri_Guru_Tegh_Bahadur_Sahib" },
-      { "l": "Wikidata Q5619983", "u": "https://www.wikidata.org/wiki/Q5619983" },
-      { "l": "Official site", "u": "https://www.gurudwaradhubrisahib.com" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "joranda-gadi-dhenkanal",
-    "name": "Joranda Gadi",
-    "country": "India",
-    "state": "Odisha",
-    "place": "Joranda, Dhenkanal district",
-    "lat": 20.7856,
-    "lng": 85.7258,
-    "tradition": "Hindu",
-    "deity": "Sunya Brahma, the formless lord, worshipped as Alekha",
-    "built": [1900, 1935],
-    "builtDisplay": "early 20th c.",
-    "origin": 1300,
-    "dynasty": "Modern",
-    "circuits": [],
-    "significance": "The chief seat of Mahima Dharma, an Odishan sect that rejects image worship, standing where the villages of Joranda, Natima and Patna meet, about 24 km north of Dhenkanal. It holds the samadhi pitha of the sect's founder Mahima Goswami; the present temple was built in the early 20th century on a shrine the article traces to the early 14th, and the order's ascetics may not sleep two consecutive nights in one place.",
-    "wiki": "https://en.wikipedia.org/wiki/Joranda_Gadi",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Joranda_Gadi" },
-      { "l": "Wikidata Q17059031", "u": "https://www.wikidata.org/wiki/Q17059031" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "oorali-appooppan-kavu-kalleli",
-    "name": "Oorali Appooppan Kavu",
-    "country": "India",
-    "state": "Kerala",
-    "place": "Kalleli, Pathanamthitta district",
-    "lat": 9.1928,
-    "lng": 76.9033,
-    "tradition": "Hindu",
-    "deity": "Oorali Appooppan, also called Kalleli Appooppan, lord of the mountain gods",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded",
-    "dynasty": "Undetermined",
-    "style": "Dravidian",
-    "circuits": [],
-    "significance": "A kavu on the Achankovil river at Kalleli, roughly 19 km from Pathanamthitta town, whose rites follow the usage of the early Dravida-Naga tribes rather than the tantric procedure of ordinary Kerala temples.",
-    "story": "Appooppan is honoured as lord of the 999 Mala Daivangal, the mountain gods, with Oorali Ammoomma revered as his mother.",
-    "website": "https://www.sreekallelyooraliappooppankavu.com",
-    "wiki": "https://en.wikipedia.org/wiki/Oorali_Appooppan_Kavu",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Oorali_Appooppan_Kavu" },
-      { "l": "Wikidata Q119932656", "u": "https://www.wikidata.org/wiki/Q119932656" },
-      { "l": "Official site", "u": "https://www.sreekallelyooraliappooppankavu.com" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "gurdwara-mata-sundri-delhi",
-    "name": "Gurdwara Mata Sundri",
-    "country": "India",
-    "state": "Delhi",
-    "place": "New Delhi",
-    "lat": 28.6344,
-    "lng": 77.2339,
-    "tradition": "Sikh",
-    "deity": "Guru Granth Sahib; a memorial to Mata Sundri, wife of Guru Gobind Singh",
-    "built": [1000, 1800],
-    "builtDisplay": "dating unrecorded; site occupied from 1727",
-    "dynasty": "Undetermined",
-    "style": "Sikh architecture, with square domed sanctums, arched copings and a traditional gateway",
-    "circuits": [],
-    "significance": "A Delhi gurdwara on Mata Sundri Road raised in memory of Mata Sundri, who married Guru Gobind Singh in 1684 and bore his eldest son Ajit Singh in 1687. After the Guru's death in October 1708 she guided the Khalsa for forty years, issuing hukumnamas between 1717 and 1730 until her death in 1747; she lived in a newly built house on this site from 1727, and the Delhi Gurdwara Committee later put up the present shrine.",
-    "wiki": "https://en.wikipedia.org/wiki/Gurdwara_Mata_Sundri",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gurdwara_Mata_Sundri" },
-      { "l": "Wikidata Q5619968", "u": "https://www.wikidata.org/wiki/Q5619968" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "chandrawati-jain-varanasi",
-    "name": "Chandrawati Jain Temple",
-    "country": "India",
-    "state": "Uttar Pradesh",
-    "place": "Chandrawati, Varanasi district",
-    "lat": 25.4656,
-    "lng": 83.1296,
-    "tradition": "Jain",
-    "deity": "Chandraprabha, the eighth Tirthankara",
-    "built": [800, 1000],
-    "builtDisplay": "9th-10th c.",
-    "dynasty": "Gahadavala",
-    "circuits": [],
-    "significance": "Jain temples at Chandrawati village on the left bank of the Ganga near its confluence with the Gomti, about 23 km from Varanasi, where the surviving architectural remains are assigned to the ninth and tenth centuries and an inscription of 1091 records grants under the Gahadavala king Chandradeva. A. C. L. Carlleyle surveyed and documented three Jain temples on the site in 1877.",
-    "story": "Jain tradition places three of Chandraprabha's five kalyanakas here, and local memory credits the founding of Chandrawati to a ruler named Domana Deva.",
-    "wiki": "https://en.wikipedia.org/wiki/Chandrawati_Jain_temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Chandrawati_Jain_temple" },
-      { "l": "Wikidata Q120497685", "u": "https://www.wikidata.org/wiki/Q120497685" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "jain-temple-kundalpur-nalanda",
-    "name": "Jain Temple, Kundalpur",
-    "country": "India",
-    "state": "Bihar",
-    "place": "Kundalpur, Nalanda district",
-    "lat": 25.148,
-    "lng": 85.4446,
-    "tradition": "Jain",
-    "deity": "Mahavira",
-    "built": [2003, 2003],
-    "builtDisplay": "2003 (older shrine on the site)",
-    "dynasty": "Modern",
-    "circuits": [],
-    "significance": "A Digambara Jain complex at Kundalpur near Nalanda, built in 2003 in yellow Jaisalmer stone with a shikhara about 51 feet high beside an older temple on the same ground, and run by the Bhagwan Mahavira Janmabhoomi Kundalpur Digambar Jain Samiti. Digambaras hold Kundalpur, an ancient Licchavi capital, to be Mahavira's birthplace, while other Jain traditions point instead to Basukund near Vaishali.",
-    "story": "Four of Mahavira's eleven ganadharas, Gautama Swami among them, are believed to have been born here.",
-    "wiki": "https://en.wikipedia.org/wiki/Jain_temple,_Kundalpur_(Bihar)",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Jain_temple,_Kundalpur_(Bihar)" },
-      { "l": "Wikidata Q108148410", "u": "https://www.wikidata.org/wiki/Q108148410" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "pulimukham-devi-thazhava",
-    "name": "Pulimukham Devi Temple",
-    "country": "India",
-    "state": "Kerala",
-    "place": "Thazhava, Kollam district",
-    "lat": 9.0931,
-    "lng": 76.5535,
-    "tradition": "Hindu",
-    "deity": "Bhadra Bhagavathi",
-    "built": [1600, 1700],
-    "builtDisplay": "reckoned about 400 years old",
-    "dynasty": "Undetermined",
-    "style": "Traditional Kerala",
-    "circuits": [],
-    "significance": "A Bhagavathi temple in the Thazhava neighbourhood of Kollam district, reckoned about four hundred years old and built in traditional Kerala style, with a number of subordinate shrines and a round of seasonal festivals.",
-    "story": "A kavu of serpent gods and the temple's Karimbana and Ezhilam Pala trees are worshipped in the belief that gandharvas and yakshis live in them.",
-    "wiki": "https://en.wikipedia.org/wiki/Pulimukham_Devi_Temple",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Pulimukham_Devi_Temple" },
-      { "l": "Wikidata Q7259341", "u": "https://www.wikidata.org/wiki/Q7259341" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  },
-  {
-    "id": "chamatkarji-sawai-madhopur",
-    "name": "Chamatkarji Jain Temple",
-    "country": "India",
-    "state": "Rajasthan",
-    "place": "Alanpur, Sawai Madhopur district",
-    "lat": 26.0006,
-    "lng": 76.3639,
-    "tradition": "Jain",
-    "deity": "Rishabhanatha (Adinatha)",
-    "built": [800, 1200],
-    "builtDisplay": "early medieval",
-    "dynasty": "Undetermined",
-    "style": "Pancharatha sanctuary with curvilinear tower",
-    "circuits": [],
-    "significance": "An early medieval Digambara Jain temple in Sawai Madhopur district, known in archaeological literature as the Alanpur Jain temple and protected by the Archaeological Survey of India. Its later worship grew up around an image of Adinatha found near the site.",
-    "story": "The name comes from chamatkar, miracle: the principal image is held to work wonders, and a fair is held here each Sharad Purnima.",
-    "wiki": "https://en.wikipedia.org/wiki/Chamatkarji",
-    "sources": [
-      { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Chamatkarji" },
-      { "l": "Wikidata Q112912431", "u": "https://www.wikidata.org/wiki/Q112912431" }
-    ],
-    "verified": "wikipedia-2026-08-27",
-    "tier": "compact"
-  }
+ {
+  "id": "budha-subba-dharan",
+  "name": "Budha Subba Temple",
+  "country": "Nepal",
+  "state": "Koshi",
+  "place": "Bijayapur, Dharan, Sunsari District",
+  "lat": 26.82,
+  "lng": 87.3,
+  "tradition": "Hindu",
+  "deity": "Budha Subba (deified spirit of Buddhi Karna Raya Khebang Limbu)",
+  "built": [
+   1773,
+   1800
+  ],
+  "builtDisplay": "after 1773",
+  "dynasty": "Limbu (Vijayapur)",
+  "circuits": [],
+  "significance": "A shrine at Bijayapur near Dharan venerating the spirit of Buddhi Karna Raya Khebang Limbu, the last Limbu king, who was killed in 1773; local Limbu people began worshipping his wandering soul at his tomb as an old king, and he is honoured as a protective deity.",
+  "story": "Shiva and Parvati are said to have come to Vijayapur in disguise on a hunt, planted their bows in the ground and sat in penance, vanishing when they sensed the approach of Kali Yuga, while bamboo sprouted from the bows they left behind.",
+  "wiki": "https://en.wikipedia.org/wiki/Budha_Subba_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Budha_Subba_Temple"
+   },
+   {
+    "l": "Wikidata Q4985069",
+    "u": "https://www.wikidata.org/wiki/Q4985069"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bala-tripura-sundari-dolpa",
+  "name": "Bala Tripura Sundari Temple",
+  "country": "Nepal",
+  "state": "Karnali",
+  "place": "Tripurakot, Dolpa District",
+  "lat": 29.025,
+  "lng": 82.784,
+  "tradition": "Hindu",
+  "deity": "Durga as Bala Tripura Sundari Bhagawati",
+  "built": [
+   1057,
+   1200
+  ],
+  "builtDisplay": "est. 1057 CE; said to be 12th c.",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A goddess temple on the bank of the Thuli Bheri river near Tripurakot in Dolpa District, dedicated to Durga in her Bala Tripura Sundari form and traditionally dated to the 11th-12th century.",
+  "story": "King Bikram Shahi is said to have uncovered an image of Bhagwati in an excavated pit, from which butterflies flew out and turned to stone, one of them marking the spot where the temple was raised.",
+  "website": "https://balatripurasundari.org/",
+  "wiki": "https://en.wikipedia.org/wiki/Bala_Tripura_Sundari_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bala_Tripura_Sundari_Temple"
+   },
+   {
+    "l": "Wikidata Q104848932",
+    "u": "https://www.wikidata.org/wiki/Q104848932"
+   },
+   {
+    "l": "Official site",
+    "u": "https://balatripurasundari.org/"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "tal-barahi-pokhara",
+  "name": "Tal Barahi Temple",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Phewa Lake, Pokhara, Kaski District",
+  "lat": 28.2074,
+  "lng": 83.9536,
+  "tradition": "Hindu",
+  "deity": "Barahi (Varahi), a manifestation of Ajima",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A two-storey stone pagoda on a small island in Phewa Lake at Pokhara, dedicated to the goddess Barahi and reachable only by boat; pilgrims come chiefly in Baisakh and Kartik and during Dashain.",
+  "wiki": "https://en.wikipedia.org/wiki/Tal_Barahi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tal_Barahi_Temple"
+   },
+   {
+    "l": "Wikidata Q16172918",
+    "u": "https://www.wikidata.org/wiki/Q16172918"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "siddha-baba-dobhan",
+  "name": "Siddha Baba Temple",
+  "country": "Nepal",
+  "place": "Dobhan, Palpa District (near Butwal)",
+  "lat": 27.7219,
+  "lng": 83.4686,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shiva shrine on the left bank of the Tinau river at Dobhan, about two kilometres from Butwal, whose precincts also hold images of Ganesh, Nag, Mansa Devi and Bishwokarma; it was registered with the Palpa district administration in 1998.",
+  "story": "The site is held to be where King Bhartrihari, elder brother of Vikramaditya, performed his penance.",
+  "wiki": "https://en.wikipedia.org/wiki/Siddha_Baba_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Siddha_Baba_Temple"
+   },
+   {
+    "l": "Wikidata Q19898357",
+    "u": "https://www.wikidata.org/wiki/Q19898357"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sankata-kathmandu",
+  "name": "Sankata Temple",
+  "country": "Nepal",
+  "place": "Te Bahal, Kathmandu",
+  "lat": 27.7024,
+  "lng": 85.3122,
+  "tradition": "Hindu",
+  "deity": "Sankata (identified by Buddhists with Chanda Maharoshan)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; founded by King Gunakama Dev",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A shrine at Te Bahal in central Kathmandu, credited to King Gunakama Dev, whose deity is petitioned to turn away misfortune and sickness; Hindus worship the goddess as Sankata while Buddhists identify the image with Chanda Maharoshan.",
+  "story": "A Bajracharya guru named Bandhu Ratna is said to have used tantric power to confine Sankata and a Yogini inside holy pitchers, which were then enshrined in the temple built for them.",
+  "wiki": "https://en.wikipedia.org/wiki/Sankata_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sankata_Temple"
+   },
+   {
+    "l": "Wikidata Q15747268",
+    "u": "https://www.wikidata.org/wiki/Q15747268"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "palanchok-bhagawati",
+  "name": "Palanchok Bhagawati Temple",
+  "country": "Nepal",
+  "place": "Palanchok, Panchkhal, Kavrepalanchok District",
+  "lat": 27.6286,
+  "lng": 85.6739,
+  "tradition": "Hindu",
+  "deity": "Bhagawati (eighteen-armed goddess)",
+  "built": [
+   464,
+   505
+  ],
+  "builtDisplay": "5th c. (reign of Manadeva)",
+  "dynasty": "Manadeva era",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple on the summit of Palanchok hill in Kavrepalanchok District, some 42 km from Kathmandu, enshrining an eighteen-armed image of Bhagawati revered as a protector against danger and misfortune; it is believed to have been raised during the reign of King Manadeva in the fifth century.",
+  "story": "She is held to be the elder sister of all the other Bhagawati goddesses of Nepal.",
+  "wiki": "https://en.wikipedia.org/wiki/Palanchok_Bhagawati_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Palanchok_Bhagawati_Temple"
+   },
+   {
+    "l": "Wikidata Q7126679",
+    "u": "https://www.wikidata.org/wiki/Q7126679"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "venkatesh-mandir-kathmandu",
+  "name": "Venkatesh Mandir, Kathmandu",
+  "country": "Nepal",
+  "state": "Bagmati",
+  "place": "Battisputali, Gaushala, Kathmandu",
+  "lat": 27.7061,
+  "lng": 85.3432,
+  "tradition": "Hindu",
+  "deity": "Venkateswara (Balaji), a form of Vishnu",
+  "built": [
+   1898,
+   1898
+  ],
+  "builtDisplay": "1898",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Vaishnava temple at Battisputali in Kathmandu founded in 1898, after the devotee Garudhwaj Ramanuja Dasi and her husband Govindacharya brought an image of Balaji home from the Tirumala Venkateswara temple in India.",
+  "wiki": "https://en.wikipedia.org/wiki/Venkatesh_Mandir,_Kathmandu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Venkatesh_Mandir,_Kathmandu"
+   },
+   {
+    "l": "Wikidata Q19595680",
+    "u": "https://www.wikidata.org/wiki/Q19595680"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "dolakha-bhimsen",
+  "name": "Dolakha Bhimsen Temple",
+  "country": "Nepal",
+  "place": "Bhimeshwar, Dolakha District",
+  "lat": 27.649,
+  "lng": 86.0892,
+  "tradition": "Hindu",
+  "deity": "Bhimsen (Bhindyo), worshipped as god of trade and fortune",
+  "built": [
+   1000,
+   1611
+  ],
+  "builtDisplay": "founding unrecorded; renovated 1611",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A shrine in Bhimeshwar, about 4.5 km east of Charikot in Dolakha District, where Bhimsen is worshipped as the god of trade, commerce and fortune; its founding date is unknown, but an inscription of 1611 records a renovation.",
+  "story": "Porters cooking rice beside the shrine are said to have realised that a triangular black stone was Bhimsen himself when the rice touching it stayed raw, and the stone bled milk mixed with blood when struck.",
+  "wiki": "https://en.wikipedia.org/wiki/Dolakha_Bhimsen_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dolakha_Bhimsen_Temple"
+   },
+   {
+    "l": "Wikidata Q19679215",
+    "u": "https://www.wikidata.org/wiki/Q19679215"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "dakneshwori-saptari",
+  "name": "Dakneshwori Temple",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Pato Bazaar, Dakneshwori Municipality, Saptari District",
+  "lat": 26.51,
+  "lng": 86.62,
+  "tradition": "Hindu",
+  "deity": "Dakneshwori Bhagawati",
+  "built": [
+   1990,
+   1999
+  ],
+  "builtDisplay": "rebuilt in the 1990s",
+  "dynasty": "Modern",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda-style goddess temple at Pato Bazaar in Dakneshwori Municipality of Saptari District, dedicated to Dakneshwori Bhagawati; the municipality takes its name from the shrine, whose present structure was reconstructed in the 1990s.",
+  "wiki": "https://en.wikipedia.org/wiki/Dakneshwori_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dakneshwori_Temple"
+   },
+   {
+    "l": "Wikidata Q60742955",
+    "u": "https://www.wikidata.org/wiki/Q60742955"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "balkumari-lalitpur",
+  "name": "Balkumari Temple, Lalitpur",
+  "country": "Nepal",
+  "place": "Tyagal, Lalitpur (Patan)",
+  "lat": 27.6719,
+  "lng": 85.3341,
+  "tradition": "Hindu",
+  "deity": "Balkumari, one of the Ashtamatrika mother goddesses",
+  "built": [
+   600,
+   1700
+  ],
+  "builtDisplay": "between the 7th and 17th c. (disputed)",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda shrine at Tyagal in Lalitpur (Patan) dedicated to Balkumari, counted among the Ashtamatrika mother goddesses; its origin is disputed, with estimates placing it anywhere between the 7th and the 17th century.",
+  "story": "The original image was stolen twice, and on one occasion the aeroplane it had been loaded onto at Tribhuvan International Airport could not take off, so the idol was recovered and returned to the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Balkumari_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Balkumari_temple"
+   },
+   {
+    "l": "Wikidata Q106554965",
+    "u": "https://www.wikidata.org/wiki/Q106554965"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "jal-binayak-chobhar",
+  "name": "Jal Binayak Temple",
+  "country": "Nepal",
+  "place": "Chobhar, Kathmandu District",
+  "lat": 27.6583,
+  "lng": 85.2933,
+  "tradition": "Hindu",
+  "deity": "Ganesh",
+  "built": [
+   1751,
+   1751
+  ],
+  "origin": 1603,
+  "builtDisplay": "present pagoda rebuilt 871 NS (c. 1751)",
+  "dynasty": "Malla",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "The foremost Ganesh shrine of the Chobhar area south of Kathmandu, first raised in Nepal Sambat 723 by the Malla king Shiva Singh; Sri Nivas Malla of Patan added its finial in 789 NS and Rajya Prakash Malla of Kathmandu rebuilt the present pagoda in 871 NS.",
+  "wiki": "https://en.wikipedia.org/wiki/Jal_Binayak_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jal_Binayak_Temple"
+   },
+   {
+    "l": "Wikidata Q13181210",
+    "u": "https://www.wikidata.org/wiki/Q13181210"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "daunne-devi-nawalparasi",
+  "name": "Daunne Devi Temple",
+  "country": "Nepal",
+  "place": "Dumkibas, Bardaghat, Nawalparasi District",
+  "lat": 27.55,
+  "lng": 83.837,
+  "tradition": "Hindu",
+  "deity": "Durga (with an attached Shivalaya)",
+  "built": [
+   1998,
+   1999
+  ],
+  "builtDisplay": "present temple 2055 BS (1998-99)",
+  "dynasty": "Rana",
+  "circuits": [],
+  "significance": "A wayside shrine on the Daunne pass at Dumkibas in Bardaghat, Nawalparasi District, holding both a Durga shrine and a Shivalaya; its founding is attributed to Jung Bahadur Rana, while the present building dates from 2055 BS and has been looked after by the local user committee since 2049 BS.",
+  "story": "The Daunne hill was known in ancient times as Trikut Parbat and is held to have been a place of meditation for the sage Valmiki and for Mayadevi, the mother of the Buddha.",
+  "wiki": "https://en.wikipedia.org/wiki/Daunne_Devi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Daunne_Devi_Temple"
+   },
+   {
+    "l": "Wikidata Q13182228",
+    "u": "https://www.wikidata.org/wiki/Q13182228"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "balkumari-thimi",
+  "name": "Balkumari Temple, Thimi",
+  "country": "Nepal",
+  "place": "Thimi, Bhaktapur District",
+  "lat": 27.6759,
+  "lng": 85.385,
+  "tradition": "Hindu",
+  "deity": "Balkumari",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "17th c.",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A seventeenth-century pagoda at Thimi in Bhaktapur District dedicated to the goddess Balkumari and counted among the four Kumari temples of the Kathmandu Valley; a Bhairab shrine stands in the same courtyard, and the Sindoor Jatra is celebrated here at Nepali New Year.",
+  "story": "A merchant of Thimi is said to have won a princess of Lubhu who would come with him only if the goddess Balkumari came too, and so the goddess moved from Lubhu to Thimi.",
+  "wiki": "https://en.wikipedia.org/wiki/Balkumari_temple,_Bhaktapur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Balkumari_temple,_Bhaktapur"
+   },
+   {
+    "l": "Wikidata Q106597868",
+    "u": "https://www.wikidata.org/wiki/Q106597868"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "dungeshwor-dailekh",
+  "name": "Dungeshwor Temple",
+  "country": "Nepal",
+  "state": "Karnali",
+  "place": "Naule Katuwal, Dullu Municipality, Dailekh District",
+  "lat": 28.78,
+  "lng": 81.58,
+  "tradition": "Hindu",
+  "deity": "Shiva as Sidheshwor Mahadev",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda-style Shiva temple at Naule Katuwal in Dullu Municipality of Dailekh District, worshipped as Sidheshwor Mahadev and sharing its precinct with shrines to Kalika Bhagwati, Ganesh, Kalsaini Bhairab and Batuk Bhairab; the article records that the saint Sagar Giri organised its worship and that its ritual regalia were restored in 1960 BS.",
+  "wiki": "https://en.wikipedia.org/wiki/Dungeshwor_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dungeshwor_Temple"
+   },
+   {
+    "l": "Wikidata Q19678588",
+    "u": "https://www.wikidata.org/wiki/Q19678588"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chandannath-jumla",
+  "name": "Chandannath Temple",
+  "country": "Nepal",
+  "state": "Karnali",
+  "place": "Khalanga Bazar, Chandannath Municipality, Jumla District",
+  "lat": 29.2742,
+  "lng": 82.1835,
+  "tradition": "Hindu",
+  "deity": "Dattatreya (Trimurti)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded (Kalyal dynasty)",
+  "dynasty": "Kalyal",
+  "circuits": [],
+  "significance": "The chief temple of Jumla, standing above Khalanga Bazar in Chandannath Municipality and dedicated to Dattatreya; it was raised under the Kalyal dynasty, of whose rule and of whose connection with Chandannath few written records survive.",
+  "story": "Chandannath Baba is said to have carried an image of Dattatreya here from Kashmir, and a cow that gave up her milk of her own accord on the spot is said to have revealed the sacred ground on which the temple was then built.",
+  "wiki": "https://en.wikipedia.org/wiki/Chandannath_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chandannath_Temple"
+   },
+   {
+    "l": "Wikidata Q5070967",
+    "u": "https://www.wikidata.org/wiki/Q5070967"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "rajarshi-janak-janakpur",
+  "name": "Rajarshi Janak Mandir",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Janak Chowk, Janakpur, Dhanusha District",
+  "lat": 26.7292,
+  "lng": 85.9281,
+  "tradition": "Hindu",
+  "deity": "Rajarshi Janak (King Janaka of Videha)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A temple at Janak Chowk in Janakpur, Dhanusha District, dedicated to Rajarshi Janak, the Vedic king of Videha after whom the city is named; it stands in the Mithila region among other shrines tied to the Ramayana.",
+  "wiki": "https://en.wikipedia.org/wiki/Rajarshi_Janak_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Rajarshi_Janak_Mandir"
+   },
+   {
+    "l": "Wikidata Q133465016",
+    "u": "https://www.wikidata.org/wiki/Q133465016"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhairabsthan-palpa",
+  "name": "Bhairabsthan Temple",
+  "country": "Nepal",
+  "place": "Bhairabsthan, near Tansen, Palpa District",
+  "lat": 27.8697,
+  "lng": 83.4786,
+  "tradition": "Hindu",
+  "deity": "Bhairab",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; founded by King Mukunda Sen",
+  "dynasty": "Sena",
+  "circuits": [],
+  "significance": "A hilltop Bhairab temple about 9 km northwest of Tansen in Palpa District, at roughly 1,470 m, established by King Mukunda Sen of the Sena dynasty during the period when Palpa was his capital.",
+  "story": "Mukunda Sen is said to have carried off an image of Bhairav from the Matsyendranath temple during his attack on Kathmandu and to have installed it here in Palpa.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhairabsthan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhairabsthan_Temple"
+   },
+   {
+    "l": "Wikidata Q97188189",
+    "u": "https://www.wikidata.org/wiki/Q97188189"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "satyawati-palpa",
+  "name": "Satyawati Temple",
+  "country": "Nepal",
+  "place": "Satyawati, Palpa District",
+  "lat": 27.7598,
+  "lng": 83.5357,
+  "tradition": "Hindu",
+  "deity": "Satyawati Devi",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A goddess shrine beside a hill lake at Satyawati in Palpa District, about 30 km south of Tansen and 19 km north of Butwal, revered by the Magar community as their own deity and reached on a foot trail from the Jhumsa bridge on the Siddhartha Highway.",
+  "story": "On the night of the festival the goddess is said to grant the wishes of pilgrims who walk three times round the lake and call their wish aloud.",
+  "wiki": "https://en.wikipedia.org/wiki/Satyawati_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Satyawati_Temple"
+   },
+   {
+    "l": "Wikidata Q104868896",
+    "u": "https://www.wikidata.org/wiki/Q104868896"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "gokarneshwor-mahadev",
+  "name": "Gokarneshwor Mahadev Temple",
+  "country": "Nepal",
+  "place": "Gokarna, northeast of Bodhnath, Kathmandu District",
+  "lat": 27.7394,
+  "lng": 85.3878,
+  "tradition": "Hindu",
+  "deity": "Shiva (lingam)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Shiva temple near Gokarna village, northeast of Bodhnath in the Kathmandu Valley, whose sanctum houses a lingam of considerable importance in the valley's Shaiva worship.",
+  "wiki": "https://en.wikipedia.org/wiki/Gokarneshwor_Mahadev_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Gokarneshwor_Mahadev_temple"
+   },
+   {
+    "l": "Wikidata Q1534467",
+    "u": "https://www.wikidata.org/wiki/Q1534467"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "maula-kalika-gaindakot",
+  "name": "Maula Kalika Temple",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Gaindakot, Nawalpur District",
+  "lat": 27.7275,
+  "lng": 84.4088,
+  "tradition": "Hindu",
+  "deity": "Kalika (the goddess Kali)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A temple of the goddess Kalika above Gaindakot town in Nawalpur District of Gandaki Province, one of the better-known Shakta shrines of central Nepal.",
+  "wiki": "https://en.wikipedia.org/wiki/Maula_Kalika_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maula_Kalika_Temple"
+   },
+   {
+    "l": "Wikidata Q6792424",
+    "u": "https://www.wikidata.org/wiki/Q6792424"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "swargadwari-pyuthan",
+  "name": "Swargadwari",
+  "country": "Nepal",
+  "place": "Swargadwari, Pyuthan District",
+  "lat": 28.1213,
+  "lng": 82.6735,
+  "tradition": "Hindu",
+  "deity": "Narayana (Vishnu) and Shiva",
+  "built": [
+   1895,
+   1895
+  ],
+  "builtDisplay": "1895",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A hill pilgrimage centre in Pyuthan District dedicated to Narayana and Shiva, established in 1895 (Vaisakha Purnima 1952 BS) by Guru Maharaj Narayana Gautama Khatri, known as Swami Hamsananda, who spent most of his life on the ridge herding and milking thousands of cows; the site is closely bound to the veneration of the cow in Hinduism.",
+  "wiki": "https://en.wikipedia.org/wiki/Swargadwari",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Swargadwari"
+   },
+   {
+    "l": "Wikidata Q13187340",
+    "u": "https://www.wikidata.org/wiki/Q13187340"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ganeshthan-bharatpur",
+  "name": "Ganeshthan Temple",
+  "country": "Nepal",
+  "place": "Bharatpur, Chitwan District",
+  "lat": 27.7061,
+  "lng": 84.4486,
+  "tradition": "Hindu",
+  "deity": "Ganesha",
+  "built": [
+   1952,
+   1952
+  ],
+  "origin": 1400,
+  "builtDisplay": "rebuilt 1952; origin 15th c.",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Ganesha temple in ward 11 of Bharatpur in Chitwan District whose original shrine is placed in the fifteenth century and credited to Muni Makunda, king of Palpa; the present building went up in 1952 during the reign of King Mahendra, and worshippers gather chiefly on Tuesdays.",
+  "wiki": "https://en.wikipedia.org/wiki/Ganeshthan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ganeshthan_Temple"
+   },
+   {
+    "l": "Wikidata Q5520885",
+    "u": "https://www.wikidata.org/wiki/Q5520885"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kumbheshwar-patan",
+  "name": "Kumbheshwar Temple",
+  "country": "Nepal",
+  "place": "Patan, Lalitpur District",
+  "lat": 27.6767,
+  "lng": 85.3258,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1392,
+   1392
+  ],
+  "builtDisplay": "c. 1392 (Jayasthiti Malla)",
+  "dynasty": "Malla",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A five-storey free-standing pagoda dedicated to Shiva, standing about 200 m north of Patan Durbar Square in Lalitpur and built around 1392 by King Jayasthiti Malla.",
+  "story": "The ponds within the temple courtyard are believed to be fed by a spring rising from Gosainkunda, some 43 km north of Kathmandu.",
+  "wiki": "https://en.wikipedia.org/wiki/Kumbheshwar_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kumbheshwar_Temple"
+   },
+   {
+    "l": "Wikidata Q18344056",
+    "u": "https://www.wikidata.org/wiki/Q18344056"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "naradevi-kathmandu",
+  "name": "Naradevi Temple",
+  "country": "Nepal",
+  "place": "Naradevi, Kathmandu",
+  "lat": 27.7076,
+  "lng": 85.306,
+  "tradition": "Hindu",
+  "deity": "Sweta Kali, called Nyata Ajima by Newars",
+  "built": [
+   800,
+   900
+  ],
+  "builtDisplay": "9th c. (Gunakamadeva)",
+  "dynasty": "Gunakamadeva era",
+  "circuits": [],
+  "significance": "A shrine in central Kathmandu dedicated to Sweta Kali, known among Newars as Nyata Ajima, and believed to have been founded in the ninth century by Gunakamadeva, the founder of the city; its three-tiered roof includes a gilded storey carried on carved struts.",
+  "story": "A king of Patan who lost his way while hunting and was chased by a wild elephant is said to have hidden in a tree at this spot, where the goddess Swetakali appeared and gave him back his life, upon which he founded the temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Naradevi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Naradevi_Temple"
+   },
+   {
+    "l": "Wikidata Q25620593",
+    "u": "https://www.wikidata.org/wiki/Q25620593"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhutandevi-hetauda",
+  "name": "Bhutandevi Mandir",
+  "country": "Nepal",
+  "state": "Bagmati",
+  "place": "Hetauda, Makwanpur District",
+  "lat": 27.4241,
+  "lng": 85.0232,
+  "tradition": "Hindu",
+  "deity": "Bhutandevi (Hidimbi)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple in Hetauda, Makwanpur District, dedicated to Bhutandevi, identified with Hidimbi, a wife of Bhima and the mother of Ghatotkacha.",
+  "story": "Hidimba is held to be another manifestation of Durga, and the name of Hetauda itself is believed to come from the goddess.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhutandevi_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhutandevi_Mandir"
+   },
+   {
+    "l": "Wikidata Q28183939",
+    "u": "https://www.wikidata.org/wiki/Q28183939"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhadrakali-pokhara",
+  "name": "Bhadrakali Temple, Pokhara",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Kundahar, east of Pokhara, Kaski District",
+  "lat": 28.2125,
+  "lng": 84.0071,
+  "tradition": "Hindu",
+  "deity": "Bhadrakali (Kali)",
+  "built": [
+   1817,
+   1817
+  ],
+  "builtDisplay": "1817",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A hilltop pagoda at Kundahar east of Pokhara in Kaski District, founded in 1817 and dedicated to Bhadrakali as goddess of power and strength; it stands at about 2,930 feet over some 135 ropanies and is reached by stairways of 292 steps from the east and 265 from the south.",
+  "story": "The goddess is said to have told a priest to dig into the hill, where her image was uncovered and thereafter worshipped as Bhadrakali.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhadrakali_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhadrakali_Temple"
+   },
+   {
+    "l": "Wikidata Q97357162",
+    "u": "https://www.wikidata.org/wiki/Q97357162"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kapileshwar-janakpur",
+  "name": "Kapileshwar Temple, Janakpur",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Janakpur, Dhanusha District",
+  "lat": 26.7277,
+  "lng": 85.9453,
+  "tradition": "Hindu",
+  "deity": "Shiva as Kapileshwar Mahadev",
+  "built": [
+   1934,
+   1940
+  ],
+  "builtDisplay": "rebuilt after the 1934 earthquake",
+  "dynasty": "Modern",
+  "style": "Simrangad",
+  "circuits": [],
+  "significance": "One of the Shiva shrines that mark the corners of Janakpur in Dhanusha District, worshipped as Kapileshwar Mahadev; raised originally in the Simrangad style, it was rebuilt after the earthquake of 1934.",
+  "story": "King Janak is said to have built Shiva temples at the four corners of his capital Janakpur in the Treta Yuga, and the sage Kapil to have kept his ashram at this one, which is how it got its name.",
+  "wiki": "https://en.wikipedia.org/wiki/Kapileshwar_Temple,_Janakpur",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kapileshwar_Temple,_Janakpur"
+   },
+   {
+    "l": "Wikidata Q106238324",
+    "u": "https://www.wikidata.org/wiki/Q106238324"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bishnupaduka-dharan",
+  "name": "Bishnupaduka",
+  "country": "Nepal",
+  "state": "Koshi",
+  "place": "Dharan, Sunsari District",
+  "lat": 26.8235,
+  "lng": 87.2479,
+  "tradition": "Hindu",
+  "deity": "Vishnu",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Shikhara",
+  "circuits": [],
+  "significance": "A shikhara shrine at Dharan in Sunsari District built over a rock bearing two footprints venerated as those of Vishnu.",
+  "story": "Local people are said to have come upon a rock marked with two clear footprints, which are believed to be Vishnu's own.",
+  "wiki": "https://en.wikipedia.org/wiki/Bishnupaduka_(shrine)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bishnupaduka_(shrine)"
+   },
+   {
+    "l": "Wikidata Q13186165",
+    "u": "https://www.wikidata.org/wiki/Q13186165"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "manakamana-sankhuwasabha",
+  "name": "Manakamana Temple, Sankhuwasabha",
+  "country": "Nepal",
+  "state": "Koshi",
+  "place": "Tumlingtar, Sankhuwasabha District",
+  "lat": 27.3396,
+  "lng": 87.1889,
+  "tradition": "Hindu",
+  "deity": "Manakamana Devi",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Manakamana Devi about 5 km north of Tumlingtar airport in Sankhuwasabha District, eastern Nepal, distinct from the better-known Manakamana shrine in Gorkha.",
+  "story": "A farmer ploughing his field is said to have struck a stone that oozed milk and blood, which the devotee Lakhan Thapa read as the return of a seventeenth-century queen of Gorkha who had committed sati after her husband's death.",
+  "wiki": "https://en.wikipedia.org/wiki/Manakamana_Temple_(Sankhuwasabha)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Manakamana_Temple_(Sankhuwasabha)"
+   },
+   {
+    "l": "Wikidata Q6746791",
+    "u": "https://www.wikidata.org/wiki/Q6746791"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "sheshnarayan-pharping",
+  "name": "Sheshnarayan Temple",
+  "country": "Nepal",
+  "place": "Pharping, Kathmandu District",
+  "lat": 27.63,
+  "lng": 85.27,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Sheshnarayan",
+  "built": [
+   400,
+   750
+  ],
+  "builtDisplay": "Licchavi period (reign of Vishnugupta)",
+  "dynasty": "Licchavi",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Vishnu in his Sheshnarayan form near Pharping in the southern Kathmandu Valley, believed to have been raised in the reign of the Licchavi king Vishnugupta; it is counted among the four Narayana temples of the valley.",
+  "story": "The four Narayana temples are said to stand on hilltops at the cardinal points to guard the Kathmandu Valley.",
+  "wiki": "https://en.wikipedia.org/wiki/Sheshnarayan_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sheshnarayan_Temple"
+   },
+   {
+    "l": "Wikidata Q7495631",
+    "u": "https://www.wikidata.org/wiki/Q7495631"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kalika-bhagawati-baglung",
+  "name": "Kalika Bhagawati Temple",
+  "country": "Nepal",
+  "state": "Gandaki",
+  "place": "Baglung, Baglung District",
+  "lat": 28.2559,
+  "lng": 83.6136,
+  "tradition": "Hindu",
+  "deity": "Kalika (Kali)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple southeast of Baglung town on the southern bank of the Kali Gandaki in Gandaki Province, dedicated to Kalika, one of the fiercest forms of Shakti.",
+  "story": "A king is said to have received the goddess's image as dowry, and when the wedding party halted overnight in a forest and no one could lift the idol the next morning, he built the temple on that spot.",
+  "wiki": "https://en.wikipedia.org/wiki/Kalika_Bhagawati_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kalika_Bhagawati_Temple"
+   },
+   {
+    "l": "Wikidata Q60761465",
+    "u": "https://www.wikidata.org/wiki/Q60761465"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "rajdevi-gaur",
+  "name": "Rajdevi Temple, Gaur",
+  "country": "Nepal",
+  "state": "Madhesh",
+  "place": "Gaur, Rajdevi Municipality, Rautahat District",
+  "lat": 26.7683,
+  "lng": 85.3158,
+  "tradition": "Hindu",
+  "deity": "Rajdevi",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Hindu temple at Gaur in Rautahat District of Madhesh Province whose presiding deity is the goddess Rajdevi; the surrounding municipality takes its name from the shrine.",
+  "wiki": "https://en.wikipedia.org/wiki/Rajdevi_Temple_(Gaur)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Rajdevi_Temple_(Gaur)"
+   },
+   {
+    "l": "Wikidata Q28184004",
+    "u": "https://www.wikidata.org/wiki/Q28184004"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kulpani-dang",
+  "name": "Kulpani Mandir",
+  "country": "Nepal",
+  "state": "Lumbini",
+  "place": "Badahara, Gadhawa Rural Municipality, Dang District",
+  "lat": 27.8071,
+  "lng": 82.7099,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda-style Shiva temple at Badahara in ward 1 of Gadhawa Rural Municipality, Dang District, Lumbini Province.",
+  "wiki": "https://en.wikipedia.org/wiki/Kulpani_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kulpani_Mandir"
+   },
+   {
+    "l": "Wikidata Q28408062",
+    "u": "https://www.wikidata.org/wiki/Q28408062"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "chintang-devi-dhankuta",
+  "name": "Chintang Devi Temple",
+  "country": "Nepal",
+  "place": "Chintang, Dhankuta District",
+  "lat": 26.955,
+  "lng": 87.2041,
+  "tradition": "Hindu",
+  "deity": "Chintang Devi (Jalpadevi)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A goddess temple in Dhankuta District dedicated to Chintang Devi, also called Jalpadevi, and held in reverence in both Hindu and Kirati worship.",
+  "story": "The shrine takes its name from Chintang, one of the seven daughters of Budhahang.",
+  "wiki": "https://en.wikipedia.org/wiki/Chintang_Devi_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chintang_Devi_temple"
+   },
+   {
+    "l": "Wikidata Q104879211",
+    "u": "https://www.wikidata.org/wiki/Q104879211"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhaleshwor-chandragiri",
+  "name": "Bhaleshwor Mahadev Temple",
+  "country": "Nepal",
+  "state": "Bagmati",
+  "place": "Chandragiri Hill, Kathmandu District",
+  "lat": 27.6661,
+  "lng": 85.2054,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Pagoda",
+  "circuits": [],
+  "significance": "A pagoda temple of Shiva on the summit of Chandragiri hill on the southwestern rim of the Kathmandu Valley in Bagmati Province.",
+  "story": "The shrine is said to mark the place where the forehead of Sati Devi fell as Shiva carried her lifeless body across the world after her death at her father's sacrifice.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhaleshwor_Mahadev",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhaleshwor_Mahadev"
+   },
+   {
+    "l": "Wikidata Q30232689",
+    "u": "https://www.wikidata.org/wiki/Q30232689"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
 ]

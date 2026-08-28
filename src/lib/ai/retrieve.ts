@@ -25,7 +25,10 @@
  * runtime DB (constitution rule 6), and 1126 records is nothing to scan.
  */
 
-import { filterSites, normalise, tokenise, expandToken, type Searchable, type SearchQuery } from "../search.ts";
+import {
+  compileQuery, filterSites, normalise, qualityOf, scoreSite, tokenise, expandToken,
+  type Searchable, type SearchQuery,
+} from "../search.ts";
 
 // ---------------------------------------------------------------------------
 // the retrievable record
@@ -142,7 +145,15 @@ export const relevance = (record: AtlasRecord, query: string): number => {
 // retrieval
 // ---------------------------------------------------------------------------
 
-export type RetrievalReason = "ok" | "blank-query" | "no-match";
+/**
+ * `no-terms` and `no-match` are both empty, and the caller must treat them
+ * differently. `no-terms` means nothing was really asked — pure function words —
+ * and can be refused for free. `no-match` means real terms were asked and a
+ * strict AND did not satisfy them, which the model may still recover with
+ * findSites; refusing that outright is what made the assistant reject
+ * "How do I reach Kedarnath?" about a temple we hold.
+ */
+export type RetrievalReason = "ok" | "blank-query" | "no-terms" | "no-match";
 
 export type Retrieval<T extends AtlasRecord = AtlasRecord> = {
   readonly query: string;
@@ -152,6 +163,17 @@ export type Retrieval<T extends AtlasRecord = AtlasRecord> = {
   readonly reason: RetrievalReason;
   /** Matches found before the limit was applied — lets the answer say "and N more". */
   readonly total: number;
+  /**
+   * True when NOTHING matched as typed and every returned record was reached
+   * only through the transliteration fold in `fuzzy.ts`.
+   *
+   * This is a weaker result, and it is reported rather than hidden: the asker
+   * spelled something we do not store, and an answer that silently pretends
+   * otherwise is the same failure as a wrong answer. When any record matched
+   * exactly this is false, because those records rank first and carry the
+   * answer.
+   */
+  readonly fuzzy: boolean;
 };
 
 const emptyResult = <T extends AtlasRecord>(query: string, reason: RetrievalReason): Retrieval<T> => ({
@@ -160,6 +182,7 @@ const emptyResult = <T extends AtlasRecord>(query: string, reason: RetrievalReas
   empty: true,
   reason,
   total: 0,
+  fuzzy: false,
 });
 
 /**
@@ -170,6 +193,83 @@ const emptyResult = <T extends AtlasRecord>(query: string, reason: RetrievalReas
  * the corpus does not answer the question and the assistant must say so. A
  * "closest match" here would be indistinguishable, to a pilgrim, from an answer.
  */
+/**
+ * Function words, stripped before retrieval.
+ *
+ * `search.ts` ANDs across every token, which is right for a search BOX — someone
+ * typing "chola thanjavur" means both. It is wrong for a chat box, where the
+ * input is a sentence: "When was the Brihadisvara temple at Thanjavur built?"
+ * ANDs `when`, `was`, `the`, `at` and `built` against a haystack of names and
+ * places, matches nothing, and refuses a question about a record we plainly
+ * hold. Measured before this: 0 hits for that question, 2 for "brihadisvara".
+ *
+ * This is NORMALISATION, not widening. The remaining content tokens are still
+ * ANDed and there is still no OR fallback, so retrieval never salvages a near
+ * miss the asker did not ask for — it just stops being defeated by grammar.
+ */
+const STOPWORDS = new Set([
+  // question forms
+  "what", "when", "where", "which", "who", "whom", "whose", "why", "how",
+  "is", "are", "was", "were", "be", "been", "being", "do", "does", "did",
+  "can", "could", "would", "should", "shall", "will", "may", "might", "must",
+  // determiners, prepositions, conjunctions
+  "a", "an", "the", "this", "that", "these", "those", "of", "in", "on", "at",
+  "to", "for", "from", "by", "with", "about", "into", "near", "and", "or",
+  "but", "if", "then", "than", "as", "it", "its", "there", "their",
+  // conversational filler around a real question
+  "tell", "me", "us", "you", "i", "my", "our", "please", "know", "want",
+  "give", "show", "find", "list", "any", "some", "more", "most", "much", "many",
+  "old", "have", "has", "had", "get", "go", "like",
+  // Verbs that describe the ASKING, not the temple. In a corpus where every
+  // record is a built religious structure, "built" and "founded" discriminate
+  // nothing — they appear in the question, not usefully in the haystack — while
+  // ANDed they veto it. "Reach" and "visit" are the same for access questions.
+  "built", "build", "founded", "found", "constructed", "established", "made",
+  "reach", "reaching", "visit", "visiting", "see", "seen", "located", "situated",
+  "called", "named", "known", "say", "says", "said", "means", "mean",
+  // Relational and superlative words. These describe the SHAPE of the question,
+  // not the entity being asked about: "Which Jyotirlinga is nearest Ujjain?"
+  // names two things the corpus holds (Jyotirlinga, Ujjain) and one thing it
+  // does not (`nearest`, a relation between them). ANDed, the relation vetoes
+  // the entities and the assistant refuses its own placeholder question.
+  // The relation is answered by the tools — `nearby`, `circuitMembership`,
+  // the `built` range — from the records these terms retrieve. It is never
+  // answered by finding the word "nearest" written in a temple's history.
+  // ("near", "old" and "list" are already above, among the prepositions and filler.)
+  "nearest", "nearby", "closest", "close", "around", "between", "within",
+  "oldest", "newest", "earliest", "latest", "biggest", "largest", "smallest",
+  "tallest", "highest", "longest", "greatest", "best", "top", "famous",
+  "important", "popular", "major", "main",
+]);
+
+/**
+ * Reduce a question to the tokens that can actually discriminate between records.
+ *
+ * Two passes, both narrowing:
+ *
+ *   1. Drop function words (STOPWORDS above).
+ * Function words only. I tried a second pass that also dropped tokens matching
+ * zero records, to stop a stray verb vetoing the query, and REVERTED it: on
+ * "What is the capital of France?" it dropped `france` (zero matches) and kept
+ * `capital` (which appears in Chola-capital prose), returning six confident
+ * false positives. Dropping the discriminating term and keeping the generic one
+ * is exactly backwards, and a false positive is this product's worst failure —
+ * it feeds the model records that do not answer the question.
+ *
+ * Recovering a question whose phrasing defeats a strict AND is the model's job,
+ * via the findSites tool, not something to paper over here.
+ *
+ * Returns "" when only function words remain, which the caller refuses on.
+ */
+export function contentQuery<T extends Searchable>(
+  query: string,
+  corpus: readonly T[],
+): string {
+  void corpus; // reserved: see the note above on why zero-match dropping is out
+  const content = tokenise(query).filter((t) => !STOPWORDS.has(t));
+  return content.join(" ");
+}
+
 export function retrieve<T extends AtlasRecord>(
   corpus: readonly T[],
   query: string,
@@ -181,21 +281,46 @@ export function retrieve<T extends AtlasRecord>(
   if (!trimmed && !hasFacet) return emptyResult<T>(trimmed, "blank-query");
 
   const pool = sourced(corpus);
-  const matched = filterSites(pool, { ...facets, q: trimmed });
+  // Retrieve on discriminating terms; rank and report against what was asked.
+  const terms = contentQuery(trimmed, pool);
+  if (!terms && !hasFacet) return emptyResult<T>(trimmed, "no-terms");
+  const matched = filterSites(pool, { ...facets, q: terms });
   if (matched.length === 0) return emptyResult<T>(trimmed, "no-match");
 
-  // Stable: equal relevance keeps corpus order, which is roughly prominence.
-  const ranked = matched
-    .map((record, index) => ({ record, score: relevance(record, trimmed), index }))
-    .sort((a, b) => b.score - a.score || a.index - b.index)
-    .map((entry) => entry.record);
+  // Rank on the discriminating terms, not the sentence: `relevance` asks whether
+  // every token is in the name or the place, and a question's stopwords are in
+  // neither, so ranking on the raw sentence flattens every record to the floor.
+  // A facet-only query has no terms; `matchQuality` calls that "exact", which is
+  // right — nothing was spelled, so nothing was folded.
+  const compiled = compileQuery(terms);
+  const scored = matched.map((record, index) => ({
+    record,
+    quality: qualityOf(record, compiled),
+    /**
+     * The precedence ladder in search.ts, packed: whole word before folded word
+     * before fragment, and within a tier, name before place/deity before
+     * dynasty/style before significance.
+     */
+    match: scoreSite(record, compiled),
+    score: relevance(record, terms),
+    index,
+  }));
+
+  // The ladder first — it already knows that a whole word, even a folded one,
+  // answers better than a fragment of a longer one, which is what put
+  // Pataleeswarar Temple at *Thirupathi*puliyur above Tirumala for "thirupathi".
+  // Then `relevance`, then corpus order, which is roughly prominence. The sort
+  // is stable, so equal entries keep that order.
+  const ranked = [...scored].sort((a, b) =>
+    b.match - a.match || b.score - a.score || a.index - b.index);
 
   return {
     query: trimmed,
-    records: ranked.slice(0, boundedLimit(limit)),
+    records: ranked.slice(0, boundedLimit(limit)).map((entry) => entry.record),
     empty: false,
     reason: "ok",
     total: matched.length,
+    fuzzy: scored.every((entry) => entry.quality === "fuzzy"),
   };
 }
 

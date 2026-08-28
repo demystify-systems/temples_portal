@@ -1,0 +1,528 @@
+[
+ {
+  "id": "xa-loi-pagoda-ho-chi-minh",
+  "name": "Xá Lợi Pagoda",
+  "country": "Vietnam",
+  "state": "Ho Chi Minh City",
+  "place": "District 3, Ho Chi Minh City",
+  "lat": 10.7781,
+  "lng": 106.6867,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Buddha relic)",
+  "built": [
+   1956,
+   1958
+  ],
+  "builtDisplay": "1956-1958",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A pagoda in District 3 of Ho Chi Minh City raised between 1956 and 1958 to enshrine a relic of Gautama Buddha, with its bell tower opened in 1961. Its sanctuary carries fourteen painted scenes running from the Buddha's birth as Prince Siddhartha to his attainment of nirvana.",
+  "wiki": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/X%C3%A1_L%E1%BB%A3i_Pagoda"
+   },
+   {
+    "l": "Wikidata Q1005868",
+    "u": "https://www.wikidata.org/wiki/Q1005868"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "thay-temple-quoc-oai",
+  "name": "Thầy Temple",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Quốc Oai, Hanoi",
+  "lat": 21.0223,
+  "lng": 105.6456,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha with eighteen arhats, alongside Zen master Từ Đạo Hạnh and Emperor Lý Nhân Tông",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Lý dynasty)",
+  "dynasty": "Lý",
+  "style": "Vietnamese",
+  "circuits": [],
+  "significance": "A Buddhist temple complex west of Hanoi in Quốc Oai, established in the 11th century under Emperor Lý Nhân Tông and refurbished repeatedly since. Its halls venerate the Buddha together with the Zen master Từ Đạo Hạnh, around whose cult the site grew.",
+  "story": "Từ Đạo Hạnh is said to have burned his finger to summon rain and healed villagers by blessing them, and to have been reborn three times - once as a Buddha, then as the son of King Lý Nhân Tông, then as the monk who saved King Thần Tông.",
+  "wiki": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Th%E1%BA%A7y_Temple"
+   },
+   {
+    "l": "Wikidata Q7799949",
+    "u": "https://www.wikidata.org/wiki/Q7799949"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bagaya-monastery-inwa",
+  "name": "Bagaya Monastery",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Inwa",
+  "lat": 21.8484,
+  "lng": 95.9682,
+  "tradition": "Buddhist",
+  "deity": "Shin Dhammabhinanda",
+  "built": [
+   1992,
+   1992
+  ],
+  "origin": 1593,
+  "builtDisplay": "orig. 1593; rebuilt 1992",
+  "dynasty": "Konbaung",
+  "circuits": [],
+  "significance": "A Theravada monastery at the old capital of Inwa, dedicated to Shin Dhammabhinanda and first built in 1593, later endowed during King Hsinbyushin's reign by the town officer of Magwe. Destroyed by fire in 1821, it was rebuilt in 1992.",
+  "wiki": "https://en.wikipedia.org/wiki/Bagaya_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bagaya_Monastery"
+   },
+   {
+    "l": "Wikidata Q17005346",
+    "u": "https://www.wikidata.org/wiki/Q17005346"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "ngahtatgyi-buddha-temple-yangon",
+  "name": "Ngahtatgyi Buddha Temple",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Bahan Township, Yangon",
+  "lat": 16.8084,
+  "lng": 96.1626,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Ngahtatgyi Buddha image)",
+  "built": [
+   1558,
+   1558
+  ],
+  "builtDisplay": "1558",
+  "dynasty": "Toungoo",
+  "circuits": [],
+  "significance": "A Theravada temple in Yangon's Bahan Township whose five-tiered pagoda shelters a seated Buddha image 6.2 m high, donated by Prince Minyedeippa and completed in 1558. A further Buddha statue was erected at the temple in 1900.",
+  "wiki": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ngahtatgyi_Buddha_Temple"
+   },
+   {
+    "l": "Wikidata Q4315287",
+    "u": "https://www.wikidata.org/wiki/Q4315287"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "girihandu-seya-thiriyai",
+  "name": "Girihandu Seya",
+  "country": "Sri Lanka",
+  "state": "Eastern Province",
+  "place": "Thiriyai, Trincomalee District",
+  "lat": 8.8704,
+  "lng": 81.0073,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (hair relics)",
+  "built": [
+   700,
+   800
+  ],
+  "builtDisplay": "enlarged 8th c.; repaired 11th c.",
+  "dynasty": "Anuradhapura",
+  "style": "Vatadage",
+  "circuits": [],
+  "significance": "A hilltop stupa at Thiriyai believed to hold hair relics of the Buddha, enlarged in the 8th century and enclosed by a vatadage of concentric stone pillars like those at Thuparama and Lankarama. An inscription links it to King Silamegha, and it was later repaired under Vijayabahu I.",
+  "story": "The Pujavaliya tells that the merchants Tapassu and Bhalluka, carrying the Buddha's hair relics, set the casket down on this rock and found it could no longer be lifted, so they raised a stupa over it.",
+  "wiki": "https://en.wikipedia.org/wiki/Girihandu_Seya",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Girihandu_Seya"
+   },
+   {
+    "l": "Wikidata Q48733604",
+    "u": "https://www.wikidata.org/wiki/Q48733604"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kyauktawgyi-temple-yangon",
+  "name": "Kyauktawgyi Buddha Temple, Yangon",
+  "country": "Myanmar",
+  "state": "Yangon",
+  "place": "Insein Township, Yangon",
+  "lat": 16.8846,
+  "lng": 96.1232,
+  "tradition": "Buddhist",
+  "deity": "Loka Chantha Abhaya Labha Muni (Gautama Buddha image)",
+  "built": [
+   2000,
+   2002
+  ],
+  "builtDisplay": "2000-2002",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Theravada temple in Insein Township, Yangon, built around the Loka Chantha Abhaya Labha Muni, a 37-foot marble Buddha image brought to the site in August 2000 and consecrated in February 2002. Its construction was led by Senior General Than Shwe.",
+  "wiki": "https://en.wikipedia.org/wiki/Kyauktawgyi_Buddha_Temple_(Yangon)",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kyauktawgyi_Buddha_Temple_(Yangon)"
+   },
+   {
+    "l": "Wikidata Q20991985",
+    "u": "https://www.wikidata.org/wiki/Q20991985"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-phra-singh-chiang-mai",
+  "name": "Wat Phra Singh",
+  "country": "Thailand",
+  "state": "Chiang Mai",
+  "place": "Mueang Chiang Mai, Chiang Mai",
+  "lat": 18.7888,
+  "lng": 98.9812,
+  "tradition": "Buddhist",
+  "deity": "Phra Buddha Sihing image",
+  "built": [
+   1345,
+   1345
+  ],
+  "builtDisplay": "1345 (Lan Na)",
+  "dynasty": "Mangrai (Lan Na)",
+  "style": "Lanna",
+  "circuits": [],
+  "significance": "A leading royal temple of Chiang Mai, founded in 1345 by Phayu, fifth king of Lan Na, and named for the Phra Buddha Sihing image brought there in 1400. Its Viharn Lai Kham was built between 1815 and 1821, and it was granted royal temple status in 1935.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Phra_Singh",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Phra_Singh"
+   },
+   {
+    "l": "Wikidata Q1657130",
+    "u": "https://www.wikidata.org/wiki/Q1657130"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "tran-quoc-pagoda-hanoi",
+  "name": "Trấn Quốc Pagoda",
+  "country": "Vietnam",
+  "state": "Hanoi",
+  "place": "Tây Hồ District, Hanoi",
+  "lat": 21.0478,
+  "lng": 105.8367,
+  "tradition": "Buddhist",
+  "deity": "Mother Goddesses Mẫu Thượng Ngàn, Mẫu Thoải and Mẫu Thượng Thiên",
+  "built": [
+   1615,
+   1615
+  ],
+  "origin": 544,
+  "builtDisplay": "founded 544-548; moved to present site 1615",
+  "dynasty": "Early Lý",
+  "circuits": [],
+  "significance": "A Buddhist pagoda in Tây Hồ District, Hanoi, first founded under Emperor Lý Nam Đế between 544 and 548, moved to its present site in 1615 and heavily repaired in 1815. Beside its Buddhist halls it holds shrines to the three Mother Goddesses of Vietnamese tradition, and a Bodhi sapling from Bodh Gaya was planted there in 1959.",
+  "wiki": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_Qu%E1%BB%91c_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Tr%E1%BA%A5n_Qu%E1%BB%91c_Pagoda"
+   },
+   {
+    "l": "Wikidata Q864770",
+    "u": "https://www.wikidata.org/wiki/Q864770"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "abeyadana-temple-bagan",
+  "name": "Abeyadana Temple",
+  "country": "Myanmar",
+  "state": "Mandalay Region",
+  "place": "Bagan",
+  "lat": 21.1489,
+  "lng": 94.8577,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (brick image)",
+  "built": [
+   1090,
+   1090
+  ],
+  "builtDisplay": "c. 1090 (Pagan)",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A brick temple at Bagan built around 1090 during the reign of King Kyanzittha, its main image a brick Gautama Buddha. A later inscription credits its construction to Kyanzittha's queen Abeyadana, and its murals mix Tantric and Brahmanic figures with Buddhist ones.",
+  "story": "Local legend holds that the temple stands on the spot where Kyanzittha's queen Abeyadana waited for him.",
+  "wiki": "https://en.wikipedia.org/wiki/Abeyadana_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Abeyadana_Temple"
+   },
+   {
+    "l": "Wikidata Q319840",
+    "u": "https://www.wikidata.org/wiki/Q319840"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "kong-meng-san-phor-kark-see-singapore",
+  "name": "Kong Meng San Phor Kark See Monastery",
+  "country": "Singapore",
+  "state": "Singapore",
+  "place": "Bishan, Singapore",
+  "lat": 1.3614,
+  "lng": 103.836,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha and Guanyin (Avalokiteśvara)",
+  "built": [
+   1920,
+   1921
+  ],
+  "builtDisplay": "1920-21",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Mahayana Buddhist monastery in Bishan, Singapore, founded in 1920-21 by the Venerable Zhuan Dao on land given by the businessman Tay Woo Seng and later supported by the Aw brothers. Its grounds hold a large bronze Buddha, an outdoor Guanyin statue and a Bodhi sapling descended from the tree at Anuradhapura.",
+  "wiki": "https://en.wikipedia.org/wiki/Kong_Meng_San_Phor_Kark_See_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Kong_Meng_San_Phor_Kark_See_Monastery"
+   },
+   {
+    "l": "Wikidata Q2890360",
+    "u": "https://www.wikidata.org/wiki/Q2890360"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-bowon-sathan-sutthawat-bangkok",
+  "name": "Wat Bowon Sathan Sutthawat",
+  "country": "Thailand",
+  "state": "Bangkok",
+  "place": "Phra Nakhon, Bangkok",
+  "lat": 13.7596,
+  "lng": 100.4915,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (standing bronze image in the attitude of bestowing pardon)",
+  "built": [
+   1824,
+   1860
+  ],
+  "builtDisplay": "founded under Rama III; completed mid-19th c.",
+  "dynasty": "Chakri (Rattanakosin)",
+  "style": "Early Rattanakosin",
+  "circuits": [],
+  "significance": "A royal temple inside the former Front Palace precinct in Phra Nakhon, Bangkok, begun by Prince Maha Sakdiphonlasep in the reign of Rama III and finished under King Pinklao and King Mongkut. Its gilded standing Buddha sits beneath a spired busabok throne, and the hall served as a royal funeral hall in 1900.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Bowon_Sathan_Sutthawat",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Bowon_Sathan_Sutthawat"
+   },
+   {
+    "l": "Wikidata Q16004311",
+    "u": "https://www.wikidata.org/wiki/Q16004311"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "dhammikarama-burmese-temple-penang",
+  "name": "Dhammikarama Burmese Temple",
+  "country": "Malaysia",
+  "state": "Penang",
+  "place": "Pulau Tikus, George Town",
+  "lat": 5.4309,
+  "lng": 100.3143,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (standing Buddha image), with a shrine to Arahant Upagutta",
+  "built": [
+   1803,
+   1803
+  ],
+  "builtDisplay": "founded 1803",
+  "dynasty": "Modern",
+  "style": "Burmese",
+  "circuits": [],
+  "significance": "The oldest Burmese Buddhist temple in Penang, founded on 1 August 1803 as the Nandy Moloh Temple by U. Nandamala on land bought by Nyonya Betong. Its stupa was consecrated in 1805 and enclosed by an outer stupa in 1838, and a golden pagoda bell tower was added in 2011.",
+  "story": "Arahant Upagutta, whose wooden shrine stands in the grounds, is held to have the power to turn away evil spirits, obstacles and dangers.",
+  "wiki": "https://en.wikipedia.org/wiki/Dhammikarama_Burmese_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dhammikarama_Burmese_Temple"
+   },
+   {
+    "l": "Wikidata Q5268861",
+    "u": "https://www.wikidata.org/wiki/Q5268861"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "linh-son-temple-da-lat",
+  "name": "Linh Sơn Temple",
+  "country": "Vietnam",
+  "state": "Lam Dong",
+  "place": "Đà Lạt",
+  "lat": 11.95,
+  "lng": 108.4369,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (bronze image seated on a lotus), with Avalokiteshvara",
+  "built": [
+   1938,
+   1940
+  ],
+  "builtDisplay": "1938-1940",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Buddhist temple in Đà Lạt built between 1938 and 1940 by public subscription, with the largest gifts from the lay Buddhists Võ Đình Dung and Nguyễn Văn Tiến. Its main hall holds a bronze Buddha seated on a lotus, cast in 1952.",
+  "wiki": "https://en.wikipedia.org/wiki/Linh_S%C6%A1n_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Linh_S%C6%A1n_Temple"
+   },
+   {
+    "l": "Wikidata Q6554125",
+    "u": "https://www.wikidata.org/wiki/Q6554125"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "khleang-temple-soc-trang",
+  "name": "Khleang Temple",
+  "country": "Vietnam",
+  "state": "Soc Trang",
+  "place": "Sóc Trăng",
+  "lat": 9.6102,
+  "lng": 105.9768,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (standing image 6.8 m high)",
+  "built": [
+   1533,
+   1533
+  ],
+  "builtDisplay": "1533",
+  "dynasty": "Khmer",
+  "style": "Khmer",
+  "circuits": [],
+  "significance": "A Theravada temple of the Khmer community in Sóc Trăng, first built in 1533, whose sanctuary holds a 6.8 m image of Gautama Buddha erected in 1916 with funds from the family of Lum Sum. It mixes Corinthian pillars with Khmer ornament and was declared a historic heritage site in 1990.",
+  "wiki": "https://en.wikipedia.org/wiki/Khleang_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Khleang_Temple"
+   },
+   {
+    "l": "Wikidata Q11839840",
+    "u": "https://www.wikidata.org/wiki/Q11839840"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "long-son-temple-nha-trang",
+  "name": "Long Sơn Temple",
+  "country": "Vietnam",
+  "state": "Khanh Hoa",
+  "place": "Nha Trang",
+  "lat": 12.2516,
+  "lng": 109.1808,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (large white seated image)",
+  "built": [
+   1900,
+   1900
+  ],
+  "origin": 1886,
+  "builtDisplay": "founded 1886; rebuilt on present site 1900",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Buddhist temple in Nha Trang first erected in 1886 and moved to its present site in 1900 after a cyclone destroyed it, then renovated in 1940 and repaired after damage in 1968. It is dominated by a large white concrete image of the Buddha cast in 1964 and installed the following year.",
+  "wiki": "https://en.wikipedia.org/wiki/Long_S%C6%A1n_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Long_S%C6%A1n_Temple"
+   },
+   {
+    "l": "Wikidata Q2277986",
+    "u": "https://www.wikidata.org/wiki/Q2277986"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phaung-daw-u-pagoda-inle",
+  "name": "Phaung Daw U Pagoda",
+  "country": "Myanmar",
+  "state": "Shan State",
+  "place": "Ywama, Inle Lake",
+  "lat": 20.4744,
+  "lng": 96.8903,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (gilded Buddha images)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A Theravada pagoda at Ywama on Inle Lake in Shan State whose Burmese name means 'principal royal barge pagoda'. It houses gilded Buddha images believed to have been brought to the lake by King Alaungsithu of the Pagan dynasty in the 12th century.",
+  "story": "On a windy day in the 1960s the barge carrying the images capsized and one image was lost in the lake; when the party returned to the monastery, the missing image was said to be sitting back in its place.",
+  "wiki": "https://en.wikipedia.org/wiki/Phaung_Daw_U_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phaung_Daw_U_Pagoda"
+   },
+   {
+    "l": "Wikidata Q3360462",
+    "u": "https://www.wikidata.org/wiki/Q3360462"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

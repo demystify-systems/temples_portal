@@ -13,6 +13,7 @@ const NAV_LINKS: NavLink[] = [
   { href: "/sites", label: "Gazetteer", note: "All sites, by country", match: "/site/" },
   { href: "/circuits", label: "Circuits", note: "Pilgrimage networks", match: "/circuit/" },
   { href: "/dynasties", label: "Dynasties", note: "Ruling houses and eras", match: "/dynasty/" },
+  { href: "/deities", label: "Deities", note: "Who the temples are for", match: "/deity/" },
   { href: "/patrons", label: "Patrons", note: "Who funded these temples", match: "/patron/" },
   { href: "/about", label: "About & sources", note: "Method, boundaries, licences" },
 ];

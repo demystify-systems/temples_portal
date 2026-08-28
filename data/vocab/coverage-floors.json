@@ -1,0 +1,67 @@
+{
+  "_about": "Coverage ratchet for the data gate. A field's population may rise freely; a DROP fails the build. Regenerate with `npm run validate -- --update-floors` ONLY when a decrease is deliberate, and say why in the commit.",
+  "_recorded_at": "2026-08-28",
+  "_records": 3002,
+  "floors": {
+    "deities": {
+      "count": 2823,
+      "ratio": 0.9404
+    },
+    "deityGroup": {
+      "count": 2823,
+      "ratio": 0.9404
+    },
+    "native": {
+      "count": 747,
+      "ratio": 0.2488
+    },
+    "admin": {
+      "count": 869,
+      "ratio": 0.2895
+    },
+    "website": {
+      "count": 161,
+      "ratio": 0.0536
+    },
+    "phone": {
+      "count": 63,
+      "ratio": 0.021
+    },
+    "access": {
+      "count": 100,
+      "ratio": 0.0333
+    },
+    "patron": {
+      "count": 106,
+      "ratio": 0.0353
+    },
+    "story": {
+      "count": 1628,
+      "ratio": 0.5423
+    },
+    "circuits": {
+      "count": 555,
+      "ratio": 0.1849
+    },
+    "disputedCircuits": {
+      "count": 27,
+      "ratio": 0.009
+    },
+    "status": {
+      "count": 54,
+      "ratio": 0.018
+    },
+    "origin": {
+      "count": 208,
+      "ratio": 0.0693
+    },
+    "verified": {
+      "count": 3002,
+      "ratio": 1
+    },
+    "wiki": {
+      "count": 3002,
+      "ratio": 1
+    }
+  }
+}

@@ -1,0 +1,27 @@
+[
+ {
+  "id": "brahmapureeswarar-thirukkuvalai",
+  "name": "Brahmapureeswarar Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thirukkuvalai (Tirukkolili), Nagapattinam district",
+  "lat": 10.6314,
+  "lng": 79.7203,
+  "tradition": "Hindu",
+  "deity": "Shiva as Brahmapureeswarar (lingam), with Parvati as Vandamar Poonguzhali",
+  "built": [800, 1600],
+  "builtDisplay": "9th c. (Chola) core, expanded to the 16th c. (Thanjavur Nayak)",
+  "dynasty": "Chola",
+  "style": "Dravida",
+  "circuits": ["Paadal Petra Sthalam"],
+  "significance": "A Shiva temple at Thirukkuvalai in Nagapattinam district, about 15 km from Thiruvarur, revered in the 7th-century Tevaram hymns of Appar, Sambandar and Sundarar and counted among the Paadal Petra Sthalams. Its oldest masonry is 9th-century Chola work extended through the 16th century under the Thanjavur Nayaks; nineteen inscriptions record Chola, Pandya and Nayak endowments, and the temple is administered by the Dharmapuram Adheenam.",
+  "story": "Legend holds that Brahma shaped the lingam here out of white sand, and that the nine planetary deities and Bhima came to the shrine to be absolved of their sins.",
+  "wiki": "https://en.wikipedia.org/wiki/Brahmapureeswarar_Temple,_Thirukkuvalai",
+  "sources": [
+   { "l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Brahmapureeswarar_Temple,_Thirukkuvalai" },
+   { "l": "Wikipedia — Paadal Petra Sthalam (list entry 123, Tirukkolili)", "u": "https://en.wikipedia.org/wiki/Paadal_Petra_Sthalam" }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ }
+]

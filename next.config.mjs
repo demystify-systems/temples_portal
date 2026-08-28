@@ -38,7 +38,12 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
-          { key: "Permissions-Policy", value: "geolocation=(self), microphone=(), camera=()" },
+          // `microphone=(self)` — not `()` — because "Ask the Atlas" now records a
+          // spoken question. `()` denies the API to this origin as well, so
+          // getUserMedia rejects before a permission prompt can appear and the
+          // talk button is dead with nothing in the client to diagnose it by.
+          // Every other origin is still denied, and the camera stays fully shut.
+          { key: "Permissions-Policy", value: "geolocation=(self), microphone=(self), camera=()" },
         ],
       },
     ];
