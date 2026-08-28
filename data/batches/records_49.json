@@ -695,5 +695,206 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
+ },
+ {
+  "id": "varadharaja-perumal-tirunelveli",
+  "name": "Sri Varadharaja Perumal Kovil, Tirunelveli",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Tirunelveli",
+  "lat": 8.6779,
+  "lng": 77.6785,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Varadharaja Perumal, with Mahalakshmi Thayar",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "reported to be about 400 years old",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Vishnu temple on the bank of the Thamirabarani at Tirunelveli, reported to have stood in some form for around four centuries.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Varadharaja_Perumal_Kovil",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Varadharaja_Perumal_Kovil"
+   },
+   {
+    "l": "Wikidata Q7586308",
+    "u": "https://www.wikidata.org/wiki/Q7586308"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "santram-mandir-nadiad",
+  "name": "Santram Mandir",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Nadiad, Kheda district",
+  "lat": 22.689,
+  "lng": 72.864,
+  "tradition": "Hindu",
+  "deity": "Santram Maharaj",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "The principal temple of the Santram Maharaj sampradaya at Nadiad in Kheda district, run by the Santram Maharaj organisation and a leading pilgrimage draw in central Gujarat.",
+  "website": "https://www.santram.org/",
+  "wiki": "https://en.wikipedia.org/wiki/Santram_Mandir",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Santram_Mandir"
+   },
+   {
+    "l": "Wikidata Q7420707",
+    "u": "https://www.wikidata.org/wiki/Q7420707"
+   },
+   {
+    "l": "Official site",
+    "u": "https://www.santram.org/"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "ranganathaswamy-jiyaguda",
+  "name": "Ranganathaswamy Temple, Jiyaguda",
+  "country": "India",
+  "state": "Telangana",
+  "place": "Jiyaguda, Hyderabad",
+  "lat": 17.3695,
+  "lng": 78.4511,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Ranganatha, with Ranganayaki",
+  "built": [
+   1600,
+   1700
+  ],
+  "builtDisplay": "c. 17th c. (Qutb Shahi period)",
+  "dynasty": "Qutb Shahi period",
+  "style": "Dravidian, with a three-tier rajagopuram",
+  "circuits": [],
+  "significance": "A roughly four-hundred-year-old Vaishnava temple on the Musi river in Hyderabad, established by the Nanganur Prathama Peetham during Qutb Shahi rule and said to be the first temple that lineage founded in the city. It follows the Vanamamalai sampradaya and was granted a three-year exemption by the Telangana Endowments Department in 2015.",
+  "wiki": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Jiyaguda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Jiyaguda"
+   },
+   {
+    "l": "Wikidata Q7586226",
+    "u": "https://www.wikidata.org/wiki/Q7586226"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "ranganathaswamy-shivanasamudra",
+  "name": "Ranganathaswamy Temple, Shivanasamudra",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Shivanasamudra, Kollegala taluk, Chamarajanagar district",
+  "lat": 12.2705,
+  "lng": 77.1696,
+  "tradition": "Hindu",
+  "deity": "Vishnu as Ranganatha, here called Madhya Ranga",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "The middle shrine of the tri-ranga group of Ranganatha temples set on natural islands in the Kaveri, standing at Shivanasamudra in Chamarajanagar district. Renovation work on the remote temple began in February 2021.",
+  "story": "In Sri Vaishnava belief the three island Ranganathas mark stages of the god's life, and the Shivanasamudra deity is revered as his youthful form.",
+  "wiki": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Shivanasamudra",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Shivanasamudra"
+   },
+   {
+    "l": "Wikidata Q7586228",
+    "u": "https://www.wikidata.org/wiki/Q7586228"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jor-bangla-keshto-ray-bishnupur",
+  "name": "Jor Bangla (Keshto Ray) Temple, Bishnupur",
+  "country": "India",
+  "state": "West Bengal",
+  "place": "Bishnupur, Bankura district",
+  "lat": 23.0717,
+  "lng": 87.3268,
+  "tradition": "Hindu",
+  "deity": "Krishna, worshipped here as Keshto Ray",
+  "built": [
+   1655,
+   1655
+  ],
+  "builtDisplay": "1655 (Malla)",
+  "dynasty": "Malla",
+  "style": "Jor-bangla, twin do-chala roofs with a ratna turret",
+  "circuits": [],
+  "significance": "Raised in 1655 by Raghunath Singha of the Malla kingdom, this is the largest surviving jor-bangla temple and among the best known terracotta temples of Bengal. It is a Monument of National Importance under the Archaeological Survey of India and was added to the UNESCO tentative list in 1998.",
+  "wiki": "https://en.wikipedia.org/wiki/Jor_Bangla_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jor_Bangla_Temple"
+   },
+   {
+    "l": "Wikidata Q56153798",
+    "u": "https://www.wikidata.org/wiki/Q56153798"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "venkateswara-t-nagar-chennai",
+  "name": "Sri Venkateswara Swamy Temple, T. Nagar",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "T. Nagar, Chennai",
+  "lat": 13.0358,
+  "lng": 80.2366,
+  "tradition": "Hindu",
+  "deity": "Venkateswara, with Alamelu Manga",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Venkateswara temple run by the Tirumala Tirupati Devasthanams on Venkatanarayana Road in T. Nagar, which by June 2024 had become the highest earning TTD temple after Tirumala itself. Its shrines include images of Hayagriva, Varaha, Rama, Krishna, Andal, Ranganatha, Lakshmi, Brahma and Ramanuja.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Swamy_Temple,_T._Nagar",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Venkateswara_Swamy_Temple,_T._Nagar"
+   },
+   {
+    "l": "Wikidata Q7585801",
+    "u": "https://www.wikidata.org/wiki/Q7585801"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
  }
 ]

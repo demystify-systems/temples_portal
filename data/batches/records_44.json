@@ -790,5 +790,499 @@
   ],
   "verified": "wikipedia-2026-08-27",
   "tier": "compact"
+ },
+ {
+  "id": "thiruvullakkavu-sastha-cherpu",
+  "name": "Thiruvullakkavu Sree Dharma Sastha Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Cherpu, Thrissur district",
+  "lat": 10.4452,
+  "lng": 76.2159,
+  "tradition": "Hindu",
+  "deity": "Dharma Sastha (Ayyappan), standing with a bow",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "A Sastha temple at Cherpu in Thrissur district, long resorted to for Vidyarambham, the rite at which small children are initiated into letters and learning.",
+  "wiki": "https://en.wikipedia.org/wiki/Thiruvullakkavu_Sree_Dharma_Sastha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Thiruvullakkavu_Sree_Dharma_Sastha_Temple"
+   },
+   {
+    "l": "Wikidata Q7785567",
+    "u": "https://www.wikidata.org/wiki/Q7785567"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "aadi-himani-chamunda-kangra",
+  "name": "Aadi Himani Chamunda",
+  "country": "India",
+  "state": "Himachal Pradesh",
+  "place": "Chandar Bhan, Jia, Kangra district",
+  "lat": 32.1927,
+  "lng": 76.4506,
+  "tradition": "Hindu",
+  "deity": "Chamunda Devi",
+  "built": [
+   1000,
+   1660
+  ],
+  "builtDisplay": "at least as old as the adjacent palace ruins of c. 1660",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A high mountain shrine of Chamunda Devi above Kangra in Himachal Pradesh, reckoned at least as old as the palace ruins of about 1660 beside it. Long derelict, it was restored from 1992 largely through two decades of work by the retired officer P. D. Saini, destroyed by fire in 2014 and rebuilt.",
+  "story": "The goddess is said to have killed the demons Chanda and Munda by hurling great boulders down on them from the mountain top, and to take her name from them.",
+  "wiki": "https://en.wikipedia.org/wiki/Aadi_Himani_Chamunda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Aadi_Himani_Chamunda"
+   },
+   {
+    "l": "Wikidata Q17054974",
+    "u": "https://www.wikidata.org/wiki/Q17054974"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "maa-barunei-khordha",
+  "name": "Maa Barunei Temple",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Barunei Hill, Khordha district",
+  "lat": 20.162,
+  "lng": 85.6473,
+  "tradition": "Hindu",
+  "deity": "Barunei, a manifestation of Shakti (with Karunei)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A hill shrine on Barunei Hill in Khordha district, Odisha, whose sanctum holds images of the twin goddesses Barunei and Karunei; the stream called Swarna Ganga runs from the hills beside it.",
+  "wiki": "https://en.wikipedia.org/wiki/Maa_Barunei_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maa_Barunei_Temple"
+   },
+   {
+    "l": "Wikidata Q16931671",
+    "u": "https://www.wikidata.org/wiki/Q16931671"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jhanjiri-mangala-cuttack",
+  "name": "Maa Jhanjiri Mangala Temple",
+  "country": "India",
+  "state": "Odisha",
+  "place": "Cuttack",
+  "lat": 20.4596,
+  "lng": 85.8767,
+  "tradition": "Hindu",
+  "deity": "Mangala",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A temple of the goddess Mangala, the presiding deity of Cuttack, raised by villagers and counted among the oldest in the city; a theft from it in 2015 led to the arrest of a gang.",
+  "story": "A priest living in the forest is said to have seen the goddess Mangala in a dream, who asked him to build a small temple for her.",
+  "wiki": "https://en.wikipedia.org/wiki/Maa_Jhanjiri_Mangala_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Maa_Jhanjiri_Mangala_Temple"
+   },
+   {
+    "l": "Wikidata Q24949370",
+    "u": "https://www.wikidata.org/wiki/Q24949370"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "ponmeri-shiva-vatakara",
+  "name": "Ponmeri Shiva Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Vatakara, Kozhikode district",
+  "lat": 11.6305,
+  "lng": 75.6269,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [
+   1000,
+   1100
+  ],
+  "builtDisplay": "11th c. (Kadathanad rulers)",
+  "dynasty": "Kadathanad",
+  "circuits": [],
+  "significance": "A large Mahadeva temple near Vatakara in Kozhikode district commissioned by the Kadathanad kings in the 11th century, unusual for carrying a sub-shrine to Brahma, a deity seldom given one.",
+  "story": "A quarrel between the ruler and his architect is said to have left the building forever unfinished, and gave Malayalam the proverb 'as incomplete as the work at Ponmeri'.",
+  "wiki": "https://en.wikipedia.org/wiki/Ponmeri_Shiva_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ponmeri_Shiva_Temple"
+   },
+   {
+    "l": "Wikidata Q24932411",
+    "u": "https://www.wikidata.org/wiki/Q24932411"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "ekalavya-khandsa-gurugram",
+  "name": "Ekalavya Temple",
+  "country": "India",
+  "state": "Haryana",
+  "place": "Khandsa, Gurugram",
+  "lat": 28.422,
+  "lng": 76.99,
+  "tradition": "Hindu",
+  "deity": "Ekalavya",
+  "built": [
+   1721,
+   1721
+  ],
+  "builtDisplay": "1721",
+  "dynasty": "Early modern",
+  "style": "Nagara",
+  "circuits": [],
+  "significance": "A temple at Khandsa village in Gurugram, built in 1721 by a well-off villager, described as the only Hindu temple anywhere dedicated to Ekalavya of the Mahabharata.",
+  "story": "Ekalavya, self-taught and found to outshine Arjuna, cut off his right thumb when Dronacharya asked for it as gurudakshina, and the temple stands where the thumb is said to have been buried.",
+  "wiki": "https://en.wikipedia.org/wiki/Ekalavya_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Ekalavya_Temple"
+   },
+   {
+    "l": "Wikidata Q24950558",
+    "u": "https://www.wikidata.org/wiki/Q24950558"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jasmalnathji-mahadev-asoda",
+  "name": "Jasmalnathji Mahadev Temple, Asoda",
+  "country": "India",
+  "state": "Gujarat",
+  "place": "Asoda, Vijapur taluka, Mehsana district",
+  "lat": 23.5834,
+  "lng": 72.5902,
+  "tradition": "Hindu",
+  "deity": "Shiva (Jasmalnathji)",
+  "built": [
+   1100,
+   1200
+  ],
+  "builtDisplay": "12th c. (Jayasimha Siddharaja)",
+  "dynasty": "Chaulukya",
+  "style": "Maru-Gurjara, with Malwa influence",
+  "circuits": [],
+  "significance": "A 12th-century panchayatana Shiva temple at Asoda in Mehsana district, raised during the reign of the Chaulukya king Jayasimha Siddharaja and now a Monument of National Importance maintained by the Archaeological Survey of India.",
+  "wiki": "https://en.wikipedia.org/wiki/Jasmalnathji_Mahadev_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jasmalnathji_Mahadev_Temple"
+   },
+   {
+    "l": "Wikidata Q26898655",
+    "u": "https://www.wikidata.org/wiki/Q26898655"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "chennamangalam-chorode",
+  "name": "Chennamangalam Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Chorode, Kozhikode district",
+  "lat": 11.6208,
+  "lng": 75.5849,
+  "tradition": "Hindu",
+  "deity": "Ayyappa",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Kerala",
+  "circuits": [],
+  "significance": "An Ayyappa temple at Chorode in Kozhikode district that also houses Shiva, Ganesha, Vishnu and Annapurneshwari; described as one of Kerala's oldest and known as a second Sabarimala, it drew large numbers when a fire kept pilgrims from Sabarimala itself.",
+  "wiki": "https://en.wikipedia.org/wiki/Chennamangalam_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Chennamangalam_Temple"
+   },
+   {
+    "l": "Wikidata Q24950072",
+    "u": "https://www.wikidata.org/wiki/Q24950072"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "gangamma-devi-malleswaram",
+  "name": "Sri Gangamma Devi Temple",
+  "country": "India",
+  "state": "Karnataka",
+  "place": "Malleswaram, Bengaluru",
+  "lat": 13.0044,
+  "lng": 77.5695,
+  "tradition": "Hindu",
+  "deity": "Gangamma (the goddess Ganga)",
+  "built": [
+   2004,
+   2004
+  ],
+  "builtDisplay": "permanent temple consecrated 2004",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A temple to the local goddess Gangamma in the Malleswara layout of north-western Bengaluru, given a permanent building in 2004; the annual Gangamma Jathre has been held in the locality since 1928.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Gangamma_Devi_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Sri_Gangamma_Devi_Temple"
+   },
+   {
+    "l": "Wikidata Q28154018",
+    "u": "https://www.wikidata.org/wiki/Q28154018"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "soundararajaperumal-thadikombu",
+  "name": "Soundararajaperumal Temple, Thadikombu",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Thadikombu, Dindigul district",
+  "lat": 10.4397,
+  "lng": 77.9539,
+  "tradition": "Hindu",
+  "deity": "Vishnu (Soundararaja Perumal), with Soundaravalli Thayar",
+  "built": [
+   1529,
+   1542
+  ],
+  "builtDisplay": "16th c. (Achyuta Deva Raya); outer halls 1629",
+  "dynasty": "Vijayanagara",
+  "style": "Dravidian",
+  "circuits": [],
+  "significance": "A 16th-century temple at Thadikombu in Dindigul district credited to the Vijayanagara ruler Achyuta Deva Raya, with work begun under his predecessor Aliya Rama Raya and the outer halls added in 1629 under Thirumalai Nayak; it carries rare sculpture and inscriptions from several reigns.",
+  "story": "A sage cursed to live as a frog and tormented by a demon is said to have worshipped Vishnu here, who killed the demon and freed him.",
+  "wiki": "https://en.wikipedia.org/wiki/Soundararajaperumal_temple,_Thadikombu",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Soundararajaperumal_temple,_Thadikombu"
+   },
+   {
+    "l": "Wikidata Q24934468",
+    "u": "https://www.wikidata.org/wiki/Q24934468"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "dudhadhari-raipur",
+  "name": "Dudhadhari Temple",
+  "country": "India",
+  "state": "Chhattisgarh",
+  "place": "Mathpara, Raipur",
+  "lat": 21.2242,
+  "lng": 81.6293,
+  "tradition": "Hindu",
+  "deity": "Rama, Hanuman (Balaji) and Swami Balabhadradas",
+  "built": [
+   1500,
+   1600
+  ],
+  "builtDisplay": "16th c. (founded by Swami Balabhadradas)",
+  "dynasty": "Maratha (later patronage)",
+  "circuits": [],
+  "significance": "A math and temple at Mathpara in Raipur founded in the 16th century by Swami Balabhadradas, who was called Dudh Ahari because he lived on milk alone and so gave the place its name. The Bhonsle Maratha ruler of Nagpur, Raghuji, later issued a charter conferring the title Rajeshri on each head of the math.",
+  "wiki": "https://en.wikipedia.org/wiki/Dudhadhari_temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Dudhadhari_temple"
+   },
+   {
+    "l": "Wikidata Q24950571",
+    "u": "https://www.wikidata.org/wiki/Q24950571"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "aryankavu-sastha",
+  "name": "Aryankavu Sastha Temple",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Aryankavu, Kollam district",
+  "lat": 8.9764,
+  "lng": 77.1514,
+  "tradition": "Hindu",
+  "deity": "Sastha (Aryankavu Ayyan), with Pushkala",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Dravidian, blending Kerala and Tamil traditions",
+  "circuits": [],
+  "significance": "One of the five principal Sastha temples of Kerala, at Aryankavu in Kollam district, where the deity is worshipped as a youth seated on an elephant with Pushkala at his left and Shiva at his right; it is administered by the Travancore Devaswom Board.",
+  "story": "The image is held to have been consecrated by Parashurama, and Sastha is said to have married Pushkaladevi here, an event kept each December as the Thiru Kalyanam festival.",
+  "wiki": "https://en.wikipedia.org/wiki/Aryankavu_Sastha_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Aryankavu_Sastha_Temple"
+   },
+   {
+    "l": "Wikidata Q27887695",
+    "u": "https://www.wikidata.org/wiki/Q27887695"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "avanibhajana-pallaveshwaram-seeyamangalam",
+  "name": "Avanibhajana Pallaveshwaram Temple",
+  "country": "India",
+  "state": "Tamil Nadu",
+  "place": "Seeyamangalam, Tiruvannamalai district",
+  "lat": 12.4311,
+  "lng": 79.4664,
+  "tradition": "Hindu",
+  "deity": "Shiva (Stambeswarar)",
+  "built": [
+   600,
+   630
+  ],
+  "builtDisplay": "early 7th c. (Mahendravarman I)",
+  "dynasty": "Pallava",
+  "style": "Rock-cut",
+  "circuits": [],
+  "significance": "A Pallava cave temple cut at Seeyamangalam under Mahendravarman I in the early 7th century, among the earliest examples of rock-cut architecture in the region and holding one of the oldest surviving depictions of Nataraja; Chola and Vijayanagara additions came later.",
+  "wiki": "https://en.wikipedia.org/wiki/Avanibhajana_Pallaveshwaram_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Avanibhajana_Pallaveshwaram_Temple"
+   },
+   {
+    "l": "Wikidata Q24938434",
+    "u": "https://www.wikidata.org/wiki/Q24938434"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "jamalapuram-venkateswara",
+  "name": "Jamalapuram Temple",
+  "country": "India",
+  "state": "Telangana",
+  "place": "Jamalapuram, Khammam district",
+  "lat": 16.8317,
+  "lng": 80.5198,
+  "tradition": "Hindu",
+  "deity": "Venkateswara (Balaji)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded; renovated under Krishnadevaraya",
+  "dynasty": "Vijayanagara (renovation)",
+  "circuits": [],
+  "significance": "A Venkateswara temple at Jamalapuram near Errupalem in Khammam district, described as of considerable antiquity and renovated under Krishnadevaraya of Vijayanagara; it is popularly called the Chinna Tirupati of Telangana.",
+  "story": "The sage Jabali is said to have performed penance at a spot here called Suchi Gutta and been blessed by Venkateswara, who is worshipped as a self-manifested form.",
+  "wiki": "https://en.wikipedia.org/wiki/Jamalapuram_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Jamalapuram_Temple"
+   },
+   {
+    "l": "Wikidata Q24949665",
+    "u": "https://www.wikidata.org/wiki/Q24949665"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
+ },
+ {
+  "id": "polur-subramanya-kozhikode",
+  "name": "Polur Temple, Kozhikode",
+  "country": "India",
+  "state": "Kerala",
+  "place": "Polor, Kuruvattoor panchayat, Kozhikode district",
+  "lat": 11.314,
+  "lng": 75.8394,
+  "tradition": "Hindu",
+  "deity": "Subrahmanya (Polurappan)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "circuits": [],
+  "significance": "A Subrahmanya temple at Polor in Kuruvattoor panchayat, Kozhikode district, counted among the oldest in the area and connected with the Porlathiri king from whom the region takes its name; Ganapathi, Vettakkorumakan, Ayyappan and Devi are also worshipped here.",
+  "wiki": "https://en.wikipedia.org/wiki/Polur_Temple,_Kozhikode",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Polur_Temple,_Kozhikode"
+   },
+   {
+    "l": "Wikidata Q24931047",
+    "u": "https://www.wikidata.org/wiki/Q24931047"
+   }
+  ],
+  "verified": "wikipedia-2026-08-27",
+  "tier": "compact"
  }
 ]
