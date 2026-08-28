@@ -32,6 +32,7 @@ import { detectTurn, initialVadState, rms, shouldBargeIn, VAD, type VadState } f
 import {
   nextPhase, vadIsLive, canBargeIn, PHASE_LABEL, type CallEvent, type CallPhase,
 } from "@/lib/ai/conversation";
+import { chunkForSpeech } from "@/lib/ai/voice";
 
 /** Analyser frame size. 1024 samples at 48 kHz is ~21 ms — the VAD's frame. */
 const FFT_SIZE = 2048;
@@ -134,19 +135,52 @@ export function useCall(): Call {
     if (el) { el.pause(); el.src = ""; audioElRef.current = null; }
   }, []);
 
-  const speak = useCallback(async (text: string, language: string | null) => {
+  /** One passage of the answer, synthesised. Returns its clips, or [] on failure. */
+  const fetchClips = useCallback(async (passage: string, language: string | null): Promise<string[]> => {
     try {
       const response = await fetch("/api/voice/speak", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: text.slice(0, 480), language: language ?? "en-IN" }),
+        body: JSON.stringify({ text: passage, language: language ?? "en-IN" }),
       });
-      if (!response.ok) return;
+      if (!response.ok) return [];
       const data = (await response.json()) as { audios?: string[] };
-      const clips = data.audios ?? [];
+      return data.audios ?? [];
+    } catch { return []; }
+  }, []);
+
+  /**
+   * Read the answer aloud, one sentence at a time, fetching ahead.
+   *
+   * Bulbul returns base64 WAV inside JSON, not a stream, so there is no first
+   * byte to play early — a whole paragraph in one call is a long silence and
+   * then audio. Measured: 3.0s for a full answer. Cutting at sentence
+   * boundaries (`chunkForSpeech`, already used by the typed assistant) and
+   * fetching passage n+1 WHILE passage n plays makes time-to-first-sound the
+   * cost of one sentence instead of one paragraph.
+   *
+   * On a call that difference is not a nicety. Several seconds of silence after
+   * you stop speaking reads as "it did not hear me", and people repeat
+   * themselves into it — which barge-in then correctly treats as a new question,
+   * so the answer they were waiting for never arrives.
+   */
+  const speak = useCallback(async (text: string, language: string | null) => {
+    const passages = chunkForSpeech(text);
+    if (passages.length === 0) return;
+
+    // One passage ahead, no more: the reader can hang up or interrupt at any
+    // sentence, and everything fetched past that point is spend for audio that
+    // will never play.
+    let ahead = fetchClips(passages[0], language);
+    for (let i = 0; i < passages.length; i += 1) {
+      const clips = await ahead;
+      if (phaseRef.current !== "speaking") return;
+      ahead = i + 1 < passages.length ? fetchClips(passages[i + 1], language) : Promise.resolve([]);
+
       for (const clip of clips) {
-        // Re-checked between clips: a barge-in or a hang-up during a long answer
-        // must stop the NEXT clip too, not just the one that was playing.
+        // Re-checked between clips as well as between passages: a barge-in
+        // during a long answer must stop the NEXT clip, not only the one
+        // currently sounding.
         if (phaseRef.current !== "speaking") return;
         await new Promise<void>((resolve) => {
           const el = new Audio(`data:audio/wav;base64,${clip}`);
@@ -156,8 +190,8 @@ export function useCall(): Call {
           el.play().catch(() => resolve());
         });
       }
-    } catch { /* a silent answer is still a readable answer on screen */ }
-  }, []);
+    }
+  }, [fetchClips]);
 
   /** One complete turn: audio -> transcript -> answer -> speech. */
   const runTurn = useCallback(async (audio: Blob, durationMs: number) => {
