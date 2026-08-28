@@ -45,6 +45,19 @@ const CallPanel = dynamic(() => import("./CallPanel"), {
   loading: () => <p className="callnote">Opening the line…</p>,
 });
 
+/**
+ * The speech-to-speech panel, loaded only when someone opens Speak.
+ *
+ * Kept separate from CallPanel rather than replacing it: Voice Agents needs a
+ * dashboard key this deployment may not have, and answers on that path are not
+ * bound by the citation rule. When it is not configured the cited cascade is
+ * what runs, so the feature degrades to something honest rather than to nothing.
+ */
+const VoiceAgentPanel = dynamic(() => import("./VoiceAgentPanel"), {
+  ssr: false,
+  loading: () => <p className="callnote">Opening the line…</p>,
+});
+
 type Source = { l: string; u: string };
 type Citation = { id: string; name: string; place: string; sources: Source[] };
 type Turn = {
@@ -89,9 +102,25 @@ export default function Assistant() {
    * launchers: they answer the same question from the same records, and offering
    * them as rival products would imply otherwise.
    */
-  const [mode, setMode] = useState<"type" | "call">("type");
+  /**
+   * Opens on Speak. The panel's headline capability is a spoken conversation;
+   * typing is still one tap away and is what a reader wanting a citation uses.
+   */
+  const [mode, setMode] = useState<"type" | "call">("call");
   const { t, lang } = useUiLanguage();
   const launcher = useDraggableLauncher();
+  /**
+   * Whether this deployment has a Voice Agent. `null` while unknown, so the
+   * panel shows neither implementation until it can pick the right one — a
+   * flash of the slower cascade that is then replaced reads as a bug.
+   */
+  const [voiceAgent, setVoiceAgent] = useState<boolean | null>(null);
+  useEffect(() => {
+    fetch("/api/voice-agent/config")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => setVoiceAgent(Boolean(d?.configured)))
+      .catch(() => setVoiceAgent(false));
+  }, []);
 
   const launcherRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -260,17 +289,26 @@ export default function Assistant() {
         </header>
 
         <div className="asstmodes" role="tablist" aria-label="How to ask">
-          <button type="button" role="tab" aria-selected={mode === "type"}
-            className={`asstmode${mode === "type" ? " on" : ""}`} onClick={() => setMode("type")}>
-            <span lang={lang}>{t("assistant.type")}</span>
-          </button>
+          {/* Speak leads. Talking is the thing this panel is for now that it is
+              a real conversation rather than a form with a microphone; typing is
+              the considered alternative, and the one that carries citations. */}
           <button type="button" role="tab" aria-selected={mode === "call"}
             className={`asstmode${mode === "call" ? " on" : ""}`} onClick={() => setMode("call")}>
             <span lang={lang}>{t("assistant.speak")}</span>
           </button>
+          <button type="button" role="tab" aria-selected={mode === "type"}
+            className={`asstmode${mode === "type" ? " on" : ""}`} onClick={() => setMode("type")}>
+            <span lang={lang}>{t("assistant.type")}</span>
+          </button>
         </div>
 
-        {mode === "call" ? <CallPanel onClose={() => setMode("type")} /> : (
+        {mode === "call" ? (
+          voiceAgent === null
+            ? <p className="callnote">Opening the line…</p>
+            : voiceAgent
+              ? <VoiceAgentPanel onClose={() => setMode("type")} />
+              : <CallPanel onClose={() => setMode("type")} />
+        ) : (
         <>
         <div className="asstlog" ref={logRef} role="log" aria-live="polite" aria-atomic="false">
           {turns.length === 0 && <p className="asstopener">{OPENER}</p>}

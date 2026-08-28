@@ -35,12 +35,14 @@
     "build:artefacts": "node scripts/build-map-artefacts.mjs",
     "gate:corpus-leak": "node scripts/check-corpus-leak.mjs",
     "build:ui-i18n": "node scripts/build-ui-translations.mjs",
-    "gate:migrations": "node scripts/check-migrations.mjs"
+    "gate:migrations": "node scripts/check-migrations.mjs",
+    "check:voice-agent": "node scripts/check-voice-agent.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "sarvam-conv-ai-sdk": "^0.0.42"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
