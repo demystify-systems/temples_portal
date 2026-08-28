@@ -268,3 +268,52 @@ test("circuit lookup folds case and diacritics but still needs the right circuit
 test("circuitNames lists what the corpus actually holds, most-claimed first", () => {
   assert.deepEqual(circuitNames(CORPUS), ["Jyotirlinga", "Great Living Chola Temples"]);
 });
+
+// ---------------------------------------------------------------------------
+// Natural-language phrasing. The assistant shipped refusing "When was the
+// Brihadisvara temple at Thanjavur built?" — a record it plainly holds — because
+// retrieval ANDed `when`, `was`, `the`, `at` and `built` against a haystack of
+// names and places. A chat box receives sentences; a search box receives keywords.
+
+test("a question phrased as a sentence retrieves the record it names", () => {
+  const found = retrieve(CORPUS, "When was the Brihadisvara temple at Thanjavur built?", {}, 6);
+  assert.equal(found.empty, false, "grammar must not defeat retrieval");
+  assert.ok(
+    found.records.some((r) => /brihadisvara/i.test(r.name)),
+    "the record the question names must be among the results",
+  );
+});
+
+test("conversational filler is stripped, not searched", () => {
+  const bare = retrieve(CORPUS, "Meenakshi", {}, 6);
+  const asked = retrieve(CORPUS, "Tell me about the Meenakshi temple please", {}, 6);
+  assert.equal(asked.empty, bare.empty);
+  assert.deepEqual(
+    asked.records.map((r) => r.id),
+    bare.records.map((r) => r.id),
+    "filler words must not change which records come back",
+  );
+});
+
+test("a query of pure function words is 'no-terms', refusable for free", () => {
+  const found = retrieve(CORPUS, "the was of and in", {}, 6);
+  assert.equal(found.empty, true);
+  assert.equal(found.reason, "no-terms", "nothing was really asked");
+});
+
+test("real terms that simply do not match are 'no-match', not 'no-terms'", () => {
+  // The distinction is load-bearing: no-terms refuses without a model call,
+  // no-match falls through so findSites can try the entity the AND missed.
+  const found = retrieve(CORPUS, "Eiffel Tower Paris", {}, 6);
+  assert.equal(found.empty, true);
+  assert.equal(found.reason, "no-match", "terms were asked; they just did not match");
+});
+
+test("stopword stripping never widens: an out-of-corpus question stays empty", () => {
+  // The guard against the fix overshooting. An earlier attempt also dropped
+  // zero-match tokens, which threw away `france` and kept `capital` — matching
+  // Chola-capital prose and answering a question about France with temples.
+  for (const q of ["What is the capital of France?", "Who won the 1998 world cup?"]) {
+    assert.equal(retrieve(CORPUS, q, {}, 6).empty, true, `must not invent a match for: ${q}`);
+  }
+});

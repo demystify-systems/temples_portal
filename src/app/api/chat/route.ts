@@ -170,10 +170,17 @@ export async function POST(request: Request): Promise<Response> {
 
   const found = retrieve(CORPUS, question, {}, RETRIEVAL_LIMIT);
 
-  // Nothing retrieved. The answer is a refusal, and for a Latin-script question
-  // it needs no model at all — the sentence is fixed. Only a non-Latin question
-  // is worth one bounded call, to say the same thing in the asker's language.
-  if (found.empty && !needsTranslatedRefusal(question, language)) {
+  // Nothing was really asked — a blank query, or nothing but function words.
+  // That refuses for free; no model call can turn it into a sourced answer.
+  //
+  // NOT the same as `no-match`, where real terms were asked and a strict AND
+  // simply did not satisfy them. Refusing that outright is what made the
+  // assistant reject "How do I reach Kedarnath?" about a record it holds: the
+  // keyword AND is defeated by phrasing, and pulling the entity out of a
+  // sentence is exactly what the model is good at. So `no-match` falls through
+  // WITH tools, and refuses only if findSites also comes back empty.
+  const nothingAsked = found.reason === "blank-query" || found.reason === "no-terms";
+  if (nothingAsked && !needsTranslatedRefusal(question, language)) {
     return NextResponse.json({ answer: REFUSAL, citations: [], refused: true });
   }
 
@@ -197,7 +204,7 @@ export async function POST(request: Request): Promise<Response> {
         signal: controller.signal,
         // The final round is answer-only: offering tools there invites a call
         // whose result nothing would read.
-        ...(found.empty || round === MAX_TOOL_ROUNDS ? {} : { tools: [...TOOLS] }),
+        ...(nothingAsked || round === MAX_TOOL_ROUNDS ? {} : { tools: [...TOOLS] }),
       });
 
       spent += result.completionTokens;
