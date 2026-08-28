@@ -27,7 +27,7 @@ const scope = since > 0 ? sites.slice(-since) : sites;
 const STRAY_KM = 300;        // a site this far from its NEAREST same-region peer is suspect
 const TWIN_M = 150;          // two differently-named records this close may be one site
 const MIN_SIGNIFICANCE = 60; // characters — shorter than this says nothing
-const NET_CONCURRENCY = 6;
+const NET_CONCURRENCY = 3;   // gentle: Wikidata throttles a faster sweep
 
 const EARTH_KM = 6371;
 const distanceKm = (a, b) => {
@@ -92,9 +92,18 @@ if (useNet) {
 
   process.stderr.write(`  checking ${urls.length} source URLs…\n`);
   let done = 0;
+  // 429 is US being throttled, not the source being gone. Back off and retry
+  // rather than reporting a live citation as dead — a false "unreachable" on a
+  // good source is worse than a slow audit.
   const check = async (u) => {
     try {
-      const res = await fetch(u, { method: "GET", redirect: "follow", headers: { "user-agent": "tirtha-atlas-source-audit/1 (+https://github.com/demystify-systems/temples_portal)" } });
+      let res, wait = 1500;
+      for (let attempt = 0; attempt < 4; attempt++) {
+        res = await fetch(u, { method: "GET", redirect: "follow", headers: { "user-agent": "tirtha-atlas-source-audit/1 (+https://github.com/demystify-systems/temples_portal)" } });
+        if (res.status !== 429 && res.status !== 503) break;
+        await new Promise((r) => setTimeout(r, wait));
+        wait *= 2;
+      }
       if (!res.ok) flag(res.status === 404 ? "ERROR" : "WARN", owner.get(u), "source-unreachable", `${res.status} ${u}`);
     } catch (err) {
       flag("WARN", owner.get(u), "source-unreachable", `${err.name}: ${u}`);
