@@ -98,6 +98,54 @@ If the picker offers only leaves rather than `@records` whole, reach for the
 first record's fields (`@records.0.name` and so on) and keep the same
 instructions around them.
 
+### Verify the agent actually receives the records
+
+Under the return template the Canvas prints **"From the last test run · N chars
+sent to the agent"**. That line is the only place the tool's real failure mode
+is visible, so read it every time.
+
+If it says **31 chars — "Request completed successfully."**, the agent received
+that sentence and nothing else: no name, no dates, no sources. The call
+succeeded and the data was dropped. An agent in that state answers from the
+model's own memory and sounds exactly as confident as one reading our records —
+which is precisely what this endpoint exists to prevent.
+
+Two causes, both cheap to fix:
+
+1. **Send was pressed before the template was in place.** The panel reports the
+   previous run, not the current template. Press Send again.
+2. **The `@` references were pasted as text.** They resolve only when typed as
+   `@` and chosen from the picker, which turns each into a chip. Pasted, they
+   are just letters.
+
+A healthy run reports *hundreds* of characters and the record's name appears in
+the preview. Check for the name, not the word "successfully".
+
+### Advanced
+
+| Setting | Value | Why |
+|---|---|---|
+| Max wait | **5** | Production measures 0.34 s typical, 1.08 s worst, 0.55 s cold. Five is ~5× headroom. The default 30 is a hang-up: this endpoint answers in under a second or it is not answering. |
+| If it fails | see below | The placeholder ("offer to continue with the rest of the request") invites the model to fill the gap from memory. |
+| Save reply into variables | leave empty | Nothing here needs to survive the turn. |
+| Include in context | **on** | Off makes the tool unavailable mid-conversation, the only time it is ever used. |
+
+Failure message:
+
+```
+Tell the caller you could not reach the atlas just now, and ask them to say the name again. Do not answer from your own knowledge — say only that the lookup did not go through.
+```
+
+### Bind `q` before saving
+
+The Body field arrives holding the literal `Kedarnath` from the test cURL. Saved
+that way, every caller gets Kedarnath regardless of what they asked. Use the
+gear beside the field to make it agent-filled, typed Text, described as:
+
+```
+The temple, deity, dynasty or place the caller asked about, in English.
+```
+
 ## 3. System prompt
 
 Paste verbatim.
