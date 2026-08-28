@@ -32,6 +32,10 @@ const rows = sites.map((s) => ({
   built_display: s.builtDisplay, origin: s.origin ?? null, origin_note: s.originNote ?? null,
   dynasty: s.dynasty, patron: s.patron ?? null, style: s.style, tier: tierOf(s),
   circuits: s.circuits ?? [], status: s.status ?? [],
+  // derived and additive fields (migration 0004); the repo JSON stays canonical
+  deities: s.deities ?? [], deity_group: s.deityGroup ?? null,
+  admin: s.admin ?? [], disputed_circuits: s.disputedCircuits ?? [],
+  phone_verified: s.phoneVerified ?? null,
   disputed_circuits: s.disputedCircuits ?? [],
   significance: s.significance,
   story: s.story ?? null,          // 250 compact records legitimately carry no katha
@@ -47,6 +51,7 @@ for (const r of rows) {
   if (!Array.isArray(r.sources) || r.sources.length === 0) problems.push(`${r.id}: no sources`);
   if (r.story !== null && r.story === r.significance) problems.push(`${r.id}: story duplicates significance`);
   if (r.phone && !r.website) problems.push(`${r.id}: phone without an official website`);
+  if (r.deity_group && !r.deities.length) problems.push(`${r.id}: deity_group without any deities tag`);
   if (r.built_from > r.built_to) problems.push(`${r.id}: inverted built range`);
   if (!["stub", "compact", "flagship"].includes(r.tier)) problems.push(`${r.id}: unknown tier "${r.tier}"`);
 }
