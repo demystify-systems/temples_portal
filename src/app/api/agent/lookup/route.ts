@@ -83,7 +83,15 @@ const speakable = (record: AtlasRecord) => {
   };
 };
 
-export async function GET(request: Request): Promise<Response> {
+/**
+ * The lookup itself. Shared by GET and POST.
+ *
+ * Both exist because tool builders differ: Sarvam's Canvas takes a cURL and
+ * maps its parts to agent parameters, and a JSON body parameterises far more
+ * cleanly there than a query string does. GET stays because it is cacheable and
+ * trivial to test by hand.
+ */
+async function lookup(request: Request, q: string): Promise<Response> {
   const now = Date.now();
   const ip = clientIp(request);
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
@@ -94,29 +102,51 @@ export async function GET(request: Request): Promise<Response> {
   if (hits.size > 5000) hits.clear();
   hits.set(ip, [...recent, now]);
 
-  const q = (new URL(request.url).searchParams.get("q") ?? "").trim().slice(0, MAX_QUERY);
-  if (!q) {
+  const query = q.trim().slice(0, MAX_QUERY);
+  if (!query) {
     return NextResponse.json({ found: false, reason: "no question given", records: [] });
   }
 
-  const result = retrieve(CORPUS, q, {}, LIMIT);
+  const result = retrieve(CORPUS, query, {}, LIMIT);
   if (result.empty || result.records.length === 0) {
     // Not an error and not an apology. The agent is told, in its prompt, to say
     // this in the caller's own language and to offer nothing further.
     return NextResponse.json({
       found: false,
       reason: "no record in the atlas matches that",
-      query: q,
+      query,
       records: [],
     });
   }
 
   return NextResponse.json({
     found: true,
-    query: q,
+    query,
     total: result.total,
     /** True when every returned record was reached only by a spelling fold. */
     approximate: result.fuzzy,
     records: result.records.map(speakable),
   });
+}
+
+/** Body shape: {"q": "kedarnath"}. Anything else is treated as an empty question. */
+export async function POST(request: Request): Promise<Response> {
+  let q = "";
+  try {
+    const body: unknown = await request.json();
+    const parsed = (body ?? {}) as { q?: unknown; query?: unknown; question?: unknown };
+    // `query` and `question` are accepted too: a tool builder's generated body
+    // rarely uses the name you expected, and refusing it would surface as an
+    // agent that silently never finds anything.
+    const raw = parsed.q ?? parsed.query ?? parsed.question;
+    q = typeof raw === "string" ? raw : "";
+  } catch {
+    return NextResponse.json({ found: false, reason: "malformed request", records: [] }, { status: 400 });
+  }
+  return lookup(request, q);
+}
+
+export async function GET(request: Request): Promise<Response> {
+  const q = new URL(request.url).searchParams.get("q") ?? "";
+  return lookup(request, q);
 }

@@ -29,32 +29,52 @@ would fail *after* the caller has started speaking.
 
 ## 2. The tool — add this first
 
-Add a custom tool. If the Canvas asks for an OpenAPI-ish definition, this is it;
-if it asks field by field, the same values map across.
+**Add tool → API Tool.** Four fields matter.
 
-```json
-{
-  "name": "lookup_temple",
-  "description": "Look up a temple or sacred site in the Tirtha Atlas. Returns cited facts: where it is, when it was built, its deity, dynasty, patron, documented history, its sthala katha (legend), and how to reach it. ALWAYS call this before saying anything factual about a temple. Returns found:false when the atlas has no record, which means you must say you have no record rather than answer from memory.",
-  "method": "GET",
-  "url": "https://tirthaatlas.org/api/agent/lookup",
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "q": {
-        "type": "string",
-        "description": "The temple, deity, place, dynasty or pilgrimage circuit the caller asked about, in English. Translate the caller's words into English before searching; the corpus is stored in Latin script. Spelling need not be exact — the search tolerates transliteration variants."
-      }
-    },
-    "required": ["q"]
-  }
-}
+### Tool name
+```
+lookup_temple
 ```
 
-No authentication. The endpoint is read-only over data already published at
-`/site/[slug]`, and it is rate-limited.
+### What does this tool do?
 
----
+This is not a note to yourself — the agent reads it to decide *when* to call the
+tool, so it has to say "always, before any fact about a temple". Paste verbatim:
+
+```
+Looks up a temple or sacred site in the Tirtha Atlas and returns cited facts: where it is, when it was built, its deity, dynasty, patron, documented history, its sthala katha (legend), and how to reach it. Call this before saying anything factual about any temple, deity, dynasty or pilgrimage circuit — every time, even for places you think you know. Pass the caller's question translated into English. If it returns found:false the atlas has no record, and you must say so instead of answering from memory.
+```
+
+### When should this tool run?
+
+**During the conversation** — the default, and correct. "When the call starts"
+would fire before anyone has asked anything.
+
+### Set up the API call
+
+Paste this into the cURL box:
+
+```bash
+curl -X POST https://tirthaatlas.org/api/agent/lookup \
+  -H 'Content-Type: application/json' \
+  -d '{"q": "Kedarnath"}'
+```
+
+Press **Send** to confirm it works — you should get back `"found": true` and a
+record for Kedarnath Temple. Then map `q` to an agent parameter so the model
+fills it with the caller's question rather than always sending "Kedarnath";
+whatever the Canvas calls that step, `q` is the field.
+
+> The endpoint must be **deployed to production first**. `Send` calls
+> `tirthaatlas.org`, so merge and promote before configuring the tool, or the
+> test will 404 and the tool will look broken when it is only absent.
+
+`q` is what the endpoint expects; `query` and `question` are accepted too,
+because a generated body rarely uses the name you expected and a mismatch would
+surface as an agent that silently never finds anything.
+
+No authentication. The endpoint is read-only over data already published at
+`/site/[slug]`, and it is rate limited.
 
 ## 3. System prompt
 
