@@ -759,5 +759,168 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "ta-cu-pagoda-binh-thuan",
+  "name": "Ta Cu Pagoda",
+  "country": "Vietnam",
+  "state": "Binh Thuan",
+  "place": "Ham Thuan Nam",
+  "lat": 10.8281,
+  "lng": 107.8828,
+  "tradition": "Buddhist",
+  "deity": "Reclining Buddha (Gautama entering parinirvana)",
+  "built": [
+   1963,
+   1966
+  ],
+  "builtDisplay": "1963-66",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A hill pagoda in Ham Thuan Nam district whose reclining Buddha, built between 1963 and 1966, measures 49 metres long and 11 metres high. It is the longest reclining Buddha image in Vietnam.",
+  "wiki": "https://en.wikipedia.org/wiki/T%C3%A0_C%C3%BA_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/T%C3%A0_C%C3%BA_Pagoda"
+   },
+   {
+    "l": "Wikidata Q10748598",
+    "u": "https://www.wikidata.org/wiki/Q10748598"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "quoc-an-hue",
+  "name": "Quoc An Temple",
+  "country": "Vietnam",
+  "state": "Hue",
+  "place": "Truong An, Hue",
+  "lat": 16.4427,
+  "lng": 107.5873,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (main hall commemorating the birth of Prince Siddhartha)",
+  "built": [
+   1682,
+   1685
+  ],
+  "builtDisplay": "1682-85; renamed Quoc An 1689",
+  "dynasty": "Nguyen lords",
+  "circuits": [],
+  "significance": "Founded as Vinh An Temple between 1682 and 1685 by Thich Nguyen Thieu, a Chinese emigre monk who became the 33rd patriarch of the Lam Te Zen school, and renamed by the Nguyen lord Nguyen Phuc Tran in 1689. Repeatedly rebuilt under the Nguyen emperors through the 19th century, it is the source of the lineage most Buddhists in central and southern Vietnam trace their ordination to.",
+  "wiki": "https://en.wikipedia.org/wiki/Qu%E1%BB%91c_%C3%82n_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Qu%E1%BB%91c_%C3%82n_Temple"
+   },
+   {
+    "l": "Wikidata Q7272817",
+    "u": "https://www.wikidata.org/wiki/Q7272817"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "andaw-thein-mrauk-u",
+  "name": "Andaw-thein Temple",
+  "country": "Myanmar",
+  "state": "Rakhine State",
+  "place": "Mrauk-U",
+  "lat": 20.5983,
+  "lng": 93.1937,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (tooth relic brought from Sri Lanka)",
+  "built": [
+   1607,
+   1607
+  ],
+  "origin": 1515,
+  "builtDisplay": "ordination hall 1515-21; enlarged into a temple 1607",
+  "dynasty": "Mrauk-U",
+  "style": "Octagonal shrine with concentric passageways",
+  "circuits": [],
+  "significance": "A stone shrine beside Shite-thaung at Mrauk-U, raised as an ordination hall by King Thazata between 1515 and 1521 and rebuilt as a temple by King Raza II in 1607 to enshrine a tooth relic he had brought from Ceylon. Its octagonal core is ringed by two concentric passageways and crowned by a bell-shaped stupa with eight smaller stupas at the corners.",
+  "wiki": "https://en.wikipedia.org/wiki/Andaw-thein_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Andaw-thein_Temple"
+   },
+   {
+    "l": "Wikidata Q4753635",
+    "u": "https://www.wikidata.org/wiki/Q4753635"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "doi-son-pagoda-ha-nam",
+  "name": "Doi Son Pagoda",
+  "country": "Vietnam",
+  "state": "Ha Nam",
+  "place": "Tien Son, Duy Tien",
+  "lat": 20.5848,
+  "lng": 105.9751,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1100,
+   1130
+  ],
+  "builtDisplay": "early 12th c. (Ly Nhan Tong)",
+  "dynasty": "Ly",
+  "circuits": [],
+  "significance": "A hilltop pagoda in Ha Nam built early in the 12th century by order of Emperor Ly Nhan Tong, once crowned by the tower called Sung Thien Dien Linh and still holding a stele of 1121 that documents Ly-period life and government. Ming forces wrecked it in the 15th century; it was rebuilt in 1591 and restored again in the mid-19th century.",
+  "wiki": "https://en.wikipedia.org/wiki/%C4%90%E1%BB%8Di_S%C6%A1n_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/%C4%90%E1%BB%8Di_S%C6%A1n_Pagoda"
+   },
+   {
+    "l": "Wikidata Q10748470",
+    "u": "https://www.wikidata.org/wiki/Q10748470"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "keo-temple-thai-binh",
+  "name": "Keo Temple",
+  "country": "Vietnam",
+  "state": "Thai Binh",
+  "place": "Vu Thu",
+  "lat": 20.3606,
+  "lng": 106.2972,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha and the monk Nguyen Minh Khong",
+  "built": [
+   1061,
+   1140
+  ],
+  "builtDisplay": "begun 1061; dedicated in the 1130s",
+  "dynasty": "Ly",
+  "circuits": [],
+  "significance": "A large Ly-dynasty pagoda in Vu Thu district begun in 1061, which Emperor Ly Than Tong dedicated in the 1130s to the monk Nguyen Minh Khong alongside the Buddha. It remains one of the best-preserved historic temple complexes of the Red River delta.",
+  "story": "The emperor is said to have founded the temple in gratitude after Nguyen Minh Khong miraculously cured him of leprosy.",
+  "wiki": "https://en.wikipedia.org/wiki/Keo_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Keo_Temple"
+   },
+   {
+    "l": "Wikidata Q10748440",
+    "u": "https://www.wikidata.org/wiki/Q10748440"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

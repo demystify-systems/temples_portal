@@ -209,6 +209,15 @@
    "source": "https://en.wikipedia.org/wiki/Kapila_Ashram",
    "found": "wave-7 proximity audit",
    "opened": "2026-08-28"
+  },
+  {
+   "id": "kunala-stupa-taxila",
+   "field": "tradition",
+   "ours": "tradition \"Jain\" — the article attributes the stupa to emperor Samprati as a Jaina foundation honouring his father Kunala",
+   "theirs": "the same article places it inside Buddhist Taxila and describes Buddhist pilgrims visiting it. The source is internally inconsistent; the builder recorded the Jaina attribution and flagged it rather than silently choosing.",
+   "source": "https://en.wikipedia.org/wiki/Kunala_Stupa",
+   "found": "wave-8 builder",
+   "opened": "2026-08-28"
   }
  ]
 }

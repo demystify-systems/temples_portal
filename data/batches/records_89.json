@@ -398,5 +398,204 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "world-peace-pagoda-lumbini",
+  "name": "World Peace Pagoda, Lumbini",
+  "country": "Nepal",
+  "state": "Lumbini",
+  "place": "Lumbini",
+  "lat": 27.498,
+  "lng": 83.274,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Modern",
+  "style": "Whitewashed peace pagoda",
+  "circuits": [],
+  "significance": "A whitewashed stupa at the northern end of the Lumbini Master Plan axis, designed and built by Japanese Buddhists at a cost of roughly a million US dollars and also known as the Nipponzan peace pagoda. Four large gilded Buddha figures face the cardinal directions, and the grave of the Japanese monk Unataka Navatame lies at its base; the wetland north of it shelters the endangered sarus crane.",
+  "wiki": "https://en.wikipedia.org/wiki/World_Peace_Pagoda,_Lumbini",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/World_Peace_Pagoda,_Lumbini"
+   },
+   {
+    "l": "Wikidata Q100989576",
+    "u": "https://www.wikidata.org/wiki/Q100989576"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phra-chedi-klang-nam-rayong",
+  "name": "Phra Chedi Klang Nam",
+  "country": "Thailand",
+  "state": "Rayong Province",
+  "place": "Pak Nam, Mueang Rayong",
+  "lat": 12.6661,
+  "lng": 101.2419,
+  "tradition": "Buddhist",
+  "deity": "Phra Mae Khongkha (goddess of the waters)",
+  "built": [
+   1873,
+   1873
+  ],
+  "builtDisplay": "1873 (Kate Yomjinda)",
+  "dynasty": "Rattanakosin",
+  "style": "Bell-shaped chedi",
+  "circuits": [],
+  "significance": "A ten-metre bell-shaped chedi on a reddish-brick base at the mouth of the Rayong river, built in 1873 by the provincial administrator Kate Yomjinda in honour of Phra Mae Khongkha and long used by sailors as a landmark for the port. It has become an emblem of Rayong, with an annual festival in the twelfth lunar month and a December rite in which its spire is wrapped in six metres of red cloth.",
+  "wiki": "https://en.wikipedia.org/wiki/Phra_Chedi_Klang_Nam",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phra_Chedi_Klang_Nam"
+   },
+   {
+    "l": "Wikidata Q30673285",
+    "u": "https://www.wikidata.org/wiki/Q30673285"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bhamala-stupa-haripur",
+  "name": "Bhamala Stupa",
+  "country": "Pakistan",
+  "state": "Khyber Pakhtunkhwa",
+  "place": "Haripur District",
+  "lat": 33.8328,
+  "lng": 72.9758,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha",
+  "built": [
+   100,
+   500
+  ],
+  "builtDisplay": "2nd-5th c. CE",
+  "dynasty": "Undetermined",
+  "style": "Cruciform Gandharan stupa",
+  "circuits": [],
+  "significance": "One of the best preserved Buddhist sites in the Taxila valley, whose main stupa is the largest surviving cruciform example in the Taxila and Gandhara region, with stairways on all four sides and about nineteen smaller votive stupas around it. Excavations begun by John Marshall in 1929 and resumed in 2017 uncovered a Buddha figure roughly 1,700 years old, described as the oldest known image of the Buddha at the moment of enlightenment.",
+  "wiki": "https://en.wikipedia.org/wiki/Bhamala_Stupa",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Bhamala_Stupa"
+   },
+   {
+    "l": "Wikidata Q18110458",
+    "u": "https://www.wikidata.org/wiki/Q18110458"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-wang-wiwekaram-sangkhla-buri",
+  "name": "Wat Wang Wiwekaram",
+  "country": "Thailand",
+  "state": "Kanchanaburi Province",
+  "place": "Nong Lu, Sangkhla Buri",
+  "lat": 15.133,
+  "lng": 98.445,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha; relics of Luangpho Uttama",
+  "built": [
+   1985,
+   1985
+  ],
+  "builtDisplay": "1985 (rebuilt); founded 1953",
+  "origin": 1953,
+  "dynasty": "Modern",
+  "style": "Mon and Thai",
+  "circuits": [],
+  "significance": "A Theravada temple near the Thai-Burmese border at Sangkhla Buri, founded in 1953 by the monk Luangpho Uttama with Mon and Karen settlers and rebuilt on higher ground by 1985 after the Khao Laem Dam flooded its first site. The body of its founder rests here in a glass coffin, while the drowned original is now visited as the Sangkhlaburi underwater temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Wang_Wiwekaram",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Wang_Wiwekaram"
+   },
+   {
+    "l": "Wikidata Q4105234",
+    "u": "https://www.wikidata.org/wiki/Q4105234"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "matho-monastery-ladakh",
+  "name": "Matho Monastery",
+  "country": "India",
+  "state": "Ladakh",
+  "place": "Matho, Leh district",
+  "lat": 33.9989,
+  "lng": 77.6308,
+  "tradition": "Buddhist",
+  "deity": "Shakyamuni Buddha (Sakya school)",
+  "built": [
+   1410,
+   1410
+  ],
+  "builtDisplay": "1410 (Lama Dugpa Dorje)",
+  "dynasty": "15th-century Ladakh",
+  "circuits": [],
+  "significance": "Founded in 1410 by Lama Dugpa Dorje on the south bank of the Indus about 26 km from Leh, Matho is the only Ladakhi monastery of the Sakya school. Its assembly hall centres on a Shakyamuni Buddha with chapels to Sakya Pandita and other lamas, and an adjoining museum holds thangkas of the 14th and 15th centuries along with festival masks and robes.",
+  "story": "At the Matho Nagrang festival two monks known as the Rongtsan oracles, chosen every three years after months of seclusion and meditation, are possessed by the monastery guardians and answer questions about the year ahead for Matho and for Ladakh.",
+  "wiki": "https://en.wikipedia.org/wiki/Matho_Monastery",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Matho_Monastery"
+   },
+   {
+    "l": "Wikidata Q4286253",
+    "u": "https://www.wikidata.org/wiki/Q4286253"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "wat-chiang-man-chiang-mai",
+  "name": "Wat Chiang Man",
+  "country": "Thailand",
+  "state": "Chiang Mai Province",
+  "place": "Chiang Mai",
+  "lat": 18.7938,
+  "lng": 98.989,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (Phra Sae Tang Khamani and Phra Sila images)",
+  "built": [
+   1297,
+   1297
+  ],
+  "builtDisplay": "1297 (King Mangrai)",
+  "dynasty": "Mangrai (Lan Na)",
+  "circuits": [],
+  "significance": "The oldest temple inside the walls of Chiang Mai, founded in 1297 by King Mangrai as the city was being laid out. Its Chedi Chang Lom is buttressed by fifteen life-size brick-and-stucco elephants, the wihan holds a Buddha image of 1465 said to be the oldest surviving Thai image shown with an alms bowl, and a stone inscription of 1581 in the ubosot records the city’s founding on 12 April 1296.",
+  "story": "The small quartz Phra Sae Tang Khamani is believed to protect the city, and the stone Phra Sila, carved with the Buddha subduing the elephant Nalagiri, is credited with the power to bring rain.",
+  "wiki": "https://en.wikipedia.org/wiki/Wat_Chiang_Man",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Wat_Chiang_Man"
+   },
+   {
+    "l": "Wikidata Q1515582",
+    "u": "https://www.wikidata.org/wiki/Q1515582"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

@@ -425,5 +425,104 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "khleang-temple-soc-trang",
+  "name": "Khleang Temple",
+  "country": "Vietnam",
+  "state": "Soc Trang",
+  "place": "Sóc Trăng",
+  "lat": 9.6102,
+  "lng": 105.9768,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (standing image 6.8 m high)",
+  "built": [
+   1533,
+   1533
+  ],
+  "builtDisplay": "1533",
+  "dynasty": "Khmer",
+  "style": "Khmer",
+  "circuits": [],
+  "significance": "A Theravada temple of the Khmer community in Sóc Trăng, first built in 1533, whose sanctuary holds a 6.8 m image of Gautama Buddha erected in 1916 with funds from the family of Lum Sum. It mixes Corinthian pillars with Khmer ornament and was declared a historic heritage site in 1990.",
+  "wiki": "https://en.wikipedia.org/wiki/Khleang_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Khleang_Temple"
+   },
+   {
+    "l": "Wikidata Q11839840",
+    "u": "https://www.wikidata.org/wiki/Q11839840"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "long-son-temple-nha-trang",
+  "name": "Long Sơn Temple",
+  "country": "Vietnam",
+  "state": "Khanh Hoa",
+  "place": "Nha Trang",
+  "lat": 12.2516,
+  "lng": 109.1808,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (large white seated image)",
+  "built": [
+   1900,
+   1900
+  ],
+  "origin": 1886,
+  "builtDisplay": "founded 1886; rebuilt on present site 1900",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "A Buddhist temple in Nha Trang first erected in 1886 and moved to its present site in 1900 after a cyclone destroyed it, then renovated in 1940 and repaired after damage in 1968. It is dominated by a large white concrete image of the Buddha cast in 1964 and installed the following year.",
+  "wiki": "https://en.wikipedia.org/wiki/Long_S%C6%A1n_Temple",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Long_S%C6%A1n_Temple"
+   },
+   {
+    "l": "Wikidata Q2277986",
+    "u": "https://www.wikidata.org/wiki/Q2277986"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "phaung-daw-u-pagoda-inle",
+  "name": "Phaung Daw U Pagoda",
+  "country": "Myanmar",
+  "state": "Shan State",
+  "place": "Ywama, Inle Lake",
+  "lat": 20.4744,
+  "lng": 96.8903,
+  "tradition": "Buddhist",
+  "deity": "Gautama Buddha (gilded Buddha images)",
+  "built": [
+   1000,
+   1800
+  ],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Pagan",
+  "circuits": [],
+  "significance": "A Theravada pagoda at Ywama on Inle Lake in Shan State whose Burmese name means 'principal royal barge pagoda'. It houses gilded Buddha images believed to have been brought to the lake by King Alaungsithu of the Pagan dynasty in the 12th century.",
+  "story": "On a windy day in the 1960s the barge carrying the images capsized and one image was lost in the lake; when the party returned to the monastery, the missing image was said to be sitting back in its place.",
+  "wiki": "https://en.wikipedia.org/wiki/Phaung_Daw_U_Pagoda",
+  "sources": [
+   {
+    "l": "Wikipedia",
+    "u": "https://en.wikipedia.org/wiki/Phaung_Daw_U_Pagoda"
+   },
+   {
+    "l": "Wikidata Q3360462",
+    "u": "https://www.wikidata.org/wiki/Q3360462"
+   }
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]

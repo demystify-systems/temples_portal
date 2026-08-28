@@ -118,5 +118,123 @@
   ],
   "verified": "wikipedia-2026-08-28",
   "tier": "compact"
+ },
+ {
+  "id": "gobindram-darbar-manjhand",
+  "name": "Gobindram Darbar, Manjhand",
+  "country": "Pakistan",
+  "state": "Sindh",
+  "place": "Manjhand, Jamshoro District",
+  "lat": 25.9166,
+  "lng": 68.2342,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [1000, 1800],
+  "builtDisplay": "dating unrecorded",
+  "dynasty": "Undetermined",
+  "style": "Brick Hindu temple with arched entrances, carved brickwork and frescoes",
+  "circuits": [],
+  "significance": "A Shiva temple, known locally simply as the Shiva Temple, in the Indus-side town of Manjhand, founded by Gobindram and built of burnt brick bound with gypsum cheeroli paste. Until Partition it drew annual fairs of Hindu pilgrims from across Sindh, with a dharamshala alongside and performances by the Sindhi devotional singer Bhagat Kanwar Ram.",
+  "wiki": "https://en.wikipedia.org/wiki/Gobindram_Darbar",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Gobindram_Darbar"},
+   {"l": "Wikidata Q48724688", "u": "https://www.wikidata.org/wiki/Q48724688"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "krishna-mandir-islamabad",
+  "name": "Shri Krishna Mandir, Islamabad",
+  "country": "Pakistan",
+  "state": "Islamabad Capital Territory",
+  "place": "H-9 sector, Islamabad",
+  "lat": 33.6642,
+  "lng": 73.0473,
+  "tradition": "Hindu",
+  "deity": "Krishna",
+  "built": [2016, 2020],
+  "builtDisplay": "land allotted 2016; ground broken 2020, construction pending",
+  "dynasty": "Modern",
+  "circuits": [],
+  "significance": "The first Hindu temple granted permission to be built in Islamabad, on land allotted to the Pakistan Hindu Panchayat in 2016, with a groundbreaking in June 2020 and a government grant approved days afterwards. Construction had still not started as of 2025; the site was attacked and vandalised four times and its boundary wall pulled down in 2020.",
+  "wiki": "https://en.wikipedia.org/wiki/Krishna_Temple,_Islamabad",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Krishna_Temple,_Islamabad"},
+   {"l": "Wikidata Q97024675", "u": "https://www.wikidata.org/wiki/Q97024675"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "bura-shivdham-dhaka",
+  "name": "Sri Sri Bura Shivdham",
+  "country": "Bangladesh",
+  "state": "Dhaka",
+  "place": "Shibbari, Dhaka",
+  "lat": 23.7295,
+  "lng": 90.3962,
+  "tradition": "Hindu",
+  "deity": "Shiva",
+  "built": [1605, 1627],
+  "builtDisplay": "early 17th c.; rebuilt 1912",
+  "dynasty": "Mughal",
+  "circuits": [],
+  "significance": "A Shiva temple, also called Shivbari, standing north of the Central Shaheed Minar in Dhaka and founded during Jahangir's reign; a severe storm wrecked it in 1912 and Raja Bijay Chand Mahtab of Burdwan had it rebuilt. Its caretaker and several resident ascetics were killed by the Pakistani army in the 1971 liberation war, and the surrounding locality of Shibbari takes its name from the temple.",
+  "wiki": "https://en.wikipedia.org/wiki/Sri_Sri_Bura_Shivdham",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Sri_Sri_Bura_Shivdham"},
+   {"l": "Wikidata Q115215312", "u": "https://www.wikidata.org/wiki/Q115215312"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "swarved-mahamandir-varanasi",
+  "name": "Swarved Mahamandir",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "place": "Varanasi",
+  "lat": 25.404,
+  "lng": 83.0691,
+  "tradition": "Hindu",
+  "deity": "Swarveda — 3,137 verses of the Vihangam Yoga scripture enshrined on its walls",
+  "built": [2023, 2023],
+  "builtDisplay": "completed 2023",
+  "dynasty": "Modern",
+  "style": "Makrana marble and pink sandstone under a 125-petal lotus dome",
+  "circuits": [],
+  "significance": "A seven-storey meditation temple at Varanasi, inaugurated by Prime Minister Narendra Modi in December 2023 at a cost of around Rs 100 crore. Covering some 300,000 square feet and seating about 20,000 people, it carries 3,137 verses of the Swarveda across its walls.",
+  "wiki": "https://en.wikipedia.org/wiki/Swarved_Mahamandir",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Swarved_Mahamandir"},
+   {"l": "Wikidata Q124077632", "u": "https://www.wikidata.org/wiki/Q124077632"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
+ },
+ {
+  "id": "prasat-sa-kamphaeng-yai",
+  "name": "Prasat Sa Kamphaeng Yai",
+  "country": "Thailand",
+  "state": "Sisaket Province",
+  "place": "Ban Sa Kamphaeng Yai, Uthumphon Phisai district",
+  "lat": 15.1016,
+  "lng": 104.1279,
+  "tradition": "Hindu",
+  "deity": "Shiva (the sanctuary later passed to Mahayana Buddhist use)",
+  "built": [1000, 1100],
+  "builtDisplay": "11th c. (Udayadityavarman II)",
+  "dynasty": "Khmer",
+  "style": "Khmer, Baphuon",
+  "circuits": [],
+  "significance": "An 11th-century Khmer sanctuary in Sisaket province, raised under Udayadityavarman II as a Shiva temple and later converted to Mahayana Buddhist use. Restoration by Thailand's Fine Arts Department recovered a 126 cm Baphuon-style bronze guardian, rated among the finest Khmer bronzes found and now in the National Museum in Bangkok.",
+  "wiki": "https://en.wikipedia.org/wiki/Prasat_Sa_Kamphaeng_Yai",
+  "sources": [
+   {"l": "Wikipedia", "u": "https://en.wikipedia.org/wiki/Prasat_Sa_Kamphaeng_Yai"},
+   {"l": "Wikidata Q3401363", "u": "https://www.wikidata.org/wiki/Q3401363"}
+  ],
+  "verified": "wikipedia-2026-08-28",
+  "tier": "compact"
  }
 ]
