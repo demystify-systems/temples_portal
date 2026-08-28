@@ -25,6 +25,7 @@
 //    coverage statistic).
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -34,6 +35,7 @@ const OUT_RECORDS = path.join(ROOT, "public", "r");
 const OUT_STATS = path.join(ROOT, "src", "lib", "generated", "atlas-stats.ts");
 const GEO = path.join(ROOT, "data", "geo.json");
 const OUT_PROJECTION = path.join(ROOT, "src", "lib", "generated", "map-projection.ts");
+const SW_SRC = path.join(ROOT, "public", "sw.js");
 
 /**
  * Fields the detail rail renders that the map index does not carry.
@@ -165,6 +167,24 @@ const main = () => {
   mkdirSync(path.dirname(OUT_STATS), { recursive: true });
   writeFileSync(OUT_STATS, statsSource);
   writeFileSync(OUT_PROJECTION, projectionSource);
+
+  // Stamp the service worker's cache version.
+  //
+  // Derived from the corpus itself — record count plus a hash of every id — so
+  // it changes exactly when the cached content changes, and does NOT change on
+  // a rebuild that altered nothing. A timestamp would invalidate every visitor's
+  // cache on every deploy, including deploys that touched no data.
+  if (existsSync(SW_SRC)) {
+    const fingerprint = createHash("sha256")
+      .update(String(sites.length))
+      .update(sites.map((s) => s.id).join("\u0000"))
+      .digest("hex")
+      .slice(0, 12);
+    const sw = readFileSync(SW_SRC, "utf8");
+    const stamped = sw.replace(/const VERSION = "[^"]*";/, `const VERSION = "${fingerprint}";`);
+    if (stamped !== sw) writeFileSync(SW_SRC, stamped);
+    console.log(`  service worker    cache version ${fingerprint}`);
+  }
 
   console.log(`build-map-artefacts: ${sites.length} records -> public/r/*.json`);
   console.log(`  detail payload   ${(bytes / 1024 / 1024).toFixed(2)} MB total, ${Math.round(bytes / sites.length)} bytes average per record`);
