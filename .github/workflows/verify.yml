@@ -1,7 +1,7 @@
 name: verify
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   pull_request:
   workflow_dispatch:
 
@@ -15,7 +15,23 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+
       - name: Validate data (no source → no publish)
         run: npm run validate
+
+      - name: Unit tests
+        run: npm test
+
+      # MUST be `npm run build`, never `npx next build`.
+      #
+      # src/lib/generated/ is gitignored and produced by the `prebuild` hook.
+      # npm only fires `prebuild` for `npm run build` — calling the underlying
+      # tool directly skips it, the generated index never exists, and webpack
+      # fails with a bare "Can't resolve './generated/search-index.ts'".
+      #
+      # This is also what Vercel runs (vercel.json sets no buildCommand, so the
+      # Next.js preset defaults to `npm run build`). CI that builds differently
+      # from production is worth very little: that mismatch is exactly why this
+      # step was red on develop while the live site deployed perfectly fine.
       - name: Build site
-        run: npx next build
+        run: npm run build
