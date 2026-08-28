@@ -40,7 +40,8 @@
   "dependencies": {
     "next": "^15.4.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "sarvam-conv-ai-sdk": "^0.0.42"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
