@@ -13,6 +13,7 @@ import { MAP_BOX } from "@/lib/generated/map-projection";
 import { ATLAS_STATS } from "@/lib/generated/atlas-stats";
 import { loadRecord, type RecordDetail } from "@/lib/record-detail";
 import { readVerification } from "@/lib/verification";
+import { useSpellingHelp } from "./useSpellingHelp";
 import {
   DOUBLE_TAP_ZOOM, TAP_SLOP_PX, clampTranslate, distance, isDoubleTap, midpoint, pinchFactor,
   scaleAbout, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
@@ -1127,6 +1128,8 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }, [sel]);
   const spanAll = from === YEAR_MIN && year >= YEAR_MAX;
   const visList = MAP_SITES.filter((s) => visible(s, filters, from, year));
+  // Asked only when the bundled index has already come back empty.
+  const spellingHelp = useSpellingHelp(filters.q, visList.length);
   const shapes: Record<string, string> = {
     circle: '<circle cx="5.5" cy="5.5" r="4.6"/>', square: '<rect x="1.4" y="1.4" width="8.2" height="8.2"/>',
     diamond: '<path d="M5.5 0L11 5.5L5.5 11L0 5.5Z"/>', triangle: '<path d="M5.5 0.4L10.8 10.2H0.2Z"/>',
@@ -1166,6 +1169,21 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
           <button className="reset" onClick={() => { setFilters(EMPTY); setCircuit(null); }}>reset</button>
         </div>
         <span className="count"><b>{shownCount}</b> of {MAP_SITES.length} sites shown</span>
+        {spellingHelp.length > 0 && (
+          /* Suggestions, not results. The local index found nothing, so these
+             come from Postgres, where the name is matched on a transliteration-
+             normalised form. Offered beside the count rather than merged into
+             it, because a fuzzy hit is not the same claim as a match. */
+          <div className="didyoumean" role="status">
+            <span>Did you mean</span>
+            {spellingHelp.map((s) => (
+              <button key={s.id} type="button" onClick={() => { setFilters((f) => ({ ...f, q: s.name })); select(s.id, true); }}>
+                {s.name}
+                <em>{s.place}</em>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="main">
