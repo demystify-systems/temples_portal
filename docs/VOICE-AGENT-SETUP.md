@@ -52,7 +52,7 @@ would fire before anyone has asked anything.
 
 ### Set up the API call
 
-Paste this into the cURL box:
+Paste this into the cURL box and press **Send**:
 
 ```bash
 curl -X POST https://tirthaatlas.org/api/agent/lookup \
@@ -60,21 +60,43 @@ curl -X POST https://tirthaatlas.org/api/agent/lookup \
   -d '{"q": "Kedarnath"}'
 ```
 
-Press **Send** to confirm it works — you should get back `"found": true` and a
-record for Kedarnath Temple. Then map `q` to an agent parameter so the model
-fills it with the caller's question rather than always sending "Kedarnath";
-whatever the Canvas calls that step, `q` is the field.
+The Canvas parses it into editable parts — method `POST`, the URL, one header,
+and a **Body** field `q` with the value `Kedarnath`. That value is only the test
+fixture. Once the call succeeds, bind `q` to an agent parameter so the model
+sends the caller's question instead of always asking about Kedarnath.
 
-> The endpoint must be **deployed to production first**. `Send` calls
-> `tirthaatlas.org`, so merge and promote before configuring the tool, or the
-> test will 404 and the tool will look broken when it is only absent.
+> **The endpoint must be live on `tirthaatlas.org` before `Send` will work.**
+> The route ships on `develop`; production serves `main`. Until it is promoted,
+> `Send` returns `http status 404` with the site's 404 *page* as the body —
+> which looks like a broken tool but is only an absent one. Preview deployments
+> do not help: Vercel deployment protection answers them with a 401, and Sarvam
+> has no session to satisfy it.
 
-`q` is what the endpoint expects; `query` and `question` are accepted too,
-because a generated body rarely uses the name you expected and a mismatch would
-surface as an agent that silently never finds anything.
+### Send fields from the API response to the agent
 
-No authentication. The endpoint is read-only over data already published at
-`/site/[slug]`, and it is rate limited.
+This step is the tool's return value — what the model actually hears back. The
+`@` picker only lights up **after a successful Send**, because it builds its
+field list from the last real response.
+
+The response looks like this:
+
+```json
+{ "found": true, "query": "kedarnath", "total": 1, "approximate": false,
+  "records": [{ "name": "…", "where": "…", "tradition": "…", "deity": "…",
+    "built": "…", "dynasty": "…", "patron": "…", "history": "…",
+    "legend": "…", "access": "…", "sources": ["…"], "page": "…" }] }
+```
+
+Template:
+
+```
+Atlas lookup for "@query" — found: @found. Records: @records
+Speak only from these fields. If found is false, tell the caller the atlas has no record of that place and offer nothing further. Keep history and legend separate: history is documented, legend is sthala katha. Never read sources or page aloud.
+```
+
+If the picker offers only leaves rather than `@records` whole, reach for the
+first record's fields (`@records.0.name` and so on) and keep the same
+instructions around them.
 
 ## 3. System prompt
 
