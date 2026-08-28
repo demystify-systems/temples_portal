@@ -34,6 +34,7 @@ import {
 } from "@/lib/ai/conversation";
 import { chunkForSpeech } from "@/lib/ai/voice";
 import { preferredFromLocale } from "@/lib/ai/languages";
+import { readPreference, writePreference, PREF_KEYS } from "@/lib/preference";
 
 /** Analyser frame size. 1024 samples at 48 kHz is ~21 ms — the VAD's frame. */
 const FFT_SIZE = 2048;
@@ -90,10 +91,12 @@ export function useCall(): Call {
 
   useEffect(() => {
     setSupported(isSupported());
-    // The device locale preselects the picker and decides nothing else: a
-    // locale says where a phone was bought at least as often as what its owner
-    // speaks.
-    setLanguageState(preferredFromLocale(typeof navigator === "undefined" ? null : navigator.language));
+    // A stored choice first; the device locale only as an opening guess for
+    // someone who has never chosen. A locale says where a phone was bought at
+    // least as often as what its owner speaks, so it must never overrule an
+    // actual decision.
+    const stored = readPreference<string | null>(PREF_KEYS.voiceLanguage, null);
+    setLanguageState(stored ?? preferredFromLocale(typeof navigator === "undefined" ? null : navigator.language));
   }, []);
 
   // Everything below is imperative machinery that must not re-render on change.
@@ -390,6 +393,9 @@ export function useCall(): Call {
   const setLanguage = useCallback((code: string | null) => {
     setLanguageState(code);
     chosenRef.current = code;
+    // Remembered separately from the INTERFACE language: someone may read the
+    // atlas in English and prefer to speak to it in Tamil.
+    writePreference(PREF_KEYS.voiceLanguage, code);
   }, []);
 
   return {
