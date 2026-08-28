@@ -100,7 +100,13 @@ export async function POST(request: Request): Promise<Response> {
   const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
   try {
-    const audios = await textToSpeech({ apiKey, text, languageCode: language, signal: controller.signal });
+    // One voice for the whole atlas, set by env. Unset means Bulbul's default,
+    // so a deployment that configures nothing sounds exactly as it did before.
+    const audios = await textToSpeech({
+      apiKey, text, languageCode: language,
+      speaker: process.env.SARVAM_TTS_SPEAKER,
+      signal: controller.signal,
+    });
     if (audios.length === 0) return fail(UNAVAILABLE, 503);
     // Bulbul may return more than one clip for one passage; all of them are
     // returned in order and the client plays them back to back.
