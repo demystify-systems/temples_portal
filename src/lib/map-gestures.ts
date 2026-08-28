@@ -24,7 +24,12 @@ export type Tap = { readonly x: number; readonly y: number; readonly time: numbe
 
 /** Zoom limits — the single source of truth, imported by AtlasClient. */
 export const MIN_ZOOM = 1;
-export const MAX_ZOOM = 24;
+/**
+ * 24 reached roughly 340 m per screen pixel over south India — regional, not
+ * the district-and-town view the atlas is for. Ten times that lands near 34 m
+ * per pixel, which separates neighbouring temples in a single town.
+ */
+export const MAX_ZOOM = 240;
 
 /** Double tap: two taps inside this window and this radius (client px). */
 export const DOUBLE_TAP_MS = 300;
@@ -41,6 +46,44 @@ export const WHEEL_ZOOM_OUT = 0.8;
 export const TRACKPAD_PINCH_SENSITIVITY = 0.01;
 const MIN_WHEEL_STEP = 0.5;
 const MAX_WHEEL_STEP = 2;
+
+/* ------------------------------------------------------------ mark sizing */
+
+/**
+ * Site marks are sized in *content* units, then drawn inside a group scaled by
+ * `k` — so a radius that is constant in content units grows on screen as you
+ * zoom. Dividing by `k` is what holds a mark still, and `cluster.ts` sizes its
+ * cells assuming exactly that (see `CLUSTER_CELL_STAGE`).
+ *
+ * This used to read `Math.max(4.6 / k, 1.6)`. The floor was applied in content
+ * units, so past k≈2.9 the mark stopped shrinking and its screen radius grew as
+ * 1.6·k — about 52 px at full zoom, some 17 km across the ground. Zooming into
+ * a dense district made the crowding worse, which is the opposite of what
+ * zooming is for.
+ */
+export const SITE_MARK_STAGE_R = 4.6;
+
+/**
+ * Once nothing clusters any more, the marks taper: past that point the map is
+ * being used to tell neighbours apart, and a smaller mark separates two temples
+ * a few hundred metres apart that a larger one would merge.
+ */
+export const SITE_MARK_STAGE_R_CLOSE = 2.4;
+
+/** Where the taper begins — kept equal to `cluster.ts`'s `NO_CLUSTER_ZOOM`. */
+export const MARK_TAPER_FROM_ZOOM = 10;
+
+/** Screen-space mark radius at a given zoom, in stage units. */
+export const siteMarkStageRadius = (k: number): number => {
+  if (k <= MARK_TAPER_FROM_ZOOM) return SITE_MARK_STAGE_R;
+  const span = Math.log2(MAX_ZOOM / MARK_TAPER_FROM_ZOOM);
+  const t = span <= 0 ? 1 : clamp(Math.log2(k / MARK_TAPER_FROM_ZOOM) / span, 0, 1);
+  return SITE_MARK_STAGE_R + (SITE_MARK_STAGE_R_CLOSE - SITE_MARK_STAGE_R) * t;
+};
+
+/** Mark radius in content units — what the SVG `r` attribute takes. */
+export const siteMarkRadius = (k: number): number =>
+  siteMarkStageRadius(k) / Math.max(k, 1e-6);
 
 export const clamp = (value: number, min: number, max: number): number =>
   Math.min(max, Math.max(min, value));

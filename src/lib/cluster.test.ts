@@ -6,7 +6,7 @@ import {
   viewForBounds, clusterAriaLabel, clusterSummary, isMixedEra, isMixedTradition,
   type ClusterPoint,
 } from "./cluster.ts";
-import { MAX_ZOOM } from "./map-gestures.ts";
+import { MAX_ZOOM , MARK_TAPER_FROM_ZOOM } from "./map-gestures.ts";
 
 const EXTENT = { width: 1480, height: 1136.5 };
 const ERA_NAMES = ["Classical", "Imperial", "Medieval", "Late medieval", "Colonial", "Modern"];
@@ -212,4 +212,11 @@ test("tradition pips are centred and evenly spaced", () => {
   assert.equal(three[1], 0, "an odd row is centred on the middle pip");
   assert.equal(three[0], -three[2], "and symmetric");
   assert.deepEqual(pipOffsets(0, 2), []);
+});
+
+test("the mark taper begins exactly where clustering stops", () => {
+  // Two modules, one number. If they drift, marks taper while clusters are
+  // still being laid out against the untapered radius, and the cell size stops
+  // matching the glyph it was sized for.
+  assert.equal(MARK_TAPER_FROM_ZOOM, NO_CLUSTER_ZOOM);
 });
