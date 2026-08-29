@@ -61,7 +61,16 @@ const TOKEN_BUDGET_PER_REQUEST = 12_000;
 /** Tool rounds before the model must answer with what it has. */
 const MAX_TOOL_ROUNDS = 3;
 /** Whole-request wall clock, including retries inside sarvam.ts. */
-const REQUEST_TIMEOUT_MS = 30_000;
+/**
+ * 30s was not enough. A question that sends the model through tool rounds —
+ * "tell me about the Chola dynasty temples" — reached 30.3s and was aborted
+ * mid-sentence after streaming 2,143 characters of finished, cited answer.
+ *
+ * Raised, but the real fix is below: a timeout now ENDS the answer instead of
+ * discarding it, so this ceiling decides how long an answer may be rather than
+ * whether the reader keeps one.
+ */
+const REQUEST_TIMEOUT_MS = 60_000;
 /** Records handed to the model on the first turn. */
 const RETRIEVAL_LIMIT = 5;
 /**
@@ -185,6 +194,11 @@ function streamAnswer(input: {
         ctrl.enqueue(encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`));
       };
 
+      // Above the try, so the catch can still finish a partial answer.
+      const cited: AtlasRecord[] = [...found.records];
+      let raw = "";
+      let roundText = "";
+
       try {
         send("stage", { stage: "reading", records: found.total });
 
@@ -193,12 +207,9 @@ function streamAnswer(input: {
           ...history.map((turn) => ({ role: turn.role, content: turn.content })),
           { role: "user", content: userTurn(question) },
         ];
-        const cited: AtlasRecord[] = [...found.records];
-        let raw = "";
-
         for (let round = 0; round <= MAX_TOOL_ROUNDS; round += 1) {
           let buffer = "";
-          let roundText = "";
+          roundText = "";
           let toolCalls: readonly ToolCall[] = [];
           let opened = false;
 
@@ -261,7 +272,29 @@ function streamAnswer(input: {
         } else {
           console.error("[chat] stream failed:", error);
         }
-        send("error", UNAVAILABLE);
+
+        /**
+         * An answer that was cut short is still an answer.
+         *
+         * The failure this fixes: a reader watched 2,143 characters of sourced
+         * prose arrive over half a minute, and then watched every word of it be
+         * replaced by "the assistant is unavailable right now" — because the
+         * timeout fired one sentence before the end. Losing the answer was
+         * worse than the timeout, and it was entirely our doing: the text had
+         * already passed the same citation check the finished answer faces.
+         *
+         * So if anything was written, it is finished properly — citations,
+         * result cards and all — and flagged `truncated` so the panel can say
+         * the answer stops early. Only a call that produced NOTHING is an
+         * error, because only then is there nothing to show.
+         */
+        const partial = (raw || roundText).trim();
+        if (partial) {
+          const payload = buildAnswer({ answer: partial, cited, corpus: CORPUS, refusalText: REFUSAL });
+          send("done", { ...payload, truncated: true });
+        } else {
+          send("error", UNAVAILABLE);
+        }
       } finally {
         clearTimeout(timer);
         ctrl.close();

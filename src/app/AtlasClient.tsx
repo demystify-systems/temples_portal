@@ -484,6 +484,20 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     };
   }, [scheduleOverlays]);
 
+  /**
+   * How many CSS pixels one stage unit is drawn at.
+   *
+   * `preserveAspectRatio="xMidYMid meet"` fits the whole viewBox, so the scale
+   * is `min(w/W, h/H)`. Everything sized for the eye — marks, cluster rings,
+   * strokes — divides by this, or it ends up a different physical size on every
+   * device: 0.26 on a phone against 0.72 on a laptop is nearly 3x.
+   */
+  const pxPerStageUnit = (): number => {
+    const rect = mapRef.current?.getBoundingClientRect();
+    if (!rect || rect.width < 1 || rect.height < 1) return 1;
+    return Math.min(rect.width / W, rect.height / H);
+  };
+
   const applyView = () => {
     const { x, y, k } = view.current;
     worldRef.current?.setAttribute("transform", `translate(${x} ${y}) scale(${k})`);
@@ -579,7 +593,11 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     const restore = active instanceof Element && g.contains(active) ? active.id : null;
     if (!clusters.length) { g.innerHTML = ""; return; }
 
-    const base = Math.max(4.6 / k, 1.6);
+    // The same pixel basis as an individual mark, so a cluster ring is a ring
+    // around marks of the size they will be when it dissolves. This still read
+    // `Math.max(4.6 / k, 1.6)` — the content-unit formula whose growth was the
+    // original bug, left behind when the marks themselves were fixed.
+    const base = siteMarkRadius(k, pxPerStageUnit());
     const sw = 1.1 / k;
     const pipR = Math.max(base * 0.4, 0.85);
     let html = "";
@@ -615,7 +633,8 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }
 
   function renderPoints() {
-    const k = view.current.k, r = siteMarkRadius(k), sw = 1.1 / k;
+    const k = view.current.k, px = pxPerStageUnit();
+    const r = siteMarkRadius(k, px), sw = 1.1 / (k * px);
     const { clustered } = ensureLayout(k);
     const f = activeFilters();
     const cir = circuitRef.current;
@@ -1410,7 +1429,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
 
       <div className="main">
         {/* Builtin layers are switched by class, not by re-serialising geo.json. */}
-        <div className={`mapwrap ${builtinOffClasses(layersOn)}`.trimEnd()} ref={wrapRef} onKeyDown={onMapKeyDown}>
+        <div className={`mapwrap${sel ? " picked" : ""} ${builtinOffClasses(layersOn)}`.trimEnd()} ref={wrapRef} onKeyDown={onMapKeyDown}>
           {/* role="group", not role="img": role="img" makes the whole subtree
               presentational, which would hide every focusable mark from assistive
               technology and undo T-043. The boundary statement stays the label. */}

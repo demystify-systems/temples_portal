@@ -280,8 +280,11 @@ const BHUVAN_TERMS: LayerTerms = {
   status: "unconfirmed",
   note:
     "Served live from ISRO's Bhuvan servers. Bhuvan publishes no reachable terms-of-use " +
-    "page, so redistribution rights are unconfirmed — this layer is off by default and " +
-    "is never fetched unless you switch it on.",
+    "page, so redistribution rights remain unconfirmed. This layer is nevertheless ON by " +
+    "default: the owner asked for it on 2026-08-29, having been shown that the rights are " +
+    "unconfirmed and that every visitor therefore fetches from a government service on " +
+    "load. The credit is painted on the map whenever the layer is drawn, which is the one " +
+    "condition of use that can be met without a published licence.",
 };
 
 /**
@@ -324,7 +327,7 @@ export const MAP_LAYERS: readonly MapLayer[] = [
     id: "india-state-outlines",
     label: "State boundaries — India",
     blurb: "State and union-territory outlines with names, drawn by ISRO's Bhuvan service.",
-    defaultOn: false,
+    defaultOn: true,
     coverage: INDIA_BOUNDS,
     coverageNote:
       "India only. No equivalent India-point-of-view state layer exists for the other " +
@@ -348,7 +351,7 @@ export const MAP_LAYERS: readonly MapLayer[] = [
     id: "india-state-areas",
     label: "State areas — India",
     blurb: "The same states as filled tints instead of outlines. Heavier; no names.",
-    defaultOn: false,
+    defaultOn: true,
     coverage: INDIA_BOUNDS,
     coverageNote:
       "India only, for the same reason as the outline layer above.",
