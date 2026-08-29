@@ -489,6 +489,9 @@ table.gz tr:last-child td{border-bottom:none}
 /* Citations are never optional furniture: they carry the same weight as the
    answer, and their absence is stated rather than left blank. */
 .asstcites{margin-top:9px;padding-top:8px;border-top:1px solid var(--line)}
+/* A cut-short answer says so, quietly. Not an error colour: the text above it
+   is real and sourced, and colouring this like a failure would say otherwise. */
+.assttrunc{margin:9px 0 0;padding:7px 9px;border-left:2px solid var(--line2);background:var(--panel2);font-size:11.5px;line-height:1.5;color:var(--mut)}
 .asstcites h3{margin:0 0 5px;font-family:var(--font-mono),monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
 .asstcites ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
 .asstcites li{font-size:12px;line-height:1.5;color:var(--ink2);overflow-wrap:anywhere}
@@ -1272,7 +1275,16 @@ table.gz tr:last-child td{border-bottom:none}
      elementFromPoint over the toggle returned the sheet's own contents.
      Top-left is the one corner nothing else claims: the map tools are
      top-right, the sheet is bottom, the timeline is below that. */
-  .maplegend{ top:8px; bottom:auto; left:12px; max-width:calc(100% - 24px) }
+  /* Back to the bottom, where a map key belongs and where it is read.
+     It went top-left because the bottom sheet (z-index 8) covered it and the
+     toggle could not be tapped — see the note above, which is the failure this
+     must not reintroduce. Two things prevent that now: the key sits ABOVE the
+     sheet in stacking, and it gets out of the way entirely while a record is
+     open, because that is when the sheet owns the bottom of the screen and the
+     era key is not what anyone is reading. */
+  .maplegend{ top:auto; bottom:10px; left:12px; z-index:9; max-width:calc(100% - 24px) }
+  .mapwrap.picked .maplegend{ display:none }
+
   .legendbody{ font-size:10px }
 
   /* The coach mark is anchored inside the timeline and must not reintroduce
@@ -1299,7 +1311,18 @@ table.gz tr:last-child td{border-bottom:none}
      page rather than by looking, which is the only way this class of bug shows
      up: the button renders perfectly and simply never receives the tap.
      Left is now free: the key is top-left, the launcher is bottom-right. */
-  .coach{ top:auto; bottom:calc(100% + 10px); left:0; right:auto; max-width:min(320px, calc(100vw - 24px)) }
+  /* The hint and the era key SWAP corners on a phone.
+     The band above the timeline is contested by four things at 390px: the key,
+     this hint, the assistant launcher and the detail sheet. Every attempt to
+     fit the hint in beside the key put it on top of something — measured, at
+     390x844: at `bottom:100%+10px` "Got it" covered the key's toggle; lifted to
+     +56px it cleared the key and landed on the sheet's "all sites" crumb
+     instead. There is no free slot down there.
+     So the hint takes the top-left, which the key vacated when it moved back to
+     the bottom. Nothing else claims it: the map tools are top-right, the sheet
+     and timeline are below. It still points at the scrubber; a hint does not
+     have to touch the thing it describes. */
+  .coach{ top:8px; bottom:auto; left:12px; right:auto; max-width:min(320px, calc(100vw - 24px)) }
 }
 
 /* Very narrow: the readout loses its label before it loses its numbers. */

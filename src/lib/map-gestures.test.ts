@@ -6,7 +6,7 @@ import {
   midpoint, project, unproject, scaleAbout,
   translateBy, viewportScale, toStagePoint, pinchFactor,
   wheelZoomFactor, isDoubleTap, type View, MARK_TAPER_FROM_ZOOM,
-  SITE_MARK_STAGE_R, SITE_MARK_STAGE_R_CLOSE, siteMarkRadius,
+  SITE_MARK_PX, SITE_MARK_PX_CLOSE, siteMarkRadius, siteMarkScreenPx,
 } from "./map-gestures.ts";
 
 const EXTENT = { width: 1000, height: 700 };
@@ -170,48 +170,60 @@ test("isDoubleTap needs a previous tap and rejects a backwards clock", () => {
   assert.equal(isDoubleTap({ x: 0, y: 0, time: 1000 }, { x: 0, y: 0, time: 900 }), false);
 });
 
-// ---- mark sizing: the regression that made dots swallow districts ----------
+// ---- mark sizing: measured in pixels, on every device -----------------------
 
-test("a mark keeps a constant screen size while clustering is active", () => {
-  // Arrange: cluster.ts sizes its cells assuming exactly this.
-  for (const k of [1, 2, 4, 8, MARK_TAPER_FROM_ZOOM]) {
+/** What a phone and a laptop actually render the 1480-wide viewBox at. */
+const PHONE_PX_PER_UNIT = 390 / 1480;
+const LAPTOP_PX_PER_UNIT = 1061 / 1480;
+
+const screenDiameter = (k: number, pxPerUnit: number): number =>
+  2 * siteMarkRadius(k, pxPerUnit) * k * pxPerUnit;
+
+test("a mark is the same size in the hand on a phone and on a laptop", () => {
+  // Arrange: the bug this replaces — the same mark was 6.6px on a laptop and
+  // 2.4px on a phone, because it was sized in stage units.
+  for (const k of [1, 4, 40, MAX_ZOOM]) {
     // Act
-    const onScreen = siteMarkRadius(k) * k;
+    const phone = screenDiameter(k, PHONE_PX_PER_UNIT);
+    const laptop = screenDiameter(k, LAPTOP_PX_PER_UNIT);
     // Assert
-    assert.ok(Math.abs(onScreen - SITE_MARK_STAGE_R) < 1e-9, `k=${k} gave ${onScreen}`);
+    assert.ok(Math.abs(phone - laptop) < 1e-6, `k=${k}: phone ${phone}px vs laptop ${laptop}px`);
   }
 });
 
-test("a mark never grows on screen as the map zooms in", () => {
-  // The old `Math.max(4.6 / k, 1.6)` floored the radius in *content* units, so
-  // past k≈2.9 the screen radius grew as 1.6·k — a 52px blob at full zoom.
-  let previous = Infinity;
-  for (let k = 1; k <= MAX_ZOOM; k *= 1.2) {
-    const onScreen = siteMarkRadius(k) * k;
-    assert.ok(onScreen <= previous + 1e-9, `screen radius grew at k=${k}`);
-    previous = onScreen;
+test("a mark is never smaller than 8px across, which is what made them vanish", () => {
+  for (const k of [MIN_ZOOM, 1.46, 10, 60, MAX_ZOOM]) {
+    const d = screenDiameter(k, PHONE_PX_PER_UNIT);
+    assert.ok(d >= SITE_MARK_PX - 1e-6, `k=${k} gave ${d.toFixed(2)}px on a phone`);
   }
 });
 
-test("marks are smaller at full zoom than at the world view, so dense towns resolve", () => {
-  const far = siteMarkRadius(MIN_ZOOM) * MIN_ZOOM;
-  const close = siteMarkRadius(MAX_ZOOM) * MAX_ZOOM;
-  assert.ok(close < far, `close ${close} should be under far ${far}`);
-  assert.ok(Math.abs(close - SITE_MARK_STAGE_R_CLOSE) < 1e-9);
+test("marks grow once nothing clusters, because crowding is already solved", () => {
+  assert.equal(siteMarkScreenPx(1), SITE_MARK_PX);
+  assert.equal(siteMarkScreenPx(MARK_TAPER_FROM_ZOOM), SITE_MARK_PX);
+  assert.ok(siteMarkScreenPx(60) > SITE_MARK_PX);
+  assert.equal(siteMarkScreenPx(MAX_ZOOM), SITE_MARK_PX_CLOSE);
+});
+
+test("a mark never balloons — the original bug reached 200px at full zoom", () => {
+  for (const px of [PHONE_PX_PER_UNIT, LAPTOP_PX_PER_UNIT]) {
+    for (let k = 1; k <= MAX_ZOOM; k *= 1.4) {
+      assert.ok(screenDiameter(k, px) <= SITE_MARK_PX_CLOSE + 1e-6,
+        `k=${k.toFixed(1)} gave ${screenDiameter(k, px).toFixed(1)}px`);
+    }
+  }
 });
 
 test("the radius stays positive and finite across the whole zoom range", () => {
   for (const k of [MIN_ZOOM, 1.5, 10, 100, MAX_ZOOM]) {
-    const r = siteMarkRadius(k);
+    const r = siteMarkRadius(k, PHONE_PX_PER_UNIT);
     assert.ok(Number.isFinite(r) && r > 0, `k=${k} gave ${r}`);
   }
 });
 
-test("full zoom resolves two temples a few hundred metres apart", () => {
-  // Thanjavur district: the screenshot's problem case. One content unit is
-  // (LON1-LON0)/W = 74/1480 = 0.05° of longitude ≈ 5.46 km at 11°N.
+test("full zoom still resolves two temples a few hundred metres apart", () => {
+  // Thanjavur: one content unit is (LON1-LON0)/W = 0.05° ≈ 5.46 km at 11°N.
   const KM_PER_CONTENT_UNIT = 0.05 * 111.32 * Math.cos((11 * Math.PI) / 180);
-  const markKm = siteMarkRadius(MAX_ZOOM) * KM_PER_CONTENT_UNIT;
-  // Two marks separate once their centres are more than a diameter apart.
-  assert.ok(markKm * 2 < 0.5, `mark spans ${(markKm * 2).toFixed(3)} km on the ground`);
+  const markKm = siteMarkRadius(MAX_ZOOM, PHONE_PX_PER_UNIT) * KM_PER_CONTENT_UNIT;
+  assert.ok(markKm * 2 < 2, `mark spans ${(markKm * 2).toFixed(2)} km on the ground`);
 });
