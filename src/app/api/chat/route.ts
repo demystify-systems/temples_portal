@@ -27,9 +27,10 @@
 
 import { NextResponse } from "next/server";
 import { SITES, type Site } from "@/lib/sites";
-import { chat, translate, tokenFloorFor, SarvamError, type ChatMessage } from "@/lib/ai/sarvam";
+import { chat, chatStream, translate, tokenFloorFor, SarvamError, type ChatMessage, type ToolCall } from "@/lib/ai/sarvam";
 import { retrieve, retrieveById, type AtlasRecord } from "@/lib/ai/retrieve";
 import { TOOLS, executeTool } from "@/lib/ai/tools";
+import { takeCompleteSegments, vetSegment } from "@/lib/ai/stream";
 import { buildAnswer, refusalPayload } from "@/lib/ai/answer";
 import { systemPrompt, userTurn, REFUSAL, MAX_QUESTION_CHARS } from "@/lib/ai/prompt";
 
@@ -147,6 +148,144 @@ const withinRateLimit = (ip: string, now: number): boolean => {
 
 const CORPUS = SITES as unknown as readonly (Site & AtlasRecord)[];
 
+/**
+ * Server-sent events: stages while the work happens, then prose as it is
+ * written, then the authoritative payload.
+ *
+ * WHY IT STREAMS SENTENCES AND NOT TOKENS
+ * ---------------------------------------
+ * `reconcile` strips any sentence naming a record no tool returned. Painting
+ * raw tokens would put an unsupported claim on screen and take it back a moment
+ * later — for a reference work that is worse than waiting, because the reader
+ * has already read it. So text is held until a segment is complete, vetted with
+ * the same rule, and only then sent. See src/lib/ai/stream.ts.
+ *
+ * The `done` frame carries the payload the non-streaming path would have
+ * returned, and the client swaps its streamed text for that. The stream is for
+ * feel; the final frame is the truth, and the two agree because they apply the
+ * same rule.
+ */
+function streamAnswer(input: {
+  apiKey: string;
+  question: string;
+  language: string | undefined;
+  history: readonly { role: "user" | "assistant"; content: string }[];
+  found: ReturnType<typeof retrieve>;
+  nothingAsked: boolean;
+  maxTokens: number;
+  controller: AbortController;
+  timer: ReturnType<typeof setTimeout>;
+}): Response {
+  const { apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer } = input;
+  const encoder = new TextEncoder();
+
+  const body = new ReadableStream<Uint8Array>({
+    async start(ctrl) {
+      const send = (event: string, data: unknown) => {
+        ctrl.enqueue(encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`));
+      };
+
+      try {
+        send("stage", { stage: "reading", records: found.total });
+
+        const messages: ChatMessage[] = [
+          { role: "system", content: systemPrompt({ records: found.records, language, total: found.total }) },
+          ...history.map((turn) => ({ role: turn.role, content: turn.content })),
+          { role: "user", content: userTurn(question) },
+        ];
+        const cited: AtlasRecord[] = [...found.records];
+        let raw = "";
+
+        for (let round = 0; round <= MAX_TOOL_ROUNDS; round += 1) {
+          let buffer = "";
+          let roundText = "";
+          let toolCalls: readonly ToolCall[] = [];
+          let opened = false;
+
+          for await (const event of chatStream({
+            apiKey,
+            messages,
+            maxTokens,
+            signal: controller.signal,
+            ...(nothingAsked || round === MAX_TOOL_ROUNDS ? {} : { tools: [...TOOLS] }),
+          })) {
+            if (event.kind === "tool_calls") { toolCalls = event.calls; continue; }
+
+            if (!opened) { opened = true; send("stage", { stage: "writing" }); }
+            roundText += event.text;
+            buffer += event.text;
+
+            const { emit, rest } = takeCompleteSegments(buffer);
+            buffer = rest;
+            if (!emit) continue;
+
+            const vetted = vetSegment(emit, cited, CORPUS);
+            if (vetted.dropped.length > 0) {
+              console.warn(`[chat] withheld mid-stream: ${vetted.dropped.join(", ")}`);
+            }
+            if (vetted.text) send("text", { chunk: vetted.text });
+          }
+
+          // A trailing fragment with no terminator is still an answer's last
+          // words; vet and send it rather than losing it.
+          if (buffer) {
+            const vetted = vetSegment(buffer, cited, CORPUS);
+            if (vetted.text) send("text", { chunk: vetted.text });
+          }
+
+          if (toolCalls.length > 0 && round < MAX_TOOL_ROUNDS) {
+            send("stage", { stage: "consulting" });
+            messages.push({ role: "assistant", content: roundText, tool_calls: [...toolCalls] });
+            for (const call of toolCalls) {
+              const outcome = executeTool(call.function.name, call.function.arguments, CORPUS);
+              cited.push(...outcome.cited);
+              messages.push({ role: "tool", tool_call_id: call.id, content: JSON.stringify(outcome.result) });
+            }
+            continue;
+          }
+
+          raw = roundText;
+          break;
+        }
+
+        if (!raw) { send("error", UNAVAILABLE); ctrl.close(); return; }
+
+        const payload = buildAnswer({ answer: raw, cited, corpus: CORPUS, refusalText: REFUSAL });
+        if (payload.dropped.length > 0) {
+          console.warn(`[chat] dropped unsupported claims: ${payload.dropped.join(", ")}`);
+        }
+        send("done", payload);
+      } catch (error) {
+        if (error instanceof SarvamError) {
+          console.error(`[chat] sarvam ${error.status}${error.requestId ? ` req=${error.requestId}` : ""}: ${error.message}`);
+        } else {
+          console.error("[chat] stream failed:", error);
+        }
+        send("error", UNAVAILABLE);
+      } finally {
+        clearTimeout(timer);
+        ctrl.close();
+      }
+    },
+    cancel() {
+      // The reader navigated away or hit stop. Abort the upstream call rather
+      // than paying for an answer nobody will read.
+      controller.abort();
+      clearTimeout(timer);
+    },
+  });
+
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-store, no-transform",
+      Connection: "keep-alive",
+      // Proxies that buffer would defeat the entire point.
+      "X-Accel-Buffering": "no",
+    },
+  });
+}
+
 export async function POST(request: Request): Promise<Response> {
   const apiKey = process.env.SARVAM_API_KEY;
   // No key configured is an unavailable assistant, not a broken page. The rest
@@ -161,13 +300,15 @@ export async function POST(request: Request): Promise<Response> {
   }
 
   let question = "";
+  let wantsStream = false;
   let language: string | undefined;
   let history: { role: "user" | "assistant"; content: string }[] = [];
   let contextIds: string[] = [];
   try {
     const body: unknown = await request.json();
-    const parsed = (body ?? {}) as { question?: unknown; language?: unknown; history?: unknown; context?: unknown };
+    const parsed = (body ?? {}) as { question?: unknown; language?: unknown; history?: unknown; context?: unknown; stream?: unknown };
     question = typeof parsed.question === "string" ? parsed.question.trim() : "";
+    wantsStream = parsed.stream === true;
     language = typeof parsed.language === "string" && parsed.language.trim()
       ? parsed.language.trim().slice(0, 40)
       : undefined;
@@ -301,6 +442,12 @@ export async function POST(request: Request): Promise<Response> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   const maxTokens = Math.min(tokenFloorFor(question), MAX_TOKENS_PER_CALL);
+
+  if (wantsStream) {
+    return streamAnswer({
+      apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer,
+    });
+  }
 
   try {
     const messages: ChatMessage[] = [
