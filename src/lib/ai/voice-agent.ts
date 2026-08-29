@@ -28,14 +28,17 @@ export type VoiceAgentConfig = {
    *   ?interaction_type=call            -> 404
    *   ?interaction_type=call&version=1  -> 200
    */
-  readonly version: number;
+  readonly version: number | null;
 };
 
-const DEFAULT_VERSION = 1;
-
-const parseVersion = (raw: string | undefined): number => {
+/**
+ * Unset means "whatever is published", which is what we want by default: the
+ * handshake resolves the live version itself, so a publish takes effect without
+ * a redeploy. Pin a number only to hold an agent on an older version.
+ */
+const parseVersion = (raw: string | undefined): number | null => {
   const n = Number(raw?.trim());
-  return Number.isInteger(n) && n > 0 ? n : DEFAULT_VERSION;
+  return Number.isInteger(n) && n > 0 ? n : null;
 };
 
 export const voiceAgentConfig = (): VoiceAgentConfig => ({
