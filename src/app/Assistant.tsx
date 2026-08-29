@@ -73,6 +73,8 @@ type Turn = {
   readonly spoken: boolean;
   /** Still arriving. Renders the caret and suppresses the citation block. */
   readonly streaming?: boolean;
+  /** The answer stops early — the call ended before the model finished. */
+  readonly truncated?: boolean;
 };
 
 /** What the microphone last heard, kept until the question is asked or cleared. */
@@ -295,26 +297,40 @@ export default function Assistant() {
             streamed += String(data.chunk ?? "");
             setTurns((prev) => prev.map((t) => (t.id === answerId ? { ...t, text: streamed } : t)));
           } else if (event === "done") {
-            const payload = data as unknown as { answer?: string; citations?: Citation[]; refused?: boolean };
+            const payload = data as unknown as
+              { answer?: string; citations?: Citation[]; refused?: boolean; truncated?: boolean };
             // The authoritative payload replaces the streamed text. Both went
             // through the same rule, so this is a confirmation, not a rewrite.
             settle({
               text: payload.answer ?? streamed ?? UNAVAILABLE_TEXT,
               citations: payload.citations ?? [],
               refused: Boolean(payload.refused),
+              truncated: Boolean(payload.truncated),
               spoken: askedAloud && Boolean(payload.answer),
             });
             closed = true;
           } else if (event === "error") {
-            settle({ text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
+            // Keep whatever already arrived. It was vetted on the way out, the
+            // reader has read it, and replacing a real answer with "unavailable"
+            // because the last sentence never came is worse than saying it
+            // stops early — that was the actual bug behind an answer vanishing
+            // after half a minute on screen.
+            settle(streamed.trim()
+              ? { text: streamed, citations: [], refused: false, truncated: true, spoken: false }
+              : { text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
             closed = true;
           }
         }
       }
 
-      // The connection ended without a verdict — a dropped socket, not an
-      // answer. Whatever streamed is unconfirmed, so it is not kept.
-      if (!closed) settle({ text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
+      // The connection ended without a verdict — a dropped socket. Same rule:
+      // text that reached the reader was already checked, so it stays, marked
+      // as ending early.
+      if (!closed) {
+        settle(streamed.trim()
+          ? { text: streamed, citations: [], refused: false, truncated: true, spoken: false }
+          : { text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
+      }
     } catch (error) {
       if ((error as Error)?.name === "AbortError") {
         setTurns((prev) => prev.filter((t) => t.id !== answerId));
@@ -449,7 +465,18 @@ export default function Assistant() {
                 </div>
               )}
 
-              {turn.role === "assistant" && (turn.spoken || turn.lang) && (
+              {/* An answer that stops early is still an answer — say so rather
+                  than throwing it away. See the catch in /api/chat. */}
+              {turn.truncated && !turn.streaming && (
+                <p className="assttrunc" role="note">
+                  This answer stops early — the assistant ran out of time before finishing. Ask again for the rest.
+                </p>
+              )}
+
+              {/* Read aloud, on EVERY answer rather than only spoken ones. It
+                  auto-plays only when the question was asked out loud: a typed
+                  question has not consented to sound. */}
+              {turn.role === "assistant" && !turn.streaming && turn.text.trim() && (
                 <SpeakButton text={turn.text} language={turn.lang} autoPlay={turn.spoken} halt={halt} />
               )}
             </article>

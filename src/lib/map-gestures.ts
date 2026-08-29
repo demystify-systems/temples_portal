@@ -50,40 +50,52 @@ const MAX_WHEEL_STEP = 2;
 /* ------------------------------------------------------------ mark sizing */
 
 /**
- * Site marks are sized in *content* units, then drawn inside a group scaled by
- * `k` — so a radius that is constant in content units grows on screen as you
- * zoom. Dividing by `k` is what holds a mark still, and `cluster.ts` sizes its
- * cells assuming exactly that (see `CLUSTER_CELL_STAGE`).
+ * Marks are sized in CSS PIXELS, then converted to content units.
  *
- * This used to read `Math.max(4.6 / k, 1.6)`. The floor was applied in content
- * units, so past k≈2.9 the mark stopped shrinking and its screen radius grew as
- * 1.6·k — about 52 px at full zoom, some 17 km across the ground. Zooming into
- * a dense district made the crowding worse, which is the opposite of what
- * zooming is for.
+ * They used to be sized in stage units, which silently made them a different
+ * physical size on every device: the viewBox is 1480 wide, so a phone renders
+ * it at ~0.26 px per unit and a desktop at ~0.72. The same 4.6-unit mark was
+ * 6.6 px across on a laptop and 2.4 px on a phone — and once the close-in taper
+ * applied, barely one pixel. Zoomed into a district on a phone the map went to
+ * specks: 415 sites "shown" and nothing findable.
+ *
+ * Sizing in pixels and dividing by the render scale makes a mark the same size
+ * in the hand on every device, which is the only definition of "visible" that
+ * means anything.
+ *
+ * (The bug before that was the opposite: `Math.max(4.6 / k, 1.6)` floored the
+ * radius in content units, so past k≈2.9 the screen radius GREW as 1.6·k — a
+ * 200 px blob at full zoom. Both failures came from measuring in the wrong
+ * space.)
  */
-export const SITE_MARK_STAGE_R = 4.6;
+export const SITE_MARK_PX = 8;
 
 /**
- * Once nothing clusters any more, the marks taper: past that point the map is
- * being used to tell neighbours apart, and a smaller mark separates two temples
- * a few hundred metres apart that a larger one would merge.
+ * Bigger once nothing clusters any more. Past that point the map is being used
+ * to pick one temple out of a town, and crowding has already been solved by the
+ * zoom — so the mark can afford to be easier to see and to hit.
  */
-export const SITE_MARK_STAGE_R_CLOSE = 2.4;
+export const SITE_MARK_PX_CLOSE = 12;
 
-/** Where the taper begins — kept equal to `cluster.ts`'s `NO_CLUSTER_ZOOM`. */
+/** Where the growth begins — kept equal to `cluster.ts`'s `NO_CLUSTER_ZOOM`. */
 export const MARK_TAPER_FROM_ZOOM = 10;
 
-/** Screen-space mark radius at a given zoom, in stage units. */
-export const siteMarkStageRadius = (k: number): number => {
-  if (k <= MARK_TAPER_FROM_ZOOM) return SITE_MARK_STAGE_R;
+/** Mark diameter in CSS pixels at a given zoom. */
+export const siteMarkScreenPx = (k: number): number => {
+  if (k <= MARK_TAPER_FROM_ZOOM) return SITE_MARK_PX;
   const span = Math.log2(MAX_ZOOM / MARK_TAPER_FROM_ZOOM);
   const t = span <= 0 ? 1 : clamp(Math.log2(k / MARK_TAPER_FROM_ZOOM) / span, 0, 1);
-  return SITE_MARK_STAGE_R + (SITE_MARK_STAGE_R_CLOSE - SITE_MARK_STAGE_R) * t;
+  return SITE_MARK_PX + (SITE_MARK_PX_CLOSE - SITE_MARK_PX) * t;
 };
 
-/** Mark radius in content units — what the SVG `r` attribute takes. */
-export const siteMarkRadius = (k: number): number =>
-  siteMarkStageRadius(k) / Math.max(k, 1e-6);
+/**
+ * Mark radius in CONTENT units — what the SVG `r` attribute takes.
+ *
+ * `pxPerStageUnit` is the scale the browser renders the viewBox at, which under
+ * `preserveAspectRatio="xMidYMid meet"` is `min(width / W, height / H)`.
+ */
+export const siteMarkRadius = (k: number, pxPerStageUnit: number): number =>
+  siteMarkScreenPx(k) / 2 / Math.max(k * pxPerStageUnit, 1e-9);
 
 export const clamp = (value: number, min: number, max: number): number =>
   Math.min(max, Math.max(min, value));

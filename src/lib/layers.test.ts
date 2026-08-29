@@ -385,10 +385,15 @@ test("India coverage is stated from the India point of view (CLAUDE.md rule 1)",
   assert.ok(INDIA_BOUNDS.west <= 68.1, "must reach the Gujarat coast and Lakshadweep");
 });
 
-test("every remote layer carries an attribution and starts switched off", () => {
+test("every remote layer credits its service, on the map, with a timeout", () => {
+  // `defaultOn: false` was asserted here until 2026-08-29. The owner asked for
+  // the state layers on by default, having been shown that Bhuvan's rights are
+  // unconfirmed and that this means every visitor fetches from a government
+  // service on load. That is their call to make; what cannot lapse with it is
+  // the credit, which is now painted on every load rather than only when
+  // someone opts in — a stricter obligation, not a looser one.
   for (const l of MAP_LAYERS.filter(isWms)) {
     assert.ok(l.attribution.trim().length > 0, `${l.id} must credit its service`);
-    assert.equal(l.defaultOn, false, `${l.id} costs someone else's servers; it must be opt-in`);
     assert.ok(l.source.timeoutMs > 0, `${l.id} needs a timeout so a dead service cannot hang`);
     // Crediting a live third-party service is a condition of using it, so the
     // credit cannot be hidden behind a panel the reader may never open.
@@ -396,20 +401,32 @@ test("every remote layer carries an attribution and starts switched off", () => 
   }
 });
 
-test("nothing is painted over the map until a layer that requires it is on", () => {
-  // The default map carries no permanent credit box: the only sources on at
-  // start ship inside this repo and are credited in the panel instead.
-  assert.deepEqual(activeAttributions(defaultLayerState()), []);
+test("whatever is on by default is credited on the map from the first paint", () => {
+  // The inverse of what this asserted before. Layers that reach a third party
+  // are now on at start, so the credit must be up at start too — an unattributed
+  // first paint is the failure now, not an attributed one.
+  const shown = activeAttributions(defaultLayerState());
+  for (const l of MAP_LAYERS.filter((x) => x.defaultOn && x.attributionOnMap)) {
+    assert.ok(shown.includes(l.attribution), `${l.id} is on by default and uncredited on load`);
+  }
   for (const l of MAP_LAYERS) {
     if (l.attributionOnMap) assert.ok(l.attribution.trim().length > 0, `${l.id} has nothing to paint`);
   }
 });
 
-test("a layer with unconfirmed terms may not be on by default", () => {
+test("a layer with unconfirmed terms says so, in plain words, whatever its default", () => {
+  // The "must not auto-load" half of this rule was lifted by the owner on
+  // 2026-08-29 (see BHUVAN_TERMS). The disclosure half is not theirs to waive
+  // by accident, so it is asserted harder: an unconfirmed layer must state the
+  // position, and must say which way the default now runs.
   for (const l of MAP_LAYERS) {
     if (l.terms.status !== "unconfirmed") continue;
-    assert.equal(l.defaultOn, false, `${l.id} has unconfirmed terms and must not auto-load`);
     assert.ok(l.terms.note.trim().length > 40, `${l.id} must explain the position in plain words`);
+    assert.ok(/unconfirmed/i.test(l.terms.note), `${l.id} must name the rights position`);
+    if (l.defaultOn) {
+      assert.ok(/on by default/i.test(l.terms.note),
+        `${l.id} auto-loads on unconfirmed terms and must say so`);
+    }
   }
 });
 
@@ -427,8 +444,14 @@ test("builtinOffClasses names only the builtin layers that are switched off", ()
 });
 
 test("attribution and terms surface exactly while their layer is on", () => {
-  const off = defaultLayerState();
-  assert.deepEqual(activeTermsNotes(off), [], "nothing unconfirmed is on at start");
+  // The unconfirmed-terms note is now up from the first paint, because the
+  // layer it belongs to is. That is the point of the note: it appears wherever
+  // the layer does, and the layer is now everywhere.
+  const start = defaultLayerState();
+  assert.equal(activeTermsNotes(start).length, 1, "the unconfirmed-terms note must be up at start");
+
+  const off = { ...start, "india-state-outlines": false, "india-state-areas": false };
+  assert.deepEqual(activeTermsNotes(off), [], "and gone once both layers are switched off");
 
   const on = { ...off, "india-state-outlines": true };
   const credits = activeAttributions(on);
