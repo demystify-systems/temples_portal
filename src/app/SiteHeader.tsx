@@ -134,7 +134,7 @@ export default function SiteHeader({
             className={`hamb ${open ? "on" : ""}`}
             aria-expanded={open}
             aria-controls={menuId}
-            aria-label={open ? "Close menu" : "Open menu"}
+            aria-label={open ? t("nav.close") : t("nav.open")}
             onClick={() => setOpen((v) => !v)}
           >
             <span className="hambox" aria-hidden="true"><i /><i /><i /></span>
@@ -180,7 +180,7 @@ export default function SiteHeader({
       >
         <div className="navhead">
           <span className="eyebrow" lang={lang}>{t("nav.heading")}</span>
-          <button type="button" className="navclose" onClick={() => close(true)} aria-label="Close menu">×</button>
+          <button type="button" className="navclose" onClick={() => close(true)} aria-label={t("nav.close")}>×</button>
         </div>
 
         <ul className="navlist">
