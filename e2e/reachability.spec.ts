@@ -50,6 +50,34 @@ async function unreachableControls(page: Page): Promise<Unreachable[]> {
     const drawerOpen = document.querySelector(".navdrawer")?.classList.contains("open") ?? false;
     const out: Unreachable[] = [];
 
+    /**
+     * Below its own scroll container, not underneath something.
+     *
+     * `getBoundingClientRect` reports layout position, so a control scrolled
+     * out of a panel still reports coordinates — ones that land on whatever is
+     * painted there. That is a control the reader reaches by scrolling, which
+     * is not the defect this suite looks for.
+     */
+    const clippedByScroller = (el: Element, r: DOMRect): boolean => {
+      for (let p = el.parentElement; p; p = p.parentElement) {
+        const cs = getComputedStyle(p);
+        if (!/(auto|scroll)/.test(cs.overflowY) && !/(auto|scroll)/.test(cs.overflowX)) continue;
+        const pr = p.getBoundingClientRect();
+        if (r.bottom <= pr.top || r.top >= pr.bottom || r.right <= pr.left || r.left >= pr.right) return true;
+      }
+      return false;
+    };
+
+    /**
+     * The detail panel becomes an overlay below 920px and covers the map it
+     * sits on. That is the design — it is dismissable and not modal — so the
+     * map's own controls being behind it is expected, exactly as with the
+     * nav drawer above. What must still hold is that the PANEL's controls work.
+     */
+    const panel = document.querySelector(".side.open");
+    const panelIsOverlay = panel ? getComputedStyle(panel).position !== "static" : false;
+    const panelRect = panelIsOverlay ? panel!.getBoundingClientRect() : null;
+
     for (const el of document.querySelectorAll<HTMLElement>(
       'button, a[href], input, select, [role="slider"]',
     )) {
@@ -62,6 +90,13 @@ async function unreachableControls(page: Page): Promise<Unreachable[]> {
 
       const cs = getComputedStyle(el);
       if (cs.visibility === "hidden" || cs.display === "none" || cs.pointerEvents === "none") continue;
+      if (clippedByScroller(el, r)) continue;
+      if (panelRect && !panel!.contains(el)) {
+        const cx0 = r.left + r.width / 2, cy0 = r.top + r.height / 2;
+        const behind = cx0 >= panelRect.left && cx0 <= panelRect.right
+          && cy0 >= panelRect.top && cy0 <= panelRect.bottom;
+        if (behind) continue;
+      }
 
       const cx = r.left + r.width / 2;
       const cy = r.top + r.height / 2;
@@ -114,7 +149,11 @@ test.describe("every control can actually be tapped", () => {
     await page.evaluate(() => localStorage.clear());
     await page.reload();
     await page.waitForTimeout(1_500);
-    await expect(page.locator(".side.sheet.open")).toBeVisible();
+    // `.side.open`, not `.side.sheet.open`: `sheet` is the mobile presentation
+    // only. On tablet and desktop the same panel renders as a side rail without
+    // that class, so the narrower selector passed on phones and failed on every
+    // wider viewport — a bug in this test, not in the app.
+    await expect(page.locator(".side.open")).toBeVisible();
 
     const found = await unreachableControls(page);
     expect(found, `controls covered while the detail sheet is open:\n${report(found)}`).toEqual([]);
@@ -159,16 +198,24 @@ test.describe("every control can actually be tapped", () => {
     const toggle = page.locator(".legendtoggle");
     const width = async () => (await legend.boundingBox())?.width ?? 0;
 
-    const collapsed = await width();
+    const start = await width();
+    const startExpanded = await toggle.getAttribute("aria-expanded");
     // A real click: Playwright hit-tests and will fail if something is on top,
     // which a page.evaluate(el => el.click()) would silently sail through.
     await toggle.click();
     await page.waitForTimeout(350);
-    const expanded = await width();
-    expect(expanded, "tapping the key should widen it").toBeGreaterThan(collapsed);
+    const toggled = await width();
+
+    // The key starts EXPANDED on wide screens and COLLAPSED on phones, so
+    // "tapping widens it" is only true on one of them — which is why this
+    // asserted the wrong direction on desktop and tablet. What actually has to
+    // hold either way is that a real tap changes the state at all.
+    expect(toggled, "a real tap should change the key's width").not.toBe(start);
+    expect(await toggle.getAttribute("aria-expanded")).not.toBe(startExpanded);
 
     await toggle.click();
     await page.waitForTimeout(350);
-    expect(await width(), "tapping again should collapse it").toBeLessThan(expanded);
+    expect(await width(), "tapping again should return it to where it started").toBe(start);
+    expect(await toggle.getAttribute("aria-expanded")).toBe(startExpanded);
   });
 });

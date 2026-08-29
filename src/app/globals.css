@@ -809,6 +809,19 @@ table.gz tr:last-child td{border-bottom:none}
   .coachok { min-height: 44px; width: 100%; }
 }
 
+/* Wide screens put the era key bottom-left, immediately above the timeline —
+   exactly where this bubble lands. Measured at 768x891: the coach spanned
+   x 18-338 / y 678-807 and the key sat at x 13-68 / y 736-770, entirely inside
+   it, so the key rendered perfectly and never received a tap.
+
+   Anchored right of the key and left of the assistant launcher (x 694+ at that
+   width), which is the one horizontal band where the hint covers nothing. The
+   same class of bug as the mobile one fixed in 9971fd2, on the viewports that
+   fix did not reach. */
+@media (min-width: 721px) {
+  .coach { left: auto; right: 96px; }
+}
+
 /* ---- T-043 follow-through: the panel's own controls are reachable ---------
    `.crumb` and `.ixrow` were a <span> and a <div> carrying onClick — invisible
    to the keyboard and to assistive technology, which is the same WCAG failure
