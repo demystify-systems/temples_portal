@@ -32,6 +32,7 @@ import VoiceButton, { SpeakButton, type VoiceTranscript } from "./VoiceButton";
 import dynamic from "next/dynamic";
 import { useUiLanguage } from "./useUiLanguage";
 import { useDraggableLauncher } from "./useDraggableLauncher";
+import { usePathname } from "next/navigation";
 import { TempleBell } from "./TempleBell";
 
 /**
@@ -120,6 +121,14 @@ const stageLabel = (s: { stage: string; records?: number } | null): string => {
 const RING_MS = 1500;
 
 export default function Assistant() {
+  /**
+   * The page the reader is on, sent with every question.
+   *
+   * "Who built this?" is the commonest thing anyone types while looking at a
+   * temple, and without the route it is a question with no subject.
+   */
+  const pathname = usePathname();
+
   const [open, setOpen] = useState(false);
   /**
    * The swing is deliberately not tied to `open`. A bell rings when it is
@@ -242,6 +251,7 @@ export default function Assistant() {
         body: JSON.stringify({
           question: asked,
           stream: true,
+          page: pathname,
           // The same memory the call has. A typed follow-up — "and who built
           // it?" — is as common as a spoken one, and refusing it because the
           // pronoun names no temple is the same defect either way.
