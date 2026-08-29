@@ -35,3 +35,44 @@ jobs:
       # step was red on develop while the live site deployed perfectly fine.
       - name: Build site
         run: npm run build
+
+  # The reachability suite hit-tests every control against elementFromPoint, so
+  # it catches the one class of bug that renders perfectly and simply never
+  # receives a tap. Three of those shipped to production before this job
+  # existed, because the suite was written and then never run by anything.
+  #
+  # A separate job, not a step: it needs browsers and takes minutes, and a red
+  # e2e should not hide whether the build itself is green.
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      # Chromium and WebKit only: the projects are phone, tablet and desktop
+      # viewports, and Firefox would add minutes without adding a viewport.
+      - name: Install browsers
+        run: npx playwright install --with-deps chromium webkit
+
+      # A placeholder, deliberately. layout.tsx renders the assistant only when
+      # this is set, so without it the launcher — and the coach mark that once
+      # covered a control behind it — are simply absent from the page under
+      # test. No request is made during these tests, so no real key is needed.
+      - name: Reachability
+        env:
+          SARVAM_API_KEY: placeholder-ci-no-request-is-made
+        run: npx playwright test e2e/reachability.spec.ts
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14
