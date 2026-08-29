@@ -32,6 +32,7 @@ import VoiceButton, { SpeakButton, type VoiceTranscript } from "./VoiceButton";
 import dynamic from "next/dynamic";
 import { useUiLanguage } from "./useUiLanguage";
 import { useDraggableLauncher } from "./useDraggableLauncher";
+import { TempleBell } from "./TempleBell";
 
 /**
  * The call surface, loaded only when someone actually asks to speak.
@@ -89,8 +90,27 @@ const UNAVAILABLE_TEXT =
 
 let nextId = 0;
 
+/** How long the swing runs. Matches `bell-ring` in globals.css. */
+const RING_MS = 1500;
+
 export default function Assistant() {
   const [open, setOpen] = useState(false);
+  /**
+   * The swing is deliberately not tied to `open`. A bell rings when it is
+   * struck, including the strike that closes the panel again — tying it to the
+   * opened state would leave every second tap silent.
+   */
+  const [ringing, setRinging] = useState(false);
+  const ringTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => { if (ringTimer.current) clearTimeout(ringTimer.current); }, []);
+  const strike = useCallback(() => {
+    // Cleared first so a rapid second tap restarts the swing rather than being
+    // swallowed by the animation already running.
+    setRinging(false);
+    requestAnimationFrame(() => setRinging(true));
+    if (ringTimer.current) clearTimeout(ringTimer.current);
+    ringTimer.current = setTimeout(() => setRinging(false), RING_MS);
+  }, []);
   const [question, setQuestion] = useState("");
   const [turns, setTurns] = useState<readonly Turn[]>([]);
   const [pending, setPending] = useState(false);
@@ -251,7 +271,7 @@ export default function Assistant() {
           launcher.ref.current = node;
         }}
         type="button"
-        className={`asstlaunch${launcher.dragging ? " dragging" : ""}`}
+        className={`asstlaunch${launcher.dragging ? " dragging" : ""}${ringing ? " ringing" : ""}`}
         aria-expanded={open}
         aria-controls="asst-panel"
         style={launcher.style}
@@ -259,11 +279,12 @@ export default function Assistant() {
         // A drag must not also open the panel. The hook reports which gesture
         // just finished; without this, moving the button out of the way opens
         // the very panel you were moving it away from.
-        onClick={() => { if (launcher.wasTap()) setOpen((was) => !was); }}
+        onClick={() => { if (launcher.wasTap()) { strike(); setOpen((was) => !was); } }}
         onDoubleClick={launcher.reset}
-        title="Drag to move · double-click to put it back"
+        aria-label={t("assistant.title")}
+        title={`${t("assistant.title")} · drag to move, double-click to put it back`}
       >
-        <span aria-hidden="true">◈</span> {t("assistant.title")}
+        <TempleBell />
       </button>
 
       {open && (
