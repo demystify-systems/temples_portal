@@ -35,13 +35,11 @@ const FULL = {
   SARVAM_VOICE_AGENT_APP_ID: "a",
 } as const;
 
-test("version defaults to 1, because the handshake 404s without one", () => {
-  // Arrange: a deployment that never heard of SARVAM_VOICE_AGENT_VERSION.
+test("version is unset by default, so a publish needs no redeploy", () => {
+  // The handshake resolves the live published version on its own. Pinning 1
+  // here would hold the agent on version 1 forever, silently, after a publish.
   withEnv({ ...FULL }, () => {
-    // Act
-    const config = voiceAgentConfig();
-    // Assert
-    assert.equal(config.version, 1);
+    assert.equal(voiceAgentConfig().version, null);
   });
 });
 
@@ -51,13 +49,13 @@ test("an explicit version wins, so a second published version can be selected", 
   });
 });
 
-test("junk versions fall back instead of reaching the SDK", () => {
-  // An unset dashboard variable often arrives as "" rather than absent, and a
-  // NaN would be dropped by the SDK as falsy — reproducing the original 404
-  // with no clue as to why.
+test("junk versions are dropped rather than sent", () => {
+  // An unset dashboard variable often arrives as "" rather than absent. A NaN
+  // reaching the SDK would be dropped as falsy anyway; making that explicit
+  // means the pinned-version path is either a real integer or nothing.
   for (const junk of ["", "   ", "latest", "0", "-1", "1.5"]) {
     withEnv({ ...FULL, SARVAM_VOICE_AGENT_VERSION: junk }, () => {
-      assert.equal(voiceAgentConfig().version, 1, `"${junk}" should fall back`);
+      assert.equal(voiceAgentConfig().version, null, `"${junk}" should be dropped`);
     });
   }
 });
