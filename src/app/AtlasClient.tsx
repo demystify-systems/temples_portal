@@ -20,6 +20,7 @@ import {
   scaleAbout, siteMarkRadius, toStagePoint, translateBy, viewportScale, wheelZoomFactor,
   type Point, type Tap, type View,
 } from "@/lib/map-gestures";
+import { initialView } from "@/lib/map-view";
 import {
   cellSizeFor, clusterAriaLabel, clusterPoints, clusterRadius, donutArcs, pipOffsets,
   shouldCluster, viewForBounds, type Cluster, type ClusterPoint,
@@ -294,7 +295,20 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   const wrapRef = useRef<HTMLDivElement>(null);
   const sideRef = useRef<HTMLElement>(null);
   const tlRef = useRef<SVGSVGElement>(null);
-  const view = useRef<View>({ x: 0, y: 0, k: 1 });
+  /**
+   * Phones open on the subcontinent rather than the whole 58°E-132°E frame.
+   * Read once, from a ref initialiser, so it is settled before the first paint
+   * and a resize afterwards never yanks the map out from under a reader.
+   */
+  // `useState`'s lazy initialiser, not `useRef(expr)`: a ref evaluates its
+  // argument on EVERY render, which during a pan would mean a matchMedia call
+  // per frame for a value that cannot change mid-gesture.
+  const [openingView] = useState<View>(() =>
+    typeof window === "undefined"
+      ? { x: 0, y: 0, k: 1 }
+      : initialView(EXTENT, window.matchMedia(SHEET_QUERY).matches),
+  );
+  const view = useRef<View>(openingView);
   const marks = useRef(new Map<string, { g: SVGGElement; mark: SVGElement; halo: SVGCircleElement; kind: string }>());
   const yearRef = useRef(year); yearRef.current = year;
   const fromRef = useRef(from); fromRef.current = from;
@@ -489,6 +503,17 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     if (frame.current) return;
     frame.current = requestAnimationFrame(() => { frame.current = 0; applyView(); });
   };
+
+  /**
+   * Paint the opening view once, after mount.
+   *
+   * `applyView` runs only from setView's rAF, and the server-rendered markup
+   * carries no transform at all. On a desktop the opening view IS the identity,
+   * so that gap was invisible. On a phone the ref said "India" and the DOM went
+   * on showing the whole Indic world — the framing existed and was never drawn.
+   */
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { setView(view.current); }, []);
 
   // ---- clustering (T-042) -------------------------------------------------
   // Circuit mode suspends the circuit *filter*: tracing dims the rest of the map
@@ -994,7 +1019,11 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }, []);
 
   const zoomCenter = (f: number) => (mapRef.current as unknown as { _zoomAt: (x: number, y: number, f: number) => void })._zoomAt(W / 2, H / 2, f);
-  const resetView = () => setView({ x: 0, y: 0, k: 1 });
+  // "Reset view" returns to where the map OPENED, which on a phone is India.
+  // Sending it to the world view would make reset a different action depending
+  // on the device, and a worse one on the device that needs it most.
+  const resetView = () =>
+    setView(initialView(EXTENT, window.matchMedia(SHEET_QUERY).matches));
   const flyTo = (s: MapSite) => { const k = Math.max(view.current.k, 4.5); setView({ k, x: W / 2 - PX(s.lng) * k, y: H * 0.42 - PY(s.lat) * k }); };
 
   function select(id: string | null, fly = true, focusPanel = false) {
