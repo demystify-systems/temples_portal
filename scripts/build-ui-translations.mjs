@@ -40,6 +40,47 @@ const BASE = "https://api.sarvam.ai";
  */
 const TARGETS = ["hi-IN", "bn-IN", "ta-IN", "te-IN", "mr-IN", "gu-IN", "kn-IN", "ml-IN"];
 
+/**
+ * Hand corrections, applied over the machine's output.
+ *
+ * The generated file has told readers since it was written to "correct it in
+ * this file AND pin it in the script's OVERRIDES" — and no OVERRIDES existed,
+ * so every correction was reverted by the next build. This is that mechanism.
+ *
+ * Each entry records what the model produced and why it is wrong. Add one only
+ * for a string you can justify in the comment; a silent override is just a
+ * second machine translation with fewer eyes on it.
+ *
+ * NOT reviewed by a native speaker. These replace translations that were
+ * plainly wrong in meaning with ones that are defensible — several by
+ * transliteration, which is what the model itself chose for Bengali and
+ * Kannada. A reader of any of these languages should still check them.
+ */
+const OVERRIDES = {
+  "hi-IN": {
+    // "भू-आलेख" is a LAND RECORD — a revenue document. A gazetteer is a
+    // geographical reference work. Transliterated, as bn-IN and kn-IN were.
+    "nav.gazetteer": "गजेटियर",
+  },
+  "ta-IN": {
+    // "அட்டவணை" is a table, schedule or index — not a map. Every other
+    // language rendered "Atlas map" as its word for map; this is Tamil's.
+    "nav.atlas": "வரைபடம்",
+    // "கலைக்களஞ்சியம்" is an ENCYCLOPAEDIA. Different reference work.
+    "nav.gazetteer": "கெசட்டியர்",
+  },
+  "gu-IN": {
+    // "ભૂસ્તરશાસ્ત્રીય ગ્રંથ" is a GEOLOGICAL text — ભૂસ્તરશાસ્ત્ર is geology,
+    // not geography. This atlas is not about rocks.
+    "nav.gazetteer": "ગેઝેટિયર",
+  },
+  "ml-IN": {
+    // "ഗസറ്റ്" is a gazette: an official government journal. Close to the word
+    // and not the meaning.
+    "nav.gazetteer": "ഗസറ്റിയർ",
+  },
+};
+
 const MAX_RETRIES = 6;
 const BASE_BACKOFF_MS = 1500;
 /** Between calls. Cheaper than being rate-limited and backing off. */
@@ -181,7 +222,8 @@ const main = async () => {
       bundle[key] = await translate(apiKey, strings[key], target);
       await sleep(PACE_MS);
     }
-    translations[target] = bundle;
+    // Hand corrections win over the model, every build.
+    translations[target] = { ...bundle, ...(OVERRIDES[target] ?? {}) };
     // Written after EVERY language, not once at the end. A run that dies on the
     // seventh language must not throw away the six that succeeded.
     mkdirSync(path.dirname(OUT), { recursive: true });
