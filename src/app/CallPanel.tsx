@@ -18,11 +18,13 @@
 
 import { useCall } from "./useCall";
 import { SPOKEN_LANGUAGES, languageByCode } from "@/lib/ai/languages";
+import { useT } from "./useUiLanguage";
 
 /** Cap the orb's growth so a loud room does not push it off its own row. */
 const scaleFor = (level: number): number => 1 + Math.min(0.55, level * 3.2);
 
 export default function CallPanel({ onClose }: { readonly onClose: () => void }) {
+  const t = useT();
   const call = useCall();
   const chosen = languageByCode(call.language);
   const live = call.phase === "listening" || call.phase === "capturing";
@@ -44,13 +46,13 @@ export default function CallPanel({ onClose }: { readonly onClose: () => void })
           that they may. Every option is an endonym — a Tamil speaker looks for
           தமிழ், not for the English word "Tamil". */}
       <div className="calllang">
-        <label htmlFor="call-lang">Speak in</label>
+        <label htmlFor="call-lang">{t("assistant.speakIn")}</label>
         <select
           id="call-lang"
           value={call.language ?? ""}
           onChange={(e) => call.setLanguage(e.target.value || null)}
         >
-          <option value="">Detect automatically</option>
+          <option value="">{t("assistant.detect")}</option>
           {SPOKEN_LANGUAGES.map((l) => (
             <option key={l.code} value={l.code} lang={l.code}>
               {l.endonym}{l.speakable ? "" : " — text reply only"}

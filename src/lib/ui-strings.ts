@@ -33,6 +33,7 @@
 export const UI_STRINGS = {
   "nav.heading": "Navigate",
   "nav.close": "Close",
+  "nav.open": "Open menu",
   "nav.atlas": "Atlas map",
   "nav.atlas.note": "Interactive time-map of every site",
   "nav.gazetteer": "Gazetteer",
@@ -64,6 +65,20 @@ export const UI_STRINGS = {
   "filter.allDynasties": "All dynasties",
   "filter.allCircuits": "All circuits",
 
+  // The construction eras. `id` on each ERAS entry keys these; the entry's
+  // `name` stays English because it is also the ?era= value in shared URLs.
+  "era.ancient": "Ancient",
+  "era.earlyMedieval": "Early medieval",
+  "era.highMedieval": "High medieval",
+  "era.lateMedieval": "Late medieval",
+  "era.earlyModern": "Early modern",
+  "era.modern": "Modern",
+  "era.ancient.note": "Maurya · Satavahana · Gupta · Vakataka",
+  "era.earlyMedieval.note": "Pallava · Chalukya · Rashtrakuta · Pala · Sailendra",
+  "era.highMedieval.note": "Chola · Chandela · Hoysala · Kakatiya · Khmer · Pagan",
+  "era.lateMedieval.note": "Vijayanagara · Nayaka · Malla · Ayutthaya",
+  "era.earlyModern.note": "Maratha · Sikh · Konbaung · Rattanakosin",
+  "era.modern.note": "Colonial to present · revivals & new mandirs",
   "timeline.period": "Period",
   "timeline.showAll": "show all eras",
   "timeline.play": "Play the timeline sweep",
