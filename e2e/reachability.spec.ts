@@ -219,3 +219,32 @@ test.describe("every control can actually be tapped", () => {
     expect(await toggle.getAttribute("aria-expanded")).toBe(startExpanded);
   });
 });
+
+/**
+ * The opening framing, which is a different failure from a covered control: the
+ * view existed in a ref and was never written to the DOM, so the map rendered
+ * the whole Indic world while the code believed it was showing India.
+ */
+test.describe("the map opens where it should", () => {
+  const zoomOf = async (page: Page): Promise<number> =>
+    page.evaluate(() => {
+      const g = document.querySelector("svg.map")?.firstElementChild;
+      const m = /scale\(\s*([-\d.]+)/.exec(g?.getAttribute("transform") ?? "");
+      return m ? Number(m[1]) : 1;
+    });
+
+  test("a phone opens zoomed into the subcontinent", async ({ page }) => {
+    test.skip(page.viewportSize()!.width > 720, "the closer framing is for narrow screens only");
+    await page.goto("/");
+    await page.waitForTimeout(1_200);
+    expect(await zoomOf(page), "the phone view should be zoomed in past the world view")
+      .toBeGreaterThan(1);
+  });
+
+  test("a wide screen still opens on the whole region", async ({ page }) => {
+    test.skip(page.viewportSize()!.width <= 720, "desktop and tablet only");
+    await page.goto("/");
+    await page.waitForTimeout(1_200);
+    expect(await zoomOf(page)).toBe(1);
+  });
+});
