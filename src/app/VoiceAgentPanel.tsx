@@ -153,6 +153,9 @@ export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => v
           // conversation linkable across visits.
           user_identifier: "web",
           interaction_type: InteractionType.CALL,
+          // Without this the signed-URL request 404s. See the note on
+          // `version` in src/lib/ai/voice-agent.ts.
+          version: typeof settings.version === "number" ? settings.version : 1,
           input_sample_rate: 16000,
           output_sample_rate: 22050,
           ...(language && language in AGENT_LANGUAGES ? { initial_language_name: AGENT_LANGUAGES[language as keyof typeof AGENT_LANGUAGES] as never } : {}),

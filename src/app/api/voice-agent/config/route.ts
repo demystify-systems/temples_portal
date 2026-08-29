@@ -22,9 +22,9 @@ export async function GET(): Promise<Response> {
     // shows the cited cascade instead, so this is a state, not a failure.
     return NextResponse.json({ configured: false }, { status: 200 });
   }
-  const { orgId, workspaceId, appId } = voiceAgentConfig();
+  const { orgId, workspaceId, appId, version } = voiceAgentConfig();
   return NextResponse.json(
-    { configured: true, orgId, workspaceId, appId },
+    { configured: true, orgId, workspaceId, appId, version },
     { headers: { "Cache-Control": "no-store" } },
   );
 }
