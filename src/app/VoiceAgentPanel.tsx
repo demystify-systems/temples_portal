@@ -147,7 +147,22 @@ export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => v
           org_id: settings.orgId,
           workspace_id: settings.workspaceId,
           app_id: settings.appId,
-          user_identifier_type: "anonymous",
+          /**
+           * "custom", not "anonymous" — and this is the whole reason the Speak
+           * tab was dead.
+           *
+           * `anonymous` reads like the privacy-preserving choice and is what
+           * this sent for weeks. Sarvam accepts it at the handshake, issues a
+           * signed URL, and then refuses the socket with a bare 403 and no
+           * message. Isolated by running Sarvam's own widget against the same
+           * agent and diffing the two URLs: that one parameter was the only
+           * difference, and flipping it opens the socket.
+           *
+           * No privacy is given up. `user_identifier` below is the constant
+           * "web" for every visitor, so "custom" here means "an identifier we
+           * chose", not "an identity we tracked".
+           */
+          user_identifier_type: "custom",
           // No identity is sent. A pilgrim asking about a temple is not
           // something this project records, and a stable id would make the
           // conversation linkable across visits.
@@ -155,7 +170,11 @@ export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => v
           interaction_type: InteractionType.CALL,
           // Without this the signed-URL request 404s. See the note on
           // `version` in src/lib/ai/voice-agent.ts.
-          version: typeof settings.version === "number" ? settings.version : 1,
+          // Omitted unless a version is pinned: the handshake resolves the
+          // live published version on its own, so sending nothing means a
+          // publish is picked up without a redeploy. The earlier 404 that this
+          // was added for came from the old key, not from the missing version.
+          ...(typeof settings.version === "number" ? { version: settings.version } : {}),
           input_sample_rate: 16000,
           output_sample_rate: 22050,
           ...(language && language in AGENT_LANGUAGES ? { initial_language_name: AGENT_LANGUAGES[language as keyof typeof AGENT_LANGUAGES] as never } : {}),
