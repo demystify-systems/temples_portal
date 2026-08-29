@@ -53,6 +53,8 @@ export type ChatModel = (typeof CHAT_MODELS)[number];
  * when max_tokens is spent on reasoning. With no trace, that does not happen.
  * The workarounds are kept as a safety net, not as the normal path.
  */
+import { mergeToolCallDeltas, type ToolCallAccumulator } from "./stream.ts";
+
 export const DEFAULT_CHAT_MODEL: ChatModel = "sarvam-105b-conversations";
 
 /** True for models that emit a billed `reasoning_content` trace before answering. */
@@ -327,4 +329,102 @@ export async function translate(opts: {
   if (!res.ok) throw new SarvamError(await res.text(), res.status);
   const json = await res.json();
   return json?.translated_text ?? "";
+}
+
+/** What a streamed completion emits: prose as it is written, then any calls. */
+export type StreamEvent =
+  | { readonly kind: "content"; readonly text: string }
+  | { readonly kind: "tool_calls"; readonly calls: readonly ToolCall[] };
+
+/**
+ * The same completion, delivered as it is written.
+ *
+ * Tool calls stream too, so this handles both: the model may answer directly,
+ * or it may open one or more calls first. Content is yielded as it arrives;
+ * assembled calls are yielded once at the end, because a call's arguments are
+ * JSON fragments that mean nothing until the last one lands.
+ *
+ * Sarvam's completions endpoint is OpenAI-shaped, so this is `stream: true`
+ * over `choices[0].delta`, terminated by `[DONE]`.
+ */
+export async function* chatStream(opts: {
+  apiKey: string;
+  messages: ChatMessage[];
+  model?: ChatModel;
+  tools?: unknown[];
+  maxTokens?: number;
+  temperature?: number;
+  signal?: AbortSignal;
+}): AsyncGenerator<StreamEvent, void, unknown> {
+  const {
+    apiKey, messages, model = DEFAULT_CHAT_MODEL, tools,
+    maxTokens = MIN_ANSWER_TOKENS, temperature = 0.2, signal,
+  } = opts;
+
+  const res = await fetch(`${BASE}/v1/chat/completions`, {
+    method: "POST",
+    headers: headers(apiKey),
+    signal,
+    body: JSON.stringify({
+      model, messages, max_tokens: maxTokens, temperature, stream: true,
+      ...(tools?.length ? { tools } : {}),
+    }),
+  });
+
+  if (!res.ok || !res.body) {
+    const body = await res.text().catch(() => "");
+    let message = body.slice(0, 300);
+    let requestId: string | undefined;
+    try {
+      const parsed = JSON.parse(body);
+      message = parsed?.error?.message ?? message;
+      requestId = parsed?.error?.request_id;
+    } catch { /* keep the raw body */ }
+    throw new SarvamError(message || "no stream body", res.status, requestId);
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  // Frames split anywhere, including mid-multibyte and mid-JSON, so the tail is
+  // carried rather than parsed.
+  let buffer = "";
+  let calls: ToolCallAccumulator = {};
+
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+
+      let cut: number;
+      while ((cut = buffer.indexOf("\n")) !== -1) {
+        const line = buffer.slice(0, cut).trim();
+        buffer = buffer.slice(cut + 1);
+        if (!line.startsWith("data:")) continue;
+
+        const payload = line.slice(5).trim();
+        if (payload === "[DONE]") {
+          const assembled = Object.values(calls);
+          if (assembled.length > 0) yield { kind: "tool_calls", calls: assembled as ToolCall[] };
+          return;
+        }
+
+        try {
+          const delta = JSON.parse(payload)?.choices?.[0]?.delta;
+          if (typeof delta?.content === "string" && delta.content.length > 0) {
+            yield { kind: "content", text: delta.content };
+          }
+          calls = mergeToolCallDeltas(calls, delta?.tool_calls);
+        } catch {
+          // One unparseable frame is skipped rather than thrown: it must not
+          // lose an answer that is otherwise arriving fine.
+        }
+      }
+    }
+
+    const assembled = Object.values(calls);
+    if (assembled.length > 0) yield { kind: "tool_calls", calls: assembled as ToolCall[] };
+  } finally {
+    await reader.cancel().catch(() => {});
+  }
 }

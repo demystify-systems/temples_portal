@@ -71,6 +71,8 @@ type Turn = {
   readonly lang: string | null;
   /** Asked out loud — so the answer is read back without being asked to be. */
   readonly spoken: boolean;
+  /** Still arriving. Renders the caret and suppresses the citation block. */
+  readonly streaming?: boolean;
 };
 
 /** What the microphone last heard, kept until the question is asked or cleared. */
@@ -89,6 +91,28 @@ const UNAVAILABLE_TEXT =
   "The assistant is unavailable right now. Every record it draws on is still browsable in the gazetteer.";
 
 let nextId = 0;
+
+/**
+ * What each server stage is called on screen.
+ *
+ * Each one names work that is actually happening — the stages are emitted by
+ * the route as it reaches them, not on a timer. A progress message that is
+ * really a stopwatch is a lie the first time something runs slowly.
+ */
+const STAGE_LABELS: Record<string, string> = {
+  retrieving: "Searching the atlas",
+  reading: "Reading the records",
+  consulting: "Looking up more records",
+  writing: "Writing the answer",
+};
+
+const stageLabel = (s: { stage: string; records?: number } | null): string => {
+  if (!s) return "Searching the atlas";
+  if (s.stage === "reading" && typeof s.records === "number" && s.records > 0) {
+    return `Reading ${s.records.toLocaleString()} matching record${s.records === 1 ? "" : "s"}`;
+  }
+  return STAGE_LABELS[s.stage] ?? "Working";
+};
 
 /** How long the swing runs. Matches `bell-ring` in globals.css. */
 const RING_MS = 1500;
@@ -114,6 +138,8 @@ export default function Assistant() {
   const [question, setQuestion] = useState("");
   const [turns, setTurns] = useState<readonly Turn[]>([]);
   const [pending, setPending] = useState(false);
+  /** What the server is doing right now, so the wait is legible rather than blank. */
+  const [stage, setStage] = useState<{ stage: string; records?: number } | null>(null);
   const [heard, setHeard] = useState<Heard | null>(null);
   /** Bumped to silence any playback from outside — closing must not keep talking. */
   const [halt, setHalt] = useState(0);
@@ -194,13 +220,26 @@ export default function Assistant() {
     setHeard(null);
     setPending(true);
 
+    // The turn the answer streams into, created empty so the reader sees the
+    // reply take shape rather than a spinner that ends in a wall of text.
+    const answerId = nextId++;
+    setTurns((prev) => [...prev, {
+      id: answerId, role: "assistant", text: "", citations: [], refused: false,
+      lang: askedLanguage, spoken: false, streaming: true,
+    }]);
+    setStage({ stage: "retrieving" });
+
+    const settle = (patch: Partial<Turn>) =>
+      setTurns((prev) => prev.map((t) => (t.id === answerId ? { ...t, ...patch, streaming: false } : t)));
+
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
         signal: controller.signal,
         body: JSON.stringify({
           question: asked,
+          stream: true,
           // The same memory the call has. A typed follow-up — "and who built
           // it?" — is as common as a spoken one, and refusing it because the
           // pronoun names no temple is the same defect either way.
@@ -213,39 +252,79 @@ export default function Assistant() {
           language: askedLanguage ?? (typeof navigator === "undefined" ? undefined : navigator.language),
         }),
       });
-      const data: unknown = await response.json().catch(() => null);
-      const payload = (data ?? {}) as { answer?: string; citations?: Citation[]; refused?: boolean; error?: string };
 
-      const text =
-        response.ok && payload.answer
-          ? payload.answer
-          : payload.error && response.status === 429
-            ? payload.error
-            : UNAVAILABLE_TEXT;
-
-      setTurns((prev) => [
-        ...prev,
-        {
-          id: nextId++,
-          role: "assistant",
-          text,
+      // Rate limits and validation answer in JSON before the stream ever opens.
+      if (!response.headers.get("content-type")?.includes("text/event-stream")) {
+        const payload = ((await response.json().catch(() => null)) ?? {}) as
+          { answer?: string; citations?: Citation[]; refused?: boolean; error?: string };
+        settle({
+          text: payload.answer ?? (response.status === 429 && payload.error ? payload.error : UNAVAILABLE_TEXT),
           citations: response.ok ? (payload.citations ?? []) : [],
           refused: Boolean(payload.refused) || !response.ok,
-          lang: askedLanguage,
-          // Read back only when the question was asked out loud: a typed
-          // question has not consented to sound.
           spoken: askedAloud && response.ok && Boolean(payload.answer),
-        },
-      ]);
+        });
+        return;
+      }
+
+      const reader = response.body!.getReader();
+      const decoder = new TextDecoder();
+      let sse = "";
+      let streamed = "";
+      let closed = false;
+
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        sse += decoder.decode(value, { stream: true });
+
+        // Frames are separated by a blank line; a partial one waits.
+        let split: number;
+        while ((split = sse.indexOf("\n\n")) !== -1) {
+          const frame = sse.slice(0, split);
+          sse = sse.slice(split + 2);
+
+          const event = /^event: (.*)$/m.exec(frame)?.[1];
+          const raw = /^data: (.*)$/m.exec(frame)?.[1];
+          if (!event || !raw) continue;
+          let data: Record<string, unknown>;
+          try { data = JSON.parse(raw); } catch { continue; }
+
+          if (event === "stage") {
+            setStage({ stage: String(data.stage), records: data.records as number | undefined });
+          } else if (event === "text") {
+            streamed += String(data.chunk ?? "");
+            setTurns((prev) => prev.map((t) => (t.id === answerId ? { ...t, text: streamed } : t)));
+          } else if (event === "done") {
+            const payload = data as unknown as { answer?: string; citations?: Citation[]; refused?: boolean };
+            // The authoritative payload replaces the streamed text. Both went
+            // through the same rule, so this is a confirmation, not a rewrite.
+            settle({
+              text: payload.answer ?? streamed ?? UNAVAILABLE_TEXT,
+              citations: payload.citations ?? [],
+              refused: Boolean(payload.refused),
+              spoken: askedAloud && Boolean(payload.answer),
+            });
+            closed = true;
+          } else if (event === "error") {
+            settle({ text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
+            closed = true;
+          }
+        }
+      }
+
+      // The connection ended without a verdict — a dropped socket, not an
+      // answer. Whatever streamed is unconfirmed, so it is not kept.
+      if (!closed) settle({ text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
     } catch (error) {
-      if ((error as Error)?.name === "AbortError") return;
-      setTurns((prev) => [
-        ...prev,
-        { id: nextId++, role: "assistant", text: UNAVAILABLE_TEXT, citations: [], refused: true, lang: askedLanguage, spoken: false },
-      ]);
+      if ((error as Error)?.name === "AbortError") {
+        setTurns((prev) => prev.filter((t) => t.id !== answerId));
+        return;
+      }
+      settle({ text: UNAVAILABLE_TEXT, citations: [], refused: true, spoken: false });
     } finally {
       abortRef.current = null;
       setPending(false);
+      setStage(null);
     }
   }, [question, pending, heard]);
 
@@ -336,9 +415,12 @@ export default function Assistant() {
 
           {turns.map((turn) => (
             <article key={turn.id} className={`asstturn ${turn.role}`}>
-              <p className="assttext" dir="auto">{turn.text}</p>
+              <p className={`assttext${turn.streaming ? " streaming" : ""}`} dir="auto">
+                {turn.text}
+                {turn.streaming && turn.text.trim() && <span className="caret" aria-hidden="true" />}
+              </p>
 
-              {turn.role === "assistant" && (
+              {turn.role === "assistant" && !turn.streaming && (
                 <div className="asstcites">
                   {turn.citations.length > 0 ? (
                     <>
@@ -373,9 +455,13 @@ export default function Assistant() {
             </article>
           ))}
 
-          {pending && (
+          {/* `.trim()` matters: answers often open with a newline, and a chunk
+              that is only whitespace would hide the stage readout while there
+              is still nothing on screen to replace it. */}
+          {pending && !turns.some((t) => t.streaming && t.text.trim()) && (
             <p className="asstpending" role="status">
-              Searching the cited records…
+              <span className="asstdots" aria-hidden="true"><i /><i /><i /></span>
+              {stageLabel(stage)}…
             </p>
           )}
         </div>
