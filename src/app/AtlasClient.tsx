@@ -21,6 +21,9 @@ import {
   type Point, type Tap, type View,
 } from "@/lib/map-gestures";
 import { initialView } from "@/lib/map-view";
+import { useT } from "./useUiLanguage";
+import type { UiKey } from "@/lib/ui-strings";
+import { distinctEraLabels } from "@/lib/era-labels";
 import {
   cellSizeFor, clusterAriaLabel, clusterPoints, clusterRadius, donutArcs, pipOffsets,
   shouldCluster, viewForBounds, type Cluster, type ClusterPoint,
@@ -303,6 +306,32 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   // `useState`'s lazy initialiser, not `useRef(expr)`: a ref evaluates its
   // argument on EVERY render, which during a pan would mean a matchMedia call
   // per frame for a value that cannot change mid-gesture.
+  /**
+   * This file — the whole map, timeline and panel UI — never imported the
+   * translator. Twenty keys were translated into eight languages and rendered
+   * nowhere, while the components beside them hardcoded the same English. The
+   * era strip is what made it visible: "Ancient", "Early medieval" and the rest
+   * stayed English in every language.
+   */
+  const t = useT();
+
+  /**
+   * Era labels in the reader's language.
+   *
+   * `ERA_NAMES` (module scope) stays as the ENGLISH list, because the timeline
+   * band labels, the cluster tooltip and the cluster aria-label are written
+   * with innerHTML from imperative code that runs outside React's render. Those
+   * read the ref, and the effect below repaints them when the language changes
+   * — otherwise stale English stays glued into the DOM after a switch.
+   */
+  const eraNames = useMemo(
+    () => distinctEraLabels(ERAS.map((e) => t(`era.${e.id}` as UiKey)), ERAS.map((e) => e.name)),
+    [t],
+  );
+  const eraNamesRef = useRef(eraNames);
+  eraNamesRef.current = eraNames;
+
+
   const [openingView] = useState<View>(() =>
     typeof window === "undefined"
       ? { x: 0, y: 0, k: 1 }
@@ -620,7 +649,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
       const fontSize = r * (digits === 1 ? 1 : digits === 2 ? 0.82 : 0.62);
       html +=
         `<g class="cl" id="${domIdFor({ kind: "cluster", id: c.key })}" tabindex="0" role="button"` +
-        ` data-cl="${esc(c.key)}" aria-label="${esc(clusterAriaLabel(c, ERA_NAMES))}"` +
+        ` data-cl="${esc(c.key)}" aria-label="${esc(clusterAriaLabel(c, eraNamesRef.current))}"` +
         ` transform="translate(${c.x.toFixed(1)} ${c.y.toFixed(1)})">` +
         `<circle class="cdisc" r="${Math.max(r - sw * 1.4, 0.5).toFixed(2)}" stroke-width="${(sw * 0.9).toFixed(2)}"/>` +
         arcs +
@@ -835,6 +864,14 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }, []);
 
   useEffect(() => { renderPoints(); drawTimeline(); }, [filters, from, year, sel, circuit]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  /**
+   * A language switch has to repaint the imperative layers. The era strip and
+   * the cluster labels are innerHTML, so React re-rendering does not touch
+   * them; without this the timeline keeps its English band labels until the
+   * next filter change.
+   */
+  useEffect(() => { renderPoints(); drawTimeline(); }, [eraNames]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- gestures: pan, pinch zoom, double tap, wheel ----------------------
   // One Pointer Events pipeline drives all of them. Every pointer that is down
@@ -1251,7 +1288,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
   }
   function showClusterTip(c: Cluster, e: MouseEvent) {
     const tip = tipRef.current!;
-    const eras = c.eras.map((x) => `${x.count} ${ERA_NAMES[x.era] ?? ""}`).join(" · ");
+    const eras = c.eras.map((x) => `${x.count} ${eraNamesRef.current[x.era] ?? ""}`).join(" · ");
     tip.innerHTML = `<div class="tn">${c.count} sites</div><div class="tm">${esc(c.traditions.join(" · "))}</div><div class="ty">${esc(eras)}</div>`;
     tip.style.opacity = "1"; moveTip(e);
   }
@@ -1293,7 +1330,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
     ERAS.forEach((e, i) => {
       const to = Math.min(e.to, YEAR_MAX);
       bands += `<rect x="${x(prev)}" y="46" width="${x(to) - x(prev)}" height="6" fill="var(--e${i + 1})" opacity=".55" rx="1"/>`;
-      if (x(to) - x(prev) > 70) labels += `<text x="${(x(prev) + x(to)) / 2}" y="61" text-anchor="middle" font-size="8.5" letter-spacing="1.5" fill="var(--mut)" style="font-family:var(--font-mono),monospace">${e.name.toUpperCase()}</text>`;
+      if (x(to) - x(prev) > 70) labels += `<text x="${(x(prev) + x(to)) / 2}" y="61" text-anchor="middle" font-size="8.5" letter-spacing="1.5" fill="var(--mut)" style="font-family:var(--font-mono),monospace">${(eraNamesRef.current[i] ?? e.name).toUpperCase()}</text>`;
       prev = to;
     });
     const cx = x(Math.min(yearRef.current, YEAR_MAX));
@@ -1362,7 +1399,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
         stats={STATS}
         indexOpen={index}
         onIndexToggle={toggleIndex}
-        note={<><b>{shownCount}</b> shown</>}
+        note={<><b>{shownCount}</b> {t("stats.shown")}</>}
         actions={
           <button
             type="button"
@@ -1384,30 +1421,30 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
       />
 
       <div className={`filters${searchOpen ? " open" : ""}`} id="atlas-filters">
-        <input type="search" placeholder="Search temples, deities, places…" aria-label="Search" value={filters.q}
+        <input type="search" placeholder={t("filter.search")} aria-label={t("filter.search")} value={filters.q}
           onChange={(e) => setFilters({ ...filters, q: e.target.value })} />
         <button className={`ftoggle ${fOpen ? "on" : ""}`} onClick={() => setFOpen(!fOpen)} aria-expanded={fOpen} aria-controls="fwrap">
-          Filters{(filters.country || filters.trad || filters.dyn || filters.cir) ? " ·" : ""} {fOpen ? "▴" : "▾"}
+          {t("filter.filters")}{(filters.country || filters.trad || filters.dyn || filters.cir) ? " ·" : ""} {fOpen ? "▴" : "▾"}
         </button>
         <div className={`fwrap ${fOpen ? "open" : ""}`} id="fwrap">
           <select aria-label="Country" value={filters.country} onChange={(e) => setFilters({ ...filters, country: e.target.value })}>
-            <option value="">All countries</option>{lists.countries.map((c) => <option key={c}>{c}</option>)}
+            <option value="">{t("filter.allCountries")}</option>{lists.countries.map((c) => <option key={c}>{c}</option>)}
           </select>
           <select aria-label="Tradition" value={filters.trad} onChange={(e) => setFilters({ ...filters, trad: e.target.value })}>
-            <option value="">All traditions</option>{lists.trads.map((c) => <option key={c}>{c}</option>)}
+            <option value="">{t("filter.allTraditions")}</option>{lists.trads.map((c) => <option key={c}>{c}</option>)}
           </select>
           <select aria-label="Dynasty" value={filters.dyn} onChange={(e) => setFilters({ ...filters, dyn: e.target.value })}>
-            <option value="">All dynasties</option>{lists.dyns.map((c) => <option key={c}>{c}</option>)}
+            <option value="">{t("filter.allDynasties")}</option>{lists.dyns.map((c) => <option key={c}>{c}</option>)}
           </select>
           <select aria-label="Circuit" value={filters.cir} onChange={(e) => setFilters({ ...filters, cir: e.target.value })}>
-            <option value="">All circuits</option>{lists.cirs.map((c) => <option key={c}>{c}</option>)}
+            <option value="">{t("filter.allCircuits")}</option>{lists.cirs.map((c) => <option key={c}>{c}</option>)}
           </select>
           <button className={`tracebtn ${circuit ? "on" : ""}`} onClick={toggleTrace} aria-pressed={circuit !== null}
             disabled={!circuit && !filters.cir}
             title={circuit ? "Leave circuit mode" : "Number and highlight the selected circuit on the map"}>
             {circuit ? "Exit circuit" : "Trace circuit"}
           </button>
-          <button className="reset" onClick={() => { setFilters(EMPTY); setCircuit(null); }}>reset</button>
+          <button className="reset" onClick={() => { setFilters(EMPTY); setCircuit(null); }}>{t("filter.reset")}</button>
         </div>
         <span className="count"><b>{shownCount}</b> of {MAP_SITES.length} sites shown</span>
         {spellingHelp.length > 0 && (
@@ -1493,13 +1530,13 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
               aria-expanded={legendOpen}
               aria-controls="map-legend-body"
               onClick={() => setLegendOpen((v) => !v)}
-              title={legendOpen ? "Hide the era key" : "Show the era key"}
+              title={legendOpen ? t("map.hideKey") : t("map.showKey")}
             >
               <span className="legendchevron" aria-hidden="true">{legendOpen ? "‹" : "›"}</span>
-              <span className="legendlabel">{legendOpen ? "Key" : "Key"}</span>
+              <span className="legendlabel">{t("map.key")}</span>
             </button>
             <div className="legendbody" id="map-legend-body" hidden={!legendOpen}>
-              {ERAS.map((e, i) => <span className="li" key={e.name}><span className="dot" style={{ background: `var(--e${i + 1})` }} />{e.name}</span>)}
+              {ERAS.map((e, i) => <span className="li" key={e.id}><span className="dot" style={{ background: `var(--e${i + 1})` }} />{eraNames[i]}</span>)}
               <span className="li" style={{ opacity: 0.8 }}>○ sacred, pre-structure</span>
             </div>
           </div>
@@ -1531,7 +1568,7 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
               <button className="crumb" onClick={() => select(null, false)}>
                 ← {circuit ? `back to ${circuit}` : "all sites"}
               </button>
-              <div className="eyebrow" style={{ color: eraColor(eraOf(selected)) }}>{ERAS[eraOf(selected)].name} · {selected.country}</div>
+              <div className="eyebrow" style={{ color: eraColor(eraOf(selected)) }}>{eraNames[eraOf(selected)]} · {selected.country}</div>
               <h2 className="site">{selected.name}</h2>
               {selected.native && <div className="native">{selected.native}</div>}
               <div className="where">{selected.place}{selected.state ? `, ${selected.state}` : ""} · <span className="mono" style={{ fontSize: 11 }}>{selected.lat.toFixed(4)}°, {selected.lng.toFixed(4)}°</span></div>
@@ -1664,10 +1701,10 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
               <div className="sect"><h3>Construction era</h3>
                 <div className="leg">
                   {ERAS.map((e, i) => (
-                    <div key={e.name}>
-                      <div className="li"><span className="dot" style={{ background: `var(--e${i + 1})` }} /><span>{e.name}</span>
+                    <div key={e.id}>
+                      <div className="li"><span className="dot" style={{ background: `var(--e${i + 1})` }} /><span>{eraNames[i]}</span>
                         <span className="yr">{i === 0 ? "to 550 CE" : `${fmtYear(ERAS[i - 1].to)} – ${e.to === 2031 ? "today" : fmtYear(e.to)}`}</span></div>
-                      <div className="note">{e.note}</div>
+                      <div className="note">{t(`era.${e.id}.note` as UiKey)}</div>
                     </div>
                   ))}
                 </div>
@@ -1698,11 +1735,11 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
           )}
         </div>
         <div className="tl-top">
-          <button className="play" aria-label={playing ? "Pause the timeline sweep" : "Play the timeline sweep"}
+          <button className="play" aria-label={playing ? t("timeline.pause") : t("timeline.play")}
             aria-pressed={playing}
             onClick={() => { dismissCoach(); setPlaying(!playing); }}>{playing ? "⏸" : "▶"}</button>
           <div className="yearbox">
-            <small>PERIOD</small>
+            <small>{t("timeline.period")}</small>
             <span>{spanAll ? "All eras" : `${fmtYear(from)} – ${fmtYear(year === YEAR_MAX ? 2026 : year)}`}</span>
           </div>
           <div className="tlsvgwrap">
@@ -1730,17 +1767,17 @@ export default function AtlasClient({ outlines }: { readonly outlines: string })
               const hi = Math.min(era.to, YEAR_MAX);
               const on = from === lo && year === hi;
               return (
-                <button key={era.name} className={`tlera${on ? " on" : ""}`}
+                <button key={era.id} className={`tlera${on ? " on" : ""}`}
                   style={{ borderColor: `var(--e${i + 1})` }}
                   aria-pressed={on}
                   title={`${fmtYear(lo)} – ${fmtYear(hi)}`}
                   onClick={() => { dismissCoach(); setPlaying(false); setRange(on ? [YEAR_MIN, YEAR_MAX] : [lo, hi]); }}>
-                  {era.name}
+                  {eraNames[i]}
                 </button>
               );
             })}
           </div>
-          <button className="showall" onClick={() => { setPlaying(false); setRange([YEAR_MIN, YEAR_MAX]); }}>show all eras</button>
+          <button className="showall" onClick={() => { setPlaying(false); setRange([YEAR_MIN, YEAR_MAX]); }}>{t("timeline.showAll")}</button>
         </div>
       </div>
     </>

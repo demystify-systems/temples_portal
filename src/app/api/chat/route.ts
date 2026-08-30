@@ -31,6 +31,7 @@ import { chat, chatStream, translate, tokenFloorFor, SarvamError, type ChatMessa
 import { retrieve, retrieveById, type AtlasRecord } from "@/lib/ai/retrieve";
 import { TOOLS, executeTool } from "@/lib/ai/tools";
 import { takeCompleteSegments, vetSegment } from "@/lib/ai/stream";
+import { pageContext, contextLabel } from "@/lib/page-context";
 import { buildAnswer, refusalPayload } from "@/lib/ai/answer";
 import { systemPrompt, userTurn, REFUSAL, MAX_QUESTION_CHARS } from "@/lib/ai/prompt";
 
@@ -184,8 +185,10 @@ function streamAnswer(input: {
   maxTokens: number;
   controller: AbortController;
   timer: ReturnType<typeof setTimeout>;
+  /** What the reader has open, in words. See src/lib/page-context.ts. */
+  pageLabel: string | undefined;
 }): Response {
-  const { apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer } = input;
+  const { apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer, pageLabel } = input;
   const encoder = new TextEncoder();
 
   const body = new ReadableStream<Uint8Array>({
@@ -203,7 +206,7 @@ function streamAnswer(input: {
         send("stage", { stage: "reading", records: found.total });
 
         const messages: ChatMessage[] = [
-          { role: "system", content: systemPrompt({ records: found.records, language, total: found.total }) },
+          { role: "system", content: systemPrompt({ records: found.records, language, total: found.total, page: pageLabel }) },
           ...history.map((turn) => ({ role: turn.role, content: turn.content })),
           { role: "user", content: userTurn(question) },
         ];
@@ -334,14 +337,18 @@ export async function POST(request: Request): Promise<Response> {
 
   let question = "";
   let wantsStream = false;
+  let pagePath = "";
   let language: string | undefined;
   let history: { role: "user" | "assistant"; content: string }[] = [];
   let contextIds: string[] = [];
   try {
     const body: unknown = await request.json();
-    const parsed = (body ?? {}) as { question?: unknown; language?: unknown; history?: unknown; context?: unknown; stream?: unknown };
+    const parsed = (body ?? {}) as { question?: unknown; language?: unknown; history?: unknown; context?: unknown; stream?: unknown; page?: unknown };
     question = typeof parsed.question === "string" ? parsed.question.trim() : "";
     wantsStream = parsed.stream === true;
+    // The route the reader has open. Validated in pageContext, which treats it
+    // as untrusted: it arrives from the browser and reaches a corpus lookup.
+    pagePath = typeof parsed.page === "string" ? parsed.page.slice(0, 200) : "";
     language = typeof parsed.language === "string" && parsed.language.trim()
       ? parsed.language.trim().slice(0, 40)
       : undefined;
@@ -420,6 +427,39 @@ export async function POST(request: Request): Promise<Response> {
   let found = retrieve(CORPUS, retrievalQuery, {}, RETRIEVAL_LIMIT);
 
   /**
+   * The record the reader is looking at, pushed to the front.
+   *
+   * "Who built this?" on a temple page has an obvious antecedent to the person
+   * asking and none at all to the model. Putting that record first — and
+   * telling the prompt it is what they are looking at — is what makes the
+   * pronoun answerable instead of refused or answered about the wrong temple.
+   *
+   * It is added to the RECORDS, not asserted as a fact: it carries its own
+   * sources like every other record, and the answer still has to come from
+   * them. A page id matching nothing simply adds nothing.
+   */
+  const ctx = pageContext(pagePath);
+  const pageLabel = contextLabel(ctx) ?? undefined;
+  if (ctx && ctx.kind === "site") {
+    const focus = retrieveById(CORPUS, ctx.id);
+    if (focus) {
+      const rest = found.records.filter((r) => r.id !== focus.id);
+      found = {
+        ...found,
+        records: [focus, ...rest].slice(0, RETRIEVAL_LIMIT),
+        total: Math.max(found.total, 1),
+        empty: false,
+        // `reason` too, not just `empty`. "Who built this?" carries no search
+        // terms, so retrieval returns `no-terms` and the refusal gate below
+        // fires before any of this can matter — which is exactly the question
+        // the page context exists to answer. On a record's page it is not a
+        // question with nothing in it; the page is the subject.
+        reason: "ok",
+      };
+    }
+  }
+
+  /**
    * The antecedent for a pronoun.
    *
    * "When was it built?" names no temple, because the temple was named one turn
@@ -478,13 +518,13 @@ export async function POST(request: Request): Promise<Response> {
 
   if (wantsStream) {
     return streamAnswer({
-      apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer,
+      apiKey, question, language, history, found, nothingAsked, maxTokens, controller, timer, pageLabel,
     });
   }
 
   try {
     const messages: ChatMessage[] = [
-      { role: "system", content: systemPrompt({ records: found.records, language, total: found.total }) },
+      { role: "system", content: systemPrompt({ records: found.records, language, total: found.total, page: pageLabel }) },
       // Prior turns sit between the system prompt and the question, so a
       // follow-up has its antecedent. They are NOT re-grounded: the records
       // above are the only thing that may be asserted, and an earlier answer in

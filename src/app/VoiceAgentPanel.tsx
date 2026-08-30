@@ -42,6 +42,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { AgentState, InteractionType } from "sarvam-conv-ai-sdk/browser";
 import type { ConversationAgent as Agent } from "sarvam-conv-ai-sdk/browser";
 import { SPOKEN_LANGUAGES, languageByCode } from "@/lib/ai/languages";
+import { useT } from "./useUiLanguage";
 import { readPreference, writePreference, PREF_KEYS } from "@/lib/preference";
 
 /**
@@ -97,6 +98,7 @@ type Turn = { readonly id: number; readonly role: "user" | "agent"; readonly tex
 let turnId = 0;
 
 export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => void }) {
+  const t = useT();
   const [state, setState] = useState<AgentState>(AgentState.IDLE);
   const [turns, setTurns] = useState<readonly Turn[]>([]);
   const [level, setLevel] = useState(0);
@@ -215,7 +217,7 @@ export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => v
   return (
     <section className="call" aria-label="Talk to Tirtha Atlas">
       <div className="calllang">
-        <label htmlFor="va-lang">Speak in</label>
+        <label htmlFor="va-lang">{t("assistant.speakIn")}</label>
         <select
           id="va-lang"
           value={language ?? ""}
@@ -226,7 +228,7 @@ export default function VoiceAgentPanel({ onClose }: { readonly onClose: () => v
             writePreference(PREF_KEYS.voiceLanguage, next);
           }}
         >
-          <option value="">Detect automatically</option>
+          <option value="">{t("assistant.detect")}</option>
           {SPOKEN_LANGUAGES.filter((l) => l.code in AGENT_LANGUAGES).map((l) => (
             <option key={l.code} value={l.code} lang={l.code}>{l.endonym}</option>
           ))}

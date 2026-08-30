@@ -8,16 +8,30 @@
  * directly — see site-utils.test.ts.
  */
 
-export type Era = { readonly to: number; readonly name: string; readonly note: string };
+/**
+ * `name` is a MACHINE value as well as a label: it is the `?era=` facet in
+ * shared URLs, the sort key in `ERA_ORDER`, and the enum the assistant's tool
+ * schema declares. Translating it in place would break every bookmarked filter
+ * link and make facet counts depend on the reader's language.
+ *
+ * So `name` stays English and `id` is added for display: `era.<id>` is the
+ * translation key, and the UI renders that. One value each for one job.
+ */
+export type Era = {
+  readonly to: number;
+  readonly id: string;
+  readonly name: string;
+  readonly note: string;
+};
 
 /** Era boundaries are upper-exclusive: a year belongs to the first era it precedes. */
 export const ERAS: readonly Era[] = [
-  { to: 550, name: "Ancient", note: "Maurya · Satavahana · Gupta · Vakataka" },
-  { to: 1000, name: "Early medieval", note: "Pallava · Chalukya · Rashtrakuta · Pala · Sailendra" },
-  { to: 1350, name: "High medieval", note: "Chola · Chandela · Hoysala · Kakatiya · Khmer · Pagan" },
-  { to: 1650, name: "Late medieval", note: "Vijayanagara · Nayaka · Malla · Ayutthaya" },
-  { to: 1850, name: "Early modern", note: "Maratha · Sikh · Konbaung · Rattanakosin" },
-  { to: 2031, name: "Modern", note: "Colonial to present · revivals & new mandirs" },
+  { to: 550, id: "ancient", name: "Ancient", note: "Maurya · Satavahana · Gupta · Vakataka" },
+  { to: 1000, id: "earlyMedieval", name: "Early medieval", note: "Pallava · Chalukya · Rashtrakuta · Pala · Sailendra" },
+  { to: 1350, id: "highMedieval", name: "High medieval", note: "Chola · Chandela · Hoysala · Kakatiya · Khmer · Pagan" },
+  { to: 1650, id: "lateMedieval", name: "Late medieval", note: "Vijayanagara · Nayaka · Malla · Ayutthaya" },
+  { to: 1850, id: "earlyModern", name: "Early modern", note: "Maratha · Sikh · Konbaung · Rattanakosin" },
+  { to: 2031, id: "modern", name: "Modern", note: "Colonial to present · revivals & new mandirs" },
 ] as const;
 
 /** Index into ERAS for a year, or -1 when the year falls past the last boundary. */
