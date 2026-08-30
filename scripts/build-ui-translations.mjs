@@ -56,6 +56,35 @@ const TARGETS = ["hi-IN", "bn-IN", "ta-IN", "te-IN", "mr-IN", "gu-IN", "kn-IN", 
  * transliteration, which is what the model itself chose for Bengali and
  * Kannada. A reader of any of these languages should still check them.
  */
+
+/**
+ * The six construction eras, written here rather than taken from Mayura.
+ *
+ * They are qualified forms of three words — EARLY/HIGH/LATE medieval,
+ * EARLY modern/modern — and asked for each label in isolation the model returns
+ * the base word and drops the qualifier. Seven of the eight languages came back
+ * with collisions and three of them rendered THREE eras under one identical
+ * label, which on the era strip is three identical buttons.
+ *
+ * These use the qualifier pairs each language's own historiography uses:
+ * पूर्व/उत्तर in Hindi and Marathi, আদি/অন্ত্য in Bengali, முற்கால/பிற்கால in
+ * Tamil, ಪೂರ್ವ/ಉತ್ತರ in Kannada, ആദ്യ/അന്ത്യ in Malayalam.
+ *
+ * Still model-written, not reviewed by a native speaker — but six distinct and
+ * defensible labels rather than one word repeated three times. A reader who
+ * knows better should correct them here.
+ */
+const ERA_LABELS = {
+  "hi-IN": { "era.ancient": "प्राचीन", "era.earlyMedieval": "पूर्व मध्यकालीन", "era.highMedieval": "उच्च मध्यकालीन", "era.lateMedieval": "उत्तर मध्यकालीन", "era.earlyModern": "आरंभिक आधुनिक", "era.modern": "आधुनिक" },
+  "bn-IN": { "era.ancient": "প্রাচীন", "era.earlyMedieval": "আদি মধ্যযুগ", "era.highMedieval": "উচ্চ মধ্যযুগ", "era.lateMedieval": "অন্ত্য মধ্যযুগ", "era.earlyModern": "আদি আধুনিক", "era.modern": "আধুনিক" },
+  "ta-IN": { "era.ancient": "பண்டைய", "era.earlyMedieval": "முற்கால இடைக்காலம்", "era.highMedieval": "உயர் இடைக்காலம்", "era.lateMedieval": "பிற்கால இடைக்காலம்", "era.earlyModern": "ஆரம்ப நவீன", "era.modern": "நவீன" },
+  "te-IN": { "era.ancient": "ప్రాచీన", "era.earlyMedieval": "పూర్వ మధ్యయుగం", "era.highMedieval": "ఉన్నత మధ్యయుగం", "era.lateMedieval": "ఉత్తర మధ్యయుగం", "era.earlyModern": "ఆది ఆధునిక", "era.modern": "ఆధునిక" },
+  "mr-IN": { "era.ancient": "प्राचीन", "era.earlyMedieval": "पूर्व मध्ययुगीन", "era.highMedieval": "उच्च मध्ययुगीन", "era.lateMedieval": "उत्तर मध्ययुगीन", "era.earlyModern": "आरंभिक आधुनिक", "era.modern": "आधुनिक" },
+  "gu-IN": { "era.ancient": "પ્રાચીન", "era.earlyMedieval": "પૂર્વ મધ્યયુગ", "era.highMedieval": "ઉચ્ચ મધ્યયુગ", "era.lateMedieval": "ઉત્તર મધ્યયુગ", "era.earlyModern": "આરંભિક આધુનિક", "era.modern": "આધુનિક" },
+  "kn-IN": { "era.ancient": "ಪ್ರಾಚೀನ", "era.earlyMedieval": "ಪೂರ್ವ ಮಧ್ಯಯುಗ", "era.highMedieval": "ಉಚ್ಚ ಮಧ್ಯಯುಗ", "era.lateMedieval": "ಉತ್ತರ ಮಧ್ಯಯುಗ", "era.earlyModern": "ಆರಂಭಿಕ ಆಧುನಿಕ", "era.modern": "ಆಧುನಿಕ" },
+  "ml-IN": { "era.ancient": "പുരാതന", "era.earlyMedieval": "ആദ്യ മധ്യകാലം", "era.highMedieval": "ഉന്നത മധ്യകാലം", "era.lateMedieval": "അന്ത്യ മധ്യകാലം", "era.earlyModern": "ആദ്യ ആധുനിക", "era.modern": "ആധുനിക" },
+};
+
 const OVERRIDES = {
   "hi-IN": {
     // "भू-आलेख" is a LAND RECORD — a revenue document. A gazetteer is a
@@ -223,7 +252,7 @@ const main = async () => {
       await sleep(PACE_MS);
     }
     // Hand corrections win over the model, every build.
-    translations[target] = { ...bundle, ...(OVERRIDES[target] ?? {}) };
+    translations[target] = { ...bundle, ...(ERA_LABELS[target] ?? {}), ...(OVERRIDES[target] ?? {}) };
     // Written after EVERY language, not once at the end. A run that dies on the
     // seventh language must not throw away the six that succeeded.
     mkdirSync(path.dirname(OUT), { recursive: true });
